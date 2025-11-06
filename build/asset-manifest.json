@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/malavrana1/React_Login_Page.git/static/css/main.1454db0f.chunk.css",
-    "main.js": "/malavrana1/React_Login_Page.git/static/js/main.30cd3a6e.chunk.js",
-    "main.js.map": "/malavrana1/React_Login_Page.git/static/js/main.30cd3a6e.chunk.js.map",
-    "runtime~main.js": "/malavrana1/React_Login_Page.git/static/js/runtime~main.8c5b65f8.js",
-    "runtime~main.js.map": "/malavrana1/React_Login_Page.git/static/js/runtime~main.8c5b65f8.js.map",
-    "static/css/2.7f1403ef.chunk.css": "/malavrana1/React_Login_Page.git/static/css/2.7f1403ef.chunk.css",
-    "static/js/2.2724686d.chunk.js": "/malavrana1/React_Login_Page.git/static/js/2.2724686d.chunk.js",
-    "static/js/2.2724686d.chunk.js.map": "/malavrana1/React_Login_Page.git/static/js/2.2724686d.chunk.js.map",
-    "index.html": "/malavrana1/React_Login_Page.git/index.html",
-    "precache-manifest.97de1d5e9d231ce9fc04f9cb27680e6c.js": "/malavrana1/React_Login_Page.git/precache-manifest.97de1d5e9d231ce9fc04f9cb27680e6c.js",
-    "service-worker.js": "/malavrana1/React_Login_Page.git/service-worker.js",
-    "static/css/2.7f1403ef.chunk.css.map": "/malavrana1/React_Login_Page.git/static/css/2.7f1403ef.chunk.css.map",
-    "static/css/main.1454db0f.chunk.css.map": "/malavrana1/React_Login_Page.git/static/css/main.1454db0f.chunk.css.map",
-    "static/media/Malav_Rana_Frontend_Developer.pdf": "/malavrana1/React_Login_Page.git/static/media/Malav_Rana_Frontend_Developer.a65548b3.pdf",
-    "static/media/bg2.png": "/malavrana1/React_Login_Page.git/static/media/bg2.3ccb49bd.png"
+    "main.css": "/MR_Orbit_Studio/static/css/main.cffef81c.chunk.css",
+    "main.js": "/MR_Orbit_Studio/static/js/main.a1659a99.chunk.js",
+    "main.js.map": "/MR_Orbit_Studio/static/js/main.a1659a99.chunk.js.map",
+    "runtime~main.js": "/MR_Orbit_Studio/static/js/runtime~main.a61076d5.js",
+    "runtime~main.js.map": "/MR_Orbit_Studio/static/js/runtime~main.a61076d5.js.map",
+    "static/css/2.7f1403ef.chunk.css": "/MR_Orbit_Studio/static/css/2.7f1403ef.chunk.css",
+    "static/js/2.0c209d1b.chunk.js": "/MR_Orbit_Studio/static/js/2.0c209d1b.chunk.js",
+    "static/js/2.0c209d1b.chunk.js.map": "/MR_Orbit_Studio/static/js/2.0c209d1b.chunk.js.map",
+    "index.html": "/MR_Orbit_Studio/index.html",
+    "precache-manifest.ddff18bc5af626673dfa76f5e44763e7.js": "/MR_Orbit_Studio/precache-manifest.ddff18bc5af626673dfa76f5e44763e7.js",
+    "service-worker.js": "/MR_Orbit_Studio/service-worker.js",
+    "static/css/2.7f1403ef.chunk.css.map": "/MR_Orbit_Studio/static/css/2.7f1403ef.chunk.css.map",
+    "static/css/main.cffef81c.chunk.css.map": "/MR_Orbit_Studio/static/css/main.cffef81c.chunk.css.map",
+    "static/media/Malav_Rana_Frontend_Developer.pdf": "/MR_Orbit_Studio/static/media/Malav_Rana_Frontend_Developer.a65548b3.pdf",
+    "static/media/bg2.png": "/MR_Orbit_Studio/static/media/bg2.3ccb49bd.png"
   }
 }

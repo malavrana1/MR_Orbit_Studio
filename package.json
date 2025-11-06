@@ -18,7 +18,7 @@
     "serve": "react-scripts start",
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d build -t true",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.js\""
