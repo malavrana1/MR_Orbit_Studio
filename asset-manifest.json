@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/MR_Orbit_Studio/static/css/main.56356ccc.chunk.css",
-    "main.js": "/MR_Orbit_Studio/static/js/main.117a04e8.chunk.js",
-    "main.js.map": "/MR_Orbit_Studio/static/js/main.117a04e8.chunk.js.map",
+    "main.css": "/MR_Orbit_Studio/static/css/main.8fb590a8.chunk.css",
+    "main.js": "/MR_Orbit_Studio/static/js/main.b78df35e.chunk.js",
+    "main.js.map": "/MR_Orbit_Studio/static/js/main.b78df35e.chunk.js.map",
     "runtime~main.js": "/MR_Orbit_Studio/static/js/runtime~main.a61076d5.js",
     "runtime~main.js.map": "/MR_Orbit_Studio/static/js/runtime~main.a61076d5.js.map",
     "static/css/2.7f1403ef.chunk.css": "/MR_Orbit_Studio/static/css/2.7f1403ef.chunk.css",
-    "static/js/2.b7823e28.chunk.js": "/MR_Orbit_Studio/static/js/2.b7823e28.chunk.js",
-    "static/js/2.b7823e28.chunk.js.map": "/MR_Orbit_Studio/static/js/2.b7823e28.chunk.js.map",
+    "static/js/2.e2bb27e5.chunk.js": "/MR_Orbit_Studio/static/js/2.e2bb27e5.chunk.js",
+    "static/js/2.e2bb27e5.chunk.js.map": "/MR_Orbit_Studio/static/js/2.e2bb27e5.chunk.js.map",
     "index.html": "/MR_Orbit_Studio/index.html",
-    "precache-manifest.ce682dedd5d83051f7fadb1f5d38e018.js": "/MR_Orbit_Studio/precache-manifest.ce682dedd5d83051f7fadb1f5d38e018.js",
+    "precache-manifest.853adc4f0210a4494f9e95822fbf15fe.js": "/MR_Orbit_Studio/precache-manifest.853adc4f0210a4494f9e95822fbf15fe.js",
     "service-worker.js": "/MR_Orbit_Studio/service-worker.js",
     "static/css/2.7f1403ef.chunk.css.map": "/MR_Orbit_Studio/static/css/2.7f1403ef.chunk.css.map",
-    "static/css/main.56356ccc.chunk.css.map": "/MR_Orbit_Studio/static/css/main.56356ccc.chunk.css.map",
+    "static/css/main.8fb590a8.chunk.css.map": "/MR_Orbit_Studio/static/css/main.8fb590a8.chunk.css.map",
     "static/media/Malav_Rana_Frontend_Developer.pdf": "/MR_Orbit_Studio/static/media/Malav_Rana_Frontend_Developer.a65548b3.pdf",
+    "static/media/Profile.jpg": "/MR_Orbit_Studio/static/media/Profile.2c39e0b5.jpg",
     "static/media/bg2.png": "/MR_Orbit_Studio/static/media/bg2.3ccb49bd.png"
   }
 }
