@@ -3,9 +3,9 @@
   "headline": "Software Engineer · Frontend Specialist",
   "availability": "Open to full-time or freelance engagements",
   "summary": [
-    "Software engineer with 4+ years of experience building responsive apps with React, Angular, Vue, and Next.js across streaming, architecture, healthcare, and nonprofit teams.",
-    "Transform product vision into accessible, high-performing experiences with HTML5, CSS/Tailwind, REST/GraphQL integrations, and automated delivery pipelines.",
-    "Collaborative teammate who mentors peers, iterates quickly, and finds balance competing on the tennis court."
+    "Software engineer with 5+ years building responsive apps using React, Angular, Vue, and Next.js. I've worked with streaming platforms, architecture firms, healthcare companies, and nonprofits.",
+    "I turn product ideas into accessible, fast interfaces using HTML5, CSS, Tailwind, REST and GraphQL APIs, plus modern build tools.",
+    "I enjoy working with teams, helping others learn, and staying active on the tennis court when I'm not coding."
   ],
   "heroHighlights": [
     "React • Next.js • Angular • Vue",
@@ -23,7 +23,7 @@
     "linkedin": "https://www.linkedin.com/in/malav-rana97"
   },
   "stats": [
-    { "label": "Experience", "value": "4+ years" },
+    { "label": "Experience", "value": "5+ years" },
     { "label": "Core Stack", "value": "React · Angular · Vue" },
     { "label": "Location", "value": "New Jersey, USA" }
   ],
@@ -31,56 +31,56 @@
     {
       "role": "Frontend Engineer",
       "company": "Kiswe",
-      "period": "Sep 2024 — Present",
+      "period": "Sep 2024 - Present",
       "achievements": [
-        "Ship responsive, high-performing event experiences with React, Vue.js, and Tailwind CSS.",
-        "Build reusable component libraries shared across live streaming properties.",
-        "Integrate GraphQL and REST APIs to deliver real-time, interactive fan experiences."
+        "Building responsive event platforms with React, Vue.js, and Tailwind CSS.",
+        "Creating reusable component libraries used across our live streaming products.",
+        "Working with GraphQL and REST APIs to power real-time fan experiences."
       ]
     },
     {
       "role": "Frontend Engineer",
       "company": "Gensler",
-      "period": "Jul 2022 — Feb 2024",
+      "period": "Jul 2022 - Feb 2024",
       "achievements": [
-        "Delivered SEO-ready marketing and project apps with Next.js and React.",
-        "Maintained complex state with Redux and React Hooks to keep experiences fast.",
-        "Collaborated with UX to transform Figma concepts into accessible production UI."
+        "Built SEO-friendly marketing sites and project showcases using Next.js and React.",
+        "Managed complex state with Redux and React Hooks to keep everything running smoothly.",
+        "Worked closely with UX designers to turn Figma designs into production-ready interfaces."
       ]
     },
     {
       "role": "Frontend Engineer",
       "company": "Cigna Express Scripts",
-      "period": "May 2021 — Apr 2022",
+      "period": "May 2021 - Apr 2022",
       "achievements": [
-        "Crafted checkout flows in React that reduced form errors and improved completion rates.",
-        "Leveraged custom hooks/Context API to share logic across medication workflows.",
-        "Optimized load times with lazy-loading, code splitting, and rendering best practices."
+        "Built checkout flows in React that cut down on form errors and improved completion rates.",
+        "Used custom hooks and Context API to share logic across different medication workflows.",
+        "Improved load times with lazy-loading, code splitting, and better rendering practices."
       ]
     },
     {
       "role": "UI Developer",
       "company": "Atmiya Care Charity",
-      "period": "Sep 2020 — May 2021",
+      "period": "Sep 2020 - May 2021",
       "achievements": [
-        "Redesigned donation platform in React and Angular to raise conversions and accessibility.",
-        "Implemented AWS + Docker + Jenkins pipelines for reliable releases.",
-        "Integrated GraphQL/REST services to keep donor data accurate in real time."
+        "Redesigned the donation platform using React and Angular to improve conversions and accessibility.",
+        "Set up AWS, Docker, and Jenkins pipelines to make releases more reliable.",
+        "Connected GraphQL and REST services to keep donor data accurate and up to date."
       ]
     }
   ],
   "expertise": [
     {
       "label": "Front-End Platforms",
-      "description": "React, Angular, Vue, and Next.js experiences tuned for performance and maintainability."
+      "description": "React, Angular, Vue, and Next.js apps built for performance and easy maintenance."
     },
     {
       "label": "Design Systems & UX",
-      "description": "HTML5, CSS, Tailwind, and accessibility-led implementation with collaboration alongside designers."
+      "description": "HTML5, CSS, and Tailwind with a focus on accessibility. I work closely with designers to bring their vision to life."
     },
     {
       "label": "Delivery & Tooling",
-      "description": "GraphQL/REST integrations, automated testing, Git/AWS/Docker/Jenkins pipelines, and package management with PNPM."
+      "description": "GraphQL and REST API integrations, automated testing, Git workflows, AWS deployments, Docker containers, Jenkins CI/CD, and PNPM for package management."
     }
   ],
   "stack": [

@@ -18,6 +18,7 @@ import {
 import '../../App.css'
 import '../../css/LandingPage.css'
 import BackgroundImage from '../../assets/images/bg2.png'
+import ProfileImage from '../../assets/images/Profile.jpg'
 import { getProfile } from '../../utils/profile'
 import { getResume, getSkillCategories } from '../../utils/resume'
 import { getProjects } from '../../utils/projects'
@@ -76,6 +77,13 @@ export default function LandingPage() {
         <Container className="position-relative">
           <Row className="align-items-center gy-4">
             <Col lg={7}>
+              <div className="hero-profile mb-4">
+                <img
+                  src={ProfileImage}
+                  alt={profile.name}
+                  className="hero-profile-image"
+                />
+              </div>
               <h1 className="hero-title mb-3">
                 Hi, I&apos;m {profile.name}.
                 <br />
@@ -90,7 +98,7 @@ export default function LandingPage() {
               </h1>
               <p className="lead text-light mb-4">
                 {profile.summary?.[0] ||
-                  "Frontend engineer with 4+ years' experience building responsive apps with React, Angular, Vue, and Next.js."}
+                  "Frontend engineer with 5+ years' experience building responsive apps with React, Angular, Vue, and Next.js."}
               </p>
               {/* hero buttons removed as per request */}
             </Col>
@@ -567,8 +575,8 @@ export default function LandingPage() {
                   </p>
                   <div className="contact-links">
                     <Button
-                      as="a"
-                      href={`mailto:${profile.contact.email}`}
+                      type="button"
+                      onClick={() => setShowContactModal(true)}
                       variant="primary"
                       className="summary-btn w-100 mb-2"
                       aria-label={`Email ${profile.name}`}

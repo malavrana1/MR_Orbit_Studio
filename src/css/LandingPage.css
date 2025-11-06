@@ -40,6 +40,56 @@
     color: #e5e7eb;
 }
 
+.hero-profile {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.hero-profile::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.4), rgba(59, 130, 246, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.hero-profile:hover::before {
+    opacity: 1;
+}
+
+.hero-profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 
+        0 8px 32px rgba(15, 23, 42, 0.4),
+        0 0 0 3px rgba(37, 99, 235, 0.1),
+        inset 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-profile-image:hover {
+    transform: scale(1.08) translateY(-4px);
+    box-shadow: 
+        0 16px 48px rgba(15, 23, 42, 0.5),
+        0 0 0 4px rgba(37, 99, 235, 0.2),
+        inset 0 0 30px rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.hero-profile-image:active {
+    transform: scale(1.05) translateY(-2px);
+}
+
 
 .hero-buttons {
     display: flex;
@@ -134,40 +184,19 @@
 }
 
 .landing-summary {
-    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f0f9ff 100%);
+    background: #eff6ff;
     padding: 5rem 0;
     position: relative;
-}
-
-.landing-summary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.02) 0%, transparent 50%);
-    pointer-events: none;
-}
-
-.landing-summary::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(59, 130, 246, 0.15), transparent);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .summary-card {
     border-radius: 1rem;
     padding: 0.75rem;
     background: #ffffff;
-    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
-    border: 1px solid rgba(15, 23, 42, 0.05);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.12);
 }
 
 .summary-header {
@@ -306,35 +335,19 @@
 }
 
 .landing-build {
-    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 30%, #fffbeb 100%);
+    background: #fff7ed;
     padding: 5rem 0;
     position: relative;
-}
-
-.landing-build::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.04) 0%, transparent 70%);
-    pointer-events: none;
-}
-
-.landing-build::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(245, 158, 11, 0.15), transparent);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .build-card {
     border-radius: 1rem;
     padding: 0.85rem;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+    background: #ffffff;
 }
 
 .build-header h2 {
@@ -356,18 +369,19 @@
     display: flex;
     gap: 0.75rem;
     padding: 0.85rem 1rem;
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.12);
     border-radius: 1rem;
-    background: #f8fafc;
-    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
-    transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease, border-color 150ms ease;
 }
 
 .build-tile:hover,
 .build-tile:focus-visible {
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
-    background: #e2e8f0;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+    background: #ffffff;
+    border-color: rgba(37, 99, 235, 0.2);
 }
 
 .build-tile__icon {
@@ -535,33 +549,11 @@
 }
 
 .landing-skills {
-    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 30%, #fffbeb 100%);
+    background: #fefce8;
     padding: 5rem 0;
     position: relative;
-    overflow: hidden;
-}
-
-.landing-skills::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 15% 40%, rgba(251, 191, 36, 0.04) 0%, transparent 60%),
-        radial-gradient(circle at 85% 60%, rgba(245, 158, 11, 0.03) 0%, transparent 60%);
-    pointer-events: none;
-}
-
-.landing-skills::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(245, 158, 11, 0.15), transparent);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .section-title {
@@ -639,8 +631,8 @@
 .toolkit-card {
     border-radius: 1rem;
     background: #ffffff;
-    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.1);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.12);
 }
 
 .toolkit-label {
@@ -662,11 +654,11 @@
     align-items: center;
     gap: 0.75rem;
     padding: 0.85rem;
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.12);
     border-radius: 1rem;
-    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
-    background: #f8fafc;
-    transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    background: #ffffff;
+    transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease, border-color 150ms ease;
 }
 
 .toolkit-grid__icon {
@@ -688,35 +680,17 @@
 .toolkit-grid__item:hover,
 .toolkit-grid__item:focus-visible {
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.14);
-    background: #e2e8f0;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+    background: #ffffff;
+    border-color: rgba(37, 99, 235, 0.2);
 }
 
 .landing-experience {
-    background: linear-gradient(to bottom, #ffffff 0%, #f0fdf4 50%, #ffffff 100%);
+    background: #f0fdf4;
     padding: 5rem 0;
     position: relative;
-}
-
-.landing-experience::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.02) 0%, transparent 70%);
-    pointer-events: none;
-}
-
-.landing-experience::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(34, 197, 94, 0.15), transparent);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .experience-heading {
@@ -869,30 +843,11 @@
 }
 
 .landing-education {
-    background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 50%, #f8fafc 100%);
+    background: #faf5ff;
     padding: 5rem 0;
     position: relative;
-}
-
-.landing-education::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.03) 0%, transparent 60%);
-    pointer-events: none;
-}
-
-.landing-education::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(59, 130, 246, 0.15), transparent);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .education-heading {
@@ -920,12 +875,15 @@
 .education-card {
     border-radius: 1rem;
     background: #ffffff;
-    transition: transform 150ms ease, box-shadow 150ms ease;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
 }
 
 .education-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1) !important;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+    border-color: rgba(37, 99, 235, 0.2);
 }
 
 .education-item {
@@ -974,9 +932,11 @@
 }
 
 .landing-projects {
-    background: linear-gradient(to bottom, #ffffff 0%, #fdf2f8 50%, #ffffff 100%);
+    background: #fdf2f8;
     padding: 5rem 0;
     position: relative;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .projects-heading {
@@ -989,35 +949,17 @@
     font-size: clamp(1.75rem, 3vw, 2.5rem);
 }
 
-.landing-projects::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 70% 30%, rgba(236, 72, 153, 0.03) 0%, transparent 60%);
-    pointer-events: none;
-}
-
-.landing-projects::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(236, 72, 153, 0.15), transparent);
-}
-
 .project-card {
     border-radius: 1rem;
-    transition: transform 150ms ease, box-shadow 150ms ease;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
 }
 
 .project-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1) !important;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+    border-color: rgba(37, 99, 235, 0.2);
 }
 
 .project-tech {
@@ -1044,33 +986,24 @@
 .project-link:hover { text-decoration: underline; }
 
 .landing-personal {
-    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #faf5ff 100%);
+    background: #ecfeff;
     padding: 5rem 0;
     position: relative;
-}
-
-.landing-personal::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 20% 60%, rgba(168, 85, 247, 0.03) 0%, transparent 60%);
-    pointer-events: none;
-}
-
-.landing-personal::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(168, 85, 247, 0.15), transparent);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 .personal-card {
     border-radius: 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    background: #ffffff;
+    transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.personal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+    border-color: rgba(37, 99, 235, 0.2);
 }
 
 .contact-card p.text-muted {
