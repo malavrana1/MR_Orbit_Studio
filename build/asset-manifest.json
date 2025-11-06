@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.f814d949.chunk.css",
-    "main.js": "/static/js/main.767a0c1f.chunk.js",
-    "main.js.map": "/static/js/main.767a0c1f.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.63a5f3cf.chunk.js": "/static/js/2.63a5f3cf.chunk.js",
-    "static/js/2.63a5f3cf.chunk.js.map": "/static/js/2.63a5f3cf.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.53fc3e3b4a87a108364b574c26dd1931.js": "/precache-manifest.53fc3e3b4a87a108364b574c26dd1931.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f814d949.chunk.css.map": "/static/css/main.f814d949.chunk.css.map",
-    "static/media/bg2.png": "/static/media/bg2.3ccb49bd.png"
+    "main.css": "/malavrana1/React_Login_Page.git/static/css/main.1454db0f.chunk.css",
+    "main.js": "/malavrana1/React_Login_Page.git/static/js/main.30cd3a6e.chunk.js",
+    "main.js.map": "/malavrana1/React_Login_Page.git/static/js/main.30cd3a6e.chunk.js.map",
+    "runtime~main.js": "/malavrana1/React_Login_Page.git/static/js/runtime~main.8c5b65f8.js",
+    "runtime~main.js.map": "/malavrana1/React_Login_Page.git/static/js/runtime~main.8c5b65f8.js.map",
+    "static/css/2.7f1403ef.chunk.css": "/malavrana1/React_Login_Page.git/static/css/2.7f1403ef.chunk.css",
+    "static/js/2.2724686d.chunk.js": "/malavrana1/React_Login_Page.git/static/js/2.2724686d.chunk.js",
+    "static/js/2.2724686d.chunk.js.map": "/malavrana1/React_Login_Page.git/static/js/2.2724686d.chunk.js.map",
+    "index.html": "/malavrana1/React_Login_Page.git/index.html",
+    "precache-manifest.97de1d5e9d231ce9fc04f9cb27680e6c.js": "/malavrana1/React_Login_Page.git/precache-manifest.97de1d5e9d231ce9fc04f9cb27680e6c.js",
+    "service-worker.js": "/malavrana1/React_Login_Page.git/service-worker.js",
+    "static/css/2.7f1403ef.chunk.css.map": "/malavrana1/React_Login_Page.git/static/css/2.7f1403ef.chunk.css.map",
+    "static/css/main.1454db0f.chunk.css.map": "/malavrana1/React_Login_Page.git/static/css/main.1454db0f.chunk.css.map",
+    "static/media/Malav_Rana_Frontend_Developer.pdf": "/malavrana1/React_Login_Page.git/static/media/Malav_Rana_Frontend_Developer.a65548b3.pdf",
+    "static/media/bg2.png": "/malavrana1/React_Login_Page.git/static/media/bg2.3ccb49bd.png"
   }
 }

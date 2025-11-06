@@ -1,31 +1,30 @@
-/***    General     ***/
+/***    Base / Typography     ***/
+:root {
+    --bg-dark: #0f172a;
+    --bg-light: #f8fafc;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --brand: #2563eb;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+    min-height: 100%;
 }
 
 body {
     margin: 0 auto;
-}
-
-.m-5-auto {
-    margin: 5rem auto;
-}
-
-.primary-button {
-    margin-top: 5rem;
-    margin-right: 1rem;
-    padding: .6rem;
-    width: 10rem;
-    background: #222;
-    border: none;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: all .5s;
-    cursor: pointer;
-    text-transform: capitalize
+    font-family: "Roboto", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: var(--text-dark);
+    background: var(--bg-light);
+    line-height: 1.6;
 }
 
 /***    Footer     ***/
@@ -33,4 +32,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+/* Accessible focus outlines */
+:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.5);
+    outline-offset: 2px;
 }

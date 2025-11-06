@@ -1,0 +1,93 @@
+{
+  "name": "Malav Rana",
+  "headline": "Software Engineer · Frontend Specialist",
+  "availability": "Open to full-time or freelance engagements",
+  "summary": [
+    "Software engineer with 4 years of experience building responsive apps with React, Angular, Vue, and Next.js across streaming, architecture, healthcare, and nonprofit teams.",
+    "Transform product vision into accessible, high-performing experiences with HTML5, CSS/Tailwind, REST/GraphQL integrations, and automated delivery pipelines.",
+    "Collaborative teammate who mentors peers, iterates quickly, and finds balance competing on the tennis court."
+  ],
+  "heroHighlights": [
+    "I work with React, Angular, and Vue.",
+    "I build fast, accessible UIs.",
+    "I build component-driven design systems."
+  ],
+  "contact": {
+    "email": "ranam211197@gmail.com",
+    "phone": "201-468-8422",
+    "location": "New Jersey, USA",
+    "website": "https://malavrana.dev"
+  },
+  "social": {
+    "github": "https://github.com/malavrana1",
+    "linkedin": "https://www.linkedin.com/in/malav-rana97"
+  },
+  "stats": [
+    { "label": "Experience", "value": "4+ years" },
+    { "label": "Core Stack", "value": "React · Angular · Vue" },
+    { "label": "Location", "value": "New Jersey, USA" }
+  ],
+  "experience": [
+    {
+      "role": "Frontend Engineer",
+      "company": "Kiswe",
+      "period": "Sep 2024 — Present",
+      "achievements": [
+        "Ship responsive, high-performing event experiences with React, Vue.js, and Tailwind CSS.",
+        "Build reusable component libraries shared across live streaming properties.",
+        "Integrate GraphQL and REST APIs to deliver real-time, interactive fan experiences."
+      ]
+    },
+    {
+      "role": "Frontend Engineer",
+      "company": "Gensler",
+      "period": "Jul 2022 — Feb 2024",
+      "achievements": [
+        "Delivered SEO-ready marketing and project apps with Next.js and React.",
+        "Maintained complex state with Redux and React Hooks to keep experiences fast.",
+        "Collaborated with UX to transform Figma concepts into accessible production UI."
+      ]
+    },
+    {
+      "role": "Frontend Engineer",
+      "company": "Cigna Express Scripts",
+      "period": "May 2021 — Apr 2022",
+      "achievements": [
+        "Crafted checkout flows in React that reduced form errors and improved completion rates.",
+        "Leveraged custom hooks/Context API to share logic across medication workflows.",
+        "Optimized load times with lazy-loading, code splitting, and rendering best practices."
+      ]
+    },
+    {
+      "role": "UI Developer",
+      "company": "Atmiya Care Charity",
+      "period": "Sep 2020 — May 2021",
+      "achievements": [
+        "Redesigned donation platform in React and Angular to raise conversions and accessibility.",
+        "Implemented AWS + Docker + Jenkins pipelines for reliable releases.",
+        "Integrated GraphQL/REST services to keep donor data accurate in real time."
+      ]
+    }
+  ],
+  "expertise": [
+    {
+      "label": "Front-End Platforms",
+      "description": "React, Angular, Vue, and Next.js experiences tuned for performance and maintainability."
+    },
+    {
+      "label": "Design Systems & UX",
+      "description": "HTML5, CSS, Tailwind, and accessibility-led implementation with collaboration alongside designers."
+    },
+    {
+      "label": "Delivery & Tooling",
+      "description": "GraphQL/REST integrations, automated testing, Git/AWS/Docker/Jenkins pipelines, and package management with PNPM."
+    }
+  ],
+  "stack": [
+    { "label": "React", "level": 95 },
+    { "label": "Next.js", "level": 88 },
+    { "label": "Angular", "level": 80 },
+    { "label": "Vue.js", "level": 78 },
+    { "label": "TypeScript", "level": 90 }
+  ]
+}

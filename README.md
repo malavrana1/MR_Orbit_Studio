@@ -1,26 +1,31 @@
-React Login/Register Page App
+## Orbit — Frontend Portfolio
 
-React app designed for user authentication with features such as login, registration, and password reset pages. This serves as the front-end component, with no integrated back-end functionality.
+A clean, single‑page portfolio built with React.
 
-## Functionalities
+### Features
+- Sticky header with smooth scrolling
+- Sections: Summary, Toolkit, Experience, Education, Featured Project, About, Personal, CTA
+- Content in JSON (no code needed for copy changes)
 
-* User login using a username and password
-* Account creation
-* Password reset
+### Tech
+- React 16, React‑Bootstrap, React Icons, React Typed
 
-## Technologies
-
-* React.js
-* Javascript
-* HTML/HTML5
-* CSS
-
-## Getting Started
-
-To begin using Logster, follow these steps:
-
+### Run
 ```bash
-git clone
-npm install
-npm start
+pnpm install
+pnpm start
 ```
+
+### Build
+```bash
+pnpm run build
+```
+
+### Customize
+- Brand and nav: `src/data/site.json`
+- Content: `src/data/profile.json`, `src/data/resume.json`, `src/data/personal.json`, `src/data/site.json`
+
+### Key files
+- `src/components/Header.js`
+- `src/components/pages/LandingPage.js`
+- `src/css/Header.css`, `src/css/LandingPage.css`

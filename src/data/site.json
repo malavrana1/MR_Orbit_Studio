@@ -1,0 +1,99 @@
+{
+  "buildHighlights": [
+    "Built as a single-page site using JSON files for all content.",
+    "Added interactive sections like the toolkit filter and experience accordion.",
+    "Made it easy to read with good colors and keyboard navigation."
+  ],
+  "buildStack": [
+    {
+      "label": "React 16",
+      "description": "Used React components and hooks to build the site.",
+      "icon": "react"
+    },
+    {
+      "label": "React-Bootstrap",
+      "description": "Used Bootstrap components for layout and buttons.",
+      "icon": "reactBootstrap"
+    },
+    {
+      "label": "Bootstrap 4",
+      "description": "Used Bootstrap styles for consistent design.",
+      "icon": "bootstrap"
+    },
+    {
+      "label": "PNPM",
+      "description": "Used PNPM to manage packages and dependencies.",
+      "icon": "pnpm"
+    },
+    {
+      "label": "React Icons",
+      "description": "Used React Icons for all the icons you see.",
+      "icon": "icons"
+    },
+    {
+      "label": "React Typed",
+      "description": "Used React Typed for the animated text in the hero section.",
+      "icon": "typed"
+    }
+  ],
+  "brand": "Orbit",
+  "nav": {
+    "links": [
+      { "label": "Summary", "href": "#summary" },
+      { "label": "Toolkit", "href": "#toolkit" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Education", "href": "#education" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "About", "href": "#about" }
+    ]
+  },
+  "ui": {
+    "hero": {
+      "buttons": {
+        "viewProjects": "View projects",
+        "getInTouch": "Get in touch"
+      },
+      "skillCard": {
+        "title": "Quick skills",
+        "description": "A quick look at the tools I use most.",
+        "recentTeams": "Recent teams"
+      }
+    },
+    "typed": {
+      "typeSpeed": 45,
+      "backSpeed": 22
+    },
+    "sections": {
+      "professionalSummary": "Professional summary",
+      "toolbox": "Toolbox",
+      "toolkitTitle": "Technical toolkit",
+      "toolkitDescription": "Choose a category to see the skills I use most—from frameworks and languages to testing and tools.",
+      "currentlyViewing": "Currently viewing",
+      "experience": "Experience",
+      "experienceTitle": "My work experience",
+      "experienceDescription": "Here's a look at how I help teams build great products while working with others and staying active.",
+      "education": "Education",
+      "educationTitle": "My education",
+      "educationDescription": "The learning and experience that helps me build better products.",
+      "featuredProject": "Featured Project",
+      "portfolioBuild": "About this site",
+      "buildTitle": "How I built this site",
+      "buildDescription": "I built this as a single-page React site using JSON files for content. This makes it easy to update without changing code.",
+      "buildToolsTitle": "Tools I used",
+      "projectsLabel": "Projects",
+      "saveResume": "Save resume",
+      "letsCollaborate": "Say hello",
+      "letsCollaborateDescription": "I'm based in New Jersey. If you want to chat about front‑end, side projects, or ideas, feel free to reach out.",
+      "emailButton": "Email Malav",
+      "connectLinkedIn": "Connect on LinkedIn",
+      "exploreGitHub": "Explore GitHub",
+      "viewPortfolio": "View portfolio",
+      "whatFuelsMe": "What I love",
+      "guidingPrinciples": "How I work",
+      "currentInterests": "Things I enjoy",
+      "ctaTitle": "Let's work together on your next project.",
+      "ctaDescription": "Want to know more or ready to start building? Get in touch and let's create something great together.",
+      "ctaButton": "Start a conversation"
+    }
+  }
+}

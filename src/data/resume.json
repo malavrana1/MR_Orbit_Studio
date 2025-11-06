@@ -1,0 +1,122 @@
+{
+  "name": "Malav Rana",
+  "headline": "Software Engineer",
+  "location": "New Jersey, USA",
+  "contact": {
+    "email": "ranam211197@gmail.com",
+    "phone": "201-468-8422",
+    "linkedin": "https://www.linkedin.com/in/malav-rana97",
+    "website": "https://malavrana.dev"
+  },
+  "summary": "Frontend Engineer with 4 years of experience in React.js, Angular, Vue.js, and Next.js. Proficient in HTML5, CSS, Tailwind CSS, and JavaScript with a passion for crafting responsive, accessible applications. Skilled with RESTful APIs, GraphQL, Webpack, and modern testing libraries, and comfortable collaborating across Git, AWS, Docker, and Jenkins environments.",
+  "skills": {
+    "Front-End Technologies": [
+      "React.js",
+      "Angular",
+      "Next.js",
+      "HTML5",
+      "CSS",
+      "Tailwind CSS",
+      "Node.js",
+      "Vue.js",
+      "jQuery",
+      "Bootstrap",
+      "WordPress",
+      "XML",
+      "AJAX",
+      "Drupal"
+    ],
+    "Programming Languages": [
+      "JavaScript",
+      "SQL",
+      "PHP",
+      "Scala",
+      "Python",
+      "Java"
+    ],
+    "Web Technologies": [
+      "RESTful APIs",
+      "Webpack",
+      "Responsive Design",
+      "GraphQL"
+    ],
+    "Testing Libraries": ["Jest", "React Testing Library", "Enzyme"],
+    "Environment": ["Git", "CodeCommit", "AWS", "Docker", "Jenkins"]
+  },
+  "skillDescriptions": {
+    "Front-End Technologies": "Modern frameworks, site builders, and UI platforms that keep interfaces responsive and accessible.",
+    "Programming Languages": "Languages I reach for across front-end features, supporting services, and automation.",
+    "Web Technologies": "Build tooling, data integrations, and patterns for performant, interactive experiences.",
+    "Testing Libraries": "Confidence toolkits that keep releases reliable, accessible, and easy to maintain.",
+    "Environment": "Collaboration and delivery environments spanning Git, CodeCommit, AWS, Docker, and Jenkins."
+  },
+  "experience": [
+    {
+      "role": "Frontend Engineer",
+      "company": "Kiswe",
+      "location": "New Jersey",
+      "period": "Sep 2024 – Present",
+      "highlights": [
+        "Utilized HTML5, CSS, and Tailwind CSS to build responsive, accessible, and visually consistent interfaces for live event platforms.",
+        "Developed dynamic, interactive features with JavaScript and TypeScript to improve performance, maintainability, and data handling.",
+        "Built reusable, component-driven user interfaces with Vue.js and React, reducing duplication and enabling scalable front-end architecture.",
+        "Selected the right mix of Vue.js, React, and Tailwind CSS per project requirement to boost team productivity and quality.",
+        "Implemented PNPM for faster, cleaner dependency management across projects, streamlining the front-end environment."
+      ]
+    },
+    {
+      "role": "Frontend Engineer",
+      "company": "Gensler",
+      "location": "New Jersey",
+      "period": "Jul 2022 – Feb 2024",
+      "highlights": [
+        "Developed dynamic UIs with React.js, leveraging components, hooks, and lifecycle methods for smooth navigation and state management.",
+        "Integrated Redux and middleware such as Redux Thunk to handle asynchronous workflows and improve performance.",
+        "Utilized Next.js for server-side rendering and static generation to optimize SEO and speed with dynamic routing and API routes.",
+        "Created reusable Vue.js components and managed complex state with Vuex to deliver consistent UI/UX across apps.",
+        "Implemented unit and integration tests with Jest and React Testing Library to ensure reliable releases.",
+        "Applied Tailwind CSS for utility-first styling, enabling rapid development of responsive, visually consistent interfaces.",
+        "Leveraged RESTful APIs and GraphQL for efficient data retrieval and interaction.",
+        "Configured Webpack for bundling and optimization, and used Git and AWS for version control and deployment.",
+        "Built Angular reactive forms to manage user input and validation, and used Angular CLI to speed scaffolding and deploys."
+      ]
+    },
+    {
+      "role": "Frontend Engineer",
+      "company": "Cigna Express Scripts",
+      "location": "New Jersey",
+      "period": "May 2021 – Apr 2022",
+      "highlights": [
+        "Designed and developed interactive checkout and confirmation screens using React.js with modular, component-based architecture.",
+        "Implemented state management with React hooks and Context API to improve interaction during the checkout process.",
+        "Optimized performance through lazy loading and code splitting for faster load times and smoother UX.",
+        "Integrated RESTful APIs with Axios for accurate, real-time order and prescription data.",
+        "Conducted unit and integration tests with Jest and React Testing Library to uphold quality standards.",
+        "Leveraged lifecycle methods and custom hooks to manage side effects, asynchronous operations, and reusable logic.",
+        "Partnered with UX/UI designers to deliver responsive designs with CSS and Tailwind CSS across devices.",
+        "Collaborated with teams on Angular projects to align components and timelines."
+      ]
+    },
+    {
+      "role": "UI Developer",
+      "company": "Atmiya Care Charity",
+      "location": "New Jersey",
+      "period": "Sep 2020 – May 2021",
+      "highlights": [
+        "Enhanced the donation platform with React.js and Angular + TypeScript to increase engagement and conversions.",
+        "Developed responsive interfaces leveraging robust data binding, custom routing, and filters for interactive experiences.",
+        "Implemented integrations and features with RESTful APIs, Webpack, and GraphQL to improve data flow and maintainability.",
+        "Collaborated with the front-end team using Git, AWS, Docker, and Jenkins for consistent delivery pipelines.",
+        "Applied Jest and React Testing Library to ensure reliability and a polished donor experience."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Montclair State University",
+      "location": "Montclair, NJ",
+      "period": "Sep 2016 – May 2020"
+    }
+  ]
+}

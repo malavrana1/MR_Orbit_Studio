@@ -1,0 +1,23 @@
+[
+  {
+    "title": "MR Orbit Studio",
+    "description": "Single-page React portfolio orbiting the things I love to build—data-driven sections, résumé download, and interactive toolkit filters.",
+    "tech": ["React", "React-Bootstrap", "PNPM"],
+    "link": "https://github.com/malavrana1/React_Login_Page",
+    "cta": "View source"
+  },
+  {
+    "title": "Next.js Marketing Site",
+    "description": "SEO-friendly, fast pages with dynamic content and analytics wiring.",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel"],
+    "link": "https://malavrana.dev",
+    "cta": "Open site"
+  },
+  {
+    "title": "Analytics Dashboard",
+    "description": "Responsive dashboard with charts, filters, and role-based access.",
+    "tech": ["React", "Redux", "GraphQL"],
+    "link": "https://github.com/malavrana1",
+    "cta": "View details"
+  }
+]
