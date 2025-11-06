@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/MR_Orbit_Studio/static/css/main.cffef81c.chunk.css",
+    "main.js": "/MR_Orbit_Studio/static/js/main.a1659a99.chunk.js",
+    "main.js.map": "/MR_Orbit_Studio/static/js/main.a1659a99.chunk.js.map",
+    "runtime~main.js": "/MR_Orbit_Studio/static/js/runtime~main.a61076d5.js",
+    "runtime~main.js.map": "/MR_Orbit_Studio/static/js/runtime~main.a61076d5.js.map",
+    "static/css/2.7f1403ef.chunk.css": "/MR_Orbit_Studio/static/css/2.7f1403ef.chunk.css",
+    "static/js/2.0c209d1b.chunk.js": "/MR_Orbit_Studio/static/js/2.0c209d1b.chunk.js",
+    "static/js/2.0c209d1b.chunk.js.map": "/MR_Orbit_Studio/static/js/2.0c209d1b.chunk.js.map",
+    "index.html": "/MR_Orbit_Studio/index.html",
+    "precache-manifest.ddff18bc5af626673dfa76f5e44763e7.js": "/MR_Orbit_Studio/precache-manifest.ddff18bc5af626673dfa76f5e44763e7.js",
+    "service-worker.js": "/MR_Orbit_Studio/service-worker.js",
+    "static/css/2.7f1403ef.chunk.css.map": "/MR_Orbit_Studio/static/css/2.7f1403ef.chunk.css.map",
+    "static/css/main.cffef81c.chunk.css.map": "/MR_Orbit_Studio/static/css/main.cffef81c.chunk.css.map",
+    "static/media/Malav_Rana_Frontend_Developer.pdf": "/MR_Orbit_Studio/static/media/Malav_Rana_Frontend_Developer.a65548b3.pdf",
+    "static/media/bg2.png": "/MR_Orbit_Studio/static/media/bg2.3ccb49bd.png"
+  }
+}
