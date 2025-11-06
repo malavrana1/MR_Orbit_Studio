@@ -37,6 +37,7 @@
     }
   ],
   "brand": "Orbit",
+  "copyrightOwner": "MR Orbit Studio",
   "nav": {
     "links": [
       { "label": "Summary", "href": "#summary" },
