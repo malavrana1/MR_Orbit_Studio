@@ -5,7 +5,7 @@
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
-    background: #0b1020;
+    background: var(--bg-dark);
     color: #e2e8f0;
     position: relative;
     padding: 1rem 1.5rem;
@@ -23,19 +23,26 @@
     gap: 0.75rem;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links button.footer-link-btn {
     width: 36px;
     height: 36px;
-    border-radius: 0.75rem;
+    border-radius: var(--radius-md);
     display: grid;
     place-items: center;
-    background: rgba(37, 99, 235, 0.12);
+    background: var(--primary-150);
     color: #93c5fd;
     text-decoration: none;
     transition: transform 150ms ease, background 150ms ease;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-links button.footer-link-btn:hover {
     transform: translateY(-2px);
     background: rgba(37, 99, 235, 0.25);
+}
+
+.footer-links button.footer-link-btn {
+    border: none;
+    cursor: pointer;
 }

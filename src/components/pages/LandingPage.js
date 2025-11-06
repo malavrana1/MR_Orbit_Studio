@@ -2,15 +2,18 @@ import React, { useMemo, useState } from 'react'
 import Typed from 'react-typed'
 import { Container, Row, Col, Button, Card, Badge } from 'react-bootstrap'
 import {
-  FaGithub,
-  FaLinkedin,
   FaRegLightbulb,
   FaEnvelope,
+  FaPhone,
+  FaGithub,
+  FaLinkedin,
+  FaLayerGroup,
+  FaUniversalAccess,
+  FaCogs,
   FaDownload,
   FaCode,
   FaChevronDown,
   FaGraduationCap,
-  FaExternalLinkAlt,
 } from 'react-icons/fa'
 import '../../App.css'
 import '../../css/LandingPage.css'
@@ -24,6 +27,7 @@ import resumePdf from '../../assets/pdf/Malav_Rana_Frontend_Developer.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
 import { getSiteIcon } from '../../utils/siteIcons'
+import ContactModal from '../ContactModal'
 
 export default function LandingPage() {
   const profile = getProfile()
@@ -50,6 +54,7 @@ export default function LandingPage() {
 
   const toolkitDescriptions = resume.skillDescriptions || {}
   const [expandedExperience, setExpandedExperience] = useState('0')
+  const [showContactModal, setShowContactModal] = useState(false)
 
   const siteBuildHighlights = siteInfo.buildHighlights || []
   const siteBuildStack = siteInfo.buildStack || []
@@ -71,9 +76,6 @@ export default function LandingPage() {
         <Container className="position-relative">
           <Row className="align-items-center gy-4">
             <Col lg={7}>
-              <Badge pill bg="light" text="dark" className="hero-badge mb-3">
-                {profile.headline}
-              </Badge>
               <h1 className="hero-title mb-3">
                 Hi, I&apos;m {profile.name}.
                 <br />
@@ -86,7 +88,10 @@ export default function LandingPage() {
                   />
                 </span>
               </h1>
-              <p className="lead text-light mb-4">{resume.summary}</p>
+              <p className="lead text-light mb-4">
+                {profile.summary?.[0] ||
+                  "Frontend engineer with 4+ years' experience building responsive apps with React, Angular, Vue, and Next.js."}
+              </p>
               {/* hero buttons removed as per request */}
             </Col>
             <Col lg={5}>
@@ -134,22 +139,6 @@ export default function LandingPage() {
                       ))}
                     </ul>
                   </div>
-                  <div className="landing-social mt-4 d-flex gap-3">
-                    <a
-                      href={profile.social.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaGithub />
-                    </a>
-                    <a
-                      href={profile.social.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaLinkedin />
-                    </a>
-                  </div>
                 </Card.Body>
               </Card>
             </Col>
@@ -162,9 +151,29 @@ export default function LandingPage() {
           <Card className="summary-card border-0 shadow-sm">
             <Card.Body>
               <div className="summary-header">
-                <h2>{profile.headline}</h2>
+                <Badge pill bg="primary" className="summary-badge mb-2">
+                  {profile.headline}
+                </Badge>
               </div>
-              <p className="summary-text">{resume.summary}</p>
+              <ul className="summary-bullets">
+                {(() => {
+                  const items = (profile.expertise || []).slice(0, 3)
+                  const iconMap = {
+                    'Front-End Platforms': FaLayerGroup,
+                    'Design Systems & UX': FaUniversalAccess,
+                    'Delivery & Tooling': FaCogs,
+                  }
+                  return items.map((item) => {
+                    const Icon = iconMap[item.label] || FaLayerGroup
+                    return (
+                      <li key={item.label} className="summary-bullet-item">
+                        <Icon className="summary-bullet-icon" />
+                        <span>{item.label}</span>
+                      </li>
+                    )
+                  })
+                })()}
+              </ul>
               <div className="summary-stats">
                 {summaryStats.map((stat) => (
                   <div key={stat.label} className="summary-stat">
@@ -173,44 +182,66 @@ export default function LandingPage() {
                   </div>
                 ))}
               </div>
-              <div className="summary-meta">
-                <a href={`mailto:${profile.contact.email}`}>
-                  {profile.contact.email}
-                </a>
-                <a href={`tel:${profile.contact.phone.replace(/[^0-9]/g, '')}`}>
-                  {profile.contact.phone}
-                </a>
-                <a
-                  href={profile.social.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </div>
+
               <div className="summary-actions">
-                <Button
-                  as="a"
-                  href={resumePdf}
-                  download
-                  variant="primary"
-                  className="summary-btn"
-                  aria-label="Download résumé PDF"
-                >
-                  <FaDownload className="me-2" />{' '}
-                  {sectionsUI.saveResume || 'Save résumé'}
-                </Button>
-                <Button
-                  as="a"
-                  href={profile.social.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="outline-primary"
-                  className="summary-btn"
-                  aria-label="Connect on LinkedIn"
-                >
-                  <FaLinkedin className="me-2" /> Connect on LinkedIn
-                </Button>
+                <div className="summary-inline-links d-inline-flex flex-wrap align-items-center">
+                  <a
+                    href={resumePdf}
+                    download
+                    aria-label="Download resume PDF"
+                    className="summary-inline-link"
+                  >
+                    <FaDownload className="summary-inline-link__icon" />
+                    <span>{sectionsUI.saveResume || 'Save résumé'}</span>
+                  </a>
+                  <span className="summary-inline-sep">·</span>
+                  <button
+                    type="button"
+                    onClick={() => setShowContactModal(true)}
+                    aria-label={`Email ${profile.name}`}
+                    className="summary-inline-link"
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <FaEnvelope className="summary-inline-link__icon" />
+                    <span>Email</span>
+                  </button>
+                  <span className="summary-inline-sep">·</span>
+                  <a
+                    href={`tel:${profile.contact.phone.replace(/[^0-9]/g, '')}`}
+                    aria-label={`Call ${profile.name}`}
+                    className="summary-inline-link"
+                  >
+                    <FaPhone className="summary-inline-link__icon" />
+                    <span>Phone</span>
+                  </a>
+                  <span className="summary-inline-sep">·</span>
+                  <a
+                    href={profile.social.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile"
+                    className="summary-inline-link"
+                  >
+                    <FaLinkedin className="summary-inline-link__icon" />
+                    <span>LinkedIn</span>
+                  </a>
+                  <span className="summary-inline-sep">·</span>
+                  <a
+                    href={profile.social.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub profile"
+                    className="summary-inline-link"
+                  >
+                    <FaGithub className="summary-inline-link__icon" />
+                    <span>GitHub</span>
+                  </a>
+                </div>
               </div>
             </Card.Body>
           </Card>
@@ -545,42 +576,6 @@ export default function LandingPage() {
                       <FaEnvelope className="me-2" />{' '}
                       {sectionsUI.emailButton || 'Email Malav'}
                     </Button>
-                    <Button
-                      as="a"
-                      href={profile.social.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      variant="outline-primary"
-                      className="summary-btn w-100 mb-2"
-                      aria-label="Connect on LinkedIn"
-                    >
-                      <FaLinkedin className="me-2" />{' '}
-                      {sectionsUI.connectLinkedIn || 'Connect on LinkedIn'}
-                    </Button>
-                    <Button
-                      as="a"
-                      href={profile.social.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      variant="outline-primary"
-                      className="summary-btn w-100 mb-2"
-                      aria-label="Explore GitHub"
-                    >
-                      <FaGithub className="me-2" />{' '}
-                      {sectionsUI.exploreGitHub || 'Explore GitHub'}
-                    </Button>
-                    <Button
-                      as="a"
-                      href={profile.contact.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      variant="outline-primary"
-                      className="summary-btn w-100"
-                      aria-label="View portfolio website"
-                    >
-                      <FaExternalLinkAlt className="me-2" />{' '}
-                      {sectionsUI.viewPortfolio || 'View portfolio'}
-                    </Button>
                   </div>
                 </Card.Body>
               </Card>
@@ -625,7 +620,11 @@ export default function LandingPage() {
         </Container>
       </section>
 
-      {/* contact CTA section removed as requested */}
+      <ContactModal
+        show={showContactModal}
+        onClose={() => setShowContactModal(false)}
+        toEmail="malavrana90@gmail.com"
+      />
     </div>
   )
 }

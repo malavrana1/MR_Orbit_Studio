@@ -1,10 +1,24 @@
 /***    Base / Typography     ***/
 :root {
+    /* Theme palette */
     --bg-dark: #0f172a;
     --bg-light: #f8fafc;
+    --surface: #ffffff;
+    --border: rgba(15, 23, 42, 0.08);
+    --shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+
     --text-dark: #0f172a;
     --text-muted: #64748b;
-    --brand: #2563eb;
+
+    --primary: #2563eb;
+    --primary-600: #1d4ed8;
+    --primary-100: rgba(37, 99, 235, 0.08);
+    --primary-150: rgba(37, 99, 235, 0.12);
+
+    /* Radii */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
 }
 
 * {

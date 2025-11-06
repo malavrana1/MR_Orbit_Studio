@@ -29,3 +29,8 @@ pnpm run build
 - `src/components/Header.js`
 - `src/components/pages/LandingPage.js`
 - `src/css/Header.css`, `src/css/LandingPage.css`
+
+### Contact
+- Email modal uses FormSubmit (no backend).
+- Change recipient in `src/components/Footer.js` → `ContactModal toEmail`.
+- First send triggers FormSubmit verification; then emails deliver normally.

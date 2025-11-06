@@ -76,6 +76,51 @@
     box-shadow: 0 14px 32px rgba(15, 23, 42, 0.28);
 }
 
+/* Inline links next to Save resume */
+.summary-inline-links {
+    gap: 0.5rem;
+}
+
+.summary-inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.summary-inline-link:hover,
+.summary-inline-link:focus-visible {
+    color: #1d4ed8;
+    background-color: rgba(37, 99, 235, 0.08);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.summary-inline-link:active {
+    transform: translateY(0);
+}
+
+.summary-inline-link__icon {
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.summary-inline-link:hover .summary-inline-link__icon,
+.summary-inline-link:focus-visible .summary-inline-link__icon {
+    transform: scale(1.15) rotate(5deg);
+    color: #1d4ed8;
+}
+
+.summary-inline-sep {
+    color: #94a3b8;
+}
+
 @media (max-width: 575px) {
     .hero-buttons {
         flex-wrap: wrap;
@@ -131,21 +176,69 @@
     margin-bottom: 1rem;
 }
 
-.summary-header h2 {
+.summary-header h2.summary-title {
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     color: #0f172a;
     margin-top: 0.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: transform 0.2s ease;
+}
+
+.summary-header h2.summary-title:hover {
+    transform: translateY(-2px);
 }
 
 .summary-badge {
     width: fit-content;
     letter-spacing: 0.08em;
+    font-size: 1.05rem;
+    padding: 0.35rem 0.6rem;
 }
 
 .summary-text {
     font-size: 1.05rem;
     color: #475569;
     margin-bottom: 1.5rem;
+}
+
+.summary-bullets {
+    margin: 0 0 1.25rem;
+    padding-left: 1.25rem;
+    color: #475569;
+}
+
+.summary-bullets li {
+    margin-bottom: 0.25rem;
+}
+
+.summary-bullet-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease;
+    padding: 0.25rem 0;
+    border-radius: 0.25rem;
+}
+
+.summary-bullet-item:hover {
+    transform: translateX(4px);
+    background-color: rgba(37, 99, 235, 0.05);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.summary-bullet-icon {
+    color: #2563eb;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.summary-bullet-item:hover .summary-bullet-icon {
+    transform: scale(1.2) rotate(-5deg);
+    color: #1d4ed8;
 }
 
 .summary-stats {

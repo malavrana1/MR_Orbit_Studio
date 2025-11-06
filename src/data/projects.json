@@ -1,7 +1,7 @@
 [
   {
     "title": "MR Orbit Studio",
-    "description": "Single-page React portfolio orbiting the things I love to build—data-driven sections, résumé download, and interactive toolkit filters.",
+    "description": "Single-page React portfolio orbiting the things I love to build—data-driven sections, resume download, and interactive toolkit filters.",
     "tech": ["React", "React-Bootstrap", "PNPM"],
     "link": "https://github.com/malavrana1/React_Login_Page",
     "cta": "View source"
