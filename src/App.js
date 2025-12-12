@@ -1,8 +1,8 @@
 import React from 'react'
 
 import LandingPage from './components/pages/LandingPage'
-import Footer from './components/layout/Footer'
-import Header from './components/layout/Header'
+import Footer from './components/Footer'
+import Header from './components/Header'
 
 import './App.css'
 
