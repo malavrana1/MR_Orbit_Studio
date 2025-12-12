@@ -11,7 +11,7 @@
     background-position: center;
     color: #f8fafc;
     padding: 7rem 0 5rem;
-    background-color: #0f172a; /* fallback if image fails */
+    background-color: #0f172a;
     margin-top: 0;
 }
 
@@ -126,7 +126,6 @@
     box-shadow: 0 14px 32px rgba(15, 23, 42, 0.28);
 }
 
-/* Inline links next to Save resume */
 .summary-inline-links {
     gap: 0.5rem;
 }
@@ -481,7 +480,6 @@
     gap: 0.65rem;
 }
 
-/* Improve spacing and alignment for recent teams rows */
 .hero-experience-list li {
     display: flex;
     align-items: center;
