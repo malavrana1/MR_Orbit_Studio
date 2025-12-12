@@ -124,7 +124,6 @@
     color: transparent;
 }
 
-/* Pill-style links */
 .nav-link {
     background: rgba(15, 23, 42, 0.03);
 }
@@ -140,7 +139,7 @@
     height: 1px; width: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
+    white-space: nowrap;
 }
 
 .nav-label {
@@ -201,7 +200,6 @@
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Mobile Styles */
 @media (max-width: 991px) {
     .main-nav {
         position: relative;
@@ -273,13 +271,11 @@
     }
 }
 
-/* Smooth scroll behavior */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
 
-/* Adjust body padding to account for fixed header */
 body {
     padding-top: 0;
 }

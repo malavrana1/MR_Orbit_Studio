@@ -100,7 +100,6 @@ export default function LandingPage() {
                 {profile.summary?.[0] ||
                   "Frontend engineer with 5+ years' experience building responsive apps with React, Angular, Vue, and Next.js."}
               </p>
-              {/* hero buttons removed as per request */}
             </Col>
             <Col lg={5}>
               <Card className="hero-skill-card border-0 shadow-lg">
@@ -228,10 +227,10 @@ export default function LandingPage() {
                     <span>Phone</span>
                   </a>
                   <span className="summary-inline-sep">·</span>
-                  <a
-                    href={profile.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <a
+                  href={profile.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                     aria-label="LinkedIn profile"
                     className="summary-inline-link"
                   >
@@ -241,11 +240,11 @@ export default function LandingPage() {
                   <span className="summary-inline-sep">·</span>
                   <a
                     href={profile.social.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                     aria-label="GitHub profile"
                     className="summary-inline-link"
-                  >
+                >
                     <FaGithub className="summary-inline-link__icon" />
                     <span>GitHub</span>
                   </a>

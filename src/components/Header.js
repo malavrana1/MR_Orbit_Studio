@@ -35,19 +35,14 @@ const Logo = ({ className = '', size = 28 }) => (
         <stop offset="100%" stopColor="#cbd5e1" />
       </linearGradient>
     </defs>
-    {/* Stylized M */}
     <path d="M12 44 L12 22 L20 34 L28 22 L28 44" className="logo-m" />
-    {/* Stylized R */}
     <path
       d="M36 22 L50 22 C56 22 56 32 50 32 L36 32 L50 44"
       className="logo-r"
     />
-    {/* Core planet */}
     <circle cx="32" cy="32" r="6.5" className="logo-core" />
-    {/* Orbit ring */}
     <path d="M8 30 C20 20 44 20 56 30" className="logo-orbit" />
     <path d="M8 34 C20 44 44 44 56 34" className="logo-orbit" />
-    {/* Star */}
     <path
       d="M48 18 l2 4 l4 2 l-4 2 l-2 4 l-2 -4 l-4 -2 l4 -2 z"
       className="logo-star"
@@ -92,7 +87,6 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
 
-      // Update active section based on scroll position
       const sections = nav.links.map((link) => link.href.substring(1))
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section)
