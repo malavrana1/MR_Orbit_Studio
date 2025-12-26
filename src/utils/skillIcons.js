@@ -33,7 +33,7 @@ import {
   SiJenkins,
   SiGraphql,
   SiPnpm,
-  SiAmazonaws,
+  SiAmazonwebservices,
 } from 'react-icons/si'
 
 const skillIconMap = {
@@ -69,7 +69,7 @@ const skillIconMap = {
   'Agile/Scrum': FaClipboardCheck,
   'CI/CD': FaCloudUploadAlt,
   GitHub: FaGithub,
-  CodeCommit: SiAmazonaws,
+  CodeCommit: SiAmazonwebservices,
 }
 
 export const getSkillIcon = (skill) => skillIconMap[skill] || FaRegLightbulb
