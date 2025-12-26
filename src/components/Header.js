@@ -90,16 +90,6 @@ export default function Header() {
   })
 
   useEffect(() => {
-    // Apply dark mode on initial load
-    if (isDarkMode) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-      document.documentElement.removeAttribute('data-theme')
-    }
-  }, [])
-
-  useEffect(() => {
-    // Update dark mode when state changes
     if (isDarkMode) {
       document.documentElement.setAttribute('data-theme', 'dark')
     } else {
