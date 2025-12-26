@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import Typed from 'react-typed'
-import { Container, Row, Col, Button, Card, Badge } from 'react-bootstrap'
+import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 import {
   FaRegLightbulb,
   FaEnvelope,
