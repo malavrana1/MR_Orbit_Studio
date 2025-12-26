@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import Typed from 'react-typed'
+import { ReactTyped } from 'react-typed'
 import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 import {
   FaRegLightbulb,
@@ -87,7 +87,7 @@ export default function LandingPage() {
                   <br />
                   <span className="hero-typed-wrapper">
                     <span className="hero-typed">
-                      <Typed
+                      <ReactTyped
                         strings={profile.heroHighlights || []}
                         typeSpeed={typedConfig.typeSpeed}
                         backSpeed={typedConfig.backSpeed}
