@@ -11,6 +11,8 @@ import {
   FaInfoCircle,
   FaHandshake,
   FaEnvelope,
+  FaMoon,
+  FaSun,
 } from 'react-icons/fa'
 import '../css/Header.css'
 
@@ -82,6 +84,33 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('darkMode')
+    return saved ? JSON.parse(saved) : false
+  })
+
+  useEffect(() => {
+    // Apply dark mode on initial load
+    if (isDarkMode) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+    }
+  }, [])
+
+  useEffect(() => {
+    // Update dark mode when state changes
+    if (isDarkMode) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+    }
+    localStorage.setItem('darkMode', JSON.stringify(isDarkMode))
+  }, [isDarkMode])
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -164,6 +193,19 @@ export default function Header() {
                 </li>
               )
             })}
+            <li className="theme-toggle-wrapper">
+              <button
+                className="theme-toggle nav-link"
+                onClick={toggleDarkMode}
+                aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+                title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+              >
+                {isDarkMode ? <FaSun className="nav-icon" /> : <FaMoon className="nav-icon" />}
+                <span className="nav-label">
+                  {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+                </span>
+              </button>
+            </li>
           </ul>
         </nav>
       </Container>
