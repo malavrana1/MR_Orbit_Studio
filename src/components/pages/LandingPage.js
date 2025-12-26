@@ -14,10 +14,11 @@ import {
   FaCode,
   FaChevronDown,
   FaGraduationCap,
+  FaAward,
 } from 'react-icons/fa'
 import '../../App.css'
 import '../../css/LandingPage.css'
-import BackgroundImage from '../../assets/images/bg2.png'
+import '../../css/LandingPage.dark.css'
 import ProfileImage from '../../assets/images/Profile.jpg'
 import { getProfile } from '../../utils/profile'
 import { getResume, getSkillCategories } from '../../utils/resume'
@@ -66,11 +67,9 @@ export default function LandingPage() {
 
   return (
     <div className="landing-page" id="home">
-      <header
-        className="landing-hero d-flex align-items-center"
-        style={{ backgroundImage: `url(${BackgroundImage})` }}
-      >
+      <header className="landing-hero d-flex align-items-center">
         <div className="landing-hero__overlay" />
+        <div className="landing-hero__pattern" />
         <Container className="position-relative">
           <Row className="align-items-center gy-4">
             <Col lg={7}>
@@ -81,22 +80,36 @@ export default function LandingPage() {
                   className="hero-profile-image"
                 />
               </div>
-              <h1 className="hero-title mb-3">
-                Hi, I&apos;m {profile.name}.
-                <br />
-                <span className="hero-typed">
-                  <Typed
-                    strings={profile.heroHighlights || []}
-                    typeSpeed={typedConfig.typeSpeed}
-                    backSpeed={typedConfig.backSpeed}
-                    loop
-                  />
-                </span>
-              </h1>
-              <p className="lead text-light mb-4">
-                {profile.summary?.[0] ||
-                  "Frontend engineer with 5+ years' experience building responsive apps with React, Angular, Vue, and Next.js."}
-              </p>
+              <div className="hero-content-wrapper">
+                <h1 className="hero-title mb-3">
+                  <span className="hero-greeting">Hi, I&apos;m</span>
+                  <span className="hero-name">{profile.name}.</span>
+                  <br />
+                  <span className="hero-typed-wrapper">
+                    <span className="hero-typed">
+                      <Typed
+                        strings={profile.heroHighlights || []}
+                        typeSpeed={typedConfig.typeSpeed}
+                        backSpeed={typedConfig.backSpeed}
+                        loop
+                      />
+                    </span>
+                  </span>
+                </h1>
+                <div className="hero-tech-stack mb-3">
+                  <span className="hero-tech-badge">React</span>
+                  <span className="hero-tech-separator">•</span>
+                  <span className="hero-tech-badge">Next.js</span>
+                  <span className="hero-tech-separator">•</span>
+                  <span className="hero-tech-badge">Angular</span>
+                  <span className="hero-tech-separator">•</span>
+                  <span className="hero-tech-badge">Vue</span>
+                </div>
+                <p className="hero-description lead mb-4">
+                  {profile.summary?.[0] ||
+                    "Software engineer with 5+ years building responsive apps using React, Angular, Vue, and Next.js. I've worked with streaming platforms, architecture firms, healthcare companies, and nonprofits."}
+                </p>
+              </div>
             </Col>
             <Col lg={5}>
               <Card className="hero-skill-card border-0 shadow-lg">
@@ -154,6 +167,14 @@ export default function LandingPage() {
         <Container>
           <Card className="summary-card border-0 shadow-sm">
             <Card.Body>
+              <div className="summary-header text-center mb-4">
+                <h2 className="summary-title">
+                  {sectionsUI.professionalSummary || 'Professional Overview'}
+                </h2>
+                <p className="summary-subtitle text-muted">
+                  Building modern web experiences with passion and precision
+                </p>
+              </div>
               <ul className="summary-bullets">
                 {(() => {
                   const items = (profile.expertise || []).slice(0, 3)
@@ -199,12 +220,6 @@ export default function LandingPage() {
                     onClick={() => setShowContactModal(true)}
                     aria-label={`Email ${profile.name}`}
                     className="summary-inline-link"
-                    style={{
-                      background: 'none',
-                      border: 'none',
-                      padding: 0,
-                      cursor: 'pointer',
-                    }}
                   >
                     <FaEnvelope className="summary-inline-link__icon" />
                     <span>Email</span>
@@ -244,6 +259,110 @@ export default function LandingPage() {
               </div>
             </Card.Body>
           </Card>
+        </Container>
+      </section>
+
+      <section id="experience" className="landing-experience py-5">
+        <Container>
+          <div className="experience-heading text-center">
+            <h2>{sectionsUI.experienceTitle || 'Recent roles & impact'}</h2>
+            <p className="text-muted">
+              {sectionsUI.experienceDescription ||
+                'A snapshot of how I help teams ship reliable, performant products while mentoring teammates and balancing life on the tennis court.'}
+            </p>
+          </div>
+          <div className="experience-accordion">
+            {resume.experience.map((role, index) => {
+              const key = String(index)
+              const isOpen = expandedExperience === key
+
+              return (
+                <div
+                  className={`experience-item ${isOpen ? 'experience-item--open' : ''}`}
+                  key={`${role.company}-${role.role}`}
+                >
+                  <button
+                    type="button"
+                    className="experience-toggle"
+                    onClick={() => setExpandedExperience(isOpen ? '' : key)}
+                    aria-expanded={isOpen}
+                    aria-controls={`experience-panel-${key}`}
+                  >
+                    <div className="experience-header">
+                      <div className="experience-header__title">
+                        <span className="experience-role">{role.role}</span>
+                        <span className="experience-company">
+                          {role.company}
+                        </span>
+                      </div>
+                      <div className="experience-meta">
+                        <span className="experience-pill">
+                          {role.location}
+                        </span>
+                        <span className="experience-pill">
+                          {role.period}
+                        </span>
+                      </div>
+                    </div>
+                    <FaChevronDown className="experience-icon" />
+                  </button>
+                  <div
+                    id={`experience-panel-${key}`}
+                    className={`experience-body ${isOpen ? 'experience-body--open' : ''}`}
+                  >
+                    <ul className="experience-list">
+                      {role.highlights.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </Container>
+      </section>
+
+      <section id="projects" className="landing-projects py-5">
+        <Container>
+          <Row className="justify-content-center mb-4">
+            <Col lg={8}>
+              <div className="projects-heading text-center">
+                <h2 className="section-title">
+                  {sectionsUI.featuredProject || 'Featured Work'}
+                </h2>
+              </div>
+            </Col>
+          </Row>
+          <Row className="g-4 justify-content-center">
+            {featuredProjects.map((p) => (
+              <Col md={4} key={p.title}>
+                <Card className="project-card h-100 border-0 shadow-sm">
+                  <Card.Body>
+                    <h5 className="mb-2">{p.title}</h5>
+                    <p className="text-muted mb-3">{p.description}</p>
+                    <div className="project-tech">
+                      {p.tech.map((t) => (
+                        <span key={t} className="project-chip">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </Card.Body>
+                  <Card.Footer className="bg-transparent border-0">
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      {p.cta}
+                    </a>
+                  </Card.Footer>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </Container>
       </section>
 
@@ -328,154 +447,82 @@ export default function LandingPage() {
         </Container>
       </section>
 
-      <section id="experience" className="landing-experience py-5">
+      <section id="certifications" className="landing-certifications py-4">
         <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <div className="experience-heading text-center">
-                <h2>{sectionsUI.experienceTitle || 'Recent roles & impact'}</h2>
-                <p className="text-muted">
-                  {sectionsUI.experienceDescription ||
-                    'A snapshot of how I help teams ship reliable, performant products while mentoring teammates and balancing life on the tennis court.'}
-                </p>
-              </div>
-              <div className="experience-accordion">
-                {resume.experience.map((role, index) => {
-                  const key = String(index)
-                  const isOpen = expandedExperience === key
-
-                  return (
-                    <div
-                      className={`experience-item ${isOpen ? 'experience-item--open' : ''}`}
-                      key={`${role.company}-${role.role}`}
-                    >
-                      <button
-                        type="button"
-                        className="experience-toggle"
-                        onClick={() => setExpandedExperience(isOpen ? '' : key)}
-                        aria-expanded={isOpen}
-                        aria-controls={`experience-panel-${key}`}
-                      >
-                        <div className="experience-header">
-                          <div className="experience-header__title">
-                            <span className="experience-role">{role.role}</span>
-                            <span className="experience-company">
-                              {role.company}
-                            </span>
-                          </div>
-                          <div className="experience-meta">
-                            <span className="experience-pill">
-                              {role.location}
-                            </span>
-                            <span className="experience-pill">
-                              {role.period}
-                            </span>
-                          </div>
+          <div className="certifications-heading text-center mb-4">
+            <h2>{sectionsUI.certificationsTitle || 'Certifications & Skills'}</h2>
+          </div>
+          <Row className="g-4 certifications-list">
+            {resume.certifications &&
+              resume.certifications.map((cert, index) => (
+                <Col md={6} lg={4} key={index}>
+                  <Card className="certification-card border-0 shadow-sm h-100">
+                    <Card.Body className="p-3">
+                      <div className="certification-item">
+                        <div className="certification-icon">
+                          <FaAward />
                         </div>
-                        <FaChevronDown className="experience-icon" />
-                      </button>
-                      <div
-                        id={`experience-panel-${key}`}
-                        className={`experience-body ${isOpen ? 'experience-body--open' : ''}`}
-                      >
-                        <ul className="experience-list">
-                          {role.highlights.map((item) => (
-                            <li key={item}>{item}</li>
-                          ))}
-                        </ul>
+                        <div className="certification-content">
+                          <h6 className="certification-name mb-1">{cert.name}</h6>
+                          <p className="certification-issuer mb-2 small text-muted">
+                            {cert.issuer}
+                          </p>
+                          {cert.link && (
+                            <a
+                              href={cert.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="certification-link small"
+                            >
+                              View certificate →
+                            </a>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  )
-                })}
-              </div>
-            </Col>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
           </Row>
         </Container>
       </section>
 
       <section id="education" className="landing-education py-5">
         <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <div className="education-heading text-center">
-                <h2>{sectionsUI.educationTitle || 'Academic background'}</h2>
-                <p className="text-muted">
-                  {sectionsUI.educationDescription ||
-                    'Foundational knowledge and continuous learning that shapes my approach to building great products.'}
-                </p>
-              </div>
-              <div className="education-list">
-                {resume.education &&
-                  resume.education.map((edu, index) => (
-                    <Card
-                      key={index}
-                      className="education-card border-0 shadow-sm mb-3"
-                    >
-                      <Card.Body>
-                        <div className="education-item">
-                          <div className="education-icon">
-                            <FaGraduationCap />
-                          </div>
-                          <div className="education-content">
-                            <h5 className="education-degree">{edu.degree}</h5>
-                            <p className="education-institution mb-1">
-                              {edu.institution}
-                              {edu.location && ` · ${edu.location}`}
-                            </p>
-                            <span className="education-period">
-                              {edu.period}
-                            </span>
-                          </div>
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  ))}
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      <section id="projects" className="landing-projects py-5">
-        <Container>
-          <Row className="justify-content-center mb-4">
-            <Col lg={8}>
-              <div className="projects-heading text-center">
-                <h2 className="section-title">
-                  {sectionsUI.featuredProject || 'Featured Work'}
-                </h2>
-              </div>
-            </Col>
-          </Row>
-          <Row className="g-4 justify-content-center">
-            {featuredProjects.map((p) => (
-              <Col md={4} key={p.title}>
-                <Card className="project-card h-100 border-0 shadow-sm">
+          <div className="education-heading text-center">
+            <h2>{sectionsUI.educationTitle || 'Academic background'}</h2>
+            <p className="text-muted">
+              {sectionsUI.educationDescription ||
+                'Foundational knowledge and continuous learning that shapes my approach to building great products.'}
+            </p>
+          </div>
+          <div className="education-list">
+            {resume.education &&
+              resume.education.map((edu, index) => (
+                <Card
+                  key={index}
+                  className="education-card border-0 shadow-sm mb-3"
+                >
                   <Card.Body>
-                    <h5 className="mb-2">{p.title}</h5>
-                    <p className="text-muted mb-3">{p.description}</p>
-                    <div className="project-tech">
-                      {p.tech.map((t) => (
-                        <span key={t} className="project-chip">
-                          {t}
+                    <div className="education-item">
+                      <div className="education-icon">
+                        <FaGraduationCap />
+                      </div>
+                      <div className="education-content">
+                        <h5 className="education-degree">{edu.degree}</h5>
+                        <p className="education-institution mb-1">
+                          {edu.institution}
+                          {edu.location && ` · ${edu.location}`}
+                        </p>
+                        <span className="education-period">
+                          {edu.period}
                         </span>
-                      ))}
+                      </div>
                     </div>
                   </Card.Body>
-                  <Card.Footer className="bg-transparent border-0">
-                    <a
-                      href={p.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      {p.cta}
-                    </a>
-                  </Card.Footer>
                 </Card>
-              </Col>
-            ))}
-          </Row>
+              ))}
+          </div>
         </Container>
       </section>
 
@@ -495,13 +542,33 @@ export default function LandingPage() {
                   <div className="contact-links">
                     <Button
                       type="button"
-                      onClick={() => setShowContactModal(true)}
+                      onClick={() => {}}
                       variant="primary"
-                      className="summary-btn w-100 mb-2"
-                      aria-label={`Email ${profile.name}`}
+                      className="summary-btn w-100 mb-2 d-flex align-items-center justify-content-center"
+                      aria-label="Get in Touch - Coming Soon"
+                      disabled
+                      style={{ opacity: 0.8, cursor: 'not-allowed' }}
                     >
-                      <FaEnvelope className="me-2" />{' '}
-                      {sectionsUI.emailButton || 'Email Malav'}
+                      <FaEnvelope className="me-2" />
+                      <span>{sectionsUI.emailButton || 'Get in Touch'}</span>
+                      <span 
+                        className="ms-2 coming-soon-badge" 
+                        style={{ 
+                          fontSize: '0.65rem', 
+                          fontWeight: '600',
+                          padding: '0.2rem 0.5rem',
+                          borderRadius: '999px',
+                          background: 'rgba(255, 255, 255, 0.25)',
+                          backdropFilter: 'blur(10px)',
+                          border: '1px solid rgba(255, 255, 255, 0.3)',
+                          letterSpacing: '0.5px',
+                          lineHeight: '1',
+                          display: 'inline-flex',
+                          alignItems: 'center'
+                        }}
+                      >
+                        Coming Soon
+                      </span>
                     </Button>
                   </div>
                 </Card.Body>
