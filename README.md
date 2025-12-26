@@ -30,7 +30,7 @@ pnpm run build
 ```bash
 pnpm run deploy
 ```
-Deploys to Firebase Hosting at https://mrorbit.web.app
+Deploys to Firebase Hosting at https://mr-orbit-studio.web.app
 
 ### Customize
 - Brand and nav: `src/data/site.json`
