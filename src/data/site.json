@@ -41,10 +41,11 @@
   "nav": {
     "links": [
       { "label": "Summary", "href": "#summary" },
-      { "label": "Toolkit", "href": "#toolkit" },
       { "label": "Experience", "href": "#experience" },
-      { "label": "Education", "href": "#education" },
-      { "label": "Projects", "href": "#projects" }
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Toolkit", "href": "#toolkit" },
+      { "label": "Certifications", "href": "#certifications" },
+      { "label": "Education", "href": "#education" }
     ]
   },
   "ui": {
@@ -75,6 +76,9 @@
       "education": "Education",
       "educationTitle": "My education",
       "educationDescription": "The learning and experience that helps me build better products.",
+      "certifications": "Certifications",
+      "certificationsTitle": "Certifications & Skills",
+      "certificationsDescription": "Industry-recognized certifications that validate my technical expertise.",
       "featuredProject": "Featured Project",
       "portfolioBuild": "About this project",
       "buildTitle": "Inside MR_Orbit_Studio",
@@ -84,7 +88,7 @@
       "saveResume": "Save resume",
       "letsCollaborate": "Say hello",
       "letsCollaborateDescription": "I'm based in New Jersey. If you want to chat about front-end work, side projects, or ideas, feel free to reach out.",
-      "emailButton": "Email Malav",
+      "emailButton": "Get in Touch",
       "connectLinkedIn": "Connect on LinkedIn",
       "exploreGitHub": "Explore GitHub",
       "viewPortfolio": "View portfolio",
