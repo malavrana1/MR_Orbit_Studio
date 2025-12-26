@@ -430,6 +430,59 @@ button.summary-inline-link {
     margin: 0 0.25rem;
 }
 
+.summary-inline-link--tooltip {
+    position: relative;
+}
+
+.summary-inline-link--tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: #f1f5f9;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(59, 130, 246, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.summary-inline-link--tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #1e293b;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1001;
+}
+
+.summary-inline-link--tooltip:hover::after,
+.summary-inline-link--tooltip:focus-visible::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.summary-inline-link--tooltip:hover::before,
+.summary-inline-link--tooltip:focus-visible::before {
+    opacity: 1;
+}
+
 .landing-summary {
     background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
     padding: 5rem 0;
@@ -1672,27 +1725,59 @@ button.summary-inline-link {
 
 .project-link {
     color: #667eea;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: all 200ms ease;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
-.project-link:hover {
+.project-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transform: scaleX(0);
+    transition: transform 200ms ease;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
     color: #764ba2;
     text-decoration: none;
-    transform: translateX(4px);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+    border-color: rgba(102, 126, 234, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
 }
 
-.project-link::after {
-    content: '→';
-    transition: transform 200ms ease;
+.project-link:hover::before,
+.project-link:focus-visible::before {
+    transform: scaleX(1);
 }
 
-.project-link:hover::after {
-    transform: translateX(4px);
+.project-link__icon {
+    font-size: 0.875rem;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.project-link:hover .project-link__icon,
+.project-link:focus-visible .project-link__icon {
+    transform: translateX(4px) scale(1.1);
+    color: #764ba2;
 }
 
 .landing-personal {
