@@ -1,8 +1,9 @@
 {
-  "name": "react-login-page",
+  "name": "mr-orbit-studio",
   "version": "0.1.0",
   "private": true,
   "homepage": "/",
+  "copyright": "Copyright © 2024 MR Orbit Studio. All rights reserved.",
   "dependencies": {
     "bootstrap": "^4.6.2",
     "react": "^16.8.6",
