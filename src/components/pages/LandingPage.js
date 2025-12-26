@@ -154,11 +154,6 @@ export default function LandingPage() {
         <Container>
           <Card className="summary-card border-0 shadow-sm">
             <Card.Body>
-              <div className="summary-header">
-                <Badge pill bg="primary" className="summary-badge mb-2">
-                  {profile.headline}
-                </Badge>
-              </div>
               <ul className="summary-bullets">
                 {(() => {
                   const items = (profile.expertise || []).slice(0, 3)
@@ -257,9 +252,6 @@ export default function LandingPage() {
           <Row className="gy-4 align-items-stretch">
             <Col lg={4}>
               <div className="toolkit-heading">
-                <Badge pill bg="light" text="dark" className="toolkit-badge">
-                  {sectionsUI.toolbox || 'Toolbox'}
-                </Badge>
                 <h2 className="section-title">
                   {sectionsUI.toolkitTitle || 'Technical toolkit'}
                 </h2>
@@ -341,9 +333,6 @@ export default function LandingPage() {
           <Row className="justify-content-center">
             <Col lg={8}>
               <div className="experience-heading text-center">
-                <Badge pill bg="light" text="dark" className="summary-badge">
-                  {sectionsUI.experience || 'Experience'}
-                </Badge>
                 <h2>{sectionsUI.experienceTitle || 'Recent roles & impact'}</h2>
                 <p className="text-muted">
                   {sectionsUI.experienceDescription ||
@@ -409,9 +398,6 @@ export default function LandingPage() {
           <Row className="justify-content-center">
             <Col lg={8}>
               <div className="education-heading text-center">
-                <Badge pill bg="light" text="dark" className="summary-badge">
-                  {sectionsUI.education || 'Education'}
-                </Badge>
                 <h2>{sectionsUI.educationTitle || 'Academic background'}</h2>
                 <p className="text-muted">
                   {sectionsUI.educationDescription ||
@@ -455,11 +441,8 @@ export default function LandingPage() {
           <Row className="justify-content-center mb-4">
             <Col lg={8}>
               <div className="projects-heading text-center">
-                <Badge pill bg="light" text="dark" className="summary-badge">
-                  {sectionsUI.projectsLabel || 'Projects'}
-                </Badge>
                 <h2 className="section-title">
-                  {sectionsUI.projectsLabel || 'Projects'}
+                  {sectionsUI.featuredProject || 'Featured Work'}
                 </h2>
               </div>
             </Col>
