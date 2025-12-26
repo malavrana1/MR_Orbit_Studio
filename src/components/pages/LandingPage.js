@@ -215,15 +215,14 @@ export default function LandingPage() {
                     <span>{sectionsUI.saveResume || 'Save résumé'}</span>
                   </a>
                   <span className="summary-inline-sep">·</span>
-                  <button
-                    type="button"
-                    onClick={() => setShowContactModal(true)}
+                  <a
+                    href={`mailto:${profile.contact.email}`}
                     aria-label={`Email ${profile.name}`}
                     className="summary-inline-link"
                   >
                     <FaEnvelope className="summary-inline-link__icon" />
                     <span>Email</span>
-                  </button>
+                  </a>
                   <span className="summary-inline-sep">·</span>
                   <a
                     href={`tel:${profile.contact.phone.replace(/[^0-9]/g, '')}`}
