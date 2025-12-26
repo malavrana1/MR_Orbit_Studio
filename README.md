@@ -11,7 +11,8 @@ A clean, single-page portfolio built with React and deployed on Firebase.
 - Responsive design with modern UI
 
 ### Tech
-- React 16, React-Bootstrap, React Icons, React Typed
+- React 19, React-Bootstrap 2, React Icons 5, React Typed 2
+- Bootstrap 5
 - Firebase Hosting
 
 ### Run
