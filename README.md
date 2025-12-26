@@ -4,7 +4,8 @@ A clean, single-page portfolio built with React and deployed on Firebase.
 
 ### Features
 - Sticky header with smooth scrolling
-- Sections: Summary, Toolkit, Experience, Education, Featured Project, About, Personal
+- Dark mode toggle with persistent theme preference
+- Sections: Summary, Experience, Projects, Toolkit, Certifications, Education, Connect
 - Content in JSON (no code needed for copy changes)
 - Interactive contact modal with email form
 - Responsive design with modern UI
@@ -39,7 +40,7 @@ Deploys to Firebase Hosting at https://mrorbit.web.app
 - `src/components/Footer.js`
 - `src/components/ContactModal.js`
 - `src/components/pages/LandingPage.js`
-- `src/css/Header.css`, `src/css/LandingPage.css`, `src/css/Footer.css`
+- `src/css/Header.css`, `src/css/LandingPage.css`, `src/css/LandingPage.dark.css`, `src/css/Footer.css`
 
 ### Contact
 - Email modal uses FormSubmit (no backend).
