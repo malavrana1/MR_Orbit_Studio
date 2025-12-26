@@ -65,7 +65,7 @@ export default function LandingPage() {
   const sectionsUI = ui.sections || {}
   const typedConfig = ui.typed || { typeSpeed: 45, backSpeed: 22 }
 
-  const featuredProjects = allProjects.slice(0, 1)
+  const featuredProjects = allProjects
 
   return (
     <div className="landing-page" id="home">
@@ -462,7 +462,7 @@ export default function LandingPage() {
                   {sectionsUI.projectsLabel || 'Projects'}
                 </Badge>
                 <h2 className="section-title">
-                  {sectionsUI.featuredProject || 'Featured Project'}
+                  {sectionsUI.projectsLabel || 'Projects'}
                 </h2>
               </div>
             </Col>
