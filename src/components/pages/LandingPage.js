@@ -27,7 +27,6 @@ import { getSkillIcon } from '../../utils/skillIcons'
 import resumePdf from '../../assets/pdf/Malav_Rana_Frontend_Developer.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
-import { getSiteIcon } from '../../utils/siteIcons'
 import ContactModal from '../ContactModal'
 
 export default function LandingPage() {
@@ -57,8 +56,6 @@ export default function LandingPage() {
   const [expandedExperience, setExpandedExperience] = useState('0')
   const [showContactModal, setShowContactModal] = useState(false)
 
-  const siteBuildHighlights = siteInfo.buildHighlights || []
-  const siteBuildStack = siteInfo.buildStack || []
   const summaryStats = profile.stats || []
   const ui = siteInfo.ui || {}
   const heroUI = ui.hero || {}
@@ -495,66 +492,6 @@ export default function LandingPage() {
                 </Card>
               </Col>
             ))}
-          </Row>
-        </Container>
-      </section>
-
-      <section id="about" className="landing-build py-5">
-        <Container>
-          <Row className="row-gap-4">
-            <Col lg={5}>
-              <Card className="build-card border-0 shadow-sm h-100">
-                <Card.Body>
-                  <div className="build-header">
-                    <Badge
-                      pill
-                      bg="light"
-                      text="dark"
-                      className="summary-badge"
-                    >
-                      {sectionsUI.portfolioBuild || 'Portfolio build'}
-                    </Badge>
-                    <h2>
-                      {sectionsUI.buildTitle || 'How this site is put together'}
-                    </h2>
-                    <p className="text-muted">
-                      {sectionsUI.buildDescription ||
-                        'Built as a single-page React experience using structured JSON and lightweight UI primitives so content updates stay painless.'}
-                    </p>
-                  </div>
-                  <ul className="build-highlights">
-                    {siteBuildHighlights.map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col lg={7}>
-              <Card className="build-card border-0 shadow-sm h-100">
-                <Card.Body>
-                  <h5 className="mb-3">
-                    {sectionsUI.buildToolsTitle || 'Tools chosen for this site'}
-                  </h5>
-                  <div className="build-grid">
-                    {siteBuildStack.map((item) => {
-                      const IconComponent = getSiteIcon(item.icon)
-                      return (
-                        <div key={item.label} className="build-tile">
-                          <span className="build-tile__icon">
-                            <IconComponent />
-                          </span>
-                          <div className="build-tile__content">
-                            <strong>{item.label}</strong>
-                            <span>{item.description}</span>
-                          </div>
-                        </div>
-                      )
-                    })}
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
           </Row>
         </Container>
       </section>
