@@ -15,6 +15,7 @@ import {
   FaChevronDown,
   FaGraduationCap,
   FaAward,
+  FaExternalLinkAlt,
 } from 'react-icons/fa'
 import '../../App.css'
 import '../../css/LandingPage.css'
@@ -56,6 +57,8 @@ export default function LandingPage() {
   const toolkitDescriptions = resume.skillDescriptions || {}
   const [expandedExperience, setExpandedExperience] = useState('0')
   const [showContactModal, setShowContactModal] = useState(false)
+  const [emailCopied, setEmailCopied] = useState(false)
+  const [phoneCopied, setPhoneCopied] = useState(false)
 
   const summaryStats = profile.stats || []
   const ui = siteInfo.ui || {}
@@ -215,23 +218,45 @@ export default function LandingPage() {
                     <span>{sectionsUI.saveResume || 'Save résumé'}</span>
                   </a>
                   <span className="summary-inline-sep">·</span>
-                  <a
-                    href={`mailto:${profile.contact.email}`}
-                    aria-label={`Email ${profile.name}`}
-                    className="summary-inline-link"
+                  <button
+                    type="button"
+                    onClick={async (e) => {
+                      e.preventDefault()
+                      try {
+                        await navigator.clipboard.writeText(profile.contact.email)
+                        setEmailCopied(true)
+                        setTimeout(() => setEmailCopied(false), 2000)
+                      } catch (err) {
+                        window.location.href = `mailto:${profile.contact.email}`
+                      }
+                    }}
+                    aria-label={`Copy email address ${profile.contact.email}`}
+                    className="summary-inline-link summary-inline-link--tooltip"
+                    data-tooltip={emailCopied ? 'Copied!' : profile.contact.email}
                   >
                     <FaEnvelope className="summary-inline-link__icon" />
-                    <span>Email</span>
-                  </a>
+                    <span>{emailCopied ? 'Copied!' : 'Email'}</span>
+                  </button>
                   <span className="summary-inline-sep">·</span>
-                  <a
-                    href={`tel:${profile.contact.phone.replace(/[^0-9]/g, '')}`}
-                    aria-label={`Call ${profile.name}`}
-                    className="summary-inline-link"
+                  <button
+                    type="button"
+                    onClick={async (e) => {
+                      e.preventDefault()
+                      try {
+                        await navigator.clipboard.writeText(profile.contact.phone)
+                        setPhoneCopied(true)
+                        setTimeout(() => setPhoneCopied(false), 2000)
+                      } catch (err) {
+                        window.location.href = `tel:${profile.contact.phone.replace(/[^0-9]/g, '')}`
+                      }
+                    }}
+                    aria-label={`Copy phone number ${profile.contact.phone}`}
+                    className="summary-inline-link summary-inline-link--tooltip"
+                    data-tooltip={phoneCopied ? 'Copied!' : profile.contact.phone}
                   >
                     <FaPhone className="summary-inline-link__icon" />
-                    <span>Phone</span>
-                  </a>
+                    <span>{phoneCopied ? 'Copied!' : 'Phone'}</span>
+                  </button>
                   <span className="summary-inline-sep">·</span>
                 <a
                   href={profile.social.linkedin}
@@ -348,14 +373,15 @@ export default function LandingPage() {
                       ))}
                     </div>
                   </Card.Body>
-                  <Card.Footer className="bg-transparent border-0">
+                  <Card.Footer className="bg-transparent border-0 pt-0">
                     <a
                       href={p.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      {p.cta}
+                      <span>{p.cta}</span>
+                      <FaExternalLinkAlt className="project-link__icon" />
                     </a>
                   </Card.Footer>
                 </Card>
