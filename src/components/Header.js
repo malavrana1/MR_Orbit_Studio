@@ -124,6 +124,42 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [nav.links])
 
+  useEffect(() => {
+    // Prevent body scroll when mobile menu is open
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isMobileMenuOpen])
+
+  useEffect(() => {
+    // Close mobile menu when clicking outside
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen) {
+        const nav = event.target.closest('.main-nav')
+        const toggle = event.target.closest('.mobile-menu-toggle')
+        if (!nav && !toggle) {
+          setIsMobileMenuOpen(false)
+        }
+      }
+    }
+
+    if (isMobileMenuOpen) {
+      document.addEventListener('click', handleClickOutside)
+      document.addEventListener('touchstart', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+      document.removeEventListener('touchstart', handleClickOutside)
+    }
+  }, [isMobileMenuOpen])
+
   const handleNavClick = (e, href) => {
     e.preventDefault()
     setIsMobileMenuOpen(false)
@@ -142,6 +178,13 @@ export default function Header() {
 
   return (
     <header className={`site-header ${isScrolled ? 'scrolled' : ''}`}>
+      {isMobileMenuOpen && (
+        <div
+          className="mobile-menu-backdrop"
+          onClick={() => setIsMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
+      )}
       <Container>
         <nav className="main-nav">
           <a
@@ -157,6 +200,7 @@ export default function Header() {
             className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
           >
             <span></span>
             <span></span>
