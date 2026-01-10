@@ -108,11 +108,6 @@
   ],
   "certifications": [
     {
-      "name": "Problem Solving (Intermediate)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/74e6f6eb5c6e"
-    },
-    {
       "name": "Frontend Developer (React)",
       "issuer": "HackerRank",
       "link": "https://www.hackerrank.com/certificates/c1f7eca3282b"
@@ -123,9 +118,24 @@
       "link": "https://www.hackerrank.com/certificates/21784b8ba35e"
     },
     {
+      "name": "JavaScript (Intermediate)",
+      "issuer": "HackerRank",
+      "link": "https://www.hackerrank.com/certificates/a702e7e3b840"
+    },
+    {
+      "name": "Rest API (Intermediate)",
+      "issuer": "HackerRank",
+      "link": "https://www.hackerrank.com/certificates/321d185f6072"
+    },
+    {
       "name": "Software Engineer",
       "issuer": "HackerRank",
       "link": "https://www.hackerrank.com/certificates/b8dc708e5aec"
+    },
+    {
+      "name": "Problem Solving (Intermediate)",
+      "issuer": "HackerRank",
+      "link": "https://www.hackerrank.com/certificates/74e6f6eb5c6e"
     },
     {
       "name": "SQL (Advanced)",
@@ -133,19 +143,9 @@
       "link": "https://www.hackerrank.com/certificates/0b9e22788db9"
     },
     {
-      "name": "JavaScript (Intermediate)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/a702e7e3b840"
-    },
-    {
       "name": "SQL (Intermediate)",
       "issuer": "HackerRank",
       "link": "https://www.hackerrank.com/certificates/826d245568d7"
-    },
-    {
-      "name": "Rest API (Intermediate)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/321d185f6072"
     }
   ]
 }
