@@ -1,113 +1,100 @@
 {
   "name": "Malav Rana",
-  "headline": "Software Engineer",
-  "location": "New Jersey, USA",
+  "headline": "Frontend Engineer | React • Angular • Vue Specialist",
+  "location": "New Jersey, United States",
   "contact": {
     "email": "ranam211197@gmail.com",
     "phone": "201-468-8422",
     "linkedin": "https://www.linkedin.com/in/malav-rana97",
     "website": "https://malavrana.dev"
   },
-  "summary": "Frontend engineer with 5+ years building React, Next.js, Angular, and Vue apps. I focus on making interfaces accessible and responsive, and I work with REST and GraphQL APIs using modern tools. I'm comfortable with testing, CI/CD pipelines, and cloud platforms.",
+  "summary": "Application-focused Frontend Engineer with 4+ years of experience building scalable, high-performance web applications using React, Angular, and Vue. Proven track record delivering enterprise-grade solutions for leading companies including Kiswe, Gensler, Cigna Express Scripts, and Atmiya Care Charity. Expert in REST/GraphQL integrations with extensive experience designing and implementing seamless client-side API integrations for real-time data handling. Strong background in HTML5, CSS3, JavaScript (ES6+), performance optimization, and accessibility standards (WCAG). Experienced working in fast-paced, cross-functional teams, delivering polished solutions that improve usability, reliability, and client outcomes.",
   "skills": {
     "Front-End Technologies": [
       "React.js",
       "Angular",
-      "Next.js",
-      "HTML5",
-      "CSS",
-      "Tailwind CSS",
-      "Node.js",
       "Vue.js",
-      "jQuery",
+      "Next.js",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
       "Bootstrap",
-      "WordPress",
-      "XML",
-      "AJAX",
-      "Drupal"
-    ],
-    "Programming Languages": [
-      "JavaScript",
-      "SQL",
-      "PHP",
-      "Scala",
-      "Python",
-      "Java"
+      "Tailwind CSS",
+      "Responsive & Adaptive Design",
+      "Accessibility (WCAG)"
     ],
     "Web Technologies": [
       "RESTful APIs",
-      "Webpack",
-      "Responsive Design",
-      "GraphQL"
+      "GraphQL",
+      "Client-side Data Handling",
+      "Form Validation",
+      "Browser Debugging Tools",
+      "Performance Optimization"
     ],
-    "Testing Libraries": ["Jest", "React Testing Library", "Enzyme"],
-    "Environment": ["Git", "CodeCommit", "AWS", "Docker", "Jenkins"]
+    "Testing & Tools": [
+      "Jest",
+      "React Testing Library",
+      "Unit & Integration Testing",
+      "Git",
+      "Bitbucket",
+      "Webpack",
+      "AWS",
+      "Docker",
+      "Jenkins"
+    ]
   },
   "skillDescriptions": {
-    "Front-End Technologies": "Modern frameworks and tools I use to build responsive, accessible interfaces.",
-    "Programming Languages": "Languages I use for front-end work, backend services, and automation tasks.",
-    "Web Technologies": "Build tools, API integrations, and patterns I use to create fast, interactive experiences.",
-    "Testing Libraries": "Testing tools that help me ship reliable code and catch bugs early.",
-    "Environment": "Tools I use for version control, deployments, and collaboration: Git, CodeCommit, AWS, Docker, and Jenkins."
+    "Front-End Technologies": "Expert-level proficiency in modern JavaScript frameworks and libraries. Building scalable, performant applications with React.js, Angular, Vue.js, and Next.js. Strong foundation in HTML5, CSS3, and modern CSS frameworks for responsive, accessible design.",
+    "Web Technologies": "Specialized in REST/GraphQL API integrations, client-side data handling, and performance optimization. Experienced with form validation, browser debugging, and implementing efficient data flow patterns for real-time applications.",
+    "Testing & Tools": "Comprehensive testing expertise with Jest and React Testing Library for unit and integration testing. Proficient in modern development workflows using Git, Bitbucket, Webpack, AWS, Docker, and Jenkins for CI/CD pipelines."
   },
   "experience": [
     {
       "role": "Frontend Engineer",
       "company": "Kiswe",
       "location": "New Jersey",
-      "period": "Sep 2024 - Present",
+      "period": "Sep 2024 — Present",
       "highlights": [
-        "Built responsive, accessible interfaces for live event platforms using HTML5, CSS, and Tailwind CSS.",
-        "Created interactive features with JavaScript and TypeScript to improve performance and make the code easier to maintain.",
-        "Built reusable components with Vue.js and React to reduce code duplication and make the front-end more scalable.",
-        "Chose the right tools for each project - mixing Vue.js, React, and Tailwind CSS based on what worked best.",
-        "Switched the team to PNPM for faster, cleaner dependency management across all projects."
+        "Designed, developed, and deployed custom web applications using HTML5, CSS3, JavaScript (ES6+), React, and Vue, delivering scalable front-end solutions aligned with business requirements.",
+        "Implemented complex client-side logic, interactive workflows, and form validation to ensure seamless user interactions across browsers and devices.",
+        "Integrated and maintained RESTful APIs for real-time data handling and smooth client-side interaction with backend systems.",
+        "Optimized front-end performance through reusable components, efficient code structuring, and browser debugging tools to improve reliability during high-traffic live events."
       ]
     },
     {
       "role": "Frontend Engineer",
       "company": "Gensler",
       "location": "New Jersey",
-      "period": "Jul 2022 - Feb 2024",
+      "period": "Jul 2022 — Sep 2024",
       "highlights": [
-        "Built dynamic UIs with React.js using components, hooks, and lifecycle methods for smooth navigation and state management.",
-        "Set up Redux with Redux Thunk middleware to handle async workflows and improve app performance.",
-        "Used Next.js for server-side rendering and static generation to improve SEO and page speed, with dynamic routing and API routes.",
-        "Created reusable Vue.js components and managed state with Vuex to keep UI consistent across different apps.",
-        "Wrote unit and integration tests with Jest and React Testing Library to catch bugs before releases.",
-        "Used Tailwind CSS for styling, which let me build responsive interfaces quickly.",
-        "Worked with REST APIs and GraphQL to fetch and update data efficiently.",
-        "Configured Webpack for bundling and optimization, and used Git and AWS for version control and deployments.",
-        "Built Angular reactive forms for user input and validation, and used Angular CLI to speed up development and deployments."
+        "Built enterprise-grade web interfaces using React, Angular, Vue, and Next.js, following modern front-end development best practices.",
+        "Developed responsive, adaptive UIs with HTML5, CSS3, Bootstrap, and Tailwind CSS, ensuring accessibility and consistent UX across devices.",
+        "Managed client-side data manipulation and querying through RESTful APIs and GraphQL, enabling efficient communication with backend services.",
+        "Improved performance and stability through front-end optimization techniques, automated testing with Jest, and use of browser debugging tools."
       ]
     },
     {
       "role": "Frontend Engineer",
       "company": "Cigna Express Scripts",
       "location": "New Jersey",
-      "period": "May 2021 - Apr 2022",
+      "period": "May 2021 — Apr 2022",
       "highlights": [
-        "Designed and built interactive checkout and confirmation screens using React.js with a component-based approach.",
-        "Set up state management with React hooks and Context API to make the checkout process smoother.",
-        "Improved performance with lazy loading and code splitting to make pages load faster.",
-        "Connected REST APIs using Axios to get real-time order and prescription data.",
-        "Wrote unit and integration tests with Jest and React Testing Library to maintain code quality.",
-        "Used lifecycle methods and custom hooks to handle side effects, async operations, and reusable logic.",
-        "Worked with UX and UI designers to build responsive designs using CSS and Tailwind CSS that work on all devices.",
-        "Collaborated with other teams on Angular projects to keep components and timelines aligned."
+        "Designed and implemented interactive web workflows for online pharmacy applications using React, HTML5, CSS3, and JavaScript (ES6+).",
+        "Built and maintained client-side integrations with backend services using RESTful APIs, supporting accurate real-time updates.",
+        "Implemented form validation, state-driven UI logic, and client-side data handling to ensure reliable, user-friendly checkout experiences.",
+        "Applied performance optimization techniques (e.g., lazy loading, code splitting) to reduce load times and improve responsiveness."
       ]
     },
     {
-      "role": "UI Developer",
+      "role": "Frontend Engineer",
       "company": "Atmiya Care Charity",
       "location": "New Jersey",
-      "period": "Sep 2020 - May 2021",
+      "period": "Sep 2020 — May 2021",
       "highlights": [
-        "Improved the donation platform using React.js and Angular with TypeScript to boost engagement and conversions.",
-        "Built responsive interfaces with strong data binding, custom routing, and filters to create interactive experiences.",
-        "Added features and integrations using REST APIs, Webpack, and GraphQL to improve how data flows through the app.",
-        "Worked with the front-end team using Git, AWS, Docker, and Jenkins to set up reliable deployment pipelines.",
-        "Used Jest and React Testing Library to make sure everything worked reliably and donors had a smooth experience."
+        "Developed and deployed custom web solutions using React, Angular, HTML5, CSS3, and JavaScript to support donation and community engagement platforms.",
+        "Implemented RESTful API integrations and client-side data handling to deliver dynamic, real-time user experiences.",
+        "Ensured compliance with accessibility (WCAG) and responsive design principles across browsers and devices.",
+        "Collaborated with cross-functional stakeholders to troubleshoot issues and deliver polished, production-ready web applications."
       ]
     }
   ],
@@ -116,7 +103,7 @@
       "degree": "Bachelor of Science in Computer Science",
       "institution": "Montclair State University",
       "location": "Montclair, NJ",
-      "period": "Sep 2016 - May 2020"
+      "period": "Sep 2016 — May 2020"
     }
   ],
   "certifications": [
