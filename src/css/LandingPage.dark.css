@@ -587,9 +587,12 @@
     color: #fcd34d !important;
 }
 
-[data-theme="dark"] .experience-role,
-[data-theme="dark"] .experience-company {
+[data-theme="dark"] .experience-role {
     color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .experience-company {
+    color: #60a5fa !important;
 }
 
 [data-theme="dark"] .experience-location,
