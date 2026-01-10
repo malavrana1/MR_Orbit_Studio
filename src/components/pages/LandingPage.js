@@ -480,7 +480,7 @@ export default function LandingPage() {
           <Row className="g-4 certifications-list">
             {resume.certifications &&
               resume.certifications.map((cert, index) => (
-                <Col md={6} lg={4} key={index}>
+                <Col xs={12} sm={6} md={6} lg={4} key={index}>
                   <Card className="certification-card border-0 shadow-sm h-100">
                     <Card.Body className="p-3">
                       <div className="certification-item">
