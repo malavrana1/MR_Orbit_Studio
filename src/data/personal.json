@@ -1,11 +1,11 @@
 {
   "tagline": "More about me",
-  "intro": "When I'm not coding, I love spending time outdoors hiking with friends, playing tennis on weekends, and planning my next travel adventure. I enjoy learning new tools and sharing what I know with other developers.",
-  "whatFuelsMe": "My perfect weekend includes an early morning hike, a tennis match with friends, and good coffee while talking about new ideas. I bring that same energy and curiosity to building products every day.",
-  "interests": ["Tennis", "Hiking", "Coffee", "Travel photography"],
+  "intro": "I like playing tennis with friends, cricket, hiking, and listening to music. I also enjoy cooking, trying new things, and doing little DIY projects in the backyard when I have free time.",
+  "whatFuelsMe": "I bring the same energy and curiosity from my hobbies to building products every day. Whether it's a tennis match, a DIY project, or solving a coding challenge, I enjoy the process of learning and creating.",
+  "interests": ["Tennis", "Cricket", "Hiking", "Music", "Cooking", "DIY Projects"],
   "principles": [
-    "Always think about what users need",
-    "Build small, test often, keep improving",
-    "Make things easy to use and fast"
+    "Focus on what users need",
+    "Build small and test often",
+    "Keep things simple and fast"
   ]
 }
