@@ -1,21 +1,20 @@
 {
   "name": "Malav Rana",
-  "headline": "Software Engineer · Frontend Specialist",
+  "headline": "Frontend Engineer | React • Angular • Vue Specialist",
   "availability": "Open to full-time or freelance engagements",
   "summary": [
-    "Software engineer with 5+ years building responsive apps using React, Angular, Vue, and Next.js. I've worked with streaming platforms, architecture firms, healthcare companies, and nonprofits.",
-    "I turn product ideas into accessible, fast interfaces using HTML5, CSS, Tailwind, REST and GraphQL APIs, plus modern build tools.",
-    "I enjoy working with teams, helping others learn, and staying active on the tennis court when I'm not coding."
+    "Application-focused Frontend Engineer with 4+ years of experience building scalable, high-performance web applications using React, Angular, and Vue. Proven track record delivering enterprise-grade solutions for leading companies including Kiswe, Gensler, Cigna Express Scripts, and Atmiya Care Charity.",
+    "Expert in REST/GraphQL integrations with extensive experience designing and implementing seamless client-side API integrations for real-time data handling. Strong background in HTML5, CSS3, JavaScript (ES6+), performance optimization, and accessibility standards (WCAG). Experienced working in fast-paced, cross-functional teams, delivering polished solutions that improve usability, reliability, and client outcomes."
   ],
   "heroHighlights": [
-    "React • Next.js • Angular • Vue",
-    "Accessible, responsive, fast",
-    "REST/GraphQL integrations"
+    "Enterprise Frontend Solutions",
+    "REST/GraphQL API Integration",
+    "Performance & Accessibility"
   ],
   "contact": {
     "email": "ranam211197@gmail.com",
     "phone": "201-468-8422",
-    "location": "New Jersey, USA",
+    "location": "New Jersey, United States",
     "website": "https://malavrana.dev"
   },
   "social": {
@@ -23,9 +22,9 @@
     "linkedin": "https://www.linkedin.com/in/malav-rana97"
   },
   "stats": [
-    { "label": "Experience", "value": "5+ years" },
-    { "label": "Core Stack", "value": "React · Angular · Vue" },
-    { "label": "Location", "value": "New Jersey, USA" }
+    { "label": "Years Experience", "value": "4+ years" },
+    { "label": "Technologies", "value": "React · Angular · Vue · Next.js" },
+    { "label": "Location", "value": "New Jersey, United States" }
   ],
   "experience": [
     {
@@ -33,19 +32,21 @@
       "company": "Kiswe",
       "period": "Sep 2024 - Present",
       "achievements": [
-        "Building responsive event platforms with React, Vue.js, and Tailwind CSS.",
-        "Creating reusable component libraries used across our live streaming products.",
-        "Working with GraphQL and REST APIs to power real-time fan experiences."
+        "Designed, developed, and deployed custom web applications using HTML5, CSS3, JavaScript (ES6+), React, and Vue, delivering scalable front-end solutions aligned with business requirements.",
+        "Implemented complex client-side logic, interactive workflows, and form validation to ensure seamless user interactions across browsers and devices.",
+        "Integrated and maintained RESTful APIs for real-time data handling and smooth client-side interaction with backend systems.",
+        "Optimized front-end performance through reusable components, efficient code structuring, and browser debugging tools to improve reliability during high-traffic live events."
       ]
     },
     {
       "role": "Frontend Engineer",
       "company": "Gensler",
-      "period": "Jul 2022 - Feb 2024",
+      "period": "Jul 2022 - Sep 2024",
       "achievements": [
-        "Built SEO-friendly marketing sites and project showcases using Next.js and React.",
-        "Managed complex state with Redux and React Hooks to keep everything running smoothly.",
-        "Worked closely with UX designers to turn Figma designs into production-ready interfaces."
+        "Built enterprise-grade web interfaces using React, Angular, Vue, and Next.js, following modern front-end development best practices.",
+        "Developed responsive, adaptive UIs with HTML5, CSS3, Bootstrap, and Tailwind CSS, ensuring accessibility and consistent UX across devices.",
+        "Managed client-side data manipulation and querying through RESTful APIs and GraphQL, enabling efficient communication with backend services.",
+        "Improved performance and stability through front-end optimization techniques, automated testing with Jest, and use of browser debugging tools."
       ]
     },
     {
@@ -53,34 +54,36 @@
       "company": "Cigna Express Scripts",
       "period": "May 2021 - Apr 2022",
       "achievements": [
-        "Built checkout flows in React that cut down on form errors and improved completion rates.",
-        "Used custom hooks and Context API to share logic across different medication workflows.",
-        "Improved load times with lazy-loading, code splitting, and better rendering practices."
+        "Designed and implemented interactive web workflows for online pharmacy applications using React, HTML5, CSS3, and JavaScript (ES6+).",
+        "Built and maintained client-side integrations with backend services using RESTful APIs, supporting accurate real-time updates.",
+        "Implemented form validation, state-driven UI logic, and client-side data handling to ensure reliable, user-friendly checkout experiences.",
+        "Applied performance optimization techniques (e.g., lazy loading, code splitting) to reduce load times and improve responsiveness."
       ]
     },
     {
-      "role": "UI Developer",
+      "role": "Frontend Engineer",
       "company": "Atmiya Care Charity",
       "period": "Sep 2020 - May 2021",
       "achievements": [
-        "Redesigned the donation platform using React and Angular to improve conversions and accessibility.",
-        "Set up AWS, Docker, and Jenkins pipelines to make releases more reliable.",
-        "Connected GraphQL and REST services to keep donor data accurate and up to date."
+        "Developed and deployed custom web solutions using React, Angular, HTML5, CSS3, and JavaScript to support donation and community engagement platforms.",
+        "Implemented RESTful API integrations and client-side data handling to deliver dynamic, real-time user experiences.",
+        "Ensured compliance with accessibility (WCAG) and responsive design principles across browsers and devices.",
+        "Collaborated with cross-functional stakeholders to troubleshoot issues and deliver polished, production-ready web applications."
       ]
     }
   ],
   "expertise": [
     {
-      "label": "Front-End Platforms",
-      "description": "React, Angular, Vue, and Next.js apps built for performance and easy maintenance."
+      "label": "Front-End Development",
+      "description": "Expert in React, Angular, Vue, and Next.js with a focus on building scalable, maintainable applications. Experience developing enterprise-grade web interfaces, reusable component libraries, and high-performance user experiences across diverse industries."
     },
     {
-      "label": "Design Systems & UX",
-      "description": "HTML5, CSS, and Tailwind with a focus on accessibility. I work closely with designers to bring their vision to life."
+      "label": "UI/UX & Accessibility",
+      "description": "Proficient in HTML5, CSS3, Bootstrap, and Tailwind CSS with a strong emphasis on responsive design and WCAG accessibility standards. Skilled in creating adaptive UIs that deliver consistent experiences across all devices and browsers."
     },
     {
-      "label": "Delivery & Tooling",
-      "description": "GraphQL and REST API integrations, automated testing, Git workflows, AWS deployments, Docker containers, Jenkins CI/CD, and PNPM for package management."
+      "label": "API Integration & DevOps",
+      "description": "Strong expertise in REST/GraphQL API integrations for seamless backend communication and real-time data handling. Experienced with automated testing (Jest, React Testing Library), Git workflows, AWS deployments, Docker containers, and Jenkins CI/CD pipelines."
     }
   ],
   "stack": [
