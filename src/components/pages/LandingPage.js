@@ -31,6 +31,21 @@ import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
 import ContactModal from '../ContactModal'
 
+import kisweLogo from '../../assets/images/logos/kiswe.png'
+import genslerLogo from '../../assets/images/logos/gensler.png'
+import cignaLogo from '../../assets/images/logos/cigna.png'
+import atmiyaLogo from '../../assets/images/logos/atmiya_care_charity.png'
+
+const getCompanyLogo = (companyName) => {
+  const logoMap = {
+    'Kiswe': kisweLogo,
+    'Gensler': genslerLogo,
+    'Cigna Express Scripts': cignaLogo,
+    'Atmiya Care Charity': atmiyaLogo,
+  }
+  return logoMap[companyName] || null
+}
+
 export default function LandingPage() {
   const profile = getProfile()
   const resume = getResume()
@@ -56,6 +71,7 @@ export default function LandingPage() {
 
   const toolkitDescriptions = resume.skillDescriptions || {}
   const [expandedExperience, setExpandedExperience] = useState('0')
+  const [expandedCertification, setExpandedCertification] = useState('')
   const [showContactModal, setShowContactModal] = useState(false)
   const [emailCopied, setEmailCopied] = useState(false)
   const [phoneCopied, setPhoneCopied] = useState(false)
@@ -299,6 +315,7 @@ export default function LandingPage() {
             {resume.experience.map((role, index) => {
               const key = String(index)
               const isOpen = expandedExperience === key
+              const companyLogo = getCompanyLogo(role.company)
 
               return (
                 <div
@@ -313,19 +330,26 @@ export default function LandingPage() {
                     aria-controls={`experience-panel-${key}`}
                   >
                     <div className="experience-header">
-                      <div className="experience-header__title">
-                        <span className="experience-role">{role.role}</span>
-                        <span className="experience-company">
-                          {role.company}
-                        </span>
+                      <div className="experience-company-logo">
+                        <img 
+                          src={companyLogo} 
+                          alt={`${role.company} logo`}
+                          className="company-logo-img"
+                        />
                       </div>
-                      <div className="experience-meta">
-                        <span className="experience-pill">
-                          {role.location}
-                        </span>
-                        <span className="experience-pill">
-                          {role.period}
-                        </span>
+                      <div className="experience-header__content">
+                        <div className="experience-header__title">
+                          <h3 className="experience-company">{role.company}</h3>
+                          <span className="experience-role">{role.role}</span>
+                        </div>
+                        <div className="experience-meta">
+                          <span className="experience-pill">
+                            {role.location}
+                          </span>
+                          <span className="experience-pill">
+                            {role.period}
+                          </span>
+                        </div>
                       </div>
                     </div>
                     <FaChevronDown className="experience-icon" />
@@ -394,7 +418,7 @@ export default function LandingPage() {
       <section id="toolkit" className="landing-skills py-5">
         <Container>
           <Row className="gy-4 align-items-stretch">
-            <Col lg={4}>
+            <Col xs={12} lg={4}>
               <div className="toolkit-heading">
                 <h2 className="section-title">
                   {sectionsUI.toolkitTitle || 'Technical toolkit'}
@@ -433,7 +457,7 @@ export default function LandingPage() {
                 })}
               </div>
             </Col>
-            <Col lg={8}>
+            <Col xs={12} lg={8}>
               <Card className="toolkit-card border-0 shadow-sm h-100">
                 <Card.Body>
                   <div className="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
@@ -477,12 +501,13 @@ export default function LandingPage() {
           <div className="certifications-heading text-center mb-4">
             <h2>{sectionsUI.certificationsTitle || 'Certifications & Skills'}</h2>
           </div>
-          <Row className="g-4 certifications-list">
+          
+          <Row className="g-2 certifications-list d-none d-md-flex">
             {resume.certifications &&
               resume.certifications.map((cert, index) => (
-                <Col xs={12} sm={6} md={6} lg={4} key={index}>
+                <Col md={6} lg={4} key={index}>
                   <Card className="certification-card border-0 shadow-sm h-100">
-                    <Card.Body className="p-3">
+                    <Card.Body className="p-2">
                       <div className="certification-item">
                         <div className="certification-icon">
                           <FaAward />
@@ -509,6 +534,57 @@ export default function LandingPage() {
                 </Col>
               ))}
           </Row>
+
+          <div className="certifications-accordion d-md-none">
+            {resume.certifications &&
+              resume.certifications.map((cert, index) => {
+                const key = String(index)
+                const isOpen = expandedCertification === key
+
+                return (
+                  <div
+                    className={`certification-accordion-item ${isOpen ? 'certification-accordion-item--open' : ''}`}
+                    key={index}
+                  >
+                    <button
+                      type="button"
+                      className="certification-accordion-toggle"
+                      onClick={() => setExpandedCertification(isOpen ? '' : key)}
+                      aria-expanded={isOpen}
+                      aria-controls={`certification-panel-${key}`}
+                    >
+                      <div className="certification-accordion-header">
+                        <div className="certification-accordion-icon">
+                          <FaAward />
+                        </div>
+                        <div className="certification-accordion-title">
+                          <span className="certification-accordion-name">{cert.name}</span>
+                          <span className="certification-accordion-issuer">{cert.issuer}</span>
+                        </div>
+                      </div>
+                      <FaChevronDown className="certification-accordion-chevron" />
+                    </button>
+                    <div
+                      id={`certification-panel-${key}`}
+                      className={`certification-accordion-body ${isOpen ? 'certification-accordion-body--open' : ''}`}
+                    >
+                      <div className="certification-accordion-content">
+                        {cert.link && (
+                          <a
+                            href={cert.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="certification-accordion-link"
+                          >
+                            View certificate →
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+          </div>
         </Container>
       </section>
 
