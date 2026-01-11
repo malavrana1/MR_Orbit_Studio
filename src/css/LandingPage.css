@@ -38,15 +38,12 @@
 }
 
 .landing-hero .container {
-    overflow: visible;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.landing-hero .row {
-    overflow: visible;
-}
-
+.landing-hero .container,
+.landing-hero .row,
 .landing-hero .col-lg-7 {
     overflow: visible;
 }
@@ -1085,6 +1082,11 @@ button.summary-inline-link {
     z-index: 1;
     overflow: hidden;
     transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.toolkit-card .card-body {
+    overflow-wrap: break-word;
 }
 
 .toolkit-card::before {
@@ -1119,15 +1121,36 @@ button.summary-inline-link {
 
 .toolkit-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .toolkit-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 991px) {
+    .toolkit-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 0.875rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .toolkit-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.75rem;
+    }
 }
 
 .toolkit-grid__item {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.85rem;
+    gap: 0.875rem;
+    padding: 1rem;
     border: 1px solid rgba(251, 191, 36, 0.2);
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
@@ -1137,6 +1160,9 @@ button.summary-inline-link {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    width: 100%;
+    min-width: 0;
+    min-height: 70px;
 }
 
 .toolkit-grid__item::before {
@@ -1152,14 +1178,15 @@ button.summary-inline-link {
 }
 
 .toolkit-grid__icon {
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
     border-radius: 0.75rem;
     display: grid;
     place-items: center;
     background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.15));
     color: #f59e0b;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     transition: transform 200ms ease;
     flex-shrink: 0;
 }
@@ -1168,6 +1195,11 @@ button.summary-inline-link {
     font-weight: 600;
     color: #0f172a;
     transition: color 200ms ease;
+    overflow-wrap: break-word;
+    flex: 1;
+    min-width: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
 .toolkit-grid__item:hover,
@@ -1368,49 +1400,89 @@ button.summary-inline-link {
 .experience-header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.25rem;
     flex: 1;
+}
+
+.experience-company-logo {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 2px solid rgba(226, 232, 240, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.experience-item:hover .experience-company-logo {
+    transform: translateY(-2px) scale(1.05);
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+}
+
+.company-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    transition: all 300ms ease;
+}
+
+.experience-item:hover .company-logo-img {
+    transform: scale(1.05);
+}
+
+
+.experience-header__content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: left;
 }
 
 .experience-header__title {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    flex: 1;
-    min-width: 0;
-}
-
-.experience-role {
-    font-weight: 700;
-    color: #0f172a;
-    font-size: 1.25rem;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    margin: 0;
+    gap: 0.375rem;
+    text-align: left;
 }
 
 .experience-company {
-    color: #2563eb;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.4;
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
     margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    text-align: left;
+    transition: color 200ms ease;
 }
 
-.experience-company::before {
-    content: '→';
-    font-size: 0.875rem;
-    opacity: 0.6;
-    transition: transform 0.3s ease;
+.experience-item:hover .experience-company {
+    color: #2563eb;
 }
 
-.experience-item:hover .experience-company::before {
-    transform: translateX(4px);
+.experience-role {
+    font-weight: 600;
+    color: #64748b;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-align: left;
+    transition: color 200ms ease;
+}
+
+.experience-item:hover .experience-role {
+    color: #475569;
 }
 
 .experience-meta {
@@ -1662,13 +1734,7 @@ button.summary-inline-link {
 }
 
 .certifications-list > [class*="col-"] {
-    margin-bottom: 0.50rem;
-}
-
-@media (max-width: 767px) {
-    .certifications-list > [class*="col-"] {
-        margin-bottom: 1rem;
-    }
+    margin-bottom: 0;
 }
 
 .certification-card {
@@ -1684,13 +1750,6 @@ button.summary-inline-link {
 
 .certification-card .card-body {
     overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-@media (min-width: 768px) {
-    .certification-card {
-        margin-bottom: 0;
-    }
 }
 
 .certification-card::before {
@@ -1717,20 +1776,22 @@ button.summary-inline-link {
 
 .certification-item {
     display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
     width: 100%;
 }
 
 .certification-icon {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     border-radius: 0.625rem;
     display: grid;
     place-items: center;
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(139, 92, 246, 0.15));
     color: #2563eb;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     flex-shrink: 0;
     transition: transform 200ms ease;
 }
@@ -1742,36 +1803,185 @@ button.summary-inline-link {
 .certification-content {
     flex: 1;
     min-width: 0;
-    word-wrap: break-word;
     overflow-wrap: break-word;
+    width: 100%;
+    text-align: center;
 }
 
 .certification-name {
     font-weight: 600;
     color: #0f172a;
     margin-bottom: 0.375rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.4;
-    word-wrap: break-word;
     overflow-wrap: break-word;
-    hyphens: auto;
 }
 
 .certification-issuer {
-    color: #64748b;
-    font-size: 0.85rem;
+    color: #475569;
+    font-size: 0.875rem;
+    font-weight: 500;
     margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
 .certification-link {
     color: #2563eb;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     font-weight: 500;
     transition: color 150ms ease;
+    line-height: 1.4;
 }
 
 .certification-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.certifications-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.certification-accordion-item {
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-accordion-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transform: scaleX(0);
+    transition: transform 200ms ease;
+}
+
+.certification-accordion-item--open {
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+}
+
+.certification-accordion-item--open::before {
+    transform: scaleX(1);
+}
+
+.certification-accordion-toggle {
+    width: 100%;
+    border: none;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+}
+
+.certification-accordion-toggle:hover {
+    background: #ffffff;
+}
+
+.certification-accordion-toggle:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.45);
+    outline-offset: 2px;
+}
+
+.certification-accordion-header {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.certification-accordion-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 0.625rem;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(139, 92, 246, 0.15));
+    color: #2563eb;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+
+.certification-accordion-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.certification-accordion-name {
+    font-weight: 600;
+    color: #0f172a;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.certification-accordion-issuer {
+    color: #475569;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.certification-accordion-chevron {
+    font-size: 0.875rem;
+    color: #64748b;
+    transition: transform 200ms ease;
+    flex-shrink: 0;
+}
+
+.certification-accordion-item--open .certification-accordion-chevron {
+    transform: rotate(180deg);
+    color: #2563eb;
+}
+
+.certification-accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms cubic-bezier(0.4, 0, 0.2, 1), padding 300ms ease;
+    padding: 0 1rem;
+}
+
+.certification-accordion-body--open {
+    padding: 0 1rem 1rem;
+    max-height: 200px;
+}
+
+.certification-accordion-content {
+    padding-top: 0.75rem;
+}
+
+.certification-accordion-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 150ms ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.certification-accordion-link:hover {
     color: #1d4ed8;
     text-decoration: underline;
 }
@@ -2284,7 +2494,7 @@ button.summary-inline-link {
     .landing-cta,
     .landing-skills,
     .landing-certifications {
-        padding: 3rem 0;
+        padding: 3rem 0 1.5rem 0;
     }
 
     .summary-card,
@@ -2297,13 +2507,10 @@ button.summary-inline-link {
         margin-bottom: 1rem;
     }
 
-    .toolkit-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 0.75rem;
-    }
-
+    .toolkit-grid,
     .skill-icon-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.75rem;
     }
 
     .summary-stats {
@@ -2332,13 +2539,6 @@ button.summary-inline-link {
         overflow: visible;
     }
 
-    .landing-hero .container {
-        overflow: visible;
-    }
-
-    .landing-hero .row {
-        overflow: visible;
-    }
 
     .hero-title {
         font-size: clamp(2rem, 5vw, 2.5rem);
@@ -2450,17 +2650,32 @@ button.summary-inline-link {
     }
 
     .toolkit-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 0.65rem;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .toolkit-grid__item {
+        padding: 0.875rem;
+        gap: 0.75rem;
+        min-height: 65px;
     }
 
     .toolkit-grid__icon {
-        width: 36px;
-        height: 36px;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 1.1rem;
+        flex-shrink: 0;
     }
 
     .toolkit-grid__label {
-        font-size: 0.85rem;
+        font-size: 0.875rem;
+        line-height: 1.35;
+        overflow-wrap: break-word;
+    }
+
+    .toolkit-card .card-body {
+        padding: 1.25rem !important;
     }
 
     .skill-icon-grid {
@@ -2509,26 +2724,29 @@ button.summary-inline-link {
     }
 
     .experience-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.75rem;
-        width: 100%;
+        gap: 1rem;
     }
 
-    .experience-header__title {
-        width: 100%;
+    .experience-company-logo {
+        width: 52px;
+        height: 52px;
     }
 
-    .experience-role {
-        font-size: 1.15rem;
-        line-height: 1.4;
-        font-weight: 700;
+    .company-logo-img {
+        padding: 0.45rem;
+    }
+
+
+    .experience-header__content {
+        gap: 0.5rem;
     }
 
     .experience-company {
-        font-size: 1rem;
-        font-weight: 600;
-        margin-top: 0.25rem;
+        font-size: 1.25rem;
+    }
+
+    .experience-role {
+        font-size: 0.95rem;
     }
 
     .experience-meta {
@@ -2564,43 +2782,30 @@ button.summary-inline-link {
         padding: 0.35rem 0.65rem;
     }
 
-    .certification-card {
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
-
     .certification-card .card-body {
-        padding: 1rem !important;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
+        padding: 0.875rem !important;
     }
 
     .certification-item {
-        gap: 0.75rem;
+        gap: 0.65rem;
     }
 
     .certification-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 1rem;
-        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
     }
 
     .certification-name {
-        font-size: 0.9rem;
-        line-height: 1.3;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        font-size: 0.95rem;
     }
 
     .certification-issuer {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
     .certification-link {
         font-size: 0.85rem;
-        display: inline-block;
-        margin-top: 0.25rem;
     }
 
     .project-card {
@@ -2641,13 +2846,11 @@ button.summary-inline-link {
     .landing-hero {
         padding-top: 4.5rem;
         padding-bottom: 2.5rem;
-        overflow: visible;
     }
 
     .landing-hero .container {
         padding-left: 1rem;
         padding-right: 1rem;
-        overflow: visible;
     }
 
     .hero-title {
@@ -2706,7 +2909,7 @@ button.summary-inline-link {
     .landing-cta,
     .landing-skills,
     .landing-certifications {
-        padding: 2rem 0;
+        padding: 2rem 0 1rem 0;
     }
 
     .summary-header {
@@ -2748,17 +2951,40 @@ button.summary-inline-link {
     }
 
     .toolkit-grid {
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-        gap: 0.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 0.65rem;
+    }
+
+    .toolkit-grid__item {
+        padding: 0.75rem;
+        gap: 0.65rem;
+        min-height: 60px;
     }
 
     .toolkit-grid__icon {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        font-size: 1rem;
+        flex-shrink: 0;
     }
 
     .toolkit-grid__label {
         font-size: 0.8rem;
+        line-height: 1.3;
+        overflow-wrap: break-word;
+    }
+
+    .toolkit-card .card-body {
+        padding: 1rem !important;
+    }
+
+    .toolkit-label {
+        font-size: 0.6rem;
+    }
+
+    .toolkit-card h5 {
+        font-size: 1.1rem;
     }
 
     .skill-icon-grid {
@@ -2792,7 +3018,30 @@ button.summary-inline-link {
     }
 
     .experience-toggle {
-        padding: 0.75rem;
+        padding: 0.875rem;
+        gap: 0.75rem;
+    }
+
+    .experience-header {
+        gap: 0.875rem;
+    }
+
+    .experience-company-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .company-logo-img {
+        padding: 0.4rem;
+    }
+
+
+    .experience-company {
+        font-size: 1.15rem;
+    }
+
+    .experience-role {
+        font-size: 0.9rem;
     }
 
     .experience-highlights {
@@ -2803,50 +3052,30 @@ button.summary-inline-link {
         padding: 1rem;
     }
 
-    .certification-card {
-        padding: 0.85rem;
-        margin-bottom: 1rem;
-    }
-
     .certification-card .card-body {
-        padding: 0.85rem !important;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
+        padding: 0.75rem !important;
     }
 
     .certification-item {
-        gap: 0.65rem;
+        gap: 0.6rem;
     }
 
     .certification-icon {
-        width: 32px;
-        height: 32px;
-        font-size: 0.9rem;
-        flex-shrink: 0;
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
     }
 
     .certification-name {
-        font-size: 0.85rem;
-        line-height: 1.3;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
+        font-size: 0.9rem;
     }
 
     .certification-issuer {
-        font-size: 0.75rem;
-        margin-bottom: 0.4rem;
+        font-size: 0.8rem;
     }
 
     .certification-link {
-        font-size: 0.75rem;
-        display: inline-block;
-        margin-top: 0.25rem;
-        word-break: break-word;
-    }
-
-    .certifications-list {
-        gap: 0.75rem !important;
+        font-size: 0.8rem;
     }
 
     .project-card {
@@ -2932,7 +3161,30 @@ button.summary-inline-link {
         font-size: 1.3rem;
     }
 
-    .toolkit-grid,
+    .toolkit-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .toolkit-grid__item {
+        padding: 0.7rem;
+        gap: 0.6rem;
+        min-height: 58px;
+    }
+
+    .toolkit-grid__icon {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+    }
+
+    .toolkit-grid__label {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
     .skill-icon-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -3032,10 +3284,7 @@ body {
         height: 130px;
     }
 
-    .toolkit-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    }
-
+    .toolkit-grid,
     .skill-icon-grid {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
@@ -3046,10 +3295,7 @@ body {
 }
 
 @media (min-width: 1025px) and (max-width: 1199px) {
-    .toolkit-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
+    .toolkit-grid,
     .skill-icon-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
