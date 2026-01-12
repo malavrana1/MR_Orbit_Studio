@@ -1387,14 +1387,6 @@ button.summary-inline-link {
     gap: 0.5rem;
 }
 
-.experience-company-header {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 0.5rem;
-}
-
 .experience-company {
     color: #0f172a;
     font-size: 1.35rem;
@@ -1409,6 +1401,23 @@ button.summary-inline-link {
     color: #2563eb;
 }
 
+.experience-role-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.experience-role {
+    font-weight: 600;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    margin: 0;
+    transition: color 200ms ease;
+}
+
 .experience-meta {
     display: flex;
     align-items: center;
@@ -1421,16 +1430,6 @@ button.summary-inline-link {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.4;
-}
-
-.experience-role {
-    font-weight: 600;
-    color: #64748b;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-    margin: 0;
-    transition: color 200ms ease;
 }
 
 .experience-card:hover .experience-role {
