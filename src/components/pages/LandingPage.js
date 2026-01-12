@@ -305,15 +305,45 @@ export default function LandingPage() {
                 "Here's a look at how I help teams build great products while working with others and staying active."}
             </p>
           </div>
-          <div className="experience-list">
-            {resume.experience.map((role, index) => (
-              <div key={`${role.company}-${index}`} className="experience-item">
-                <h3 className="experience-company">{role.company}</h3>
-                <p className="experience-tagline">{role.tagline}</p>
-                <p className="experience-description">{role.description}</p>
-                {index < resume.experience.length - 1 && <hr className="experience-divider" />}
-              </div>
-            ))}
+          <div className="experience-grid">
+            {resume.experience.map((role, index) => {
+              const companyLogo = getCompanyLogo(role.company)
+
+              return (
+                <Card 
+                  key={`${role.company}-${index}`}
+                  className="experience-card border-0 shadow-sm h-100"
+                >
+                  <Card.Body className="p-5">
+                    <div className="experience-card-header">
+                      <div className="experience-company-logo">
+                        {companyLogo && (
+                          <img 
+                            src={companyLogo} 
+                            alt={`${role.company} logo`}
+                            className="company-logo-img"
+                          />
+                        )}
+                      </div>
+                      <div className="experience-card-info">
+                        <div className="experience-company-header">
+                          <h3 className="experience-company">{role.company}</h3>
+                          <div className="experience-meta-box">
+                            <span className="experience-period">{role.period}</span>
+                          </div>
+                        </div>
+                        <div className="experience-role-meta">
+                          <p className="experience-role">{role.role}</p>
+                          <span className="experience-location">{role.location}</span>
+                        </div>
+                        <p className="experience-tagline">{role.tagline}</p>
+                        <p className="experience-description">{role.description}</p>
+                      </div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              )
+            })}
           </div>
         </Container>
       </section>
