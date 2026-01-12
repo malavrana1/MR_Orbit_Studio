@@ -237,16 +237,8 @@
 }
 
 
-[data-theme="dark"] .experience-pill {
-    background: rgba(34, 197, 94, 0.2);
-    border-color: rgba(34, 197, 94, 0.3);
-    color: #86efac;
-}
-
-[data-theme="dark"] .experience-pill:hover {
-    background: rgba(34, 197, 94, 0.3);
-    border-color: rgba(34, 197, 94, 0.4);
-    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+[data-theme="dark"] .experience-meta-item {
+    color: #94a3b8;
 }
 
 

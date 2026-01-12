@@ -327,16 +327,14 @@ export default function LandingPage() {
                         )}
                       </div>
                       <div className="experience-card-info">
-                        <h3 className="experience-company">{role.company}</h3>
-                        <p className="experience-role">{role.role}</p>
-                        <div className="experience-meta">
-                          <span className="experience-pill">
-                            {role.location}
-                          </span>
-                          <span className="experience-pill">
-                            {role.period}
-                          </span>
+                        <div className="experience-company-header">
+                          <h3 className="experience-company">{role.company}</h3>
+                          <div className="experience-meta">
+                            <span className="experience-meta-item">{role.location}</span>
+                            <span className="experience-meta-item">{role.period}</span>
+                          </div>
                         </div>
+                        <p className="experience-role">{role.role}</p>
                       </div>
                     </div>
                     <div className="experience-card-content">
