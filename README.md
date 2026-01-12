@@ -4,46 +4,51 @@ A clean, single-page portfolio built with React and deployed on Firebase.
 
 ### Features
 - Sticky header with smooth scrolling
-- Dark mode toggle with persistent theme preference
+- Dark mode toggle
 - Sections: Summary, Experience, Projects, Toolkit, Certifications, Education, Connect
-- Content in JSON (no code needed for copy changes)
-- Interactive contact modal with email form
-- Responsive design with modern UI
+- Content in JSON files
+- Responsive design
 
-### Tech
+### Tech Stack
 - React 19, React-Bootstrap 2, React Icons 5, React Typed 2
 - Bootstrap 5
 - Firebase Hosting
+- pnpm
 
-### Run
+### Setup
+
+Install pnpm:
+```bash
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+source ~/.zshrc
+```
+
+Install dependencies:
 ```bash
 pnpm install
+```
+
+Start development server:
+```bash
 pnpm start
 ```
 
-### Build
+### Build & Deploy
+
 ```bash
 pnpm run build
-```
-
-### Deploy
-```bash
 pnpm run deploy
 ```
-Deploys to Firebase Hosting at https://mr-orbit-studio.web.app
 
 ### Customize
-- Brand and nav: `src/data/site.json`
-- Content: `src/data/profile.json`, `src/data/resume.json`, `src/data/personal.json`, `src/data/projects.json`
 
-### Key files
-- `src/components/Header.js`
-- `src/components/Footer.js`
-- `src/components/ContactModal.js`
-- `src/components/pages/LandingPage.js`
-- `src/css/Header.css`, `src/css/LandingPage.css`, `src/css/LandingPage.dark.css`, `src/css/Footer.css`
+Edit JSON files in `src/data/`:
+- `site.json` - Brand and navigation
+- `profile.json` - Profile info
+- `resume.json` - Resume/Experience
+- `personal.json` - Personal section
+- `projects.json` - Projects
 
-### Contact
-- Email modal uses FormSubmit (no backend).
-- Change recipient in `src/components/Footer.js` → `ContactModal toEmail`.
-- First send triggers FormSubmit verification; then emails deliver normally.
+### License
+
+Copyright © 2024 MR Orbit Studio. All rights reserved.
