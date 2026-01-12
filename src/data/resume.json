@@ -54,8 +54,8 @@
       "company": "Kiswe",
       "location": "New Jersey",
       "period": "Sep 2024 — Present",
-      "tagline": "Interactive platform for live sports and media experiences",
-      "description": "Frontend Engineer working on modernizing the Comment Center UI and building Kiswe's internal UI component library. Focused on creating reusable, scalable components, improving consistency, and delivering fast, reliable front-end solutions.",
+      "tagline": "Kiswe is a platform that powers live interactive experiences for sports, media, and enterprise brands.",
+      "description": "Focused on rebuilding and modernizing the Comment Center UI to better support real-time operations during live events. Contributed to Kiswe's internal UI component library, creating reusable, scalable components that improve consistency and make development faster. Known for taking ownership of tasks, communicating well across teams, and delivering work that is both efficient and maintainable.",
       "highlights": [
         "Designed, developed, and deployed custom web applications using HTML5, CSS3, JavaScript (ES6+), React, and Vue, delivering scalable front-end solutions aligned with business requirements.",
         "Implemented complex client-side logic, interactive workflows, and form validation to ensure seamless user interactions across browsers and devices.",
@@ -68,8 +68,8 @@
       "company": "Gensler",
       "location": "New Jersey",
       "period": "Jul 2022 — Sep 2024",
-      "tagline": "Global architecture and design firm",
-      "description": "Built enterprise web applications with React, Angular, Vue, and Next.js. Delivered polished, scalable front-end solutions that matched design systems and supported internal and client-facing tools.",
+      "tagline": "Gensler is a global architecture and design firm that also builds enterprise digital tools.",
+      "description": "Built large-scale web applications for internal teams and clients, turning complex requirements into clean, accessible, and scalable interfaces. Worked closely with designers, product managers, and engineers to deliver front-end systems that are maintainable and easy to use.",
       "highlights": [
         "Built enterprise-grade web interfaces using React, Angular, Vue, and Next.js, following modern front-end development best practices.",
         "Developed responsive, adaptive UIs with HTML5, CSS3, Bootstrap, and Tailwind CSS, ensuring accessibility and consistent UX across devices.",
@@ -82,8 +82,8 @@
       "company": "Cigna Express Scripts",
       "location": "New Jersey",
       "period": "May 2021 — Apr 2022",
-      "tagline": "Healthcare and pharmacy platform",
-      "description": "Developed customer-facing workflows using React and modern web technologies. Focused on performance, usability, and accessible interfaces for complex healthcare applications.",
+      "tagline": "Express Scripts, part of Cigna, provides pharmacy benefits and digital healthcare solutions.",
+      "description": "Developed customer-facing pharmacy workflows, ensuring interfaces were reliable, clear, and easy to navigate. Collaborated with cross-functional teams to integrate complex backend logic while keeping the experience smooth and accessible.",
       "highlights": [
         "Designed and implemented interactive web workflows for online pharmacy applications using React, HTML5, CSS3, and JavaScript (ES6+).",
         "Built and maintained client-side integrations with backend services using RESTful APIs, supporting accurate real-time updates.",
@@ -96,8 +96,8 @@
       "company": "Atmiya Care Charity",
       "location": "New Jersey",
       "period": "Sep 2020 — May 2021",
-      "tagline": "Nonprofit supporting community initiatives",
-      "description": "Created web platforms to support donations and community engagement. Built front-end solutions that balanced usability, performance, and rapid delivery.",
+      "tagline": "Atmiya Care is a nonprofit supporting community outreach and charitable initiatives.",
+      "description": "Built web platforms to support donations and community engagement. Delivered features end-to-end in a fast-moving environment, focusing on usability, performance, and real-world impact.",
       "highlights": [
         "Developed and deployed custom web solutions using React, Angular, HTML5, CSS3, and JavaScript to support donation and community engagement platforms.",
         "Implemented RESTful API integrations and client-side data handling to deliver dynamic, real-time user experiences.",
