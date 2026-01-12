@@ -55,10 +55,10 @@
       "location": "New Jersey",
       "period": "Sep 2024 — Present",
       "highlights": [
-        "Primarily focused on command center operations, rebuilding the UI based on requirements from the ops team to improve workflow efficiency and user experience.",
-        "Developed and maintained Kiswe UI, a custom component library and design system built specifically for internal customer-facing applications.",
-        "Built reusable components and UI patterns that standardize design across multiple products, reducing development time and ensuring consistency.",
-        "Collaborated closely with operations team to understand their needs and translate requirements into intuitive, performant front-end solutions."
+        "Architected and engineered a comprehensive UI rebuild for the command center platform, collaborating closely with operations teams to translate complex operational requirements into intuitive, high-performance interfaces that streamline real-time event management workflows.",
+        "Led the development and maintenance of Kiswe-UI, a proprietary component library and design system, establishing reusable, scalable UI components that standardize development practices across multiple product lines and accelerate feature delivery.",
+        "Built and maintained customer-facing component libraries, delivering enterprise-grade, customizable UI modules that enable rapid deployment of white-label solutions while maintaining brand consistency and extensibility.",
+        "Implemented advanced front-end architectures leveraging modern JavaScript frameworks, optimizing rendering performance and state management for mission-critical command center operations handling high-concurrency scenarios."
       ]
     },
     {
