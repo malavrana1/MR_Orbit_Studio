@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "/",
   "copyright": "Copyright © 2024 MR Orbit Studio. All rights reserved.",
+  "packageManager": "pnpm@8.15.0",
   "dependencies": {
     "bootstrap": "^5.3.8",
     "react": "^19.2.3",
@@ -14,16 +15,10 @@
     "react-typed": "^2.0.12"
   },
   "scripts": {
-    "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
-    "serve": "react-scripts start",
-    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "deploy": "pnpm run build && firebase deploy --only hosting",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.js\""
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
