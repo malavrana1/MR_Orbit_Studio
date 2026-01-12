@@ -29,8 +29,6 @@ import { getSkillIcon } from '../../utils/skillIcons'
 import resumePdf from '../../assets/pdf/MR_Resume.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
-import ContactModal from '../ContactModal'
-
 import kisweLogo from '../../assets/images/logos/kiswe.png'
 import genslerLogo from '../../assets/images/logos/gensler.png'
 import cignaLogo from '../../assets/images/logos/cigna.png'
@@ -70,9 +68,8 @@ export default function LandingPage() {
   )?.items
 
   const toolkitDescriptions = resume.skillDescriptions || {}
-  const [expandedExperience, setExpandedExperience] = useState('0')
+  const [expandedExperience, setExpandedExperience] = useState({})
   const [expandedCertification, setExpandedCertification] = useState('')
-  const [showContactModal, setShowContactModal] = useState(false)
   const [emailCopied, setEmailCopied] = useState(false)
   const [phoneCopied, setPhoneCopied] = useState(false)
 
@@ -81,8 +78,6 @@ export default function LandingPage() {
   const heroUI = ui.hero || {}
   const sectionsUI = ui.sections || {}
   const typedConfig = ui.typed || { typeSpeed: 45, backSpeed: 22 }
-
-  const featuredProjects = allProjects
 
   return (
     <div className="landing-page" id="home">
@@ -305,43 +300,125 @@ export default function LandingPage() {
       <section id="experience" className="landing-experience py-5">
         <Container>
           <div className="experience-heading text-center">
-            <h2>{sectionsUI.experienceTitle || 'Recent roles & impact'}</h2>
+            <h2>{sectionsUI.experienceTitle || 'My work experience'}</h2>
             <p className="text-muted">
               {sectionsUI.experienceDescription ||
-                'A snapshot of how I help teams ship reliable, performant products while mentoring teammates and balancing life on the tennis court.'}
+                "Here's a look at how I help teams build great products while working with others and staying active."}
             </p>
           </div>
-          <div className="experience-accordion">
+          <div className="experience-grid">
             {resume.experience.map((role, index) => {
-              const key = String(index)
-              const isOpen = expandedExperience === key
               const companyLogo = getCompanyLogo(role.company)
+              const cardKey = `${role.company}-${index}`
+              const isExpanded = expandedExperience[cardKey] || false
+              const techKeywords = [
+                'React', 'Angular', 'Vue', 'Next.js', 'Vue.js', 'React.js',
+                'Kiswe UI', 'kiswe-ui',
+                'JavaScript', 'ES6+', 'HTML5', 'CSS3', 'TypeScript', 'Node.js',
+                'Bootstrap', 'Tailwind CSS',
+                'RESTful APIs', 'GraphQL', 'Client-side Data Handling',
+                'Jest', 'React Testing Library', 'Unit & Integration Testing',
+                'pnpm', 'npm',
+                'Git', 'Bitbucket', 'Webpack', 'AWS', 'Docker', 'Jenkins',
+                'Vite', 'Parcel', 'Rollup',
+                'Form Validation', 'Performance Optimization', 'Lazy Loading', 
+                'Code Splitting', 'Browser Debugging Tools', 'Accessibility', 'WCAG',
+                'Responsive Design', 'Reusable Components', 'State-driven UI'
+              ]
+              const usedTech = techKeywords.filter(tech => {
+                const techLower = tech.toLowerCase()
+                return role.highlights.some(highlight => {
+                  const highlightLower = highlight.toLowerCase()
+                  if (tech === 'React' && highlightLower.includes('react')) {
+                    return !highlightLower.includes('react.js') || tech === 'React.js'
+                  }
+                  if (tech === 'Vue' && highlightLower.includes('vue')) {
+                    return !highlightLower.includes('vue.js') || tech === 'Vue.js'
+                  }
+                  if (tech === 'Client-side Data Handling') {
+                    return highlightLower.includes('client-side') && 
+                           (highlightLower.includes('data handling') || highlightLower.includes('data manipulation'))
+                  }
+                  if (tech === 'Unit & Integration Testing') {
+                    return highlightLower.includes('testing') && 
+                           (highlightLower.includes('unit') || highlightLower.includes('integration') || highlightLower.includes('automated testing'))
+                  }
+                  if (tech === 'React Testing Library') {
+                    return highlightLower.includes('react testing') || highlightLower.includes('testing library')
+                  }
+                  if (tech === 'Performance Optimization') {
+                    return highlightLower.includes('performance') && 
+                           (highlightLower.includes('optimization') || highlightLower.includes('optimize') || highlightLower.includes('optimizing'))
+                  }
+                  if (tech === 'Code Splitting') {
+                    return highlightLower.includes('code splitting') || highlightLower.includes('code split')
+                  }
+                  if (tech === 'Lazy Loading') {
+                    return highlightLower.includes('lazy loading') || highlightLower.includes('lazy load')
+                  }
+                  if (tech === 'Form Validation') {
+                    return highlightLower.includes('form validation') || highlightLower.includes('validation')
+                  }
+                  if (tech === 'Browser Debugging Tools') {
+                    return highlightLower.includes('browser debugging') || highlightLower.includes('debugging tools')
+                  }
+                  if (tech === 'Accessibility' || tech === 'WCAG') {
+                    return highlightLower.includes('accessibility') || highlightLower.includes('wcag')
+                  }
+                  if (tech === 'Responsive Design') {
+                    return highlightLower.includes('responsive') && highlightLower.includes('design')
+                  }
+                  if (tech === 'Reusable Components') {
+                    return highlightLower.includes('reusable') && highlightLower.includes('component')
+                  }
+                  if (tech === 'State-driven UI') {
+                    return highlightLower.includes('state-driven') || highlightLower.includes('state driven')
+                  }
+                  if (tech === 'Kiswe UI' || tech === 'kiswe-ui') {
+                    return highlightLower.includes('kiswe-ui') || highlightLower.includes('kiswe ui')
+                  }
+                  return highlightLower.includes(techLower)
+                })
+              })
+              let filteredTech = usedTech
+              if (role.company === 'Kiswe') {
+                if (!usedTech.some(tech => tech.toLowerCase().includes('kiswe'))) {
+                  filteredTech = [...usedTech, 'Kiswe UI']
+                }
+                filteredTech = filteredTech.filter(tech => {
+                  const techLower = tech.toLowerCase()
+                  return !techLower.includes('react') && 
+                         !techLower.includes('restful') && 
+                         !techLower.includes('tailwind')
+                })
+              }
+              const uniqueTech = Array.from(new Set(filteredTech))
+              const sortedTech = uniqueTech.sort((a, b) => {
+                if (a.includes('.js') && !b.includes('.js')) return -1
+                if (!a.includes('.js') && b.includes('.js')) return 1
+                return 0
+              })
+              const summary = role.highlights[0] || ''
 
               return (
-                <div
-                  className={`experience-item ${isOpen ? 'experience-item--open' : ''}`}
-                  key={`${role.company}-${role.role}`}
+                <Card 
+                  key={cardKey}
+                  className={`experience-card border-0 shadow-sm h-100 ${isExpanded ? 'experience-card--expanded' : ''}`}
                 >
-                  <button
-                    type="button"
-                    className="experience-toggle"
-                    onClick={() => setExpandedExperience(isOpen ? '' : key)}
-                    aria-expanded={isOpen}
-                    aria-controls={`experience-panel-${key}`}
-                  >
-                    <div className="experience-header">
+                  <Card.Body className="p-4">
+                    <div className="experience-card-header">
                       <div className="experience-company-logo">
-                        <img 
-                          src={companyLogo} 
-                          alt={`${role.company} logo`}
-                          className="company-logo-img"
-                        />
+                        {companyLogo && (
+                          <img 
+                            src={companyLogo} 
+                            alt={`${role.company} logo`}
+                            className="company-logo-img"
+                          />
+                        )}
                       </div>
-                      <div className="experience-header__content">
-                        <div className="experience-header__title">
-                          <h3 className="experience-company">{role.company}</h3>
-                          <span className="experience-role">{role.role}</span>
-                        </div>
+                      <div className="experience-card-info">
+                        <h3 className="experience-company">{role.company}</h3>
+                        <p className="experience-role">{role.role}</p>
                         <div className="experience-meta">
                           <span className="experience-pill">
                             {role.location}
@@ -352,19 +429,37 @@ export default function LandingPage() {
                         </div>
                       </div>
                     </div>
-                    <FaChevronDown className="experience-icon" />
-                  </button>
-                  <div
-                    id={`experience-panel-${key}`}
-                    className={`experience-body ${isOpen ? 'experience-body--open' : ''}`}
-                  >
-                    <ul className="experience-list">
-                      {role.highlights.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+                    <div className="experience-card-content">
+                      <p className="experience-summary">
+                        {summary}
+                      </p>
+                      {sortedTech.length > 0 && (
+                        <div className="experience-tech-tags">
+                          {(isExpanded ? sortedTech : sortedTech.slice(0, 5)).map((tech) => (
+                            <span key={tech} className="experience-tech-tag">
+                              {tech}
+                            </span>
+                          ))}
+                          {sortedTech.length > 5 && (
+                            <button
+                              type="button"
+                              className="experience-tech-tag experience-tech-tag--more experience-expand-btn"
+                              onClick={(e) => {
+                                e.stopPropagation()
+                                setExpandedExperience(prev => ({
+                                  ...prev,
+                                  [cardKey]: !prev[cardKey]
+                                }))
+                              }}
+                            >
+                              {isExpanded ? 'Show Less' : `+${sortedTech.length - 5} more`}
+                            </button>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  </Card.Body>
+                </Card>
               )
             })}
           </div>
@@ -383,7 +478,7 @@ export default function LandingPage() {
             </Col>
           </Row>
           <Row className="g-4 justify-content-center">
-            {featuredProjects.map((p) => (
+            {allProjects.map((p) => (
               <Col md={4} key={p.title}>
                 <Card className="project-card h-100 border-0 shadow-sm">
                   <Card.Body>
@@ -714,12 +809,6 @@ export default function LandingPage() {
           </Row>
         </Container>
       </section>
-
-      <ContactModal
-        show={showContactModal}
-        onClose={() => setShowContactModal(false)}
-        toEmail="malavrana90@gmail.com"
-      />
     </div>
   )
 }
