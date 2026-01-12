@@ -2634,10 +2634,6 @@ button.summary-inline-link {
         gap: 0.5rem;
     }
 
-    .experience-meta-box {
-        width: 100%;
-    }
-
     .experience-company {
         font-size: 1.25rem;
     }
@@ -2657,13 +2653,7 @@ button.summary-inline-link {
     }
 
     .experience-location {
-        font-size: 0.7rem;
-        padding: 0.2rem 0.45rem;
-    }
-
-    .experience-location {
         font-size: 0.75rem;
-        padding: 0.3rem 0.65rem;
     }
 
     .experience-role {
@@ -3033,7 +3023,10 @@ button.summary-inline-link {
 
     .experience-period {
         font-size: 0.75rem;
-        padding: 0.3rem 0.65rem;
+    }
+
+    .experience-location {
+        font-size: 0.75rem;
     }
 
     .experience-role {
@@ -3041,7 +3034,7 @@ button.summary-inline-link {
     }
 
     .experience-location {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .experience-tagline {
