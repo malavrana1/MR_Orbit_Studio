@@ -125,7 +125,6 @@ export default function Header() {
   }, [nav.links])
 
   useEffect(() => {
-    // Prevent body scroll when mobile menu is open
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden'
     } else {
@@ -138,12 +137,11 @@ export default function Header() {
   }, [isMobileMenuOpen])
 
   useEffect(() => {
-    // Close mobile menu when clicking outside
     const handleClickOutside = (event) => {
       if (isMobileMenuOpen) {
-        const nav = event.target.closest('.main-nav')
+        const navElement = event.target.closest('.main-nav')
         const toggle = event.target.closest('.mobile-menu-toggle')
-        if (!nav && !toggle) {
+        if (!navElement && !toggle) {
           setIsMobileMenuOpen(false)
         }
       }
