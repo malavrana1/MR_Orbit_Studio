@@ -55,10 +55,10 @@
       "location": "New Jersey",
       "period": "Sep 2024 — Present",
       "highlights": [
-        "Designed, developed, and deployed custom web applications using HTML5, CSS3, JavaScript (ES6+), React, and Vue, delivering scalable front-end solutions aligned with business requirements.",
-        "Implemented complex client-side logic, interactive workflows, and form validation to ensure seamless user interactions across browsers and devices.",
-        "Integrated and maintained RESTful APIs for real-time data handling and smooth client-side interaction with backend systems.",
-        "Optimized front-end performance through reusable components, efficient code structuring, and browser debugging tools to improve reliability during high-traffic live events."
+        "Primarily focused on command center operations, rebuilding the UI based on requirements from the ops team to improve workflow efficiency and user experience.",
+        "Developed and maintained Kiswe UI, a custom component library and design system built specifically for internal customer-facing applications.",
+        "Built reusable components and UI patterns that standardize design across multiple products, reducing development time and ensuring consistency.",
+        "Collaborated closely with operations team to understand their needs and translate requirements into intuitive, performant front-end solutions."
       ]
     },
     {
