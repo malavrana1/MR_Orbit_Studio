@@ -54,11 +54,13 @@
       "company": "Kiswe",
       "location": "New Jersey",
       "period": "Sep 2024 — Present",
+      "tagline": "Interactive platform for live sports and media experiences",
+      "description": "Frontend Engineer working on modernizing the Comment Center UI and building Kiswe's internal UI component library. Focused on creating reusable, scalable components, improving consistency, and delivering fast, reliable front-end solutions.",
       "highlights": [
-        "Architected and engineered a comprehensive UI rebuild for the command center platform, collaborating closely with operations teams to translate complex operational requirements into intuitive, high-performance interfaces that streamline real-time event management workflows.",
-        "Led the development and maintenance of Kiswe-UI, a proprietary component library and design system, establishing reusable, scalable UI components that standardize development practices across multiple product lines and accelerate feature delivery.",
-        "Built and maintained customer-facing component libraries, delivering enterprise-grade, customizable UI modules that enable rapid deployment of white-label solutions while maintaining brand consistency and extensibility.",
-        "Implemented advanced front-end architectures leveraging modern JavaScript frameworks, optimizing rendering performance and state management for mission-critical command center operations handling high-concurrency scenarios."
+        "Designed, developed, and deployed custom web applications using HTML5, CSS3, JavaScript (ES6+), React, and Vue, delivering scalable front-end solutions aligned with business requirements.",
+        "Implemented complex client-side logic, interactive workflows, and form validation to ensure seamless user interactions across browsers and devices.",
+        "Integrated and maintained RESTful APIs for real-time data handling and smooth client-side interaction with backend systems.",
+        "Optimized front-end performance through reusable components, efficient code structuring, and browser debugging tools to improve reliability during high-traffic live events."
       ]
     },
     {
@@ -66,6 +68,8 @@
       "company": "Gensler",
       "location": "New Jersey",
       "period": "Jul 2022 — Sep 2024",
+      "tagline": "Global architecture and design firm",
+      "description": "Built enterprise web applications with React, Angular, Vue, and Next.js. Delivered polished, scalable front-end solutions that matched design systems and supported internal and client-facing tools.",
       "highlights": [
         "Built enterprise-grade web interfaces using React, Angular, Vue, and Next.js, following modern front-end development best practices.",
         "Developed responsive, adaptive UIs with HTML5, CSS3, Bootstrap, and Tailwind CSS, ensuring accessibility and consistent UX across devices.",
@@ -78,6 +82,8 @@
       "company": "Cigna Express Scripts",
       "location": "New Jersey",
       "period": "May 2021 — Apr 2022",
+      "tagline": "Healthcare and pharmacy platform",
+      "description": "Developed customer-facing workflows using React and modern web technologies. Focused on performance, usability, and accessible interfaces for complex healthcare applications.",
       "highlights": [
         "Designed and implemented interactive web workflows for online pharmacy applications using React, HTML5, CSS3, and JavaScript (ES6+).",
         "Built and maintained client-side integrations with backend services using RESTful APIs, supporting accurate real-time updates.",
@@ -90,6 +96,8 @@
       "company": "Atmiya Care Charity",
       "location": "New Jersey",
       "period": "Sep 2020 — May 2021",
+      "tagline": "Nonprofit supporting community initiatives",
+      "description": "Created web platforms to support donations and community engagement. Built front-end solutions that balanced usability, performance, and rapid delivery.",
       "highlights": [
         "Developed and deployed custom web solutions using React, Angular, HTML5, CSS3, and JavaScript to support donation and community engagement platforms.",
         "Implemented RESTful API integrations and client-side data handling to deliver dynamic, real-time user experiences.",
