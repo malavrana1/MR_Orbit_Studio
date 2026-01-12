@@ -38,12 +38,6 @@ body {
     line-height: 1.6;
 }
 
-.app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 :focus-visible {
     outline: 3px solid rgba(37, 99, 235, 0.5);
     outline-offset: 2px;

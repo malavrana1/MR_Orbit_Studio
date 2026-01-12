@@ -43,6 +43,8 @@
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .footer-links a::before,
@@ -82,13 +84,6 @@
 .footer-links button.footer-link-btn svg {
     font-size: 1.1rem;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-links button.footer-link-btn {
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    cursor: pointer;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.1));
-    font-family: inherit;
 }
 
 [data-theme="dark"] .footer-container {
