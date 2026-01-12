@@ -68,7 +68,6 @@ export default function LandingPage() {
   )?.items
 
   const toolkitDescriptions = resume.skillDescriptions || {}
-  const [expandedExperience, setExpandedExperience] = useState({})
   const [expandedCertification, setExpandedCertification] = useState('')
   const [emailCopied, setEmailCopied] = useState(false)
   const [phoneCopied, setPhoneCopied] = useState(false)
@@ -309,101 +308,12 @@ export default function LandingPage() {
           <div className="experience-grid">
             {resume.experience.map((role, index) => {
               const companyLogo = getCompanyLogo(role.company)
-              const cardKey = `${role.company}-${index}`
-              const isExpanded = expandedExperience[cardKey] || false
-              const techKeywords = [
-                'React', 'Angular', 'Vue', 'Next.js', 'Vue.js', 'React.js',
-                'Kiswe UI', 'kiswe-ui',
-                'JavaScript', 'ES6+', 'HTML5', 'CSS3', 'TypeScript', 'Node.js',
-                'Bootstrap', 'Tailwind CSS',
-                'RESTful APIs', 'GraphQL', 'Client-side Data Handling',
-                'Jest', 'React Testing Library', 'Unit & Integration Testing',
-                'pnpm', 'npm',
-                'Git', 'Bitbucket', 'Webpack', 'AWS', 'Docker', 'Jenkins',
-                'Vite', 'Parcel', 'Rollup',
-                'Form Validation', 'Performance Optimization', 'Lazy Loading', 
-                'Code Splitting', 'Browser Debugging Tools', 'Accessibility', 'WCAG',
-                'Responsive Design', 'Reusable Components', 'State-driven UI'
-              ]
-              const usedTech = techKeywords.filter(tech => {
-                const techLower = tech.toLowerCase()
-                return role.highlights.some(highlight => {
-                  const highlightLower = highlight.toLowerCase()
-                  if (tech === 'React' && highlightLower.includes('react')) {
-                    return !highlightLower.includes('react.js') || tech === 'React.js'
-                  }
-                  if (tech === 'Vue' && highlightLower.includes('vue')) {
-                    return !highlightLower.includes('vue.js') || tech === 'Vue.js'
-                  }
-                  if (tech === 'Client-side Data Handling') {
-                    return highlightLower.includes('client-side') && 
-                           (highlightLower.includes('data handling') || highlightLower.includes('data manipulation'))
-                  }
-                  if (tech === 'Unit & Integration Testing') {
-                    return highlightLower.includes('testing') && 
-                           (highlightLower.includes('unit') || highlightLower.includes('integration') || highlightLower.includes('automated testing'))
-                  }
-                  if (tech === 'React Testing Library') {
-                    return highlightLower.includes('react testing') || highlightLower.includes('testing library')
-                  }
-                  if (tech === 'Performance Optimization') {
-                    return highlightLower.includes('performance') && 
-                           (highlightLower.includes('optimization') || highlightLower.includes('optimize') || highlightLower.includes('optimizing'))
-                  }
-                  if (tech === 'Code Splitting') {
-                    return highlightLower.includes('code splitting') || highlightLower.includes('code split')
-                  }
-                  if (tech === 'Lazy Loading') {
-                    return highlightLower.includes('lazy loading') || highlightLower.includes('lazy load')
-                  }
-                  if (tech === 'Form Validation') {
-                    return highlightLower.includes('form validation') || highlightLower.includes('validation')
-                  }
-                  if (tech === 'Browser Debugging Tools') {
-                    return highlightLower.includes('browser debugging') || highlightLower.includes('debugging tools')
-                  }
-                  if (tech === 'Accessibility' || tech === 'WCAG') {
-                    return highlightLower.includes('accessibility') || highlightLower.includes('wcag')
-                  }
-                  if (tech === 'Responsive Design') {
-                    return highlightLower.includes('responsive') && highlightLower.includes('design')
-                  }
-                  if (tech === 'Reusable Components') {
-                    return highlightLower.includes('reusable') && highlightLower.includes('component')
-                  }
-                  if (tech === 'State-driven UI') {
-                    return highlightLower.includes('state-driven') || highlightLower.includes('state driven')
-                  }
-                  if (tech === 'Kiswe UI' || tech === 'kiswe-ui') {
-                    return highlightLower.includes('kiswe-ui') || highlightLower.includes('kiswe ui')
-                  }
-                  return highlightLower.includes(techLower)
-                })
-              })
-              let filteredTech = usedTech
-              if (role.company === 'Kiswe') {
-                if (!usedTech.some(tech => tech.toLowerCase().includes('kiswe'))) {
-                  filteredTech = [...usedTech, 'Kiswe UI']
-                }
-                filteredTech = filteredTech.filter(tech => {
-                  const techLower = tech.toLowerCase()
-                  return !techLower.includes('react') && 
-                         !techLower.includes('restful') && 
-                         !techLower.includes('tailwind')
-                })
-              }
-              const uniqueTech = Array.from(new Set(filteredTech))
-              const sortedTech = uniqueTech.sort((a, b) => {
-                if (a.includes('.js') && !b.includes('.js')) return -1
-                if (!a.includes('.js') && b.includes('.js')) return 1
-                return 0
-              })
               const summary = role.highlights[0] || ''
 
               return (
                 <Card 
-                  key={cardKey}
-                  className={`experience-card border-0 shadow-sm h-100 ${isExpanded ? 'experience-card--expanded' : ''}`}
+                  key={`${role.company}-${index}`}
+                  className="experience-card border-0 shadow-sm h-100"
                 >
                   <Card.Body className="p-4">
                     <div className="experience-card-header">
@@ -433,30 +343,6 @@ export default function LandingPage() {
                       <p className="experience-summary">
                         {summary}
                       </p>
-                      {sortedTech.length > 0 && (
-                        <div className="experience-tech-tags">
-                          {(isExpanded ? sortedTech : sortedTech.slice(0, 5)).map((tech) => (
-                            <span key={tech} className="experience-tech-tag">
-                              {tech}
-                            </span>
-                          ))}
-                          {sortedTech.length > 5 && (
-                            <button
-                              type="button"
-                              className="experience-tech-tag experience-tech-tag--more experience-expand-btn"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                setExpandedExperience(prev => ({
-                                  ...prev,
-                                  [cardKey]: !prev[cardKey]
-                                }))
-                              }}
-                            >
-                              {isExpanded ? 'Show Less' : `+${sortedTech.length - 5} more`}
-                            </button>
-                          )}
-                        </div>
-                      )}
                     </div>
                   </Card.Body>
                 </Card>
