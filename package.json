@@ -7,6 +7,7 @@
   "packageManager": "pnpm@8.15.0",
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "firebase": "^12.7.0",
     "react": "^19.2.3",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.3",
@@ -33,7 +34,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^3.4.2",
-    "firebase-tools": "^14.1.0"
+    "firebase-tools": "^14.1.0",
+    "prettier": "^3.4.2"
   }
 }
