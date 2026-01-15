@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect, useRef } from 'react'
+import React, { useMemo, useState } from 'react'
 import { ReactTyped } from 'react-typed'
 import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 import {
@@ -33,7 +33,6 @@ import kisweLogo from '../../assets/images/logos/kiswe.png'
 import genslerLogo from '../../assets/images/logos/gensler.png'
 import cignaLogo from '../../assets/images/logos/cigna.png'
 import atmiyaLogo from '../../assets/images/logos/atmiya_care_charity.png'
-import { analyticsService } from '../../services/analytics'
 
 const getCompanyLogo = (companyName) => {
   const logoMap = {
@@ -72,64 +71,12 @@ export default function LandingPage() {
   const [expandedCertification, setExpandedCertification] = useState('')
   const [emailCopied, setEmailCopied] = useState(false)
   const [phoneCopied, setPhoneCopied] = useState(false)
-  const viewedSections = useRef(new Set())
-  const trackedScrollDepths = useRef(new Set())
 
   const summaryStats = profile.stats || []
   const ui = siteInfo.ui || {}
   const heroUI = ui.hero || {}
   const sectionsUI = ui.sections || {}
   const typedConfig = ui.typed || { typeSpeed: 45, backSpeed: 22 }
-
-  useEffect(() => {
-    analyticsService.trackPageView('home')
-  }, [])
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['summary', 'experience', 'projects', 'toolkit', 'certifications', 'education', 'connect']
-      sections.forEach((sectionId) => {
-        const element = document.getElementById(sectionId)
-        if (element && !viewedSections.current.has(sectionId)) {
-          const rect = element.getBoundingClientRect()
-          if (rect.top < window.innerHeight * 0.5 && rect.bottom > 0) {
-            viewedSections.current.add(sectionId)
-            analyticsService.trackSectionView(sectionId)
-          }
-        }
-      })
-
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight
-      const scrollPercentage = Math.round((scrollTop / scrollHeight) * 100)
-      const milestones = [25, 50, 75, 100]
-      milestones.forEach(milestone => {
-        if (scrollPercentage >= milestone && !trackedScrollDepths.current.has(milestone)) {
-          trackedScrollDepths.current.add(milestone)
-          analyticsService.trackScrollDepth(milestone)
-        }
-      })
-    }
-
-    let ticking = false
-    const throttledScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          handleScroll()
-          ticking = false
-        })
-        ticking = true
-      }
-    }
-
-    window.addEventListener('scroll', throttledScroll, { passive: true })
-    handleScroll()
-    return () => window.removeEventListener('scroll', throttledScroll)
-  }, [])
-
-  const trackClick = (elementType, elementId, elementText) => {
-    analyticsService.trackClick(elementType, elementId, elementText)
-  }
 
   return (
     <div className="landing-page" id="home">
@@ -276,7 +223,6 @@ export default function LandingPage() {
                     download
                     aria-label="Download resume PDF"
                     className="summary-inline-link"
-                    onClick={() => trackClick('download', 'resume-download', 'Save résumé')}
                   >
                     <FaDownload className="summary-inline-link__icon" />
                     <span>{sectionsUI.saveResume || 'Save résumé'}</span>
@@ -286,7 +232,6 @@ export default function LandingPage() {
                     type="button"
                     onClick={async (e) => {
                       e.preventDefault()
-                      trackClick('button', 'email-copy', 'Email')
                       try {
                         await navigator.clipboard.writeText(profile.contact.email)
                         setEmailCopied(true)
@@ -307,7 +252,6 @@ export default function LandingPage() {
                     type="button"
                     onClick={async (e) => {
                       e.preventDefault()
-                      trackClick('button', 'phone-copy', 'Phone')
                       try {
                         await navigator.clipboard.writeText(profile.contact.phone)
                         setPhoneCopied(true)
@@ -330,7 +274,6 @@ export default function LandingPage() {
                   rel="noopener noreferrer"
                     aria-label="LinkedIn profile"
                     className="summary-inline-link"
-                    onClick={() => trackClick('link', 'linkedin-link', 'LinkedIn')}
                   >
                     <FaLinkedin className="summary-inline-link__icon" />
                     <span>LinkedIn</span>
@@ -342,7 +285,6 @@ export default function LandingPage() {
                   rel="noopener noreferrer"
                     aria-label="GitHub profile"
                     className="summary-inline-link"
-                    onClick={() => trackClick('link', 'github-link', 'GitHub')}
                 >
                     <FaGithub className="summary-inline-link__icon" />
                     <span>GitHub</span>
@@ -438,7 +380,6 @@ export default function LandingPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
-                      onClick={() => trackClick('link', `project-${p.title.toLowerCase().replace(/\s+/g, '-')}`, p.cta)}
                     >
                       <span>{p.cta}</span>
                       <FaExternalLinkAlt className="project-link__icon" />
@@ -559,7 +500,6 @@ export default function LandingPage() {
                               target="_blank"
                               rel="noopener noreferrer"
                               className="certification-link small"
-                              onClick={() => trackClick('link', `cert-${cert.name.toLowerCase().replace(/\s+/g, '-')}`, 'View certificate')}
                             >
                               View certificate →
                             </a>
@@ -612,7 +552,6 @@ export default function LandingPage() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="certification-accordion-link"
-                            onClick={() => trackClick('link', `cert-${cert.name.toLowerCase().replace(/\s+/g, '-')}`, 'View certificate')}
                           >
                             View certificate →
                           </a>

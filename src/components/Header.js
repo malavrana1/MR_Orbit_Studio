@@ -15,7 +15,6 @@ import {
   FaSun,
 } from 'react-icons/fa'
 import '../css/Header.css'
-import { analyticsService } from '../services/analytics'
 
 const Logo = ({ className = '', size = 28 }) => (
   <svg
@@ -101,7 +100,6 @@ export default function Header() {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode)
-    analyticsService.trackClick('button', 'dark-mode-toggle', isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode')
   }
 
   useEffect(() => {
@@ -163,8 +161,6 @@ export default function Header() {
   const handleNavClick = (e, href) => {
     e.preventDefault()
     setIsMobileMenuOpen(false)
-    const sectionName = href.substring(1) || 'home'
-    analyticsService.trackClick('navigation', `nav-${sectionName}`, sectionName.charAt(0).toUpperCase() + sectionName.slice(1))
     const element = document.querySelector(href)
     if (element) {
       const offset = 80
