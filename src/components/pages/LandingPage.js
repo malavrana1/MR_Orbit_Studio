@@ -30,6 +30,7 @@ import resumePdf from '../../assets/pdf/MR_Resume.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
 import { observeScrollAnimations, setupScrollProgress } from '../../utils/scrollAnimations'
+import ContactModal from '../ContactModal'
 import kisweLogo from '../../assets/images/logos/kiswe.png'
 import genslerLogo from '../../assets/images/logos/gensler.png'
 import cignaLogo from '../../assets/images/logos/cigna.png'
@@ -65,6 +66,7 @@ export default function LandingPage() {
     skillCategories[0]?.category || 'Front-End Technologies',
   )
   const [showScrollTop, setShowScrollTop] = useState(false)
+  const [showContactModal, setShowContactModal] = useState(false)
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,
   )?.items
@@ -239,12 +241,8 @@ export default function LandingPage() {
     addStructuredData()
   }, [profile, skillCategories])
 
-
   return (
     <div className="landing-page" id="home">
-      <a href="#main-content" className="skip-to-content" aria-label="Skip to main content">
-        Skip to main content
-      </a>
       <div className="animated-background">
         <div className="bg-gradient-orb bg-orb-1"></div>
         <div className="bg-gradient-orb bg-orb-2"></div>
@@ -545,14 +543,7 @@ export default function LandingPage() {
             <Col xs={12} lg={8}>
               <Card className="toolkit-card border-0 shadow-sm h-100" data-animate="fade-up">
                 <Card.Body>
-                  <div className="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
-                    <div>
-                      <span className="toolkit-label">
-                        {sectionsUI.currentlyViewing || 'Currently viewing'}
-                      </span>
-                      <h5 className="mb-1">{activeToolkit}</h5>
-                    </div>
-                  </div>
+                  <h5 className="mb-3">{activeToolkit}</h5>
                   <p className="text-muted mb-4">
                     {toolkitDescriptions[activeToolkit] ||
                       'Skills that keep the work flowing smoothly.'}
@@ -597,10 +588,10 @@ export default function LandingPage() {
                       </div>
                       <div className="credential-content">
                         <h6 className="credential-title">{edu.degree}</h6>
-                        <p className="credential-subtitle mb-1">
-                          {edu.institution}
-                          {edu.location && ` · ${edu.location}`}
-                        </p>
+                        <h6 className="credential-institution mb-1">{edu.institution}</h6>
+                        {edu.location && (
+                          <p className="credential-subtitle mb-1 text-muted">{edu.location}</p>
+                        )}
                         <span className="credential-period">{edu.period}</span>
                       </div>
                     </div>
@@ -708,22 +699,14 @@ export default function LandingPage() {
                       Download Resume
                     </a>
                     <a
-                      href={resumePdf}
+                      href={profile.social.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary"
-                      title="View resume in new tab"
+                      title="View GitHub profile"
                     >
-                      <FaFilePdf />
-                      View Resume
-                    </a>
-                    <a
-                      href={`mailto:${profile.contact.email}`}
-                      className="btn btn-outline-primary"
-                      title="Send email"
-                    >
-                      <FaEnvelope />
-                      Email Me
+                      <FaGithub />
+                      GitHub
                     </a>
                     <a
                       href={profile.social.linkedin}
@@ -735,16 +718,6 @@ export default function LandingPage() {
                       <FaLinkedin />
                       LinkedIn
                     </a>
-                    <a
-                      href={profile.social.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-outline-primary"
-                      title="View GitHub profile"
-                    >
-                      <FaGithub />
-                      GitHub
-                    </a>
                     <button
                       onClick={sharePortfolio}
                       className="btn btn-outline-primary"
@@ -753,6 +726,24 @@ export default function LandingPage() {
                       <FaShareAlt />
                       Share
                     </button>
+                    <button
+                      onClick={() => setShowContactModal(true)}
+                      className="btn btn-outline-primary"
+                      title="Quick contact form"
+                    >
+                      <FaEnvelope />
+                      Quick Contact
+                    </button>
+                    <a
+                      href={resumePdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                      title="View resume in new tab"
+                    >
+                      <FaFilePdf />
+                      View Resume
+                    </a>
                   </div>
                 </Card.Body>
               </Card>
@@ -771,6 +762,12 @@ export default function LandingPage() {
           <FaArrowUp />
         </button>
       )}
+
+      <ContactModal
+        show={showContactModal}
+        onClose={() => setShowContactModal(false)}
+        toEmail={profile.contact.email}
+      />
     </div>
   )
 }
