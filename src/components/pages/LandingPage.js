@@ -77,7 +77,7 @@ export default function LandingPage() {
   const [showContactModal, setShowContactModal] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem('darkMode')
-    return saved ? JSON.parse(saved) : false
+    return saved ? JSON.parse(saved) : true
   })
 
   useEffect(() => {
@@ -92,7 +92,7 @@ export default function LandingPage() {
   useEffect(() => {
     const handleStorageChange = (e) => {
       if (e.key === 'darkMode') {
-        const newValue = e.newValue ? JSON.parse(e.newValue) : false
+        const newValue = e.newValue ? JSON.parse(e.newValue) : true
         setIsDarkMode(newValue)
       }
     }
@@ -100,6 +100,8 @@ export default function LandingPage() {
       const saved = localStorage.getItem('darkMode')
       if (saved) {
         setIsDarkMode(JSON.parse(saved))
+      } else {
+        setIsDarkMode(true)
       }
     }
     window.addEventListener('storage', handleStorageChange)

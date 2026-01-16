@@ -121,7 +121,7 @@ const Header = memo(function Header() {
   const [activeSection, setActiveSection] = useState('home')
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem('darkMode')
-    return saved ? JSON.parse(saved) : false
+    return saved ? JSON.parse(saved) : true
   })
 
   useEffect(() => {
@@ -136,7 +136,7 @@ const Header = memo(function Header() {
   useEffect(() => {
     const handleStorageChange = (e) => {
       if (e.key === 'darkMode') {
-        const newValue = e.newValue ? JSON.parse(e.newValue) : false
+        const newValue = e.newValue ? JSON.parse(e.newValue) : true
         setIsDarkMode(newValue)
       }
     }
