@@ -89,13 +89,36 @@ export default function LandingPage() {
     localStorage.setItem('darkMode', JSON.stringify(isDarkMode))
   }, [isDarkMode])
 
+  useEffect(() => {
+    const handleStorageChange = (e) => {
+      if (e.key === 'darkMode') {
+        const newValue = e.newValue ? JSON.parse(e.newValue) : false
+        setIsDarkMode(newValue)
+      }
+    }
+    const handleCustomStorageChange = () => {
+      const saved = localStorage.getItem('darkMode')
+      if (saved) {
+        setIsDarkMode(JSON.parse(saved))
+      }
+    }
+    window.addEventListener('storage', handleStorageChange)
+    window.addEventListener('darkModeChanged', handleCustomStorageChange)
+    return () => {
+      window.removeEventListener('storage', handleStorageChange)
+      window.removeEventListener('darkModeChanged', handleCustomStorageChange)
+    }
+  }, [])
+
   const toggleDarkMode = () => {
     analyticsService.trackClick(
       'button',
       'toggle_dark_mode',
       isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode',
     )
-    setIsDarkMode(!isDarkMode)
+    const newValue = !isDarkMode
+    setIsDarkMode(newValue)
+    window.dispatchEvent(new Event('darkModeChanged'))
   }
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,

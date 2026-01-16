@@ -4215,68 +4215,20 @@ button.summary-inline-link {
   }
 }
 
+@media (max-width: 991px) {
+  .theme-toggle-floating {
+    display: none;
+  }
+
+  .scroll-to-top {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .professional-highlights {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .theme-toggle-floating,
-  .scroll-to-top {
-    bottom: 1.5rem;
-    width: 3rem;
-    height: 3rem;
-    min-width: 48px;
-    min-height: 48px;
-    font-size: 1.1rem;
-  }
-
-  .theme-toggle-floating {
-    left: 1.5rem;
-  }
-
-  .scroll-to-top {
-    right: 1.5rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .theme-toggle-floating,
-  .scroll-to-top {
-    bottom: 1rem;
-    width: 2.75rem;
-    height: 2.75rem;
-    min-width: 44px;
-    min-height: 44px;
-    font-size: 1rem;
-  }
-
-  .theme-toggle-floating {
-    left: 1rem;
-  }
-
-  .scroll-to-top {
-    right: 1rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .theme-toggle-floating,
-  .scroll-to-top {
-    bottom: 0.75rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    min-width: 44px;
-    min-height: 44px;
-    font-size: 0.9rem;
-  }
-
-  .theme-toggle-floating {
-    left: 0.75rem;
-  }
-
-  .scroll-to-top {
-    right: 0.75rem;
   }
 }
 

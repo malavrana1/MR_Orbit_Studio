@@ -12,6 +12,8 @@ import {
   FaInfoCircle,
   FaHandshake,
   FaEnvelope,
+  FaMoon,
+  FaSun,
 } from 'react-icons/fa'
 import '../css/Header.css'
 
@@ -117,6 +119,42 @@ const Header = memo(function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('darkMode')
+    return saved ? JSON.parse(saved) : false
+  })
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+    }
+    localStorage.setItem('darkMode', JSON.stringify(isDarkMode))
+  }, [isDarkMode])
+
+  useEffect(() => {
+    const handleStorageChange = (e) => {
+      if (e.key === 'darkMode') {
+        const newValue = e.newValue ? JSON.parse(e.newValue) : false
+        setIsDarkMode(newValue)
+      }
+    }
+    window.addEventListener('storage', handleStorageChange)
+    return () => window.removeEventListener('storage', handleStorageChange)
+  }, [])
+
+  const toggleDarkMode = () => {
+    analyticsService.trackClick(
+      'button',
+      'toggle_dark_mode',
+      isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode',
+    )
+    const newValue = !isDarkMode
+    setIsDarkMode(newValue)
+    setIsMobileMenuOpen(false)
+    window.dispatchEvent(new Event('darkModeChanged'))
+  }
 
   useEffect(() => {
     let ticking = false
@@ -251,6 +289,27 @@ const Header = memo(function Header() {
                 </li>
               )
             })}
+            <li className="theme-toggle-menu-item">
+              <button
+                className="nav-link theme-toggle-menu"
+                onClick={toggleDarkMode}
+                aria-label={
+                  isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'
+                }
+                title={
+                  isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'
+                }
+              >
+                {isDarkMode ? (
+                  <FaSun className="nav-icon" />
+                ) : (
+                  <FaMoon className="nav-icon" />
+                )}
+                <span className="nav-label">
+                  {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+                </span>
+              </button>
+            </li>
           </ul>
         </nav>
       </Container>
