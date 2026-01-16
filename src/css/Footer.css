@@ -102,8 +102,13 @@
 }
 
 [data-theme='dark'] .footer-container {
-  background: #2d2d2d;
-  border-top-color: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 -1px 3px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 [data-theme='dark'] .footer-text {
@@ -112,9 +117,30 @@
 
 [data-theme='dark'] .footer-links a,
 [data-theme='dark'] .footer-links button.footer-link-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
   color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .footer-links a::before,
+[data-theme='dark'] .footer-links button.footer-link-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
 }
 
 [data-theme='dark'] .footer-links a:hover,
@@ -122,9 +148,34 @@
 [data-theme='dark'] .footer-links button.footer-link-btn:hover,
 [data-theme='dark'] .footer-links button.footer-link-btn:focus-visible {
   background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.25);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px) scale(1.1) rotate(5deg);
+}
+
+[data-theme='dark'] .footer-links a:hover::before,
+[data-theme='dark'] .footer-links a:focus-visible::before,
+[data-theme='dark'] .footer-links button.footer-link-btn:hover::before,
+[data-theme='dark'] .footer-links button.footer-link-btn:focus-visible::before {
+  left: 100%;
+}
+
+[data-theme='dark'] .footer-links a svg,
+[data-theme='dark'] .footer-links button.footer-link-btn svg {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme='dark'] .footer-links a:hover svg,
+[data-theme='dark'] .footer-links a:focus-visible svg,
+[data-theme='dark'] .footer-links button.footer-link-btn:hover svg,
+[data-theme='dark'] .footer-links button.footer-link-btn:focus-visible svg {
+  transform: scale(1.3) rotate(15deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
 }
 
 [data-theme='dark'] .footer-links a:active,

@@ -92,16 +92,16 @@ export default function LandingPage() {
   useEffect(() => {
     const handleStorageChange = (e) => {
       if (e.key === 'darkMode') {
-        const newValue = e.newValue ? JSON.parse(e.newValue) : true
+        const newValue = e.newValue ? JSON.parse(e.newValue) : false
         setIsDarkMode(newValue)
       }
     }
     const handleCustomStorageChange = () => {
       const saved = localStorage.getItem('darkMode')
-      if (saved) {
+      if (saved !== null) {
         setIsDarkMode(JSON.parse(saved))
       } else {
-        setIsDarkMode(true)
+        setIsDarkMode(false)
       }
     }
     window.addEventListener('storage', handleStorageChange)
@@ -120,6 +120,13 @@ export default function LandingPage() {
     )
     const newValue = !isDarkMode
     setIsDarkMode(newValue)
+
+    if (newValue) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+    }
+    localStorage.setItem('darkMode', JSON.stringify(newValue))
     window.dispatchEvent(new Event('darkModeChanged'))
   }
   const activeToolkitItems = skillCategories.find(

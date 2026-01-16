@@ -136,12 +136,24 @@ const Header = memo(function Header() {
   useEffect(() => {
     const handleStorageChange = (e) => {
       if (e.key === 'darkMode') {
-        const newValue = e.newValue ? JSON.parse(e.newValue) : true
+        const newValue = e.newValue ? JSON.parse(e.newValue) : false
         setIsDarkMode(newValue)
       }
     }
+    const handleCustomStorageChange = () => {
+      const saved = localStorage.getItem('darkMode')
+      if (saved !== null) {
+        setIsDarkMode(JSON.parse(saved))
+      } else {
+        setIsDarkMode(false)
+      }
+    }
     window.addEventListener('storage', handleStorageChange)
-    return () => window.removeEventListener('storage', handleStorageChange)
+    window.addEventListener('darkModeChanged', handleCustomStorageChange)
+    return () => {
+      window.removeEventListener('storage', handleStorageChange)
+      window.removeEventListener('darkModeChanged', handleCustomStorageChange)
+    }
   }, [])
 
   const toggleDarkMode = () => {
@@ -153,6 +165,13 @@ const Header = memo(function Header() {
     const newValue = !isDarkMode
     setIsDarkMode(newValue)
     setIsMobileMenuOpen(false)
+
+    if (newValue) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+    }
+    localStorage.setItem('darkMode', JSON.stringify(newValue))
     window.dispatchEvent(new Event('darkModeChanged'))
   }
 
