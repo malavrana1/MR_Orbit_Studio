@@ -46,32 +46,11 @@ body {
 }
 
 .landing-page {
-  background: linear-gradient(
-    135deg,
-    #fafbff 0%,
-    #f8f9ff 20%,
-    #fdfaff 40%,
-    #fffafe 60%,
-    #fafbff 80%,
-    #f8f9ff 100%
-  );
-  background-size: 400% 400%;
-  animation: backgroundShift 30s ease infinite;
+  background: linear-gradient(135deg, #fafbff 0%, #f8f9ff 50%, #fdfaff 100%);
   color: var(--text-primary);
   position: relative;
   overflow-x: hidden;
   min-height: 100vh;
-  contain: layout style;
-}
-
-@keyframes backgroundShift {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 .animated-background {
@@ -83,8 +62,6 @@ body {
   pointer-events: none;
   z-index: 1;
   overflow: hidden;
-  will-change: opacity, transform;
-  transform: translateZ(0);
   background:
     radial-gradient(
       circle at 20% 30%,
@@ -101,114 +78,9 @@ body {
       rgba(118, 75, 162, 0.05) 0%,
       transparent 50%
     );
-  animation: backgroundGlow 25s ease-in-out infinite;
   opacity: 0.6;
-  will-change: opacity, transform;
 }
-
-@keyframes backgroundGlow {
-  0%,
-  100% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.1);
-  }
-}
-
-.bg-gradient-orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.8;
-  animation: floatOrb 20s ease-in-out infinite;
-  z-index: 1;
-}
-
-.bg-orb-1 {
-  width: 900px;
-  height: 900px;
-  background: radial-gradient(
-    circle,
-    rgba(102, 126, 234, 0.8),
-    rgba(118, 75, 162, 0.6),
-    rgba(102, 126, 234, 0.4),
-    transparent
-  );
-  top: -400px;
-  left: -400px;
-  animation-delay: 0s;
-  animation-duration: 25s;
-}
-
-.bg-orb-2 {
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(
-    circle,
-    rgba(240, 147, 251, 0.75),
-    rgba(118, 75, 162, 0.55),
-    rgba(240, 147, 251, 0.35),
-    transparent
-  );
-  bottom: -300px;
-  right: -300px;
-  animation-delay: 5s;
-  animation-duration: 30s;
-}
-
-.bg-orb-3 {
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(
-    circle,
-    rgba(79, 172, 254, 0.7),
-    rgba(102, 126, 234, 0.5),
-    rgba(79, 172, 254, 0.3),
-    transparent
-  );
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation-delay: 10s;
-  animation-duration: 35s;
-}
-
-.bg-orb-4 {
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(
-    circle,
-    rgba(118, 75, 162, 0.65),
-    rgba(102, 126, 234, 0.45),
-    rgba(118, 75, 162, 0.25),
-    transparent
-  );
-  top: 20%;
-  right: 10%;
-  animation-delay: 7s;
-  animation-duration: 28s;
-}
-
-@keyframes floatOrb {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-  25% {
-    transform: translate(50px, -50px) scale(1.1);
-  }
-  50% {
-    transform: translate(-30px, 30px) scale(0.9);
-  }
-  75% {
-    transform: translate(30px, 50px) scale(1.05);
-  }
-}
-
-.bg-mesh-gradient {
+a .bg-mesh-gradient {
   position: absolute;
   top: 0;
   left: 0;
@@ -233,296 +105,8 @@ body {
       rgba(102, 126, 234, 0.1) 40%,
       transparent 70%
     );
-  animation: meshPulse 15s ease-in-out infinite;
   opacity: 1;
   z-index: 1;
-}
-
-.bg-mesh-gradient::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    135deg,
-    transparent 0%,
-    rgba(102, 126, 234, 0.15) 50%,
-    transparent 100%
-  );
-  animation: meshShift 20s ease-in-out infinite;
-}
-
-.bg-mesh-gradient::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: conic-gradient(
-    from 0deg at 50% 50%,
-    transparent 0deg,
-    rgba(102, 126, 234, 0.1) 90deg,
-    transparent 180deg,
-    rgba(240, 147, 251, 0.08) 270deg,
-    transparent 360deg
-  );
-  animation: meshRotate 40s linear infinite;
-  opacity: 0.8;
-}
-
-@keyframes meshPulse {
-  0%,
-  100% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
-
-@keyframes meshShift {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(30px, -30px);
-  }
-}
-
-@keyframes meshRotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.floating-shapes {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
-  contain: layout style paint;
-}
-
-.shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(40px);
-  opacity: 0.5;
-  animation: floatShape 25s ease-in-out infinite;
-}
-
-.shape-1 {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(
-    circle,
-    rgba(240, 147, 251, 0.8),
-    rgba(118, 75, 162, 0.4),
-    transparent
-  );
-  top: 10%;
-  left: 10%;
-  animation-delay: 0s;
-  animation-duration: 18s;
-}
-
-.shape-2 {
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(
-    circle,
-    rgba(79, 172, 254, 0.7),
-    rgba(102, 126, 234, 0.35),
-    transparent
-  );
-  top: 60%;
-  right: 15%;
-  animation-delay: 3s;
-  animation-duration: 22s;
-}
-
-.shape-3 {
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(
-    circle,
-    rgba(118, 75, 162, 0.75),
-    rgba(240, 147, 251, 0.4),
-    transparent
-  );
-  bottom: 20%;
-  left: 20%;
-  animation-delay: 6s;
-  animation-duration: 20s;
-}
-
-.shape-4 {
-  width: 280px;
-  height: 280px;
-  background: radial-gradient(
-    circle,
-    rgba(102, 126, 234, 0.7),
-    rgba(79, 172, 254, 0.35),
-    transparent
-  );
-  top: 30%;
-  right: 30%;
-  animation-delay: 9s;
-  animation-duration: 25s;
-}
-
-.shape-5 {
-  width: 220px;
-  height: 220px;
-  background: radial-gradient(
-    circle,
-    rgba(240, 147, 251, 0.65),
-    rgba(118, 75, 162, 0.3),
-    transparent
-  );
-  bottom: 40%;
-  right: 10%;
-  animation-delay: 12s;
-  animation-duration: 19s;
-}
-
-.shape-6 {
-  width: 260px;
-  height: 260px;
-  background: radial-gradient(
-    circle,
-    rgba(79, 172, 254, 0.8),
-    rgba(102, 126, 234, 0.4),
-    transparent
-  );
-  top: 70%;
-  left: 50%;
-  animation-delay: 15s;
-  animation-duration: 23s;
-}
-
-@keyframes floatShape {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1) rotate(0deg);
-  }
-  25% {
-    transform: translate(50px, -80px) scale(1.2) rotate(90deg);
-  }
-  50% {
-    transform: translate(-60px, 40px) scale(0.8) rotate(180deg);
-  }
-  75% {
-    transform: translate(70px, 60px) scale(1.1) rotate(270deg);
-  }
-}
-
-.particles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
-  overflow: hidden;
-  contain: layout style paint;
-}
-
-.particle {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  animation: particleFloat 15s linear infinite;
-  animation-delay: var(--delay);
-}
-
-.particle:nth-child(odd) {
-  background: rgba(240, 147, 251, 0.9);
-  box-shadow: 0 0 15px rgba(240, 147, 251, 0.9);
-}
-
-.particle:nth-child(3n) {
-  background: rgba(79, 172, 254, 0.9);
-  box-shadow: 0 0 15px rgba(79, 172, 254, 0.9);
-}
-
-.particle:nth-child(4n) {
-  background: rgba(102, 126, 234, 0.9);
-  box-shadow: 0 0 15px rgba(102, 126, 234, 0.9);
-}
-
-@keyframes particleFloat {
-  0% {
-    transform: translateY(100vh) translateX(0) scale(0);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100px) translateX(100px) scale(1);
-    opacity: 0;
-  }
-}
-
-.particle:nth-child(1) {
-  left: 10%;
-  animation-duration: 12s;
-}
-.particle:nth-child(2) {
-  left: 20%;
-  animation-duration: 15s;
-}
-.particle:nth-child(3) {
-  left: 30%;
-  animation-duration: 18s;
-}
-.particle:nth-child(4) {
-  left: 40%;
-  animation-duration: 14s;
-}
-.particle:nth-child(5) {
-  left: 50%;
-  animation-duration: 16s;
-}
-.particle:nth-child(6) {
-  left: 60%;
-  animation-duration: 13s;
-}
-.particle:nth-child(7) {
-  left: 70%;
-  animation-duration: 17s;
-}
-.particle:nth-child(8) {
-  left: 80%;
-  animation-duration: 19s;
-}
-.particle:nth-child(9) {
-  left: 15%;
-  animation-duration: 14s;
-}
-.particle:nth-child(10) {
-  left: 25%;
-  animation-duration: 16s;
 }
 
 .landing-page > * {
@@ -577,43 +161,7 @@ body {
     0% 50%;
   margin-top: 0;
   overflow: visible;
-  animation:
-    gradientShift 20s ease infinite,
-    heroBackgroundPulse 15s ease-in-out infinite;
   z-index: 2;
-  will-change: background-position, opacity;
-}
-
-@keyframes heroBackgroundPulse {
-  0%,
-  100% {
-    background-position:
-      center top,
-      left bottom,
-      right bottom,
-      center center,
-      0% 50%;
-    opacity: 1;
-  }
-  50% {
-    background-position:
-      center top,
-      left bottom,
-      right bottom,
-      center center,
-      100% 50%;
-    opacity: 0.95;
-  }
-}
-
-@keyframes gradientShift {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 .landing-hero .container {
@@ -630,8 +178,6 @@ body {
 .landing-hero__overlay {
   position: absolute;
   inset: 0;
-  will-change: opacity;
-  transform: translateZ(0);
   background:
     radial-gradient(
       ellipse 120% 80% at 50% 0%,
@@ -650,9 +196,7 @@ body {
       transparent 50%
     ),
     linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.4));
-  animation:
-    overlayFadeIn 1.2s ease-out,
-    overlayPulse 12s ease-in-out infinite;
+  animation: overlayFadeIn 1.2s ease-out;
   opacity: 0.9;
 }
 
@@ -669,8 +213,6 @@ body {
 .landing-hero__pattern {
   position: absolute;
   inset: 0;
-  will-change: transform;
-  transform: translateZ(0);
   background-image:
     radial-gradient(
       circle at 20% 30%,
@@ -710,22 +252,8 @@ body {
       rgba(255, 255, 255, 0.04) 50%,
       transparent 100%
     );
-  animation: patternFloat 20s ease-in-out infinite;
   pointer-events: none;
   opacity: 0.9;
-  will-change: transform;
-}
-
-@keyframes patternFloat {
-  0%,
-  100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-30px) scale(1.1);
-    opacity: 0.9;
-  }
 }
 
 .landing-hero__pattern::before {
@@ -748,17 +276,6 @@ body {
       rgba(37, 99, 235, 0.03) 4px
     );
   opacity: 0.4;
-  animation: gridPulse 8s ease-in-out infinite;
-}
-
-@keyframes gridPulse {
-  0%,
-  100% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.5;
-  }
 }
 
 .landing-hero__pattern::after {
@@ -768,7 +285,6 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  will-change: transform;
   background:
     conic-gradient(
       from 0deg at 50% 50%,
@@ -788,10 +304,8 @@ body {
       rgba(255, 255, 255, 0.04) 270deg,
       transparent 360deg
     );
-  animation: rotate 30s linear infinite;
   pointer-events: none;
   opacity: 0.7;
-  will-change: transform;
 }
 
 .landing-hero__background-image {
@@ -800,8 +314,6 @@ body {
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
-  will-change: transform, opacity;
-  transform: translateZ(0);
   background:
     radial-gradient(
       ellipse 120% 100% at 50% 0%,
@@ -832,9 +344,7 @@ body {
       rgba(118, 75, 162, 0.25) 300deg,
       rgba(102, 126, 234, 0.3) 360deg
     );
-  animation: backgroundImageShift 25s ease-in-out infinite;
   opacity: 0.85;
-  will-change: transform, opacity;
 }
 
 .landing-hero__background-image::before {
@@ -857,9 +367,7 @@ body {
       rgba(255, 255, 255, 0.1) 0%,
       transparent 50%
     );
-  animation: backgroundImageGlow 20s ease-in-out infinite;
   opacity: 0.6;
-  will-change: opacity, transform;
 }
 
 .landing-hero__background-image::after {
@@ -891,46 +399,7 @@ body {
       rgba(240, 147, 251, 0.2) 0%,
       transparent 30%
     );
-  animation: backgroundImagePattern 30s linear infinite;
   opacity: 0.4;
-  will-change: transform;
-}
-
-@keyframes backgroundImageShift {
-  0%,
-  100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 0.85;
-  }
-  33% {
-    transform: scale(1.05) rotate(2deg);
-    opacity: 0.9;
-  }
-  66% {
-    transform: scale(0.98) rotate(-2deg);
-    opacity: 0.8;
-  }
-}
-
-@keyframes backgroundImageGlow {
-  0%,
-  100% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.7;
-    transform: scale(1.1);
-  }
-}
-
-@keyframes backgroundImagePattern {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(50px, 50px);
-  }
 }
 
 .landing-hero__geometric-shapes {
@@ -956,7 +425,6 @@ body {
   );
   border-radius: 50%;
   filter: blur(60px);
-  animation: geometricFloat1 20s ease-in-out infinite;
 }
 
 .landing-hero__geometric-shapes::after {
@@ -974,40 +442,6 @@ body {
   );
   border-radius: 50%;
   filter: blur(70px);
-  animation: geometricFloat2 25s ease-in-out infinite;
-}
-
-@keyframes geometricFloat1 {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.6;
-  }
-  50% {
-    transform: translate(-80px, 100px) scale(1.2);
-    opacity: 0.8;
-  }
-}
-
-@keyframes geometricFloat2 {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: translate(100px, -80px) scale(1.15);
-    opacity: 0.7;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes overlayFadeIn {
@@ -1084,32 +518,12 @@ body {
     0 0 60px rgba(255, 255, 255, 0.5),
     0 4px 15px rgba(0, 0, 0, 0.4),
     0 0 80px rgba(118, 75, 162, 0.5);
-  animation:
-    fadeInRight 0.6s ease-out 0.4s both,
-    nameGlowLight 3s ease-in-out infinite;
+  animation: fadeInRight 0.6s ease-out 0.4s both;
   position: relative;
   line-height: 1.1;
   transition:
     text-shadow 0.4s ease,
     transform 0.3s ease;
-}
-
-@keyframes nameGlowLight {
-  0%,
-  100% {
-    text-shadow:
-      0 0 30px rgba(255, 255, 255, 0.8),
-      0 0 60px rgba(255, 255, 255, 0.5),
-      0 4px 15px rgba(0, 0, 0, 0.4),
-      0 0 80px rgba(118, 75, 162, 0.5);
-  }
-  50% {
-    text-shadow:
-      0 0 40px rgba(255, 255, 255, 0.9),
-      0 0 80px rgba(255, 255, 255, 0.6),
-      0 4px 20px rgba(0, 0, 0, 0.5),
-      0 0 100px rgba(118, 75, 162, 0.6);
-  }
 }
 
 .hero-name:hover {
@@ -1147,24 +561,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation:
-    fadeInUp 0.8s ease-out 0.6s both,
-    typedGlowLight 2s ease-in-out infinite;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
   position: relative;
   padding: 0.25rem 0;
   transition:
     text-shadow 0.4s ease,
     transform 0.3s ease;
-}
-
-@keyframes typedGlowLight {
-  0%,
-  100% {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
-  }
-  50% {
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
-  }
 }
 
 .hero-typed:hover {
@@ -1307,23 +709,6 @@ body {
   cursor: pointer;
   flex-shrink: 0;
   display: block;
-  animation: profileGlowLight 4s ease-in-out infinite;
-}
-
-@keyframes profileGlowLight {
-  0%,
-  100% {
-    box-shadow:
-      0 8px 32px rgba(118, 75, 162, 0.4),
-      0 0 0 2px rgba(118, 75, 162, 0.2),
-      inset 0 0 30px rgba(102, 126, 234, 0.15);
-  }
-  50% {
-    box-shadow:
-      0 12px 40px rgba(118, 75, 162, 0.5),
-      0 0 0 3px rgba(118, 75, 162, 0.3),
-      inset 0 0 40px rgba(102, 126, 234, 0.2);
-  }
 }
 
 .hero-profile-image:hover {
@@ -1525,19 +910,6 @@ button.summary-inline-link {
     );
   pointer-events: none;
   z-index: 0;
-  animation:
-    backgroundPattern 20s linear infinite,
-    backgroundGlow 15s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-
-@keyframes backgroundPattern {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100px 100px;
-  }
 }
 
 .landing-summary::after {
@@ -2180,21 +1552,6 @@ button.summary-inline-link {
   box-shadow:
     0 6px 24px rgba(118, 75, 162, 0.2),
     0 0 0 1px rgba(118, 75, 162, 0.15);
-  animation: activePulseLight 2s ease-in-out infinite;
-}
-
-@keyframes activePulseLight {
-  0%,
-  100% {
-    box-shadow:
-      0 6px 24px rgba(118, 75, 162, 0.2),
-      0 0 0 1px rgba(118, 75, 162, 0.15);
-  }
-  50% {
-    box-shadow:
-      0 8px 32px rgba(118, 75, 162, 0.3),
-      0 0 0 1px rgba(118, 75, 162, 0.2);
-  }
 }
 
 .toolkit-nav__btn--active span {
@@ -2445,7 +1802,6 @@ button.summary-inline-link {
     );
   pointer-events: none;
   z-index: 0;
-  animation: backgroundPattern 30s linear infinite;
 }
 
 .landing-experience::after {
@@ -5171,8 +4527,6 @@ button.summary-inline-link {
   z-index: 9999;
   transition: width 0.1s ease-out;
   box-shadow: 0 2px 8px rgba(118, 75, 162, 0.3);
-  will-change: width;
-  transform: translateZ(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5227,20 +4581,6 @@ button.summary-inline-link {
 [data-theme='dark'] .scroll-to-top {
   background: linear-gradient(135deg, #764ba2, #f093fb, #667eea);
   box-shadow: 0 4px 16px rgba(240, 147, 251, 0.4);
-}
-
-.scroll-to-top {
-  animation: scrollButtonFloatLight 3s ease-in-out infinite;
-}
-
-@keyframes scrollButtonFloatLight {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
 }
 
 .theme-toggle-floating:hover,
