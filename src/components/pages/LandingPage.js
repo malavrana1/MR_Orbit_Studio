@@ -16,6 +16,8 @@ import {
   FaEnvelope,
   FaShareAlt,
   FaFilePdf,
+  FaMapMarkerAlt,
+  FaCalendarAlt,
 } from 'react-icons/fa'
 import '../../App.css'
 import '../../css/LandingPage.css'
@@ -433,6 +435,7 @@ export default function LandingPage() {
                             </span>
                           </div>
                           <span className="hero-experience-list__period">
+                            <FaCalendarAlt className="hero-experience-icon" />
                             {role.period}
                           </span>
                         </li>
@@ -541,11 +544,15 @@ export default function LandingPage() {
                           <p className="experience-role">{role.role}</p>
                           <div className="experience-meta-box">
                             <span className="experience-period">
+                              <FaCalendarAlt className="experience-icon" />
                               {role.period}
                             </span>
-                            <span className="experience-location">
-                              {role.location}
-                            </span>
+                            {role.location && (
+                              <span className="experience-location">
+                                <FaMapMarkerAlt className="experience-icon" />
+                                {role.location}
+                              </span>
+                            )}
                           </div>
                         </div>
                         <p className="experience-description">
