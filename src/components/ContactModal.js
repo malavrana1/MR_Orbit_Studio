@@ -51,27 +51,38 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
   }
 
   return (
-    <Modal show={show} onHide={onClose} centered>
-      <Modal.Header closeButton>
-        <Modal.Title>Say hello</Modal.Title>
+    <Modal show={show} onHide={onClose} centered className="contact-modal-custom">
+      <Modal.Header closeButton className="contact-modal-header">
+        <Modal.Title style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontWeight: '700'}}>
+          Get in Touch
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         {sendSuccess && (
-          <div className="alert alert-success" role="alert">
-            Thanks! Your message has been sent.
+          <div className="contact-form-success" role="alert">
+            <div className="success-icon">✓</div>
+            <div className="success-content">
+              <h5>Message Sent Successfully!</h5>
+              <p>Thanks for reaching out. I'll get back to you soon.</p>
+            </div>
           </div>
         )}
         {!!sendError && (
-          <div className="alert alert-danger" role="alert">
-            {sendError}
+          <div className="contact-form-error" role="alert">
+            <div className="error-icon">!</div>
+            <div className="error-content">
+              <h5>Oops! Something went wrong</h5>
+              <p>{sendError}</p>
+            </div>
           </div>
         )}
+        {!sendSuccess && (
         <Form>
           <Form.Group className="mb-3" controlId="contactName">
             <Form.Label>Your name</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Jane Doe"
+              placeholder="What should I call you?"
               value={contactName}
               onChange={(e) => setContactName(e.target.value)}
             />
@@ -96,18 +107,31 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
             />
           </Form.Group>
         </Form>
+        )}
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="outline-secondary" onClick={onClose}>
-          Cancel
-        </Button>
-        <Button
-          variant="primary"
-          onClick={handleSendEmail}
-          disabled={isSending}
-        >
-          {isSending ? 'Sending…' : 'Send email'}
-        </Button>
+        {sendSuccess ? (
+          <Button
+            variant="primary"
+            onClick={onClose}
+            className="w-100"
+          >
+            Close
+          </Button>
+        ) : (
+          <>
+            <Button variant="outline-secondary" onClick={onClose}>
+              Cancel
+            </Button>
+            <Button
+              variant="primary"
+              onClick={handleSendEmail}
+              disabled={isSending}
+            >
+              {isSending ? 'Sending…' : 'Send Message'}
+            </Button>
+          </>
+        )}
       </Modal.Footer>
     </Modal>
   )
