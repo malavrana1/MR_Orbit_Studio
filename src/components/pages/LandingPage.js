@@ -18,6 +18,8 @@ import {
   FaFilePdf,
   FaMapMarkerAlt,
   FaCalendarAlt,
+  FaMoon,
+  FaSun,
 } from 'react-icons/fa'
 import '../../App.css'
 import '../../css/LandingPage.css'
@@ -73,6 +75,28 @@ export default function LandingPage() {
   )
   const [showScrollTop, setShowScrollTop] = useState(false)
   const [showContactModal, setShowContactModal] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('darkMode')
+    return saved ? JSON.parse(saved) : false
+  })
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+    }
+    localStorage.setItem('darkMode', JSON.stringify(isDarkMode))
+  }, [isDarkMode])
+
+  const toggleDarkMode = () => {
+    analyticsService.trackClick(
+      'button',
+      'toggle_dark_mode',
+      isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode',
+    )
+    setIsDarkMode(!isDarkMode)
+  }
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,
   )?.items
@@ -713,7 +737,7 @@ export default function LandingPage() {
             <h2 className="section-title">Education & Certifications</h2>
           </div>
           <Row className="g-4">
-            <Col lg={4}>
+            <Col lg={4} id="education">
               {resume.education &&
                 resume.education.map((edu, index) => (
                   <Card
@@ -745,7 +769,7 @@ export default function LandingPage() {
                   </Card>
                 ))}
             </Col>
-            <Col lg={8}>
+            <Col lg={8} id="certifications">
               <div className="certifications-grid">
                 {resume.certifications &&
                   resume.certifications.slice(0, 6).map((cert, index) => (
@@ -1009,6 +1033,19 @@ export default function LandingPage() {
           </Row>
         </Container>
       </section>
+
+      <button
+        className="theme-toggle-floating"
+        onClick={toggleDarkMode}
+        aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+        title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+      >
+        {isDarkMode ? (
+          <FaSun className="theme-toggle-icon" />
+        ) : (
+          <FaMoon className="theme-toggle-icon" />
+        )}
+      </button>
 
       {showScrollTop && (
         <button
