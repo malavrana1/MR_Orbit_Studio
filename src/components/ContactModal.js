@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Modal, Button, Form } from 'react-bootstrap'
+import analyticsService from '../services/analytics'
 
 const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
   const [contactName, setContactName] = useState('')
@@ -9,14 +10,26 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
   const [sendError, setSendError] = useState('')
   const [sendSuccess, setSendSuccess] = useState(false)
 
+  useEffect(() => {
+    if (show) {
+      analyticsService.trackContactForm('modal_opened')
+    }
+  }, [show])
+
   const handleSendEmail = async () => {
     setSendError('')
     setSendSuccess(false)
     if (!contactMessage || !contactEmail) {
       setSendError('Please provide your email and a short message.')
+      analyticsService.trackContactForm('validation_error', { error: 'missing_fields' })
       return
     }
     setIsSending(true)
+    analyticsService.trackContactForm('form_submitted', { 
+      has_name: !!contactName,
+      message_length: contactMessage.length 
+    })
+    
     try {
       const response = await fetch(
         `https://formsubmit.co/ajax/${encodeURIComponent(toEmail)}`,
@@ -43,8 +56,13 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
       setContactName('')
       setContactEmail('')
       setContactMessage('')
+      analyticsService.trackContactForm('form_success', { 
+        has_name: !!contactName,
+        message_length: contactMessage.length 
+      })
     } catch (err) {
       setSendError('Could not send your message. Please try again.')
+      analyticsService.trackContactForm('form_error', { error: err.message })
     } finally {
       setIsSending(false)
     }
@@ -113,14 +131,23 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
         {sendSuccess ? (
           <Button
             variant="primary"
-            onClick={onClose}
+            onClick={() => {
+              analyticsService.trackContactForm('modal_closed', { action: 'close_after_success' })
+              onClose()
+            }}
             className="w-100"
           >
             Close
           </Button>
         ) : (
           <>
-            <Button variant="outline-secondary" onClick={onClose}>
+            <Button 
+              variant="outline-secondary" 
+              onClick={() => {
+                analyticsService.trackContactForm('modal_closed', { action: 'cancel' })
+                onClose()
+              }}
+            >
               Cancel
             </Button>
             <Button

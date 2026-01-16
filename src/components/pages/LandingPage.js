@@ -31,6 +31,7 @@ import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
 import { observeScrollAnimations, setupScrollProgress } from '../../utils/scrollAnimations'
 import ContactModal from '../ContactModal'
+import analyticsService from '../../services/analytics'
 import kisweLogo from '../../assets/images/logos/kiswe.png'
 import genslerLogo from '../../assets/images/logos/gensler.png'
 import cignaLogo from '../../assets/images/logos/cigna.png'
@@ -71,7 +72,6 @@ export default function LandingPage() {
     (item) => item.category === activeToolkit,
   )?.items
 
-
   const toolkitDescriptions = resume.skillDescriptions || {}
   const ui = siteInfo.ui || {}
   const heroUI = ui.hero || {}
@@ -81,9 +81,32 @@ export default function LandingPage() {
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400)
+      
+      const sections = ['home', 'summary', 'experience', 'projects', 'toolkit', 'credentials', 'about', 'connect']
+      sections.forEach((sectionId) => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          if (rect.top <= 200 && rect.top >= -100) {
+            analyticsService.trackSectionView(sectionId)
+          }
+        }
+      })
     }
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
+    
+    let ticking = false
+    const throttledScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll()
+          ticking = false
+        })
+        ticking = true
+      }
+    }
+    
+    window.addEventListener('scroll', throttledScroll, { passive: true })
+    return () => window.removeEventListener('scroll', throttledScroll)
   }, [])
 
   useEffect(() => {
@@ -110,10 +133,12 @@ export default function LandingPage() {
   }, [])
 
   const scrollToTop = () => {
+    analyticsService.trackClick('button', 'scroll_to_top', 'Scroll to Top')
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const sharePortfolio = async () => {
+    analyticsService.trackClick('button', 'share_portfolio', 'Share Portfolio')
     const shareData = {
       title: `${profile.name} - Portfolio`,
       text: `Check out ${profile.name}'s portfolio`,
@@ -122,14 +147,17 @@ export default function LandingPage() {
     try {
       if (navigator.share) {
         await navigator.share(shareData)
+        analyticsService.trackClick('button', 'share_portfolio_success', 'Share Portfolio - Success')
       } else {
         await navigator.clipboard.writeText(window.location.href)
         alert('Portfolio link copied to clipboard!')
+        analyticsService.trackClick('button', 'share_portfolio_copy', 'Share Portfolio - Copy')
       }
     } catch (err) {
       if (err.name !== 'AbortError') {
         await navigator.clipboard.writeText(window.location.href)
         alert('Portfolio link copied to clipboard!')
+        analyticsService.trackClick('button', 'share_portfolio_copy', 'Share Portfolio - Copy')
       }
     }
   }
@@ -486,6 +514,7 @@ export default function LandingPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
+                      onClick={() => analyticsService.trackExternalLink(p.link, p.title)}
                     >
                       <span>{p.cta}</span>
                       <FaExternalLinkAlt className="project-link__icon" />
@@ -529,7 +558,10 @@ export default function LandingPage() {
                           ? 'toolkit-nav__btn--active'
                           : ''
                       }`}
-                      onClick={() => setActiveToolkit(category)}
+                      onClick={() => {
+                        analyticsService.trackClick('button', `toolkit_${category}`, category)
+                        setActiveToolkit(category)
+                      }}
                     >
                       <span>
                         {Icon && <Icon className="toolkit-nav__icon" />}
@@ -619,6 +651,7 @@ export default function LandingPage() {
                             rel="noopener noreferrer"
                             className="credential-link"
                             aria-label={`View ${cert.name} certificate`}
+                            onClick={() => analyticsService.trackExternalLink(cert.link, cert.name)}
                           >
                             <FaExternalLinkAlt />
                           </a>
@@ -694,6 +727,7 @@ export default function LandingPage() {
                       download
                       className="btn btn-primary"
                       title="Download resume"
+                      onClick={() => analyticsService.trackDownload('resume.pdf', 'pdf')}
                     >
                       <FaDownload />
                       Download Resume
@@ -704,6 +738,7 @@ export default function LandingPage() {
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary"
                       title="View GitHub profile"
+                      onClick={() => analyticsService.trackSocialClick('github', profile.social.github)}
                     >
                       <FaGithub />
                       GitHub
@@ -714,6 +749,7 @@ export default function LandingPage() {
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary"
                       title="Connect on LinkedIn"
+                      onClick={() => analyticsService.trackSocialClick('linkedin', profile.social.linkedin)}
                     >
                       <FaLinkedin />
                       LinkedIn
@@ -727,7 +763,10 @@ export default function LandingPage() {
                       Share
                     </button>
                     <button
-                      onClick={() => setShowContactModal(true)}
+                      onClick={() => {
+                        analyticsService.trackClick('button', 'open_contact_modal', 'Quick Contact')
+                        setShowContactModal(true)
+                      }}
                       className="btn btn-outline-primary"
                       title="Quick contact form"
                     >
@@ -740,6 +779,7 @@ export default function LandingPage() {
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary"
                       title="View resume in new tab"
+                      onClick={() => analyticsService.trackClick('link', 'view_resume', 'View Resume')}
                     >
                       <FaFilePdf />
                       View Resume

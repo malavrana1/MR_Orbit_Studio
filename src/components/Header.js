@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import { getSiteInfo } from '../utils/site'
+import analyticsService from '../services/analytics'
 import {
   FaHome,
   FaUser,
@@ -100,6 +101,7 @@ export default function Header() {
   }, [isDarkMode])
 
   const toggleDarkMode = () => {
+    analyticsService.trackClick('button', 'toggle_dark_mode', isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode')
     setIsDarkMode(!isDarkMode)
   }
 
@@ -162,6 +164,9 @@ export default function Header() {
   const handleNavClick = (e, href) => {
     e.preventDefault()
     setIsMobileMenuOpen(false)
+    const sectionId = href.substring(1)
+    analyticsService.trackNavigation(sectionId, 'header')
+    
     const element = document.querySelector(href)
     if (element) {
       const offset = 80
