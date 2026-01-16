@@ -35,6 +35,7 @@ class AnalyticsService {
 
   async trackPageView(page = 'home') {
     if (!this.isTrackingEnabled) return
+    if (!db) return
     try {
       const userInfo = this.getUserInfo()
 
@@ -62,6 +63,7 @@ class AnalyticsService {
     additionalData = {},
   ) {
     if (!this.isTrackingEnabled) return
+    if (!db) return
     try {
       const userInfo = this.getUserInfo()
 
@@ -88,6 +90,7 @@ class AnalyticsService {
 
   async trackSectionView(sectionId) {
     if (!this.isTrackingEnabled) return
+    if (!db) return
 
     if (this.trackedSections.has(sectionId)) return
     this.trackedSections.add(sectionId)
@@ -113,6 +116,7 @@ class AnalyticsService {
 
   async trackScrollDepth(percentage) {
     if (!this.isTrackingEnabled) return
+    if (!db) return
 
     const milestone = Math.floor(percentage / 25) * 25
     if (this.scrollDepthsTracked.has(milestone)) return
@@ -162,6 +166,8 @@ class AnalyticsService {
   }
 
   async trackContactForm(action, data = {}) {
+    if (!db) return
+
     if (analytics) {
       logEvent(analytics, 'contact_form', {
         form_action: action,
