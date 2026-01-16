@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect, memo } from 'react'
+import React, { useMemo, useState, useEffect } from 'react'
 import { ReactTyped } from 'react-typed'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import {

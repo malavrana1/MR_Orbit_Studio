@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo, useCallback } from 'react'
+import React, { useState, useEffect, memo } from 'react'
 import { Container } from 'react-bootstrap'
 import { getSiteInfo } from '../utils/site'
 import analyticsService from '../services/analytics'

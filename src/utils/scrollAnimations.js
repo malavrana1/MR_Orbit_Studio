@@ -1,4 +1,3 @@
-// Utility for scroll-triggered animations using Intersection Observer
 export const observeScrollAnimations = () => {
   const observerOptions = {
     threshold: 0.1,
@@ -14,7 +13,6 @@ export const observeScrollAnimations = () => {
     })
   }, observerOptions)
 
-  // Observe all elements with data-animate attribute
   const elementsToAnimate = document.querySelectorAll('[data-animate]')
   elementsToAnimate.forEach((el) => observer.observe(el))
 
@@ -23,28 +21,6 @@ export const observeScrollAnimations = () => {
   }
 }
 
-// Animated counter utility
-export const animateCounter = (element, target, duration = 2000) => {
-  if (!element) return
-
-  const start = 0
-  const increment = target / (duration / 16)
-  let current = start
-
-  const updateCounter = () => {
-    current += increment
-    if (current < target) {
-      element.textContent = Math.floor(current)
-      requestAnimationFrame(updateCounter)
-    } else {
-      element.textContent = target
-    }
-  }
-
-  updateCounter()
-}
-
-// Scroll progress indicator
 export const setupScrollProgress = () => {
   const progressBar = document.createElement('div')
   progressBar.className = 'scroll-progress-bar'
