@@ -3889,12 +3889,14 @@ button.summary-inline-link {
   }
 }
 
+.theme-toggle-floating,
 .scroll-to-top {
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
   width: 3.5rem;
   height: 3.5rem;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
   border: none;
@@ -3907,18 +3909,51 @@ button.summary-inline-link {
   box-shadow: 0 4px 16px rgba(118, 75, 162, 0.4);
   z-index: 1000;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme-toggle-floating {
+  left: 2rem;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-to-top {
+  right: 2rem;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.3s ease forwards;
 }
 
+[data-theme='dark'] .theme-toggle-floating,
+[data-theme='dark'] .scroll-to-top {
+  background: linear-gradient(135deg, #764ba2, #f093fb, #667eea);
+  box-shadow: 0 4px 16px rgba(240, 147, 251, 0.4);
+}
+
+.theme-toggle-floating:hover,
 .scroll-to-top:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.05);
   box-shadow: 0 8px 24px rgba(118, 75, 162, 0.5);
 }
 
+[data-theme='dark'] .theme-toggle-floating:hover,
+[data-theme='dark'] .scroll-to-top:hover {
+  box-shadow: 0 8px 24px rgba(240, 147, 251, 0.5);
+}
+
+.theme-toggle-floating:active,
 .scroll-to-top:active {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(0.98);
+}
+
+.theme-toggle-floating .theme-toggle-icon {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle-floating:hover .theme-toggle-icon {
+  transform: rotate(15deg);
 }
 [data-animate] {
   opacity: 0;
@@ -4186,45 +4221,65 @@ button.summary-inline-link {
     gap: 1rem;
   }
 
-  .highlight-item {
-    padding: 1.25rem;
-  }
-
-  .highlight-icon {
-    width: 44px;
-    height: 44px;
-    min-width: 44px;
+  .theme-toggle-floating,
+  .scroll-to-top {
+    bottom: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    min-width: 48px;
+    min-height: 48px;
     font-size: 1.1rem;
   }
 
-  .highlight-title {
-    font-size: 0.95rem;
-  }
-
-  .highlight-text {
-    font-size: 0.85rem;
-  }
-
-  .certifications-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-actions {
-    flex-direction: column;
-  }
-
-  .contact-actions .btn {
-    width: 100%;
+  .theme-toggle-floating {
+    left: 1.5rem;
   }
 
   .scroll-to-top {
-    bottom: 1.5rem;
     right: 1.5rem;
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.1rem;
   }
 }
+
+@media (max-width: 575px) {
+  .theme-toggle-floating,
+  .scroll-to-top {
+    bottom: 1rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1rem;
+  }
+
+  .theme-toggle-floating {
+    left: 1rem;
+  }
+
+  .scroll-to-top {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .theme-toggle-floating,
+  .scroll-to-top {
+    bottom: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 0.9rem;
+  }
+
+  .theme-toggle-floating {
+    left: 0.75rem;
+  }
+
+  .scroll-to-top {
+    right: 0.75rem;
+  }
+}
+
 @media print {
   .animated-background,
   .floating-shapes,
