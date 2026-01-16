@@ -4,6 +4,7 @@ import { db } from '../config/firebase'
 class AnalyticsService {
   constructor() {
     this.sessionId = this.getOrCreateSessionId()
+    this.userId = this.getOrCreateUserId()
     this.isTrackingEnabled = true
   }
 
@@ -16,16 +17,33 @@ class AnalyticsService {
     return sessionId
   }
 
+  getOrCreateUserId() {
+    let userId = localStorage.getItem('analytics_user_id')
+    if (!userId) {
+      userId = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+      localStorage.setItem('analytics_user_id', userId)
+      localStorage.setItem('analytics_first_visit', new Date().toISOString())
+    }
+    return userId
+  }
+
   getUserInfo() {
+    const firstVisit = localStorage.getItem('analytics_first_visit')
+    const visitCount = parseInt(localStorage.getItem('analytics_visit_count') || '0') + 1
+    localStorage.setItem('analytics_visit_count', visitCount.toString())
+    
     return {
+      userId: this.userId,
+      sessionId: this.sessionId,
       userAgent: navigator.userAgent,
       language: navigator.language,
       platform: navigator.platform,
       screenWidth: window.screen.width,
       screenHeight: window.screen.height,
       referrer: document.referrer || 'direct',
-      timestamp: Timestamp.now(),
-      sessionId: this.sessionId
+      firstVisit: firstVisit || new Date().toISOString(),
+      visitCount: visitCount,
+      timestamp: Timestamp.now()
     }
   }
 
@@ -33,10 +51,27 @@ class AnalyticsService {
     if (!this.isTrackingEnabled) return
     try {
       const userInfo = this.getUserInfo()
+      const isNewUser = userInfo.visitCount === 1
+      
       await addDoc(collection(db, 'pageViews'), {
         page,
+        isNewUser,
         ...userInfo
       })
+
+      if (isNewUser) {
+        await addDoc(collection(db, 'users'), {
+          userId: this.userId,
+          firstVisit: userInfo.firstVisit,
+          userAgent: userInfo.userAgent,
+          language: userInfo.language,
+          platform: userInfo.platform,
+          screenWidth: userInfo.screenWidth,
+          screenHeight: userInfo.screenHeight,
+          referrer: userInfo.referrer,
+          createdAt: Timestamp.now()
+        })
+      }
     } catch (error) {
       console.warn('Analytics tracking error:', error)
     }
