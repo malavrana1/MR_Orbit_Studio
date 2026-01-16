@@ -44,8 +44,8 @@
       { "label": "Experience", "href": "#experience" },
       { "label": "Projects", "href": "#projects" },
       { "label": "Toolkit", "href": "#toolkit" },
-      { "label": "Certifications", "href": "#certifications" },
-      { "label": "Education", "href": "#education" }
+      { "label": "Credentials", "href": "#credentials" },
+      { "label": "Connect", "href": "#connect" }
     ]
   },
   "ui": {

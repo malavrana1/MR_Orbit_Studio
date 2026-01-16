@@ -12,8 +12,6 @@ import {
   FaInfoCircle,
   FaHandshake,
   FaEnvelope,
-  FaMoon,
-  FaSun,
 } from 'react-icons/fa'
 import '../css/Header.css'
 
@@ -92,6 +90,7 @@ const navIcons = {
   Toolkit: FaToolbox,
   Experience: FaBriefcase,
   Education: FaGraduationCap,
+  Credentials: FaGraduationCap,
   Projects: FaFolderOpen,
   About: FaInfoCircle,
   Connect: FaHandshake,
@@ -107,7 +106,7 @@ const Header = memo(function Header() {
       { label: 'Summary', href: '#summary' },
       { label: 'Toolkit', href: '#toolkit' },
       { label: 'Experience', href: '#experience' },
-      { label: 'Education', href: '#education' },
+      { label: 'Credentials', href: '#credentials' },
       { label: 'Projects', href: '#projects' },
       { label: 'About', href: '#about' },
       { label: 'Connect', href: '#connect' },
@@ -118,28 +117,6 @@ const Header = memo(function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode')
-    return saved ? JSON.parse(saved) : false
-  })
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-      document.documentElement.removeAttribute('data-theme')
-    }
-    localStorage.setItem('darkMode', JSON.stringify(isDarkMode))
-  }, [isDarkMode])
-
-  const toggleDarkMode = () => {
-    analyticsService.trackClick(
-      'button',
-      'toggle_dark_mode',
-      isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode',
-    )
-    setIsDarkMode(!isDarkMode)
-  }
 
   useEffect(() => {
     let ticking = false
@@ -274,27 +251,6 @@ const Header = memo(function Header() {
                 </li>
               )
             })}
-            <li className="theme-toggle-wrapper">
-              <button
-                className="theme-toggle nav-link"
-                onClick={toggleDarkMode}
-                aria-label={
-                  isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'
-                }
-                title={
-                  isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'
-                }
-              >
-                {isDarkMode ? (
-                  <FaSun className="nav-icon" />
-                ) : (
-                  <FaMoon className="nav-icon" />
-                )}
-                <span className="nav-label">
-                  {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-                </span>
-              </button>
-            </li>
           </ul>
         </nav>
       </Container>
