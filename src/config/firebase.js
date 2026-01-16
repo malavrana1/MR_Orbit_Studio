@@ -13,7 +13,9 @@ const firebaseConfig = {
 }
 
 const requiredFields = ['apiKey', 'authDomain', 'projectId', 'appId']
-const missingFields = requiredFields.filter((field) => !firebaseConfig[field])
+const missingFields = requiredFields.filter(
+  (field) => !firebaseConfig[field] || firebaseConfig[field] === 'undefined',
+)
 
 let app = null
 let db = null
@@ -24,7 +26,11 @@ if (missingFields.length === 0) {
     app = initializeApp(firebaseConfig)
     db = getFirestore(app)
 
-    if (typeof window !== 'undefined') {
+    if (
+      typeof window !== 'undefined' &&
+      firebaseConfig.measurementId &&
+      firebaseConfig.measurementId !== 'undefined'
+    ) {
       try {
         analytics = getAnalytics(app)
       } catch (error) {
