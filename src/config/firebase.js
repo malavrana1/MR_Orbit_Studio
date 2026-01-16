@@ -12,17 +12,35 @@ const firebaseConfig = {
   measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 }
 
-const app = initializeApp(firebaseConfig)
-export const db = getFirestore(app)
+const requiredFields = ['apiKey', 'authDomain', 'projectId', 'appId']
+const missingFields = requiredFields.filter((field) => !firebaseConfig[field])
 
+let app = null
+let db = null
 let analytics = null
-if (typeof window !== 'undefined') {
+
+if (missingFields.length === 0) {
   try {
-    analytics = getAnalytics(app)
+    app = initializeApp(firebaseConfig)
+    db = getFirestore(app)
+
+    if (typeof window !== 'undefined') {
+      try {
+        analytics = getAnalytics(app)
+      } catch (error) {
+        console.warn('Firebase Analytics initialization failed:', error)
+      }
+    }
   } catch (error) {
-    console.warn('Firebase Analytics initialization failed:', error)
+    console.error('Firebase initialization error:', error)
   }
+} else {
+  console.warn(
+    `Firebase configuration missing: ${missingFields.join(', ')}. ` +
+      'Please check your .env file and restart the development server.',
+  )
 }
 
 export { analytics }
+export { db }
 export default app
