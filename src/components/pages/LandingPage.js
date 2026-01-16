@@ -12,6 +12,10 @@ import {
   FaExternalLinkAlt,
   FaUsers,
   FaCheckCircle,
+  FaArrowUp,
+  FaEnvelope,
+  FaShareAlt,
+  FaFilePdf,
 } from 'react-icons/fa'
 import '../../App.css'
 import '../../css/LandingPage.css'
@@ -20,6 +24,7 @@ import ProfileImage from '../../assets/images/Profile.jpg'
 import { getProfile } from '../../utils/profile'
 import { getResume, getSkillCategories } from '../../utils/resume'
 import { getProjects } from '../../utils/projects'
+import { getPersonal } from '../../utils/personal'
 import { getSkillIcon } from '../../utils/skillIcons'
 import resumePdf from '../../assets/pdf/MR_Resume.pdf'
 import { getSiteInfo } from '../../utils/site'
@@ -45,6 +50,7 @@ export default function LandingPage() {
   const resume = getResume()
   const skillCategories = getSkillCategories()
   const allProjects = getProjects()
+  const personal = getPersonal()
   const siteInfo = getSiteInfo()
   const skillWall = useMemo(() => {
     const flatSkills = skillCategories.flatMap((group) => group.items)
@@ -58,9 +64,11 @@ export default function LandingPage() {
   const [activeToolkit, setActiveToolkit] = useState(
     skillCategories[0]?.category || 'Front-End Technologies',
   )
+  const [showScrollTop, setShowScrollTop] = useState(false)
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,
   )?.items
+
 
   const toolkitDescriptions = resume.skillDescriptions || {}
   const ui = siteInfo.ui || {}
@@ -68,6 +76,61 @@ export default function LandingPage() {
   const sectionsUI = ui.sections || {}
   const typedConfig = ui.typed || { typeSpeed: 45, backSpeed: 22 }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return
+      
+      if (e.key === 'h' || e.key === 'H') {
+        e.preventDefault()
+        document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })
+      } else if (e.key === 'p' || e.key === 'P') {
+        e.preventDefault()
+        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+      } else if (e.key === 'e' || e.key === 'E') {
+        e.preventDefault()
+        document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })
+      } else if (e.key === 'c' || e.key === 'C') {
+        e.preventDefault()
+        document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+    
+    window.addEventListener('keydown', handleKeyPress)
+    return () => window.removeEventListener('keydown', handleKeyPress)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const sharePortfolio = async () => {
+    const shareData = {
+      title: `${profile.name} - Portfolio`,
+      text: `Check out ${profile.name}'s portfolio`,
+      url: window.location.href,
+    }
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData)
+      } else {
+        await navigator.clipboard.writeText(window.location.href)
+        alert('Portfolio link copied to clipboard!')
+      }
+    } catch (err) {
+      if (err.name !== 'AbortError') {
+        await navigator.clipboard.writeText(window.location.href)
+        alert('Portfolio link copied to clipboard!')
+      }
+    }
+  }
   useEffect(() => {
     const cleanup = setupScrollProgress()
     return cleanup
@@ -78,8 +141,110 @@ export default function LandingPage() {
     return cleanup
   }, [])
 
+  useEffect(() => {
+    const updateMetaTags = () => {
+      document.title = `${profile.name} - ${profile.headline || 'Frontend Engineer Portfolio'}`
+      
+      const metaDescription = document.querySelector('meta[name="description"]')
+      if (metaDescription) {
+        metaDescription.setAttribute('content', profile.summary?.[0] || 'Frontend Engineer Portfolio')
+      } else {
+        const meta = document.createElement('meta')
+        meta.name = 'description'
+        meta.content = profile.summary?.[0] || 'Frontend Engineer Portfolio'
+        document.head.appendChild(meta)
+      }
+
+      const ogTitle = document.querySelector('meta[property="og:title"]')
+      if (ogTitle) {
+        ogTitle.setAttribute('content', `${profile.name} - Portfolio`)
+      } else {
+        const meta = document.createElement('meta')
+        meta.setAttribute('property', 'og:title')
+        meta.content = `${profile.name} - Portfolio`
+        document.head.appendChild(meta)
+      }
+
+      const ogDescription = document.querySelector('meta[property="og:description"]')
+      if (ogDescription) {
+        ogDescription.setAttribute('content', profile.summary?.[0] || 'Frontend Engineer Portfolio')
+      } else {
+        const meta = document.createElement('meta')
+        meta.setAttribute('property', 'og:description')
+        meta.content = profile.summary?.[0] || 'Frontend Engineer Portfolio'
+        document.head.appendChild(meta)
+      }
+
+      const ogImage = document.querySelector('meta[property="og:image"]')
+      if (!ogImage) {
+        const meta = document.createElement('meta')
+        meta.setAttribute('property', 'og:image')
+        meta.content = `${window.location.origin}${ProfileImage}`
+        document.head.appendChild(meta)
+      }
+
+      const ogUrl = document.querySelector('meta[property="og:url"]')
+      if (!ogUrl) {
+        const meta = document.createElement('meta')
+        meta.setAttribute('property', 'og:url')
+        meta.content = window.location.href
+        document.head.appendChild(meta)
+      }
+
+      const twitterCard = document.querySelector('meta[name="twitter:card"]')
+      if (!twitterCard) {
+        const meta = document.createElement('meta')
+        meta.name = 'twitter:card'
+        meta.content = 'summary_large_image'
+        document.head.appendChild(meta)
+      }
+    }
+
+    updateMetaTags()
+  }, [profile])
+
+  useEffect(() => {
+    const addStructuredData = () => {
+      const existingScript = document.getElementById('structured-data')
+      if (existingScript) {
+        existingScript.remove()
+      }
+
+      const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: profile.name,
+        jobTitle: 'Frontend Engineer',
+        description: profile.summary?.[0],
+        url: profile.contact.website || window.location.href,
+        email: profile.contact.email,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: profile.contact.location,
+        },
+        sameAs: [
+          profile.social.linkedin,
+          profile.social.github,
+        ],
+        knowsAbout: skillCategories.flatMap(cat => cat.items),
+      }
+
+      const script = document.createElement('script')
+      script.id = 'structured-data'
+      script.type = 'application/ld+json'
+      script.textContent = JSON.stringify(structuredData)
+      document.head.appendChild(script)
+    }
+
+    addStructuredData()
+  }, [profile, skillCategories])
+
+
   return (
     <div className="landing-page" id="home">
+      <a href="#main-content" className="skip-to-content" aria-label="Skip to main content">
+        Skip to main content
+      </a>
       <div className="animated-background">
         <div className="bg-gradient-orb bg-orb-1"></div>
         <div className="bg-gradient-orb bg-orb-2"></div>
@@ -100,7 +265,7 @@ export default function LandingPage() {
           ))}
         </div>
       </div>
-      <header className="landing-hero d-flex align-items-center">
+      <header className="landing-hero d-flex align-items-center" id="main-content">
         <div className="landing-hero__overlay" />
         <div className="landing-hero__pattern" />
         <Container className="position-relative">
@@ -477,6 +642,51 @@ export default function LandingPage() {
         </Container>
       </section>
 
+      <section id="about" className="landing-personal">
+        <Container>
+          <div className="text-center mb-4" data-animate="fade-up">
+            <h2 className="section-title">{personal.tagline || 'More about me'}</h2>
+          </div>
+          <Row className="g-4 justify-content-center">
+            <Col lg={6}>
+              <Card className="personal-card border-0 shadow-sm h-100" data-animate="fade-up">
+                <Card.Body className="p-4">
+                  <h5 className="mb-3" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1.25rem', fontWeight: '700'}}>
+                    What I Enjoy
+                  </h5>
+                  <p className="text-muted mb-4" style={{lineHeight: '1.7', fontSize: '1rem'}}>{personal.intro}</p>
+                  <div className="interest-chips">
+                    {personal.interests && personal.interests.map((interest, index) => (
+                      <span key={index} className="interest-chip">{interest}</span>
+                    ))}
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col lg={6}>
+              <Card className="personal-card border-0 shadow-sm h-100" data-animate="fade-up">
+                <Card.Body className="p-4">
+                  <h5 className="mb-3" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1.25rem', fontWeight: '700'}}>
+                    What I Like About Work
+                  </h5>
+                  <p className="text-muted mb-4" style={{lineHeight: '1.7', fontSize: '1rem'}}>{personal.whatFuelsMe}</p>
+                  {personal.principles && personal.principles.length > 0 && (
+                    <div className="mt-4">
+                      <h6 className="mb-3" style={{color: '#764ba2', fontWeight: '600', fontSize: '1rem'}}>Principles</h6>
+                      <ul className="personal-list">
+                        {personal.principles.map((principle, index) => (
+                          <li key={index} style={{marginBottom: '0.5rem'}}>{principle}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       <section id="connect" className="landing-connect">
         <Container>
           <Row className="align-items-center gy-4">
@@ -487,36 +697,62 @@ export default function LandingPage() {
                     Ready to Build Something Amazing?
                   </h2>
                   <p className="text-muted mb-4">Let's collaborate and bring your ideas to life</p>
-                  <div className="contact-actions d-flex flex-wrap justify-content-center gap-3">
+                  <div className="contact-actions">
                     <a
                       href={resumePdf}
                       download
                       className="btn btn-primary"
-                      style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', border: 'none'}}
+                      title="Download resume"
                     >
-                      <FaDownload className="me-2" />
-                      Get My Resume
+                      <FaDownload />
+                      Download Resume
+                    </a>
+                    <a
+                      href={resumePdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                      title="View resume in new tab"
+                    >
+                      <FaFilePdf />
+                      View Resume
+                    </a>
+                    <a
+                      href={`mailto:${profile.contact.email}`}
+                      className="btn btn-outline-primary"
+                      title="Send email"
+                    >
+                      <FaEnvelope />
+                      Email Me
                     </a>
                     <a
                       href={profile.social.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary"
-                      style={{borderColor: '#764ba2', color: '#764ba2'}}
+                      title="Connect on LinkedIn"
                     >
-                      <FaLinkedin className="me-2" />
+                      <FaLinkedin />
                       LinkedIn
                     </a>
                     <a
                       href={profile.social.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-outline-dark"
-                      style={{borderColor: '#667eea', color: '#667eea'}}
+                      className="btn btn-outline-primary"
+                      title="View GitHub profile"
                     >
-                      <FaGithub className="me-2" />
+                      <FaGithub />
                       GitHub
                     </a>
+                    <button
+                      onClick={sharePortfolio}
+                      className="btn btn-outline-primary"
+                      title="Share portfolio"
+                    >
+                      <FaShareAlt />
+                      Share
+                    </button>
                   </div>
                 </Card.Body>
               </Card>
@@ -524,6 +760,17 @@ export default function LandingPage() {
           </Row>
         </Container>
       </section>
+
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="scroll-to-top"
+          aria-label="Scroll to top"
+          title="Back to top"
+        >
+          <FaArrowUp />
+        </button>
+      )}
     </div>
   )
 }
