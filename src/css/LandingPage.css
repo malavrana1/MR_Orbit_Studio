@@ -1893,7 +1893,7 @@ button.summary-inline-link {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0 0 1.25rem 0;
 }
 
 .experience-role {
@@ -1953,12 +1953,14 @@ button.summary-inline-link {
 }
 
 .experience-tagline {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #64748b;
-  line-height: 1.5;
-  margin: 0.25rem 0 0 0;
+  line-height: 1.6;
+  margin: 1rem 0 1.25rem 0;
   font-style: italic;
   transition: color 300ms ease;
+  width: 100%;
+  padding-left: 0;
 }
 
 .experience-card:hover .experience-tagline {
@@ -1972,6 +1974,7 @@ button.summary-inline-link {
   margin: 0;
   max-width: 100%;
   transition: color 300ms ease;
+  padding-top: 0.5rem;
 }
 
 .experience-card:hover .experience-description {

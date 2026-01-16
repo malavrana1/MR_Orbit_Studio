@@ -537,29 +537,27 @@ export default function LandingPage() {
                         <div className="experience-company-header">
                           <h3 className="experience-company">{role.company}</h3>
                         </div>
-                        {role.tagline && (
-                          <p className="experience-tagline">{role.tagline}</p>
-                        )}
-                        <div className="experience-role-meta">
-                          <p className="experience-role">{role.role}</p>
-                          <div className="experience-meta-box">
-                            <span className="experience-period">
-                              <FaCalendarAlt className="experience-icon" />
-                              {role.period}
-                            </span>
-                            {role.location && (
-                              <span className="experience-location">
-                                <FaMapMarkerAlt className="experience-icon" />
-                                {role.location}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                        <p className="experience-description">
-                          {role.description}
-                        </p>
                       </div>
                     </div>
+                    {role.tagline && (
+                      <p className="experience-tagline">{role.tagline}</p>
+                    )}
+                    <div className="experience-role-meta">
+                      <p className="experience-role">{role.role}</p>
+                      <div className="experience-meta-box">
+                        <span className="experience-period">
+                          <FaCalendarAlt className="experience-icon" />
+                          {role.period}
+                        </span>
+                        {role.location && (
+                          <span className="experience-location">
+                            <FaMapMarkerAlt className="experience-icon" />
+                            {role.location}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    <p className="experience-description">{role.description}</p>
                   </Card.Body>
                 </Card>
               )
