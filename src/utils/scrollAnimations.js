@@ -1,7 +1,11 @@
 export const observeScrollAnimations = () => {
+  if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+    return () => {}
+  }
+
   const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.05,
+    rootMargin: '50px 0px',
   }
 
   const observer = new IntersectionObserver((entries) => {
@@ -28,6 +32,7 @@ export const setupScrollProgress = () => {
   progressBar.setAttribute('aria-label', 'Scroll progress')
   document.body.appendChild(progressBar)
 
+  let ticking = false
   const updateProgress = () => {
     const windowHeight = window.innerHeight
     const documentHeight = document.documentElement.scrollHeight
@@ -36,9 +41,17 @@ export const setupScrollProgress = () => {
     const progress = (scrollTop / scrollableHeight) * 100
 
     progressBar.style.width = `${Math.min(progress, 100)}%`
+    ticking = false
   }
 
-  window.addEventListener('scroll', updateProgress, { passive: true })
+  const throttledUpdate = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateProgress)
+      ticking = true
+    }
+  }
+
+  window.addEventListener('scroll', throttledUpdate, { passive: true })
   updateProgress()
 
   return () => {

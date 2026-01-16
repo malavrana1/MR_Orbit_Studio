@@ -23,7 +23,6 @@ import {
 } from 'react-icons/fa'
 import '../../App.css'
 import '../../css/LandingPage.css'
-import '../../css/LandingPage.dark.css'
 import ProfileImage from '../../assets/images/Profile.jpg'
 import { getProfile } from '../../utils/profile'
 import { getResume, getSkillCategories } from '../../utils/resume'
@@ -83,6 +82,7 @@ export default function LandingPage() {
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.setAttribute('data-theme', 'dark')
+      import('../../css/LandingPage.dark.css').catch(() => {})
     } else {
       document.documentElement.removeAttribute('data-theme')
     }
@@ -90,16 +90,31 @@ export default function LandingPage() {
   }, [isDarkMode])
 
   useEffect(() => {
+    const saved = localStorage.getItem('darkMode')
+    if (saved !== null) {
+      const isDark = JSON.parse(saved)
+      setIsDarkMode(isDark)
+      if (isDark) {
+        import('../../css/LandingPage.dark.css').catch(() => {})
+      }
+    }
     const handleStorageChange = (e) => {
       if (e.key === 'darkMode') {
         const newValue = e.newValue ? JSON.parse(e.newValue) : false
         setIsDarkMode(newValue)
+        if (newValue) {
+          import('../../css/LandingPage.dark.css').catch(() => {})
+        }
       }
     }
     const handleCustomStorageChange = () => {
       const saved = localStorage.getItem('darkMode')
       if (saved !== null) {
-        setIsDarkMode(JSON.parse(saved))
+        const isDark = JSON.parse(saved)
+        setIsDarkMode(isDark)
+        if (isDark) {
+          import('../../css/LandingPage.dark.css').catch(() => {})
+        }
       } else {
         setIsDarkMode(false)
       }
@@ -123,6 +138,7 @@ export default function LandingPage() {
 
     if (newValue) {
       document.documentElement.setAttribute('data-theme', 'dark')
+      import('../../css/LandingPage.dark.css').catch(() => {})
     } else {
       document.documentElement.removeAttribute('data-theme')
     }
@@ -406,6 +422,7 @@ export default function LandingPage() {
                   className="hero-profile-image"
                   loading="eager"
                   decoding="async"
+                  fetchPriority="high"
                 />
               </div>
               <div className="hero-content-wrapper">
@@ -589,6 +606,8 @@ export default function LandingPage() {
                             src={companyLogo}
                             alt={`${role.company} logo`}
                             className="company-logo-img"
+                            loading="lazy"
+                            decoding="async"
                             loading="lazy"
                             decoding="async"
                           />
