@@ -69,11 +69,13 @@
 .footer-links a:focus-visible,
 .footer-links button.footer-link-btn:hover,
 .footer-links button.footer-link-btn:focus-visible {
-  transform: translateY(-2px);
-  background: rgba(118, 75, 162, 0.15);
-  border-color: rgba(118, 75, 162, 0.3);
+  transform: translateY(-4px) scale(1.1) rotate(5deg);
+  background: rgba(118, 75, 162, 0.18);
+  border-color: rgba(118, 75, 162, 0.4);
   color: #667eea;
-  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.2);
+  box-shadow:
+    0 8px 24px rgba(118, 75, 162, 0.25),
+    0 0 0 1px rgba(118, 75, 162, 0.1);
 }
 
 .footer-links a:hover::before,
@@ -87,7 +89,8 @@
 .footer-links a:focus-visible svg,
 .footer-links button.footer-link-btn:hover svg,
 .footer-links button.footer-link-btn:focus-visible svg {
-  transform: scale(1.15) rotate(8deg);
+  transform: scale(1.2) rotate(10deg);
+  filter: drop-shadow(0 0 8px rgba(118, 75, 162, 0.4));
 }
 
 .footer-links a:active,
