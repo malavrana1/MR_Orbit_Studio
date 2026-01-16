@@ -101,7 +101,11 @@ export default function Header() {
   }, [isDarkMode])
 
   const toggleDarkMode = () => {
-    analyticsService.trackClick('button', 'toggle_dark_mode', isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode')
+    analyticsService.trackClick(
+      'button',
+      'toggle_dark_mode',
+      isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode',
+    )
     setIsDarkMode(!isDarkMode)
   }
 
@@ -166,7 +170,7 @@ export default function Header() {
     setIsMobileMenuOpen(false)
     const sectionId = href.substring(1)
     analyticsService.trackNavigation(sectionId, 'header')
-    
+
     const element = document.querySelector(href)
     if (element) {
       const offset = 80
@@ -235,10 +239,18 @@ export default function Header() {
               <button
                 className="theme-toggle nav-link"
                 onClick={toggleDarkMode}
-                aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-                title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+                aria-label={
+                  isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'
+                }
+                title={
+                  isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'
+                }
               >
-                {isDarkMode ? <FaSun className="nav-icon" /> : <FaMoon className="nav-icon" />}
+                {isDarkMode ? (
+                  <FaSun className="nav-icon" />
+                ) : (
+                  <FaMoon className="nav-icon" />
+                )}
                 <span className="nav-label">
                   {isDarkMode ? 'Light Mode' : 'Dark Mode'}
                 </span>

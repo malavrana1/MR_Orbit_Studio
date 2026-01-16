@@ -29,7 +29,7 @@ class AnalyticsService {
       referrer: document.referrer || 'direct',
       timestamp: Timestamp.now(),
       sessionId: this.sessionId,
-      url: window.location.href
+      url: window.location.href,
     }
   }
 
@@ -37,35 +37,40 @@ class AnalyticsService {
     if (!this.isTrackingEnabled) return
     try {
       const userInfo = this.getUserInfo()
-      
+
       if (analytics) {
         logEvent(analytics, 'page_view', {
           page_title: page,
           page_location: window.location.href,
-          page_path: window.location.pathname
+          page_path: window.location.pathname,
         })
       }
 
       await addDoc(collection(db, 'pageViews'), {
         page,
-        ...userInfo
+        ...userInfo,
       })
     } catch (error) {
       console.warn('Analytics tracking error:', error)
     }
   }
 
-  async trackClick(elementType, elementId, elementText = '', additionalData = {}) {
+  async trackClick(
+    elementType,
+    elementId,
+    elementText = '',
+    additionalData = {},
+  ) {
     if (!this.isTrackingEnabled) return
     try {
       const userInfo = this.getUserInfo()
-      
+
       if (analytics) {
         logEvent(analytics, 'click', {
           element_type: elementType,
           element_id: elementId,
           element_text: elementText,
-          ...additionalData
+          ...additionalData,
         })
       }
 
@@ -74,7 +79,7 @@ class AnalyticsService {
         elementId,
         elementText,
         ...additionalData,
-        ...userInfo
+        ...userInfo,
       })
     } catch (error) {
       console.warn('Analytics tracking error:', error)
@@ -83,23 +88,23 @@ class AnalyticsService {
 
   async trackSectionView(sectionId) {
     if (!this.isTrackingEnabled) return
-    
+
     if (this.trackedSections.has(sectionId)) return
     this.trackedSections.add(sectionId)
 
     try {
       const userInfo = this.getUserInfo()
-      
+
       if (analytics) {
         logEvent(analytics, 'view_section', {
           section_id: sectionId,
-          section_name: sectionId
+          section_name: sectionId,
         })
       }
 
       await addDoc(collection(db, 'sectionViews'), {
         sectionId,
-        ...userInfo
+        ...userInfo,
       })
     } catch (error) {
       console.warn('Analytics tracking error:', error)
@@ -108,25 +113,25 @@ class AnalyticsService {
 
   async trackScrollDepth(percentage) {
     if (!this.isTrackingEnabled) return
-    
+
     const milestone = Math.floor(percentage / 25) * 25
     if (this.scrollDepthsTracked.has(milestone)) return
     this.scrollDepthsTracked.add(milestone)
 
     try {
       const userInfo = this.getUserInfo()
-      
+
       if (analytics) {
         logEvent(analytics, 'scroll', {
           scroll_depth: percentage,
-          scroll_milestone: milestone
+          scroll_milestone: milestone,
         })
       }
 
       await addDoc(collection(db, 'scrollDepth'), {
         percentage,
         milestone,
-        ...userInfo
+        ...userInfo,
       })
     } catch (error) {
       console.warn('Analytics tracking error:', error)
@@ -136,7 +141,7 @@ class AnalyticsService {
   async trackExternalLink(url, linkText = '') {
     await this.trackClick('external_link', url, linkText, {
       link_url: url,
-      link_destination: 'external'
+      link_destination: 'external',
     })
   }
 
@@ -144,7 +149,7 @@ class AnalyticsService {
     await this.trackClick('social_link', platform, platform, {
       platform,
       link_url: url,
-      link_destination: 'social'
+      link_destination: 'social',
     })
   }
 
@@ -152,7 +157,7 @@ class AnalyticsService {
     await this.trackClick('download', fileName, fileName, {
       file_name: fileName,
       file_type: fileType,
-      action: 'download'
+      action: 'download',
     })
   }
 
@@ -160,21 +165,21 @@ class AnalyticsService {
     if (analytics) {
       logEvent(analytics, 'contact_form', {
         form_action: action,
-        ...data
+        ...data,
       })
     }
-    
+
     await addDoc(collection(db, 'contactForm'), {
       action,
       ...data,
-      ...this.getUserInfo()
+      ...this.getUserInfo(),
     })
   }
 
   async trackNavigation(section, source = 'header') {
     await this.trackClick('navigation', section, section, {
       navigation_section: section,
-      navigation_source: source
+      navigation_source: source,
     })
   }
 }

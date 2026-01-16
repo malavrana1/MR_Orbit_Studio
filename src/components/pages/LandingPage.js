@@ -29,7 +29,10 @@ import { getSkillIcon } from '../../utils/skillIcons'
 import resumePdf from '../../assets/pdf/MR_Resume.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
-import { observeScrollAnimations, setupScrollProgress } from '../../utils/scrollAnimations'
+import {
+  observeScrollAnimations,
+  setupScrollProgress,
+} from '../../utils/scrollAnimations'
 import ContactModal from '../ContactModal'
 import analyticsService from '../../services/analytics'
 import kisweLogo from '../../assets/images/logos/kiswe.png'
@@ -39,8 +42,8 @@ import atmiyaLogo from '../../assets/images/logos/atmiya_care_charity.png'
 
 const getCompanyLogo = (companyName) => {
   const logoMap = {
-    'Kiswe': kisweLogo,
-    'Gensler': genslerLogo,
+    Kiswe: kisweLogo,
+    Gensler: genslerLogo,
     'Cigna Express Scripts': cignaLogo,
     'Atmiya Care Charity': atmiyaLogo,
   }
@@ -81,8 +84,17 @@ export default function LandingPage() {
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400)
-      
-      const sections = ['home', 'summary', 'experience', 'projects', 'toolkit', 'credentials', 'about', 'connect']
+
+      const sections = [
+        'home',
+        'summary',
+        'experience',
+        'projects',
+        'toolkit',
+        'credentials',
+        'about',
+        'connect',
+      ]
       sections.forEach((sectionId) => {
         const element = document.getElementById(sectionId)
         if (element) {
@@ -93,7 +105,7 @@ export default function LandingPage() {
         }
       })
     }
-    
+
     let ticking = false
     const throttledScroll = () => {
       if (!ticking) {
@@ -104,30 +116,37 @@ export default function LandingPage() {
         ticking = true
       }
     }
-    
+
     window.addEventListener('scroll', throttledScroll, { passive: true })
     return () => window.removeEventListener('scroll', throttledScroll)
   }, [])
 
   useEffect(() => {
     const handleKeyPress = (e) => {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return
-      
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')
+        return
+
       if (e.key === 'h' || e.key === 'H') {
         e.preventDefault()
         document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })
       } else if (e.key === 'p' || e.key === 'P') {
         e.preventDefault()
-        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+        document
+          .getElementById('projects')
+          ?.scrollIntoView({ behavior: 'smooth' })
       } else if (e.key === 'e' || e.key === 'E') {
         e.preventDefault()
-        document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })
+        document
+          .getElementById('experience')
+          ?.scrollIntoView({ behavior: 'smooth' })
       } else if (e.key === 'c' || e.key === 'C') {
         e.preventDefault()
-        document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' })
+        document
+          .getElementById('connect')
+          ?.scrollIntoView({ behavior: 'smooth' })
       }
     }
-    
+
     window.addEventListener('keydown', handleKeyPress)
     return () => window.removeEventListener('keydown', handleKeyPress)
   }, [])
@@ -147,17 +166,29 @@ export default function LandingPage() {
     try {
       if (navigator.share) {
         await navigator.share(shareData)
-        analyticsService.trackClick('button', 'share_portfolio_success', 'Share Portfolio - Success')
+        analyticsService.trackClick(
+          'button',
+          'share_portfolio_success',
+          'Share Portfolio - Success',
+        )
       } else {
         await navigator.clipboard.writeText(window.location.href)
         alert('Portfolio link copied to clipboard!')
-        analyticsService.trackClick('button', 'share_portfolio_copy', 'Share Portfolio - Copy')
+        analyticsService.trackClick(
+          'button',
+          'share_portfolio_copy',
+          'Share Portfolio - Copy',
+        )
       }
     } catch (err) {
       if (err.name !== 'AbortError') {
         await navigator.clipboard.writeText(window.location.href)
         alert('Portfolio link copied to clipboard!')
-        analyticsService.trackClick('button', 'share_portfolio_copy', 'Share Portfolio - Copy')
+        analyticsService.trackClick(
+          'button',
+          'share_portfolio_copy',
+          'Share Portfolio - Copy',
+        )
       }
     }
   }
@@ -174,10 +205,13 @@ export default function LandingPage() {
   useEffect(() => {
     const updateMetaTags = () => {
       document.title = `${profile.name} - ${profile.headline || 'Frontend Engineer Portfolio'}`
-      
+
       const metaDescription = document.querySelector('meta[name="description"]')
       if (metaDescription) {
-        metaDescription.setAttribute('content', profile.summary?.[0] || 'Frontend Engineer Portfolio')
+        metaDescription.setAttribute(
+          'content',
+          profile.summary?.[0] || 'Frontend Engineer Portfolio',
+        )
       } else {
         const meta = document.createElement('meta')
         meta.name = 'description'
@@ -195,9 +229,14 @@ export default function LandingPage() {
         document.head.appendChild(meta)
       }
 
-      const ogDescription = document.querySelector('meta[property="og:description"]')
+      const ogDescription = document.querySelector(
+        'meta[property="og:description"]',
+      )
       if (ogDescription) {
-        ogDescription.setAttribute('content', profile.summary?.[0] || 'Frontend Engineer Portfolio')
+        ogDescription.setAttribute(
+          'content',
+          profile.summary?.[0] || 'Frontend Engineer Portfolio',
+        )
       } else {
         const meta = document.createElement('meta')
         meta.setAttribute('property', 'og:description')
@@ -252,11 +291,8 @@ export default function LandingPage() {
           '@type': 'PostalAddress',
           addressLocality: profile.contact.location,
         },
-        sameAs: [
-          profile.social.linkedin,
-          profile.social.github,
-        ],
-        knowsAbout: skillCategories.flatMap(cat => cat.items),
+        sameAs: [profile.social.linkedin, profile.social.github],
+        knowsAbout: skillCategories.flatMap((cat) => cat.items),
       }
 
       const script = document.createElement('script')
@@ -287,11 +323,18 @@ export default function LandingPage() {
         </div>
         <div className="particles">
           {[...Array(10)].map((_, i) => (
-            <div key={i} className="particle" style={{ '--delay': `${i * 0.8}s` }}></div>
+            <div
+              key={i}
+              className="particle"
+              style={{ '--delay': `${i * 0.8}s` }}
+            ></div>
           ))}
         </div>
       </div>
-      <header className="landing-hero d-flex align-items-center" id="main-content">
+      <header
+        className="landing-hero d-flex align-items-center"
+        id="main-content"
+      >
         <div className="landing-hero__overlay" />
         <div className="landing-hero__pattern" />
         <Container className="position-relative">
@@ -338,18 +381,18 @@ export default function LandingPage() {
             <Col lg={5}>
               <Card className="hero-skill-card border-0 shadow-lg">
                 <Card.Body>
-                    <div className="skill-card-header">
-                      <div>
-                        <h5 className="mb-1">
-                          {heroUI.skillCard?.title || 'Tech Stack'}
-                        </h5>
-                        <p className="text-muted mb-0">
-                          {heroUI.skillCard?.description ||
-                            'Technologies I use to build modern web applications'}
-                        </p>
-                      </div>
-                      <FaRegLightbulb className="text-warning fs-4" />
+                  <div className="skill-card-header">
+                    <div>
+                      <h5 className="mb-1">
+                        {heroUI.skillCard?.title || 'Tech Stack'}
+                      </h5>
+                      <p className="text-muted mb-0">
+                        {heroUI.skillCard?.description ||
+                          'Technologies I use to build modern web applications'}
+                      </p>
                     </div>
+                    <FaRegLightbulb className="text-warning fs-4" />
+                  </div>
                   <div className="skill-icon-grid">
                     {skillWall.map((skill) => {
                       const Icon = getSkillIcon(skill)
@@ -364,7 +407,18 @@ export default function LandingPage() {
                     })}
                   </div>
                   <div className="hero-experience-quick mt-4">
-                    <h6 className="mb-3 fw-bold" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '0.9rem', letterSpacing: '0.05em'}}>
+                    <h6
+                      className="mb-3 fw-bold"
+                      style={{
+                        background:
+                          'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                        fontSize: '0.9rem',
+                        letterSpacing: '0.05em',
+                      }}
+                    >
                       {heroUI.skillCard?.recentTeams || 'Recent Experience'}
                     </h6>
                     <ul className="hero-experience-list">
@@ -394,35 +448,51 @@ export default function LandingPage() {
 
       <section id="summary" className="landing-summary">
         <Container>
-          <div className="summary-header text-center mb-4" data-animate="fade-up">
+          <div
+            className="summary-header text-center mb-4"
+            data-animate="fade-up"
+          >
             <h2 className="section-title mb-2">
               {sectionsUI.professionalSummary || 'Professional Overview'}
             </h2>
-            <p className="summary-subtitle lead text-muted mx-auto" style={{maxWidth: '700px'}}>
-              {profile.summary?.[0] || 'Building modern web experiences with passion and precision'}
+            <p
+              className="summary-subtitle lead text-muted mx-auto"
+              style={{ maxWidth: '700px' }}
+            >
+              {profile.summary?.[0] ||
+                'Building modern web experiences with passion and precision'}
             </p>
           </div>
-          
+
           <div className="professional-highlights" data-animate="fade-up">
             <div className="highlight-item">
               <FaCode className="highlight-icon" />
               <div className="highlight-content">
                 <h6 className="highlight-title">Frontend Focus</h6>
-                <p className="highlight-text">Building responsive web applications with React, Angular, and Vue</p>
+                <p className="highlight-text">
+                  Building responsive web applications with React, Angular, and
+                  Vue
+                </p>
               </div>
             </div>
             <div className="highlight-item">
               <FaUsers className="highlight-icon" />
               <div className="highlight-content">
                 <h6 className="highlight-title">Team Collaboration</h6>
-                <p className="highlight-text">Working with cross-functional teams to deliver quality products</p>
+                <p className="highlight-text">
+                  Working with cross-functional teams to deliver quality
+                  products
+                </p>
               </div>
             </div>
             <div className="highlight-item">
               <FaCheckCircle className="highlight-icon" />
               <div className="highlight-content">
                 <h6 className="highlight-title">Continuous Learning</h6>
-                <p className="highlight-text">Earning certifications and staying current with modern technologies</p>
+                <p className="highlight-text">
+                  Earning certifications and staying current with modern
+                  technologies
+                </p>
               </div>
             </div>
           </div>
@@ -431,16 +501,19 @@ export default function LandingPage() {
 
       <section id="experience" className="landing-experience">
         <Container>
-          <div className="experience-heading text-center mb-3" data-animate="fade-up">
+          <div
+            className="experience-heading text-center mb-3"
+            data-animate="fade-up"
+          >
             <h2>{sectionsUI.experienceTitle || 'Experience'}</h2>
           </div>
-          
+
           <div className="experience-grid">
             {resume.experience.slice(0, 3).map((role, index) => {
               const companyLogo = getCompanyLogo(role.company)
 
               return (
-                <Card 
+                <Card
                   key={`${role.company}-${index}`}
                   className="experience-card border-0 shadow-sm h-100"
                   data-animate="fade-up"
@@ -450,8 +523,8 @@ export default function LandingPage() {
                     <div className="experience-card-header">
                       <div className="experience-company-logo">
                         {companyLogo && (
-                          <img 
-                            src={companyLogo} 
+                          <img
+                            src={companyLogo}
                             alt={`${role.company} logo`}
                             className="company-logo-img"
                           />
@@ -467,11 +540,17 @@ export default function LandingPage() {
                         <div className="experience-role-meta">
                           <p className="experience-role">{role.role}</p>
                           <div className="experience-meta-box">
-                            <span className="experience-period">{role.period}</span>
-                            <span className="experience-location">{role.location}</span>
+                            <span className="experience-period">
+                              {role.period}
+                            </span>
+                            <span className="experience-location">
+                              {role.location}
+                            </span>
                           </div>
                         </div>
-                        <p className="experience-description">{role.description}</p>
+                        <p className="experience-description">
+                          {role.description}
+                        </p>
                       </div>
                     </div>
                   </Card.Body>
@@ -484,7 +563,10 @@ export default function LandingPage() {
 
       <section id="projects" className="landing-projects">
         <Container>
-          <div className="projects-heading text-center mb-3" data-animate="fade-up">
+          <div
+            className="projects-heading text-center mb-3"
+            data-animate="fade-up"
+          >
             <h2 className="section-title">
               {sectionsUI.featuredProject || 'Featured Projects'}
             </h2>
@@ -492,7 +574,7 @@ export default function LandingPage() {
           <Row className="g-4 justify-content-center">
             {allProjects.map((p, index) => (
               <Col md={4} key={p.title}>
-                <Card 
+                <Card
                   className="project-card h-100 border-0 shadow-sm"
                   data-animate="fade-up"
                   style={{ animationDelay: `${index * 0.15}s` }}
@@ -514,7 +596,9 @@ export default function LandingPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
-                      onClick={() => analyticsService.trackExternalLink(p.link, p.title)}
+                      onClick={() =>
+                        analyticsService.trackExternalLink(p.link, p.title)
+                      }
                     >
                       <span>{p.cta}</span>
                       <FaExternalLinkAlt className="project-link__icon" />
@@ -559,7 +643,11 @@ export default function LandingPage() {
                           : ''
                       }`}
                       onClick={() => {
-                        analyticsService.trackClick('button', `toolkit_${category}`, category)
+                        analyticsService.trackClick(
+                          'button',
+                          `toolkit_${category}`,
+                          category,
+                        )
                         setActiveToolkit(category)
                       }}
                     >
@@ -573,7 +661,10 @@ export default function LandingPage() {
               </div>
             </Col>
             <Col xs={12} lg={8}>
-              <Card className="toolkit-card border-0 shadow-sm h-100" data-animate="fade-up">
+              <Card
+                className="toolkit-card border-0 shadow-sm h-100"
+                data-animate="fade-up"
+              >
                 <Card.Body>
                   <h5 className="mb-3">{activeToolkit}</h5>
                   <p className="text-muted mb-4">
@@ -606,60 +697,88 @@ export default function LandingPage() {
 
       <section id="credentials" className="landing-credentials">
         <Container>
-          <div className="credentials-heading text-center mb-3" data-animate="fade-up">
+          <div
+            className="credentials-heading text-center mb-3"
+            data-animate="fade-up"
+          >
             <h2 className="section-title">Education & Certifications</h2>
           </div>
           <Row className="g-4">
             <Col lg={4}>
-              {resume.education && resume.education.map((edu, index) => (
-                <Card key={index} className="credential-card border-0 shadow-sm mb-3" data-animate="fade-up">
-                  <Card.Body>
-                    <div className="credential-item">
-                      <div className="credential-icon education-icon-bg">
-                        <FaGraduationCap />
-                      </div>
-                      <div className="credential-content">
-                        <h6 className="credential-title">{edu.degree}</h6>
-                        <h6 className="credential-institution mb-1">{edu.institution}</h6>
-                        {edu.location && (
-                          <p className="credential-subtitle mb-1 text-muted">{edu.location}</p>
-                        )}
-                        <span className="credential-period">{edu.period}</span>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
-              ))}
-            </Col>
-            <Col lg={8}>
-              <div className="certifications-grid">
-                {resume.certifications && resume.certifications.slice(0, 6).map((cert, index) => (
-                  <Card key={index} className="credential-card certification-card-compact border-0 shadow-sm" data-animate="fade-up">
-                    <Card.Body className="p-3">
+              {resume.education &&
+                resume.education.map((edu, index) => (
+                  <Card
+                    key={index}
+                    className="credential-card border-0 shadow-sm mb-3"
+                    data-animate="fade-up"
+                  >
+                    <Card.Body>
                       <div className="credential-item">
-                        <div className="credential-icon certification-icon-bg">
-                          <FaAward />
+                        <div className="credential-icon education-icon-bg">
+                          <FaGraduationCap />
                         </div>
                         <div className="credential-content">
-                          <h6 className="credential-title small">{cert.name}</h6>
-                          <p className="credential-subtitle small text-muted mb-0">{cert.issuer}</p>
+                          <h6 className="credential-title">{edu.degree}</h6>
+                          <h6 className="credential-institution mb-1">
+                            {edu.institution}
+                          </h6>
+                          {edu.location && (
+                            <p className="credential-subtitle mb-1 text-muted">
+                              {edu.location}
+                            </p>
+                          )}
+                          <span className="credential-period">
+                            {edu.period}
+                          </span>
                         </div>
-                        {cert.link && (
-                          <a
-                            href={cert.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="credential-link"
-                            aria-label={`View ${cert.name} certificate`}
-                            onClick={() => analyticsService.trackExternalLink(cert.link, cert.name)}
-                          >
-                            <FaExternalLinkAlt />
-                          </a>
-                        )}
                       </div>
                     </Card.Body>
                   </Card>
                 ))}
+            </Col>
+            <Col lg={8}>
+              <div className="certifications-grid">
+                {resume.certifications &&
+                  resume.certifications.slice(0, 6).map((cert, index) => (
+                    <Card
+                      key={index}
+                      className="credential-card certification-card-compact border-0 shadow-sm"
+                      data-animate="fade-up"
+                    >
+                      <Card.Body className="p-3">
+                        <div className="credential-item">
+                          <div className="credential-icon certification-icon-bg">
+                            <FaAward />
+                          </div>
+                          <div className="credential-content">
+                            <h6 className="credential-title small">
+                              {cert.name}
+                            </h6>
+                            <p className="credential-subtitle small text-muted mb-0">
+                              {cert.issuer}
+                            </p>
+                          </div>
+                          {cert.link && (
+                            <a
+                              href={cert.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="credential-link"
+                              aria-label={`View ${cert.name} certificate`}
+                              onClick={() =>
+                                analyticsService.trackExternalLink(
+                                  cert.link,
+                                  cert.name,
+                                )
+                              }
+                            >
+                              <FaExternalLinkAlt />
+                            </a>
+                          )}
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  ))}
               </div>
             </Col>
           </Row>
@@ -669,37 +788,91 @@ export default function LandingPage() {
       <section id="about" className="landing-personal">
         <Container>
           <div className="text-center mb-4" data-animate="fade-up">
-            <h2 className="section-title">{personal.tagline || 'More about me'}</h2>
+            <h2 className="section-title">
+              {personal.tagline || 'More about me'}
+            </h2>
           </div>
           <Row className="g-4 justify-content-center">
             <Col lg={6}>
-              <Card className="personal-card border-0 shadow-sm h-100" data-animate="fade-up">
+              <Card
+                className="personal-card border-0 shadow-sm h-100"
+                data-animate="fade-up"
+              >
                 <Card.Body className="p-4">
-                  <h5 className="mb-3" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1.25rem', fontWeight: '700'}}>
+                  <h5
+                    className="mb-3"
+                    style={{
+                      background:
+                        'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                      fontSize: '1.25rem',
+                      fontWeight: '700',
+                    }}
+                  >
                     What I Enjoy
                   </h5>
-                  <p className="text-muted mb-4" style={{lineHeight: '1.7', fontSize: '1rem'}}>{personal.intro}</p>
+                  <p
+                    className="text-muted mb-4"
+                    style={{ lineHeight: '1.7', fontSize: '1rem' }}
+                  >
+                    {personal.intro}
+                  </p>
                   <div className="interest-chips">
-                    {personal.interests && personal.interests.map((interest, index) => (
-                      <span key={index} className="interest-chip">{interest}</span>
-                    ))}
+                    {personal.interests &&
+                      personal.interests.map((interest, index) => (
+                        <span key={index} className="interest-chip">
+                          {interest}
+                        </span>
+                      ))}
                   </div>
                 </Card.Body>
               </Card>
             </Col>
             <Col lg={6}>
-              <Card className="personal-card border-0 shadow-sm h-100" data-animate="fade-up">
+              <Card
+                className="personal-card border-0 shadow-sm h-100"
+                data-animate="fade-up"
+              >
                 <Card.Body className="p-4">
-                  <h5 className="mb-3" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1.25rem', fontWeight: '700'}}>
+                  <h5
+                    className="mb-3"
+                    style={{
+                      background:
+                        'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                      fontSize: '1.25rem',
+                      fontWeight: '700',
+                    }}
+                  >
                     What I Like About Work
                   </h5>
-                  <p className="text-muted mb-4" style={{lineHeight: '1.7', fontSize: '1rem'}}>{personal.whatFuelsMe}</p>
+                  <p
+                    className="text-muted mb-4"
+                    style={{ lineHeight: '1.7', fontSize: '1rem' }}
+                  >
+                    {personal.whatFuelsMe}
+                  </p>
                   {personal.principles && personal.principles.length > 0 && (
                     <div className="mt-4">
-                      <h6 className="mb-3" style={{color: '#764ba2', fontWeight: '600', fontSize: '1rem'}}>Principles</h6>
+                      <h6
+                        className="mb-3"
+                        style={{
+                          color: '#764ba2',
+                          fontWeight: '600',
+                          fontSize: '1rem',
+                        }}
+                      >
+                        Principles
+                      </h6>
                       <ul className="personal-list">
                         {personal.principles.map((principle, index) => (
-                          <li key={index} style={{marginBottom: '0.5rem'}}>{principle}</li>
+                          <li key={index} style={{ marginBottom: '0.5rem' }}>
+                            {principle}
+                          </li>
                         ))}
                       </ul>
                     </div>
@@ -715,19 +888,35 @@ export default function LandingPage() {
         <Container>
           <Row className="align-items-center gy-4">
             <Col lg={8} className="mx-auto">
-              <Card className="border-0 shadow-sm personal-card contact-card" data-animate="fade-up">
+              <Card
+                className="border-0 shadow-sm personal-card contact-card"
+                data-animate="fade-up"
+              >
                 <Card.Body className="text-center p-4">
-                  <h2 className="mb-4" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>
+                  <h2
+                    className="mb-4"
+                    style={{
+                      background:
+                        'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
                     Ready to Build Something Amazing?
                   </h2>
-                  <p className="text-muted mb-4">Let's collaborate and bring your ideas to life</p>
+                  <p className="text-muted mb-4">
+                    Let's collaborate and bring your ideas to life
+                  </p>
                   <div className="contact-actions">
                     <a
                       href={resumePdf}
                       download
                       className="btn btn-primary"
                       title="Download resume"
-                      onClick={() => analyticsService.trackDownload('resume.pdf', 'pdf')}
+                      onClick={() =>
+                        analyticsService.trackDownload('resume.pdf', 'pdf')
+                      }
                     >
                       <FaDownload />
                       Download Resume
@@ -738,7 +927,12 @@ export default function LandingPage() {
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary"
                       title="View GitHub profile"
-                      onClick={() => analyticsService.trackSocialClick('github', profile.social.github)}
+                      onClick={() =>
+                        analyticsService.trackSocialClick(
+                          'github',
+                          profile.social.github,
+                        )
+                      }
                     >
                       <FaGithub />
                       GitHub
@@ -749,7 +943,12 @@ export default function LandingPage() {
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary"
                       title="Connect on LinkedIn"
-                      onClick={() => analyticsService.trackSocialClick('linkedin', profile.social.linkedin)}
+                      onClick={() =>
+                        analyticsService.trackSocialClick(
+                          'linkedin',
+                          profile.social.linkedin,
+                        )
+                      }
                     >
                       <FaLinkedin />
                       LinkedIn
@@ -764,7 +963,11 @@ export default function LandingPage() {
                     </button>
                     <button
                       onClick={() => {
-                        analyticsService.trackClick('button', 'open_contact_modal', 'Quick Contact')
+                        analyticsService.trackClick(
+                          'button',
+                          'open_contact_modal',
+                          'Quick Contact',
+                        )
                         setShowContactModal(true)
                       }}
                       className="btn btn-outline-primary"
@@ -779,7 +982,13 @@ export default function LandingPage() {
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary"
                       title="View resume in new tab"
-                      onClick={() => analyticsService.trackClick('link', 'view_resume', 'View Resume')}
+                      onClick={() =>
+                        analyticsService.trackClick(
+                          'link',
+                          'view_resume',
+                          'View Resume',
+                        )
+                      }
                     >
                       <FaFilePdf />
                       View Resume

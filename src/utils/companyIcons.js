@@ -1,13 +1,8 @@
-import {
-  FaBuilding,
-  FaBriefcase,
-  FaHospital,
-  FaHeart,
-} from 'react-icons/fa'
+import { FaBuilding, FaBriefcase, FaHospital, FaHeart } from 'react-icons/fa'
 
 const companyIconMap = {
-  'Kiswe': FaBuilding,
-  'Gensler': FaBriefcase,
+  Kiswe: FaBuilding,
+  Gensler: FaBriefcase,
   'Cigna Express Scripts': FaHospital,
   'Atmiya Care Charity': FaHeart,
 }
@@ -24,7 +19,7 @@ export const getCompanyInitials = (companyName) => {
   }
   return words
     .slice(0, 2)
-    .map(word => word[0])
+    .map((word) => word[0])
     .join('')
     .toUpperCase()
 }

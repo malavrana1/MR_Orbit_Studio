@@ -21,15 +21,17 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
     setSendSuccess(false)
     if (!contactMessage || !contactEmail) {
       setSendError('Please provide your email and a short message.')
-      analyticsService.trackContactForm('validation_error', { error: 'missing_fields' })
+      analyticsService.trackContactForm('validation_error', {
+        error: 'missing_fields',
+      })
       return
     }
     setIsSending(true)
-    analyticsService.trackContactForm('form_submitted', { 
+    analyticsService.trackContactForm('form_submitted', {
       has_name: !!contactName,
-      message_length: contactMessage.length 
+      message_length: contactMessage.length,
     })
-    
+
     try {
       const response = await fetch(
         `https://formsubmit.co/ajax/${encodeURIComponent(toEmail)}`,
@@ -56,9 +58,9 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
       setContactName('')
       setContactEmail('')
       setContactMessage('')
-      analyticsService.trackContactForm('form_success', { 
+      analyticsService.trackContactForm('form_success', {
         has_name: !!contactName,
-        message_length: contactMessage.length 
+        message_length: contactMessage.length,
       })
     } catch (err) {
       setSendError('Could not send your message. Please try again.')
@@ -69,9 +71,23 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
   }
 
   return (
-    <Modal show={show} onHide={onClose} centered className="contact-modal-custom">
+    <Modal
+      show={show}
+      onHide={onClose}
+      centered
+      className="contact-modal-custom"
+    >
       <Modal.Header closeButton className="contact-modal-header">
-        <Modal.Title style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontWeight: '700'}}>
+        <Modal.Title
+          style={{
+            background:
+              'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            fontWeight: '700',
+          }}
+        >
           Get in Touch
         </Modal.Title>
       </Modal.Header>
@@ -95,36 +111,36 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
           </div>
         )}
         {!sendSuccess && (
-        <Form>
-          <Form.Group className="mb-3" controlId="contactName">
-            <Form.Label>Your name</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="What should I call you?"
-              value={contactName}
-              onChange={(e) => setContactName(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="contactEmail">
-            <Form.Label>Your email</Form.Label>
-            <Form.Control
-              type="email"
-              placeholder="you@example.com"
-              value={contactEmail}
-              onChange={(e) => setContactEmail(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group className="mb-0" controlId="contactMessage">
-            <Form.Label>Message</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={4}
-              placeholder="Hi Malav, I’d love to connect about…"
-              value={contactMessage}
-              onChange={(e) => setContactMessage(e.target.value)}
-            />
-          </Form.Group>
-        </Form>
+          <Form>
+            <Form.Group className="mb-3" controlId="contactName">
+              <Form.Label>Your name</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="What should I call you?"
+                value={contactName}
+                onChange={(e) => setContactName(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="contactEmail">
+              <Form.Label>Your email</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="you@example.com"
+                value={contactEmail}
+                onChange={(e) => setContactEmail(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-0" controlId="contactMessage">
+              <Form.Label>Message</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={4}
+                placeholder="Hi Malav, I’d love to connect about…"
+                value={contactMessage}
+                onChange={(e) => setContactMessage(e.target.value)}
+              />
+            </Form.Group>
+          </Form>
         )}
       </Modal.Body>
       <Modal.Footer>
@@ -132,7 +148,9 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
           <Button
             variant="primary"
             onClick={() => {
-              analyticsService.trackContactForm('modal_closed', { action: 'close_after_success' })
+              analyticsService.trackContactForm('modal_closed', {
+                action: 'close_after_success',
+              })
               onClose()
             }}
             className="w-100"
@@ -141,10 +159,12 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
           </Button>
         ) : (
           <>
-            <Button 
-              variant="outline-secondary" 
+            <Button
+              variant="outline-secondary"
               onClick={() => {
-                analyticsService.trackContactForm('modal_closed', { action: 'cancel' })
+                analyticsService.trackContactForm('modal_closed', {
+                  action: 'cancel',
+                })
                 onClose()
               }}
             >
