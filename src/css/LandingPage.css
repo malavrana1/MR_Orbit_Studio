@@ -1351,7 +1351,10 @@ button.summary-inline-link {
 }
 
 .toolkit-heading .section-title {
-  color: #0f172a;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .toolkit-heading p {
@@ -1385,6 +1388,14 @@ button.summary-inline-link {
   overflow: hidden;
 }
 
+.toolkit-nav__btn span {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 200ms ease;
+}
+
 .toolkit-nav__btn::before {
   content: '';
   position: absolute;
@@ -1403,19 +1414,17 @@ button.summary-inline-link {
   box-shadow: 0 4px 16px rgba(118, 75, 162, 0.15);
   background: #ffffff;
   border-color: rgba(118, 75, 162, 0.3);
-  color: #764ba2;
+}
+
+.toolkit-nav__btn:hover span {
+  background: linear-gradient(135deg, #764ba2 0%, #f093fb 50%, #667eea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .toolkit-nav__btn:hover::before {
   transform: scaleY(1);
-}
-
-.toolkit-nav__btn span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  position: relative;
-  z-index: 1;
 }
 
 .toolkit-nav__icon {
@@ -1433,9 +1442,16 @@ button.summary-inline-link {
 
 .toolkit-nav__btn--active {
   background: rgba(118, 75, 162, 0.1);
-  color: #764ba2;
   border-color: rgba(118, 75, 162, 0.3);
   box-shadow: 0 4px 16px rgba(118, 75, 162, 0.15);
+}
+
+.toolkit-nav__btn--active span {
+  background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
 }
 
 .toolkit-nav__btn--active::before {
@@ -1463,6 +1479,18 @@ button.summary-inline-link {
 
 .toolkit-card .card-body {
   overflow-wrap: break-word;
+}
+
+.toolkit-card h5 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  transition: all 300ms ease;
 }
 
 .toolkit-card::before {
@@ -2179,18 +2207,24 @@ button.summary-inline-link {
 
 .credential-title {
   font-weight: 600;
-  color: #0f172a;
   margin-bottom: 0.25rem;
   font-size: 1rem;
   line-height: 1.4;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .credential-institution {
   font-weight: 600;
-  color: #764ba2;
   margin-bottom: 0.25rem;
   font-size: 1rem;
   line-height: 1.4;
+  background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .credential-subtitle {
@@ -2248,6 +2282,10 @@ button.summary-inline-link {
 .certification-card-compact .credential-title {
   font-size: 0.9rem;
   margin-bottom: 0.15rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .certification-card-compact .credential-subtitle {
@@ -2648,17 +2686,17 @@ button.summary-inline-link {
 }
 
 .project-card h5 {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
   margin-bottom: 0.75rem;
-  transition: color 200ms ease;
+  transition: all 300ms ease;
 }
 
 .project-card:hover h5 {
-  background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+  background: linear-gradient(135deg, #764ba2 0%, #f093fb 50%, #667eea 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
