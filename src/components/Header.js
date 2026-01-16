@@ -29,27 +29,59 @@ const Logo = ({ className = '', size = 28 }) => (
     focusable="false"
   >
     <defs>
-      <linearGradient id="mr-core" x1="0" y1="0" x2="1" y2="1">
+      <linearGradient id="orbit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#667eea" />
         <stop offset="50%" stopColor="#764ba2" />
         <stop offset="100%" stopColor="#f093fb" />
       </linearGradient>
-      <linearGradient id="mr-orbit" x1="0" y1="0" x2="1" y2="1">
+      <radialGradient id="core-gradient" cx="50%" cy="50%">
         <stop offset="0%" stopColor="#667eea" />
-        <stop offset="100%" stopColor="#764ba2" />
-      </linearGradient>
+        <stop offset="100%" stopColor="#2563eb" />
+      </radialGradient>
     </defs>
-    <path d="M12 44 L12 22 L20 34 L28 22 L28 44" className="logo-m" />
+    <rect
+      width="64"
+      height="64"
+      rx="14"
+      fill="url(#orbit-gradient)"
+      className="logo-bg"
+    />
+    <ellipse
+      cx="32"
+      cy="32"
+      rx="22"
+      ry="10"
+      fill="none"
+      stroke="rgba(255, 255, 255, 0.3)"
+      strokeWidth="1.5"
+      className="logo-orbit-ring"
+      transform="rotate(-15 32 32)"
+    />
     <path
-      d="M36 22 L50 22 C56 22 56 32 50 32 L36 32 L50 44"
+      d="M 14 18 L 14 46 M 14 18 L 22 34 L 30 18 M 30 18 L 30 46"
+      fill="none"
+      stroke="#ffffff"
+      strokeWidth="4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="logo-m"
+    />
+    <path
+      d="M 34 18 L 48 18 Q 52 18 52 26 Q 52 34 48 34 L 34 34 M 34 34 L 48 46"
+      fill="none"
+      stroke="#ffffff"
+      strokeWidth="4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="logo-r"
     />
-    <circle cx="32" cy="32" r="6.5" className="logo-core" />
-    <path d="M8 30 C20 20 44 20 56 30" className="logo-orbit" />
-    <path d="M8 34 C20 44 44 44 56 34" className="logo-orbit" />
-    <path
-      d="M48 18 l2 4 l4 2 l-4 2 l-2 4 l-2 -4 l-4 -2 l4 -2 z"
-      className="logo-star"
+    <circle
+      cx="32"
+      cy="54"
+      r="2"
+      fill="#ffffff"
+      opacity="0.8"
+      className="logo-accent"
     />
   </svg>
 )
