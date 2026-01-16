@@ -78,18 +78,7 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
       className="contact-modal-custom"
     >
       <Modal.Header closeButton className="contact-modal-header">
-        <Modal.Title
-          style={{
-            background:
-              'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-            fontWeight: '700',
-          }}
-        >
-          Get in Touch
-        </Modal.Title>
+        <Modal.Title className="contact-modal-title">Get in Touch</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         {sendSuccess && (

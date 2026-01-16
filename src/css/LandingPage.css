@@ -5650,6 +5650,14 @@ button.summary-inline-link {
   padding: 1.5rem;
 }
 
+.contact-modal-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
 .contact-modal-custom .modal-body {
   padding: 1.5rem;
 }

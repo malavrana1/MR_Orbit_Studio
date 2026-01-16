@@ -2331,3 +2331,230 @@
 [data-theme='dark'] .text-muted.mb-4 {
   color: #ffffff !important;
 }
+
+/* Contact Modal Dark Theme Styles */
+[data-theme='dark'] .contact-modal-custom .modal-dialog {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .modal-content {
+  background: #1f1f1f !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .contact-modal-header {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .contact-modal-header .btn-close {
+  filter: invert(1) !important;
+  opacity: 0.8 !important;
+  transition: var(--transition-base) !important;
+}
+
+[data-theme='dark'] .contact-modal-header .btn-close:hover {
+  opacity: 1 !important;
+  transform: scale(1.1) rotate(90deg) !important;
+}
+
+[data-theme='dark'] .contact-modal-title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .modal-body {
+  background: #1f1f1f !important;
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .form-label {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .form-control {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  transition: var(--transition-base) !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .form-control:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .modal-footer {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-primary {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.08) !important;
+  transition: var(--transition-base) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-primary::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  ) !important;
+  transition: left 0.5s ease !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.9),
+    0 0 40px rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-primary:hover::before {
+  left: 100% !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-primary:disabled {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-outline-secondary {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+  transition: var(--transition-base) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-outline-secondary::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 100% !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  transition: width 0.4s ease !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-outline-secondary:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .btn-outline-secondary:hover::before {
+  width: 100% !important;
+}
+
+[data-theme='dark'] .contact-form-success {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border: 1.5px solid rgba(16, 185, 129, 0.4) !important;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(16, 185, 129, 0.2) !important;
+}
+
+[data-theme='dark'] .success-icon {
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4) !important;
+}
+
+[data-theme='dark'] .success-content h5 {
+  color: #34d399 !important;
+  text-shadow: 0 2px 8px rgba(16, 185, 129, 0.3) !important;
+}
+
+[data-theme='dark'] .success-content p {
+  color: #6ee7b7 !important;
+}
+
+[data-theme='dark'] .contact-form-error {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border: 1.5px solid rgba(239, 68, 68, 0.4) !important;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(239, 68, 68, 0.2) !important;
+}
+
+[data-theme='dark'] .error-icon {
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4) !important;
+}
+
+[data-theme='dark'] .error-content h5 {
+  color: #fca5a5 !important;
+  text-shadow: 0 2px 8px rgba(239, 68, 68, 0.3) !important;
+}
+
+[data-theme='dark'] .error-content p {
+  color: #f87171 !important;
+}
+
+[data-theme='dark'] .modal-backdrop {
+  background: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+
+[data-theme='dark'] .contact-modal-custom .modal-backdrop {
+  background: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+
+[data-theme='dark'] .contact-modal-custom textarea.form-control {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff !important;
+  resize: vertical !important;
+}
+
+[data-theme='dark'] .contact-modal-custom textarea.form-control:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
