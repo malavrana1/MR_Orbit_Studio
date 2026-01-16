@@ -13,7 +13,7 @@ class AnalyticsService {
   getOrCreateSessionId() {
     let sessionId = sessionStorage.getItem('analytics_session_id')
     if (!sessionId) {
-      sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+      sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`
       sessionStorage.setItem('analytics_session_id', sessionId)
     }
     return sessionId
@@ -166,20 +166,25 @@ class AnalyticsService {
   }
 
   async trackContactForm(action, data = {}) {
+    if (!this.isTrackingEnabled) return
     if (!db) return
 
-    if (analytics) {
-      logEvent(analytics, 'contact_form', {
-        form_action: action,
-        ...data,
-      })
-    }
+    try {
+      if (analytics) {
+        logEvent(analytics, 'contact_form', {
+          form_action: action,
+          ...data,
+        })
+      }
 
-    await addDoc(collection(db, 'contactForm'), {
-      action,
-      ...data,
-      ...this.getUserInfo(),
-    })
+      await addDoc(collection(db, 'contactForm'), {
+        action,
+        ...data,
+        ...this.getUserInfo(),
+      })
+    } catch (error) {
+      console.warn('Analytics tracking error:', error)
+    }
   }
 
   async trackNavigation(section, source = 'header') {
