@@ -4,14 +4,14 @@
     gap: 0.75rem;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, rgba(248, 250, 252, 0.95), rgba(241, 245, 249, 0.95));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+    backdrop-filter: blur(30px);
     color: #475569;
     position: relative;
     padding: 2rem 1.5rem;
     width: 100%;
     margin: 0;
-    border-top: 1px solid rgba(59, 130, 246, 0.1);
-    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(118, 75, 162, 0.15);
 }
 
 .footer-text {
@@ -35,9 +35,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.1));
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    color: #60a5fa;
+    background: rgba(118, 75, 162, 0.1);
+    border: 1px solid rgba(118, 75, 162, 0.2);
+    color: #764ba2;
     text-decoration: none;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(10px);
@@ -55,29 +55,40 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
     transform: scaleX(0);
     transition: transform 200ms ease;
     border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .footer-links a:hover,
-.footer-links button.footer-link-btn:hover {
+.footer-links a:focus-visible,
+.footer-links button.footer-link-btn:hover,
+.footer-links button.footer-link-btn:focus-visible {
     transform: translateY(-2px);
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.2));
-    border-color: rgba(59, 130, 246, 0.4);
-    color: #93c5fd;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+    background: rgba(118, 75, 162, 0.15);
+    border-color: rgba(118, 75, 162, 0.3);
+    color: #667eea;
+    box-shadow: 0 4px 12px rgba(118, 75, 162, 0.2);
 }
 
 .footer-links a:hover::before,
-.footer-links button.footer-link-btn:hover::before {
+.footer-links a:focus-visible::before,
+.footer-links button.footer-link-btn:hover::before,
+.footer-links button.footer-link-btn:focus-visible::before {
     transform: scaleX(1);
 }
 
 .footer-links a:hover svg,
-.footer-links button.footer-link-btn:hover svg {
+.footer-links a:focus-visible svg,
+.footer-links button.footer-link-btn:hover svg,
+.footer-links button.footer-link-btn:focus-visible svg {
     transform: scale(1.15) rotate(8deg);
+}
+
+.footer-links a:active,
+.footer-links button.footer-link-btn:active {
+    transform: translateY(0);
 }
 
 .footer-links a svg,
@@ -87,25 +98,32 @@
 }
 
 [data-theme="dark"] .footer-container {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.98));
-    border-top-color: rgba(148, 163, 184, 0.2);
+    background: #2d2d2d;
+    border-top-color: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="dark"] .footer-text {
-    color: #94a3b8;
+    color: #ffffff;
 }
 
 [data-theme="dark"] .footer-links a,
 [data-theme="dark"] .footer-links button.footer-link-btn {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.15));
-    border-color: rgba(59, 130, 246, 0.25);
-    color: #60a5fa;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 
 [data-theme="dark"] .footer-links a:hover,
-[data-theme="dark"] .footer-links button.footer-link-btn:hover {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(37, 99, 235, 0.25));
-    border-color: rgba(59, 130, 246, 0.4);
-    color: #93c5fd;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+[data-theme="dark"] .footer-links a:focus-visible,
+[data-theme="dark"] .footer-links button.footer-link-btn:hover,
+[data-theme="dark"] .footer-links button.footer-link-btn:focus-visible {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .footer-links a:active,
+[data-theme="dark"] .footer-links button.footer-link-btn:active {
+    transform: translateY(0);
 }

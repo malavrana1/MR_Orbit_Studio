@@ -1,21 +1,21 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState, useEffect } from 'react'
 import { ReactTyped } from 'react-typed'
-import { Container, Row, Col, Button, Card } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import {
   FaRegLightbulb,
-  FaEnvelope,
-  FaPhone,
   FaGithub,
   FaLinkedin,
-  FaLayerGroup,
-  FaUniversalAccess,
-  FaCogs,
   FaDownload,
   FaCode,
-  FaChevronDown,
   FaGraduationCap,
   FaAward,
   FaExternalLinkAlt,
+  FaUsers,
+  FaCheckCircle,
+  FaArrowUp,
+  FaEnvelope,
+  FaShareAlt,
+  FaFilePdf,
 } from 'react-icons/fa'
 import '../../App.css'
 import '../../css/LandingPage.css'
@@ -29,6 +29,8 @@ import { getSkillIcon } from '../../utils/skillIcons'
 import resumePdf from '../../assets/pdf/MR_Resume.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
+import { observeScrollAnimations, setupScrollProgress } from '../../utils/scrollAnimations'
+import ContactModal from '../ContactModal'
 import kisweLogo from '../../assets/images/logos/kiswe.png'
 import genslerLogo from '../../assets/images/logos/gensler.png'
 import cignaLogo from '../../assets/images/logos/cigna.png'
@@ -63,24 +65,205 @@ export default function LandingPage() {
   const [activeToolkit, setActiveToolkit] = useState(
     skillCategories[0]?.category || 'Front-End Technologies',
   )
+  const [showScrollTop, setShowScrollTop] = useState(false)
+  const [showContactModal, setShowContactModal] = useState(false)
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,
   )?.items
 
-  const toolkitDescriptions = resume.skillDescriptions || {}
-  const [expandedCertification, setExpandedCertification] = useState('')
-  const [emailCopied, setEmailCopied] = useState(false)
-  const [phoneCopied, setPhoneCopied] = useState(false)
 
-  const summaryStats = profile.stats || []
+  const toolkitDescriptions = resume.skillDescriptions || {}
   const ui = siteInfo.ui || {}
   const heroUI = ui.hero || {}
   const sectionsUI = ui.sections || {}
   const typedConfig = ui.typed || { typeSpeed: 45, backSpeed: 22 }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return
+      
+      if (e.key === 'h' || e.key === 'H') {
+        e.preventDefault()
+        document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })
+      } else if (e.key === 'p' || e.key === 'P') {
+        e.preventDefault()
+        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+      } else if (e.key === 'e' || e.key === 'E') {
+        e.preventDefault()
+        document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })
+      } else if (e.key === 'c' || e.key === 'C') {
+        e.preventDefault()
+        document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+    
+    window.addEventListener('keydown', handleKeyPress)
+    return () => window.removeEventListener('keydown', handleKeyPress)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const sharePortfolio = async () => {
+    const shareData = {
+      title: `${profile.name} - Portfolio`,
+      text: `Check out ${profile.name}'s portfolio`,
+      url: window.location.href,
+    }
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData)
+      } else {
+        await navigator.clipboard.writeText(window.location.href)
+        alert('Portfolio link copied to clipboard!')
+      }
+    } catch (err) {
+      if (err.name !== 'AbortError') {
+        await navigator.clipboard.writeText(window.location.href)
+        alert('Portfolio link copied to clipboard!')
+      }
+    }
+  }
+  useEffect(() => {
+    const cleanup = setupScrollProgress()
+    return cleanup
+  }, [])
+
+  useEffect(() => {
+    const cleanup = observeScrollAnimations()
+    return cleanup
+  }, [])
+
+  useEffect(() => {
+    const updateMetaTags = () => {
+      document.title = `${profile.name} - ${profile.headline || 'Frontend Engineer Portfolio'}`
+      
+      const metaDescription = document.querySelector('meta[name="description"]')
+      if (metaDescription) {
+        metaDescription.setAttribute('content', profile.summary?.[0] || 'Frontend Engineer Portfolio')
+      } else {
+        const meta = document.createElement('meta')
+        meta.name = 'description'
+        meta.content = profile.summary?.[0] || 'Frontend Engineer Portfolio'
+        document.head.appendChild(meta)
+      }
+
+      const ogTitle = document.querySelector('meta[property="og:title"]')
+      if (ogTitle) {
+        ogTitle.setAttribute('content', `${profile.name} - Portfolio`)
+      } else {
+        const meta = document.createElement('meta')
+        meta.setAttribute('property', 'og:title')
+        meta.content = `${profile.name} - Portfolio`
+        document.head.appendChild(meta)
+      }
+
+      const ogDescription = document.querySelector('meta[property="og:description"]')
+      if (ogDescription) {
+        ogDescription.setAttribute('content', profile.summary?.[0] || 'Frontend Engineer Portfolio')
+      } else {
+        const meta = document.createElement('meta')
+        meta.setAttribute('property', 'og:description')
+        meta.content = profile.summary?.[0] || 'Frontend Engineer Portfolio'
+        document.head.appendChild(meta)
+      }
+
+      const ogImage = document.querySelector('meta[property="og:image"]')
+      if (!ogImage) {
+        const meta = document.createElement('meta')
+        meta.setAttribute('property', 'og:image')
+        meta.content = `${window.location.origin}${ProfileImage}`
+        document.head.appendChild(meta)
+      }
+
+      const ogUrl = document.querySelector('meta[property="og:url"]')
+      if (!ogUrl) {
+        const meta = document.createElement('meta')
+        meta.setAttribute('property', 'og:url')
+        meta.content = window.location.href
+        document.head.appendChild(meta)
+      }
+
+      const twitterCard = document.querySelector('meta[name="twitter:card"]')
+      if (!twitterCard) {
+        const meta = document.createElement('meta')
+        meta.name = 'twitter:card'
+        meta.content = 'summary_large_image'
+        document.head.appendChild(meta)
+      }
+    }
+
+    updateMetaTags()
+  }, [profile])
+
+  useEffect(() => {
+    const addStructuredData = () => {
+      const existingScript = document.getElementById('structured-data')
+      if (existingScript) {
+        existingScript.remove()
+      }
+
+      const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: profile.name,
+        jobTitle: 'Frontend Engineer',
+        description: profile.summary?.[0],
+        url: profile.contact.website || window.location.href,
+        email: profile.contact.email,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: profile.contact.location,
+        },
+        sameAs: [
+          profile.social.linkedin,
+          profile.social.github,
+        ],
+        knowsAbout: skillCategories.flatMap(cat => cat.items),
+      }
+
+      const script = document.createElement('script')
+      script.id = 'structured-data'
+      script.type = 'application/ld+json'
+      script.textContent = JSON.stringify(structuredData)
+      document.head.appendChild(script)
+    }
+
+    addStructuredData()
+  }, [profile, skillCategories])
+
   return (
     <div className="landing-page" id="home">
-      <header className="landing-hero d-flex align-items-center">
+      <div className="animated-background">
+        <div className="bg-gradient-orb bg-orb-1"></div>
+        <div className="bg-gradient-orb bg-orb-2"></div>
+        <div className="bg-gradient-orb bg-orb-3"></div>
+        <div className="bg-gradient-orb bg-orb-4"></div>
+        <div className="bg-mesh-gradient"></div>
+        <div className="floating-shapes">
+          <div className="shape shape-1"></div>
+          <div className="shape shape-2"></div>
+          <div className="shape shape-3"></div>
+          <div className="shape shape-4"></div>
+          <div className="shape shape-5"></div>
+          <div className="shape shape-6"></div>
+        </div>
+        <div className="particles">
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="particle" style={{ '--delay': `${i * 0.8}s` }}></div>
+          ))}
+        </div>
+      </div>
+      <header className="landing-hero d-flex align-items-center" id="main-content">
         <div className="landing-hero__overlay" />
         <div className="landing-hero__pattern" />
         <Container className="position-relative">
@@ -127,18 +310,18 @@ export default function LandingPage() {
             <Col lg={5}>
               <Card className="hero-skill-card border-0 shadow-lg">
                 <Card.Body>
-                  <div className="skill-card-header">
-                    <div>
-                      <h5 className="mb-1">
-                        {heroUI.skillCard?.title || 'Skill snapshot'}
-                      </h5>
-                      <p className="text-muted mb-0">
-                        {heroUI.skillCard?.description ||
-                          'A concise look at the front-end stack I use most.'}
-                      </p>
+                    <div className="skill-card-header">
+                      <div>
+                        <h5 className="mb-1">
+                          {heroUI.skillCard?.title || 'Tech Stack'}
+                        </h5>
+                        <p className="text-muted mb-0">
+                          {heroUI.skillCard?.description ||
+                            'Technologies I use to build modern web applications'}
+                        </p>
+                      </div>
+                      <FaRegLightbulb className="text-warning fs-4" />
                     </div>
-                    <FaRegLightbulb className="text-warning fs-4" />
-                  </div>
                   <div className="skill-icon-grid">
                     {skillWall.map((skill) => {
                       const Icon = getSkillIcon(skill)
@@ -153,15 +336,20 @@ export default function LandingPage() {
                     })}
                   </div>
                   <div className="hero-experience-quick mt-4">
-                    <h6 className="mb-2 text-uppercase text-muted small">
-                      {heroUI.skillCard?.recentTeams || 'Recent teams'}
+                    <h6 className="mb-3 fw-bold" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '0.9rem', letterSpacing: '0.05em'}}>
+                      {heroUI.skillCard?.recentTeams || 'Recent Experience'}
                     </h6>
                     <ul className="hero-experience-list">
                       {topExperience.map((role) => (
                         <li key={role.company}>
-                          <span className="hero-experience-list__title">
-                            {role.role} · {role.company}
-                          </span>
+                          <div className="hero-experience-list__content">
+                            <span className="hero-experience-list__title">
+                              {role.role}
+                            </span>
+                            <span className="hero-experience-list__company">
+                              {role.company}
+                            </span>
+                          </div>
                           <span className="hero-experience-list__period">
                             {role.period}
                           </span>
@@ -176,145 +364,61 @@ export default function LandingPage() {
         </Container>
       </header>
 
-      <section id="summary" className="landing-summary py-5">
+      <section id="summary" className="landing-summary">
         <Container>
-          <Card className="summary-card border-0 shadow-sm">
-            <Card.Body>
-              <div className="summary-header text-center mb-4">
-                <h2 className="summary-title">
-                  {sectionsUI.professionalSummary || 'Professional Overview'}
-                </h2>
-                <p className="summary-subtitle text-muted">
-                  Building modern web experiences with passion and precision
-                </p>
+          <div className="summary-header text-center mb-4" data-animate="fade-up">
+            <h2 className="section-title mb-2">
+              {sectionsUI.professionalSummary || 'Professional Overview'}
+            </h2>
+            <p className="summary-subtitle lead text-muted mx-auto" style={{maxWidth: '700px'}}>
+              {profile.summary?.[0] || 'Building modern web experiences with passion and precision'}
+            </p>
+          </div>
+          
+          <div className="professional-highlights" data-animate="fade-up">
+            <div className="highlight-item">
+              <FaCode className="highlight-icon" />
+              <div className="highlight-content">
+                <h6 className="highlight-title">Frontend Focus</h6>
+                <p className="highlight-text">Building responsive web applications with React, Angular, and Vue</p>
               </div>
-              <ul className="summary-bullets">
-                {(() => {
-                  const items = (profile.expertise || []).slice(0, 3)
-                  const iconMap = {
-                    'Front-End Platforms': FaLayerGroup,
-                    'Design Systems & UX': FaUniversalAccess,
-                    'Delivery & Tooling': FaCogs,
-                  }
-                  return items.map((item) => {
-                    const Icon = iconMap[item.label] || FaLayerGroup
-                    return (
-                      <li key={item.label} className="summary-bullet-item">
-                        <Icon className="summary-bullet-icon" />
-                        <span>{item.label}</span>
-                      </li>
-                    )
-                  })
-                })()}
-              </ul>
-              <div className="summary-stats">
-                {summaryStats.map((stat) => (
-                  <div key={stat.label} className="summary-stat">
-                    <span className="summary-stat__value">{stat.value}</span>
-                    <span className="summary-stat__label">{stat.label}</span>
-                  </div>
-                ))}
+            </div>
+            <div className="highlight-item">
+              <FaUsers className="highlight-icon" />
+              <div className="highlight-content">
+                <h6 className="highlight-title">Team Collaboration</h6>
+                <p className="highlight-text">Working with cross-functional teams to deliver quality products</p>
               </div>
-
-              <div className="summary-actions">
-                <div className="summary-inline-links d-inline-flex flex-wrap align-items-center">
-                  <a
-                    href={resumePdf}
-                    download
-                    aria-label="Download resume PDF"
-                    className="summary-inline-link"
-                  >
-                    <FaDownload className="summary-inline-link__icon" />
-                    <span>{sectionsUI.saveResume || 'Save résumé'}</span>
-                  </a>
-                  <span className="summary-inline-sep">·</span>
-                  <button
-                    type="button"
-                    onClick={async (e) => {
-                      e.preventDefault()
-                      try {
-                        await navigator.clipboard.writeText(profile.contact.email)
-                        setEmailCopied(true)
-                        setTimeout(() => setEmailCopied(false), 2000)
-                      } catch (err) {
-                        window.location.href = `mailto:${profile.contact.email}`
-                      }
-                    }}
-                    aria-label={`Copy email address ${profile.contact.email}`}
-                    className="summary-inline-link summary-inline-link--tooltip"
-                    data-tooltip={emailCopied ? 'Copied!' : profile.contact.email}
-                  >
-                    <FaEnvelope className="summary-inline-link__icon" />
-                    <span>{emailCopied ? 'Copied!' : 'Email'}</span>
-                  </button>
-                  <span className="summary-inline-sep">·</span>
-                  <button
-                    type="button"
-                    onClick={async (e) => {
-                      e.preventDefault()
-                      try {
-                        await navigator.clipboard.writeText(profile.contact.phone)
-                        setPhoneCopied(true)
-                        setTimeout(() => setPhoneCopied(false), 2000)
-                      } catch (err) {
-                        window.location.href = `tel:${profile.contact.phone.replace(/[^0-9]/g, '')}`
-                      }
-                    }}
-                    aria-label={`Copy phone number ${profile.contact.phone}`}
-                    className="summary-inline-link summary-inline-link--tooltip"
-                    data-tooltip={phoneCopied ? 'Copied!' : profile.contact.phone}
-                  >
-                    <FaPhone className="summary-inline-link__icon" />
-                    <span>{phoneCopied ? 'Copied!' : 'Phone'}</span>
-                  </button>
-                  <span className="summary-inline-sep">·</span>
-                <a
-                  href={profile.social.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                    aria-label="LinkedIn profile"
-                    className="summary-inline-link"
-                  >
-                    <FaLinkedin className="summary-inline-link__icon" />
-                    <span>LinkedIn</span>
-                  </a>
-                  <span className="summary-inline-sep">·</span>
-                  <a
-                    href={profile.social.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                    aria-label="GitHub profile"
-                    className="summary-inline-link"
-                >
-                    <FaGithub className="summary-inline-link__icon" />
-                    <span>GitHub</span>
-                  </a>
-                </div>
+            </div>
+            <div className="highlight-item">
+              <FaCheckCircle className="highlight-icon" />
+              <div className="highlight-content">
+                <h6 className="highlight-title">Continuous Learning</h6>
+                <p className="highlight-text">Earning certifications and staying current with modern technologies</p>
               </div>
-            </Card.Body>
-          </Card>
+            </div>
+          </div>
         </Container>
       </section>
 
-      <section id="experience" className="landing-experience py-5">
+      <section id="experience" className="landing-experience">
         <Container>
-          <div className="experience-heading text-center">
-            <h2>{sectionsUI.experienceTitle || 'My work experience'}</h2>
-            <p className="text-muted">
-              {sectionsUI.experienceDescription ||
-                "Here's a look at how I help teams build great products while working with others and staying active."}
-            </p>
+          <div className="experience-heading text-center mb-3" data-animate="fade-up">
+            <h2>{sectionsUI.experienceTitle || 'Experience'}</h2>
           </div>
+          
           <div className="experience-grid">
-            {resume.experience.map((role, index) => {
+            {resume.experience.slice(0, 3).map((role, index) => {
               const companyLogo = getCompanyLogo(role.company)
 
               return (
                 <Card 
                   key={`${role.company}-${index}`}
                   className="experience-card border-0 shadow-sm h-100"
+                  data-animate="fade-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <Card.Body className="p-5">
+                  <Card.Body className="p-4">
                     <div className="experience-card-header">
                       <div className="experience-company-logo">
                         {companyLogo && (
@@ -328,15 +432,17 @@ export default function LandingPage() {
                       <div className="experience-card-info">
                         <div className="experience-company-header">
                           <h3 className="experience-company">{role.company}</h3>
-                          <div className="experience-meta-box">
-                            <span className="experience-period">{role.period}</span>
-                          </div>
                         </div>
+                        {role.tagline && (
+                          <p className="experience-tagline">{role.tagline}</p>
+                        )}
                         <div className="experience-role-meta">
                           <p className="experience-role">{role.role}</p>
-                          <span className="experience-location">{role.location}</span>
+                          <div className="experience-meta-box">
+                            <span className="experience-period">{role.period}</span>
+                            <span className="experience-location">{role.location}</span>
+                          </div>
                         </div>
-                        <p className="experience-tagline">{role.tagline}</p>
                         <p className="experience-description">{role.description}</p>
                       </div>
                     </div>
@@ -348,21 +454,21 @@ export default function LandingPage() {
         </Container>
       </section>
 
-      <section id="projects" className="landing-projects py-5">
+      <section id="projects" className="landing-projects">
         <Container>
-          <Row className="justify-content-center mb-4">
-            <Col lg={8}>
-              <div className="projects-heading text-center">
-                <h2 className="section-title">
-                  {sectionsUI.featuredProject || 'Featured Work'}
-                </h2>
-              </div>
-            </Col>
-          </Row>
+          <div className="projects-heading text-center mb-3" data-animate="fade-up">
+            <h2 className="section-title">
+              {sectionsUI.featuredProject || 'Featured Projects'}
+            </h2>
+          </div>
           <Row className="g-4 justify-content-center">
-            {allProjects.map((p) => (
+            {allProjects.map((p, index) => (
               <Col md={4} key={p.title}>
-                <Card className="project-card h-100 border-0 shadow-sm">
+                <Card 
+                  className="project-card h-100 border-0 shadow-sm"
+                  data-animate="fade-up"
+                  style={{ animationDelay: `${index * 0.15}s` }}
+                >
                   <Card.Body>
                     <h5 className="mb-2">{p.title}</h5>
                     <p className="text-muted mb-3">{p.description}</p>
@@ -392,11 +498,11 @@ export default function LandingPage() {
         </Container>
       </section>
 
-      <section id="toolkit" className="landing-skills py-5">
+      <section id="toolkit" className="landing-skills">
         <Container>
           <Row className="gy-4 align-items-stretch">
             <Col xs={12} lg={4}>
-              <div className="toolkit-heading">
+              <div className="toolkit-heading" data-animate="fade-up">
                 <h2 className="section-title">
                   {sectionsUI.toolkitTitle || 'Technical toolkit'}
                 </h2>
@@ -435,16 +541,9 @@ export default function LandingPage() {
               </div>
             </Col>
             <Col xs={12} lg={8}>
-              <Card className="toolkit-card border-0 shadow-sm h-100">
+              <Card className="toolkit-card border-0 shadow-sm h-100" data-animate="fade-up">
                 <Card.Body>
-                  <div className="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
-                    <div>
-                      <span className="toolkit-label">
-                        {sectionsUI.currentlyViewing || 'Currently viewing'}
-                      </span>
-                      <h5 className="mb-1">{activeToolkit}</h5>
-                    </div>
-                  </div>
+                  <h5 className="mb-3">{activeToolkit}</h5>
                   <p className="text-muted mb-4">
                     {toolkitDescriptions[activeToolkit] ||
                       'Skills that keep the work flowing smoothly.'}
@@ -473,217 +572,178 @@ export default function LandingPage() {
         </Container>
       </section>
 
-      <section id="certifications" className="landing-certifications py-4">
+      <section id="credentials" className="landing-credentials">
         <Container>
-          <div className="certifications-heading text-center mb-4">
-            <h2>{sectionsUI.certificationsTitle || 'Certifications & Skills'}</h2>
+          <div className="credentials-heading text-center mb-3" data-animate="fade-up">
+            <h2 className="section-title">Education & Certifications</h2>
           </div>
-          
-          <Row className="g-2 certifications-list d-none d-md-flex">
-            {resume.certifications &&
-              resume.certifications.map((cert, index) => (
-                <Col md={6} lg={4} key={index}>
-                  <Card className="certification-card border-0 shadow-sm h-100">
-                    <Card.Body className="p-2">
-                      <div className="certification-item">
-                        <div className="certification-icon">
-                          <FaAward />
-                        </div>
-                        <div className="certification-content">
-                          <h6 className="certification-name mb-1">{cert.name}</h6>
-                          <p className="certification-issuer mb-2 small text-muted">
-                            {cert.issuer}
-                          </p>
-                          {cert.link && (
-                            <a
-                              href={cert.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="certification-link small"
-                            >
-                              View certificate →
-                            </a>
-                          )}
-                        </div>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))}
-          </Row>
-
-          <div className="certifications-accordion d-md-none">
-            {resume.certifications &&
-              resume.certifications.map((cert, index) => {
-                const key = String(index)
-                const isOpen = expandedCertification === key
-
-                return (
-                  <div
-                    className={`certification-accordion-item ${isOpen ? 'certification-accordion-item--open' : ''}`}
-                    key={index}
-                  >
-                    <button
-                      type="button"
-                      className="certification-accordion-toggle"
-                      onClick={() => setExpandedCertification(isOpen ? '' : key)}
-                      aria-expanded={isOpen}
-                      aria-controls={`certification-panel-${key}`}
-                    >
-                      <div className="certification-accordion-header">
-                        <div className="certification-accordion-icon">
-                          <FaAward />
-                        </div>
-                        <div className="certification-accordion-title">
-                          <span className="certification-accordion-name">{cert.name}</span>
-                          <span className="certification-accordion-issuer">{cert.issuer}</span>
-                        </div>
-                      </div>
-                      <FaChevronDown className="certification-accordion-chevron" />
-                    </button>
-                    <div
-                      id={`certification-panel-${key}`}
-                      className={`certification-accordion-body ${isOpen ? 'certification-accordion-body--open' : ''}`}
-                    >
-                      <div className="certification-accordion-content">
-                        {cert.link && (
-                          <a
-                            href={cert.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="certification-accordion-link"
-                          >
-                            View certificate →
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
-          </div>
-        </Container>
-      </section>
-
-      <section id="education" className="landing-education py-5">
-        <Container>
-          <div className="education-heading text-center">
-            <h2>{sectionsUI.educationTitle || 'Academic background'}</h2>
-            <p className="text-muted">
-              {sectionsUI.educationDescription ||
-                'Foundational knowledge and continuous learning that shapes my approach to building great products.'}
-            </p>
-          </div>
-          <div className="education-list">
-            {resume.education &&
-              resume.education.map((edu, index) => (
-                <Card
-                  key={index}
-                  className="education-card border-0 shadow-sm mb-3"
-                >
+          <Row className="g-4">
+            <Col lg={4}>
+              {resume.education && resume.education.map((edu, index) => (
+                <Card key={index} className="credential-card border-0 shadow-sm mb-3" data-animate="fade-up">
                   <Card.Body>
-                    <div className="education-item">
-                      <div className="education-icon">
+                    <div className="credential-item">
+                      <div className="credential-icon education-icon-bg">
                         <FaGraduationCap />
                       </div>
-                      <div className="education-content">
-                        <h5 className="education-degree">{edu.degree}</h5>
-                        <p className="education-institution mb-1">
-                          {edu.institution}
-                          {edu.location && ` · ${edu.location}`}
-                        </p>
-                        <span className="education-period">
-                          {edu.period}
-                        </span>
+                      <div className="credential-content">
+                        <h6 className="credential-title">{edu.degree}</h6>
+                        <h6 className="credential-institution mb-1">{edu.institution}</h6>
+                        {edu.location && (
+                          <p className="credential-subtitle mb-1 text-muted">{edu.location}</p>
+                        )}
+                        <span className="credential-period">{edu.period}</span>
                       </div>
                     </div>
                   </Card.Body>
                 </Card>
               ))}
-          </div>
+            </Col>
+            <Col lg={8}>
+              <div className="certifications-grid">
+                {resume.certifications && resume.certifications.slice(0, 6).map((cert, index) => (
+                  <Card key={index} className="credential-card certification-card-compact border-0 shadow-sm" data-animate="fade-up">
+                    <Card.Body className="p-3">
+                      <div className="credential-item">
+                        <div className="credential-icon certification-icon-bg">
+                          <FaAward />
+                        </div>
+                        <div className="credential-content">
+                          <h6 className="credential-title small">{cert.name}</h6>
+                          <p className="credential-subtitle small text-muted mb-0">{cert.issuer}</p>
+                        </div>
+                        {cert.link && (
+                          <a
+                            href={cert.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="credential-link"
+                            aria-label={`View ${cert.name} certificate`}
+                          >
+                            <FaExternalLinkAlt />
+                          </a>
+                        )}
+                      </div>
+                    </Card.Body>
+                  </Card>
+                ))}
+              </div>
+            </Col>
+          </Row>
         </Container>
       </section>
 
-      <section id="connect" className="landing-personal py-5">
+      <section id="about" className="landing-personal">
         <Container>
-          <Row className="align-items-start gy-4">
-            <Col lg={5}>
-              <Card className="border-0 shadow-sm personal-card contact-card h-100">
-                <Card.Body>
-                  <h5 className="mb-3">
-                    {sectionsUI.letsCollaborate || "Let's collaborate"}
+          <div className="text-center mb-4" data-animate="fade-up">
+            <h2 className="section-title">{personal.tagline || 'More about me'}</h2>
+          </div>
+          <Row className="g-4 justify-content-center">
+            <Col lg={6}>
+              <Card className="personal-card border-0 shadow-sm h-100" data-animate="fade-up">
+                <Card.Body className="p-4">
+                  <h5 className="mb-3" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1.25rem', fontWeight: '700'}}>
+                    What I Enjoy
                   </h5>
-                  <p className="text-muted mb-4">
-                    {sectionsUI.letsCollaborateDescription ||
-                      `Based in ${profile.contact.location}. I partner with product and design teams to ship delightful experiences.`}
-                  </p>
-                  <div className="contact-links">
-                    <Button
-                      type="button"
-                      onClick={() => {}}
-                      variant="primary"
-                      className="summary-btn w-100 mb-2 d-flex align-items-center justify-content-center"
-                      aria-label="Get in Touch - Coming Soon"
-                      disabled
-                      style={{ opacity: 0.8, cursor: 'not-allowed' }}
-                    >
-                      <FaEnvelope className="me-2" />
-                      <span>{sectionsUI.emailButton || 'Get in Touch'}</span>
-                      <span 
-                        className="ms-2 coming-soon-badge" 
-                        style={{ 
-                          fontSize: '0.65rem', 
-                          fontWeight: '600',
-                          padding: '0.2rem 0.5rem',
-                          borderRadius: '999px',
-                          background: 'rgba(255, 255, 255, 0.25)',
-                          backdropFilter: 'blur(10px)',
-                          border: '1px solid rgba(255, 255, 255, 0.3)',
-                          letterSpacing: '0.5px',
-                          lineHeight: '1',
-                          display: 'inline-flex',
-                          alignItems: 'center'
-                        }}
-                      >
-                        Coming Soon
-                      </span>
-                    </Button>
+                  <p className="text-muted mb-4" style={{lineHeight: '1.7', fontSize: '1rem'}}>{personal.intro}</p>
+                  <div className="interest-chips">
+                    {personal.interests && personal.interests.map((interest, index) => (
+                      <span key={index} className="interest-chip">{interest}</span>
+                    ))}
                   </div>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={7}>
-              <Card className="border-0 shadow-sm personal-card h-100">
-                <Card.Body>
-                  <h5 className="mb-3">{personal.tagline}</h5>
-                  <p className="personal-intro">{personal.intro || ''}</p>
-                  <div className="personal-grid">
-                    <div className="personal-block">
-                      <h6>{sectionsUI.whatFuelsMe || 'What fuels me'}</h6>
-                      <p className="personal-note">
-                        {personal.whatFuelsMe || ''}
-                      </p>
-                    </div>
-                    <div className="personal-block">
-                      <h6>
-                        {sectionsUI.guidingPrinciples || 'Guiding principles'}
-                      </h6>
+            <Col lg={6}>
+              <Card className="personal-card border-0 shadow-sm h-100" data-animate="fade-up">
+                <Card.Body className="p-4">
+                  <h5 className="mb-3" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1.25rem', fontWeight: '700'}}>
+                    What I Like About Work
+                  </h5>
+                  <p className="text-muted mb-4" style={{lineHeight: '1.7', fontSize: '1rem'}}>{personal.whatFuelsMe}</p>
+                  {personal.principles && personal.principles.length > 0 && (
+                    <div className="mt-4">
+                      <h6 className="mb-3" style={{color: '#764ba2', fontWeight: '600', fontSize: '1rem'}}>Principles</h6>
                       <ul className="personal-list">
-                        {personal.principles.map((p) => (
-                          <li key={p}>{p}</li>
+                        {personal.principles.map((principle, index) => (
+                          <li key={index} style={{marginBottom: '0.5rem'}}>{principle}</li>
                         ))}
                       </ul>
                     </div>
-                  </div>
-                  <h6 className="mt-4 mb-2">
-                    {sectionsUI.currentInterests || 'Current interests'}
-                  </h6>
-                  <div className="interest-chips">
-                    {personal.interests.map((i) => (
-                      <span key={i} className="interest-chip">
-                        {i}
-                      </span>
-                    ))}
+                  )}
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section id="connect" className="landing-connect">
+        <Container>
+          <Row className="align-items-center gy-4">
+            <Col lg={8} className="mx-auto">
+              <Card className="border-0 shadow-sm personal-card contact-card" data-animate="fade-up">
+                <Card.Body className="text-center p-4">
+                  <h2 className="mb-4" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>
+                    Ready to Build Something Amazing?
+                  </h2>
+                  <p className="text-muted mb-4">Let's collaborate and bring your ideas to life</p>
+                  <div className="contact-actions">
+                    <a
+                      href={resumePdf}
+                      download
+                      className="btn btn-primary"
+                      title="Download resume"
+                    >
+                      <FaDownload />
+                      Download Resume
+                    </a>
+                    <a
+                      href={profile.social.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                      title="View GitHub profile"
+                    >
+                      <FaGithub />
+                      GitHub
+                    </a>
+                    <a
+                      href={profile.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                      title="Connect on LinkedIn"
+                    >
+                      <FaLinkedin />
+                      LinkedIn
+                    </a>
+                    <button
+                      onClick={sharePortfolio}
+                      className="btn btn-outline-primary"
+                      title="Share portfolio"
+                    >
+                      <FaShareAlt />
+                      Share
+                    </button>
+                    <button
+                      onClick={() => setShowContactModal(true)}
+                      className="btn btn-outline-primary"
+                      title="Quick contact form"
+                    >
+                      <FaEnvelope />
+                      Quick Contact
+                    </button>
+                    <a
+                      href={resumePdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                      title="View resume in new tab"
+                    >
+                      <FaFilePdf />
+                      View Resume
+                    </a>
                   </div>
                 </Card.Body>
               </Card>
@@ -691,6 +751,23 @@ export default function LandingPage() {
           </Row>
         </Container>
       </section>
+
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="scroll-to-top"
+          aria-label="Scroll to top"
+          title="Back to top"
+        >
+          <FaArrowUp />
+        </button>
+      )}
+
+      <ContactModal
+        show={showContactModal}
+        onClose={() => setShowContactModal(false)}
+        toEmail={profile.contact.email}
+      />
     </div>
   )
 }

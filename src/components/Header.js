@@ -29,12 +29,13 @@ const Logo = ({ className = '', size = 28 }) => (
   >
     <defs>
       <linearGradient id="mr-core" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#60a5fa" />
-        <stop offset="100%" stopColor="#2563eb" />
+        <stop offset="0%" stopColor="#667eea" />
+        <stop offset="50%" stopColor="#764ba2" />
+        <stop offset="100%" stopColor="#f093fb" />
       </linearGradient>
       <linearGradient id="mr-orbit" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#94a3b8" />
-        <stop offset="100%" stopColor="#cbd5e1" />
+        <stop offset="0%" stopColor="#667eea" />
+        <stop offset="100%" stopColor="#764ba2" />
       </linearGradient>
     </defs>
     <path d="M12 44 L12 22 L20 34 L28 22 L28 44" className="logo-m" />
