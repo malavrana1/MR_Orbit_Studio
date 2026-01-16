@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react'
+import React, { useMemo, useState, useEffect, memo } from 'react'
 import { ReactTyped } from 'react-typed'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import {
@@ -347,6 +347,8 @@ export default function LandingPage() {
                   src={ProfileImage}
                   alt={profile.name}
                   className="hero-profile-image"
+                  loading="eager"
+                  decoding="async"
                 />
               </div>
               <div className="hero-content-wrapper">
@@ -530,6 +532,8 @@ export default function LandingPage() {
                             src={companyLogo}
                             alt={`${role.company} logo`}
                             className="company-logo-img"
+                            loading="lazy"
+                            decoding="async"
                           />
                         )}
                       </div>

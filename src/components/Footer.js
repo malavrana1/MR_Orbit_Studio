@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 import '../css/Footer.css'
 import { getSiteInfo } from '../utils/site'
 
-const Footer = () => {
+const Footer = memo(function Footer() {
   const year = new Date().getFullYear()
   const site = getSiteInfo()
   const owner = site.copyrightOwner || 'MR Orbit Studio'
@@ -13,6 +13,6 @@ const Footer = () => {
       </p>
     </footer>
   )
-}
+})
 
 export default Footer

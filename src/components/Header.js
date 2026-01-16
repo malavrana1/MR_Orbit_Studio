@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, memo, useCallback } from 'react'
 import { Container } from 'react-bootstrap'
 import { getSiteInfo } from '../utils/site'
 import analyticsService from '../services/analytics'
@@ -98,7 +98,7 @@ const navIcons = {
   Contact: FaEnvelope,
 }
 
-export default function Header() {
+const Header = memo(function Header() {
   const site = getSiteInfo() || {}
   const brand = site.brand || 'MR Orbit'
   const nav = site.nav || {
@@ -142,24 +142,31 @@ export default function Header() {
   }
 
   useEffect(() => {
+    let ticking = false
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 50)
 
-      const sections = nav.links.map((link) => link.href.substring(1))
-      const currentSection = sections.find((section) => {
-        const element = document.getElementById(section)
-        if (element) {
-          const rect = element.getBoundingClientRect()
-          return rect.top <= 100 && rect.bottom >= 100
-        }
-        return false
-      })
-      if (currentSection) {
-        setActiveSection(currentSection)
+          const sections = nav.links.map((link) => link.href.substring(1))
+          const currentSection = sections.find((section) => {
+            const element = document.getElementById(section)
+            if (element) {
+              const rect = element.getBoundingClientRect()
+              return rect.top <= 100 && rect.bottom >= 100
+            }
+            return false
+          })
+          if (currentSection) {
+            setActiveSection(currentSection)
+          }
+          ticking = false
+        })
+        ticking = true
       }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [nav.links])
 
@@ -293,4 +300,6 @@ export default function Header() {
       </Container>
     </header>
   )
-}
+})
+
+export default Header
