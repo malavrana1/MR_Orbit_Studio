@@ -39,6 +39,11 @@ body {
     line-height: 1.6;
 }
 
+[data-theme="dark"] body {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
 :focus-visible {
     outline: 3px solid rgba(37, 99, 235, 0.5);
     outline-offset: 2px;
