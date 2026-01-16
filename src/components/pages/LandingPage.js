@@ -393,6 +393,7 @@ export default function LandingPage() {
         className="landing-hero d-flex align-items-center"
         id="main-content"
       >
+        <div className="landing-hero__background-image" />
         <div className="landing-hero__overlay" />
         <div className="landing-hero__pattern" />
         <Container className="position-relative">
