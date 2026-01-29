@@ -597,8 +597,6 @@ export default function LandingPage() {
                             className="company-logo-img"
                             loading="lazy"
                             decoding="async"
-                            loading="lazy"
-                            decoding="async"
                           />
                         )}
                       </div>
