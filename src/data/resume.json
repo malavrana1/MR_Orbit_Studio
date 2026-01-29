@@ -15,11 +15,15 @@
       "Angular",
       "Vue.js",
       "Next.js",
+      "TypeScript",
       "JavaScript (ES6+)",
       "HTML5",
       "CSS3",
       "Bootstrap",
       "Tailwind CSS",
+      "CSS Modules / Styled Components",
+      "State Management (Redux / Context)",
+      "React Hooks & Advanced Patterns",
       "Responsive & Adaptive Design",
       "Accessibility (WCAG)"
     ],
@@ -29,24 +33,35 @@
       "Client-side Data Handling",
       "Form Validation",
       "Browser Debugging Tools",
-      "Performance Optimization"
+      "Performance Optimization",
+      "Web Fundamentals (Event Loop, HTTP, Caching)",
+      "Frontend Security (XSS, CSRF, CORS)",
+      "Authentication (JWT, OAuth)"
     ],
     "Testing & Tools": [
       "Jest",
       "React Testing Library",
+      "End-to-End Testing (Playwright / Cypress)",
       "Unit & Integration Testing",
       "Git",
       "Bitbucket",
+      "GitHub Actions",
       "Webpack",
+      "Vite",
+      "Babel",
+      "ESLint",
+      "Prettier",
+      "npm / yarn",
       "AWS",
       "Docker",
-      "Jenkins"
+      "Jenkins",
+      "Figma (Design Handoff)"
     ]
   },
   "skillDescriptions": {
-    "Front-End Technologies": "Expert-level proficiency in modern JavaScript frameworks and libraries. Building scalable, performant applications with React.js, Angular, Vue.js, and Next.js. Strong foundation in HTML5, CSS3, and modern CSS frameworks for responsive, accessible design.",
-    "Web Technologies": "Specialized in REST/GraphQL API integrations, client-side data handling, and performance optimization. Experienced with form validation, browser debugging, and implementing efficient data flow patterns for real-time applications.",
-    "Testing & Tools": "Comprehensive testing expertise with Jest and React Testing Library for unit and integration testing. Proficient in modern development workflows using Git, Bitbucket, Webpack, AWS, Docker, and Jenkins for CI/CD pipelines."
+    "Front-End Technologies": "Expert-level proficiency in modern JavaScript frameworks and libraries. Building scalable, performant applications with React.js, Angular, Vue.js, Next.js, and TypeScript. Strong foundation in HTML5, CSS3, modern CSS frameworks (Tailwind, CSS Modules, Styled Components), state management (Redux, Context), and React Hooks for responsive, accessible design.",
+    "Web Technologies": "Specialized in REST/GraphQL API integrations, client-side data handling, and performance optimization. Experienced with form validation, browser debugging, web fundamentals (Event Loop, HTTP, Caching), frontend security (XSS, CSRF, CORS), and authentication (JWT, OAuth) for secure, efficient real-time applications.",
+    "Testing & Tools": "Comprehensive testing expertise with Jest, React Testing Library, and end-to-end testing (Playwright, Cypress). Proficient in modern development workflows using Git, Bitbucket, GitHub Actions, build tools (Webpack, Vite, Babel), code quality tools (ESLint, Prettier), package managers (npm, yarn), AWS, Docker, Jenkins CI/CD, and design collaboration (Figma)."
   },
   "experience": [
     {
