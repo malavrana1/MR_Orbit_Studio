@@ -82,6 +82,7 @@ export default function LandingPage() {
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.setAttribute('data-theme', 'dark')
+      import('../../css/LandingPage.dark.css').catch(() => {})
     } else {
       document.documentElement.removeAttribute('data-theme')
     }
@@ -93,11 +94,17 @@ export default function LandingPage() {
     if (saved !== null) {
       const isDark = JSON.parse(saved)
       setIsDarkMode(isDark)
+      if (isDark) {
+        import('../../css/LandingPage.dark.css').catch(() => {})
+      }
     }
     const handleStorageChange = (e) => {
       if (e.key === 'darkMode') {
         const newValue = e.newValue ? JSON.parse(e.newValue) : false
         setIsDarkMode(newValue)
+        if (newValue) {
+          import('../../css/LandingPage.dark.css').catch(() => {})
+        }
       }
     }
     const handleCustomStorageChange = () => {
@@ -105,6 +112,9 @@ export default function LandingPage() {
       if (saved !== null) {
         const isDark = JSON.parse(saved)
         setIsDarkMode(isDark)
+        if (isDark) {
+          import('../../css/LandingPage.dark.css').catch(() => {})
+        }
       } else {
         setIsDarkMode(false)
       }
@@ -128,6 +138,7 @@ export default function LandingPage() {
 
     if (newValue) {
       document.documentElement.setAttribute('data-theme', 'dark')
+      import('../../css/LandingPage.dark.css').catch(() => {})
     } else {
       document.documentElement.removeAttribute('data-theme')
     }
