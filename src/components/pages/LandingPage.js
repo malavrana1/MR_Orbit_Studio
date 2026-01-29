@@ -451,8 +451,8 @@ export default function LandingPage() {
                   <span className="hero-tech-badge">Vue</span>
                 </div>
                 <p className="hero-description lead mb-4">
-                  {profile.summary?.[0] ||
-                    "Software engineer with 5+ years building responsive apps using React, Angular, Vue, and Next.js. I've worked with streaming platforms, architecture firms, healthcare companies, and nonprofits."}
+                  {profile.headline ||
+                    'Frontend Engineer | React • Angular • Vue Specialist'}
                 </p>
               </div>
             </Col>
