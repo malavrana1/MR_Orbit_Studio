@@ -161,10 +161,43 @@ const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
     onClose()
   }
 
+  const handleExited = () => {
+    // Clean up body classes and styles after modal fully exits
+    // Use setTimeout to ensure React Bootstrap has finished its cleanup
+    setTimeout(() => {
+      // Only clean up if no other modals are open
+      const activeModals = document.querySelectorAll('.modal.show')
+      if (activeModals.length === 0) {
+        // Clean up body classes and styles
+        document.body.classList.remove('modal-open')
+        document.body.style.overflow = ''
+        document.body.style.paddingRight = ''
+
+        // Safely remove any orphaned backdrop elements
+        // Use remove() which is safer than removeChild() - it won't throw if already removed
+        const backdrops = Array.from(
+          document.querySelectorAll('.modal-backdrop'),
+        )
+        backdrops.forEach((backdrop) => {
+          // Only remove if it's still in the DOM
+          if (backdrop.isConnected) {
+            try {
+              backdrop.remove()
+            } catch (e) {
+              // Element may have already been removed by React Bootstrap
+              // This is fine, just continue
+            }
+          }
+        })
+      }
+    }, 100)
+  }
+
   return (
     <Modal
       show={show}
       onHide={handleClose}
+      onExited={handleExited}
       centered
       className="contact-modal-custom"
       backdrop={true}
