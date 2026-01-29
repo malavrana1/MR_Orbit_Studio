@@ -3,15 +3,15 @@
     "title": "Roulette Live",
     "description": "A realistic and interactive roulette game built with Vue 3. Play with virtual chips, enjoy smooth animations, and track your stats. Experience the thrill of a casino game without any real money involved.",
     "tech": ["Vue.js", "Bootstrap", "Firebase", "Tailwind CSS"],
-    "link": "https://roulettelive-7e145.web.app/",
-    "cta": "Play game"
+    "link": "https://github.com/malavrana1/RouletteLive",
+    "cta": "Explore on GitHub"
   },
   {
     "title": "StockSim",
     "description": "A personal stock market simulator to explore stocks and crypto in real time. Calculate profits, save scenarios, track favorites, and learn trading strategies without risking real money.",
     "tech": ["Vue.js", "Pinia", "Node.js"],
-    "link": "https://stocksim-3ab78.web.app/",
-    "cta": "Try simulator"
+    "link": "https://github.com/malavrana1/StockSim",
+    "cta": "Explore on GitHub"
   },
   {
     "title": "MR Orbit Studio",

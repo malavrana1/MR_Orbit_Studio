@@ -29,7 +29,7 @@ import { getResume, getSkillCategories } from '../../utils/resume'
 import { getProjects } from '../../utils/projects'
 import { getPersonal } from '../../utils/personal'
 import { getSkillIcon } from '../../utils/skillIcons'
-import resumePdf from '../../assets/pdf/MR_Resume.pdf'
+import resumePdf from '../../assets/pdf/Malav_Rana_Frontend_Engineer.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
 import {
