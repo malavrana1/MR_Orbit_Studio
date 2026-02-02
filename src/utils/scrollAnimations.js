@@ -55,7 +55,7 @@ export const setupScrollProgress = () => {
   updateProgress()
 
   return () => {
-    window.removeEventListener('scroll', updateProgress)
+    window.removeEventListener('scroll', throttledUpdate)
     progressBar.remove()
   }
 }

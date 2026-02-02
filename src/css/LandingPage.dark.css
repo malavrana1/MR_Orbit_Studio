@@ -25,23 +25,6 @@
   --transition-smooth: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-[data-theme='dark'] * {
-  transition:
-    background-color 0.15s ease,
-    border-color 0.15s ease,
-    color 0.15s ease,
-    box-shadow 0.15s ease;
-}
-
-[data-theme='dark'] *:hover {
-  transition:
-    background-color 0.15s ease,
-    border-color 0.15s ease,
-    color 0.15s ease,
-    box-shadow 0.15s ease,
-    transform 0.15s ease;
-}
-
 [data-theme='dark'] [data-animate] {
   animation: darkFadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
 }
@@ -329,11 +312,6 @@
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .contact-card p {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .summary-title,
 [data-theme='dark'] .section-title,
 [data-theme='dark'] h1,
 [data-theme='dark'] h2,
@@ -354,12 +332,6 @@
 
 [data-theme='dark'] .text-muted {
   color: #ffffff !important;
-}
-
-[data-theme='dark'] .personal-intro,
-[data-theme='dark'] .personal-note {
-  color: #ffffff !important;
-  line-height: 1.7;
 }
 
 [data-theme='dark'] .hero-skill-card {
@@ -840,16 +812,16 @@
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
 }
 
-[data-theme='dark'] .education-period,
-[data-theme='dark'] .certification-link {
+[data-theme='dark'] .credential-period,
+[data-theme='dark'] .credential-link {
   color: #ffffff !important;
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-[data-theme='dark'] .education-period:hover,
-[data-theme='dark'] .certification-link:hover {
+[data-theme='dark'] .credential-period:hover,
+[data-theme='dark'] .credential-link:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.2);
   color: #ffffff !important;
@@ -868,30 +840,6 @@
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .certification-name {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-issuer {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-content {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-content * {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-item {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-item * {
-  color: #ffffff !important;
-}
-
 [data-theme='dark'] .certifications-grid {
   color: #ffffff !important;
 }
@@ -900,84 +848,13 @@
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .certifications-heading h2 {
+[data-theme='dark'] .credentials-heading h2 {
   color: #ffffff !important;
   background: none !important;
   -webkit-text-fill-color: #ffffff !important;
 }
 
-[data-theme='dark'] .certifications-heading p {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-accordion-item {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-accordion-item * {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-accordion-name {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-accordion-issuer {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-accordion-link {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .certification-accordion-link:hover {
-  color: #e5e5e5 !important;
-}
-
-[data-theme='dark'] .personal-block {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  transition: var(--transition-base);
-  position: relative;
-  overflow: hidden;
-}
-
-[data-theme='dark'] .personal-block::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-[data-theme='dark'] .personal-block:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow:
-    0 6px 24px rgba(0, 0, 0, 0.8),
-    0 0 30px rgba(255, 255, 255, 0.08);
-  transform: translateY(-3px);
-}
-
-[data-theme='dark'] .personal-block:hover::after {
-  transform: scaleX(1);
-}
-
-[data-theme='dark'] .personal-block h6::before {
-  transition: var(--transition-smooth);
-}
-
-[data-theme='dark'] .personal-block:hover h6::before {
-  transform: translateX(6px) scale(1.2);
-}
-
-[data-theme='dark'] .personal-block h6 {
+[data-theme='dark'] .credentials-heading p {
   color: #ffffff !important;
 }
 
@@ -1117,14 +994,6 @@
 [data-theme='dark'] .contact-actions .btn:hover svg {
   transform: scale(1.2) rotate(5deg);
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
-}
-
-[data-theme='dark'] a {
-  color: #ffffff;
-}
-
-[data-theme='dark'] a:hover {
-  color: #e0e0e0;
 }
 
 [data-theme='dark'] .hero-profile-image {
@@ -1344,8 +1213,7 @@
 [data-theme='dark'] .projects-heading h2,
 [data-theme='dark'] .credentials-heading h2,
 [data-theme='dark'] .toolkit-heading h2,
-[data-theme='dark'] .education-heading h2,
-[data-theme='dark'] .certifications-heading h2 {
+[data-theme='dark'] .credentials-heading h2 {
   color: #ffffff !important;
   background: none !important;
   -webkit-text-fill-color: #ffffff !important;
@@ -1356,8 +1224,7 @@
 [data-theme='dark'] .projects-heading p,
 [data-theme='dark'] .credentials-heading p,
 [data-theme='dark'] .toolkit-heading p,
-[data-theme='dark'] .education-heading p,
-[data-theme='dark'] .certifications-heading p {
+[data-theme='dark'] .credentials-heading p {
   color: #ffffff !important;
 }
 
@@ -1485,13 +1352,7 @@
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .education-icon {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-[data-theme='dark'] .certification-icon {
+[data-theme='dark'] .credential-icon {
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -1560,10 +1421,6 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-[data-theme='dark'] .personal-block:hover .personal-list li::before {
-  color: rgba(255, 255, 255, 0.8);
-}
-
 [data-theme='dark'] .personal-card h5 {
   color: #ffffff !important;
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
@@ -1617,10 +1474,6 @@
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .personal-intro {
-  color: #ffffff !important;
-}
-
 [data-theme='dark'] .personal-card .text-muted {
   color: #ffffff !important;
 }
@@ -1630,15 +1483,6 @@
 }
 
 [data-theme='dark'] .personal-card p {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .personal-note {
-  color: #ffffff !important;
-  transition: color 0.3s ease;
-}
-
-[data-theme='dark'] .personal-block:hover .personal-note {
   color: #ffffff !important;
 }
 
@@ -1723,13 +1567,11 @@
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .landing-credentials,
-[data-theme='dark'] .landing-certifications {
+[data-theme='dark'] .landing-credentials {
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .landing-credentials *,
-[data-theme='dark'] .landing-certifications * {
+[data-theme='dark'] .landing-credentials * {
   color: #ffffff !important;
 }
 
@@ -1772,21 +1614,19 @@
 }
 
 [data-theme='dark'] .landing-credentials .credential-card,
-[data-theme='dark'] .landing-credentials .education-card,
-[data-theme='dark'] .landing-certifications .certification-card {
+[data-theme='dark'] .landing-credentials .credential-card {
   color: #ffffff !important;
 }
 
 [data-theme='dark'] .landing-credentials .credential-card *,
-[data-theme='dark'] .landing-credentials .education-card *,
-[data-theme='dark'] .landing-certifications .certification-card * {
+[data-theme='dark'] .landing-credentials .credential-card * {
   color: #ffffff !important;
 }
 
 [data-theme='dark'] h6.credential-title,
 [data-theme='dark'] h6.credential-institution,
-[data-theme='dark'] h6.education-degree,
-[data-theme='dark'] h6.education-institution {
+[data-theme='dark'] h6.credential-title,
+[data-theme='dark'] h6.credential-institution {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
   background: none !important;
@@ -1811,8 +1651,8 @@
   box-shadow: none !important;
 }
 
-[data-theme='dark'] span.education-period,
-[data-theme='dark'] span.certification-link {
+[data-theme='dark'] span.credential-period,
+[data-theme='dark'] span.credential-link {
   color: #ffffff !important;
 }
 
@@ -1827,17 +1667,14 @@
 [data-theme='dark'] .experience-heading,
 [data-theme='dark'] .projects-heading,
 [data-theme='dark'] .credentials-heading,
-[data-theme='dark'] .education-heading,
-[data-theme='dark'] .certifications-heading {
+[data-theme='dark'] .credentials-heading {
   color: #ffffff !important;
 }
 
 [data-theme='dark'] .summary-header *,
 [data-theme='dark'] .experience-heading *,
 [data-theme='dark'] .projects-heading *,
-[data-theme='dark'] .credentials-heading *,
-[data-theme='dark'] .education-heading *,
-[data-theme='dark'] .certifications-heading * {
+[data-theme='dark'] .credentials-heading * {
   color: #ffffff !important;
 }
 
@@ -2055,38 +1892,6 @@
   background: none !important;
 }
 
-[data-theme='dark'] .education-degree {
-  color: #ffffff !important;
-  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
-  transition:
-    text-shadow 0.3s ease,
-    transform 0.3s ease;
-}
-
-[data-theme='dark'] .education-card:hover .education-degree {
-  color: #ffffff !important;
-  text-shadow:
-    0 2px 8px rgba(255, 255, 255, 0.25),
-    0 0 20px rgba(255, 255, 255, 0.1);
-  transform: translateX(4px);
-}
-
-[data-theme='dark'] .education-institution {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .education-location {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .education-content {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .education-content * {
-  color: #ffffff !important;
-}
-
 [data-theme='dark'] .hero-typed {
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
   transition:
@@ -2178,49 +1983,6 @@
   text-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
 }
 
-[data-theme='dark'] .summary-inline-link {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  transition: var(--transition-base);
-  position: relative;
-  overflow: hidden;
-}
-
-[data-theme='dark'] .summary-inline-link:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.25);
-  color: #ffffff;
-  box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.8),
-    0 0 30px rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px) scale(1.02);
-}
-
-[data-theme='dark'] .summary-inline-link::before {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.6)
-  );
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-[data-theme='dark'] .summary-inline-link:hover::before {
-  transform: scaleX(1.1);
-}
-
-[data-theme='dark'] .summary-inline-link__icon {
-  transition: var(--transition-smooth);
-}
-
-[data-theme='dark'] .summary-inline-link:hover .summary-inline-link__icon {
-  transform: scale(1.2) rotate(10deg);
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
-}
-
 [data-theme='dark'] .personal-card p,
 [data-theme='dark'] .personal-card span,
 [data-theme='dark'] .personal-card li,
@@ -2303,13 +2065,6 @@
   color: #ffffff !important;
 }
 
-[data-theme='dark'] [style*='background-clip'],
-[data-theme='dark'] [style*='-webkit-background-clip'],
-[data-theme='dark'] [style*='-webkit-text-fill-color'] {
-  -webkit-text-fill-color: #ffffff !important;
-  color: #ffffff !important;
-}
-
 [data-theme='dark'] .personal-card .mt-4,
 [data-theme='dark'] .personal-card h6.mt-4,
 [data-theme='dark'] .personal-card ul.personal-list,
@@ -2325,7 +2080,6 @@
   color: #ffffff !important;
 }
 
-/* Contact Modal Dark Theme Styles */
 [data-theme='dark'] .contact-modal-custom .modal-dialog {
   color: #ffffff !important;
 }

@@ -49,4 +49,3 @@ if (missingFields.length === 0) {
 
 export { analytics }
 export { db }
-export default app

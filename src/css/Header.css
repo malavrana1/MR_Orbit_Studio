@@ -44,7 +44,7 @@
     0 6px 20px rgba(118, 75, 162, 0.18),
     0 0 0 1px rgba(118, 75, 162, 0.08);
   border-bottom-color: rgba(118, 75, 162, 0.25);
-  transition: var(--transition-base);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-nav {
@@ -238,7 +238,7 @@
   font-size: 0.875rem;
   font-weight: 500;
   border-radius: 0.5rem;
-  transition: var(--transition-base);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   white-space: nowrap;
   background: transparent;
@@ -247,10 +247,6 @@
 
 [data-theme='dark'] .nav-link {
   color: #ffffff;
-}
-
-.nav-link {
-  transition: var(--transition-base);
 }
 
 .nav-link::before {
@@ -277,11 +273,6 @@
 
 .nav-link:hover::before {
   width: 80%;
-}
-
-[data-theme='dark'] .nav-link {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
 }
 
 [data-theme='dark'] .nav-link::before {

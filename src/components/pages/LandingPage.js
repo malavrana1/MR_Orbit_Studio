@@ -21,7 +21,6 @@ import {
   FaMoon,
   FaSun,
 } from 'react-icons/fa'
-import '../../App.css'
 import '../../css/LandingPage.css'
 import ProfileImage from '../../assets/images/Profile.jpg'
 import { getProfile } from '../../utils/profile'
