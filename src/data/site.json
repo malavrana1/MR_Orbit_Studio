@@ -1,41 +1,4 @@
 {
-  "buildHighlights": [
-    "Built as a single-page site using JSON files for all content.",
-    "Added interactive sections like the toolkit filter and experience accordion.",
-    "Made it easy to read with good colors and keyboard navigation."
-  ],
-  "buildStack": [
-    {
-      "label": "React 16",
-      "description": "Used React components and hooks to build the site.",
-      "icon": "react"
-    },
-    {
-      "label": "React-Bootstrap",
-      "description": "Used Bootstrap components for layout and buttons.",
-      "icon": "reactBootstrap"
-    },
-    {
-      "label": "Bootstrap 4",
-      "description": "Used Bootstrap styles for consistent design.",
-      "icon": "bootstrap"
-    },
-    {
-      "label": "PNPM",
-      "description": "Used PNPM to manage packages and dependencies.",
-      "icon": "pnpm"
-    },
-    {
-      "label": "React Icons",
-      "description": "Used React Icons for all the icons you see.",
-      "icon": "icons"
-    },
-    {
-      "label": "React Typed",
-      "description": "Used React Typed for the animated text in the hero section.",
-      "icon": "typed"
-    }
-  ],
   "brand": "Orbit Studio",
   "copyrightOwner": "MR Orbit Studio",
   "nav": {

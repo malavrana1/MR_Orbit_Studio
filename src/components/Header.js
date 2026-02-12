@@ -112,7 +112,6 @@ const Header = memo(function Header() {
       { label: 'Projects', href: '#projects' },
       { label: 'About', href: '#about' },
       { label: 'Connect', href: '#connect' },
-      { label: 'Contact', href: '#contact' },
     ],
   }
 

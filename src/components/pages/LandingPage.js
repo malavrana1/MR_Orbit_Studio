@@ -79,13 +79,18 @@ export default function LandingPage() {
   })
 
   useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-      import('../../css/LandingPage.dark.css').catch(() => {})
-    } else {
-      document.documentElement.removeAttribute('data-theme')
+    const applyTheme = (value) => {
+      if (value) {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        import('../../css/LandingPage.dark.css').catch(() => {})
+      } else {
+        document.documentElement.removeAttribute('data-theme')
+      }
+      localStorage.setItem('darkMode', JSON.stringify(value))
+      window.dispatchEvent(new Event('darkModeChanged'))
     }
-    localStorage.setItem('darkMode', JSON.stringify(isDarkMode))
+
+    applyTheme(isDarkMode)
   }, [isDarkMode])
 
   useEffect(() => {
@@ -93,17 +98,11 @@ export default function LandingPage() {
     if (saved !== null) {
       const isDark = JSON.parse(saved)
       setIsDarkMode(isDark)
-      if (isDark) {
-        import('../../css/LandingPage.dark.css').catch(() => {})
-      }
     }
     const handleStorageChange = (e) => {
       if (e.key === 'darkMode') {
         const newValue = e.newValue ? JSON.parse(e.newValue) : false
         setIsDarkMode(newValue)
-        if (newValue) {
-          import('../../css/LandingPage.dark.css').catch(() => {})
-        }
       }
     }
     const handleCustomStorageChange = () => {
@@ -111,9 +110,6 @@ export default function LandingPage() {
       if (saved !== null) {
         const isDark = JSON.parse(saved)
         setIsDarkMode(isDark)
-        if (isDark) {
-          import('../../css/LandingPage.dark.css').catch(() => {})
-        }
       } else {
         setIsDarkMode(false)
       }
@@ -132,17 +128,7 @@ export default function LandingPage() {
       'toggle_dark_mode',
       isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode',
     )
-    const newValue = !isDarkMode
-    setIsDarkMode(newValue)
-
-    if (newValue) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-      import('../../css/LandingPage.dark.css').catch(() => {})
-    } else {
-      document.documentElement.removeAttribute('data-theme')
-    }
-    localStorage.setItem('darkMode', JSON.stringify(newValue))
-    window.dispatchEvent(new Event('darkModeChanged'))
+    setIsDarkMode((prev) => !prev)
   }
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,
