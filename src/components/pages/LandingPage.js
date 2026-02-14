@@ -474,7 +474,7 @@ export default function LandingPage() {
                       className="mb-3 fw-bold"
                       style={{
                         background:
-                          'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+                          'linear-gradient(135deg, #5c4033 0%, #8b6914 50%, #c9a227 100%)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
                         backgroundClip: 'text',
@@ -871,7 +871,7 @@ export default function LandingPage() {
                     className="mb-3"
                     style={{
                       background:
-                        'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+                        'linear-gradient(135deg, #5c4033 0%, #8b6914 50%, #c9a227 100%)',
                       WebkitBackgroundClip: 'text',
                       WebkitTextFillColor: 'transparent',
                       backgroundClip: 'text',
@@ -908,7 +908,7 @@ export default function LandingPage() {
                     className="mb-3"
                     style={{
                       background:
-                        'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+                        'linear-gradient(135deg, #5c4033 0%, #8b6914 50%, #c9a227 100%)',
                       WebkitBackgroundClip: 'text',
                       WebkitTextFillColor: 'transparent',
                       backgroundClip: 'text',
@@ -929,7 +929,7 @@ export default function LandingPage() {
                       <h6
                         className="mb-3"
                         style={{
-                          color: '#764ba2',
+                          color: '#5c4033',
                           fontWeight: '600',
                           fontSize: '1rem',
                         }}
@@ -965,7 +965,7 @@ export default function LandingPage() {
                     className="mb-4"
                     style={{
                       background:
-                        'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+                        'linear-gradient(135deg, #5c4033 0%, #8b6914 50%, #c9a227 100%)',
                       WebkitBackgroundClip: 'text',
                       WebkitTextFillColor: 'transparent',
                       backgroundClip: 'text',
