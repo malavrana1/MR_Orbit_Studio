@@ -366,30 +366,7 @@ export default function LandingPage() {
 
   return (
     <div className="landing-page" id="home">
-      <div className="animated-background">
-        <div className="bg-gradient-orb bg-orb-1"></div>
-        <div className="bg-gradient-orb bg-orb-2"></div>
-        <div className="bg-gradient-orb bg-orb-3"></div>
-        <div className="bg-gradient-orb bg-orb-4"></div>
-        <div className="bg-mesh-gradient"></div>
-        <div className="floating-shapes">
-          <div className="shape shape-1"></div>
-          <div className="shape shape-2"></div>
-          <div className="shape shape-3"></div>
-          <div className="shape shape-4"></div>
-          <div className="shape shape-5"></div>
-          <div className="shape shape-6"></div>
-        </div>
-        <div className="particles">
-          {[...Array(10)].map((_, i) => (
-            <div
-              key={i}
-              className="particle"
-              style={{ '--delay': `${i * 0.8}s` }}
-            ></div>
-          ))}
-        </div>
-      </div>
+      <div className="animated-background" />
       <header
         className="landing-hero d-flex align-items-center"
         id="main-content"
@@ -472,15 +449,7 @@ export default function LandingPage() {
                   <div className="hero-experience-quick mt-4">
                     <h6
                       className="mb-3 fw-bold"
-                      style={{
-                        background:
-                          'linear-gradient(135deg, #5c4033 0%, #8b6914 50%, #c9a227 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text',
-                        fontSize: '0.9rem',
-                        letterSpacing: '0.05em',
-                      }}
+                      style={{ fontSize: '0.9rem', letterSpacing: '0.05em' }}
                     >
                       {heroUI.skillCard?.recentTeams || 'Recent Experience'}
                     </h6>
@@ -867,20 +836,7 @@ export default function LandingPage() {
                 data-animate="fade-up"
               >
                 <Card.Body className="p-4">
-                  <h5
-                    className="mb-3"
-                    style={{
-                      background:
-                        'linear-gradient(135deg, #5c4033 0%, #8b6914 50%, #c9a227 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                      fontSize: '1.25rem',
-                      fontWeight: '700',
-                    }}
-                  >
-                    What I Enjoy
-                  </h5>
+                  <h5 className="mb-3 landing-accent-heading">What I Enjoy</h5>
                   <p
                     className="text-muted mb-4"
                     style={{ lineHeight: '1.7', fontSize: '1rem' }}
@@ -904,18 +860,7 @@ export default function LandingPage() {
                 data-animate="fade-up"
               >
                 <Card.Body className="p-4">
-                  <h5
-                    className="mb-3"
-                    style={{
-                      background:
-                        'linear-gradient(135deg, #5c4033 0%, #8b6914 50%, #c9a227 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                      fontSize: '1.25rem',
-                      fontWeight: '700',
-                    }}
-                  >
+                  <h5 className="mb-3 landing-accent-heading">
                     What I Like About Work
                   </h5>
                   <p
@@ -961,16 +906,7 @@ export default function LandingPage() {
                 data-animate="fade-up"
               >
                 <Card.Body className="text-center p-4">
-                  <h2
-                    className="mb-4"
-                    style={{
-                      background:
-                        'linear-gradient(135deg, #5c4033 0%, #8b6914 50%, #c9a227 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
+                  <h2 className="mb-4" style={{ color: '#3e2723' }}>
                     Ready to Build Something Amazing?
                   </h2>
                   <p className="text-muted mb-4">

@@ -93,10 +93,8 @@
 
 [data-theme='dark'] .hero-greeting {
   color: #f0f0f0;
-  transition:
-    color 0.2s ease,
-    transform 0.2s ease;
-  animation: greetingSlideIn 0.6s ease-out 0.2s backwards;
+  transition: color 0.2s ease;
+  animation: none;
 }
 
 @keyframes greetingSlideIn {
@@ -112,19 +110,14 @@
 
 [data-theme='dark'] .hero-greeting:hover {
   color: #ffffff;
-  transform: translateX(4px);
+  transform: none;
 }
 
 [data-theme='dark'] .hero-name {
   color: #ffffff;
-  text-shadow:
-    0 0 30px rgba(255, 255, 255, 0.3),
-    0 0 60px rgba(255, 255, 255, 0.2),
-    0 2px 10px rgba(0, 0, 0, 0.8);
-  transition:
-    text-shadow 0.4s ease,
-    transform 0.3s ease;
-  animation: nameGlow 3s ease-in-out infinite;
+  text-shadow: none;
+  transition: none;
+  animation: none;
 }
 
 @keyframes nameGlow {
@@ -144,21 +137,16 @@
 }
 
 [data-theme='dark'] .hero-name:hover {
-  transform: scale(1.02);
-  text-shadow:
-    0 0 50px rgba(255, 255, 255, 0.5),
-    0 0 100px rgba(255, 255, 255, 0.4),
-    0 2px 20px rgba(0, 0, 0, 1);
+  transform: none;
+  text-shadow: none;
 }
 
 [data-theme='dark'] .hero-typed {
   color: #ffffff;
   background: none;
   -webkit-text-fill-color: #ffffff;
-  transition:
-    text-shadow 0.4s ease,
-    transform 0.3s ease;
-  animation: typedGlow 2s ease-in-out infinite;
+  transition: none;
+  animation: none;
 }
 
 @keyframes typedGlow {
@@ -174,10 +162,8 @@
 }
 
 [data-theme='dark'] .hero-typed:hover {
-  transform: scale(1.05);
-  text-shadow:
-    0 0 40px rgba(255, 255, 255, 0.4),
-    0 0 70px rgba(255, 255, 255, 0.3);
+  transform: none;
+  text-shadow: none;
 }
 
 [data-theme='dark'] .hero-typed::after {
@@ -1770,6 +1756,13 @@
   opacity: 0.6;
 }
 
+[data-theme='dark'] .bg-gradient-orb,
+[data-theme='dark'] .bg-mesh-gradient,
+[data-theme='dark'] .floating-shapes,
+[data-theme='dark'] .particles {
+  display: none !important;
+}
+
 [data-theme='dark'] .shape {
   opacity: 0.3;
 }
@@ -1893,17 +1886,12 @@
 }
 
 [data-theme='dark'] .hero-typed {
-  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
-  transition:
-    text-shadow 0.3s ease,
-    transform 0.3s ease;
+  text-shadow: none;
+  transition: text-shadow 0.2s ease;
 }
 
 [data-theme='dark'] .hero-typed:hover {
-  text-shadow:
-    0 4px 16px rgba(255, 255, 255, 0.3),
-    0 0 30px rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.45);
 }
 
 [data-theme='dark'] .hero-title {
@@ -2304,4 +2292,37 @@
 
 [data-theme='dark'] .contact-modal-custom textarea.form-control:focus {
   background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Humanize UI (dark): remove glow/gradient/float effects */
+[data-theme='dark'] .landing-page *,
+[data-theme='dark'] .landing-page *::before,
+[data-theme='dark'] .landing-page *::after {
+  animation: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+[data-theme='dark'] .landing-page *:hover,
+[data-theme='dark'] .landing-page *:focus-visible {
+  transform: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+/* Humanize UI (dark): contact modal + status banners */
+[data-theme='dark'] .contact-modal-custom *,
+[data-theme='dark'] .contact-modal-custom *::before,
+[data-theme='dark'] .contact-modal-custom *::after {
+  animation: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+[data-theme='dark'] .contact-modal-custom *:hover,
+[data-theme='dark'] .contact-modal-custom *:focus-visible {
+  transform: none !important;
+  text-shadow: none !important;
+  filter: none !important;
 }
