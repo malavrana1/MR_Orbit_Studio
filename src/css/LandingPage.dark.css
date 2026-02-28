@@ -2293,36 +2293,3 @@
 [data-theme='dark'] .contact-modal-custom textarea.form-control:focus {
   background: rgba(255, 255, 255, 0.08) !important;
 }
-
-/* Humanize UI (dark): remove glow/gradient/float effects */
-[data-theme='dark'] .landing-page *,
-[data-theme='dark'] .landing-page *::before,
-[data-theme='dark'] .landing-page *::after {
-  animation: none !important;
-  text-shadow: none !important;
-  filter: none !important;
-  -webkit-text-fill-color: currentColor !important;
-}
-
-[data-theme='dark'] .landing-page *:hover,
-[data-theme='dark'] .landing-page *:focus-visible {
-  transform: none !important;
-  text-shadow: none !important;
-  filter: none !important;
-}
-
-/* Humanize UI (dark): contact modal + status banners */
-[data-theme='dark'] .contact-modal-custom *,
-[data-theme='dark'] .contact-modal-custom *::before,
-[data-theme='dark'] .contact-modal-custom *::after {
-  animation: none !important;
-  text-shadow: none !important;
-  filter: none !important;
-}
-
-[data-theme='dark'] .contact-modal-custom *:hover,
-[data-theme='dark'] .contact-modal-custom *:focus-visible {
-  transform: none !important;
-  text-shadow: none !important;
-  filter: none !important;
-}
