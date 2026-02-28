@@ -30,13 +30,13 @@ const Logo = ({ className = '', size = 28 }) => (
   >
     <defs>
       <linearGradient id="orbit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#667eea" />
-        <stop offset="50%" stopColor="#764ba2" />
-        <stop offset="100%" stopColor="#f093fb" />
+        <stop offset="0%" stopColor="#5c4033" />
+        <stop offset="50%" stopColor="#8b6914" />
+        <stop offset="100%" stopColor="#c9a227" />
       </linearGradient>
       <radialGradient id="core-gradient" cx="50%" cy="50%">
-        <stop offset="0%" stopColor="#667eea" />
-        <stop offset="100%" stopColor="#2563eb" />
+        <stop offset="0%" stopColor="#8b6914" />
+        <stop offset="100%" stopColor="#5c4033" />
       </radialGradient>
     </defs>
     <rect

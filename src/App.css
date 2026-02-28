@@ -1,5 +1,5 @@
 :root {
-  --text-dark: #0f172a;
+  --text-dark: #1c1917;
 }
 
 * {
@@ -34,17 +34,17 @@ body {
     'Segoe UI Symbol',
     sans-serif;
   color: var(--text-dark);
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
+  background: linear-gradient(135deg, #fdf8f3 0%, #f5efe6 50%, #faf6f2 100%);
   background-attachment: fixed;
   line-height: 1.6;
 }
 
 [data-theme='dark'] body {
-  background: #1a1a1a;
+  background: #0a0a0a;
   color: #ffffff;
 }
 
 :focus-visible {
-  outline: 3px solid rgba(37, 99, 235, 0.5);
+  outline: 3px solid rgba(139, 105, 20, 0.5);
   outline-offset: 2px;
 }
