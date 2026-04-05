@@ -35,7 +35,6 @@ body {
     sans-serif;
   color: var(--text-dark);
   background: linear-gradient(135deg, #fdf8f3 0%, #f5efe6 50%, #faf6f2 100%);
-  background-attachment: fixed;
   line-height: 1.6;
 }
 

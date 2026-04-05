@@ -497,8 +497,7 @@
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   z-index: 998;
-  opacity: 0;
-  animation: fadeIn 0.3s ease forwards;
+  opacity: 1;
 }
 
 [data-theme='dark'] .mobile-menu-backdrop {
@@ -671,7 +670,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
 

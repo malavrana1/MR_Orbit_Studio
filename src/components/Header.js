@@ -1,7 +1,9 @@
 import React, { useState, useEffect, memo } from 'react'
 import { Container } from 'react-bootstrap'
-import { getSiteInfo } from '../utils/site'
+import { getSiteInfo, getNavConfig } from '../utils/site'
 import analyticsService from '../services/analytics'
+import { useTheme } from '../context/ThemeContext'
+import { usePageScroll } from '../context/ScrollContext'
 import {
   FaHome,
   FaUser,
@@ -102,58 +104,11 @@ const navIcons = {
 const Header = memo(function Header() {
   const site = getSiteInfo() || {}
   const brand = site.brand || 'MR Orbit'
-  const nav = site.nav || {
-    links: [
-      { label: 'Home', href: '#home' },
-      { label: 'Summary', href: '#summary' },
-      { label: 'Toolkit', href: '#toolkit' },
-      { label: 'Experience', href: '#experience' },
-      { label: 'Credentials', href: '#credentials' },
-      { label: 'Projects', href: '#projects' },
-      { label: 'About', href: '#about' },
-      { label: 'Connect', href: '#connect' },
-    ],
-  }
+  const nav = getNavConfig()
 
-  const [isScrolled, setIsScrolled] = useState(false)
+  const { isScrolled, activeSection } = usePageScroll()
+  const { isDarkMode, toggleDarkMode: flipTheme } = useTheme()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState('home')
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode')
-    return saved ? JSON.parse(saved) : false
-  })
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-      document.documentElement.removeAttribute('data-theme')
-    }
-    localStorage.setItem('darkMode', JSON.stringify(isDarkMode))
-  }, [isDarkMode])
-
-  useEffect(() => {
-    const handleStorageChange = (e) => {
-      if (e.key === 'darkMode') {
-        const newValue = e.newValue ? JSON.parse(e.newValue) : false
-        setIsDarkMode(newValue)
-      }
-    }
-    const handleCustomStorageChange = () => {
-      const saved = localStorage.getItem('darkMode')
-      if (saved !== null) {
-        setIsDarkMode(JSON.parse(saved))
-      } else {
-        setIsDarkMode(false)
-      }
-    }
-    window.addEventListener('storage', handleStorageChange)
-    window.addEventListener('darkModeChanged', handleCustomStorageChange)
-    return () => {
-      window.removeEventListener('storage', handleStorageChange)
-      window.removeEventListener('darkModeChanged', handleCustomStorageChange)
-    }
-  }, [])
 
   const toggleDarkMode = () => {
     analyticsService.trackClick(
@@ -161,47 +116,9 @@ const Header = memo(function Header() {
       'toggle_dark_mode',
       isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode',
     )
-    const newValue = !isDarkMode
-    setIsDarkMode(newValue)
+    flipTheme()
     setIsMobileMenuOpen(false)
-
-    if (newValue) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-      document.documentElement.removeAttribute('data-theme')
-    }
-    localStorage.setItem('darkMode', JSON.stringify(newValue))
-    window.dispatchEvent(new Event('darkModeChanged'))
   }
-
-  useEffect(() => {
-    let ticking = false
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          setIsScrolled(window.scrollY > 50)
-
-          const sections = nav.links.map((link) => link.href.substring(1))
-          const currentSection = sections.find((section) => {
-            const element = document.getElementById(section)
-            if (element) {
-              const rect = element.getBoundingClientRect()
-              return rect.top <= 100 && rect.bottom >= 100
-            }
-            return false
-          })
-          if (currentSection) {
-            setActiveSection(currentSection)
-          }
-          ticking = false
-        })
-        ticking = true
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [nav.links])
 
   useEffect(() => {
     if (isMobileMenuOpen) {

@@ -3,8 +3,6 @@ class AnalyticsService {
     this.isTrackingEnabled =
       process.env.NODE_ENV === 'development' &&
       process.env.REACT_APP_ENABLE_CONSOLE_ANALYTICS === 'true'
-    this.trackedSections = new Set()
-    this.scrollDepthsTracked = new Set()
   }
 
   async trackPageView(page = 'home') {
@@ -20,21 +18,6 @@ class AnalyticsService {
   ) {
     if (!this.isTrackingEnabled) return
     // no-op placeholder to keep API compatible
-  }
-
-  async trackSectionView(sectionId) {
-    if (!this.isTrackingEnabled) return
-
-    if (this.trackedSections.has(sectionId)) return
-    this.trackedSections.add(sectionId)
-  }
-
-  async trackScrollDepth(percentage) {
-    if (!this.isTrackingEnabled) return
-
-    const milestone = Math.floor(percentage / 25) * 25
-    if (this.scrollDepthsTracked.has(milestone)) return
-    this.scrollDepthsTracked.add(milestone)
   }
 
   async trackExternalLink(url, linkText = '') {

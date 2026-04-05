@@ -1,0 +1,5 @@
+#!/bin/sh
+# Drop trailing "Made-with: …" lines some editors add to commits
+[ -n "$1" ] && [ -f "$1" ] || exit 0
+tmp=$(mktemp) || exit 0
+grep -v '^Made-with:' "$1" > "$tmp" && mv "$tmp" "$1"

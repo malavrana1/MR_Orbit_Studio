@@ -62,7 +62,6 @@
   min-height: 100vh;
   color: #fdf8f3;
   padding: 7rem 0 5rem;
-  contain: layout style paint;
   background:
     radial-gradient(
       circle at 22% 18%,
@@ -3203,17 +3202,6 @@
   }
 }
 
-.scroll-progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #8b6914, #5c4033, #c9a227);
-  z-index: 9999;
-  transition: width 0.1s ease-out;
-  box-shadow: 0 2px 8px rgba(92, 64, 51, 0.3);
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -3258,9 +3246,6 @@
 
 .scroll-to-top {
   right: 2rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.3s ease forwards;
 }
 
 .scroll-to-top:hover {
@@ -3460,7 +3445,6 @@
   .animated-particles,
   .bg-gradient-orb,
   .bg-mesh-gradient,
-  .scroll-progress-bar,
   .scroll-to-top,
   .site-header,
   .footer-container,

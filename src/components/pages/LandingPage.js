@@ -31,12 +31,11 @@ import { getSkillIcon } from '../../utils/skillIcons'
 import resumePdf from '../../assets/pdf/Malav_Rana_Frontend_Engineer.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
-import {
-  observeScrollAnimations,
-  setupScrollProgress,
-} from '../../utils/scrollAnimations'
+import { observeScrollAnimations } from '../../utils/scrollAnimations'
 import ContactModal from '../ContactModal'
 import analyticsService from '../../services/analytics'
+import { useTheme } from '../../context/ThemeContext'
+import { usePageScroll } from '../../context/ScrollContext'
 import kisweLogo from '../../assets/images/logos/kiswe.png'
 import genslerLogo from '../../assets/images/logos/gensler.png'
 import cignaLogo from '../../assets/images/logos/cigna.png'
@@ -71,56 +70,9 @@ export default function LandingPage() {
   const [activeToolkit, setActiveToolkit] = useState(
     skillCategories[0]?.category || 'Front-End Technologies',
   )
-  const [showScrollTop, setShowScrollTop] = useState(false)
   const [showContactModal, setShowContactModal] = useState(false)
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode')
-    return saved ? JSON.parse(saved) : false
-  })
-
-  useEffect(() => {
-    const applyTheme = (value) => {
-      if (value) {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        import('../../css/LandingPage.dark.css').catch(() => {})
-      } else {
-        document.documentElement.removeAttribute('data-theme')
-      }
-      localStorage.setItem('darkMode', JSON.stringify(value))
-      window.dispatchEvent(new Event('darkModeChanged'))
-    }
-
-    applyTheme(isDarkMode)
-  }, [isDarkMode])
-
-  useEffect(() => {
-    const saved = localStorage.getItem('darkMode')
-    if (saved !== null) {
-      const isDark = JSON.parse(saved)
-      setIsDarkMode(isDark)
-    }
-    const handleStorageChange = (e) => {
-      if (e.key === 'darkMode') {
-        const newValue = e.newValue ? JSON.parse(e.newValue) : false
-        setIsDarkMode(newValue)
-      }
-    }
-    const handleCustomStorageChange = () => {
-      const saved = localStorage.getItem('darkMode')
-      if (saved !== null) {
-        const isDark = JSON.parse(saved)
-        setIsDarkMode(isDark)
-      } else {
-        setIsDarkMode(false)
-      }
-    }
-    window.addEventListener('storage', handleStorageChange)
-    window.addEventListener('darkModeChanged', handleCustomStorageChange)
-    return () => {
-      window.removeEventListener('storage', handleStorageChange)
-      window.removeEventListener('darkModeChanged', handleCustomStorageChange)
-    }
-  }, [])
+  const { showScrollTop } = usePageScroll()
+  const { isDarkMode, toggleDarkMode: flipTheme } = useTheme()
 
   const toggleDarkMode = () => {
     analyticsService.trackClick(
@@ -128,7 +80,7 @@ export default function LandingPage() {
       'toggle_dark_mode',
       isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode',
     )
-    setIsDarkMode((prev) => !prev)
+    flipTheme()
   }
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,
@@ -139,46 +91,6 @@ export default function LandingPage() {
   const heroUI = ui.hero || {}
   const sectionsUI = ui.sections || {}
   const typedConfig = ui.typed || { typeSpeed: 45, backSpeed: 22 }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400)
-
-      const sections = [
-        'home',
-        'summary',
-        'experience',
-        'projects',
-        'toolkit',
-        'credentials',
-        'about',
-        'connect',
-      ]
-      sections.forEach((sectionId) => {
-        const element = document.getElementById(sectionId)
-        if (element) {
-          const rect = element.getBoundingClientRect()
-          if (rect.top <= 200 && rect.top >= -100) {
-            analyticsService.trackSectionView(sectionId)
-          }
-        }
-      })
-    }
-
-    let ticking = false
-    const throttledScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          handleScroll()
-          ticking = false
-        })
-        ticking = true
-      }
-    }
-
-    window.addEventListener('scroll', throttledScroll, { passive: true })
-    return () => window.removeEventListener('scroll', throttledScroll)
-  }, [])
 
   useEffect(() => {
     const handleKeyPress = (e) => {
@@ -251,11 +163,6 @@ export default function LandingPage() {
       }
     }
   }
-  useEffect(() => {
-    const cleanup = setupScrollProgress()
-    return cleanup
-  }, [])
-
   useEffect(() => {
     const cleanup = observeScrollAnimations()
     return cleanup

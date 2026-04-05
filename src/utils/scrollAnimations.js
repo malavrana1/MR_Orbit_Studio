@@ -24,38 +24,3 @@ export const observeScrollAnimations = () => {
     elementsToAnimate.forEach((el) => observer.unobserve(el))
   }
 }
-
-export const setupScrollProgress = () => {
-  const progressBar = document.createElement('div')
-  progressBar.className = 'scroll-progress-bar'
-  progressBar.setAttribute('role', 'progressbar')
-  progressBar.setAttribute('aria-label', 'Scroll progress')
-  document.body.appendChild(progressBar)
-
-  let ticking = false
-  const updateProgress = () => {
-    const windowHeight = window.innerHeight
-    const documentHeight = document.documentElement.scrollHeight
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-    const scrollableHeight = documentHeight - windowHeight
-    const progress = (scrollTop / scrollableHeight) * 100
-
-    progressBar.style.width = `${Math.min(progress, 100)}%`
-    ticking = false
-  }
-
-  const throttledUpdate = () => {
-    if (!ticking) {
-      window.requestAnimationFrame(updateProgress)
-      ticking = true
-    }
-  }
-
-  window.addEventListener('scroll', throttledUpdate, { passive: true })
-  updateProgress()
-
-  return () => {
-    window.removeEventListener('scroll', throttledUpdate)
-    progressBar.remove()
-  }
-}
