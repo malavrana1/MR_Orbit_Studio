@@ -5,7 +5,6 @@ import {
   FaRegLightbulb,
   FaGithub,
   FaLinkedin,
-  FaDownload,
   FaCode,
   FaGraduationCap,
   FaAward,
@@ -814,18 +813,20 @@ export default function LandingPage() {
               >
                 <Card.Body className="text-center p-4">
                   <h2 className="mb-4" style={{ color: '#3e2723' }}>
-                    {sectionsUI.connectCardTitle ?? 'Get in touch'}
+                    {sectionsUI.connectCardTitle ?? "Let's Connect"}
                   </h2>
                   <p className="text-muted mb-4">
                     {sectionsUI.connectCardDescription ??
-                      "Below you'll find my resume, links to GitHub and LinkedIn, and a contact form for professional inquiries. Please use the channel that best fits your needs. You are welcome to share this portfolio with colleagues or hiring teams when relevant."}
+                      "I'm open to new projects, collaboration, and professional opportunities. Pick a way to reach out or explore my resume and work."}
                   </p>
                   <div className="contact-actions">
                     <a
                       href={resumePdf}
                       download="Malav-Rana-Frontend-Engineer.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn btn-primary"
-                      title="Download resume"
+                      title="Resume (PDF — open or save)"
                       onClick={() =>
                         analyticsService.trackDownload(
                           'Malav-Rana-Frontend-Engineer.pdf',
@@ -833,8 +834,8 @@ export default function LandingPage() {
                         )
                       }
                     >
-                      <FaDownload />
-                      Download Resume
+                      <FaFilePdf />
+                      Resume
                     </a>
                     <a
                       href={profile.social.github}
@@ -881,33 +882,16 @@ export default function LandingPage() {
                         analyticsService.trackClick(
                           'button',
                           'open_contact_modal',
-                          'Quick Contact',
+                          'Contact',
                         )
                         setShowContactModal(true)
                       }}
                       className="btn btn-outline-primary"
-                      title="Quick contact form"
+                      title="Contact form"
                     >
                       <FaEnvelope />
-                      Quick Contact
+                      Contact
                     </button>
-                    <a
-                      href={resumePdf}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-outline-primary"
-                      title="View resume in new tab"
-                      onClick={() =>
-                        analyticsService.trackClick(
-                          'link',
-                          'view_resume',
-                          'View Resume',
-                        )
-                      }
-                    >
-                      <FaFilePdf />
-                      View Resume
-                    </a>
                   </div>
                 </Card.Body>
               </Card>
