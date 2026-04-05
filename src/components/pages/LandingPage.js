@@ -28,7 +28,7 @@ import { getResume, getSkillCategories } from '../../utils/resume'
 import { getProjects } from '../../utils/projects'
 import { getPersonal } from '../../utils/personal'
 import { getSkillIcon } from '../../utils/skillIcons'
-import resumePdf from '../../assets/pdf/Malav_Rana_Frontend_Engineer.pdf'
+import resumePdf from '../../assets/pdf/Malav-Rana-Frontend-Engineer.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
 import { observeScrollAnimations } from '../../utils/scrollAnimations'
@@ -822,11 +822,14 @@ export default function LandingPage() {
                   <div className="contact-actions">
                     <a
                       href={resumePdf}
-                      download
+                      download="Malav-Rana-Frontend-Engineer.pdf"
                       className="btn btn-primary"
                       title="Download resume"
                       onClick={() =>
-                        analyticsService.trackDownload('resume.pdf', 'pdf')
+                        analyticsService.trackDownload(
+                          'Malav-Rana-Frontend-Engineer.pdf',
+                          'pdf',
+                        )
                       }
                     >
                       <FaDownload />

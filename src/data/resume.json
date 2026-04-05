@@ -1,6 +1,6 @@
 {
   "name": "Malav Rana",
-  "headline": "SOFTWARE ENGINEER",
+  "headline": "Frontend Engineer",
   "location": "New Jersey, United States",
   "contact": {
     "email": "ranam211197@gmail.com",
@@ -8,7 +8,7 @@
     "linkedin": "https://www.linkedin.com/in/malav-rana97",
     "website": "https://malavrana.dev"
   },
-  "summary": "Application-focused Frontend Engineer with 4+ years of experience building scalable, high-performance web applications using React, Angular, and Vue. Strong background in HTML5, CSS3, JavaScript, RESTful APIs, and front-end performance optimization. Experienced working in fast-paced, cross-functional teams, delivering polished solutions that improve usability, reliability, and client outcomes. Well-aligned with enterprise environments that value accessibility, maintainability, and continuous learning.",
+  "summary": "Frontend Engineer with 5+ years of experience building scalable, high-performance web applications using React, Angular, Vue, and Next.js. Strong in HTML5, CSS3, TypeScript, JavaScript (ES6+), RESTful APIs, GraphQL, and front-end performance optimization. Experienced in fast-paced, cross-functional teams, delivering accessible, maintainable UIs that improve usability and client outcomes.",
   "skills": {
     "Front-End Technologies": [
       "React.js",
