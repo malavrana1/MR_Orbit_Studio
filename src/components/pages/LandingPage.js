@@ -814,10 +814,11 @@ export default function LandingPage() {
               >
                 <Card.Body className="text-center p-4">
                   <h2 className="mb-4" style={{ color: '#3e2723' }}>
-                    Ready to Build Something Amazing?
+                    {sectionsUI.connectCardTitle ?? 'Get in touch'}
                   </h2>
                   <p className="text-muted mb-4">
-                    Let's collaborate and bring your ideas to life
+                    {sectionsUI.connectCardDescription ??
+                      "Below you'll find my resume, links to GitHub and LinkedIn, and a contact form for professional inquiries. Please use the channel that best fits your needs. You are welcome to share this portfolio with colleagues or hiring teams when relevant."}
                   </p>
                   <div className="contact-actions">
                     <a
