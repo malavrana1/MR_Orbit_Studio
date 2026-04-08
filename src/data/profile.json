@@ -1,19 +1,19 @@
 {
   "name": "Malav Rana",
-  "headline": "Frontend Engineer | React • Angular • Vue Specialist",
+  "headline": "Frontend Engineer",
   "availability": "Open to full-time opportunities",
   "summary": [
-    "Application-focused Frontend Engineer with 5+ years of experience designing and delivering scalable, high-performance web applications using React, Angular, Vue, Next.js, and TypeScript. Skilled in HTML5, CSS3, Tailwind, CSS Modules/Styled Components, JavaScript (ES6+), RESTful APIs, GraphQL, and front-end optimization. Experienced in fast-paced, cross-functional teams, building polished, accessible, and maintainable solutions that improve usability, reduce errors, and enhance client outcomes. Passionate about performance, testing (Jest, React Testing Library, Playwright), and modern frontend tooling (Webpack, Vite, CI/CD), thriving in enterprise environments that value quality and continuous learning."
+    "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in React, Angular, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects."
   ],
   "heroHighlights": [
-    "Enterprise Frontend Solutions",
-    "REST/GraphQL API Integration",
-    "Performance & Accessibility"
+    "Enterprise Web Applications",
+    "Accessibility & APIs",
+    "Testing & CI/CD"
   ],
   "contact": {
     "email": "ranam211197@gmail.com",
     "phone": "201-468-8422",
-    "location": "New Jersey, United States",
+    "location": "Woodbridge, New Jersey, United States",
     "website": "https://malavrana.dev"
   },
   "social": {
@@ -22,19 +22,31 @@
   },
   "stats": [
     { "label": "Years Experience", "value": "5+ years" },
-    { "label": "Technologies", "value": "React · Angular · Vue · Next.js" },
-    { "label": "Location", "value": "New Jersey, United States" }
+    {
+      "label": "Technologies",
+      "value": "React · Angular · Next.js · TypeScript"
+    },
+    { "label": "Location", "value": "Woodbridge, NJ" }
   ],
   "experience": [
     {
+      "role": "Software Engineer",
+      "company": "Fusion Health",
+      "period": "Feb 2026 - Present",
+      "achievements": [
+        "Develops Angular (v19 and legacy) features with reusable, accessible UI and optimized rendering.",
+        "Leads accessibility remediation toward WCAG 2.1 AA across modules.",
+        "Integrates REST and GraphQL APIs with secure state management and Docker-based CI/CD."
+      ]
+    },
+    {
       "role": "Frontend Engineer",
       "company": "Kiswe",
-      "period": "Sep 2024 - Present",
+      "period": "Sep 2024 - Jan 2026",
       "achievements": [
-        "Designed, developed, and deployed custom web applications using HTML5, CSS3, JavaScript (ES6+), React, and Vue, delivering scalable front-end solutions aligned with business requirements.",
-        "Implemented complex client-side logic, interactive workflows, and form validation to ensure seamless user interactions across browsers and devices.",
-        "Integrated and maintained RESTful APIs for real-time data handling and smooth client-side interaction with backend systems.",
-        "Optimized front-end performance through reusable components, efficient code structuring, and browser debugging tools to improve reliability during high-traffic live events."
+        "Built high-traffic SPAs with React, Vue, TypeScript, and Tailwind for scalability.",
+        "Integrated REST and GraphQL with caching and state management to improve responsiveness.",
+        "Applied code splitting, lazy loading, and WCAG-aligned, cross-device UX."
       ]
     },
     {
@@ -42,10 +54,9 @@
       "company": "Gensler",
       "period": "Jul 2022 - Sep 2024",
       "achievements": [
-        "Built enterprise-grade web interfaces using React, Angular, Vue, and Next.js, following modern front-end development best practices.",
-        "Developed responsive, adaptive UIs with HTML5, CSS3, Bootstrap, and Tailwind CSS, ensuring accessibility and consistent UX across devices.",
-        "Managed client-side data manipulation and querying through RESTful APIs and GraphQL, enabling efficient communication with backend services.",
-        "Improved performance and stability through front-end optimization techniques, automated testing with Jest, and use of browser debugging tools."
+        "Delivered enterprise UIs with React, Angular, Vue, Next.js, and Styled Components.",
+        "Integrated REST and GraphQL with automated testing (Jest, RTL, Playwright).",
+        "Partnered with design to ship responsive, accessible interfaces from Figma."
       ]
     },
     {
@@ -53,10 +64,9 @@
       "company": "Cigna Express Scripts",
       "period": "May 2021 - Apr 2022",
       "achievements": [
-        "Designed and implemented interactive web workflows for online pharmacy applications using React, HTML5, CSS3, and JavaScript (ES6+).",
-        "Built and maintained client-side integrations with backend services using RESTful APIs, supporting accurate real-time updates.",
-        "Implemented form validation, state-driven UI logic, and client-side data handling to ensure reliable, user-friendly checkout experiences.",
-        "Applied performance optimization techniques (e.g., lazy loading, code splitting) to reduce load times and improve responsiveness."
+        "Built interactive pharmacy workflows with React, TypeScript, HTML5, and CSS3.",
+        "Integrated secure REST APIs with JWT/OAuth and strong validation.",
+        "Improved load times with modular components and optimized rendering."
       ]
     },
     {
@@ -64,32 +74,31 @@
       "company": "Atmiya Care Charity",
       "period": "Sep 2020 - May 2021",
       "achievements": [
-        "Developed and deployed custom web solutions using React, Angular, HTML5, CSS3, and JavaScript to support donation and community engagement platforms.",
-        "Implemented RESTful API integrations and client-side data handling to deliver dynamic, real-time user experiences.",
-        "Ensured compliance with accessibility (WCAG) and responsive design principles across browsers and devices.",
-        "Collaborated with cross-functional stakeholders to troubleshoot issues and deliver polished, production-ready web applications."
+        "Shipped responsive web apps with React, HTML, CSS, and JavaScript.",
+        "Integrated RESTful APIs for dynamic content and consistent workflows.",
+        "Worked in Agile/SCRUM with code reviews and documentation."
       ]
     }
   ],
   "expertise": [
     {
       "label": "Front-End Development",
-      "description": "Expert in React, Angular, Vue, and Next.js with a focus on building scalable, maintainable applications. Experience developing enterprise-grade web interfaces, reusable component libraries, and high-performance user experiences across diverse industries."
+      "description": "Deep experience with React, Angular, Vue, and Next.js—TypeScript-first development, design systems, and polished UIs from healthcare to live events and enterprise."
     },
     {
-      "label": "UI/UX & Accessibility",
-      "description": "Proficient in HTML5, CSS3, Bootstrap, and Tailwind CSS with a strong emphasis on responsive design and WCAG accessibility standards. Skilled in creating adaptive UIs that deliver consistent experiences across all devices and browsers."
+      "label": "Accessibility & APIs",
+      "description": "WCAG 2.1 AA remediation, inclusive UI patterns, and reliable REST/GraphQL integration with secure auth (JWT, OAuth) and performant client-side data flows."
     },
     {
-      "label": "API Integration & DevOps",
-      "description": "Strong expertise in REST/GraphQL API integrations for seamless backend communication and real-time data handling. Experienced with automated testing (Jest, React Testing Library), Git workflows, AWS deployments, Docker containers, and Jenkins CI/CD pipelines."
+      "label": "Quality & Delivery",
+      "description": "Jest, React Testing Library, Cypress, and Playwright; GitHub Actions, Jenkins, Docker, and AWS in CI/CD pipelines for repeatable, observable releases."
     }
   ],
   "stack": [
     { "label": "React", "level": 95 },
     { "label": "Next.js", "level": 88 },
-    { "label": "Angular", "level": 80 },
-    { "label": "Vue.js", "level": 78 },
-    { "label": "TypeScript", "level": 90 }
+    { "label": "Angular", "level": 85 },
+    { "label": "TypeScript", "level": 90 },
+    { "label": "Vue.js", "level": 78 }
   ]
 }

@@ -35,6 +35,7 @@ import ContactModal from '../ContactModal'
 import analyticsService from '../../services/analytics'
 import { useTheme } from '../../context/ThemeContext'
 import { usePageScroll } from '../../context/ScrollContext'
+import fusionHealthLogo from '../../assets/images/logos/fusion-health.png'
 import kisweLogo from '../../assets/images/logos/kiswe.png'
 import genslerLogo from '../../assets/images/logos/gensler.png'
 import cignaLogo from '../../assets/images/logos/cigna.png'
@@ -42,6 +43,7 @@ import atmiyaLogo from '../../assets/images/logos/atmiya_care_charity.png'
 
 const getCompanyLogo = (companyName) => {
   const logoMap = {
+    'Fusion Health': fusionHealthLogo,
     Kiswe: kisweLogo,
     Gensler: genslerLogo,
     'Cigna Express Scripts': cignaLogo,
@@ -65,9 +67,14 @@ export default function LandingPage() {
     () => resume.experience.slice(0, 2),
     [resume.experience],
   )
+  const hasCertifications = useMemo(
+    () =>
+      Array.isArray(resume.certifications) && resume.certifications.length > 0,
+    [resume.certifications],
+  )
 
   const [activeToolkit, setActiveToolkit] = useState(
-    skillCategories[0]?.category || 'Front-End Technologies',
+    skillCategories[0]?.category || 'Frontend',
   )
   const [showContactModal, setShowContactModal] = useState(false)
   const { showScrollTop } = usePageScroll()
@@ -407,30 +414,30 @@ export default function LandingPage() {
             <div className="highlight-item">
               <FaCode className="highlight-icon" />
               <div className="highlight-content">
-                <h6 className="highlight-title">Frontend Focus</h6>
+                <h6 className="highlight-title">Modern frontend stacks</h6>
                 <p className="highlight-text">
-                  Building responsive web applications with React, Angular, and
-                  Vue
+                  React, Angular, Next.js, and TypeScript—from enterprise
+                  dashboards to high-traffic SPAs
                 </p>
               </div>
             </div>
             <div className="highlight-item">
               <FaUsers className="highlight-icon" />
               <div className="highlight-content">
-                <h6 className="highlight-title">Team Collaboration</h6>
+                <h6 className="highlight-title">Team collaboration</h6>
                 <p className="highlight-text">
-                  Working with cross-functional teams to deliver quality
-                  products
+                  Partnering with design, product, and backend to ship
+                  accessible, maintainable features
                 </p>
               </div>
             </div>
             <div className="highlight-item">
               <FaCheckCircle className="highlight-icon" />
               <div className="highlight-content">
-                <h6 className="highlight-title">Continuous Learning</h6>
+                <h6 className="highlight-title">Quality & delivery</h6>
                 <p className="highlight-text">
-                  Earning certifications and staying current with modern
-                  technologies
+                  Automated testing, CI/CD, and performance tuning for reliable
+                  releases
                 </p>
               </div>
             </div>
@@ -644,10 +651,12 @@ export default function LandingPage() {
             className="credentials-heading text-center mb-3"
             data-animate="fade-up"
           >
-            <h2 className="section-title">Education & Certifications</h2>
+            <h2 className="section-title">
+              {hasCertifications ? 'Education & Certifications' : 'Education'}
+            </h2>
           </div>
           <Row className="g-4">
-            <Col lg={4} id="education">
+            <Col lg={hasCertifications ? 4 : 12} id="education">
               {resume.education &&
                 resume.education.map((edu, index) => (
                   <Card
@@ -679,10 +688,10 @@ export default function LandingPage() {
                   </Card>
                 ))}
             </Col>
-            <Col lg={8} id="certifications">
-              <div className="certifications-grid">
-                {resume.certifications &&
-                  resume.certifications.slice(0, 6).map((cert, index) => (
+            {hasCertifications && (
+              <Col lg={8} id="certifications">
+                <div className="certifications-grid">
+                  {resume.certifications.slice(0, 6).map((cert, index) => (
                     <Card
                       key={index}
                       className="credential-card certification-card-compact border-0 shadow-sm"
@@ -722,8 +731,9 @@ export default function LandingPage() {
                       </Card.Body>
                     </Card>
                   ))}
-              </div>
-            </Col>
+                </div>
+              </Col>
+            )}
           </Row>
         </Container>
       </section>

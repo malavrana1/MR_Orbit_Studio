@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Modal, Button, Form } from 'react-bootstrap'
 import analyticsService from '../services/analytics'
 
-const ContactModal = ({ show, onClose, toEmail = 'malavrana90@gmail.com' }) => {
+const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
   const [contactName, setContactName] = useState('')
   const [contactEmail, setContactEmail] = useState('')
   const [contactPhone, setContactPhone] = useState('')

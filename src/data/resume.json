@@ -1,123 +1,164 @@
 {
   "name": "Malav Rana",
-  "headline": "SOFTWARE ENGINEER",
-  "location": "New Jersey, United States",
+  "headline": "Frontend Engineer",
+  "location": "Woodbridge, New Jersey, United States",
   "contact": {
     "email": "ranam211197@gmail.com",
     "phone": "201-468-8422",
     "linkedin": "https://www.linkedin.com/in/malav-rana97",
     "website": "https://malavrana.dev"
   },
-  "summary": "Software Engineer with 5+ years of experience building scalable, high-performance web applications using React, Angular, Vue, and Next.js. Strong in HTML5, CSS3, TypeScript, JavaScript (ES6+), RESTful APIs, GraphQL, and front-end performance optimization. Experienced in fast-paced, cross-functional teams, delivering accessible, maintainable UIs that improve usability and client outcomes.",
+  "summary": "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in React, Angular, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects.",
   "skills": {
-    "Front-End Technologies": [
+    "Frontend": [
       "React.js",
+      "Next.js",
       "Angular",
       "Vue.js",
-      "Next.js",
       "TypeScript",
       "JavaScript (ES6+)",
       "HTML5",
       "CSS3",
-      "Bootstrap",
       "Tailwind CSS",
-      "CSS Modules / Styled Components",
-      "State Management (Redux / Context)",
-      "React Hooks & Advanced Patterns",
-      "Responsive & Adaptive Design",
-      "Accessibility (WCAG)"
-    ],
-    "Web Technologies": [
-      "RESTful APIs",
-      "GraphQL",
-      "Client-side Data Handling",
-      "Form Validation",
-      "Browser Debugging Tools",
-      "Performance Optimization",
-      "Web Fundamentals (Event Loop, HTTP, Caching)",
-      "Frontend Security (XSS, CSRF, CORS)",
-      "Authentication (JWT, OAuth)"
-    ],
-    "Testing & Tools": [
-      "Jest",
-      "React Testing Library",
-      "End-to-End Testing (Playwright / Cypress)",
-      "Unit & Integration Testing",
-      "Git",
-      "Bitbucket",
-      "GitHub Actions",
+      "Styled Components",
+      "CSS Modules",
+      "Bootstrap",
+      "Responsive/Adaptive Design",
       "Webpack",
       "Vite",
       "Babel",
-      "ESLint",
-      "Prettier",
-      "npm / yarn",
-      "AWS",
-      "Docker",
+      "React Hooks",
+      "Figma"
+    ],
+    "Backend / API": [
+      "Node.js",
+      "Java",
+      "Spring Boot",
+      "REST",
+      "GraphQL",
+      "JSON",
+      "JWT",
+      "OAuth",
+      "CORS",
+      "API Security",
+      "Caching",
+      "Logging"
+    ],
+    "Testing": [
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "Playwright",
+      "Unit/Integration/E2E Testing",
+      "Test Automation"
+    ],
+    "Database": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "SQL",
+      "Schema Design",
+      "Advanced Queries"
+    ],
+    "DevOps / Tools": [
+      "Git",
+      "GitHub Actions",
       "Jenkins",
-      "Figma (Design Handoff)"
+      "Docker",
+      "AWS",
+      "CI/CD Pipelines",
+      "Performance Monitoring",
+      "ESLint",
+      "Prettier"
+    ],
+    "Concepts": [
+      "Accessibility (WCAG 2.1 AA)",
+      "Frontend Performance Optimization",
+      "Frontend Security",
+      "Agile/SCRUM",
+      "Client-Side Debugging",
+      "OOP",
+      "Design Patterns"
     ]
   },
   "skillDescriptions": {
-    "Front-End Technologies": "Expert-level proficiency in modern JavaScript frameworks and libraries. Building scalable, performant applications with React.js, Angular, Vue.js, Next.js, and TypeScript. Strong foundation in HTML5, CSS3, modern CSS frameworks (Tailwind, CSS Modules, Styled Components), state management (Redux, Context), and React Hooks for responsive, accessible design.",
-    "Web Technologies": "Specialized in REST/GraphQL API integrations, client-side data handling, and performance optimization. Experienced with form validation, browser debugging, web fundamentals (Event Loop, HTTP, Caching), frontend security (XSS, CSRF, CORS), and authentication (JWT, OAuth) for secure, efficient real-time applications.",
-    "Testing & Tools": "Comprehensive testing expertise with Jest, React Testing Library, and end-to-end testing (Playwright, Cypress). Proficient in modern development workflows using Git, Bitbucket, GitHub Actions, build tools (Webpack, Vite, Babel), code quality tools (ESLint, Prettier), package managers (npm, yarn), AWS, Docker, Jenkins CI/CD, and design collaboration (Figma)."
+    "Frontend": "Hands-on experience across React.js, Next.js, Angular, and Vue.js with TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules), and responsive design. Comfortable from Figma handoff through production builds with Webpack, Vite, and Babel.",
+    "Backend / API": "Integrates REST and GraphQL services with secure patterns—JWT, OAuth, CORS—and works alongside Node.js, Java, and Spring Boot backends for data-driven UIs.",
+    "Testing": "Ships with confidence using Jest, React Testing Library, Cypress, and Playwright across unit, integration, and end-to-end coverage with automation in the release path.",
+    "Database": "Works with relational and document data stores—MySQL, PostgreSQL, MongoDB, Redis—and SQL for schema-aware features and performant queries.",
+    "DevOps / Tools": "Uses Git, GitHub Actions, Jenkins, Docker, and AWS in CI/CD pipelines with monitoring, ESLint, and Prettier for consistent, observable delivery.",
+    "Concepts": "Applies WCAG 2.1 AA accessibility, performance and security best practices, Agile/SCRUM collaboration, and solid engineering fundamentals (debugging, OOP, design patterns)."
   },
   "experience": [
     {
+      "role": "Software Engineer",
+      "company": "Fusion Health",
+      "location": "Woodbridge, NJ",
+      "period": "Feb 2026 — Present",
+      "tagline": "Healthcare technology team building digital products for clinical and operational workflows.",
+      "description": "Develops web features with Angular (v19 and legacy), emphasizing reusable accessible UI, REST and GraphQL integrations, and Docker-based CI/CD for consistent builds and releases.",
+      "highlights": [
+        "Builds reusable, accessible UI components with optimized rendering across devices and browsers.",
+        "Runs accessibility audits, closes WCAG 2.1 AA gaps, and improves usability for all users.",
+        "Integrates REST and GraphQL APIs with solid state management and error handling across modules.",
+        "Maintains Dockerized dev, test, and deployment pipelines for smooth CI/CD workflows."
+      ]
+    },
+    {
       "role": "Frontend Engineer",
       "company": "Kiswe",
-      "location": "New Jersey",
-      "period": "Sep 2024 — Present",
-      "tagline": "Kiswe is a platform that powers live interactive experiences for sports, media, and enterprise brands.",
-      "description": "Focused on rebuilding and modernizing the Comment Center UI to better support real-time operations during live events. Contributed to Kiswe's internal UI component library, creating reusable, scalable components that improve consistency and make development faster. Known for taking ownership of tasks, communicating well across teams, and delivering work that is both efficient and maintainable.",
+      "location": "Summit, NJ",
+      "period": "Sep 2024 — Jan 2026",
+      "tagline": "Kiswe powers live interactive experiences for sports, media, and enterprise brands.",
+      "description": "Delivered high-traffic single-page apps with React, Vue, TypeScript, and Tailwind—focusing on scalable components, API integration, performance, and accessibility.",
       "highlights": [
-        "Designed, developed, and deployed custom web applications using HTML5, CSS3, JavaScript (ES6+), React, and Vue, delivering scalable front-end solutions aligned with business requirements.",
-        "Implemented complex client-side logic, interactive workflows, and form validation to ensure seamless user interactions across browsers and devices.",
-        "Integrated and maintained RESTful APIs for real-time data handling and smooth client-side interaction with backend systems.",
-        "Optimized front-end performance through reusable components, efficient code structuring, and browser debugging tools to improve reliability during high-traffic live events."
+        "Developed SPAs with React, Vue, TypeScript, and Tailwind using scalable component architecture.",
+        "Integrated REST and GraphQL APIs with caching and state management; improved responsiveness and reduced frontend errors.",
+        "Applied code splitting, lazy loading, and tree-shaking for faster loads on large apps.",
+        "Championed code reviews, debugging, and WCAG-aligned, cross-device experiences."
       ]
     },
     {
       "role": "Frontend Engineer",
       "company": "Gensler",
-      "location": "New Jersey",
+      "location": "Morristown, NJ",
       "period": "Jul 2022 — Sep 2024",
-      "tagline": "Gensler is a global architecture and design firm that also builds enterprise digital tools.",
-      "description": "Built large-scale web applications for internal teams and clients, turning complex requirements into clean, accessible, and scalable interfaces. Worked closely with designers, product managers, and engineers to deliver front-end systems that are maintainable and easy to use.",
+      "tagline": "Global architecture and design firm delivering enterprise digital tools and client experiences.",
+      "description": "Built enterprise UIs with React, Angular, Vue, and Next.js—pairing async REST/GraphQL data with automated tests and close design collaboration.",
       "highlights": [
-        "Built enterprise-grade web interfaces using React, Angular, Vue, and Next.js, following modern front-end development best practices.",
-        "Developed responsive, adaptive UIs with HTML5, CSS3, Bootstrap, and Tailwind CSS, ensuring accessibility and consistent UX across devices.",
-        "Managed client-side data manipulation and querying through RESTful APIs and GraphQL, enabling efficient communication with backend services.",
-        "Improved performance and stability through front-end optimization techniques, automated testing with Jest, and use of browser debugging tools."
+        "Shipped dashboards and UI components with React, Angular, Vue, Next.js, and Styled Components.",
+        "Integrated REST and GraphQL with asynchronous updates and interactive features.",
+        "Refactored legacy code, improved performance, and expanded Jest, RTL, and Playwright coverage.",
+        "Translated Figma designs into responsive, accessible, production-ready interfaces."
       ]
     },
     {
       "role": "Frontend Engineer",
       "company": "Cigna Express Scripts",
-      "location": "New Jersey",
+      "location": "Franklin Lakes, NJ",
       "period": "May 2021 — Apr 2022",
-      "tagline": "Express Scripts, part of Cigna, provides pharmacy benefits and digital healthcare solutions.",
-      "description": "Developed customer-facing pharmacy workflows, ensuring interfaces were reliable, clear, and easy to navigate. Collaborated with cross-functional teams to integrate complex backend logic while keeping the experience smooth and accessible.",
+      "tagline": "Pharmacy benefits and digital healthcare solutions for members and patients.",
+      "description": "Built interactive pharmacy checkout flows in React and TypeScript with secure API integration, modular components, and strong automated test coverage.",
       "highlights": [
-        "Designed and implemented interactive web workflows for online pharmacy applications using React, HTML5, CSS3, and JavaScript (ES6+).",
-        "Built and maintained client-side integrations with backend services using RESTful APIs, supporting accurate real-time updates.",
-        "Implemented form validation, state-driven UI logic, and client-side data handling to ensure reliable, user-friendly checkout experiences.",
-        "Applied performance optimization techniques (e.g., lazy loading, code splitting) to reduce load times and improve responsiveness."
+        "Improved checkout task completion with React, TypeScript, HTML5, and CSS3.",
+        "Integrated secure REST APIs with JWT/OAuth, validation, and robust error handling.",
+        "Reduced page load times through modular components and optimized client-side rendering.",
+        "Collaborated across teams for responsive, accessible UI delivery."
       ]
     },
     {
       "role": "Frontend Engineer",
       "company": "Atmiya Care Charity",
-      "location": "New Jersey",
+      "location": "Parsippany, NJ",
       "period": "Sep 2020 — May 2021",
-      "tagline": "Atmiya Care is a nonprofit supporting community outreach and charitable initiatives.",
-      "description": "Built web platforms to support donations and community engagement. Delivered features end-to-end in a fast-moving environment, focusing on usability, performance, and real-world impact.",
+      "tagline": "Nonprofit community outreach and charitable initiatives.",
+      "description": "Delivered responsive, WCAG-minded web apps with reusable components, REST integrations, and Agile delivery.",
       "highlights": [
-        "Developed and deployed custom web solutions using React, Angular, HTML5, CSS3, and JavaScript to support donation and community engagement platforms.",
-        "Implemented RESTful API integrations and client-side data handling to deliver dynamic, real-time user experiences.",
-        "Ensured compliance with accessibility (WCAG) and responsive design principles across browsers and devices.",
-        "Collaborated with cross-functional stakeholders to troubleshoot issues and deliver polished, production-ready web applications."
+        "Built WCAG-oriented experiences with React, HTML, CSS, and JavaScript.",
+        "Created reusable components and modular UI patterns for maintainability.",
+        "Integrated RESTful APIs for dynamic content and consistent client workflows.",
+        "Participated in Agile/SCRUM, code reviews, and documentation."
       ]
     }
   ],
@@ -126,49 +167,8 @@
       "degree": "Bachelor of Science in Computer Science",
       "institution": "Montclair State University",
       "location": "Montclair, NJ",
-      "period": "Sep 2016 — May 2020"
+      "period": "2016 — 2020"
     }
   ],
-  "certifications": [
-    {
-      "name": "Frontend Developer (React)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/c1f7eca3282b"
-    },
-    {
-      "name": "React (Basic)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/21784b8ba35e"
-    },
-    {
-      "name": "JavaScript (Intermediate)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/a702e7e3b840"
-    },
-    {
-      "name": "Rest API (Intermediate)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/321d185f6072"
-    },
-    {
-      "name": "Software Engineer",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/b8dc708e5aec"
-    },
-    {
-      "name": "Problem Solving (Intermediate)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/74e6f6eb5c6e"
-    },
-    {
-      "name": "SQL (Advanced)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/0b9e22788db9"
-    },
-    {
-      "name": "SQL (Intermediate)",
-      "issuer": "HackerRank",
-      "link": "https://www.hackerrank.com/certificates/826d245568d7"
-    }
-  ]
+  "certifications": []
 }
