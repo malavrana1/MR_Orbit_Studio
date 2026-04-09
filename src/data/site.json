@@ -13,10 +13,6 @@
   },
   "ui": {
     "hero": {
-      "buttons": {
-        "viewProjects": "View projects",
-        "getInTouch": "Get in touch"
-      },
       "skillCard": {
         "title": "Quick skills",
         "description": "A quick look at the tools I use most.",
@@ -29,40 +25,12 @@
     },
     "sections": {
       "professionalSummary": "Professional summary",
-      "toolbox": "Toolbox",
       "toolkitTitle": "Technical toolkit",
       "toolkitDescription": "Choose a category to see the skills I use most - from frameworks and languages to testing and tools.",
-      "currentlyViewing": "Currently viewing",
-      "experience": "Experience",
       "experienceTitle": "My work experience",
-      "experienceDescription": "Here's a look at how I help teams build great products while working with others and staying active.",
-      "education": "Education",
-      "educationTitle": "My education",
-      "educationDescription": "The learning and experience that helps me build better products.",
-      "certifications": "Certifications",
-      "certificationsTitle": "Certifications & Skills",
-      "certificationsDescription": "Industry-recognized certifications that validate my technical expertise.",
       "featuredProject": "Featured Project",
-      "portfolioBuild": "About this project",
-      "buildTitle": "Inside MR_Orbit_Studio",
-      "buildDescription": "This site is a single-page React app driven by JSON content. Text and labels come from data files, so updates are quick - no code changes needed.",
-      "buildToolsTitle": "Tools I used",
-      "projectsLabel": "Projects",
-      "saveResume": "Save resume",
-      "letsCollaborate": "Say hello",
-      "letsCollaborateDescription": "I'm based in Woodbridge, NJ. If you want to chat about front-end work, side projects, or ideas, feel free to reach out.",
-      "emailButton": "Get in Touch",
-      "connectLinkedIn": "Connect on LinkedIn",
-      "exploreGitHub": "Explore GitHub",
-      "viewPortfolio": "View portfolio",
-      "whatFuelsMe": "What I love",
-      "guidingPrinciples": "How I work",
-      "currentInterests": "Things I enjoy",
       "connectCardTitle": "Let's Connect",
-      "connectCardDescription": "I'm open to new projects, collaboration, and professional opportunities. Pick a way to reach out or explore my resume and work.",
-      "ctaTitle": "Let's work together on your next project.",
-      "ctaDescription": "Want to know more or ready to start building? Get in touch and let's create something great together.",
-      "ctaButton": "Start a conversation"
+      "connectCardDescription": "I'm open to new projects, collaboration, and professional opportunities. Pick a way to reach out or explore my resume and work."
     }
   }
 }

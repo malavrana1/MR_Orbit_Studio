@@ -5,11 +5,6 @@ class AnalyticsService {
       process.env.REACT_APP_ENABLE_CONSOLE_ANALYTICS === 'true'
   }
 
-  async trackPageView(page = 'home') {
-    if (!this.isTrackingEnabled) return
-    // no-op placeholder to keep API compatible
-  }
-
   async trackClick(
     elementType,
     elementId,
@@ -56,5 +51,4 @@ class AnalyticsService {
   }
 }
 
-export const analyticsService = new AnalyticsService()
-export default analyticsService
+export default new AnalyticsService()

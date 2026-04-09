@@ -5,7 +5,7 @@ import { ThemeProvider } from './context/ThemeContext'
 import { ScrollProvider } from './context/ScrollContext'
 import './App.css'
 
-const LandingPage = lazy(() => import('./components/pages/LandingPage'))
+const LandingPage = lazy(() => import('./pages/LandingPage/LandingPage'))
 
 export default function App() {
   return (

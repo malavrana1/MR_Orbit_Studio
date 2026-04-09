@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react'
+import React, { Suspense, lazy, useState, useEffect } from 'react'
 import { ReactTyped } from 'react-typed'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import {
@@ -20,7 +20,7 @@ import {
   FaMoon,
   FaSun,
 } from 'react-icons/fa'
-import '../../css/LandingPage.css'
+import './LandingPage.css'
 import ProfileImage from '../../assets/images/Profile.jpg'
 import { getProfile } from '../../utils/profile'
 import { getResume, getSkillCategories } from '../../utils/resume'
@@ -31,7 +31,6 @@ import resumePdf from '../../assets/pdf/Malav-Rana-Frontend-Engineer.pdf'
 import { getSiteInfo } from '../../utils/site'
 import { getToolkitIcon } from '../../utils/toolkitIcons'
 import { observeScrollAnimations } from '../../utils/scrollAnimations'
-import ContactModal from '../ContactModal'
 import analyticsService from '../../services/analytics'
 import { useTheme } from '../../context/ThemeContext'
 import { usePageScroll } from '../../context/ScrollContext'
@@ -40,6 +39,17 @@ import kisweLogo from '../../assets/images/logos/kiswe.png'
 import genslerLogo from '../../assets/images/logos/gensler.png'
 import cignaLogo from '../../assets/images/logos/cigna.png'
 import atmiyaLogo from '../../assets/images/logos/atmiya_care_charity.png'
+
+const ContactModal = lazy(() => import('../../components/ContactModal'))
+
+const scheduleIdleTask = (task, timeout = 500) => {
+  if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+    const taskId = window.requestIdleCallback(task, { timeout })
+    return () => window.cancelIdleCallback(taskId)
+  }
+  const timeoutId = window.setTimeout(task, 0)
+  return () => window.clearTimeout(timeoutId)
+}
 
 const getCompanyLogo = (companyName) => {
   const logoMap = {
@@ -59,19 +69,11 @@ export default function LandingPage() {
   const allProjects = getProjects()
   const personal = getPersonal()
   const siteInfo = getSiteInfo()
-  const skillWall = useMemo(() => {
-    const flatSkills = skillCategories.flatMap((group) => group.items)
-    return Array.from(new Set(flatSkills)).slice(0, 8)
-  }, [skillCategories])
-  const topExperience = useMemo(
-    () => resume.experience.slice(0, 2),
-    [resume.experience],
-  )
-  const hasCertifications = useMemo(
-    () =>
-      Array.isArray(resume.certifications) && resume.certifications.length > 0,
-    [resume.certifications],
-  )
+  const flatSkills = skillCategories.flatMap((group) => group.items)
+  const skillWall = Array.from(new Set(flatSkills)).slice(0, 8)
+  const topExperience = resume.experience.slice(0, 2)
+  const hasCertifications =
+    Array.isArray(resume.certifications) && resume.certifications.length > 0
 
   const [activeToolkit, setActiveToolkit] = useState(
     skillCategories[0]?.category || 'Frontend',
@@ -170,8 +172,15 @@ export default function LandingPage() {
     }
   }
   useEffect(() => {
-    const cleanup = observeScrollAnimations()
-    return cleanup
+    let cleanupObserver = () => {}
+    const cancelIdle = scheduleIdleTask(() => {
+      cleanupObserver = observeScrollAnimations()
+    })
+
+    return () => {
+      cancelIdle()
+      cleanupObserver()
+    }
   }, [])
 
   useEffect(() => {
@@ -241,7 +250,8 @@ export default function LandingPage() {
       }
     }
 
-    updateMetaTags()
+    const cancelIdle = scheduleIdleTask(updateMetaTags)
+    return cancelIdle
   }, [profile])
 
   useEffect(() => {
@@ -274,7 +284,8 @@ export default function LandingPage() {
       document.head.appendChild(script)
     }
 
-    addStructuredData()
+    const cancelIdle = scheduleIdleTask(addStructuredData)
+    return cancelIdle
   }, [profile, skillCategories])
 
   return (
@@ -934,11 +945,15 @@ export default function LandingPage() {
         </button>
       )}
 
-      <ContactModal
-        show={showContactModal}
-        onClose={() => setShowContactModal(false)}
-        toEmail={profile.contact.email}
-      />
+      {showContactModal && (
+        <Suspense fallback={null}>
+          <ContactModal
+            show={showContactModal}
+            onClose={() => setShowContactModal(false)}
+            toEmail={profile.contact.email}
+          />
+        </Suspense>
+      )}
     </div>
   )
 }

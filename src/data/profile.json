@@ -1,7 +1,6 @@
 {
   "name": "Malav Rana",
   "headline": "Frontend Engineer",
-  "availability": "Open to full-time opportunities",
   "summary": [
     "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in React, Angular, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects."
   ],
@@ -12,93 +11,11 @@
   ],
   "contact": {
     "email": "ranam211197@gmail.com",
-    "phone": "201-468-8422",
     "location": "Woodbridge, New Jersey, United States",
     "website": "https://malavrana.dev"
   },
   "social": {
     "github": "https://github.com/malavrana1",
     "linkedin": "https://www.linkedin.com/in/malav-rana97"
-  },
-  "stats": [
-    { "label": "Years Experience", "value": "5+ years" },
-    {
-      "label": "Technologies",
-      "value": "React · Angular · Next.js · TypeScript"
-    },
-    { "label": "Location", "value": "Woodbridge, NJ" }
-  ],
-  "experience": [
-    {
-      "role": "Software Engineer",
-      "company": "Fusion Health",
-      "period": "Feb 2026 - Present",
-      "achievements": [
-        "Develops Angular (v19 and legacy) features with reusable, accessible UI and optimized rendering.",
-        "Leads accessibility remediation toward WCAG 2.1 AA across modules.",
-        "Integrates REST and GraphQL APIs with secure state management and Docker-based CI/CD."
-      ]
-    },
-    {
-      "role": "Frontend Engineer",
-      "company": "Kiswe",
-      "period": "Sep 2024 - Jan 2026",
-      "achievements": [
-        "Built high-traffic SPAs with React, Vue, TypeScript, and Tailwind for scalability.",
-        "Integrated REST and GraphQL with caching and state management to improve responsiveness.",
-        "Applied code splitting, lazy loading, and WCAG-aligned, cross-device UX."
-      ]
-    },
-    {
-      "role": "Frontend Engineer",
-      "company": "Gensler",
-      "period": "Jul 2022 - Sep 2024",
-      "achievements": [
-        "Delivered enterprise UIs with React, Angular, Vue, Next.js, and Styled Components.",
-        "Integrated REST and GraphQL with automated testing (Jest, RTL, Playwright).",
-        "Partnered with design to ship responsive, accessible interfaces from Figma."
-      ]
-    },
-    {
-      "role": "Frontend Engineer",
-      "company": "Cigna Express Scripts",
-      "period": "May 2021 - Apr 2022",
-      "achievements": [
-        "Built interactive pharmacy workflows with React, TypeScript, HTML5, and CSS3.",
-        "Integrated secure REST APIs with JWT/OAuth and strong validation.",
-        "Improved load times with modular components and optimized rendering."
-      ]
-    },
-    {
-      "role": "Frontend Engineer",
-      "company": "Atmiya Care Charity",
-      "period": "Sep 2020 - May 2021",
-      "achievements": [
-        "Shipped responsive web apps with React, HTML, CSS, and JavaScript.",
-        "Integrated RESTful APIs for dynamic content and consistent workflows.",
-        "Worked in Agile/SCRUM with code reviews and documentation."
-      ]
-    }
-  ],
-  "expertise": [
-    {
-      "label": "Front-End Development",
-      "description": "Deep experience with React, Angular, Vue, and Next.js—TypeScript-first development, design systems, and polished UIs from healthcare to live events and enterprise."
-    },
-    {
-      "label": "Accessibility & APIs",
-      "description": "WCAG 2.1 AA remediation, inclusive UI patterns, and reliable REST/GraphQL integration with secure auth (JWT, OAuth) and performant client-side data flows."
-    },
-    {
-      "label": "Quality & Delivery",
-      "description": "Jest, React Testing Library, Cypress, and Playwright; GitHub Actions, Jenkins, Docker, and AWS in CI/CD pipelines for repeatable, observable releases."
-    }
-  ],
-  "stack": [
-    { "label": "React", "level": 95 },
-    { "label": "Next.js", "level": 88 },
-    { "label": "Angular", "level": 85 },
-    { "label": "TypeScript", "level": 90 },
-    { "label": "Vue.js", "level": 78 }
-  ]
+  }
 }

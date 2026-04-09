@@ -15,7 +15,7 @@ export function ThemeProvider({ children }) {
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.setAttribute('data-theme', 'dark')
-      import('../css/LandingPage.dark.css').catch(() => {})
+      import('../pages/LandingPage/LandingPage.dark.css').catch(() => {})
     } else {
       document.documentElement.removeAttribute('data-theme')
     }

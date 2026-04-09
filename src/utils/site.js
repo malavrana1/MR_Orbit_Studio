@@ -2,7 +2,7 @@ import site from '../data/site.json'
 
 export const getSiteInfo = () => site
 
-export const DEFAULT_NAV = {
+const DEFAULT_NAV = {
   links: [
     { label: 'Home', href: '#home' },
     { label: 'Summary', href: '#summary' },
