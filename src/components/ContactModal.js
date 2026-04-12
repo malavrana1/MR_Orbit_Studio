@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Modal, Button, Form } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import analyticsService from '../services/analytics'
 
 const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
+  const { t } = useTranslation()
   const [contactName, setContactName] = useState('')
   const [contactEmail, setContactEmail] = useState('')
   const [contactPhone, setContactPhone] = useState('')
@@ -16,7 +18,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
 
   useEffect(() => {
     if (show) {
-      analyticsService.trackContactForm('modal_opened')
+      analyticsService.trackContactForm()
       setSendError('')
       setSendSuccess(false)
       setValidationErrors({})
@@ -51,25 +53,25 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
     const errors = {}
 
     if (!contactEmail || contactEmail.trim() === '') {
-      errors.email = 'Email is required.'
+      errors.email = t('contact.validation.emailRequired')
     } else if (!validateEmail(contactEmail.trim())) {
-      errors.email = 'Please enter a valid email address.'
+      errors.email = t('contact.validation.emailInvalid')
     }
 
     if (!contactSubject || contactSubject.trim() === '') {
-      errors.subject = 'Subject is required.'
+      errors.subject = t('contact.validation.subjectRequired')
     }
 
     if (!contactMessage || contactMessage.trim() === '') {
-      errors.message = 'Message is required.'
+      errors.message = t('contact.validation.messageRequired')
     } else if (contactMessage.trim().length < 10) {
-      errors.message = 'Message must be at least 10 characters long.'
+      errors.message = t('contact.validation.messageMin')
     } else if (contactMessage.trim().length > 5000) {
-      errors.message = 'Message must be less than 5000 characters.'
+      errors.message = t('contact.validation.messageMax')
     }
 
     if (contactName && contactName.trim().length > 100) {
-      errors.name = 'Name must be less than 100 characters.'
+      errors.name = t('contact.validation.nameMax')
     }
 
     if (
@@ -77,11 +79,11 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
       contactPhone.trim() !== '' &&
       !validatePhone(contactPhone.trim())
     ) {
-      errors.phone = 'Please enter a valid phone number.'
+      errors.phone = t('contact.validation.phoneInvalid')
     }
 
     if (contactCompany && contactCompany.trim().length > 100) {
-      errors.company = 'Company name must be less than 100 characters.'
+      errors.company = t('contact.validation.companyMax')
     }
 
     setValidationErrors(errors)
@@ -101,10 +103,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
     }
 
     setIsSending(true)
-    analyticsService.trackContactForm('form_submitted', {
-      has_name: !!contactName,
-      message_length: contactMessage.length,
-    })
+    analyticsService.trackContactForm()
 
     try {
       const response = await fetch(
@@ -144,13 +143,10 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
       setContactMessage('')
       setValidationErrors({})
 
-      analyticsService.trackContactForm('form_success', {
-        has_name: !!contactName,
-        message_length: contactMessage.length,
-      })
+      analyticsService.trackContactForm()
     } catch (err) {
-      setSendError('Could not send your message. Please try again.')
-      analyticsService.trackContactForm('form_error', { error: err.message })
+      setSendError(t('contact.sendError'))
+      analyticsService.trackContactForm()
     } finally {
       setIsSending(false)
     }
@@ -162,24 +158,17 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
   }
 
   const handleExited = () => {
-    setTimeout(() => {
-      const activeModals = document.querySelectorAll('.modal.show')
-      if (activeModals.length === 0) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (document.querySelector('.modal.show')) return
         document.body.classList.remove('modal-open')
-        document.body.style.overflow = ''
-        document.body.style.paddingRight = ''
-        const backdrops = Array.from(
-          document.querySelectorAll('.modal-backdrop'),
-        )
-        backdrops.forEach((backdrop) => {
-          if (backdrop.isConnected) {
-            try {
-              backdrop.remove()
-            } catch (e) {}
-          }
+        document.body.style.removeProperty('overflow')
+        document.body.style.removeProperty('padding-right')
+        document.querySelectorAll('.modal-backdrop').forEach((node) => {
+          node.remove()
         })
-      }
-    }, 100)
+      })
+    })
   }
 
   return (
@@ -189,19 +178,17 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
       onExited={handleExited}
       centered
       className="contact-modal-custom"
-      backdrop={true}
-      keyboard={true}
     >
       <Modal.Header closeButton className="contact-modal-header">
-        <Modal.Title className="contact-modal-title">Get in Touch</Modal.Title>
+        <Modal.Title className="contact-modal-title">{t('contact.title')}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         {sendSuccess && (
           <div className="contact-form-success" role="alert">
             <div className="success-icon">✓</div>
             <div className="success-content">
-              <h5>Message Sent Successfully!</h5>
-              <p>Thanks for reaching out. I'll get back to you soon.</p>
+              <h5>{t('contact.successTitle')}</h5>
+              <p>{t('contact.successBody')}</p>
             </div>
           </div>
         )}
@@ -209,7 +196,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
           <div className="contact-form-error" role="alert">
             <div className="error-icon">!</div>
             <div className="error-content">
-              <h5>Oops! Something went wrong</h5>
+              <h5>{t('contact.errorTitle')}</h5>
               <p>{sendError}</p>
             </div>
           </div>
@@ -217,10 +204,10 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
         {!sendSuccess && (
           <Form onSubmit={handleSendEmail} id="contact-form">
             <Form.Group className="mb-3" controlId="contactName">
-              <Form.Label>Your name</Form.Label>
+              <Form.Label>{t('contact.nameLabel')}</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="What should I call you?"
+                placeholder={t('contact.namePlaceholder')}
                 value={contactName}
                 onChange={(e) => {
                   setContactName(e.target.value)
@@ -237,11 +224,11 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactEmail">
               <Form.Label>
-                Your email <span style={{ color: 'red' }}>*</span>
+                {t('contact.emailLabel')} <span style={{ color: 'red' }}>*</span>
               </Form.Label>
               <Form.Control
                 type="email"
-                placeholder="you@example.com"
+                placeholder={t('contact.emailPlaceholder')}
                 value={contactEmail}
                 onChange={(e) => {
                   setContactEmail(e.target.value)
@@ -258,10 +245,10 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactPhone">
-              <Form.Label>Your phone number</Form.Label>
+              <Form.Label>{t('contact.phoneLabel')}</Form.Label>
               <Form.Control
                 type="tel"
-                placeholder="+1 (555) 123-4567"
+                placeholder={t('contact.phonePlaceholder')}
                 value={contactPhone}
                 onChange={(e) => {
                   setContactPhone(e.target.value)
@@ -277,10 +264,10 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactCompany">
-              <Form.Label>Company</Form.Label>
+              <Form.Label>{t('contact.companyLabel')}</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Your company or organization"
+                placeholder={t('contact.companyPlaceholder')}
                 value={contactCompany}
                 onChange={(e) => {
                   setContactCompany(e.target.value)
@@ -297,7 +284,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactSubject">
               <Form.Label>
-                Subject <span style={{ color: 'red' }}>*</span>
+                {t('contact.subjectLabel')} <span style={{ color: 'red' }}>*</span>
               </Form.Label>
               <Form.Control
                 as="select"
@@ -312,12 +299,12 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
                 disabled={isSending}
                 required
               >
-                <option value="">Select a subject</option>
-                <option value="Job Opportunity">Job Opportunity</option>
-                <option value="Project Inquiry">Project Inquiry</option>
-                <option value="Collaboration">Collaboration</option>
-                <option value="General Question">General Question</option>
-                <option value="Other">Other</option>
+                <option value="">{t('contact.selectSubject')}</option>
+                <option value="Job Opportunity">{t('contact.subjectJob')}</option>
+                <option value="Project Inquiry">{t('contact.subjectProject')}</option>
+                <option value="Collaboration">{t('contact.subjectCollab')}</option>
+                <option value="General Question">{t('contact.subjectGeneral')}</option>
+                <option value="Other">{t('contact.subjectOther')}</option>
               </Form.Control>
               <Form.Control.Feedback type="invalid">
                 {validationErrors.subject}
@@ -325,12 +312,12 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
             </Form.Group>
             <Form.Group className="mb-0" controlId="contactMessage">
               <Form.Label>
-                Message <span style={{ color: 'red' }}>*</span>
+                {t('contact.messageLabel')} <span style={{ color: 'red' }}>*</span>
               </Form.Label>
               <Form.Control
                 as="textarea"
                 rows={4}
-                placeholder="Hi Malav, I'd love to connect about…"
+                placeholder={t('contact.messagePlaceholder')}
                 value={contactMessage}
                 onChange={(e) => {
                   setContactMessage(e.target.value)
@@ -354,28 +341,24 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
           <Button
             variant="primary"
             onClick={() => {
-              analyticsService.trackContactForm('modal_closed', {
-                action: 'close_after_success',
-              })
+              analyticsService.trackContactForm()
               handleClose()
             }}
             className="w-100"
           >
-            Close
+            {t('contact.close')}
           </Button>
         ) : (
           <>
             <Button
               variant="outline-secondary"
               onClick={() => {
-                analyticsService.trackContactForm('modal_closed', {
-                  action: 'cancel',
-                })
+                analyticsService.trackContactForm()
                 handleClose()
               }}
               disabled={isSending}
             >
-              Cancel
+              {t('contact.cancel')}
             </Button>
             <Button
               variant="primary"
@@ -384,7 +367,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
               form="contact-form"
               type="submit"
             >
-              {isSending ? 'Sending…' : 'Send Message'}
+              {isSending ? t('contact.sending') : t('contact.send')}
             </Button>
           </>
         )}

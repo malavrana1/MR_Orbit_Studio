@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Orbit Studio",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Kotiin",
+    "summary": "Yhteenveto",
+    "toolkit": "Toolkit",
+    "experience": "Kokea",
+    "credentials": "Valtuustiedot",
+    "projects": "Projektit",
+    "about": "Noin",
+    "connect": "Yhdistä"
+  },
+  "theme": {
+    "lightMode": "Valotila",
+    "darkMode": "Tumma tila",
+    "switchToLight": "Vaihda valotilaan",
+    "switchToDark": "Vaihda pimeään tilaan"
+  },
+  "header": {
+    "toggleMenu": "Vaihda valikkoa",
+    "language": "Kieli"
+  },
+  "hero": {
+    "greeting": "Hei, olen",
+    "headlineFallback": "Frontend Engineer | Reagoi • Kulma • Vue-asiantuntija",
+    "skillCardTitle": "Tech Stack",
+    "skillCardDescription": "Tekniikat, joita käytän nykyaikaisten verkkosovellusten rakentamiseen",
+    "recentTeams": "Viimeaikainen kokemus"
+  },
+  "summary": {
+    "title": "Ammattimainen yleiskatsaus",
+    "subtitleFallback": "Nykyaikaisten verkkokokemusten rakentaminen intohimolla ja tarkkuudella",
+    "highlight1Title": "Modernit käyttöliittymäpinot",
+    "highlight1Text": "React, Angular, Next.js ja TypeScript – yritysten hallintapaneeleista paljon liikennettä palveleviin SPA-palveluihin",
+    "highlight2Title": "Joukkueen yhteistyö",
+    "highlight2Text": "Yhteistyössä suunnittelun, tuotteen ja taustajärjestelmän kanssa saavutettavien, ylläpidettävien ominaisuuksien toimittamiseksi",
+    "highlight3Title": "Laatu & toimitus",
+    "highlight3Text": "Automaattinen testaus, CI/CD ja suorituskyvyn viritys luotettavia julkaisuja varten"
+  },
+  "experience": {
+    "title": "Kokea",
+    "logoAlt": "{{company}} logo"
+  },
+  "projects": {
+    "title": "Suositellut projektit"
+  },
+  "toolkit": {
+    "title": "Tekninen työkalupakki",
+    "description": "Valitse luokka oppiaksesi, missä tuon eniten hyötyä – kehyksistä ja kielistä testaukseen ja työkaluihin.",
+    "filterAria": "Toolkit-suodatin",
+    "defaultDescription": "Taitoja, jotka pitävät työn sujuvana."
+  },
+  "credentials": {
+    "educationAndCerts": "Koulutus ja todistukset",
+    "education": "koulutus"
+  },
+  "about": {
+    "titleFallback": "Lisää minusta",
+    "whatEnjoy": "Mitä Nautin",
+    "whatLikeWork": "Mitä pidän työstä",
+    "principles": "periaatteet"
+  },
+  "connect": {
+    "title": "Yhdistetään",
+    "description": "Olen avoin uusille projekteille, yhteistyölle ja ammatillisille mahdollisuuksille. Valitse tapa tavoittaa tai tutustua ansioluettelooni ja työhöni.",
+    "resume": "Jatkaa",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Jakaa",
+    "contact": "Ota yhteyttä",
+    "shareTitle": "{{name}} - Portfolio",
+    "shareText": "Tutustu {{name}}:n portfolioon",
+    "copiedAlert": "Portfolion linkki kopioitu leikepöydälle!",
+    "resumeDownload": "Jatkaa",
+    "resumePdfTitle": "Jatka (PDF - avaa tai tallenna)",
+    "githubProfileTitle": "Näytä GitHub-profiili",
+    "linkedinProfileTitle": "Yhdistä LinkedInissä",
+    "sharePortfolioTitle": "Osakesalkku",
+    "contactFormTitle": "Yhteydenottolomake"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Kaikki oikeudet pidätetään."
+  },
+  "floating": {
+    "scrollTop": "Vieritä ylös",
+    "backToTop": "Takaisin alkuun"
+  },
+  "meta": {
+    "portfolioSuffix": "Frontend Engineer -portfolio",
+    "pageTitleSuffix": "Portfolio"
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "successTitle": "Viesti lähetetty onnistuneesti!",
+    "successBody": "Kiitos yhteydenotostasi. Palaan asiaan pian.",
+    "errorTitle": "Oho! Jotain meni pieleen",
+    "sendError": "Viestiäsi ei voitu lähettää. Yritä uudelleen.",
+    "nameLabel": "Sinun nimesi",
+    "namePlaceholder": "Mitä sinun pitäisi kutsua?",
+    "emailLabel": "Sähköpostisi",
+    "emailPlaceholder": "sinä@esimerkki.fi",
+    "phoneLabel": "Puhelinnumerosi",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Yritys",
+    "companyPlaceholder": "Yrityksesi tai organisaatiosi",
+    "subjectLabel": "Aihe",
+    "selectSubject": "Valitse aihe",
+    "subjectJob": "Työmahdollisuus",
+    "subjectProject": "Projektikysely",
+    "subjectCollab": "Yhteistyö",
+    "subjectGeneral": "Yleinen kysymys",
+    "subjectOther": "muu",
+    "messageLabel": "Viesti",
+    "messagePlaceholder": "Hei Malav, haluaisin ottaa yhteyttä…",
+    "close": "Lähellä",
+    "cancel": "Peruuttaa",
+    "sending": "Lähetetään…",
+    "send": "Lähetä Viesti",
+    "certAria": "Näytä {{name}} sertifikaatti",
+    "validation": {
+      "emailRequired": "Sähköposti vaaditaan.",
+      "emailInvalid": "Anna kelvollinen sähköpostiosoite.",
+      "subjectRequired": "Aihe vaaditaan.",
+      "messageRequired": "Viesti vaaditaan.",
+      "messageMin": "Viestin tulee olla vähintään 10 merkkiä pitkä.",
+      "messageMax": "Viestin tulee olla alle 5000 merkkiä pitkä.",
+      "nameMax": "Nimen tulee olla alle 100 merkkiä pitkä.",
+      "phoneInvalid": "Anna kelvollinen puhelinnumero.",
+      "companyMax": "Yrityksen nimen tulee olla alle 100 merkkiä pitkä."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Frontend-insinööri",
+      "summary": {
+        "0": "Frontend Engineer, jolla on yli 5 vuoden kokemus skaalautuvien, tehokkaiden ja helppokäyttöisten verkkosovellusten rakentamisesta. React-, Angular-, Next.js-, TypeScript- ja nykyaikaisten käyttöliittymäkehysten taidot. Kokenut REST- ja GraphQL-sovellusliittymien integroimisesta, monimutkaisten käyttöliittymätyönkulkujen optimoinnista, CI/CD-putkien toteuttamisesta, automaattisesta testauksesta ja saavutettavuuden vaatimustenmukaisuudesta. Yhteistyössä toimiva tiimipelaaja, joka keskittyi toimittamaan käyttäjäystävällisiä, ylläpidettäviä ohjelmistoratkaisuja useissa projekteissa."
+      }
+    },
+    "personal": {
+      "tagline": "Lisää minusta",
+      "intro": "Pidän tenniksen pelaamisesta ystävien kanssa, kriketistä, patikoinnista ja musiikin kuuntelusta. Nautin myös ruoanlaitosta, uusien asioiden kokeilemisesta ja pienten tee-se-itse-projektien tekemisestä takapihalla, kun minulla on vapaa-aikaa.",
+      "whatFuelsMe": "Tuon saman energian ja kiinnostuksen harrastuksistani rakennustuotteisiin joka päivä. Olipa kyse satunnaisesta tenniksen pelaamisesta, tee-se-itse-projektista tai koodausongelman ratkaisemisesta, nautin oppimisesta ja luomisesta.",
+      "interests": {
+        "0": "Tennis",
+        "1": "Kriketti",
+        "2": "Patikointi",
+        "3": "Musiikki",
+        "4": "Ruoanlaitto",
+        "5": "DIY-projektit"
+      },
+      "principles": {
+        "0": "Keskity siihen, mitä käyttäjät tarvitsevat",
+        "1": "Rakenna pieneksi ja testaa usein",
+        "2": "Pidä asiat yksinkertaisina ja nopeina"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Ruletti Livenä",
+        "description": "Realistinen ja interaktiivinen rulettipeli, joka on rakennettu Vue 3:lla. Pelaa virtuaalisilla pelimerkeillä, nauti sujuvasta animaatiosta ja seuraa tilastojasi. Koe kasinopelin jännitys ilman oikeaa rahaa.",
+        "cta": "Tutustu GitHubiin"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Henkilökohtainen osakemarkkinasimulaattori osakkeiden ja krypton tutkimiseen reaaliajassa. Laske voitot, tallenna skenaarioita, seuraa suosikkeja ja opi kaupankäyntistrategioita vaarantamatta oikeaa rahaa.",
+        "cta": "Tutustu GitHubiin"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "Yksisivuinen React-portfolio, joka esittelee asioita, joita rakastan rakentaa – datapohjaiset osiot, latauksen jatkaminen ja interaktiiviset työkalupakkisuodattimet.",
+        "cta": "Näytä portfolio"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Ohjelmistoinsinööri",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Helmikuu 2026 – nyt",
+        "tagline": "Terveydenhuollon teknologiatiimi rakentaa digitaalisia tuotteita kliinisiin ja operatiivisiin työnkulkuihin.",
+        "description": "Kehittää verkko-ominaisuuksia Angularilla (v19 ja vanhat versiot) korostaen uudelleenkäytettävää käyttöliittymää, REST- ja GraphQL-integraatioita sekä Docker-pohjaista CI/CD:tä johdonmukaisia ​​koontiversioita ja julkaisuja varten.",
+        "highlights": {
+          "0": "Rakentaa uudelleenkäytettäviä, helppokäyttöisiä käyttöliittymäkomponentteja optimoidulla renderöinnillä kaikilla laitteilla ja selaimilla.",
+          "1": "Suorittaa esteettömyystarkastuksia, sulkee WCAG 2.1 AA -aukot ja parantaa käytettävyyttä kaikille käyttäjille.",
+          "2": "Integroi REST- ja GraphQL-sovellusliittymät solid-state-hallintaan ja virheiden käsittelyyn moduulien välillä.",
+          "3": "Ylläpitää telakoituja kehitys-, testaus- ja käyttöönottoputkia sujuvaa CI/CD-työnkulkua varten."
+        }
+      },
+      "1": {
+        "role": "Frontend-insinööri",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Syyskuu 2024 – tammikuu 2026",
+        "tagline": "Kiswe tarjoaa live-interaktiivisia kokemuksia urheilu-, media- ja yritysbrändeille.",
+        "description": "Toimitetaan paljon liikennettä tuottavia yksisivuisia sovelluksia, joissa on React, Vue, TypeScript ja Tailwind – keskittyen skaalautuviin komponentteihin, API-integraatioon, suorituskykyyn ja saavutettavuuteen.",
+        "highlights": {
+          "0": "Kehitetty SPA:t React, Vue, TypeScript ja Tailwind kanssa skaalautuvan komponenttiarkkitehtuurin avulla.",
+          "1": "Integroidut REST- ja GraphQL-sovellusliittymät välimuistin ja tilanhallinnan kanssa; parannettu reagointikyky ja vähennetty käyttöliittymävirheitä.",
+          "2": "Sovellettu koodin jakaminen, laiska lataus ja puiden ravistaminen suurten sovellusten nopeampaa lataamista varten.",
+          "3": "Huippuluokan koodin tarkistukset, virheenkorjaukset ja WCAG-yhteneväiset laitteiden väliset kokemukset."
+        }
+      },
+      "2": {
+        "role": "Frontend-insinööri",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Heinäkuu 2022 – syyskuu 2024",
+        "tagline": "Globaali arkkitehtuuri- ja suunnittelutoimisto, joka toimittaa yrityksille digitaalisia työkaluja ja asiakaskokemuksia.",
+        "description": "Rakennetut yrityskäyttöliittymät, joissa on React, Angular, Vue ja Next.js – yhdistävät asynkroniset REST/GraphQL-tiedot automaattisiin testeihin ja tiiviiseen suunnitteluyhteistyöhön.",
+        "highlights": {
+          "0": "Toimitetaan kojelaudat ja käyttöliittymäkomponentit React-, Angular-, Vue-, Next.js- ja Styled-komponenteilla.",
+          "1": "Integroitu REST ja GraphQL asynkronisilla päivityksillä ja interaktiivisilla ominaisuuksilla.",
+          "2": "Uusittu vanha koodi, parannettu suorituskyky ja laajennettu Jest-, RTL- ja Playwright-kattavuus.",
+          "3": "Käänsi Figma-suunnitelmat responsiivisiksi, helppopääsyisiksi, tuotantovalmiiksi käyttöliittymiksi."
+        }
+      },
+      "3": {
+        "role": "Frontend-insinööri",
+        "company": "Cigna Express -skriptit",
+        "location": "Franklin Lakes, NJ",
+        "period": "Toukokuu 2021 – Huhtikuu 2022",
+        "tagline": "Apteekkiedut ja digitaaliset terveydenhuollon ratkaisut jäsenille ja potilaille.",
+        "description": "Sisäänrakennetut vuorovaikutteiset apteekkien kassavirrat Reactissa ja TypeScriptissä suojatulla API-integraatiolla, modulaarisilla komponenteilla ja vahvalla automatisoidulla testikatolla.",
+        "highlights": {
+          "0": "Paranneltu kassatehtävien suorittaminen Reactin, TypeScriptin, HTML5:n ja CSS3:n avulla.",
+          "1": "Integroidut suojatut REST API:t, joissa on JWT/OAuth, validointi ja tehokas virheiden käsittely.",
+          "2": "Lyhennetyt sivun latausajat modulaaristen komponenttien ja optimoidun asiakaspuolen renderöinnin ansiosta.",
+          "3": "Yhteistyötä eri tiimien välillä nopean ja helppokäyttöisen käyttöliittymän toimittamiseksi."
+        }
+      },
+      "4": {
+        "role": "Frontend-insinööri",
+        "company": "Atmiya Care hyväntekeväisyysjärjestö",
+        "location": "Parsippany, NJ",
+        "period": "Syyskuu 2020 – toukokuu 2021",
+        "tagline": "Voittoa tavoittelemattomat yhteisöt ja hyväntekeväisyyshankkeet.",
+        "description": "Toimitetaan responsiivisia, WCAG-mielisiä verkkosovelluksia, joissa on uudelleenkäytettäviä komponentteja, REST-integraatioita ja ketterä toimitus.",
+        "highlights": {
+          "0": "Rakennettiin WCAG-suuntautuneita kokemuksia Reactin, HTML:n, CSS:n ja JavaScriptin kanssa.",
+          "1": "Luotiin uudelleenkäytettäviä komponentteja ja modulaarisia käyttöliittymämalleja ylläpidettävyyden takaamiseksi.",
+          "2": "Integroidut RESTful API:t dynaamiseen sisältöön ja johdonmukaisiin asiakastyönkulkuihin.",
+          "3": "Osallistui Agile/SCRUM-ohjelmaan, kooditarkistuksiin ja dokumentointiin."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Tietojenkäsittelytieteen kandidaatti",
+        "institution": "Montclairin osavaltion yliopisto",
+        "location": "Montclair, NJ",
+        "period": "2016-2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Käytännön kokemus React.js-, Next.js-, Angular- ja Vue.js-palveluista TypeScriptillä, modernilla CSS:llä (Tailwind, Styled Components, CSS-moduulit) ja responsiivisella suunnittelulla. Mukava Figma-hankkeiden vaihdosta Webpackin, Viten ja Babelin tuotantoversioihin.",
+      "Backend___API": "Integroi REST- ja GraphQL-palvelut suojatuilla malleilla (JWT, OAuth, CORS) ja toimii Node.js-, Java- ja Spring Boot -taustaohjelmien rinnalla tietopohjaisissa käyttöliittymissä.",
+      "Testing": "Toimitetaan luottavaisin mielin käyttämällä Jest-, React Testing Library-, Cypress- ja Playwright-yksikköjä, integraatiota ja päästä päähän -kattavuutta julkaisupolun automatisoinnilla.",
+      "Database": "Toimii relaatio- ja dokumenttitietovarastojen (MySQL, PostgreSQL, MongoDB, Redis) ja SQL:n kanssa skeematietoisten ominaisuuksien ja tehokkaiden kyselyiden kanssa.",
+      "DevOps___Tools": "Käyttää Gitiä, GitHub Actionsia, Jenkinsiä, Dockeria ja AWS:ää CI/CD-putkissa valvonnan, ESLintin ja Prettierin kanssa johdonmukaisen ja havaittavan toimituksen varmistamiseksi.",
+      "Concepts": "Sovelletaan WCAG 2.1 AA:n saavutettavuuden, suorituskyvyn ja turvallisuuden parhaita käytäntöjä, ketterää/SCRUM-yhteistyötä ja vankkaa suunnittelun perusteita (virheenkorjaus, OOP, suunnittelumallit)."
+    },
+    "skillCategory": {
+      "Frontend": "Käyttöliittymä",
+      "Backend___API": "Taustajärjestelmä / API",
+      "Testing": "Testaus",
+      "Database": "Tietokanta",
+      "DevOps___Tools": "DevOps / Työkalut",
+      "Concepts": "Käsitteet"
+    }
+  }
+}

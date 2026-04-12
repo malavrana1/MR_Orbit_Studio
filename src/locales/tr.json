@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Yörünge Stüdyosu",
+    "copyrightOwner": "MR Orbit Stüdyosu"
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "summary": "Özet",
+    "toolkit": "Araçlar",
+    "experience": "Deneyim",
+    "credentials": "Belgeler",
+    "projects": "Projeler",
+    "about": "Hakkımda",
+    "connect": "İletişim"
+  },
+  "theme": {
+    "lightMode": "Açık tema",
+    "darkMode": "Koyu tema",
+    "switchToLight": "Açık temaya geç",
+    "switchToDark": "Koyu temaya geç"
+  },
+  "header": {
+    "toggleMenu": "Menüyü aç/kapat",
+    "language": "Dil"
+  },
+  "hero": {
+    "greeting": "Merhaba, ben",
+    "headlineFallback": "Frontend mühendisi | React • Angular • Vue",
+    "skillCardTitle": "Teknoloji yığını",
+    "skillCardDescription": "Modern web uygulamaları için kullandığım teknolojiler",
+    "recentTeams": "Son deneyim"
+  },
+  "summary": {
+    "title": "Profesyonel özet",
+    "subtitleFallback": "Tutku ve hassasiyetle modern web deneyimleri",
+    "highlight1Title": "Modern frontend yığınları",
+    "highlight1Text": "React, Angular, Next.js ve TypeScript — kurumsal panellerden yoğun SPA'lara",
+    "highlight2Title": "Takım işbirliği",
+    "highlight2Text": "Tasarım, ürün ve backend ile erişilebilir, sürdürülebilir özellikler",
+    "highlight3Title": "Kalite ve teslimat",
+    "highlight3Text": "Otomatik test, CI/CD ve performans ile güvenilir sürümler"
+  },
+  "experience": {
+    "title": "Deneyim",
+    "logoAlt": "{{company}} logosu"
+  },
+  "projects": {
+    "title": "Öne çıkan projeler"
+  },
+  "toolkit": {
+    "title": "Teknik araç seti",
+    "description": "En çok katkı sağladığım alanı görmek için bir kategori seçin — çerçeveler, diller, testler ve araçlar.",
+    "filterAria": "Araç seti filtresi",
+    "defaultDescription": "İşi akıcı tutan beceriler."
+  },
+  "credentials": {
+    "educationAndCerts": "Eğitim ve sertifikalar",
+    "education": "Eğitim"
+  },
+  "about": {
+    "titleFallback": "Hakkımda daha fazla",
+    "whatEnjoy": "Hoşlandığım şeyler",
+    "whatLikeWork": "İşte hoşlandığım şeyler",
+    "principles": "İlkeler"
+  },
+  "connect": {
+    "title": "İletişime geçin",
+    "description": "Yeni projeler, işbirliği ve fırsatlara açığım. Nasıl ulaşacağınızı seçin veya özgeçmişime ve işlerime göz atın.",
+    "resume": "Özgeçmiş",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Paylaş",
+    "contact": "İletişim",
+    "shareTitle": "{{name}} - Portföy",
+    "shareText": "{{name}} portföyüne göz atın",
+    "copiedAlert": "Portföy bağlantısı panoya kopyalandı!",
+    "resumeDownload": "Sürdürmek",
+    "resumePdfTitle": "Devam ettir (PDF — açın veya kaydedin)",
+    "githubProfileTitle": "GitHub profilini görüntüle",
+    "linkedinProfileTitle": "LinkedIn'e bağlanın",
+    "sharePortfolioTitle": "Portföyü paylaş",
+    "contactFormTitle": "İletişim formu"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Tüm hakları saklıdır."
+  },
+  "floating": {
+    "scrollTop": "Yukarı kaydır",
+    "backToTop": "Başa dön"
+  },
+  "meta": {
+    "portfolioSuffix": "Frontend mühendisi portföyü",
+    "pageTitleSuffix": "Portföy"
+  },
+  "contact": {
+    "title": "İletişim",
+    "successTitle": "Mesaj gönderildi!",
+    "successBody": "Teşekkürler, en kısa sürede dönüş yapacağım.",
+    "errorTitle": "Bir şeyler ters gitti",
+    "sendError": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+    "nameLabel": "Adınız",
+    "namePlaceholder": "Size nasıl hitap edeyim?",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "siz@ornek.com",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+90 555 000 00 00",
+    "companyLabel": "Şirket",
+    "companyPlaceholder": "Şirketiniz veya kurumunuz",
+    "subjectLabel": "Konu",
+    "selectSubject": "Konu seçin",
+    "subjectJob": "İş fırsatı",
+    "subjectProject": "Proje talebi",
+    "subjectCollab": "İşbirliği",
+    "subjectGeneral": "Genel soru",
+    "subjectOther": "Diğer",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Merhaba Malav, şunu konuşmak istiyorum…",
+    "close": "Kapat",
+    "cancel": "İptal",
+    "sending": "Gönderiliyor…",
+    "send": "Mesaj gönder",
+    "certAria": "{{name}} sertifikasını görüntüle",
+    "validation": {
+      "emailRequired": "E-posta gerekli.",
+      "emailInvalid": "Geçerli bir e-posta girin.",
+      "subjectRequired": "Konu gerekli.",
+      "messageRequired": "Mesaj gerekli.",
+      "messageMin": "Mesaj en az 10 karakter olmalı.",
+      "messageMax": "Mesaj 5000 karakterden kısa olmalı.",
+      "nameMax": "Ad 100 karakterden kısa olmalı.",
+      "phoneInvalid": "Geçerli bir telefon numarası girin.",
+      "companyMax": "Şirket adı 100 karakterden kısa olmalı."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Ön Uç Mühendisi",
+      "summary": {
+        "0": "Ölçeklenebilir, yüksek performanslı ve erişilebilir web uygulamaları oluşturmada 5 yıldan fazla deneyime sahip Ön Uç Mühendisi. React, Angular, Next.js, TypeScript ve modern ön uç çerçeveleri konusunda uzman. REST ve GraphQL API'lerini entegre etme, karmaşık kullanıcı arayüzü iş akışlarını optimize etme, CI/CD ardışık düzenlerini uygulama, otomatik test ve erişilebilirlik uyumluluğu konusunda deneyimli. İşbirlikçi ekip oyuncusu, birden fazla projede kullanıcı dostu, bakımı kolay yazılım çözümleri sunmaya odaklandı."
+      }
+    },
+    "personal": {
+      "tagline": "Hakkımda daha fazla bilgi",
+      "intro": "Arkadaşlarımla tenis oynamayı, kriket oynamayı, yürüyüş yapmayı ve müzik dinlemeyi seviyorum. Ayrıca boş zamanım olduğunda yemek yapmayı, yeni şeyler denemeyi ve arka bahçede küçük DIY projeleri yapmayı da seviyorum.",
+      "whatFuelsMe": "Hobilerimden gelen aynı enerji ve ilgiyi her gün yapı ürünlerine taşıyorum. Ara sıra tenis oynamak, bir Kendin Yap projesi ya da bir kodlama problemini çözmek olsun, öğrenmekten ve yaratmaktan keyif alıyorum.",
+      "interests": {
+        "0": "Tenis",
+        "1": "Kriket",
+        "2": "Doğa yürüyüşü",
+        "3": "Müzik",
+        "4": "Yemek pişirmek",
+        "5": "Kendin Yap Projeleri"
+      },
+      "principles": {
+        "0": "Kullanıcıların neye ihtiyacı olduğuna odaklanın",
+        "1": "Küçük oluşturun ve sık sık test edin",
+        "2": "İşleri basit ve hızlı tutun"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Rulet Canlı",
+        "description": "Vue 3 ile oluşturulmuş gerçekçi ve etkileşimli bir rulet oyunu. Sanal çiplerle oynayın, akıcı animasyonların keyfini çıkarın ve istatistiklerinizi takip edin. Hiçbir gerçek paraya ihtiyaç duymadan bir casino oyununun heyecanını yaşayın.",
+        "cta": "GitHub'da keşfedin"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Hisse senetlerini ve kriptoyu gerçek zamanlı olarak keşfetmek için kişisel bir borsa simülatörü. Gerçek parayı riske atmadan karları hesaplayın, senaryoları kaydedin, favorileri takip edin ve ticaret stratejilerini öğrenin.",
+        "cta": "GitHub'da keşfedin"
+      },
+      "2": {
+        "title": "MR Orbit Stüdyosu",
+        "description": "Veriye dayalı bölümler, özgeçmiş indirme ve etkileşimli araç seti filtreleri gibi oluşturmayı sevdiğim şeyleri gösteren tek sayfalı React portföyü.",
+        "cta": "Portfolyoyu görüntüle"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Yazılım Mühendisi",
+        "company": "Füzyon Sağlığı",
+        "location": "Woodbridge, New Jersey",
+        "period": "Şubat 2026 — Şu Anda",
+        "tagline": "Sağlık hizmetleri teknolojisi ekibi, klinik ve operasyonel iş akışları için dijital ürünler geliştiriyor.",
+        "description": "Tutarlı derlemeler ve sürümler için yeniden kullanılabilir erişilebilir kullanıcı arayüzü, REST ve GraphQL entegrasyonlarını ve Docker tabanlı CI/CD'yi vurgulayarak Angular (v19 ve eski) ile web özellikleri geliştirir.",
+        "highlights": {
+          "0": "Cihazlar ve tarayıcılar arasında optimize edilmiş işlemeyle yeniden kullanılabilir, erişilebilir kullanıcı arayüzü bileşenleri oluşturur.",
+          "1": "Erişilebilirlik denetimleri gerçekleştirir, WCAG 2.1 AA açıklarını kapatır ve tüm kullanıcılar için kullanılabilirliği artırır.",
+          "2": "REST ve GraphQL API'lerini katı hal yönetimi ve modüller arasında hata işleme ile entegre eder.",
+          "3": "Sorunsuz CI/CD iş akışları için Dockerlaştırılmış geliştirme, test ve dağıtım işlem hatlarını korur."
+        }
+      },
+      "1": {
+        "role": "Ön Uç Mühendisi",
+        "company": "Kiswe",
+        "location": "Zirve, New Jersey",
+        "period": "Eylül 2024 – Ocak 2026",
+        "tagline": "Kiswe; spor, medya ve kurumsal markalar için canlı etkileşimli deneyimlere güç veriyor.",
+        "description": "Ölçeklenebilir bileşenlere, API entegrasyonuna, performansa ve erişilebilirliğe odaklanarak React, Vue, TypeScript ve Tailwind ile yüksek trafikli tek sayfalı uygulamalar sunuldu.",
+        "highlights": {
+          "0": "Ölçeklenebilir bileşen mimarisini kullanarak React, Vue, TypeScript ve Tailwind ile SPA'lar geliştirildi.",
+          "1": "Önbelleğe alma ve durum yönetimine sahip entegre REST ve GraphQL API'leri; yanıt verme hızı iyileştirildi ve ön uç hataları azaltıldı.",
+          "2": "Büyük uygulamaların daha hızlı yüklenmesi için kod bölme, yavaş yükleme ve ağaç sallama uygulandı.",
+          "3": "Desteklenen kod incelemeleri, hata ayıklama ve WCAG uyumlu, cihazlar arası deneyimler."
+        }
+      },
+      "2": {
+        "role": "Ön Uç Mühendisi",
+        "company": "Gensler",
+        "location": "Morristown, New Jersey",
+        "period": "Temmuz 2022 – Eylül 2024",
+        "tagline": "Kurumsal dijital araçlar ve müşteri deneyimleri sunan küresel mimari ve tasarım firması.",
+        "description": "React, Angular, Vue ve Next.js ile kurumsal kullanıcı arayüzleri oluşturuldu; eşzamansız REST/GraphQL verilerini otomatik testlerle ve yakın tasarım işbirliğiyle eşleştirin.",
+        "highlights": {
+          "0": "React, Angular, Vue, Next.js ve Styled Components içeren kontrol panelleri ve kullanıcı arayüzü bileşenleri gönderildi.",
+          "1": "Eşzamansız güncellemeler ve etkileşimli özelliklerle entegre REST ve GraphQL.",
+          "2": "Eski kod yeniden düzenlendi, performans iyileştirildi ve Jest, RTL ve Playwright kapsamı genişletildi.",
+          "3": "Figma tasarımlarını duyarlı, erişilebilir, üretime hazır arayüzlere dönüştürdü."
+        }
+      },
+      "3": {
+        "role": "Ön Uç Mühendisi",
+        "company": "Cigna Ekspres Komut Dosyaları",
+        "location": "Franklin Gölleri, New Jersey",
+        "period": "Mayıs 2021 – Nisan 2022",
+        "tagline": "Üyeler ve hastalar için eczane avantajları ve dijital sağlık çözümleri.",
+        "description": "Güvenli API entegrasyonu, modüler bileşenler ve güçlü otomatik test kapsamı ile React ve TypeScript'te yerleşik etkileşimli eczane ödeme akışları.",
+        "highlights": {
+          "0": "React, TypeScript, HTML5 ve CSS3 ile iyileştirilmiş ödeme görevi tamamlama.",
+          "1": "JWT/OAuth, doğrulama ve güçlü hata işleme özelliklerine sahip entegre güvenli REST API'leri.",
+          "2": "Modüler bileşenler ve optimize edilmiş istemci tarafı işleme sayesinde azaltılmış sayfa yükleme süreleri.",
+          "3": "Hızlı yanıt veren, erişilebilir kullanıcı arayüzü sunumu için ekipler arasında işbirliği yapıldı."
+        }
+      },
+      "4": {
+        "role": "Ön Uç Mühendisi",
+        "company": "Atmiya Bakım Yardımı",
+        "location": "Parsippany, New Jersey",
+        "period": "Eylül 2020 – Mayıs 2021",
+        "tagline": "Kâr amacı gütmeyen topluluk sosyal yardımları ve hayırsever girişimler.",
+        "description": "Yeniden kullanılabilir bileşenlere, REST entegrasyonlarına ve Çevik teslimata sahip, duyarlı, WCAG odaklı web uygulamaları teslim edildi.",
+        "highlights": {
+          "0": "React, HTML, CSS ve JavaScript ile WCAG odaklı deneyimler oluşturuldu.",
+          "1": "Bakım kolaylığı için yeniden kullanılabilir bileşenler ve modüler kullanıcı arayüzü modelleri oluşturuldu.",
+          "2": "Dinamik içerik ve tutarlı istemci iş akışları için entegre RESTful API'ler.",
+          "3": "Agile/SCRUM, kod incelemeleri ve dokümantasyona katıldım."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Bilgisayar Bilimleri Bilim Lisansı",
+        "institution": "Montclair Eyalet Üniversitesi",
+        "location": "Montclair, New Jersey",
+        "period": "2016 — 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules) ve duyarlı tasarım ile React.js, Next.js, Angular ve Vue.js'de uygulamalı deneyim. Webpack, Vite ve Babel ile üretim yapıları boyunca Figma aktarımından rahat.",
+      "Backend___API": "REST ve GraphQL hizmetlerini JWT, OAuth, CORS gibi güvenli kalıplarla entegre eder ve veri odaklı kullanıcı arayüzleri için Node.js, Java ve Spring Boot arka uçlarıyla birlikte çalışır.",
+      "Testing": "Yayın yolunda otomasyon ile birim, entegrasyon ve uçtan uca kapsam genelinde Jest, React Testing Library, Cypress ve Playwright kullanılarak güvenle gönderilir.",
+      "Database": "Şemaya duyarlı özellikler ve performanslı sorgular için ilişkisel ve belge veri depoları (MySQL, PostgreSQL, MongoDB, Redis) ve SQL ile çalışır.",
+      "DevOps___Tools": "Tutarlı, gözlemlenebilir teslimat için izleme, ESLint ve Prettier ile CI/CD işlem hatlarında Git, GitHub Actions, Jenkins, Docker ve AWS'yi kullanır.",
+      "Concepts": "WCAG 2.1 AA erişilebilirliği, performans ve güvenlik en iyi uygulamalarını, Çevik/SCRUM işbirliğini ve sağlam mühendislik temellerini (hata ayıklama, OOP, tasarım modelleri) uygular."
+    },
+    "skillCategory": {
+      "Frontend": "Başlangıç ​​aşaması",
+      "Backend___API": "Arka uç / API",
+      "Testing": "Test",
+      "Database": "Veritabanı",
+      "DevOps___Tools": "DevOps / Araçlar",
+      "Concepts": "Kavramlar"
+    }
+  }
+}

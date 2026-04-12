@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Orbit Studio",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Home",
+    "summary": "Summary",
+    "toolkit": "Toolkit",
+    "experience": "Experience",
+    "credentials": "Credentials",
+    "projects": "Projects",
+    "about": "About",
+    "connect": "Connect"
+  },
+  "theme": {
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "header": {
+    "toggleMenu": "Toggle menu",
+    "language": "Language"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "headlineFallback": "Frontend Engineer | React • Angular • Vue Specialist",
+    "skillCardTitle": "Tech Stack",
+    "skillCardDescription": "Technologies I use to build modern web applications",
+    "recentTeams": "Recent Experience"
+  },
+  "summary": {
+    "title": "Professional Overview",
+    "subtitleFallback": "Building modern web experiences with passion and precision",
+    "highlight1Title": "Modern frontend stacks",
+    "highlight1Text": "React, Angular, Next.js, and TypeScript—from enterprise dashboards to high-traffic SPAs",
+    "highlight2Title": "Team collaboration",
+    "highlight2Text": "Partnering with design, product, and backend to ship accessible, maintainable features",
+    "highlight3Title": "Quality & delivery",
+    "highlight3Text": "Automated testing, CI/CD, and performance tuning for reliable releases"
+  },
+  "experience": {
+    "title": "Experience",
+    "logoAlt": "{{company}} logo"
+  },
+  "projects": {
+    "title": "Featured Projects"
+  },
+  "toolkit": {
+    "title": "Technical toolkit",
+    "description": "Pick a category to learn where I bring the most leverage—from frameworks and languages to testing and tooling.",
+    "filterAria": "Toolkit filter",
+    "defaultDescription": "Skills that keep the work flowing smoothly."
+  },
+  "credentials": {
+    "educationAndCerts": "Education & Certifications",
+    "education": "Education"
+  },
+  "about": {
+    "titleFallback": "More about me",
+    "whatEnjoy": "What I Enjoy",
+    "whatLikeWork": "What I Like About Work",
+    "principles": "Principles"
+  },
+  "connect": {
+    "title": "Let's Connect",
+    "description": "I'm open to new projects, collaboration, and professional opportunities. Pick a way to reach out or explore my resume and work.",
+    "resume": "Resume",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Share",
+    "contact": "Contact",
+    "shareTitle": "{{name}} - Portfolio",
+    "shareText": "Check out {{name}}'s portfolio",
+    "copiedAlert": "Portfolio link copied to clipboard!",
+    "resumeDownload": "Resume",
+    "resumePdfTitle": "Resume (PDF — open or save)",
+    "githubProfileTitle": "View GitHub profile",
+    "linkedinProfileTitle": "Connect on LinkedIn",
+    "sharePortfolioTitle": "Share portfolio",
+    "contactFormTitle": "Contact form"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. All rights reserved."
+  },
+  "floating": {
+    "scrollTop": "Scroll to top",
+    "backToTop": "Back to top"
+  },
+  "meta": {
+    "portfolioSuffix": "Frontend Engineer Portfolio",
+    "pageTitleSuffix": "Portfolio"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "successTitle": "Message Sent Successfully!",
+    "successBody": "Thanks for reaching out. I'll get back to you soon.",
+    "errorTitle": "Oops! Something went wrong",
+    "sendError": "Could not send your message. Please try again.",
+    "nameLabel": "Your name",
+    "namePlaceholder": "What should I call you?",
+    "emailLabel": "Your email",
+    "emailPlaceholder": "you@example.com",
+    "phoneLabel": "Your phone number",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Company",
+    "companyPlaceholder": "Your company or organization",
+    "subjectLabel": "Subject",
+    "selectSubject": "Select a subject",
+    "subjectJob": "Job Opportunity",
+    "subjectProject": "Project Inquiry",
+    "subjectCollab": "Collaboration",
+    "subjectGeneral": "General Question",
+    "subjectOther": "Other",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Hi Malav, I'd love to connect about…",
+    "close": "Close",
+    "cancel": "Cancel",
+    "sending": "Sending…",
+    "send": "Send Message",
+    "certAria": "View {{name}} certificate",
+    "validation": {
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "subjectRequired": "Subject is required.",
+      "messageRequired": "Message is required.",
+      "messageMin": "Message must be at least 10 characters long.",
+      "messageMax": "Message must be less than 5000 characters.",
+      "nameMax": "Name must be less than 100 characters.",
+      "phoneInvalid": "Please enter a valid phone number.",
+      "companyMax": "Company name must be less than 100 characters."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Frontend Engineer",
+      "summary": {
+        "0": "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in React, Angular, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects."
+      }
+    },
+    "personal": {
+      "tagline": "More about me",
+      "intro": "I like playing tennis with friends, cricket, hiking, and listening to music. I also enjoy cooking, trying new things, and doing small DIY projects in the backyard when I have free time.",
+      "whatFuelsMe": "I bring the same energy and interest from my hobbies to building products every day. Whether it's playing tennis occasionally, a DIY project, or solving a coding problem, I enjoy learning and creating.",
+      "interests": {
+        "0": "Tennis",
+        "1": "Cricket",
+        "2": "Hiking",
+        "3": "Music",
+        "4": "Cooking",
+        "5": "DIY Projects"
+      },
+      "principles": {
+        "0": "Focus on what users need",
+        "1": "Build small and test often",
+        "2": "Keep things simple and fast"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Roulette Live",
+        "description": "A realistic and interactive roulette game built with Vue 3. Play with virtual chips, enjoy smooth animations, and track your stats. Experience the thrill of a casino game without any real money involved.",
+        "cta": "Explore on GitHub"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "A personal stock market simulator to explore stocks and crypto in real time. Calculate profits, save scenarios, track favorites, and learn trading strategies without risking real money.",
+        "cta": "Explore on GitHub"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "Single-page React portfolio showcasing the things I love to build - data-driven sections, resume download, and interactive toolkit filters.",
+        "cta": "View portfolio"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Software Engineer",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Present",
+        "tagline": "Healthcare technology team building digital products for clinical and operational workflows.",
+        "description": "Develops web features with Angular (v19 and legacy), emphasizing reusable accessible UI, REST and GraphQL integrations, and Docker-based CI/CD for consistent builds and releases.",
+        "highlights": {
+          "0": "Builds reusable, accessible UI components with optimized rendering across devices and browsers.",
+          "1": "Runs accessibility audits, closes WCAG 2.1 AA gaps, and improves usability for all users.",
+          "2": "Integrates REST and GraphQL APIs with solid state management and error handling across modules.",
+          "3": "Maintains Dockerized dev, test, and deployment pipelines for smooth CI/CD workflows."
+        }
+      },
+      "1": {
+        "role": "Frontend Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Kiswe powers live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Delivered high-traffic single-page apps with React, Vue, TypeScript, and Tailwind—focusing on scalable components, API integration, performance, and accessibility.",
+        "highlights": {
+          "0": "Developed SPAs with React, Vue, TypeScript, and Tailwind using scalable component architecture.",
+          "1": "Integrated REST and GraphQL APIs with caching and state management; improved responsiveness and reduced frontend errors.",
+          "2": "Applied code splitting, lazy loading, and tree-shaking for faster loads on large apps.",
+          "3": "Championed code reviews, debugging, and WCAG-aligned, cross-device experiences."
+        }
+      },
+      "2": {
+        "role": "Frontend Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Global architecture and design firm delivering enterprise digital tools and client experiences.",
+        "description": "Built enterprise UIs with React, Angular, Vue, and Next.js—pairing async REST/GraphQL data with automated tests and close design collaboration.",
+        "highlights": {
+          "0": "Shipped dashboards and UI components with React, Angular, Vue, Next.js, and Styled Components.",
+          "1": "Integrated REST and GraphQL with asynchronous updates and interactive features.",
+          "2": "Refactored legacy code, improved performance, and expanded Jest, RTL, and Playwright coverage.",
+          "3": "Translated Figma designs into responsive, accessible, production-ready interfaces."
+        }
+      },
+      "3": {
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members and patients.",
+        "description": "Built interactive pharmacy checkout flows in React and TypeScript with secure API integration, modular components, and strong automated test coverage.",
+        "highlights": {
+          "0": "Improved checkout task completion with React, TypeScript, HTML5, and CSS3.",
+          "1": "Integrated secure REST APIs with JWT/OAuth, validation, and robust error handling.",
+          "2": "Reduced page load times through modular components and optimized client-side rendering.",
+          "3": "Collaborated across teams for responsive, accessible UI delivery."
+        }
+      },
+      "4": {
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Delivered responsive, WCAG-minded web apps with reusable components, REST integrations, and Agile delivery.",
+        "highlights": {
+          "0": "Built WCAG-oriented experiences with React, HTML, CSS, and JavaScript.",
+          "1": "Created reusable components and modular UI patterns for maintainability.",
+          "2": "Integrated RESTful APIs for dynamic content and consistent client workflows.",
+          "3": "Participated in Agile/SCRUM, code reviews, and documentation."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "Montclair State University",
+        "location": "Montclair, NJ",
+        "period": "2016 — 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Hands-on experience across React.js, Next.js, Angular, and Vue.js with TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules), and responsive design. Comfortable from Figma handoff through production builds with Webpack, Vite, and Babel.",
+      "Backend___API": "Integrates REST and GraphQL services with secure patterns—JWT, OAuth, CORS—and works alongside Node.js, Java, and Spring Boot backends for data-driven UIs.",
+      "Testing": "Ships with confidence using Jest, React Testing Library, Cypress, and Playwright across unit, integration, and end-to-end coverage with automation in the release path.",
+      "Database": "Works with relational and document data stores—MySQL, PostgreSQL, MongoDB, Redis—and SQL for schema-aware features and performant queries.",
+      "DevOps___Tools": "Uses Git, GitHub Actions, Jenkins, Docker, and AWS in CI/CD pipelines with monitoring, ESLint, and Prettier for consistent, observable delivery.",
+      "Concepts": "Applies WCAG 2.1 AA accessibility, performance and security best practices, Agile/SCRUM collaboration, and solid engineering fundamentals (debugging, OOP, design patterns)."
+    },
+    "skillCategory": {
+      "Frontend": "Frontend",
+      "Backend___API": "Backend / API",
+      "Testing": "Testing",
+      "Database": "Database",
+      "DevOps___Tools": "DevOps / Tools",
+      "Concepts": "Concepts"
+    }
+  }
+}

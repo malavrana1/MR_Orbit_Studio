@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Orbit Studio",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Domov",
+    "summary": "Shrnutí",
+    "toolkit": "Toolkit",
+    "experience": "Zažít",
+    "credentials": "Pověření",
+    "projects": "Projekty",
+    "about": "O",
+    "connect": "Připojit"
+  },
+  "theme": {
+    "lightMode": "Světelný režim",
+    "darkMode": "Tmavý režim",
+    "switchToLight": "Přepněte do světelného režimu",
+    "switchToDark": "Přepněte do tmavého režimu"
+  },
+  "header": {
+    "toggleMenu": "Přepnout nabídku",
+    "language": "Jazyk"
+  },
+  "hero": {
+    "greeting": "Ahoj, jsem",
+    "headlineFallback": "Frontend Engineer | Reagovat • Angular • Specialista Vue",
+    "skillCardTitle": "Tech Stack",
+    "skillCardDescription": "Technologie, které používám k tvorbě moderních webových aplikací",
+    "recentTeams": "Nedávná zkušenost"
+  },
+  "summary": {
+    "title": "Profesionální přehled",
+    "subtitleFallback": "Budování moderních webových zážitků s vášní a přesností",
+    "highlight1Title": "Moderní frontend stacky",
+    "highlight1Text": "React, Angular, Next.js a TypeScript – od podnikových řídicích panelů po vysoce provozované SPA",
+    "highlight2Title": "Týmová spolupráce",
+    "highlight2Text": "Spolupráce s designem, produktem a backendem za účelem dodání dostupných a udržovatelných funkcí",
+    "highlight3Title": "Kvalita & dodání",
+    "highlight3Text": "Automatizované testování, CI/CD a ladění výkonu pro spolehlivá vydání"
+  },
+  "experience": {
+    "title": "Zažít",
+    "logoAlt": "Logo {{company}}"
+  },
+  "projects": {
+    "title": "Vybrané projekty"
+  },
+  "toolkit": {
+    "title": "Technická sada nástrojů",
+    "description": "Vyberte kategorii a zjistěte, kde přinesu největší využití – od rámců a jazyků po testování a nástroje.",
+    "filterAria": "Filtr sady nástrojů",
+    "defaultDescription": "Dovednosti, díky kterým bude práce plynulá."
+  },
+  "credentials": {
+    "educationAndCerts": "Vzdělání a certifikace",
+    "education": "Školství"
+  },
+  "about": {
+    "titleFallback": "Více o mně",
+    "whatEnjoy": "Co mě baví",
+    "whatLikeWork": "Co mám rád na práci",
+    "principles": "Zásady"
+  },
+  "connect": {
+    "title": "Pojďme se připojit",
+    "description": "Jsem otevřený novým projektům, spolupráci a profesním příležitostem. Vyberte si způsob, jak oslovit nebo prozkoumat můj životopis a práci.",
+    "resume": "Resumé",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Podíl",
+    "contact": "Kontakt",
+    "shareTitle": "{{name}} - Portfolio",
+    "shareText": "Prohlédněte si portfolio {{name}}",
+    "copiedAlert": "Odkaz na portfolio zkopírován do schránky!",
+    "resumeDownload": "Resumé",
+    "resumePdfTitle": "Pokračovat (PDF — otevřít nebo uložit)",
+    "githubProfileTitle": "Zobrazit profil na GitHubu",
+    "linkedinProfileTitle": "Připojte se na LinkedIn",
+    "sharePortfolioTitle": "Podílové portfolio",
+    "contactFormTitle": "Kontaktní formulář"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Všechna práva vyhrazena."
+  },
+  "floating": {
+    "scrollTop": "Přejděte nahoru",
+    "backToTop": "Zpět nahoru"
+  },
+  "meta": {
+    "portfolioSuffix": "Portfolio frontendových inženýrů",
+    "pageTitleSuffix": "Portfolio"
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "successTitle": "Zpráva byla úspěšně odeslána!",
+    "successBody": "Děkujeme, že jste se ozvali. Brzy se ozvu.",
+    "errorTitle": "Jejda! Něco se pokazilo",
+    "sendError": "Vaši zprávu nelze odeslat. Zkuste to prosím znovu.",
+    "nameLabel": "Vaše jméno",
+    "namePlaceholder": "jak ti mám říkat?",
+    "emailLabel": "Váš email",
+    "emailPlaceholder": "vy@example.com",
+    "phoneLabel": "Vaše telefonní číslo",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Společnost",
+    "companyPlaceholder": "Vaše společnost nebo organizace",
+    "subjectLabel": "Podrobit",
+    "selectSubject": "Vyberte předmět",
+    "subjectJob": "Pracovní příležitost",
+    "subjectProject": "Dotaz na projekt",
+    "subjectCollab": "Spolupráce",
+    "subjectGeneral": "Obecná otázka",
+    "subjectOther": "Ostatní",
+    "messageLabel": "Zpráva",
+    "messagePlaceholder": "Ahoj Malave, rád bych se spojil ohledně…",
+    "close": "Blízko",
+    "cancel": "Zrušit",
+    "sending": "Odesílání…",
+    "send": "Odeslat zprávu",
+    "certAria": "Zobrazit certifikát {{name}}",
+    "validation": {
+      "emailRequired": "E-mail je povinný.",
+      "emailInvalid": "Zadejte prosím platnou e-mailovou adresu.",
+      "subjectRequired": "Předmět je povinný.",
+      "messageRequired": "Zpráva je povinná.",
+      "messageMin": "Zpráva musí mít alespoň 10 znaků.",
+      "messageMax": "Zpráva musí mít méně než 5000 znaků.",
+      "nameMax": "Název musí mít méně než 100 znaků.",
+      "phoneInvalid": "Zadejte prosím platné telefonní číslo.",
+      "companyMax": "Název společnosti musí mít méně než 100 znaků."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Frontendový inženýr",
+      "summary": {
+        "0": "Frontend Engineer s více než 5 lety zkušeností s vytvářením škálovatelných, vysoce výkonných a dostupných webových aplikací. Zkušenosti s React, Angular, Next.js, TypeScript a moderními frontend frameworky. Zkušenosti s integrací rozhraní REST a GraphQL API, optimalizací komplexních pracovních postupů uživatelského rozhraní, implementací kanálů CI/CD, automatizovaného testování a shody s přístupností. Kolaborativní týmový hráč zaměřený na poskytování uživatelsky přívětivých a udržovatelných softwarových řešení napříč různými projekty."
+      }
+    },
+    "personal": {
+      "tagline": "Více o mně",
+      "intro": "Rád hraji tenis s přáteli, kriket, turistiku a poslouchám hudbu. Také mě baví vařit, zkoušet nové věci a dělat malé DIY projekty na dvorku, když mám volno.",
+      "whatFuelsMe": "Každý den vnáším do stavebních výrobků stejnou energii a zájem ze svých koníčků. Ať už je to občasné hraní tenisu, DIY projekt nebo řešení problému s kódováním, baví mě se učit a tvořit.",
+      "interests": {
+        "0": "Tenis",
+        "1": "Kriket",
+        "2": "Turistika",
+        "3": "Hudba",
+        "4": "Vaření",
+        "5": "DIY projekty"
+      },
+      "principles": {
+        "0": "Zaměřte se na to, co uživatelé potřebují",
+        "1": "Stavte v malém a často testujte",
+        "2": "Udržujte věci jednoduché a rychlé"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Ruleta živě",
+        "description": "Realistická a interaktivní ruleta postavená na Vue 3. Hrajte s virtuálními žetony, užívejte si plynulé animace a sledujte své statistiky. Zažijte vzrušení z kasinové hry bez jakýchkoli skutečných peněz.",
+        "cta": "Prozkoumejte na GitHubu"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Osobní simulátor akciového trhu k prozkoumání akcií a kryptoměn v reálném čase. Počítejte zisky, ukládejte scénáře, sledujte oblíbené položky a naučte se obchodní strategie, aniž byste riskovali skutečné peníze.",
+        "cta": "Prozkoumejte na GitHubu"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "Jednostránkové portfolio Reactu představující věci, které rád stavím – sekce založené na datech, stahování životopisů a filtry interaktivní sady nástrojů.",
+        "cta": "Zobrazit portfolio"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "softwarový inženýr",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "únor 2026 – současnost",
+        "tagline": "Tým pro zdravotnickou technologii vytváří digitální produkty pro klinické a provozní pracovní postupy.",
+        "description": "Vyvíjí webové funkce s Angular (v19 a starší verze), s důrazem na opakovaně použitelné uživatelské rozhraní, integrace REST a GraphQL a CI/CD založené na Dockeru pro konzistentní sestavení a vydání.",
+        "highlights": {
+          "0": "Vytváří znovu použitelné a přístupné komponenty uživatelského rozhraní s optimalizovaným vykreslováním napříč zařízeními a prohlížeči.",
+          "1": "Spouští audity přístupnosti, odstraňuje mezery WCAG 2.1 AA a zlepšuje použitelnost pro všechny uživatele.",
+          "2": "Integruje rozhraní REST a GraphQL API se správou SSD a zpracováním chyb napříč moduly.",
+          "3": "Udržuje dockerizované vývojové, testovací a zaváděcí kanály pro hladké pracovní postupy CI/CD."
+        }
+      },
+      "1": {
+        "role": "Frontendový inženýr",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "září 2024 – leden 2026",
+        "tagline": "Kiswe poskytuje živé interaktivní zážitky pro sportovní, mediální a podnikové značky.",
+        "description": "Poskytované jednostránkové aplikace s vysokým provozem s React, Vue, TypeScript a Tailwind – se zaměřením na škálovatelné komponenty, integraci API, výkon a dostupnost.",
+        "highlights": {
+          "0": "Vyvinuté SPA s React, Vue, TypeScript a Tailwind pomocí škálovatelné architektury komponent.",
+          "1": "Integrovaná rozhraní REST a GraphQL API s ukládáním do mezipaměti a správou stavu; zlepšená odezva a snížení chyb frontendu.",
+          "2": "Aplikované rozdělení kódu, líné načítání a protřepávání stromu pro rychlejší načítání velkých aplikací.",
+          "3": "Vyspělé recenze kódu, ladění a zkušenosti napříč zařízeními přizpůsobené WCAG."
+        }
+      },
+      "2": {
+        "role": "Frontendový inženýr",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Červenec 2022 – září 2024",
+        "tagline": "Globální architektonická a designová firma dodávající podnikové digitální nástroje a klientské zkušenosti.",
+        "description": "Vybudovaná podniková uživatelská rozhraní s React, Angular, Vue a Next.js – spárování asynchronních dat REST/GraphQL s automatizovanými testy a úzkou spoluprací při návrhu.",
+        "highlights": {
+          "0": "Řídicí panely a komponenty uživatelského rozhraní dodávané s komponentami React, Angular, Vue, Next.js a Styled Components.",
+          "1": "Integrovaný REST a GraphQL s asynchronními aktualizacemi a interaktivními funkcemi.",
+          "2": "Refaktorovaný starší kód, vylepšený výkon a rozšířené pokrytí Jest, RTL a Playwright.",
+          "3": "Návrhy Figma byly převedeny do citlivých, přístupných a produkčních rozhraní."
+        }
+      },
+      "3": {
+        "role": "Frontendový inženýr",
+        "company": "skripty Cigna Express",
+        "location": "Franklin Lakes, NJ",
+        "period": "Květen 2021 – duben 2022",
+        "tagline": "Lékárenské výhody a digitální řešení zdravotní péče pro členy a pacienty.",
+        "description": "Vybudované interaktivní toky pokladen v lékárnách v React a TypeScript se zabezpečenou integrací API, modulárními komponentami a silným pokrytím automatických testů.",
+        "highlights": {
+          "0": "Vylepšené dokončování úloh pokladny pomocí React, TypeScript, HTML5 a CSS3.",
+          "1": "Integrovaná bezpečná REST API s JWT/OAuth, ověřováním a robustním zpracováním chyb.",
+          "2": "Snížení doby načítání stránky díky modulárním komponentám a optimalizovanému vykreslování na straně klienta.",
+          "3": "Spolupráce napříč týmy pro citlivé a dostupné uživatelské rozhraní."
+        }
+      },
+      "4": {
+        "role": "Frontendový inženýr",
+        "company": "Charita Atmiya Care",
+        "location": "Parsippany, NJ",
+        "period": "září 2020 – květen 2021",
+        "tagline": "Neziskové komunitní dosah a charitativní iniciativy.",
+        "description": "Poskytované responzivní webové aplikace zaměřené na WCAG s opakovaně použitelnými komponentami, integracemi REST a agilním doručováním.",
+        "highlights": {
+          "0": "Vybudované zkušenosti orientované na WCAG s React, HTML, CSS a JavaScript.",
+          "1": "Vytvořené opakovaně použitelné komponenty a modulární vzory uživatelského rozhraní pro snadnou údržbu.",
+          "2": "Integrovaná rozhraní RESTful API pro dynamický obsah a konzistentní pracovní postupy klienta.",
+          "3": "Účastnil se Agile/SCRUM, kontrol kódu a dokumentace."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Bakalář přírodních věd v oboru informatiky",
+        "institution": "Montclair State University",
+        "location": "Montclair, NJ",
+        "period": "2016 – 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Praktické zkušenosti napříč React.js, Next.js, Angular a Vue.js s TypeScriptem, moderními CSS (Tailwind, Styled Components, CSS Modules) a responzivním designem. Pohodlné od předání Figma přes produkční sestavení s Webpack, Vite a Babel.",
+      "Backend___API": "Integruje služby REST a GraphQL se zabezpečenými vzory – JWT, OAuth, CORS – a funguje spolu s backendy Node.js, Java a Spring Boot pro uživatelská rozhraní řízená daty.",
+      "Testing": "Dodává se s důvěrou pomocí Jest, React Testing Library, Cypress a Playwright napříč jednotkami, integrací a end-to-end pokrytím s automatizací v cestě vydání.",
+      "Database": "Pracuje s relačními datovými úložišti a úložišti dokumentů – MySQL, PostgreSQL, MongoDB, Redis – a SQL pro funkce využívající schémata a výkonné dotazy.",
+      "DevOps___Tools": "Používá Git, GitHub Actions, Jenkins, Docker a AWS v kanálech CI/CD s monitorováním, ESLint a Prettier pro konzistentní, pozorovatelné doručování.",
+      "Concepts": "Aplikuje osvědčené postupy pro přístupnost, výkon a zabezpečení WCAG 2.1 AA, spolupráci Agile/SCRUM a solidní inženýrské základy (ladění, OOP, návrhové vzory)."
+    },
+    "skillCategory": {
+      "Frontend": "Frontend",
+      "Backend___API": "Backend / API",
+      "Testing": "Testování",
+      "Database": "Databáze",
+      "DevOps___Tools": "DevOps / Nástroje",
+      "Concepts": "Koncepty"
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Orbit Studio",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Thuis",
+    "summary": "Samenvatting",
+    "toolkit": "Gereedschapskist",
+    "experience": "Ervaring",
+    "credentials": "Diploma's",
+    "projects": "Projecten",
+    "about": "Over mij",
+    "connect": "Contact"
+  },
+  "theme": {
+    "lightMode": "Lichte modus",
+    "darkMode": "Donkere modus",
+    "switchToLight": "Schakel naar lichte modus",
+    "switchToDark": "Schakel naar donkere modus"
+  },
+  "header": {
+    "toggleMenu": "Menu openen/sluiten",
+    "language": "Taal"
+  },
+  "hero": {
+    "greeting": "Hoi, ik ben",
+    "headlineFallback": "Frontend engineer | React • Angular • Vue",
+    "skillCardTitle": "Techstack",
+    "skillCardDescription": "Technologieën die ik gebruik voor moderne webapps",
+    "recentTeams": "Recente ervaring"
+  },
+  "summary": {
+    "title": "Professioneel overzicht",
+    "subtitleFallback": "Moderne webervaringen bouwen met passie en precisie",
+    "highlight1Title": "Moderne frontend-stacks",
+    "highlight1Text": "React, Angular, Next.js en TypeScript — van enterprise dashboards tot drukke SPA's",
+    "highlight2Title": "Teamsamenwerking",
+    "highlight2Text": "Samen met design, product en backend voor toegankelijke, onderhoudbare features",
+    "highlight3Title": "Kwaliteit & delivery",
+    "highlight3Text": "Geautomatiseerde tests, CI/CD en performance voor betrouwbare releases"
+  },
+  "experience": {
+    "title": "Ervaring",
+    "logoAlt": "{{company}}-logo"
+  },
+  "projects": {
+    "title": "Uitgelichte projecten"
+  },
+  "toolkit": {
+    "title": "Technische toolkit",
+    "description": "Kies een categorie om te zien waar ik de meeste impact heb — frameworks, talen, tests en tooling.",
+    "filterAria": "Toolkit-filter",
+    "defaultDescription": "Vaardigheden die het werk soepel houden."
+  },
+  "credentials": {
+    "educationAndCerts": "Opleiding en certificaten",
+    "education": "Opleiding"
+  },
+  "about": {
+    "titleFallback": "Meer over mij",
+    "whatEnjoy": "Wat ik leuk vind",
+    "whatLikeWork": "Wat ik leuk vind aan werk",
+    "principles": "Principes"
+  },
+  "connect": {
+    "title": "Laten we contact houden",
+    "description": "Ik sta open voor nieuwe projecten, samenwerking en kansen. Kies hoe je contact opneemt of bekijk mijn CV en werk.",
+    "resume": "CV",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Delen",
+    "contact": "Contact",
+    "shareTitle": "{{name}} - Portefeuille",
+    "shareText": "Bekijk het portfolio van {{name}}",
+    "copiedAlert": "Portfoliolink gekopieerd naar klembord!",
+    "resumeDownload": "Cv",
+    "resumePdfTitle": "CV (PDF - openen of opslaan)",
+    "githubProfileTitle": "Bekijk GitHub-profiel",
+    "linkedinProfileTitle": "Maak verbinding op LinkedIn",
+    "sharePortfolioTitle": "Aandelenportefeuille",
+    "contactFormTitle": "Contactformulier"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Alle rechten voorbehouden."
+  },
+  "floating": {
+    "scrollTop": "Scroll naar boven",
+    "backToTop": "Terug naar boven"
+  },
+  "meta": {
+    "portfolioSuffix": "Frontend engineer portfolio",
+    "pageTitleSuffix": "Portefeuille"
+  },
+  "contact": {
+    "title": "Neem contact op",
+    "successTitle": "Bericht verzonden!",
+    "successBody": "Bedankt voor je bericht. Ik reageer snel.",
+    "errorTitle": "Er ging iets mis",
+    "sendError": "Bericht kon niet worden verzonden. Probeer opnieuw.",
+    "nameLabel": "Je naam",
+    "namePlaceholder": "Hoe mag ik je noemen?",
+    "emailLabel": "Je e-mail",
+    "emailPlaceholder": "jij@voorbeeld.nl",
+    "phoneLabel": "Je telefoonnummer",
+    "phonePlaceholder": "+31 6 12345678",
+    "companyLabel": "Bedrijf",
+    "companyPlaceholder": "Je bedrijf of organisatie",
+    "subjectLabel": "Onderwerp",
+    "selectSubject": "Kies een onderwerp",
+    "subjectJob": "Vacature",
+    "subjectProject": "Projectvraag",
+    "subjectCollab": "Samenwerking",
+    "subjectGeneral": "Algemene vraag",
+    "subjectOther": "Overig",
+    "messageLabel": "Bericht",
+    "messagePlaceholder": "Hoi Malav, ik wil graag praten over…",
+    "close": "Sluiten",
+    "cancel": "Annuleren",
+    "sending": "Verzenden…",
+    "send": "Bericht versturen",
+    "certAria": "Bekijk certificaat {{name}}",
+    "validation": {
+      "emailRequired": "E-mail is verplicht.",
+      "emailInvalid": "Voer een geldig e-mailadres in.",
+      "subjectRequired": "Onderwerp is verplicht.",
+      "messageRequired": "Bericht is verplicht.",
+      "messageMin": "Bericht moet minstens 10 tekens zijn.",
+      "messageMax": "Bericht moet minder dan 5000 tekens zijn.",
+      "nameMax": "Naam moet minder dan 100 tekens zijn.",
+      "phoneInvalid": "Voer een geldig telefoonnummer in.",
+      "companyMax": "Bedrijfsnaam moet minder dan 100 tekens zijn."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Frontend-ingenieur",
+      "summary": {
+        "0": "Frontend Engineer met meer dan 5 jaar ervaring met het bouwen van schaalbare, krachtige en toegankelijke webapplicaties. Vaardig in React, Angular, Next.js, TypeScript en moderne frontend-frameworks. Ervaren in het integreren van REST- en GraphQL-API's, het optimaliseren van complexe UI-workflows, het implementeren van CI/CD-pijplijnen, geautomatiseerd testen en compliance met toegankelijkheid. Samenwerkende teamspeler gericht op het leveren van gebruiksvriendelijke, onderhoudbare softwareoplossingen voor meerdere projecten."
+      }
+    },
+    "personal": {
+      "tagline": "Meer over mij",
+      "intro": "Ik hou van tennissen met vrienden, cricket, wandelen en naar muziek luisteren. Ik hou ook van koken, nieuwe dingen uitproberen en kleine doe-het-zelf-projecten in de achtertuin doen als ik vrije tijd heb.",
+      "whatFuelsMe": "Ik breng elke dag dezelfde energie en interesse uit mijn hobby's naar het bouwen van producten. Of het nu gaat om af en toe tennissen, een doe-het-zelf-project of het oplossen van een codeerprobleem, ik geniet van leren en creëren.",
+      "interests": {
+        "0": "Tennis",
+        "1": "Krekel",
+        "2": "Hiking",
+        "3": "Muziek",
+        "4": "Koken",
+        "5": "DIY-projecten"
+      },
+      "principles": {
+        "0": "Focus op wat gebruikers nodig hebben",
+        "1": "Bouw klein en test vaak",
+        "2": "Houd het eenvoudig en snel"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "RouletteLive",
+        "description": "Een realistisch en interactief roulettespel gebouwd met Vue 3. Speel met virtuele chips, geniet van vloeiende animaties en houd je statistieken bij. Ervaar de spanning van een casinospel zonder dat er echt geld bij betrokken is.",
+        "cta": "Ontdek op GitHub"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Een persoonlijke aandelenmarktsimulator om aandelen en crypto in realtime te verkennen. Bereken winsten, bewaar scenario's, volg favorieten en leer handelsstrategieën zonder echt geld te riskeren.",
+        "cta": "Ontdek op GitHub"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "React-portfolio van één pagina met de dingen die ik graag bouw: datagestuurde secties, het downloaden van cv's en interactieve toolkitfilters.",
+        "cta": "Bekijk portefeuille"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Software-ingenieur",
+        "company": "Fusie Gezondheid",
+        "location": "Woodbridge, NJ",
+        "period": "februari 2026 — heden",
+        "tagline": "Team voor gezondheidszorgtechnologie dat digitale producten bouwt voor klinische en operationele workflows.",
+        "description": "Ontwikkelt webfuncties met Angular (v19 en verouderd), met de nadruk op herbruikbare toegankelijke UI, REST- en GraphQL-integraties, en Docker-gebaseerde CI/CD voor consistente builds en releases.",
+        "highlights": {
+          "0": "Bouwt herbruikbare, toegankelijke UI-componenten met geoptimaliseerde weergave op verschillende apparaten en browsers.",
+          "1": "Voert toegankelijkheidsaudits uit, dicht de hiaten in WCAG 2.1 AA en verbetert de bruikbaarheid voor alle gebruikers.",
+          "2": "Integreert REST- en GraphQL-API's met solid-state-beheer en foutafhandeling in alle modules.",
+          "3": "Onderhoudt Dockerized ontwikkel-, test- en implementatiepijplijnen voor soepele CI/CD-workflows."
+        }
+      },
+      "1": {
+        "role": "Frontend-ingenieur",
+        "company": "Kiswe",
+        "location": "Top, NJ",
+        "period": "september 2024 — januari 2026",
+        "tagline": "Kiswe maakt live interactieve ervaringen mogelijk voor sport-, media- en zakelijke merken.",
+        "description": "Leverde single-page-apps met veel verkeer met React, Vue, TypeScript en Tailwind, gericht op schaalbare componenten, API-integratie, prestaties en toegankelijkheid.",
+        "highlights": {
+          "0": "Ontwikkelde SPA's met React, Vue, TypeScript en Tailwind met behulp van schaalbare componentarchitectuur.",
+          "1": "Geïntegreerde REST- en GraphQL-API's met caching en statusbeheer; verbeterde responsiviteit en minder frontend-fouten.",
+          "2": "Toegepaste codesplitsing, lui laden en boomschudden voor sneller laden van grote apps.",
+          "3": "Verdedigde codebeoordelingen, foutopsporing en op WCAG afgestemde ervaringen op verschillende apparaten."
+        }
+      },
+      "2": {
+        "role": "Frontend-ingenieur",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "juli 2022 — september 2024",
+        "tagline": "Wereldwijd architectuur- en ontwerpbureau dat digitale tools voor ondernemingen en klantervaringen levert.",
+        "description": "Bouwde zakelijke gebruikersinterfaces met React, Angular, Vue en Next.js, waarbij asynchrone REST/GraphQL-gegevens werden gecombineerd met geautomatiseerde tests en nauwe ontwerpsamenwerking.",
+        "highlights": {
+          "0": "Verzonden dashboards en UI-componenten met React, Angular, Vue, Next.js en Styled Components.",
+          "1": "Geïntegreerde REST en GraphQL met asynchrone updates en interactieve functies.",
+          "2": "Herstructureerde oude code, verbeterde prestaties en uitgebreide Jest-, RTL- en Playwright-dekking.",
+          "3": "Figma-ontwerpen vertaald naar responsieve, toegankelijke, productieklare interfaces."
+        }
+      },
+      "3": {
+        "role": "Frontend-ingenieur",
+        "company": "Cigna Express-scripts",
+        "location": "Franklin Meren, NJ",
+        "period": "Mei 2021 – april 2022",
+        "tagline": "Apotheekvoordelen en digitale zorgoplossingen voor leden en patiënten.",
+        "description": "Bouwde interactieve kassastromen bij apotheken in React en TypeScript met veilige API-integratie, modulaire componenten en sterke geautomatiseerde testdekking.",
+        "highlights": {
+          "0": "Verbeterde voltooiing van afrekentaken met React, TypeScript, HTML5 en CSS3.",
+          "1": "Geïntegreerde veilige REST API's met JWT/OAuth, validatie en robuuste foutafhandeling.",
+          "2": "Kortere laadtijden van pagina's dankzij modulaire componenten en geoptimaliseerde weergave aan de clientzijde.",
+          "3": "Samenwerking tussen teams voor responsieve, toegankelijke UI-levering."
+        }
+      },
+      "4": {
+        "role": "Frontend-ingenieur",
+        "company": "Atmiya Zorg liefdadigheidsinstelling",
+        "location": "Parsippany, NJ",
+        "period": "september 2020 — mei 2021",
+        "tagline": "Non-profit gemeenschapsbereik en liefdadigheidsinitiatieven.",
+        "description": "Leverde responsieve, WCAG-gerichte webapps met herbruikbare componenten, REST-integraties en Agile levering.",
+        "highlights": {
+          "0": "Bouwde WCAG-georiënteerde ervaringen met React, HTML, CSS en JavaScript.",
+          "1": "Herbruikbare componenten en modulaire UI-patronen gemaakt voor onderhoudbaarheid.",
+          "2": "Geïntegreerde RESTful API's voor dynamische inhoud en consistente clientworkflows.",
+          "3": "Deelgenomen aan Agile/SCRUM, code reviews en documentatie."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Bachelor of Science in computerwetenschappen",
+        "institution": "Montclair Staatsuniversiteit",
+        "location": "Montclair, NJ",
+        "period": "2016 — 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Praktische ervaring met React.js, Next.js, Angular en Vue.js met TypeScript, moderne CSS (Tailwind, Styled Components, CSS Modules) en responsief ontwerp. Comfortabel vanaf de overdracht van Figma tot en met productiebuilds met Webpack, Vite en Babel.",
+      "Backend___API": "Integreert REST- en GraphQL-services met veilige patronen (JWT, OAuth, CORS) en werkt samen met Node.js-, Java- en Spring Boot-backends voor datagestuurde gebruikersinterfaces.",
+      "Testing": "Wordt met vertrouwen verzonden met behulp van Jest, React Testing Library, Cypress en Playwright voor alle units, integratie en end-to-end dekking met automatisering in het releasepad.",
+      "Database": "Werkt met relationele en documentgegevensarchieven (MySQL, PostgreSQL, MongoDB, Redis) en SQL voor schemabewuste functies en performante query's.",
+      "DevOps___Tools": "Gebruikt Git, GitHub Actions, Jenkins, Docker en AWS in CI/CD-pijplijnen met monitoring, ESLint en Prettier voor consistente, waarneembare levering.",
+      "Concepts": "Past WCAG 2.1 AA best practices op het gebied van toegankelijkheid, prestaties en beveiliging, Agile/SCRUM-samenwerking en solide technische basisprincipes toe (foutopsporing, OOP, ontwerppatronen)."
+    },
+    "skillCategory": {
+      "Frontend": "Frontend",
+      "Backend___API": "Backend/API",
+      "Testing": "Testen",
+      "Database": "Database",
+      "DevOps___Tools": "DevOps/Tools",
+      "Concepts": "Concepten"
+    }
+  }
+}

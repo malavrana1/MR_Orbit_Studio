@@ -12,25 +12,11 @@
     ]
   },
   "ui": {
-    "hero": {
-      "skillCard": {
-        "title": "Quick skills",
-        "description": "A quick look at the tools I use most.",
-        "recentTeams": "Recent teams"
-      }
-    },
     "typed": {
-      "typeSpeed": 45,
-      "backSpeed": 22
-    },
-    "sections": {
-      "professionalSummary": "Professional summary",
-      "toolkitTitle": "Technical toolkit",
-      "toolkitDescription": "Choose a category to see the skills I use most - from frameworks and languages to testing and tools.",
-      "experienceTitle": "My work experience",
-      "featuredProject": "Featured Project",
-      "connectCardTitle": "Let's Connect",
-      "connectCardDescription": "I'm open to new projects, collaboration, and professional opportunities. Pick a way to reach out or explore my resume and work."
+      "typeSpeed": 58,
+      "backSpeed": 36,
+      "startDelay": 400,
+      "backDelay": 2200
     }
   }
 }

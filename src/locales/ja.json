@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "オービットスタジオ",
+    "copyrightOwner": "MR オービットスタジオ"
+  },
+  "nav": {
+    "home": "ホーム",
+    "summary": "概要",
+    "toolkit": "ツールキット",
+    "experience": "経歴",
+    "credentials": "資格",
+    "projects": "プロジェクト",
+    "about": "について",
+    "connect": "連絡"
+  },
+  "theme": {
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "switchToLight": "ライトモードに切替",
+    "switchToDark": "ダークモードに切替"
+  },
+  "header": {
+    "toggleMenu": "メニューを開閉",
+    "language": "言語"
+  },
+  "hero": {
+    "greeting": "こんにちは、",
+    "headlineFallback": "フロントエンドエンジニア | React • Angular • Vue",
+    "skillCardTitle": "技術スタック",
+    "skillCardDescription": "モダンなWebアプリ構築に使う技術",
+    "recentTeams": "最近の経験"
+  },
+  "summary": {
+    "title": "プロフェッショナル概要",
+    "subtitleFallback": "情熱と精度でモダンなWeb体験を",
+    "highlight1Title": "モダンなフロントエンドスタック",
+    "highlight1Text": "React、Angular、Next.js、TypeScript — エンタープライズ向けダッシュボードから高トラフィックSPAまで",
+    "highlight2Title": "チーム連携",
+    "highlight2Text": "デザイン・プロダクト・バックエンドと協働し、アクセシブルで保守しやすい機能を",
+    "highlight3Title": "品質とデリバリー",
+    "highlight3Text": "自動テスト、CI/CD、パフォーマンス調整で信頼できるリリースを"
+  },
+  "experience": {
+    "title": "職務経歴",
+    "logoAlt": "{{company}} のロゴ"
+  },
+  "projects": {
+    "title": "注目のプロジェクト"
+  },
+  "toolkit": {
+    "title": "テクニカルツールキット",
+    "description": "カテゴリを選ぶと、フレームワーク・言語・テスト・ツールでどこに強みがあるかが分かります。",
+    "filterAria": "ツールキットのフィルター",
+    "defaultDescription": "スムーズな開発を支えるスキル。"
+  },
+  "credentials": {
+    "educationAndCerts": "学歴と資格",
+    "education": "学歴"
+  },
+  "about": {
+    "titleFallback": "もっと知る",
+    "whatEnjoy": "好きなこと",
+    "whatLikeWork": "仕事で好きなこと",
+    "principles": "原則"
+  },
+  "connect": {
+    "title": "つながる",
+    "description": "新規案件・協業・キャリアのご相談歓迎。連絡方法を選ぶか、履歴書と作品をご覧ください。",
+    "resume": "履歴書",
+    "github": "GitHub",
+    "linkedin": "リンクトイン",
+    "share": "共有",
+    "contact": "連絡",
+    "shareTitle": "{{name}} - ポートフォリオ",
+    "shareText": "{{name}} のポートフォリオを見る",
+    "copiedAlert": "ポートフォリオのリンクをコピーしました！",
+    "resumeDownload": "再開する",
+    "resumePdfTitle": "履歴書 (PDF — 開くか保存)",
+    "githubProfileTitle": "GitHub プロフィールを表示",
+    "linkedinProfileTitle": "LinkedIn で接続する",
+    "sharePortfolioTitle": "株式ポートフォリオ",
+    "contactFormTitle": "お問い合わせフォーム"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. 無断転載を禁じます。"
+  },
+  "floating": {
+    "scrollTop": "先頭へスクロール",
+    "backToTop": "ページ上部へ"
+  },
+  "meta": {
+    "portfolioSuffix": "フロントエンドエンジニアのポートフォリオ",
+    "pageTitleSuffix": "ポートフォリオ"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "successTitle": "送信しました！",
+    "successBody": "ありがとうございます。追ってご連絡します。",
+    "errorTitle": "エラーが発生しました",
+    "sendError": "送信できませんでした。もう一度お試しください。",
+    "nameLabel": "お名前",
+    "namePlaceholder": "お呼びする名前は？",
+    "emailLabel": "メール",
+    "emailPlaceholder": "you@example.com",
+    "phoneLabel": "電話番号",
+    "phonePlaceholder": "+81 90-0000-0000",
+    "companyLabel": "会社",
+    "companyPlaceholder": "会社または団体名",
+    "subjectLabel": "件名",
+    "selectSubject": "件名を選択",
+    "subjectJob": "採用・求人",
+    "subjectProject": "案件の相談",
+    "subjectCollab": "協業",
+    "subjectGeneral": "一般的な質問",
+    "subjectOther": "その他",
+    "messageLabel": "メッセージ",
+    "messagePlaceholder": "Malavさん、〇〇について話したいです…",
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "sending": "送信中…",
+    "send": "送信",
+    "certAria": "{{name}} の証明書を見る",
+    "validation": {
+      "emailRequired": "メールは必須です。",
+      "emailInvalid": "有効なメールを入力してください。",
+      "subjectRequired": "件名は必須です。",
+      "messageRequired": "メッセージは必須です。",
+      "messageMin": "メッセージは10文字以上にしてください。",
+      "messageMax": "メッセージは5000文字未満にしてください。",
+      "nameMax": "名前は100文字未満にしてください。",
+      "phoneInvalid": "有効な電話番号を入力してください。",
+      "companyMax": "会社名は100文字未満にしてください。"
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "フロントエンドエンジニア",
+      "summary": {
+        "0": "スケーラブルで高性能、アクセスしやすい Web アプリケーションの構築に 5 年以上の経験を持つフロントエンド エンジニア。 React、Angular、Next.js、TypeScript、および最新のフロントエンド フレームワークに精通しています。 REST と GraphQL API の統合、複雑な UI ワークフローの最適化、CI/CD パイプラインの実装、自動テスト、アクセシビリティ コンプライアンスの経験があります。 複数のプロジェクトにわたって、ユーザーフレンドリーで保守可能なソフトウェア ソリューションを提供することに重点を置いた、協力的なチーム プレーヤー。"
+      }
+    },
+    "personal": {
+      "tagline": "私についてもっと詳しく",
+      "intro": "私は友達とテニスをしたり、クリケットをしたり、ハイキングをしたり、音楽を聴くのが好きです。 時間があるときは、料理をしたり、新しいことに挑戦したり、裏庭で小さな DIY プロジェクトをしたりすることも楽しんでいます。",
+      "whatFuelsMe": "私は毎日、趣味から同じエネルギーと興味を製品作りに注ぎ込んでいます。 時々テニスをしたり、DIY プロジェクトをしたり、コーディングの問題を解決したりするなど、学習や創作を楽しんでいます。",
+      "interests": {
+        "0": "テニス",
+        "1": "クリケット",
+        "2": "ハイキング",
+        "3": "音楽",
+        "4": "料理",
+        "5": "DIY プロジェクト"
+      },
+      "principles": {
+        "0": "ユーザーが必要としているものに焦点を当てる",
+        "1": "小規模に構築し、頻繁にテストする",
+        "2": "物事をシンプルかつ迅速に行う"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "ルーレットライブ",
+        "description": "Vue 3 で構築されたリアルでインタラクティブなルーレット ゲーム。仮想チップを使ってプレイし、スムーズなアニメーションを楽しみ、統計情報を追跡します。 リアルマネーを使わずにカジノ ゲームのスリルを体験してください。",
+        "cta": "GitHub で探索する"
+      },
+      "1": {
+        "title": "ストックシム",
+        "description": "株式と仮想通貨をリアルタイムで探索するための個人用株式市場シミュレーター。 リアルマネーを危険にさらすことなく、利益を計算し、シナリオを保存し、お気に入りを追跡し、取引戦略を学びます。",
+        "cta": "GitHub で探索する"
+      },
+      "2": {
+        "title": "MR オービットスタジオ",
+        "description": "データ駆動型セクション、ダウンロードの再開、インタラクティブなツールキット フィルターなど、私が構築したいものを紹介する 1 ページの React ポートフォリオ。",
+        "cta": "ポートフォリオを見る"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "ソフトウェアエンジニア",
+        "company": "フュージョンヘルス",
+        "location": "ニュージャージー州ウッドブリッジ",
+        "period": "2026 年 2 月 — 現在",
+        "tagline": "医療テクノロジー チームは、臨床および運用ワークフロー用のデジタル製品を構築しています。",
+        "description": "Angular (v19 およびレガシー) を使用して Web 機能を開発し、再利用可能なアクセス可能な UI、REST および GraphQL の統合、一貫したビルドとリリースのための Docker ベースの CI/CD を重視します。",
+        "highlights": {
+          "0": "デバイスやブラウザー全体で最適化されたレンダリングを使用して、再利用可能でアクセス可能な UI コンポーネントを構築します。",
+          "1": "アクセシビリティ監査を実行し、WCAG 2.1 AA のギャップを埋め、すべてのユーザーの使いやすさを向上させます。",
+          "2": "REST および GraphQL API をソリッド ステート管理およびモジュール全体のエラー処理と統合します。",
+          "3": "スムーズな CI/CD ワークフローのために、Docker 化された開発、テスト、デプロイメントのパイプラインを維持します。"
+        }
+      },
+      "1": {
+        "role": "フロントエンドエンジニア",
+        "company": "キスウェ",
+        "location": "ニュージャージー州サミット",
+        "period": "2024 年 9 月 — 2026 年 1 月",
+        "tagline": "Kiswe は、スポーツ、メディア、企業ブランドのライブ インタラクティブ エクスペリエンスを強化します。",
+        "description": "スケーラブルなコンポーネント、API 統合、パフォーマンス、アクセシビリティに重点を置き、React、Vue、TypeScript、Tailwind を使用して高トラフィックのシングルページ アプリを提供しました。",
+        "highlights": {
+          "0": "スケーラブルなコンポーネント アーキテクチャを使用して、React、Vue、TypeScript、Tailwind で SPA を開発しました。",
+          "1": "キャッシュと状態管理を備えた統合 REST および GraphQL API。 応答性が向上し、フロントエンドのエラーが減少しました。",
+          "2": "大規模なアプリの読み込みを高速化するために、コード分割、遅延読み込み、ツリーシェイクを適用しました。",
+          "3": "コード レビュー、デバッグ、WCAG に合わせたクロスデバイス エクスペリエンスを支持しました。"
+        }
+      },
+      "2": {
+        "role": "フロントエンドエンジニア",
+        "company": "ゲンスラー",
+        "location": "ニュージャージー州モリスタウン",
+        "period": "2022年7月 — 2024年9月",
+        "tagline": "エンタープライズ デジタル ツールとクライアント エクスペリエンスを提供する世界的な建築設計会社。",
+        "description": "React、Angular、Vue、Next.js を使用してエンタープライズ UI を構築し、非同期 REST/GraphQL データと自動テストおよび緊密な設計コラボレーションを組み合わせました。",
+        "highlights": {
+          "0": "React、Angular、Vue、Next.js、およびスタイル付きコンポーネントを含むダッシュボードと UI コンポーネントが同梱されています。",
+          "1": "非同期更新とインタラクティブ機能を備えた統合 REST と GraphQL。",
+          "2": "従来のコードをリファクタリングし、パフォーマンスを向上させ、Jest、RTL、Playwright の対応範囲を拡大しました。",
+          "3": "Figma のデザインを、応答性が高く、アクセスしやすく、実稼働対応のインターフェイスに変換しました。"
+        }
+      },
+      "3": {
+        "role": "フロントエンドエンジニア",
+        "company": "Cigna Express スクリプト",
+        "location": "ニュージャージー州フランクリン・レイクス",
+        "period": "2021年5月 — 2022年4月",
+        "tagline": "会員と患者向けの薬局の特典とデジタル ヘルスケア ソリューション。",
+        "description": "安全な API 統合、モジュール式コンポーネント、強力な自動テスト カバレッジを備えた React と TypeScript でインタラクティブな薬局チェックアウト フローを構築しました。",
+        "highlights": {
+          "0": "React、TypeScript、HTML5、CSS3 によるチェックアウト タスクの完了が改善されました。",
+          "1": "JWT/OAuth、検証、堅牢なエラー処理を備えた統合された安全な REST API。",
+          "2": "モジュール式コンポーネントと最適化されたクライアント側レンダリングにより、ページの読み込み時間が短縮されました。",
+          "3": "チーム間で連携して、応答性が高くアクセスしやすい UI を提供します。"
+        }
+      },
+      "4": {
+        "role": "フロントエンドエンジニア",
+        "company": "アトミヤケアチャリティー",
+        "location": "ニュージャージー州パーシッパニー",
+        "period": "2020年9月 — 2021年5月",
+        "tagline": "非営利のコミュニティ活動と慈善活動。",
+        "description": "再利用可能なコンポーネント、REST 統合、アジャイル配信を備えた、応答性の高い WCAG 志向の Web アプリを提供しました。",
+        "highlights": {
+          "0": "React、HTML、CSS、JavaScript を使用して WCAG 指向のエクスペリエンスを構築しました。",
+          "1": "保守性を高めるために、再利用可能なコンポーネントとモジュール式 UI パターンを作成しました。",
+          "2": "動的コンテンツと一貫したクライアント ワークフローのための統合された RESTful API。",
+          "3": "アジャイル/SCRUM、コードレビュー、ドキュメントに参加。"
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "コンピューターサイエンスの理学士",
+        "institution": "モントクレア州立大学",
+        "location": "ニュージャージー州モントクレア",
+        "period": "2016年 — 2020年"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "TypeScript、最新の CSS (Tailwind、スタイル コンポーネント、CSS モジュール)、レスポンシブ デザインを使用した React.js、Next.js、Angular、Vue.js の実践的な経験。 Figma のハンドオフから、Webpack、Vite、Babel を使用した本番ビルドまで快適です。",
+      "Backend___API": "REST サービスと GraphQL サービスを安全なパターン (JWT、OAuth、CORS) と統合し、データ駆動型 UI 向けに Node.js、Java、Spring Boot バックエンドと連携して動作します。",
+      "Testing": "Jest、React Testing Library、Cypress、Playwright を使用して、ユニット、統合、リリース パスでの自動化によるエンドツーエンドのカバレッジを使用して自信を持って出荷します。",
+      "Database": "リレーショナル データ ストアとドキュメント データ ストア (MySQL、PostgreSQL、MongoDB、Redis)、および SQL と連携して、スキーマ対応機能とパフォーマンスの高いクエリを実現します。",
+      "DevOps___Tools": "CI/CD パイプラインで Git、GitHub Actions、Jenkins、Docker、AWS を使用し、モニタリング、ESLint、Prettier を使用して、一貫した監視可能な配信を実現します。",
+      "Concepts": "WCAG 2.1 AA のアクセシビリティ、パフォーマンスとセキュリティのベスト プラクティス、アジャイル/SCRUM コラボレーション、堅実なエンジニアリングの基礎 (デバッグ、OOP、設計パターン) を適用します。"
+    },
+    "skillCategory": {
+      "Frontend": "フロントエンド",
+      "Backend___API": "バックエンド/API",
+      "Testing": "テスト",
+      "Database": "データベース",
+      "DevOps___Tools": "DevOps / ツール",
+      "Concepts": "コンセプト"
+    }
+  }
+}

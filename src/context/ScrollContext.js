@@ -5,7 +5,7 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import { getNavSectionIds } from '../utils/site'
+import { getNavSectionIds } from '../data/loaders'
 
 const ScrollContext = createContext(null)
 

@@ -43,7 +43,50 @@ body {
   color: #ffffff;
 }
 
+html[lang='gu'] body,
+html[lang='gu'] button,
+html[lang='gu'] input,
+html[lang='gu'] textarea,
+html[lang='gu'] select {
+  font-family:
+    'Noto Sans Gujarati',
+    'Noto Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+html[lang='gu'] .hero-typed {
+  font-family: 'Noto Sans Gujarati', Georgia, serif;
+}
+
 :focus-visible {
   outline: 3px solid rgba(139, 105, 20, 0.5);
   outline-offset: 2px;
+}
+
+[dir='rtl'] svg {
+  flex-shrink: 0;
+}
+
+.app-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-loading__spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top-color: #8b6914;
+  border-radius: 50%;
+  animation: app-loading-spin 1s linear infinite;
+}
+
+@keyframes app-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

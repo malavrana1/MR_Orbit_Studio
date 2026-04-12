@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Studio Orbit",
+    "copyrightOwner": "Studio Orbit Tuan"
+  },
+  "nav": {
+    "home": "Rumah",
+    "summary": "Ringkasan",
+    "toolkit": "Perangkat",
+    "experience": "Pengalaman",
+    "credentials": "Kredensial",
+    "projects": "Proyek",
+    "about": "Tentang",
+    "connect": "Menghubungkan"
+  },
+  "theme": {
+    "lightMode": "Modus Cahaya",
+    "darkMode": "Mode Gelap",
+    "switchToLight": "Beralih ke mode terang",
+    "switchToDark": "Beralih ke mode gelap"
+  },
+  "header": {
+    "toggleMenu": "Alihkan menu",
+    "language": "Bahasa"
+  },
+  "hero": {
+    "greeting": "Hai, saya",
+    "headlineFallback": "Insinyur Frontend | Bereaksi • Sudut • Spesialis Vue",
+    "skillCardTitle": "Tumpukan Teknologi",
+    "skillCardDescription": "Teknologi yang saya gunakan untuk membangun aplikasi web modern",
+    "recentTeams": "Pengalaman Terkini"
+  },
+  "summary": {
+    "title": "Ikhtisar Profesional",
+    "subtitleFallback": "Membangun pengalaman web modern dengan semangat dan presisi",
+    "highlight1Title": "Tumpukan frontend modern",
+    "highlight1Text": "React, Angular, Next.js, dan TypeScript—dari dasbor perusahaan hingga SPA dengan lalu lintas tinggi",
+    "highlight2Title": "Kolaborasi tim",
+    "highlight2Text": "Bermitra dengan desain, produk, dan backend untuk menghadirkan fitur yang dapat diakses dan dipelihara",
+    "highlight3Title": "Kualitas & pengiriman",
+    "highlight3Text": "Pengujian otomatis, CI/CD, dan penyesuaian performa untuk rilis yang andal"
+  },
+  "experience": {
+    "title": "Pengalaman",
+    "logoAlt": "{{company}} logo"
+  },
+  "projects": {
+    "title": "Proyek Unggulan"
+  },
+  "toolkit": {
+    "title": "Perangkat teknis",
+    "description": "Pilih kategori untuk mempelajari hal yang paling saya manfaatkan—mulai dari kerangka kerja dan bahasa hingga pengujian dan peralatan.",
+    "filterAria": "Filter perangkat",
+    "defaultDescription": "Keterampilan yang membuat pekerjaan berjalan lancar."
+  },
+  "credentials": {
+    "educationAndCerts": "Pendidikan & Sertifikasi",
+    "education": "Pendidikan"
+  },
+  "about": {
+    "titleFallback": "Lebih banyak tentang saya",
+    "whatEnjoy": "Apa yang Saya Nikmati",
+    "whatLikeWork": "Yang Saya Suka Tentang Pekerjaan",
+    "principles": "Prinsip"
+  },
+  "connect": {
+    "title": "Mari Terhubung",
+    "description": "Saya terbuka untuk proyek baru, kolaborasi, dan peluang profesional. Pilih cara untuk menjangkau atau menjelajahi resume dan pekerjaan saya.",
+    "resume": "Melanjutkan",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Membagikan",
+    "contact": "Kontak",
+    "shareTitle": "{{name}} - Portofolio",
+    "shareText": "Lihat portofolio {{name}}",
+    "copiedAlert": "Tautan portofolio disalin ke papan klip!",
+    "resumeDownload": "Melanjutkan",
+    "resumePdfTitle": "Lanjutkan (PDF — buka atau simpan)",
+    "githubProfileTitle": "Lihat profil GitHub",
+    "linkedinProfileTitle": "Terhubung di LinkedIn",
+    "sharePortfolioTitle": "Bagikan portofolio",
+    "contactFormTitle": "Formulir kontak"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Semua hak dilindungi undang-undang."
+  },
+  "floating": {
+    "scrollTop": "Gulir ke atas",
+    "backToTop": "Kembali ke atas"
+  },
+  "meta": {
+    "portfolioSuffix": "Portofolio Insinyur Frontend",
+    "pageTitleSuffix": "Portofolio"
+  },
+  "contact": {
+    "title": "Hubungi kami",
+    "successTitle": "Pesan Berhasil Terkirim!",
+    "successBody": "Terima kasih telah menghubungi kami. Saya akan segera menghubungi Anda kembali.",
+    "errorTitle": "Ups! Ada yang tidak beres",
+    "sendError": "Tidak dapat mengirim pesan Anda. Silakan coba lagi.",
+    "nameLabel": "Namamu",
+    "namePlaceholder": "Aku harus memanggilmu apa?",
+    "emailLabel": "email Anda",
+    "emailPlaceholder": "kamu@example.com",
+    "phoneLabel": "Nomor telepon Anda",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Perusahaan",
+    "companyPlaceholder": "Perusahaan atau organisasi Anda",
+    "subjectLabel": "Subjek",
+    "selectSubject": "Pilih subjek",
+    "subjectJob": "Peluang Kerja",
+    "subjectProject": "Permintaan Proyek",
+    "subjectCollab": "Kolaborasi",
+    "subjectGeneral": "Pertanyaan Umum",
+    "subjectOther": "Lainnya",
+    "messageLabel": "Pesan",
+    "messagePlaceholder": "Hai Malav, saya ingin terhubung tentang…",
+    "close": "Menutup",
+    "cancel": "Membatalkan",
+    "sending": "Mengirim…",
+    "send": "Kirim Pesan",
+    "certAria": "Lihat sertifikat {{name}}",
+    "validation": {
+      "emailRequired": "Email diperlukan.",
+      "emailInvalid": "Silakan masukkan alamat email yang valid.",
+      "subjectRequired": "Subjek diperlukan.",
+      "messageRequired": "Pesan diperlukan.",
+      "messageMin": "Panjang pesan minimal harus 10 karakter.",
+      "messageMax": "Pesan harus kurang dari 5000 karakter.",
+      "nameMax": "Nama harus kurang dari 100 karakter.",
+      "phoneInvalid": "Silakan masukkan nomor telepon yang valid.",
+      "companyMax": "Nama perusahaan harus kurang dari 100 karakter."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Insinyur Bagian Depan",
+      "summary": {
+        "0": "Frontend Engineer dengan pengalaman lebih dari 5 tahun dalam membangun aplikasi web yang skalabel, berkinerja tinggi, dan mudah diakses. Terampil dalam React, Angular, Next.js, TypeScript, dan kerangka kerja frontend modern. Berpengalaman dalam mengintegrasikan REST dan GraphQL API, mengoptimalkan alur kerja UI yang kompleks, mengimplementasikan pipeline CI/CD, pengujian otomatis, dan kepatuhan aksesibilitas. Pemain tim kolaboratif yang berfokus pada penyediaan solusi perangkat lunak yang mudah digunakan dan dapat dipelihara di berbagai proyek."
+      }
+    },
+    "personal": {
+      "tagline": "Lebih banyak tentang saya",
+      "intro": "Saya suka bermain tenis dengan teman, kriket, hiking, dan mendengarkan musik. Saya juga menikmati memasak, mencoba hal-hal baru, dan mengerjakan proyek DIY kecil-kecilan di halaman belakang ketika saya punya waktu luang.",
+      "whatFuelsMe": "Saya membawa energi dan minat yang sama dari hobi saya ke produk bangunan setiap hari. Baik itu sesekali bermain tenis, proyek DIY, atau memecahkan masalah pengkodean, saya menikmati belajar dan berkreasi.",
+      "interests": {
+        "0": "Tenis",
+        "1": "Jangkrik",
+        "2": "Lintas alam",
+        "3": "Musik",
+        "4": "Memasak",
+        "5": "Proyek DIY"
+      },
+      "principles": {
+        "0": "Fokus pada apa yang dibutuhkan pengguna",
+        "1": "Bangun dalam skala kecil dan sering-seringlah mengujinya",
+        "2": "Buat semuanya tetap sederhana dan cepat"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Roulette Langsung",
+        "description": "Game rolet realistis dan interaktif yang dibuat dengan Vue 3. Mainkan dengan chip virtual, nikmati animasi halus, dan lacak statistik Anda. Rasakan sensasi permainan kasino tanpa melibatkan uang sungguhan.",
+        "cta": "Jelajahi di GitHub"
+      },
+      "1": {
+        "title": "StokSim",
+        "description": "Simulator pasar saham pribadi untuk menjelajahi saham dan kripto secara real time. Hitung keuntungan, simpan skenario, lacak favorit, dan pelajari strategi perdagangan tanpa mempertaruhkan uang sungguhan.",
+        "cta": "Jelajahi di GitHub"
+      },
+      "2": {
+        "title": "Studio Orbit Tuan",
+        "description": "Portofolio React satu halaman menampilkan hal-hal yang saya suka buat - bagian berdasarkan data, pengunduhan resume, dan filter toolkit interaktif.",
+        "cta": "Lihat portofolio"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Insinyur Perangkat Lunak",
+        "company": "Kesehatan Fusi",
+        "location": "Woodbridge, NJ",
+        "period": "Februari 2026 — Sekarang",
+        "tagline": "Tim teknologi layanan kesehatan membangun produk digital untuk alur kerja klinis dan operasional.",
+        "description": "Mengembangkan fitur web dengan Angular (v19 dan lawas), menekankan UI yang dapat diakses dan digunakan kembali, integrasi REST dan GraphQL, serta CI/CD berbasis Docker untuk build dan rilis yang konsisten.",
+        "highlights": {
+          "0": "Membangun komponen UI yang dapat digunakan kembali dan dapat diakses dengan rendering yang dioptimalkan di seluruh perangkat dan browser.",
+          "1": "Menjalankan audit aksesibilitas, menutup kesenjangan WCAG 2.1 AA, dan meningkatkan kegunaan bagi semua pengguna.",
+          "2": "Mengintegrasikan REST dan GraphQL API dengan manajemen solid state dan penanganan kesalahan di seluruh modul.",
+          "3": "Mempertahankan alur pengembangan, pengujian, dan penerapan Docker untuk alur kerja CI/CD yang lancar."
+        }
+      },
+      "1": {
+        "role": "Insinyur Bagian Depan",
+        "company": "Kiswe",
+        "location": "Puncak, NJ",
+        "period": "Sep 2024 — Januari 2026",
+        "tagline": "Kiswe mendukung pengalaman interaktif langsung untuk merek olahraga, media, dan perusahaan.",
+        "description": "Menghadirkan aplikasi satu halaman dengan lalu lintas tinggi dengan React, Vue, TypeScript, dan Tailwind—berfokus pada komponen yang dapat diskalakan, integrasi API, kinerja, dan aksesibilitas.",
+        "highlights": {
+          "0": "Mengembangkan SPA dengan React, Vue, TypeScript, dan Tailwind menggunakan arsitektur komponen yang dapat diskalakan.",
+          "1": "API REST dan GraphQL terintegrasi dengan caching dan manajemen status; meningkatkan daya tanggap dan mengurangi kesalahan frontend.",
+          "2": "Pemisahan kode yang diterapkan, pemuatan lambat, dan guncangan pohon untuk memuat lebih cepat pada aplikasi besar.",
+          "3": "Peninjauan kode, proses debug, dan pengalaman lintas perangkat yang selaras dengan WCAG."
+        }
+      },
+      "2": {
+        "role": "Insinyur Bagian Depan",
+        "company": "Gensler",
+        "location": "Morristown, New Jersey",
+        "period": "Juli 2022 — Sep 2024",
+        "tagline": "Perusahaan arsitektur dan desain global yang menyediakan alat digital perusahaan dan pengalaman klien.",
+        "description": "Membangun UI perusahaan dengan React, Angular, Vue, dan Next.js—memasangkan data REST/GraphQL asinkron dengan pengujian otomatis dan kolaborasi desain yang erat.",
+        "highlights": {
+          "0": "Dasbor dan komponen UI yang dikirimkan dengan React, Angular, Vue, Next.js, dan Styled Components.",
+          "1": "REST dan GraphQL terintegrasi dengan pembaruan asinkron dan fitur interaktif.",
+          "2": "Kode lama yang difaktorkan ulang, peningkatan kinerja, dan perluasan cakupan Jest, RTL, dan Penulis Drama.",
+          "3": "Menerjemahkan desain Figma ke dalam antarmuka yang responsif, mudah diakses, dan siap produksi."
+        }
+      },
+      "3": {
+        "role": "Insinyur Bagian Depan",
+        "company": "Skrip Cigna Express",
+        "location": "Danau Franklin, NJ",
+        "period": "Mei 2021 — April 2022",
+        "tagline": "Manfaat farmasi dan solusi kesehatan digital untuk anggota dan pasien.",
+        "description": "Membangun alur pembayaran apotek interaktif di React dan TypeScript dengan integrasi API yang aman, komponen modular, dan cakupan pengujian otomatis yang kuat.",
+        "highlights": {
+          "0": "Peningkatan penyelesaian tugas checkout dengan React, TypeScript, HTML5, dan CSS3.",
+          "1": "REST API aman terintegrasi dengan JWT/OAuth, validasi, dan penanganan kesalahan yang tangguh.",
+          "2": "Mengurangi waktu muat halaman melalui komponen modular dan rendering sisi klien yang dioptimalkan.",
+          "3": "Berkolaborasi antar tim untuk penyampaian UI yang responsif dan mudah diakses."
+        }
+      },
+      "4": {
+        "role": "Insinyur Bagian Depan",
+        "company": "Badan Amal Perawatan Atmiya",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — Mei 2021",
+        "tagline": "Penjangkauan komunitas nirlaba dan inisiatif amal.",
+        "description": "Menghadirkan aplikasi web responsif dan berorientasi WCAG dengan komponen yang dapat digunakan kembali, integrasi REST, dan pengiriman Agile.",
+        "highlights": {
+          "0": "Membangun pengalaman berorientasi WCAG dengan React, HTML, CSS, dan JavaScript.",
+          "1": "Membuat komponen yang dapat digunakan kembali dan pola UI modular agar mudah dirawat.",
+          "2": "API RESTful terintegrasi untuk konten dinamis dan alur kerja klien yang konsisten.",
+          "3": "Berpartisipasi dalam Agile/SCRUM, review kode, dan dokumentasi."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Sarjana Sains dalam Ilmu Komputer",
+        "institution": "Universitas Negeri Montclair",
+        "location": "Montclair, NJ",
+        "period": "2016—2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Pengalaman langsung di React.js, Next.js, Angular, dan Vue.js dengan TypeScript, CSS modern (Tailwind, Styled Components, CSS Modules), dan desain responsif. Nyaman dari penyerahan Figma hingga pembuatan produksi dengan Webpack, Vite, dan Babel.",
+      "Backend___API": "Mengintegrasikan layanan REST dan GraphQL dengan pola aman—JWT, OAuth, CORS—dan bekerja bersama backend Node.js, Java, dan Spring Boot untuk UI berbasis data.",
+      "Testing": "Dikirim dengan percaya diri menggunakan Jest, React Testing Library, Cypress, dan Playwright di seluruh unit, integrasi, dan cakupan end-to-end dengan otomatisasi di jalur rilis.",
+      "Database": "Bekerja dengan penyimpanan data relasional dan dokumen—MySQL, PostgreSQL, MongoDB, Redis—dan SQL untuk fitur yang sadar skema dan kueri yang berkinerja.",
+      "DevOps___Tools": "Menggunakan Git, GitHub Actions, Jenkins, Docker, dan AWS dalam pipeline CI/CD dengan pemantauan, ESLint, dan Prettier untuk pengiriman yang konsisten dan dapat diamati.",
+      "Concepts": "Menerapkan praktik terbaik aksesibilitas, kinerja dan keamanan WCAG 2.1 AA, kolaborasi Agile/SCRUM, dan dasar-dasar teknik yang solid (debugging, OOP, pola desain)."
+    },
+    "skillCategory": {
+      "Frontend": "Bagian depan",
+      "Backend___API": "Bagian Belakang / API",
+      "Testing": "Pengujian",
+      "Database": "Basis data",
+      "DevOps___Tools": "DevOps / Alat",
+      "Concepts": "Konsep"
+    }
+  }
+}

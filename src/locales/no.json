@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Orbit Studio",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Hjem",
+    "summary": "Sammendrag",
+    "toolkit": "Verktøysett",
+    "experience": "Erfaring",
+    "credentials": "Legitimasjon",
+    "projects": "Prosjekter",
+    "about": "Om",
+    "connect": "Koble til"
+  },
+  "theme": {
+    "lightMode": "Lysmodus",
+    "darkMode": "Mørk modus",
+    "switchToLight": "Bytt til lysmodus",
+    "switchToDark": "Bytt til mørk modus"
+  },
+  "header": {
+    "toggleMenu": "Bytt meny",
+    "language": "Språk"
+  },
+  "hero": {
+    "greeting": "Hei, jeg",
+    "headlineFallback": "Frontend Engineer | Reager • Angular • Vue-spesialist",
+    "skillCardTitle": "Tech Stack",
+    "skillCardDescription": "Teknologier jeg bruker for å bygge moderne webapplikasjoner",
+    "recentTeams": "Nylig erfaring"
+  },
+  "summary": {
+    "title": "Profesjonell oversikt",
+    "subtitleFallback": "Bygge moderne nettopplevelser med lidenskap og presisjon",
+    "highlight1Title": "Moderne frontend-stabler",
+    "highlight1Text": "React, Angular, Next.js og TypeScript – fra enterprise-dashboards til SPA-er med høy trafikk",
+    "highlight2Title": "Teamsamarbeid",
+    "highlight2Text": "Samarbeid med design, produkt og backend for å levere tilgjengelige, vedlikeholdbare funksjoner",
+    "highlight3Title": "Kvalitet og levering",
+    "highlight3Text": "Automatisert testing, CI/CD og ytelsesinnstilling for pålitelige utgivelser"
+  },
+  "experience": {
+    "title": "Erfaring",
+    "logoAlt": "{{company}} logo"
+  },
+  "projects": {
+    "title": "Utvalgte prosjekter"
+  },
+  "toolkit": {
+    "title": "Teknisk verktøysett",
+    "description": "Velg en kategori for å finne ut hvor jeg har størst utbytte – fra rammeverk og språk til testing og verktøy.",
+    "filterAria": "Verktøysett-filter",
+    "defaultDescription": "Ferdigheter som gjør at arbeidet flyter jevnt."
+  },
+  "credentials": {
+    "educationAndCerts": "Utdanning og sertifiseringer",
+    "education": "Utdannelse"
+  },
+  "about": {
+    "titleFallback": "Mer om meg",
+    "whatEnjoy": "Hva jeg liker",
+    "whatLikeWork": "Hva jeg liker med jobb",
+    "principles": "Prinsipper"
+  },
+  "connect": {
+    "title": "La oss koble til",
+    "description": "Jeg er åpen for nye prosjekter, samarbeid og faglige muligheter. Velg en måte å nå ut eller utforske CV-en og jobben min.",
+    "resume": "Gjenoppta",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Dele",
+    "contact": "Kontakt",
+    "shareTitle": "{{name}} - Portefølje",
+    "shareText": "Sjekk ut {{name}} sin portefølje",
+    "copiedAlert": "Porteføljelenke kopiert til utklippstavlen!",
+    "resumeDownload": "Gjenoppta",
+    "resumePdfTitle": "Fortsett (PDF – åpne eller lagre)",
+    "githubProfileTitle": "Se GitHub-profilen",
+    "linkedinProfileTitle": "Koble til på LinkedIn",
+    "sharePortfolioTitle": "Aksjeportefølje",
+    "contactFormTitle": "Kontaktskjema"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Alle rettigheter forbeholdt."
+  },
+  "floating": {
+    "scrollTop": "Rull til toppen",
+    "backToTop": "Tilbake til toppen"
+  },
+  "meta": {
+    "portfolioSuffix": "Frontend Engineer Portfolio",
+    "pageTitleSuffix": "Portefølje"
+  },
+  "contact": {
+    "title": "Ta kontakt",
+    "successTitle": "Melding sendt!",
+    "successBody": "Takk for at du tok kontakt. Jeg kommer snart tilbake til deg.",
+    "errorTitle": "Oops! Noe gikk galt",
+    "sendError": "Kunne ikke sende meldingen. Vennligst prøv igjen.",
+    "nameLabel": "Navnet ditt",
+    "namePlaceholder": "Hva skal jeg kalle deg?",
+    "emailLabel": "Din e-post",
+    "emailPlaceholder": "du@eksempel.com",
+    "phoneLabel": "Telefonnummeret ditt",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Bedrift",
+    "companyPlaceholder": "Din bedrift eller organisasjon",
+    "subjectLabel": "Tema",
+    "selectSubject": "Velg et emne",
+    "subjectJob": "Jobbmulighet",
+    "subjectProject": "Prosjektforespørsel",
+    "subjectCollab": "Samarbeidet",
+    "subjectGeneral": "Generelt spørsmål",
+    "subjectOther": "Annen",
+    "messageLabel": "Beskjed",
+    "messagePlaceholder": "Hei Malav, jeg vil gjerne ha kontakt om...",
+    "close": "Lukke",
+    "cancel": "Kansellere",
+    "sending": "Sender …",
+    "send": "Send melding",
+    "certAria": "Se {{name}} sertifikat",
+    "validation": {
+      "emailRequired": "E-post er påkrevd.",
+      "emailInvalid": "Vennligst skriv inn en gyldig e-postadresse.",
+      "subjectRequired": "Emne er påkrevd.",
+      "messageRequired": "Melding er påkrevd.",
+      "messageMin": "Meldingen må være på minst 10 tegn.",
+      "messageMax": "Meldingen må være mindre enn 5000 tegn.",
+      "nameMax": "Navnet må være mindre enn 100 tegn.",
+      "phoneInvalid": "Vennligst skriv inn et gyldig telefonnummer.",
+      "companyMax": "Firmanavnet må være mindre enn 100 tegn."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Frontend ingeniør",
+      "summary": {
+        "0": "Frontend-ingeniør med 5+ års erfaring med å bygge skalerbare, høyytelses- og tilgjengelige nettapplikasjoner. Erfarne i React, Angular, Next.js, TypeScript og moderne frontend-rammeverk. Erfaren i å integrere REST og GraphQL APIer, optimalisere komplekse UI-arbeidsflyter, implementere CI/CD-pipelines, automatisert testing og tilgjengelighetsoverholdelse. Samarbeidende lagspiller fokusert på å levere brukervennlige, vedlikeholdbare programvareløsninger på tvers av flere prosjekter."
+      }
+    },
+    "personal": {
+      "tagline": "Mer om meg",
+      "intro": "Jeg liker å spille tennis med venner, cricket, fotturer og høre på musikk. Jeg liker også å lage mat, prøve nye ting og gjøre små DIY-prosjekter i bakgården når jeg har fri.",
+      "whatFuelsMe": "Jeg tar med meg den samme energien og interessen fra hobbyene mine til byggeprodukter hver dag. Enten det er å spille tennis av og til, et gjør-det-selv-prosjekt eller å løse et kodeproblem, liker jeg å lære og skape.",
+      "interests": {
+        "0": "Tennis",
+        "1": "Cricket",
+        "2": "Vandring",
+        "3": "Musikk",
+        "4": "Matlaging",
+        "5": "DIY-prosjekter"
+      },
+      "principles": {
+        "0": "Fokuser på hva brukerne trenger",
+        "1": "Bygg lite og test ofte",
+        "2": "Hold ting enkelt og raskt"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Roulette Live",
+        "description": "Et realistisk og interaktivt rulettspill bygget med Vue 3. Spill med virtuelle sjetonger, nyt jevne animasjoner og spor statistikken din. Opplev spenningen ved et kasinospill uten ekte penger involvert.",
+        "cta": "Utforsk på GitHub"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "En personlig aksjemarkedsimulator for å utforske aksjer og krypto i sanntid. Beregn fortjeneste, lagre scenarier, spor favoritter og lær handelsstrategier uten å risikere ekte penger.",
+        "cta": "Utforsk på GitHub"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "React-portefølje på én side som viser frem tingene jeg elsker å bygge – datadrevne seksjoner, nedlasting av gjenoppta og interaktive verktøysettfiltre.",
+        "cta": "Se portefølje"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Programvareingeniør",
+        "company": "Fusjonshelse",
+        "location": "Woodbridge, NJ",
+        "period": "februar 2026 – i dag",
+        "tagline": "Helseteknologiteam bygger digitale produkter for kliniske og operasjonelle arbeidsflyter.",
+        "description": "Utvikler webfunksjoner med Angular (v19 og eldre), med vekt på gjenbrukbare tilgjengelige UI, REST og GraphQL-integrasjoner, og Docker-basert CI/CD for konsistente bygg og utgivelser.",
+        "highlights": {
+          "0": "Bygger gjenbrukbare, tilgjengelige UI-komponenter med optimalisert gjengivelse på tvers av enheter og nettlesere.",
+          "1": "Kjører tilgjengelighetsrevisjoner, tetter WCAG 2.1 AA-hull og forbedrer brukervennligheten for alle brukere.",
+          "2": "Integrerer REST og GraphQL APIer med solid state-administrasjon og feilhåndtering på tvers av moduler.",
+          "3": "Vedlikeholder dockeriserte dev-, test- og distribusjonspipelines for jevne CI/CD-arbeidsflyter."
+        }
+      },
+      "1": {
+        "role": "Frontend ingeniør",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "september 2024 – januar 2026",
+        "tagline": "Kiswe gir live interaktive opplevelser for sport, media og bedriftsmerker.",
+        "description": "Leverte enkeltsideapper med høy trafikk med React, Vue, TypeScript og Tailwind – med fokus på skalerbare komponenter, API-integrasjon, ytelse og tilgjengelighet.",
+        "highlights": {
+          "0": "Utviklet SPA-er med React, Vue, TypeScript og Tailwind ved å bruke skalerbar komponentarkitektur.",
+          "1": "Integrerte REST og GraphQL APIer med caching og tilstandsadministrasjon; forbedret respons og reduserte grensesnittfeil.",
+          "2": "Brukt kodedeling, lat lasting og treristing for raskere lasting på store apper.",
+          "3": "Mestret kodegjennomgang, feilsøking og WCAG-justerte opplevelser på tvers av enheter."
+        }
+      },
+      "2": {
+        "role": "Frontend ingeniør",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "juli 2022 – september 2024",
+        "tagline": "Globalt arkitektur- og designfirma som leverer digitale bedriftsverktøy og kundeopplevelser.",
+        "description": "Bygget bedriftsgrensesnitt med React, Angular, Vue og Next.js – parer asynkrone REST/GraphQL-data med automatiserte tester og tett designsamarbeid.",
+        "highlights": {
+          "0": "Sendte dashbord og UI-komponenter med React, Angular, Vue, Next.js og Styled Components.",
+          "1": "Integrert REST og GraphQL med asynkrone oppdateringer og interaktive funksjoner.",
+          "2": "Refaktorert eldre kode, forbedret ytelse og utvidet Jest-, RTL- og Playwright-dekning.",
+          "3": "Oversatt Figma-design til responsive, tilgjengelige, produksjonsklare grensesnitt."
+        }
+      },
+      "3": {
+        "role": "Frontend ingeniør",
+        "company": "Cigna Express-skript",
+        "location": "Franklin Lakes, NJ",
+        "period": "Mai 2021 – april 2022",
+        "tagline": "Apotekfordeler og digitale helsetjenester for medlemmer og pasienter.",
+        "description": "Bygget interaktive apotekutsjekkingsstrømmer i React og TypeScript med sikker API-integrasjon, modulære komponenter og sterk automatisert testdekning.",
+        "highlights": {
+          "0": "Forbedret fullføring av betalingsoppgaver med React, TypeScript, HTML5 og CSS3.",
+          "1": "Integrerte sikre REST APIer med JWT/OAuth, validering og robust feilhåndtering.",
+          "2": "Redusert sideinnlastingstid gjennom modulære komponenter og optimalisert gjengivelse på klientsiden.",
+          "3": "Samarbeidet på tvers av team for responsiv, tilgjengelig UI-levering."
+        }
+      },
+      "4": {
+        "role": "Frontend ingeniør",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "september 2020 – mai 2021",
+        "tagline": "Nonprofit samfunnsoppsøking og veldedige tiltak.",
+        "description": "Levert responsive, WCAG-innstilte nettapper med gjenbrukbare komponenter, REST-integrasjoner og smidig levering.",
+        "highlights": {
+          "0": "Bygget WCAG-orienterte opplevelser med React, HTML, CSS og JavaScript.",
+          "1": "Laget gjenbrukbare komponenter og modulære brukergrensesnittmønstre for vedlikehold.",
+          "2": "Integrerte RESTful APIer for dynamisk innhold og konsistente klientarbeidsflyter.",
+          "3": "Deltok i Agile/SCRUM, kodegjennomganger, og dokumentasjon."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Bachelor i informatikk",
+        "institution": "Montclair State University",
+        "location": "Montclair, NJ",
+        "period": "2016 – 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Praktisk opplevelse på tvers av React.js, Next.js, Angular og Vue.js med TypeScript, moderne CSS (Tailwind, Styled Components, CSS-moduler) og responsiv design. Komfortabel fra Figma-overlevering gjennom produksjonsbygg med Webpack, Vite og Babel.",
+      "Backend___API": "Integrerer REST- og GraphQL-tjenester med sikre mønstre – JWT, OAuth, CORS – og fungerer sammen med Node.js, Java og Spring Boot-backends for datadrevne brukergrensesnitt.",
+      "Testing": "Sendes med selvtillit ved å bruke Jest, React Testing Library, Cypress og Playwright på tvers av enhet, integrasjon og ende-til-ende-dekning med automatisering i utgivelsesbanen.",
+      "Database": "Fungerer med relasjons- og dokumentdatalagre – MySQL, PostgreSQL, MongoDB, Redis – og SQL for skjema-bevisste funksjoner og ytelsesspørringer.",
+      "DevOps___Tools": "Bruker Git, GitHub Actions, Jenkins, Docker og AWS i CI/CD-pipelines med overvåking, ESLint og Prettier for konsistent, observerbar levering.",
+      "Concepts": "Bruker WCAG 2.1 AA tilgjengelighet, ytelse og sikkerhet beste praksis, Agile/SCRUM-samarbeid og solide tekniske grunnleggende (feilsøking, OOP, designmønstre)."
+    },
+    "skillCategory": {
+      "Frontend": "Frontend",
+      "Backend___API": "Backend / API",
+      "Testing": "Testing",
+      "Database": "Database",
+      "DevOps___Tools": "DevOps / Verktøy",
+      "Concepts": "Konsepter"
+    }
+  }
+}
