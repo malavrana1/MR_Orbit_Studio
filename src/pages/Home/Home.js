@@ -154,14 +154,16 @@ export default function Home() {
           <Row className="align-items-center gy-4">
             <Col lg={7}>
               <div className="hero-profile mb-4">
-                <img
-                  src={ProfileImage}
-                  alt={profile.name}
-                  className="hero-profile-image"
-                  loading="eager"
-                  decoding="async"
-                  fetchPriority="high"
-                />
+                <div className="hero-profile-frame">
+                  <img
+                    src={ProfileImage}
+                    alt={profile.name}
+                    className="hero-profile-image"
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                  />
+                </div>
               </div>
               <div className="hero-content-wrapper">
                 <h1 className="hero-title">
