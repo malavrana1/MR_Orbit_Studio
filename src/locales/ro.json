@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Inginer software",
-        "company": "Fusion Health",
-        "location": "Woodbridge, NJ",
-        "period": "Februarie 2026 — Prezent",
-        "tagline": "Produse digitale pentru crearea de echipe de tehnologie medicală pentru fluxuri de lucru clinice și operaționale.",
-        "description": "Dezvoltă funcții web cu Angular (v19 și moștenire), punând accent pe UI accesibilă reutilizabilă, integrări REST și GraphQL și CI/CD bazat pe Docker pentru versiuni și versiuni consistente.",
+        "role": "Inginer software senior",
+        "company": "Blackstraw AI",
+        "location": "Florida, Statele Unite",
+        "period": "Apr 2026 — Prezent",
+        "tagline": "Echipa de produse software și de inginerie.",
+        "description": "Lucrează ca inginer software senior pentru a sprijini dezvoltarea front-end și a platformei pe baza priorităților echipei.",
         "highlights": {
-          "0": "Construiește componente reutilizabile, accesibile UI, cu randare optimizată pe dispozitive și browsere.",
-          "1": "Efectuează audituri de accesibilitate, închide lacunele WCAG 2.1 AA și îmbunătățește gradul de utilizare pentru toți utilizatorii.",
-          "2": "Integrează API-urile REST și GraphQL cu gestionarea stării solide și gestionarea erorilor între module.",
-          "3": "Menține pipeline Dockerizate de dezvoltare, testare și implementare pentru fluxuri de lucru CI/CD fluide."
+          "0": "Contribuie la livrarea caracteristicilor cu un cod curat, care poate fi întreținut.",
+          "1": "Colaborează cu echipele de produs și de inginerie la prioritățile de implementare."
         }
       },
       "1": {
+        "role": "Inginer software (contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "februarie 2026 — aprilie 2026",
+        "tagline": "Accesibilitate pe termen scurt și implicare în conformitate.",
+        "description": "Axat pe îmbunătățirea accesibilității și conformarea WCAG 2.1 AA în aplicațiile Angular.",
+        "highlights": {
+          "0": "Au efectuat audituri de accesibilitate și am remediat problemele WCAG 2.1 AA în fluxurile cheie ale utilizatorilor.",
+          "1": "Markup semantic îmbunătățit, navigare cu tastatură și suport pentru cititorul de ecran în Angular UI."
+        }
+      },
+      "2": {
         "role": "Inginer Frontend",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -203,7 +213,7 @@
           "3": "Evaluări de cod susținute, depanare și experiențe aliniate la WCAG, pe mai multe dispozitive."
         }
       },
-      "2": {
+      "3": {
         "role": "Inginer Frontend",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,32 +227,31 @@
           "3": "Proiectele Figma traduse în interfețe receptive, accesibile și pregătite pentru producție."
         }
       },
-      "3": {
-        "role": "Inginer Frontend",
+      "4": {
+        "role": "Inginer front-end (contract)",
         "company": "Scripturi Cigna Express",
         "location": "Franklin Lakes, NJ",
         "period": "mai 2021 — aprilie 2022",
         "tagline": "Beneficii de farmacie și soluții digitale de asistență medicală pentru membri și pacienți.",
         "description": "S-au creat fluxuri interactive de checkout în farmacii în React și TypeScript cu integrare API securizată, componente modulare și o acoperire puternică a testelor automatizate.",
         "highlights": {
-          "0": "Finalizare îmbunătățită a sarcinii de finalizare a comenzii cu React, TypeScript, HTML5 și CSS3.",
+          "0": "Finalizare îmbunătățită a activității de finalizare a comenzii cu React, TypeScript, HTML5 și CSS3.",
           "1": "API-uri REST securizate integrate cu JWT/OAuth, validare și gestionarea robustă a erorilor.",
           "2": "Timpi de încărcare a paginii redusi prin componente modulare și randare optimizată pe partea clientului.",
           "3": "A colaborat între echipe pentru livrarea UI receptivă și accesibilă."
         }
       },
-      "4": {
-        "role": "Inginer Frontend",
+      "5": {
+        "role": "Intern Inginerie Frontend",
         "company": "Caritate Atmiya Care",
         "location": "Parsippany, NJ",
         "period": "septembrie 2020 – mai 2021",
-        "tagline": "Extinderea comunității nonprofit și inițiative caritabile.",
-        "description": "Aplicații web receptive, orientate spre WCAG, cu componente reutilizabile, integrări REST și livrare Agile.",
+        "tagline": "Organizație nonprofit axată pe sensibilizarea comunității și inițiativele caritabile.",
+        "description": "Mi-am început cariera în software aici, construind abilități de bază de front-end prin stagii practice în proiecte reale nonprofit.",
         "highlights": {
-          "0": "Am creat experiențe orientate spre WCAG cu React, HTML, CSS și JavaScript.",
-          "1": "S-au creat componente reutilizabile și modele modulare de UI pentru mentenanță.",
-          "2": "API-uri RESTful integrate pentru conținut dinamic și fluxuri de lucru coerente ale clienților.",
-          "3": "Am participat la Agile/SCRUM, revizuiri de cod și documentare."
+          "0": "Am creat interfețe receptive folosind React, HTML, CSS și JavaScript.",
+          "1": "A învățat practici de inginerie de bază prin revizuiri de cod, colaborare și livrare iterativă.",
+          "2": "Sprijină funcții nonprofit din lumea reală și a câștigat experiență practică cu implementarea UI accesibilă."
         }
       }
     },

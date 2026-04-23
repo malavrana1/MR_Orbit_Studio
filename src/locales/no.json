@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Programvareingeniør",
-        "company": "Fusjonshelse",
-        "location": "Woodbridge, NJ",
-        "period": "februar 2026 – i dag",
-        "tagline": "Helseteknologiteam bygger digitale produkter for kliniske og operasjonelle arbeidsflyter.",
-        "description": "Utvikler webfunksjoner med Angular (v19 og eldre), med vekt på gjenbrukbare tilgjengelige UI, REST og GraphQL-integrasjoner, og Docker-basert CI/CD for konsistente bygg og utgivelser.",
+        "role": "Senior programvareingeniør",
+        "company": "Blackstraw AI",
+        "location": "Florida, USA",
+        "period": "april 2026 – i dag",
+        "tagline": "Programvare- og ingeniørteam.",
+        "description": "Jobber som senior programvareingeniør for å støtte frontend- og plattformutvikling basert på teamprioriteringer.",
         "highlights": {
-          "0": "Bygger gjenbrukbare, tilgjengelige UI-komponenter med optimalisert gjengivelse på tvers av enheter og nettlesere.",
-          "1": "Kjører tilgjengelighetsrevisjoner, tetter WCAG 2.1 AA-hull og forbedrer brukervennligheten for alle brukere.",
-          "2": "Integrerer REST og GraphQL APIer med solid state-administrasjon og feilhåndtering på tvers av moduler.",
-          "3": "Vedlikeholder dockeriserte dev-, test- og distribusjonspipelines for jevne CI/CD-arbeidsflyter."
+          "0": "Bidrar til funksjonslevering med ren, vedlikeholdbar kode.",
+          "1": "Samarbeider med produkt- og ingeniørteam om implementeringsprioriteringer."
         }
       },
       "1": {
+        "role": "Programvareingeniør (kontrakt)",
+        "company": "Fusjonshelse",
+        "location": "Woodbridge, NJ",
+        "period": "februar 2026 – april 2026",
+        "tagline": "Kortsiktig engasjement for tilgjengelighet og etterlevelse.",
+        "description": "Fokusert på tilgjengelighetsforbedringer og WCAG 2.1 AA-samsvar i Angular-applikasjoner.",
+        "highlights": {
+          "0": "Utførte tilgjengelighetsrevisjoner og fikset WCAG 2.1 AA-problemer på tvers av nøkkelbrukerflyter.",
+          "1": "Forbedret semantisk markering, tastaturnavigasjon og skjermleserstøtte i Angular UI."
+        }
+      },
+      "2": {
         "role": "Frontend ingeniør",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -203,7 +213,7 @@
           "3": "Mestret kodegjennomgang, feilsøking og WCAG-justerte opplevelser på tvers av enheter."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend ingeniør",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Oversatt Figma-design til responsive, tilgjengelige, produksjonsklare grensesnitt."
         }
       },
-      "3": {
-        "role": "Frontend ingeniør",
+      "4": {
+        "role": "Frontend Engineer (kontrakt)",
         "company": "Cigna Express-skript",
         "location": "Franklin Lakes, NJ",
         "period": "Mai 2021 – april 2022",
@@ -231,18 +241,17 @@
           "3": "Samarbeidet på tvers av team for responsiv, tilgjengelig UI-levering."
         }
       },
-      "4": {
-        "role": "Frontend ingeniør",
+      "5": {
+        "role": "Frontend Engineering Intern",
         "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
         "period": "september 2020 – mai 2021",
-        "tagline": "Nonprofit samfunnsoppsøking og veldedige tiltak.",
-        "description": "Levert responsive, WCAG-innstilte nettapper med gjenbrukbare komponenter, REST-integrasjoner og smidig levering.",
+        "tagline": "Ideell organisasjon fokusert på samfunnsoppsøking og veldedige initiativer.",
+        "description": "Startet programvarekarrieren min her, og bygde grunnleggende frontend-ferdigheter gjennom praktisk internship-arbeid på ekte nonprofit-prosjekter.",
         "highlights": {
-          "0": "Bygget WCAG-orienterte opplevelser med React, HTML, CSS og JavaScript.",
-          "1": "Laget gjenbrukbare komponenter og modulære brukergrensesnittmønstre for vedlikehold.",
-          "2": "Integrerte RESTful APIer for dynamisk innhold og konsistente klientarbeidsflyter.",
-          "3": "Deltok i Agile/SCRUM, kodegjennomganger, og dokumentasjon."
+          "0": "Bygget responsive grensesnitt med React, HTML, CSS og JavaScript.",
+          "1": "Lært kjerneteknikkpraksis gjennom kodegjennomganger, samarbeid og iterativ levering.",
+          "2": "Støttet real-world nonprofit-funksjoner og fikk praktisk erfaring med tilgjengelig UI-implementering."
         }
       }
     },

@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Mhandisi wa Programu",
-        "company": "Afya ya Fusion",
-        "location": "Woodbridge, NJ",
-        "period": "Februari 2026 - Sasa",
-        "tagline": "Timu ya teknolojia ya huduma ya afya inaunda bidhaa za kidijitali kwa utiririshaji wa kazi wa kimatibabu na kiutendaji.",
-        "description": "Hutengeneza vipengele vya wavuti kwa kutumia Angular (v19 na urithi), ikisisitiza UI inayoweza kutumika tena, REST na miunganisho ya GraphQL, na CI/CD inayotegemea Docker kwa miundo na matoleo thabiti.",
+        "role": "Mhandisi Mwandamizi wa Programu",
+        "company": "Blackstraw AI",
+        "location": "Florida, Marekani",
+        "period": "Aprili 2026 - Sasa",
+        "tagline": "Bidhaa ya programu na timu ya uhandisi.",
+        "description": "Kufanya kazi kama Mhandisi Mwandamizi wa Programu ili kusaidia maendeleo ya mbele na jukwaa kulingana na vipaumbele vya timu.",
         "highlights": {
-          "0": "Huunda vipengele vya UI vinavyoweza kutumika tena, vinavyoweza kufikiwa na uwasilishaji ulioboreshwa kwenye vifaa na vivinjari.",
-          "1": "Huendesha ukaguzi wa ufikivu, hufunga mapengo ya WCAG 2.1 AA, na kuboresha utumiaji kwa watumiaji wote.",
-          "2": "Huunganisha API za REST na GraphQL na usimamizi thabiti wa hali na ushughulikiaji wa makosa kwenye moduli.",
-          "3": "Huhifadhi muundo wa Dockerized, majaribio, na mabomba ya kusambaza kwa mtiririko laini wa CI/CD."
+          "0": "Huchangia uwasilishaji wa vipengele kwa kutumia msimbo safi na unaoweza kudumishwa.",
+          "1": "Inashirikiana na timu za bidhaa na uhandisi juu ya vipaumbele vya utekelezaji."
         }
       },
       "1": {
+        "role": "Mhandisi wa Programu (Mkataba)",
+        "company": "Afya ya Fusion",
+        "location": "Woodbridge, NJ",
+        "period": "Februari 2026 - Aprili 2026",
+        "tagline": "Ufikiaji wa muda mfupi na ushiriki wa kufuata.",
+        "description": "Inalenga uboreshaji wa ufikivu na utiifu wa WCAG 2.1 AA katika programu za Angular.",
+        "highlights": {
+          "0": "Ukaguzi wa ufikivu uliofanywa na masuala yasiyobadilika ya WCAG 2.1 AA katika mtiririko muhimu wa watumiaji.",
+          "1": "Urekebishaji wa kisemantiki ulioboreshwa, usogezaji wa kibodi na usaidizi wa kisoma skrini katika Angular UI."
+        }
+      },
+      "2": {
         "role": "Mhandisi wa mbele",
         "company": "Kiswe",
         "location": "Mkutano Mkuu, NJ",
@@ -203,7 +213,7 @@
           "3": "Ukaguzi wa misimbo ulioshindiliwa, utatuzi, na utumiaji wa WCAG, wa vifaa mbalimbali."
         }
       },
-      "2": {
+      "3": {
         "role": "Mhandisi wa mbele",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Miundo ya Figma iliyotafsiriwa katika violesura vinavyoitikia, vinavyoweza kufikiwa, na tayari kwa uzalishaji."
         }
       },
-      "3": {
-        "role": "Mhandisi wa mbele",
+      "4": {
+        "role": "Mhandisi wa Mbele (Mkataba)",
         "company": "Hati za Cigna Express",
         "location": "Franklin Lakes, NJ",
         "period": "Mei 2021 - Aprili 2022",
@@ -231,18 +241,17 @@
           "3": "Imeshirikiana kote kwa timu kwa uwasilishaji wa kiolesura unaosikika na unaoweza kufikiwa."
         }
       },
-      "4": {
-        "role": "Mhandisi wa mbele",
+      "5": {
+        "role": "Frontend Engineering Intern",
         "company": "Msaada wa Utunzaji wa Atmiya",
         "location": "Parsippany, NJ",
         "period": "Septemba 2020 - Mei 2021",
-        "tagline": "Ufikiaji wa jumuiya isiyo ya faida na mipango ya hisani.",
-        "description": "Imewasilishwa programu za wavuti zinazozingatia WCAG zilizo na vijenzi vinavyoweza kutumika tena, viunganishi vya REST na uwasilishaji wa Agile.",
+        "tagline": "Shirika lisilo la faida lililenga katika ufikiaji wa jamii na mipango ya hisani.",
+        "description": "Nilianza taaluma yangu ya programu hapa, nikijenga ujuzi wa msingi kupitia kazi ya mafunzo kwa vitendo kwenye miradi halisi isiyo ya faida.",
         "highlights": {
-          "0": "Utumiaji uliojengwa kwa WCAG ukitumia React, HTML, CSS na JavaScript.",
-          "1": "Iliunda vipengee vinavyoweza kutumika tena na mifumo ya kawaida ya UI kwa udumishaji.",
-          "2": "API zilizojumuishwa za RESTful kwa maudhui yanayobadilika na mtiririko wa kazi wa mteja.",
-          "3": "Imeshiriki katika Agile/SCRUM, hakiki za msimbo, na hati."
+          "0": "Umeunda miingiliano inayoitikia kwa kutumia React, HTML, CSS na JavaScript.",
+          "1": "Umejifunza mbinu za kimsingi za uhandisi kupitia ukaguzi wa misimbo, ushirikiano, na uwasilishaji mara kwa mara.",
+          "2": "Vipengele vinavyotumika vya shirika lisilo la faida la ulimwengu halisi na kupata uzoefu wa vitendo na utekelezaji wa UI unaoweza kufikiwa."
         }
       }
     },

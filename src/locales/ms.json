@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Jurutera Perisian",
-        "company": "Kesihatan Fusion",
-        "location": "Woodbridge, NJ",
-        "period": "Feb 2026 — Kini",
-        "tagline": "Pasukan teknologi penjagaan kesihatan membina produk digital untuk aliran kerja klinikal dan operasi.",
-        "description": "Membangunkan ciri web dengan Angular (v19 dan warisan), menekankan UI boleh diakses semula, REST dan integrasi GraphQL serta CI/CD berasaskan Docker untuk binaan dan keluaran yang konsisten.",
+        "role": "Jurutera Perisian Kanan",
+        "company": "Blackstraw AI",
+        "location": "Florida, Amerika Syarikat",
+        "period": "Apr 2026 — Kini",
+        "tagline": "Pasukan produk dan kejuruteraan perisian.",
+        "description": "Bekerja sebagai Jurutera Perisian Kanan untuk menyokong pembangunan frontend dan platform berdasarkan keutamaan pasukan.",
         "highlights": {
-          "0": "Membina komponen UI yang boleh digunakan semula dan boleh diakses dengan pemaparan yang dioptimumkan merentas peranti dan penyemak imbas.",
-          "1": "Menjalankan audit kebolehaksesan, menutup jurang WCAG 2.1 AA dan meningkatkan kebolehgunaan untuk semua pengguna.",
-          "2": "Mengintegrasikan API REST dan GraphQL dengan pengurusan keadaan pepejal dan pengendalian ralat merentas modul.",
-          "3": "Mengekalkan talian paip pembangun, ujian dan penggunaan Dockerized untuk aliran kerja CI/CD yang lancar."
+          "0": "Menyumbang kepada penghantaran ciri dengan kod yang bersih dan boleh diselenggara.",
+          "1": "Bekerjasama dengan pasukan produk dan kejuruteraan mengenai keutamaan pelaksanaan."
         }
       },
       "1": {
+        "role": "Jurutera Perisian (Kontrak)",
+        "company": "Kesihatan Fusion",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Kebolehcapaian jangka pendek dan penglibatan pematuhan.",
+        "description": "Fokus pada peningkatan kebolehaksesan dan pematuhan WCAG 2.1 AA dalam aplikasi Angular.",
+        "highlights": {
+          "0": "Melaksanakan audit kebolehaksesan dan membetulkan isu WCAG 2.1 AA merentas aliran pengguna utama.",
+          "1": "Penanda semantik yang dipertingkatkan, navigasi papan kekunci dan sokongan pembaca skrin dalam UI Sudut."
+        }
+      },
+      "2": {
         "role": "Jurutera Bahagian Hadapan",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -203,7 +213,7 @@
           "3": "Ulasan kod, penyahpepijatan dan pengalaman merentas peranti sejajar WCAG."
         }
       },
-      "2": {
+      "3": {
         "role": "Jurutera Bahagian Hadapan",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Menterjemah reka bentuk Figma kepada antara muka yang responsif, boleh diakses, sedia pengeluaran."
         }
       },
-      "3": {
-        "role": "Jurutera Bahagian Hadapan",
+      "4": {
+        "role": "Jurutera Bahagian Hadapan (Kontrak)",
         "company": "Skrip Cigna Express",
         "location": "Tasik Franklin, NJ",
         "period": "Mei 2021 — Apr 2022",
@@ -231,18 +241,17 @@
           "3": "Bekerjasama merentas pasukan untuk penghantaran UI yang responsif dan boleh diakses."
         }
       },
-      "4": {
-        "role": "Jurutera Bahagian Hadapan",
+      "5": {
+        "role": "Intern Kejuruteraan Frontend",
         "company": "Badan Amal Atmiya Care",
         "location": "Parsippany, NJ",
         "period": "Sep 2020 — Mei 2021",
-        "tagline": "Jangkauan komuniti bukan untung dan inisiatif amal.",
-        "description": "Menyampaikan apl web yang responsif dan berfikiran WCAG dengan komponen boleh guna semula, integrasi REST dan penghantaran Agile.",
+        "tagline": "Organisasi bukan untung menumpukan pada jangkauan komuniti dan inisiatif amal.",
+        "description": "Memulakan kerjaya perisian saya di sini, membina kemahiran asas hadapan melalui kerja amali secara langsung pada projek bukan untung sebenar.",
         "highlights": {
-          "0": "Pengalaman berorientasikan WCAG yang dibina dengan React, HTML, CSS dan JavaScript.",
-          "1": "Mencipta komponen boleh guna semula dan corak UI modular untuk kebolehselenggaraan.",
-          "2": "API RESTful Bersepadu untuk kandungan dinamik dan aliran kerja pelanggan yang konsisten.",
-          "3": "Mengambil bahagian dalam Agile/SCRUM, semakan kod dan dokumentasi."
+          "0": "Membina antara muka responsif menggunakan React, HTML, CSS dan JavaScript.",
+          "1": "Mempelajari amalan kejuruteraan teras melalui semakan kod, kerjasama dan penyampaian berulang.",
+          "2": "Menyokong ciri bukan untung dunia sebenar dan memperoleh pengalaman praktikal dengan pelaksanaan UI yang boleh diakses."
         }
       }
     },

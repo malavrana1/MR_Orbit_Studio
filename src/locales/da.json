@@ -176,24 +176,34 @@
     },
     "experience": {
       "0": {
-        "role": "Softwareingeniør",
-        "company": "Fusion Health",
-        "location": "Woodbridge, NJ",
-        "period": "feb 2026 – i dag",
-        "tagline": "Sundhedsteknologi teambygger digitale produkter til kliniske og operationelle arbejdsgange.",
-        "description": "Udvikler webfunktioner med Angular (v19 og legacy), og lægger vægt på genanvendelige tilgængelige UI-, REST- og GraphQL-integrationer og Docker-baseret CI/CD for konsistente builds og udgivelser.",
+        "role": "Senior softwareingeniør",
+        "company": "Blackstraw AI",
+        "location": "Florida, USA",
+        "period": "april 2026 – i dag",
+        "tagline": "Software produkt- og ingeniørteam.",
+        "description": "Arbejder som Senior Software Engineer for at understøtte frontend- og platformudvikling baseret på teamprioriteter.",
         "highlights": {
-          "0": "Bygger genbrugelige, tilgængelige UI-komponenter med optimeret gengivelse på tværs af enheder og browsere.",
-          "1": "Kører tilgængelighedsrevisioner, lukker WCAG 2.1 AA-huller og forbedrer brugervenligheden for alle brugere.",
-          "2": "Integrerer REST og GraphQL API'er med solid state management og fejlhåndtering på tværs af moduler.",
-          "3": "Vedligeholder dockeriserede udviklings-, test- og implementeringspipelines for glatte CI/CD-arbejdsgange."
+          "0": "Bidrager til funktionslevering med ren kode, der kan vedligeholdes.",
+          "1": "Samarbejder med produkt- og ingeniørteams om implementeringsprioriteter."
         }
       },
       "1": {
+        "role": "Softwareingeniør (kontrakt)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "februar 2026 – april 2026",
+        "tagline": "Kortsigtet tilgængelighed og compliance engagement.",
+        "description": "Fokuseret på tilgængelighedsforbedringer og WCAG 2.1 AA-overensstemmelse i Angular-applikationer.",
+        "highlights": {
+          "0": "Udførte tilgængelighedsrevisioner og rettet WCAG 2.1 AA-problemer på tværs af nøglebrugerflows.",
+          "1": "Forbedret semantisk markup, tastaturnavigation og skærmlæserunderstøttelse i Angular UI."
+        }
+      },
+      "2": {
         "role": "Frontend ingeniør",
         "company": "Kiswe",
         "location": "Summit, NJ",
-        "period": "sep 2024 - januar 2026",
+        "period": "september 2024 – januar 2026",
         "tagline": "Kiswe giver mulighed for live interaktive oplevelser for sports-, medie- og virksomhedsmærker.",
         "description": "Leverede højtrafikerede enkeltside-apps med React, Vue, TypeScript og Tailwind – med fokus på skalerbare komponenter, API-integration, ydeevne og tilgængelighed.",
         "highlights": {
@@ -203,7 +213,7 @@
           "3": "Forkæmpede kodegennemgange, fejlfinding og WCAG-tilpassede oplevelser på tværs af enheder."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend ingeniør",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,13 +227,13 @@
           "3": "Oversat Figma-design til responsive, tilgængelige, produktionsklare grænseflader."
         }
       },
-      "3": {
-        "role": "Frontend ingeniør",
+      "4": {
+        "role": "Frontend ingeniør (kontrakt)",
         "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
         "period": "maj 2021 – april 2022",
         "tagline": "Apoteksfordele og digitale sundhedsløsninger til medlemmer og patienter.",
-        "description": "Indbyggede interaktive apotekscheck-flows i React og TypeScript med sikker API-integration, modulære komponenter og stærk automatiseret testdækning.",
+        "description": "Indbyggede interaktive apoteksudbetalingsstrømme i React og TypeScript med sikker API-integration, modulære komponenter og stærk automatiseret testdækning.",
         "highlights": {
           "0": "Forbedret fuldførelse af betalingsopgaver med React, TypeScript, HTML5 og CSS3.",
           "1": "Integrerede sikre REST API'er med JWT/OAuth, validering og robust fejlhåndtering.",
@@ -231,18 +241,17 @@
           "3": "Samarbejdede på tværs af teams for responsiv, tilgængelig UI-levering."
         }
       },
-      "4": {
-        "role": "Frontend ingeniør",
+      "5": {
+        "role": "Frontend Engineering Intern",
         "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
         "period": "sep 2020 - maj 2021",
-        "tagline": "Nonprofit samfundsopsøgende og velgørende initiativer.",
-        "description": "Leveret responsive, WCAG-mindede webapps med genanvendelige komponenter, REST-integrationer og agil levering.",
+        "tagline": "Nonprofit organisation fokuseret på samfundsopsøgende og velgørende initiativer.",
+        "description": "Startede min softwarekarriere her, og opbyggede grundlæggende frontend-færdigheder gennem praktisk praktik på rigtige nonprofit-projekter.",
         "highlights": {
-          "0": "Byggede WCAG-orienterede oplevelser med React, HTML, CSS og JavaScript.",
-          "1": "Skabte genanvendelige komponenter og modulære UI-mønstre for vedligeholdelse.",
-          "2": "Integrerede RESTful API'er til dynamisk indhold og ensartede klientarbejdsgange.",
-          "3": "Deltog i Agile/SCRUM, kodegennemgange og dokumentation."
+          "0": "Bygget responsive grænseflader ved hjælp af React, HTML, CSS og JavaScript.",
+          "1": "Lærte kerneingeniørpraksis gennem kodegennemgange, samarbejde og iterativ levering.",
+          "2": "Understøttede nonprofit-funktioner i den virkelige verden og fik praktisk erfaring med tilgængelig UI-implementering."
         }
       }
     },

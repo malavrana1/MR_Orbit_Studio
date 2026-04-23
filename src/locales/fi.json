@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Ohjelmistoinsinööri",
-        "company": "Fusion Health",
-        "location": "Woodbridge, NJ",
-        "period": "Helmikuu 2026 – nyt",
-        "tagline": "Terveydenhuollon teknologiatiimi rakentaa digitaalisia tuotteita kliinisiin ja operatiivisiin työnkulkuihin.",
-        "description": "Kehittää verkko-ominaisuuksia Angularilla (v19 ja vanhat versiot) korostaen uudelleenkäytettävää käyttöliittymää, REST- ja GraphQL-integraatioita sekä Docker-pohjaista CI/CD:tä johdonmukaisia ​​koontiversioita ja julkaisuja varten.",
+        "role": "Vanhempi ohjelmistosuunnittelija",
+        "company": "Blackstraw AI",
+        "location": "Florida, Yhdysvallat",
+        "period": "Huhtikuu 2026 – Nyt",
+        "tagline": "Ohjelmistotuote ja suunnittelutiimi.",
+        "description": "Työskentelet vanhempana ohjelmistosuunnittelijana tukemaan käyttöliittymän ja alustan kehitystä tiimin prioriteettien perusteella.",
         "highlights": {
-          "0": "Rakentaa uudelleenkäytettäviä, helppokäyttöisiä käyttöliittymäkomponentteja optimoidulla renderöinnillä kaikilla laitteilla ja selaimilla.",
-          "1": "Suorittaa esteettömyystarkastuksia, sulkee WCAG 2.1 AA -aukot ja parantaa käytettävyyttä kaikille käyttäjille.",
-          "2": "Integroi REST- ja GraphQL-sovellusliittymät solid-state-hallintaan ja virheiden käsittelyyn moduulien välillä.",
-          "3": "Ylläpitää telakoituja kehitys-, testaus- ja käyttöönottoputkia sujuvaa CI/CD-työnkulkua varten."
+          "0": "Osallistuu ominaisuuksien toimittamiseen puhtaalla, ylläpidettävällä koodilla.",
+          "1": "Tekee yhteistyötä tuote- ja suunnittelutiimien kanssa toteutuksen prioriteettien suhteen."
         }
       },
       "1": {
+        "role": "Ohjelmistoinsinööri (sopimus)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Helmi 2026 – Huhtikuu 2026",
+        "tagline": "Lyhytaikainen saavutettavuus ja noudattaminen.",
+        "description": "Keskittyy saavutettavuuden parannuksiin ja WCAG 2.1 AA -yhteensopivuuteen Angular-sovelluksissa.",
+        "highlights": {
+          "0": "Suoritettu esteettömyystarkastuksia ja korjattu WCAG 2.1 AA -ongelmat keskeisissä käyttäjävirroissa.",
+          "1": "Parannettu semanttinen merkintä, näppäimistönavigointi ja näytönlukuohjelman tuki Angular-käyttöliittymässä."
+        }
+      },
+      "2": {
         "role": "Frontend-insinööri",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -200,10 +210,10 @@
           "0": "Kehitetty SPA:t React, Vue, TypeScript ja Tailwind kanssa skaalautuvan komponenttiarkkitehtuurin avulla.",
           "1": "Integroidut REST- ja GraphQL-sovellusliittymät välimuistin ja tilanhallinnan kanssa; parannettu reagointikyky ja vähennetty käyttöliittymävirheitä.",
           "2": "Sovellettu koodin jakaminen, laiska lataus ja puiden ravistaminen suurten sovellusten nopeampaa lataamista varten.",
-          "3": "Huippuluokan koodin tarkistukset, virheenkorjaukset ja WCAG-yhteneväiset laitteiden väliset kokemukset."
+          "3": "Huipputut koodin tarkistukset, virheenkorjaukset ja WCAG-yhteensopineet laitteiden väliset kokemukset."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend-insinööri",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,32 +227,31 @@
           "3": "Käänsi Figma-suunnitelmat responsiivisiksi, helppopääsyisiksi, tuotantovalmiiksi käyttöliittymiksi."
         }
       },
-      "3": {
-        "role": "Frontend-insinööri",
-        "company": "Cigna Express -skriptit",
+      "4": {
+        "role": "Frontend Engineer (sopimus)",
+        "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
         "period": "Toukokuu 2021 – Huhtikuu 2022",
         "tagline": "Apteekkiedut ja digitaaliset terveydenhuollon ratkaisut jäsenille ja potilaille.",
         "description": "Sisäänrakennetut vuorovaikutteiset apteekkien kassavirrat Reactissa ja TypeScriptissä suojatulla API-integraatiolla, modulaarisilla komponenteilla ja vahvalla automatisoidulla testikatolla.",
         "highlights": {
-          "0": "Paranneltu kassatehtävien suorittaminen Reactin, TypeScriptin, HTML5:n ja CSS3:n avulla.",
+          "0": "Parannettu kassatehtävien suorittaminen Reactin, TypeScriptin, HTML5:n ja CSS3:n avulla.",
           "1": "Integroidut suojatut REST API:t, joissa on JWT/OAuth, validointi ja tehokas virheiden käsittely.",
           "2": "Lyhennetyt sivun latausajat modulaaristen komponenttien ja optimoidun asiakaspuolen renderöinnin ansiosta.",
           "3": "Yhteistyötä eri tiimien välillä nopean ja helppokäyttöisen käyttöliittymän toimittamiseksi."
         }
       },
-      "4": {
-        "role": "Frontend-insinööri",
+      "5": {
+        "role": "Frontend Engineering Intern",
         "company": "Atmiya Care hyväntekeväisyysjärjestö",
         "location": "Parsippany, NJ",
         "period": "Syyskuu 2020 – toukokuu 2021",
-        "tagline": "Voittoa tavoittelemattomat yhteisöt ja hyväntekeväisyyshankkeet.",
-        "description": "Toimitetaan responsiivisia, WCAG-mielisiä verkkosovelluksia, joissa on uudelleenkäytettäviä komponentteja, REST-integraatioita ja ketterä toimitus.",
+        "tagline": "Voittoa tavoittelematon järjestö, joka keskittyi yhteisön tavoittamiseen ja hyväntekeväisyyshankkeisiin.",
+        "description": "Aloitin ohjelmistourani täällä ja rakensin perustaitoja käyttöliittymätaitojen avulla käytännön harjoittelutyössä todellisissa voittoa tavoittelemattomissa projekteissa.",
         "highlights": {
-          "0": "Rakennettiin WCAG-suuntautuneita kokemuksia Reactin, HTML:n, CSS:n ja JavaScriptin kanssa.",
-          "1": "Luotiin uudelleenkäytettäviä komponentteja ja modulaarisia käyttöliittymämalleja ylläpidettävyyden takaamiseksi.",
-          "2": "Integroidut RESTful API:t dynaamiseen sisältöön ja johdonmukaisiin asiakastyönkulkuihin.",
-          "3": "Osallistui Agile/SCRUM-ohjelmaan, kooditarkistuksiin ja dokumentointiin."
+          "0": "Rakennettu responsiiviset käyttöliittymät Reactin, HTML:n, CSS:n ja JavaScriptin avulla.",
+          "1": "Oppinut ydintekniikan käytännöt kooditarkistuksen, yhteistyön ja iteratiivisen toimituksen kautta.",
+          "2": "Tuettu todellisia voittoa tavoittelemattomia ominaisuuksia ja saatu käytännön kokemusta helppokäyttöisen käyttöliittymän toteutuksesta."
         }
       }
     },

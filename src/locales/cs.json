@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "softwarový inženýr",
-        "company": "Fusion Health",
-        "location": "Woodbridge, NJ",
-        "period": "únor 2026 – současnost",
-        "tagline": "Tým pro zdravotnickou technologii vytváří digitální produkty pro klinické a provozní pracovní postupy.",
-        "description": "Vyvíjí webové funkce s Angular (v19 a starší verze), s důrazem na opakovaně použitelné uživatelské rozhraní, integrace REST a GraphQL a CI/CD založené na Dockeru pro konzistentní sestavení a vydání.",
+        "role": "Senior softwarový inženýr",
+        "company": "Blackstraw AI",
+        "location": "Florida, Spojené státy americké",
+        "period": "duben 2026 – současnost",
+        "tagline": "Tým softwarových produktů a inženýrů.",
+        "description": "Práce jako Senior Software Engineer pro podporu vývoje frontendu a platforem na základě týmových priorit.",
         "highlights": {
-          "0": "Vytváří znovu použitelné a přístupné komponenty uživatelského rozhraní s optimalizovaným vykreslováním napříč zařízeními a prohlížeči.",
-          "1": "Spouští audity přístupnosti, odstraňuje mezery WCAG 2.1 AA a zlepšuje použitelnost pro všechny uživatele.",
-          "2": "Integruje rozhraní REST a GraphQL API se správou SSD a zpracováním chyb napříč moduly.",
-          "3": "Udržuje dockerizované vývojové, testovací a zaváděcí kanály pro hladké pracovní postupy CI/CD."
+          "0": "Přispívá k poskytování funkcí pomocí čistého a udržovatelného kódu.",
+          "1": "Spolupracuje s produktovými a inženýrskými týmy na prioritách implementace."
         }
       },
       "1": {
+        "role": "softwarový inženýr (smlouva)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Únor 2026 – duben 2026",
+        "tagline": "Krátkodobá dostupnost a zapojení do souladu.",
+        "description": "Zaměřeno na vylepšení přístupnosti a shodu s WCAG 2.1 AA v aplikacích Angular.",
+        "highlights": {
+          "0": "Provedeny audity přístupnosti a opraveny problémy WCAG 2.1 AA napříč klíčovými uživatelskými toky.",
+          "1": "Vylepšené sémantické značení, navigace pomocí klávesnice a podpora čtečky obrazovky v uživatelském rozhraní Angular."
+        }
+      },
+      "2": {
         "role": "Frontendový inženýr",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -203,7 +213,7 @@
           "3": "Vyspělé recenze kódu, ladění a zkušenosti napříč zařízeními přizpůsobené WCAG."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontendový inženýr",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Návrhy Figma byly převedeny do citlivých, přístupných a produkčních rozhraní."
         }
       },
-      "3": {
-        "role": "Frontendový inženýr",
+      "4": {
+        "role": "Frontend Engineer (smlouva)",
         "company": "skripty Cigna Express",
         "location": "Franklin Lakes, NJ",
         "period": "Květen 2021 – duben 2022",
@@ -231,18 +241,17 @@
           "3": "Spolupráce napříč týmy pro citlivé a dostupné uživatelské rozhraní."
         }
       },
-      "4": {
-        "role": "Frontendový inženýr",
+      "5": {
+        "role": "Frontend Engineering Intern",
         "company": "Charita Atmiya Care",
         "location": "Parsippany, NJ",
         "period": "září 2020 – květen 2021",
-        "tagline": "Neziskové komunitní dosah a charitativní iniciativy.",
-        "description": "Poskytované responzivní webové aplikace zaměřené na WCAG s opakovaně použitelnými komponentami, integracemi REST a agilním doručováním.",
+        "tagline": "Nezisková organizace zaměřená na komunitní a charitativní iniciativy.",
+        "description": "Svou softwarovou kariéru jsem začal zde, budováním základních frontendových dovedností prostřednictvím praktické stáže na skutečných neziskových projektech.",
         "highlights": {
-          "0": "Vybudované zkušenosti orientované na WCAG s React, HTML, CSS a JavaScript.",
-          "1": "Vytvořené opakovaně použitelné komponenty a modulární vzory uživatelského rozhraní pro snadnou údržbu.",
-          "2": "Integrovaná rozhraní RESTful API pro dynamický obsah a konzistentní pracovní postupy klienta.",
-          "3": "Účastnil se Agile/SCRUM, kontrol kódu a dokumentace."
+          "0": "Vybudovaná responzivní rozhraní využívající React, HTML, CSS a JavaScript.",
+          "1": "Naučili se základní inženýrské postupy prostřednictvím kontrol kódu, spolupráce a opakovaného doručování.",
+          "2": "Podporované funkce pro neziskové organizace v reálném světě a získané praktické zkušenosti s implementací přístupného uživatelského rozhraní."
         }
       }
     },

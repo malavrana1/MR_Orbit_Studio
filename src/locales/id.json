@@ -176,26 +176,36 @@
     },
     "experience": {
       "0": {
-        "role": "Insinyur Perangkat Lunak",
-        "company": "Kesehatan Fusi",
-        "location": "Woodbridge, NJ",
-        "period": "Februari 2026 — Sekarang",
-        "tagline": "Tim teknologi layanan kesehatan membangun produk digital untuk alur kerja klinis dan operasional.",
-        "description": "Mengembangkan fitur web dengan Angular (v19 dan lawas), menekankan UI yang dapat diakses dan digunakan kembali, integrasi REST dan GraphQL, serta CI/CD berbasis Docker untuk build dan rilis yang konsisten.",
+        "role": "Insinyur Perangkat Lunak Senior",
+        "company": "AI Sedotan Hitam",
+        "location": "Florida, Amerika Serikat",
+        "period": "April 2026 — Sekarang",
+        "tagline": "Produk perangkat lunak dan tim teknik.",
+        "description": "Bekerja sebagai Insinyur Perangkat Lunak Senior untuk mendukung pengembangan frontend dan platform berdasarkan prioritas tim.",
         "highlights": {
-          "0": "Membangun komponen UI yang dapat digunakan kembali dan dapat diakses dengan rendering yang dioptimalkan di seluruh perangkat dan browser.",
-          "1": "Menjalankan audit aksesibilitas, menutup kesenjangan WCAG 2.1 AA, dan meningkatkan kegunaan bagi semua pengguna.",
-          "2": "Mengintegrasikan REST dan GraphQL API dengan manajemen solid state dan penanganan kesalahan di seluruh modul.",
-          "3": "Mempertahankan alur pengembangan, pengujian, dan penerapan Docker untuk alur kerja CI/CD yang lancar."
+          "0": "Berkontribusi pada pengiriman fitur dengan kode yang bersih dan mudah dipelihara.",
+          "1": "Berkolaborasi dengan tim produk dan teknik dalam prioritas implementasi."
         }
       },
       "1": {
+        "role": "Insinyur Perangkat Lunak (Kontrak)",
+        "company": "Kesehatan Fusi",
+        "location": "Woodbridge, NJ",
+        "period": "Februari 2026 — April 2026",
+        "tagline": "Aksesibilitas jangka pendek dan keterlibatan kepatuhan.",
+        "description": "Berfokus pada peningkatan aksesibilitas dan kepatuhan WCAG 2.1 AA dalam aplikasi Angular.",
+        "highlights": {
+          "0": "Melakukan audit aksesibilitas dan memperbaiki masalah WCAG 2.1 AA di seluruh aliran pengguna utama.",
+          "1": "Peningkatan markup semantik, navigasi keyboard, dan dukungan pembaca layar di Angular UI."
+        }
+      },
+      "2": {
         "role": "Insinyur Bagian Depan",
         "company": "Kiswe",
         "location": "Puncak, NJ",
         "period": "Sep 2024 — Januari 2026",
         "tagline": "Kiswe mendukung pengalaman interaktif langsung untuk merek olahraga, media, dan perusahaan.",
-        "description": "Menghadirkan aplikasi satu halaman dengan lalu lintas tinggi dengan React, Vue, TypeScript, dan Tailwind—berfokus pada komponen yang dapat diskalakan, integrasi API, kinerja, dan aksesibilitas.",
+        "description": "Menghasilkan aplikasi satu halaman dengan lalu lintas tinggi dengan React, Vue, TypeScript, dan Tailwind—berfokus pada komponen yang dapat diskalakan, integrasi API, kinerja, dan aksesibilitas.",
         "highlights": {
           "0": "Mengembangkan SPA dengan React, Vue, TypeScript, dan Tailwind menggunakan arsitektur komponen yang dapat diskalakan.",
           "1": "API REST dan GraphQL terintegrasi dengan caching dan manajemen status; meningkatkan daya tanggap dan mengurangi kesalahan frontend.",
@@ -203,7 +213,7 @@
           "3": "Peninjauan kode, proses debug, dan pengalaman lintas perangkat yang selaras dengan WCAG."
         }
       },
-      "2": {
+      "3": {
         "role": "Insinyur Bagian Depan",
         "company": "Gensler",
         "location": "Morristown, New Jersey",
@@ -217,8 +227,8 @@
           "3": "Menerjemahkan desain Figma ke dalam antarmuka yang responsif, mudah diakses, dan siap produksi."
         }
       },
-      "3": {
-        "role": "Insinyur Bagian Depan",
+      "4": {
+        "role": "Insinyur Frontend (Kontrak)",
         "company": "Skrip Cigna Express",
         "location": "Danau Franklin, NJ",
         "period": "Mei 2021 — April 2022",
@@ -231,18 +241,17 @@
           "3": "Berkolaborasi antar tim untuk penyampaian UI yang responsif dan mudah diakses."
         }
       },
-      "4": {
-        "role": "Insinyur Bagian Depan",
+      "5": {
+        "role": "Magang Teknik Frontend",
         "company": "Badan Amal Perawatan Atmiya",
         "location": "Parsippany, NJ",
         "period": "Sep 2020 — Mei 2021",
-        "tagline": "Penjangkauan komunitas nirlaba dan inisiatif amal.",
-        "description": "Menghadirkan aplikasi web responsif dan berorientasi WCAG dengan komponen yang dapat digunakan kembali, integrasi REST, dan pengiriman Agile.",
+        "tagline": "Organisasi nirlaba yang berfokus pada penjangkauan komunitas dan inisiatif amal.",
+        "description": "Memulai karir perangkat lunak saya di sini, membangun keterampilan frontend dasar melalui kerja magang langsung di proyek nirlaba nyata.",
         "highlights": {
-          "0": "Membangun pengalaman berorientasi WCAG dengan React, HTML, CSS, dan JavaScript.",
-          "1": "Membuat komponen yang dapat digunakan kembali dan pola UI modular agar mudah dirawat.",
-          "2": "API RESTful terintegrasi untuk konten dinamis dan alur kerja klien yang konsisten.",
-          "3": "Berpartisipasi dalam Agile/SCRUM, review kode, dan dokumentasi."
+          "0": "Membangun antarmuka responsif menggunakan React, HTML, CSS, dan JavaScript.",
+          "1": "Mempelajari praktik teknik inti melalui tinjauan kode, kolaborasi, dan pengiriman berulang.",
+          "2": "Mendukung fitur-fitur nirlaba dunia nyata dan memperoleh pengalaman praktis dengan penerapan UI yang dapat diakses."
         }
       }
     },
