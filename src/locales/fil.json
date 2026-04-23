@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Orbit Studio",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Bahay",
+    "summary": "Buod",
+    "toolkit": "Toolkit",
+    "experience": "Karanasan",
+    "credentials": "Mga kredensyal",
+    "projects": "Mga proyekto",
+    "about": "Tungkol sa",
+    "connect": "Kumonekta"
+  },
+  "theme": {
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "switchToLight": "Lumipat sa light mode",
+    "switchToDark": "Lumipat sa dark mode"
+  },
+  "header": {
+    "toggleMenu": "I-toggle ang menu",
+    "language": "Wika"
+  },
+  "hero": {
+    "greeting": "Hi, ako",
+    "headlineFallback": "Frontend Engineer | React • Angular • Vue Specialist",
+    "skillCardTitle": "Tech Stack",
+    "skillCardDescription": "Mga teknolohiyang ginagamit ko upang bumuo ng mga modernong web application",
+    "recentTeams": "Kamakailang Karanasan"
+  },
+  "summary": {
+    "title": "Propesyonal na Pangkalahatang-ideya",
+    "subtitleFallback": "Bumuo ng mga modernong karanasan sa web nang may hilig at katumpakan",
+    "highlight1Title": "Mga modernong frontend stack",
+    "highlight1Text": "React, Angular, Next.js, at TypeScript—mula sa mga dashboard ng enterprise hanggang sa mga SPA na may mataas na trapiko",
+    "highlight2Title": "Pagtutulungan ng pangkat",
+    "highlight2Text": "Pakikipagtulungan sa disenyo, produkto, at backend para ipadala ang mga feature na naa-access at napanatili",
+    "highlight3Title": "Kalidad at paghahatid",
+    "highlight3Text": "Automated testing, CI/CD, at performance tuning para sa mga maaasahang release"
+  },
+  "experience": {
+    "title": "Karanasan",
+    "logoAlt": "{{company}} logo"
+  },
+  "projects": {
+    "title": "Mga Tampok na Proyekto"
+  },
+  "toolkit": {
+    "title": "Teknikal na toolkit",
+    "description": "Pumili ng kategorya para matutunan kung saan ko dinadala ang pinakamaraming pagkilos—mula sa mga framework at wika hanggang sa pagsubok at tooling.",
+    "filterAria": "Filter ng toolkit",
+    "defaultDescription": "Mga kasanayan na nagpapanatili ng maayos na daloy ng trabaho."
+  },
+  "credentials": {
+    "educationAndCerts": "Edukasyon at Sertipikasyon",
+    "education": "Edukasyon"
+  },
+  "about": {
+    "titleFallback": "Higit pa tungkol sa akin",
+    "whatEnjoy": "Ang Aking Nasisiyahan",
+    "whatLikeWork": "Ang Gusto Ko Tungkol sa Trabaho",
+    "principles": "Mga Prinsipyo"
+  },
+  "connect": {
+    "title": "Kumonekta tayo",
+    "description": "Bukas ako sa mga bagong proyekto, pakikipagtulungan, at mga pagkakataong propesyonal. Pumili ng paraan para maabot o ma-explore ang aking resume at trabaho.",
+    "resume": "Ipagpatuloy",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Ibahagi",
+    "contact": "Makipag-ugnayan",
+    "shareTitle": "{{name}} - Portfolio",
+    "shareText": "Tingnan ang portfolio ni {{name}}",
+    "copiedAlert": "Nakopya ang link ng portfolio sa clipboard!",
+    "resumeDownload": "Ipagpatuloy",
+    "resumePdfTitle": "Ipagpatuloy (PDF — buksan o i-save)",
+    "githubProfileTitle": "Tingnan ang profile sa GitHub",
+    "linkedinProfileTitle": "Kumonekta sa LinkedIn",
+    "sharePortfolioTitle": "Ibahagi ang portfolio",
+    "contactFormTitle": "Form sa pakikipag-ugnayan"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Lahat ng karapatan ay nakalaan."
+  },
+  "floating": {
+    "scrollTop": "Mag-scroll sa itaas",
+    "backToTop": "Bumalik sa itaas"
+  },
+  "meta": {
+    "portfolioSuffix": "Portfolio ng Frontend Engineer",
+    "pageTitleSuffix": "Portfolio"
+  },
+  "contact": {
+    "title": "Makipag-ugnayan",
+    "successTitle": "Matagumpay na Naipadala ang Mensahe!",
+    "successBody": "Salamat sa pag-abot. babalikan kita agad.",
+    "errorTitle": "Oops! Nagkaproblema",
+    "sendError": "Hindi maipadala ang iyong mensahe. Pakisubukang muli.",
+    "nameLabel": "pangalan mo",
+    "namePlaceholder": "Ano ang dapat kong itawag sa iyo?",
+    "emailLabel": "Ang iyong email",
+    "emailPlaceholder": "you@example.com",
+    "phoneLabel": "Ang iyong numero ng telepono",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "kumpanya",
+    "companyPlaceholder": "Ang iyong kumpanya o organisasyon",
+    "subjectLabel": "Paksa",
+    "selectSubject": "Pumili ng paksa",
+    "subjectJob": "Pagkakataon sa Trabaho",
+    "subjectProject": "Pagtatanong ng Proyekto",
+    "subjectCollab": "Pakikipagtulungan",
+    "subjectGeneral": "Pangkalahatang Tanong",
+    "subjectOther": "Iba pa",
+    "messageLabel": "Mensahe",
+    "messagePlaceholder": "Kumusta Malav, gusto kong kumonekta tungkol sa...",
+    "close": "Isara",
+    "cancel": "Kanselahin",
+    "sending": "Ipinapadala…",
+    "send": "Magpadala ng Mensahe",
+    "certAria": "Tingnan ang {{name}} na sertipiko",
+    "validation": {
+      "emailRequired": "Kinakailangan ang email.",
+      "emailInvalid": "Mangyaring magpasok ng wastong email address.",
+      "subjectRequired": "Kinakailangan ang paksa.",
+      "messageRequired": "Kinakailangan ang mensahe.",
+      "messageMin": "Dapat na hindi bababa sa 10 character ang haba ng mensahe.",
+      "messageMax": "Dapat mas mababa sa 5000 character ang mensahe.",
+      "nameMax": "Dapat mas mababa sa 100 character ang pangalan.",
+      "phoneInvalid": "Mangyaring magpasok ng wastong numero ng telepono.",
+      "companyMax": "Dapat mas mababa sa 100 character ang pangalan ng kumpanya."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Frontend Engineer",
+      "summary": {
+        "0": "Frontend Engineer na may 5+ taong karanasan sa pagbuo ng mga scalable, mataas na pagganap, at naa-access na mga web application. Sanay sa React, Angular, Next.js, TypeScript, at modernong frontend frameworks. Nakaranas sa pagsasama ng REST at GraphQL API, pag-optimize ng mga kumplikadong workflow ng UI, pagpapatupad ng mga pipeline ng CI/CD, automated na pagsubok, at pagsunod sa accessibility. Nakatuon ang collaborative team player sa paghahatid ng user-friendly, maintainable software solutions sa maraming proyekto."
+      }
+    },
+    "personal": {
+      "tagline": "Higit pa tungkol sa akin",
+      "intro": "Gusto kong maglaro ng tennis kasama ang mga kaibigan, kuliglig, hiking, at pakikinig ng musika. Nasisiyahan din ako sa pagluluto, pagsubok ng mga bagong bagay, at paggawa ng maliliit na proyekto sa DIY sa likod-bahay kapag may libreng oras ako.",
+      "whatFuelsMe": "Nagdadala ako ng parehong enerhiya at interes mula sa aking mga libangan sa paggawa ng mga produkto araw-araw. Kahit na ito ay paglalaro ng tennis paminsan-minsan, isang proyekto sa DIY, o paglutas ng isang problema sa coding, nasisiyahan akong matuto at lumikha.",
+      "interests": {
+        "0": "Tennis",
+        "1": "Kuliglig",
+        "2": "Hiking",
+        "3": "Musika",
+        "4": "Pagluluto",
+        "5": "Mga Proyekto sa DIY"
+      },
+      "principles": {
+        "0": "Tumutok sa kung ano ang kailangan ng mga gumagamit",
+        "1": "Bumuo ng maliit at subukan nang madalas",
+        "2": "Panatilihing simple at mabilis ang mga bagay"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Live na Roulette",
+        "description": "Isang makatotohanan at interactive na larong roulette na binuo gamit ang Vue 3. Maglaro gamit ang mga virtual chips, tangkilikin ang mga makinis na animation, at subaybayan ang iyong mga istatistika. Damhin ang kilig ng isang laro sa casino nang walang anumang totoong pera na kasangkot.",
+        "cta": "Mag-explore sa GitHub"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Isang personal na stock market simulator upang galugarin ang mga stock at crypto sa real time. Kalkulahin ang mga kita, i-save ang mga sitwasyon, subaybayan ang mga paborito, at matuto ng mga diskarte sa pangangalakal nang hindi nanganganib sa totoong pera.",
+        "cta": "Mag-explore sa GitHub"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "Isang-pahinang React portfolio na nagpapakita ng mga bagay na gusto kong buuin - mga seksyong batay sa data, ipagpatuloy ang pag-download, at mga interactive na filter ng toolkit.",
+        "cta": "Tingnan ang portfolio"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Software Engineer",
+        "company": "Kalusugan ng Fusion",
+        "location": "Woodbridge, NJ",
+        "period": "Peb 2026 — Kasalukuyan",
+        "tagline": "Ang pangkat ng teknolohiya sa pangangalagang pangkalusugan ay bumubuo ng mga digital na produkto para sa mga klinikal at operational na daloy ng trabaho.",
+        "description": "Bumubuo ng mga web feature gamit ang Angular (v19 at legacy), na binibigyang-diin ang reusable na accessible na UI, REST at GraphQL integrations, at Docker-based CI/CD para sa mga pare-parehong build at release.",
+        "highlights": {
+          "0": "Bumubuo ng magagamit muli, naa-access na mga bahagi ng UI na may naka-optimize na pag-render sa mga device at browser.",
+          "1": "Nagpapatakbo ng mga pag-audit sa pagiging naa-access, nagsasara ng WCAG 2.1 AA gaps, at pinapahusay ang kakayahang magamit para sa lahat ng user.",
+          "2": "Pinagsasama ang REST at GraphQL API sa solid state management at paghawak ng error sa mga module.",
+          "3": "Pinapanatili ang Dockerized dev, test, at deployment pipelines para sa maayos na CI/CD workflows."
+        }
+      },
+      "1": {
+        "role": "Frontend Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Set 2024 — Ene 2026",
+        "tagline": "Pinapalakas ng Kiswe ang mga live na interactive na karanasan para sa mga brand ng sports, media, at enterprise.",
+        "description": "Naghatid ng mga single-page na app na may mataas na trapiko na may React, Vue, TypeScript, at Tailwind—nakatuon sa mga scalable na bahagi, pagsasama ng API, performance, at accessibility.",
+        "highlights": {
+          "0": "Mga binuo na SPA na may React, Vue, TypeScript, at Tailwind gamit ang scalable component architecture.",
+          "1": "Pinagsamang REST at GraphQL API na may caching at pamamahala ng estado; pinahusay na kakayahang tumugon at nabawasan ang mga error sa frontend.",
+          "2": "Inilapat ang code splitting, lazy loading, at tree-shaking para sa mas mabilis na pag-load sa malalaking app.",
+          "3": "Mga na-champion na pagsusuri ng code, pag-debug, at nakahanay sa WCAG, mga karanasan sa cross-device."
+        }
+      },
+      "2": {
+        "role": "Frontend Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Hul 2022 — Set 2024",
+        "tagline": "Pandaigdigang arkitektura at kumpanya ng disenyo na naghahatid ng mga digital na tool ng enterprise at mga karanasan ng kliyente.",
+        "description": "Mga binuo na enterprise UI na may React, Angular, Vue, at Next.js—nagpapares ng async na REST/GraphQL na data sa mga automated na pagsubok at malapit na pakikipagtulungan sa disenyo.",
+        "highlights": {
+          "0": "Ipinadala ang mga dashboard at bahagi ng UI na may React, Angular, Vue, Next.js, at Mga Naka-istilong Bahagi.",
+          "1": "Pinagsamang REST at GraphQL na may mga asynchronous na update at interactive na feature.",
+          "2": "Ni-refactor ang legacy code, pinahusay na performance, at pinalawak na saklaw ng Jest, RTL, at Playwright.",
+          "3": "Isinalin ang mga disenyo ng Figma sa mga interface na tumutugon, naa-access, at handa sa produksyon."
+        }
+      },
+      "3": {
+        "role": "Frontend Engineer",
+        "company": "Mga Script ng Cigna Express",
+        "location": "Franklin Lakes, NJ",
+        "period": "Mayo 2021 — Abr 2022",
+        "tagline": "Mga benepisyo sa parmasya at mga digital na solusyon sa pangangalagang pangkalusugan para sa mga miyembro at pasyente.",
+        "description": "Mga binuo interactive na daloy ng checkout ng botika sa React at TypeScript na may secure na pagsasama ng API, mga modular na bahagi, at malakas na saklaw ng awtomatikong pagsubok.",
+        "highlights": {
+          "0": "Pinahusay na pagkumpleto ng gawain sa pag-checkout gamit ang React, TypeScript, HTML5, at CSS3.",
+          "1": "Pinagsamang secure na REST API na may JWT/OAuth, validation, at mahusay na paghawak ng error.",
+          "2": "Binawasan ang mga oras ng pag-load ng page sa pamamagitan ng mga modular na bahagi at na-optimize na pag-render sa panig ng kliyente.",
+          "3": "Nakipagtulungan sa mga team para sa tumutugon, naa-access na paghahatid ng UI."
+        }
+      },
+      "4": {
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Setyembre 2020 — Mayo 2021",
+        "tagline": "Nonprofit na community outreach at charitable initiatives.",
+        "description": "Naghatid ng tumutugon, WCAG-minded na web app na may magagamit muli na mga bahagi, REST integration, at Agile delivery.",
+        "highlights": {
+          "0": "Gumawa ng mga karanasang nakatuon sa WCAG gamit ang React, HTML, CSS, at JavaScript.",
+          "1": "Gumawa ng mga reusable na bahagi at modular na pattern ng UI para sa pagpapanatili.",
+          "2": "Pinagsamang RESTful API para sa dynamic na content at pare-parehong daloy ng trabaho ng kliyente.",
+          "3": "Lumahok sa Agile/SCRUM, mga pagsusuri sa code, at dokumentasyon."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Bachelor of Science sa Computer Science",
+        "institution": "Montclair State University",
+        "location": "Montclair, NJ",
+        "period": "2016 — 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Hands-on na karanasan sa React.js, Next.js, Angular, at Vue.js gamit ang TypeScript, modernong CSS (Tailwind, Styled Components, CSS Module), at tumutugon na disenyo. Kumportable mula sa Figma handoff sa pamamagitan ng production build gamit ang Webpack, Vite, at Babel.",
+      "Backend___API": "Pinagsasama ang mga serbisyo ng REST at GraphQL na may mga secure na pattern—JWT, OAuth, CORS—at gumagana sa tabi ng Node.js, Java, at Spring Boot backend para sa mga UI na hinihimok ng data.",
+      "Testing": "Nagpapadala nang may kumpiyansa gamit ang Jest, React Testing Library, Cypress, at Playwright sa kabuuan ng unit, integration, at end-to-end coverage na may automation sa release path.",
+      "Database": "Gumagana sa mga relational at mga data store ng dokumento—MySQL, PostgreSQL, MongoDB, Redis—at SQL para sa mga feature na may kamalayan sa schema at mga query na gumaganap.",
+      "DevOps___Tools": "Gumagamit ng Git, GitHub Actions, Jenkins, Docker, at AWS sa mga pipeline ng CI/CD na may pagsubaybay, ESLint, at Prettier para sa pare-pareho, napapansing paghahatid.",
+      "Concepts": "Nalalapat ang WCAG 2.1 AA accessibility, performance at security best practices, Agile/SCRUM collaboration, at solidong engineering fundamentals (debugging, OOP, mga pattern ng disenyo)."
+    },
+    "skillCategory": {
+      "Frontend": "Frontend",
+      "Backend___API": "Backend / API",
+      "Testing": "Pagsubok",
+      "Database": "Database",
+      "DevOps___Tools": "DevOps / Tools",
+      "Concepts": "Mga konsepto"
+    }
+  }
+}

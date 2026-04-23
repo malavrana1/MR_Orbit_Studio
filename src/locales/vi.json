@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Studio quỹ đạo",
+    "copyrightOwner": "Studio quỹ đạo MR"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "summary": "Bản tóm tắt",
+    "toolkit": "Bộ công cụ",
+    "experience": "Kinh nghiệm",
+    "credentials": "Thông tin xác thực",
+    "projects": "Dự án",
+    "about": "Về",
+    "connect": "Kết nối"
+  },
+  "theme": {
+    "lightMode": "Chế độ ánh sáng",
+    "darkMode": "Chế độ tối",
+    "switchToLight": "Chuyển sang chế độ ánh sáng",
+    "switchToDark": "Chuyển sang chế độ tối"
+  },
+  "header": {
+    "toggleMenu": "Chuyển đổi menu",
+    "language": "Ngôn ngữ"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "headlineFallback": "Kỹ sư giao diện người dùng | Phản ứng • Góc cạnh • Chuyên gia Vue",
+    "skillCardTitle": "ngăn xếp công nghệ",
+    "skillCardDescription": "Công nghệ tôi sử dụng để xây dựng các ứng dụng web hiện đại",
+    "recentTeams": "Kinh nghiệm gần đây"
+  },
+  "summary": {
+    "title": "Tổng quan chuyên môn",
+    "subtitleFallback": "Xây dựng trải nghiệm web hiện đại với niềm đam mê và độ chính xác",
+    "highlight1Title": "Ngăn xếp giao diện người dùng hiện đại",
+    "highlight1Text": "React, Angular, Next.js và TypeScript—từ bảng thông tin doanh nghiệp đến SPA có lưu lượng truy cập cao",
+    "highlight2Title": "Hợp tác nhóm",
+    "highlight2Text": "Hợp tác với thiết kế, sản phẩm và chương trình phụ trợ để cung cấp các tính năng có thể truy cập và bảo trì",
+    "highlight3Title": "Chất lượng & giao hàng",
+    "highlight3Text": "Kiểm tra tự động, CI/CD và điều chỉnh hiệu suất để có các bản phát hành đáng tin cậy"
+  },
+  "experience": {
+    "title": "Kinh nghiệm",
+    "logoAlt": "biểu tượng {{company}}"
+  },
+  "projects": {
+    "title": "Dự án nổi bật"
+  },
+  "toolkit": {
+    "title": "Bộ công cụ kỹ thuật",
+    "description": "Chọn một danh mục để tìm hiểu nơi tôi phát huy được nhiều tác dụng nhất—từ khung và ngôn ngữ đến thử nghiệm và công cụ.",
+    "filterAria": "Bộ lọc bộ công cụ",
+    "defaultDescription": "Kỹ năng giúp công việc trôi chảy."
+  },
+  "credentials": {
+    "educationAndCerts": "Giáo dục & Chứng chỉ",
+    "education": "Giáo dục"
+  },
+  "about": {
+    "titleFallback": "Thêm về tôi",
+    "whatEnjoy": "Những gì tôi thích",
+    "whatLikeWork": "Điều tôi thích ở công việc",
+    "principles": "Nguyên tắc"
+  },
+  "connect": {
+    "title": "Hãy kết nối",
+    "description": "Tôi sẵn sàng đón nhận các dự án, sự hợp tác và cơ hội nghề nghiệp mới. Chọn một cách để tiếp cận hoặc khám phá sơ yếu lý lịch và công việc của tôi.",
+    "resume": "Bản tóm tắt",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Chia sẻ",
+    "contact": "Liên hệ",
+    "shareTitle": "{{name}} - Danh mục đầu tư",
+    "shareText": "Kiểm tra danh mục đầu tư của {{name}}",
+    "copiedAlert": "Liên kết danh mục đầu tư được sao chép vào clipboard!",
+    "resumeDownload": "Bản tóm tắt",
+    "resumePdfTitle": "Tiếp tục (PDF - mở hoặc lưu)",
+    "githubProfileTitle": "Xem hồ sơ GitHub",
+    "linkedinProfileTitle": "Kết nối trên LinkedIn",
+    "sharePortfolioTitle": "Chia sẻ danh mục đầu tư",
+    "contactFormTitle": "Mẫu liên hệ"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Mọi quyền được bảo lưu."
+  },
+  "floating": {
+    "scrollTop": "Cuộn lên trên cùng",
+    "backToTop": "Quay lại đầu trang"
+  },
+  "meta": {
+    "portfolioSuffix": "Danh mục kỹ sư giao diện người dùng",
+    "pageTitleSuffix": "danh mục đầu tư"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "successTitle": "Tin nhắn đã được gửi thành công!",
+    "successBody": "Cảm ơn bạn đã liên hệ. Tôi sẽ liên lạc lại với bạn sớm.",
+    "errorTitle": "Ối! Đã xảy ra lỗi",
+    "sendError": "Không thể gửi tin nhắn của bạn. Vui lòng thử lại.",
+    "nameLabel": "Tên của bạn",
+    "namePlaceholder": "Tôi nên gọi bạn là gì đây?",
+    "emailLabel": "Email của bạn",
+    "emailPlaceholder": "bạn@example.com",
+    "phoneLabel": "Số điện thoại của bạn",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Công ty",
+    "companyPlaceholder": "Công ty hoặc tổ chức của bạn",
+    "subjectLabel": "Chủ thể",
+    "selectSubject": "Chọn một chủ đề",
+    "subjectJob": "Cơ hội việc làm",
+    "subjectProject": "Yêu cầu dự án",
+    "subjectCollab": "Sự hợp tác",
+    "subjectGeneral": "Câu hỏi chung",
+    "subjectOther": "Khác",
+    "messageLabel": "Tin nhắn",
+    "messagePlaceholder": "Xin chào Malav, tôi muốn kết nối về…",
+    "close": "Đóng",
+    "cancel": "Hủy bỏ",
+    "sending": "Đang gửi…",
+    "send": "Gửi tin nhắn",
+    "certAria": "Xem chứng chỉ {{name}}",
+    "validation": {
+      "emailRequired": "Email là bắt buộc.",
+      "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ.",
+      "subjectRequired": "Chủ đề là bắt buộc.",
+      "messageRequired": "Tin nhắn là bắt buộc.",
+      "messageMin": "Tin nhắn phải dài ít nhất 10 ký tự.",
+      "messageMax": "Tin nhắn phải ít hơn 5000 ký tự.",
+      "nameMax": "Tên phải ít hơn 100 ký tự.",
+      "phoneInvalid": "Vui lòng nhập số điện thoại hợp lệ.",
+      "companyMax": "Tên công ty phải ít hơn 100 ký tự."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Kỹ sư giao diện người dùng",
+      "summary": {
+        "0": "Kỹ sư giao diện người dùng với hơn 5 năm kinh nghiệm xây dựng các ứng dụng web có thể mở rộng, hiệu suất cao và dễ tiếp cận. Có kỹ năng về React, Angular, Next.js, TypeScript và các framework giao diện người dùng hiện đại. Có kinh nghiệm tích hợp API REST và GraphQL, tối ưu hóa quy trình làm việc UI phức tạp, triển khai quy trình CI/CD, kiểm tra tự động và tuân thủ khả năng truy cập. Người chơi cộng tác trong nhóm tập trung vào việc cung cấp các giải pháp phần mềm thân thiện với người dùng, có thể bảo trì trên nhiều dự án."
+      }
+    },
+    "personal": {
+      "tagline": "Thêm về tôi",
+      "intro": "Tôi thích chơi quần vợt với bạn bè, chơi cricket, đi bộ đường dài và nghe nhạc. Tôi cũng thích nấu ăn, thử những điều mới và thực hiện các dự án DIY nhỏ ở sân sau khi có thời gian rảnh.",
+      "whatFuelsMe": "Tôi mang năng lượng và sự quan tâm từ sở thích của mình đến việc xây dựng sản phẩm mỗi ngày. Cho dù đó là thỉnh thoảng chơi quần vợt, một dự án DIY hay giải quyết một vấn đề về mã hóa, tôi đều thích học hỏi và sáng tạo.",
+      "interests": {
+        "0": "quần vợt",
+        "1": "dế",
+        "2": "Đi bộ đường dài",
+        "3": "Âm nhạc",
+        "4": "Nấu ăn",
+        "5": "dự án tự làm"
+      },
+      "principles": {
+        "0": "Tập trung vào những gì người dùng cần",
+        "1": "Xây dựng nhỏ và kiểm tra thường xuyên",
+        "2": "Giữ mọi thứ đơn giản và nhanh chóng"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Roulette trực tiếp",
+        "description": "Một trò chơi roulette tương tác và thực tế được xây dựng bằng Vue 3. Chơi với chip ảo, thưởng thức các hoạt ảnh mượt mà và theo dõi số liệu thống kê của bạn. Trải nghiệm cảm giác hồi hộp của trò chơi sòng bạc mà không cần dùng tiền thật.",
+        "cta": "Khám phá trên GitHub"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Trình mô phỏng thị trường chứng khoán cá nhân để khám phá cổ phiếu và tiền điện tử trong thời gian thực. Tính toán lợi nhuận, lưu kịch bản, theo dõi các mục yêu thích và tìm hiểu chiến lược giao dịch mà không gặp rủi ro với tiền thật.",
+        "cta": "Khám phá trên GitHub"
+      },
+      "2": {
+        "title": "Studio quỹ đạo MR",
+        "description": "Danh mục React một trang giới thiệu những thứ tôi thích xây dựng - các phần dựa trên dữ liệu, tải xuống sơ yếu lý lịch và các bộ lọc bộ công cụ tương tác.",
+        "cta": "Xem danh mục đầu tư"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Kỹ sư phần mềm",
+        "company": "Sức khỏe tổng hợp",
+        "location": "Woodbridge, NJ",
+        "period": "Tháng 2 năm 2026 - Hiện tại",
+        "tagline": "Nhóm công nghệ chăm sóc sức khỏe xây dựng các sản phẩm kỹ thuật số cho quy trình hoạt động và lâm sàng.",
+        "description": "Phát triển các tính năng web với Angular (v19 và phiên bản cũ), nhấn mạnh vào giao diện người dùng có thể truy cập lại, tích hợp REST và GraphQL cũng như CI/CD dựa trên Docker để xây dựng và phát hành nhất quán.",
+        "highlights": {
+          "0": "Xây dựng các thành phần giao diện người dùng có thể sử dụng lại, có thể truy cập được với khả năng hiển thị được tối ưu hóa trên các thiết bị và trình duyệt.",
+          "1": "Chạy kiểm tra khả năng truy cập, thu hẹp khoảng cách WCAG 2.1 AA và cải thiện khả năng sử dụng cho tất cả người dùng.",
+          "2": "Tích hợp API REST và GraphQL với khả năng quản lý trạng thái vững chắc và xử lý lỗi trên các mô-đun.",
+          "3": "Duy trì các quy trình phát triển, thử nghiệm và triển khai Dockerized để có quy trình làm việc CI/CD suôn sẻ."
+        }
+      },
+      "1": {
+        "role": "Kỹ sư giao diện người dùng",
+        "company": "Kiswe",
+        "location": "Hội nghị thượng đỉnh, NJ",
+        "period": "Tháng 9 năm 2024 - Tháng 1 năm 2026",
+        "tagline": "Kiswe mang lại trải nghiệm tương tác trực tiếp cho các thương hiệu thể thao, truyền thông và doanh nghiệp.",
+        "description": "Cung cấp các ứng dụng một trang có lưu lượng truy cập cao với React, Vue, TypeScript và Tailwind—tập trung vào các thành phần có thể mở rộng, tích hợp API, hiệu suất và khả năng truy cập.",
+        "highlights": {
+          "0": "Đã phát triển các SPA với React, Vue, TypeScript và Tailwind bằng kiến ​​trúc thành phần có thể mở rộng.",
+          "1": "API REST và GraphQL tích hợp với bộ nhớ đệm và quản lý trạng thái; cải thiện khả năng phản hồi và giảm lỗi giao diện người dùng.",
+          "2": "Áp dụng tính năng tách mã, tải từng phần và rung cây để tải nhanh hơn trên các ứng dụng lớn.",
+          "3": "Đánh giá mã, gỡ lỗi và trải nghiệm đa thiết bị, phù hợp với WCAG."
+        }
+      },
+      "2": {
+        "role": "Kỹ sư giao diện người dùng",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Tháng 7 năm 2022 - Tháng 9 năm 2024",
+        "tagline": "Công ty thiết kế và kiến ​​trúc toàn cầu cung cấp các công cụ kỹ thuật số cho doanh nghiệp và trải nghiệm khách hàng.",
+        "description": "Xây dựng giao diện người dùng doanh nghiệp với React, Angular, Vue và Next.js—ghép nối dữ liệu REST/GraphQL không đồng bộ với các thử nghiệm tự động và cộng tác thiết kế chặt chẽ.",
+        "highlights": {
+          "0": "Đã vận chuyển các trang tổng quan và thành phần giao diện người dùng với các Thành phần React, Angular, Vue, Next.js và Styled.",
+          "1": "Tích hợp REST và GraphQL với các tính năng tương tác và cập nhật không đồng bộ.",
+          "2": "Mã kế thừa được tái cấu trúc, hiệu suất được cải thiện và phạm vi phủ sóng Jest, RTL và Playwright mở rộng.",
+          "3": "Chuyển các thiết kế của Figma thành các giao diện đáp ứng, dễ tiếp cận, sẵn sàng sản xuất."
+        }
+      },
+      "3": {
+        "role": "Kỹ sư giao diện người dùng",
+        "company": "Tập lệnh Cigna Express",
+        "location": "Hồ Franklin, NJ",
+        "period": "Tháng 5 năm 2021 - Tháng 4 năm 2022",
+        "tagline": "Lợi ích nhà thuốc và giải pháp chăm sóc sức khỏe kỹ thuật số cho thành viên và bệnh nhân.",
+        "description": "Các luồng thanh toán hiệu thuốc tương tác được xây dựng trong React và TypeScript với tích hợp API an toàn, các thành phần mô-đun và phạm vi kiểm tra tự động mạnh mẽ.",
+        "highlights": {
+          "0": "Cải thiện khả năng hoàn thành tác vụ thanh toán với React, TypeScript, HTML5 và CSS3.",
+          "1": "Tích hợp API REST bảo mật với JWT/OAuth, xác thực và xử lý lỗi mạnh mẽ.",
+          "2": "Giảm thời gian tải trang thông qua các thành phần mô-đun và tối ưu hóa hiển thị phía máy khách.",
+          "3": "Cộng tác giữa các nhóm để phân phối giao diện người dùng đáp ứng, dễ tiếp cận."
+        }
+      },
+      "4": {
+        "role": "Kỹ sư giao diện người dùng",
+        "company": "Tổ chức từ thiện chăm sóc Atmiya",
+        "location": "Parsippany, NJ",
+        "period": "Tháng 9 năm 2020 - Tháng 5 năm 2021",
+        "tagline": "Tiếp cận cộng đồng phi lợi nhuận và các sáng kiến ​​từ thiện.",
+        "description": "Cung cấp các ứng dụng web có tính đáp ứng cao, hướng đến WCAG với các thành phần có thể tái sử dụng, tích hợp REST và phân phối Agile.",
+        "highlights": {
+          "0": "Xây dựng trải nghiệm theo định hướng WCAG với React, HTML, CSS và JavaScript.",
+          "1": "Đã tạo các thành phần có thể tái sử dụng và các mẫu giao diện người dùng mô-đun để có thể bảo trì.",
+          "2": "API RESTful tích hợp cho nội dung động và quy trình làm việc nhất quán của khách hàng.",
+          "3": "Đã tham gia vào Agile/SCRUM, đánh giá mã và tài liệu."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Cử nhân Khoa học về Khoa học Máy tính",
+        "institution": "Đại học bang Montclair",
+        "location": "Montclair, NJ",
+        "period": "2016 – 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Trải nghiệm thực tế trên React.js, Next.js, Angular và Vue.js với TypeScript, CSS hiện đại (Tailwind, Styled Components, CSS Modules) và thiết kế đáp ứng. Thoải mái từ việc chuyển giao Figma cho đến các bản dựng sản xuất với Webpack, Vite và Babel.",
+      "Backend___API": "Tích hợp các dịch vụ REST và GraphQL với các mẫu bảo mật—JWT, OAuth, CORS—và hoạt động cùng với các chương trình phụ trợ Node.js, Java và Spring Boot cho giao diện người dùng dựa trên dữ liệu.",
+      "Testing": "Tự tin vận hành bằng cách sử dụng Jest, Thư viện thử nghiệm React, Cypress và Playwright trên toàn bộ đơn vị, tích hợp và phạm vi phủ sóng từ đầu đến cuối với tính năng tự động hóa trong đường dẫn phát hành.",
+      "Database": "Hoạt động với các kho lưu trữ dữ liệu tài liệu và quan hệ—MySQL, PostgreSQL, MongoDB, Redis—và SQL dành cho các tính năng nhận biết lược đồ và các truy vấn hiệu suất.",
+      "DevOps___Tools": "Sử dụng Git, GitHub Actions, Jenkins, Docker và AWS trong quy trình CI/CD với tính năng giám sát, ESLint và Prettier để phân phối nhất quán, có thể quan sát được.",
+      "Concepts": "Áp dụng các phương pháp hay nhất về khả năng truy cập, hiệu suất và bảo mật WCAG 2.1 AA, cộng tác Agile/SCRUM và các nguyên tắc cơ bản về kỹ thuật vững chắc (gỡ lỗi, OOP, mẫu thiết kế)."
+    },
+    "skillCategory": {
+      "Frontend": "Giao diện người dùng",
+      "Backend___API": "Phần cuối/API",
+      "Testing": "Kiểm tra",
+      "Database": "Cơ sở dữ liệu",
+      "DevOps___Tools": "DevOps / Công cụ",
+      "Concepts": "Khái niệm"
+    }
+  }
+}

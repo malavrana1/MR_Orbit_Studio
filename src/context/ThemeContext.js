@@ -4,24 +4,43 @@ import React, {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from 'react'
+
+import '../pages/Home/Home.dark.css'
 
 const ThemeContext = createContext(null)
 
 export function ThemeProvider({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false)
+  const scrollAfterToggleRef = useRef(null)
 
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.setAttribute('data-theme', 'dark')
-      import('../pages/LandingPage/LandingPage.dark.css').catch(() => {})
     } else {
       document.documentElement.removeAttribute('data-theme')
     }
   }, [isDarkMode])
 
+  useEffect(() => {
+    const pending = scrollAfterToggleRef.current
+    if (!pending) return
+    scrollAfterToggleRef.current = null
+    const id = requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        window.scrollTo(pending.x, pending.y)
+      })
+    })
+    return () => cancelAnimationFrame(id)
+  }, [isDarkMode])
+
   const toggleDarkMode = useCallback(() => {
+    scrollAfterToggleRef.current = {
+      x: window.scrollX,
+      y: window.scrollY,
+    }
     setIsDarkMode((prev) => !prev)
   }, [])
 

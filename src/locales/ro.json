@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Orbit Studio",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Acasă",
+    "summary": "Rezumat",
+    "toolkit": "Trusa de instrumente",
+    "experience": "Experienţă",
+    "credentials": "Acreditări",
+    "projects": "Proiecte",
+    "about": "Despre",
+    "connect": "Conectați-vă"
+  },
+  "theme": {
+    "lightMode": "Modul de lumină",
+    "darkMode": "Modul întunecat",
+    "switchToLight": "Comutați în modul de lumină",
+    "switchToDark": "Comutați la modul întunecat"
+  },
+  "header": {
+    "toggleMenu": "Comutați meniul",
+    "language": "Limbă"
+  },
+  "hero": {
+    "greeting": "Bună, sunt",
+    "headlineFallback": "Inginer Frontend | React • Angular • Vue Specialist",
+    "skillCardTitle": "Stack de tehnologie",
+    "skillCardDescription": "Tehnologii pe care le folosesc pentru a construi aplicații web moderne",
+    "recentTeams": "Experiență recentă"
+  },
+  "summary": {
+    "title": "Privire de ansamblu profesională",
+    "subtitleFallback": "Construiți experiențe web moderne cu pasiune și precizie",
+    "highlight1Title": "Stive frontend moderne",
+    "highlight1Text": "React, Angular, Next.js și TypeScript — de la tablouri de bord pentru întreprinderi la SPA-uri cu trafic ridicat",
+    "highlight2Title": "Colaborarea în echipă",
+    "highlight2Text": "Parteneriat cu design, produs și backend pentru a livra funcții accesibile și care pot fi întreținute",
+    "highlight3Title": "Calitate și livrare",
+    "highlight3Text": "Testare automată, CI/CD și reglare a performanței pentru versiuni fiabile"
+  },
+  "experience": {
+    "title": "Experienţă",
+    "logoAlt": "{{company}} logo"
+  },
+  "projects": {
+    "title": "Proiecte recomandate"
+  },
+  "toolkit": {
+    "title": "Trusa de instrumente tehnice",
+    "description": "Alegeți o categorie pentru a afla unde aduc cea mai mare influență – de la cadre și limbaje la testare și instrumente.",
+    "filterAria": "Filtrul trusei de instrumente",
+    "defaultDescription": "Abilități care mențin munca să curgă fără probleme."
+  },
+  "credentials": {
+    "educationAndCerts": "Educație și certificări",
+    "education": "Educaţie"
+  },
+  "about": {
+    "titleFallback": "Mai multe despre mine",
+    "whatEnjoy": "Ce ma bucur",
+    "whatLikeWork": "Ce îmi place la muncă",
+    "principles": "Principii"
+  },
+  "connect": {
+    "title": "Să ne conectăm",
+    "description": "Sunt deschis la noi proiecte, colaborare și oportunități profesionale. Alegeți o modalitate de a contacta sau de a explora CV-ul și munca mea.",
+    "resume": "Relua",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Distribuie",
+    "contact": "Contact",
+    "shareTitle": "{{name}} - Portofoliu",
+    "shareText": "Consultați portofoliul lui {{name}}",
+    "copiedAlert": "Linkul portofoliului a fost copiat în clipboard!",
+    "resumeDownload": "Relua",
+    "resumePdfTitle": "Reluați (PDF - deschideți sau salvați)",
+    "githubProfileTitle": "Vezi profilul GitHub",
+    "linkedinProfileTitle": "Conectați-vă pe LinkedIn",
+    "sharePortfolioTitle": "Partajați portofoliul",
+    "contactFormTitle": "Formular de contact"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Toate drepturile rezervate."
+  },
+  "floating": {
+    "scrollTop": "Derulați în sus",
+    "backToTop": "Înapoi sus"
+  },
+  "meta": {
+    "portfolioSuffix": "Portofoliu Inginer Frontend",
+    "pageTitleSuffix": "Portofoliu"
+  },
+  "contact": {
+    "title": "Luați legătura",
+    "successTitle": "Mesaj trimis cu succes!",
+    "successBody": "Vă mulțumim că ne-ați contactat. Voi reveni la tine în curând.",
+    "errorTitle": "Hopa! Ceva a mers prost",
+    "sendError": "Nu s-a putut trimite mesajul dvs. Vă rugăm să încercați din nou.",
+    "nameLabel": "Numele dumneavoastră",
+    "namePlaceholder": "Cum ar trebui să te numesc?",
+    "emailLabel": "E-mailul dvs",
+    "emailPlaceholder": "tu@example.com",
+    "phoneLabel": "Numărul dvs. de telefon",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Companie",
+    "companyPlaceholder": "Compania sau organizația dvs",
+    "subjectLabel": "Subiect",
+    "selectSubject": "Selectați un subiect",
+    "subjectJob": "Oportunitate de angajare",
+    "subjectProject": "Cerere de proiect",
+    "subjectCollab": "Colaborare",
+    "subjectGeneral": "Întrebare generală",
+    "subjectOther": "Alte",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Bună Malav, mi-ar plăcea să mă conectez despre...",
+    "close": "Aproape",
+    "cancel": "Anula",
+    "sending": "Se trimite…",
+    "send": "Trimite mesaj",
+    "certAria": "Vedeți certificatul {{name}}",
+    "validation": {
+      "emailRequired": "E-mailul este obligatoriu.",
+      "emailInvalid": "Vă rugăm să introduceți o adresă de email validă.",
+      "subjectRequired": "Subiectul este obligatoriu.",
+      "messageRequired": "Mesajul este obligatoriu.",
+      "messageMin": "Mesajul trebuie să aibă cel puțin 10 caractere.",
+      "messageMax": "Mesajul trebuie să aibă mai puțin de 5000 de caractere.",
+      "nameMax": "Numele trebuie să aibă mai puțin de 100 de caractere.",
+      "phoneInvalid": "Vă rugăm să introduceți un număr de telefon valid.",
+      "companyMax": "Numele companiei trebuie să aibă mai puțin de 100 de caractere."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Inginer Frontend",
+      "summary": {
+        "0": "Inginer front-end cu peste 5 ani de experiență în construirea de aplicații web scalabile, de înaltă performanță și accesibile. Cunoștințe în React, Angular, Next.js, TypeScript și framework-uri frontend moderne. Cu experiență în integrarea API-urilor REST și GraphQL, optimizarea fluxurilor de lucru complexe ale UI, implementarea conductelor CI/CD, testarea automată și conformitatea cu accesibilitatea. Jucător de echipă colaborativ, concentrat pe furnizarea de soluții software ușor de utilizat și ușor de întreținut pentru mai multe proiecte."
+      }
+    },
+    "personal": {
+      "tagline": "Mai multe despre mine",
+      "intro": "Îmi place să joc tenis cu prietenii, cricket, drumeții și să ascult muzică. De asemenea, îmi place să gătesc, să încerc lucruri noi și să fac mici proiecte de bricolaj în curtea din spate atunci când am timp liber.",
+      "whatFuelsMe": "Aduc aceeași energie și interes din hobby-urile mele pentru construirea produselor în fiecare zi. Fie că joc tenis ocazional, un proiect de bricolaj sau rezolv o problemă de codare, îmi place să învăț și să creez.",
+      "interests": {
+        "0": "Tenis",
+        "1": "Cricket",
+        "2": "Drumeții",
+        "3": "Muzică",
+        "4": "Gătitul",
+        "5": "Proiecte de bricolaj"
+      },
+      "principles": {
+        "0": "Concentrați-vă pe ceea ce au nevoie utilizatorii",
+        "1": "Construiți mic și testați des",
+        "2": "Păstrați lucrurile simple și rapide"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Ruleta Live",
+        "description": "Un joc de ruletă realist și interactiv construit cu Vue 3. Joacă cu jetoane virtuale, bucură-te de animații fluide și urmărește-ți statisticile. Experimentați emoția unui joc de cazinou fără bani reali implicați.",
+        "cta": "Explorați pe GitHub"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Un simulator personal de bursă pentru a explora acțiuni și criptomonede în timp real. Calculați profiturile, salvați scenariile, urmăriți favoritele și învățați strategii de tranzacționare fără a risca bani reali.",
+        "cta": "Explorați pe GitHub"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "Portofoliu React cu o singură pagină, care prezintă lucrurile pe care îmi place să le construiesc - secțiuni bazate pe date, descărcarea CV-ului și filtre interactive din set de instrumente.",
+        "cta": "Vizualizați portofoliul"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Inginer software",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Februarie 2026 — Prezent",
+        "tagline": "Produse digitale pentru crearea de echipe de tehnologie medicală pentru fluxuri de lucru clinice și operaționale.",
+        "description": "Dezvoltă funcții web cu Angular (v19 și moștenire), punând accent pe UI accesibilă reutilizabilă, integrări REST și GraphQL și CI/CD bazat pe Docker pentru versiuni și versiuni consistente.",
+        "highlights": {
+          "0": "Construiește componente reutilizabile, accesibile UI, cu randare optimizată pe dispozitive și browsere.",
+          "1": "Efectuează audituri de accesibilitate, închide lacunele WCAG 2.1 AA și îmbunătățește gradul de utilizare pentru toți utilizatorii.",
+          "2": "Integrează API-urile REST și GraphQL cu gestionarea stării solide și gestionarea erorilor între module.",
+          "3": "Menține pipeline Dockerizate de dezvoltare, testare și implementare pentru fluxuri de lucru CI/CD fluide."
+        }
+      },
+      "1": {
+        "role": "Inginer Frontend",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "septembrie 2024 — ianuarie 2026",
+        "tagline": "Kiswe oferă experiențe interactive live pentru sporturi, mass-media și mărci comerciale.",
+        "description": "A furnizat aplicații cu trafic ridicat pe o singură pagină cu React, Vue, TypeScript și Tailwind - concentrându-se pe componente scalabile, integrare API, performanță și accesibilitate.",
+        "highlights": {
+          "0": "SPA-uri dezvoltate cu React, Vue, TypeScript și Tailwind folosind arhitectura componentelor scalabile.",
+          "1": "API-uri REST și GraphQL integrate cu stocarea în cache și managementul stării; reacție îmbunătățită și erori de front-end reduse.",
+          "2": "Divizarea codului aplicat, încărcarea leneșă și tremurarea copacilor pentru încărcări mai rapide pe aplicații mari.",
+          "3": "Evaluări de cod susținute, depanare și experiențe aliniate la WCAG, pe mai multe dispozitive."
+        }
+      },
+      "2": {
+        "role": "Inginer Frontend",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "iulie 2022 - septembrie 2024",
+        "tagline": "Firmă globală de arhitectură și design care oferă instrumente digitale pentru întreprinderi și experiențe pentru clienți.",
+        "description": "Creați interfețe de utilizare pentru întreprindere cu React, Angular, Vue și Next.js - asociind datele REST/GraphQL asincrone cu teste automate și colaborare strânsă în proiectare.",
+        "highlights": {
+          "0": "Tablouri de bord și componente UI livrate cu componente React, Angular, Vue, Next.js și Styled.",
+          "1": "REST și GraphQL integrate cu actualizări asincrone și funcții interactive.",
+          "2": "Cod moștenit refactorizat, performanță îmbunătățită și acoperire extinsă pentru Jest, RTL și Dramaturg.",
+          "3": "Proiectele Figma traduse în interfețe receptive, accesibile și pregătite pentru producție."
+        }
+      },
+      "3": {
+        "role": "Inginer Frontend",
+        "company": "Scripturi Cigna Express",
+        "location": "Franklin Lakes, NJ",
+        "period": "mai 2021 — aprilie 2022",
+        "tagline": "Beneficii de farmacie și soluții digitale de asistență medicală pentru membri și pacienți.",
+        "description": "S-au creat fluxuri interactive de checkout în farmacii în React și TypeScript cu integrare API securizată, componente modulare și o acoperire puternică a testelor automatizate.",
+        "highlights": {
+          "0": "Finalizare îmbunătățită a sarcinii de finalizare a comenzii cu React, TypeScript, HTML5 și CSS3.",
+          "1": "API-uri REST securizate integrate cu JWT/OAuth, validare și gestionarea robustă a erorilor.",
+          "2": "Timpi de încărcare a paginii redusi prin componente modulare și randare optimizată pe partea clientului.",
+          "3": "A colaborat între echipe pentru livrarea UI receptivă și accesibilă."
+        }
+      },
+      "4": {
+        "role": "Inginer Frontend",
+        "company": "Caritate Atmiya Care",
+        "location": "Parsippany, NJ",
+        "period": "septembrie 2020 – mai 2021",
+        "tagline": "Extinderea comunității nonprofit și inițiative caritabile.",
+        "description": "Aplicații web receptive, orientate spre WCAG, cu componente reutilizabile, integrări REST și livrare Agile.",
+        "highlights": {
+          "0": "Am creat experiențe orientate spre WCAG cu React, HTML, CSS și JavaScript.",
+          "1": "S-au creat componente reutilizabile și modele modulare de UI pentru mentenanță.",
+          "2": "API-uri RESTful integrate pentru conținut dinamic și fluxuri de lucru coerente ale clienților.",
+          "3": "Am participat la Agile/SCRUM, revizuiri de cod și documentare."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Licențiat în Științe în Informatică",
+        "institution": "Universitatea de Stat Montclair",
+        "location": "Montclair, NJ",
+        "period": "2016 — 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Experiență practică în React.js, Next.js, Angular și Vue.js cu TypeScript, CSS modern (Tailwind, Componente stilate, module CSS) și design receptiv. Confortabil de la transferul Figma prin versiuni de producție cu Webpack, Vite și Babel.",
+      "Backend___API": "Integrează serviciile REST și GraphQL cu modele securizate — JWT, OAuth, CORS — și funcționează alături de backend-urile Node.js, Java și Spring Boot pentru interfețele de utilizator bazate pe date.",
+      "Testing": "Se livrează cu încredere utilizând Jest, React Testing Library, Cypress și Playwright în întreaga unitate, integrare și acoperire end-to-end cu automatizare în calea de lansare.",
+      "Database": "Funcționează cu depozite de date relaționale și de documente — MySQL, PostgreSQL, MongoDB, Redis — și SQL pentru funcții care știe schema și interogări performante.",
+      "DevOps___Tools": "Utilizează Git, GitHub Actions, Jenkins, Docker și AWS în conducte CI/CD cu monitorizare, ESLint și Prettier pentru o livrare constantă și observabilă.",
+      "Concepts": "Aplică cele mai bune practici de accesibilitate, performanță și securitate WCAG 2.1 AA, colaborare Agile/SCRUM și baze solide de inginerie (depanare, OOP, modele de proiectare)."
+    },
+    "skillCategory": {
+      "Frontend": "În față",
+      "Backend___API": "Backend / API",
+      "Testing": "Testare",
+      "Database": "Baza de date",
+      "DevOps___Tools": "DevOps / Instrumente",
+      "Concepts": "Concepte"
+    }
+  }
+}

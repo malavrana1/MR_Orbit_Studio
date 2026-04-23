@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Orbit Stúdió",
+    "copyrightOwner": "MR Orbit Stúdió"
+  },
+  "nav": {
+    "home": "Otthon",
+    "summary": "Összegzés",
+    "toolkit": "Eszközkészlet",
+    "experience": "Tapasztalat",
+    "credentials": "Hitelesítő adatok",
+    "projects": "Projektek",
+    "about": "Körülbelül",
+    "connect": "Csatlakozás"
+  },
+  "theme": {
+    "lightMode": "Fény mód",
+    "darkMode": "Sötét mód",
+    "switchToLight": "Váltson világos üzemmódra",
+    "switchToDark": "Váltson sötét módba"
+  },
+  "header": {
+    "toggleMenu": "Váltó menü",
+    "language": "Nyelv"
+  },
+  "hero": {
+    "greeting": "Szia, én",
+    "headlineFallback": "Frontend Engineer | React • Szögletes • Vue Specialist",
+    "skillCardTitle": "Tech Stack",
+    "skillCardDescription": "Technológiák, amelyeket modern webalkalmazások készítéséhez használok",
+    "recentTeams": "Legutóbbi tapasztalat"
+  },
+  "summary": {
+    "title": "Szakmai áttekintés",
+    "subtitleFallback": "Modern webes élmények építése szenvedéllyel és precizitással",
+    "highlight1Title": "Modern frontend stackek",
+    "highlight1Text": "React, Angular, Next.js és TypeScript – a vállalati irányítópultoktól a nagy forgalmú SPA-kig",
+    "highlight2Title": "Csapat együttműködés",
+    "highlight2Text": "Partnerség a tervezéssel, a termékkel és a háttérrendszerrel az elérhető, karbantartható funkciók szállításához",
+    "highlight3Title": "Minőség és szállítás",
+    "highlight3Text": "Automatikus tesztelés, CI/CD és teljesítményhangolás a megbízható kiadások érdekében"
+  },
+  "experience": {
+    "title": "Tapasztalat",
+    "logoAlt": "{{company}} logó"
+  },
+  "projects": {
+    "title": "Kiemelt projektek"
+  },
+  "toolkit": {
+    "title": "Technikai eszköztár",
+    "description": "Válasszon egy kategóriát, hogy megtudja, hol hozom a legtöbbet – a keretrendszerektől és a nyelvektől a tesztelésig és az eszközökig.",
+    "filterAria": "Toolkit szűrő",
+    "defaultDescription": "Olyan készségek, amelyek zökkenőmentesen biztosítják a munkát."
+  },
+  "credentials": {
+    "educationAndCerts": "Oktatás és bizonyítványok",
+    "education": "Oktatás"
+  },
+  "about": {
+    "titleFallback": "Többet rólam",
+    "whatEnjoy": "Amit Élvezek",
+    "whatLikeWork": "Mit szeretek a munkában",
+    "principles": "Alapelvek"
+  },
+  "connect": {
+    "title": "Csatlakozzunk",
+    "description": "Nyitott vagyok új projektekre, együttműködésekre és szakmai lehetőségekre. Válassza ki a módját, hogy elérje, vagy fedezze fel az önéletrajzomat és a munkámat.",
+    "resume": "Folytatás",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Részesedés",
+    "contact": "Érintkezés",
+    "shareTitle": "{{name}} – Portfólió",
+    "shareText": "Tekintse meg {{name}} portfólióját",
+    "copiedAlert": "A portfólió linkje a vágólapra másolva!",
+    "resumeDownload": "Folytatás",
+    "resumePdfTitle": "Folytatás (PDF – megnyitás vagy mentés)",
+    "githubProfileTitle": "GitHub profil megtekintése",
+    "linkedinProfileTitle": "Csatlakozzon a LinkedIn-en",
+    "sharePortfolioTitle": "Részvény portfólió",
+    "contactFormTitle": "Kapcsolatfelvételi űrlap"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Minden jog fenntartva."
+  },
+  "floating": {
+    "scrollTop": "Görgessen a tetejére",
+    "backToTop": "Vissza az elejére"
+  },
+  "meta": {
+    "portfolioSuffix": "Frontend Engineer Portfolio",
+    "pageTitleSuffix": "Portfólió"
+  },
+  "contact": {
+    "title": "Vegye fel a kapcsolatot",
+    "successTitle": "Üzenet sikeresen elküldve!",
+    "successBody": "Köszönjük, hogy megkereste. Hamarosan jelentkezem.",
+    "errorTitle": "Hoppá! Valami elromlott",
+    "sendError": "Nem sikerült elküldeni az üzenetet. Kérjük, próbálja újra.",
+    "nameLabel": "A neved",
+    "namePlaceholder": "Hogy hívjam?",
+    "emailLabel": "Az Ön email címe",
+    "emailPlaceholder": "te@example.com",
+    "phoneLabel": "Az Ön telefonszáma",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Vállalat",
+    "companyPlaceholder": "Az Ön cége vagy szervezete",
+    "subjectLabel": "Téma",
+    "selectSubject": "Válasszon ki egy tárgyat",
+    "subjectJob": "Munkalehetőség",
+    "subjectProject": "Projekt vizsgálat",
+    "subjectCollab": "Együttműködés",
+    "subjectGeneral": "Általános kérdés",
+    "subjectOther": "Más",
+    "messageLabel": "Üzenet",
+    "messagePlaceholder": "Szia Malav! Szeretnék kapcsolatba lépni…",
+    "close": "Közeli",
+    "cancel": "Mégsem",
+    "sending": "Küldés…",
+    "send": "Üzenet küldése",
+    "certAria": "{{name}} tanúsítvány megtekintése",
+    "validation": {
+      "emailRequired": "E-mail megadása kötelező.",
+      "emailInvalid": "Kérjük, adjon meg egy érvényes e-mail címet.",
+      "subjectRequired": "A tárgy kötelező.",
+      "messageRequired": "Üzenet szükséges.",
+      "messageMin": "Az üzenetnek legalább 10 karakter hosszúnak kell lennie.",
+      "messageMax": "Az üzenetnek 5000 karakternél rövidebbnek kell lennie.",
+      "nameMax": "A névnek 100 karakternél rövidebbnek kell lennie.",
+      "phoneInvalid": "Kérjük, adjon meg egy érvényes telefonszámot.",
+      "companyMax": "A cégnévnek 100 karakternél rövidebbnek kell lennie."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Frontend mérnök",
+      "summary": {
+        "0": "Frontend mérnök több mint 5 éves tapasztalattal méretezhető, nagy teljesítményű és hozzáférhető webalkalmazások létrehozásában. Jártas a React, Angular, Next.js, TypeScript és modern frontend keretrendszerekben. Tapasztalt REST és GraphQL API-k integrációjában, összetett felhasználói felületi munkafolyamatok optimalizálásában, CI/CD folyamatok megvalósításában, automatizált tesztelésben és kisegítő lehetőségek megfelelőségében. Együttműködő csapatjátékos, aki felhasználóbarát, karbantartható szoftvermegoldások biztosítására összpontosított több projektben."
+      }
+    },
+    "personal": {
+      "tagline": "Többet rólam",
+      "intro": "Szeretek teniszezni a barátokkal, krikettezni, túrázni és zenét hallgatni. Szeretek főzni, új dolgokat kipróbálni, és kis barkácsprojekteket csinálni a hátsó udvarban, ha van szabadidőm.",
+      "whatFuelsMe": "Minden nap ugyanazt az energiát és érdeklődést hozom a hobbimból az építőipari termékekbe. Legyen szó időnként teniszezésről, barkácsprojektről vagy egy kódolási probléma megoldásáról, szeretek tanulni és alkotni.",
+      "interests": {
+        "0": "Tenisz",
+        "1": "Krikett",
+        "2": "Túrázás",
+        "3": "Zene",
+        "4": "Főzés",
+        "5": "DIY projektek"
+      },
+      "principles": {
+        "0": "Koncentráljon arra, amire a felhasználóknak szüksége van",
+        "1": "Építsen kicsiben és tesztelje gyakran",
+        "2": "Legyen a dolgok egyszerűek és gyorsak"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Élő rulett",
+        "description": "Valósághű és interaktív rulettjáték a Vue 3-mal. Játssz virtuális zsetonokkal, élvezd a gördülékeny animációkat, és nyomon kövesd a statisztikáidat. Tapasztalja meg egy kaszinójáték izgalmát valódi pénz nélkül.",
+        "cta": "Fedezze fel a GitHubon"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Személyes tőzsdei szimulátor a részvények és a kriptográfia valós idejű felfedezéséhez. Számítsa ki a nyereséget, mentse el a forgatókönyveket, kövesse nyomon kedvenceit és tanulja meg a kereskedési stratégiákat valódi pénz kockáztatása nélkül.",
+        "cta": "Fedezze fel a GitHubon"
+      },
+      "2": {
+        "title": "MR Orbit Stúdió",
+        "description": "Egyoldalas React portfólió, amely bemutatja azokat a dolgokat, amelyeket szeretek építeni – adatvezérelt szakaszok, letöltés folytatása és interaktív eszköztár-szűrők.",
+        "cta": "Portfólió megtekintése"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Szoftvermérnök",
+        "company": "Fúziós egészség",
+        "location": "Woodbridge, NJ",
+        "period": "2026. február – jelen",
+        "tagline": "Egészségügyi technológiai csapatépítő digitális termékeket klinikai és operatív munkafolyamatokhoz.",
+        "description": "Webes funkciókat fejleszt az Angular-ral (v19 és régebbi), kiemelve az újrafelhasználható, hozzáférhető felhasználói felületet, a REST és GraphQL integrációkat, valamint a Docker-alapú CI/CD-t a következetes összeállítások és kiadások érdekében.",
+        "highlights": {
+          "0": "Újrafelhasználható, hozzáférhető felhasználói felület-összetevőket hoz létre optimalizált megjelenítéssel az eszközökön és a böngészőkön keresztül.",
+          "1": "Hozzáférhetőségi auditokat futtat, megszünteti a WCAG 2.1 AA hiányosságait, és javítja a használhatóságot minden felhasználó számára.",
+          "2": "Integrálja a REST és a GraphQL API-kat szilárdtestkezeléssel és hibakezeléssel a modulok között.",
+          "3": "Fenntartja a Dockerizált fejlesztői, tesztelési és telepítési folyamatokat a gördülékeny CI/CD munkafolyamatok érdekében."
+        }
+      },
+      "1": {
+        "role": "Frontend mérnök",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "2024. szeptember – 2026. jan",
+        "tagline": "A Kiswe élő interaktív élményeket biztosít a sport-, média- és vállalati márkák számára.",
+        "description": "Nagy forgalmú egyoldalas alkalmazások React, Vue, TypeScript és Tailwind technológiával – a méretezhető összetevőkre, az API-integrációra, a teljesítményre és a kisegítő lehetőségekre összpontosítva.",
+        "highlights": {
+          "0": "Fejlett SPA-k React, Vue, TypeScript és Tailwind segítségével, méretezhető komponens architektúrával.",
+          "1": "Integrált REST és GraphQL API-k gyorsítótárazással és állapotkezeléssel; jobb válaszkészség és csökkentett frontend hibák.",
+          "2": "Alkalmazott kódfelosztás, lusta betöltés és fa rázás a nagyobb alkalmazások gyorsabb betöltéséhez.",
+          "3": "Kiemelt kódellenőrzések, hibakeresés és WCAG-hoz igazított, több eszközön elérhető élmények."
+        }
+      },
+      "2": {
+        "role": "Frontend mérnök",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "2022. július – 2024. szept",
+        "tagline": "Globális építészeti és tervező cég, amely vállalati digitális eszközöket és ügyfélélményt biztosít.",
+        "description": "Beépített vállalati felhasználói felületek React, Angular, Vue és Next.js segítségével – az aszinkron REST/GraphQL adatok párosítása automatizált tesztekkel és szoros tervezési együttműködéssel.",
+        "highlights": {
+          "0": "Irányítópultok és felhasználói felület-összetevők szállítva React, Angular, Vue, Next.js és Styled komponensekkel.",
+          "1": "Integrált REST és GraphQL aszinkron frissítésekkel és interaktív funkciókkal.",
+          "2": "Átdolgozott örökölt kód, jobb teljesítmény, valamint kiterjesztett Jest, RTL és Playwright lefedettség.",
+          "3": "A Figma-terveket reszponzív, hozzáférhető, gyártásra kész felületekre fordította le."
+        }
+      },
+      "3": {
+        "role": "Frontend mérnök",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "2021. május – 2022. ápr",
+        "tagline": "Gyógyszertári előnyök és digitális egészségügyi megoldások a tagok és a betegek számára.",
+        "description": "Beépített interaktív gyógyszertári fizetési folyamatok React és TypeScript rendszerben biztonságos API-integrációval, moduláris komponensekkel és erős automatizált tesztlefedettséggel.",
+        "highlights": {
+          "0": "Továbbfejlesztett fizetési feladatok végrehajtása a React, TypeScript, HTML5 és CSS3 segítségével.",
+          "1": "Integrált biztonságos REST API-k JWT/OAuth-tal, érvényesítéssel és robusztus hibakezeléssel.",
+          "2": "Csökkentett oldalbetöltési idő a moduláris komponensek és az optimalizált ügyféloldali megjelenítés révén.",
+          "3": "Együttműködik a csapatok között az érzékeny, hozzáférhető UI megjelenítés érdekében."
+        }
+      },
+      "4": {
+        "role": "Frontend mérnök",
+        "company": "Atmiya Care jótékonysági szervezet",
+        "location": "Parsippany, NJ",
+        "period": "2020. szeptember – 2021. május",
+        "tagline": "Nonprofit közösségi tájékoztatás és jótékonysági kezdeményezések.",
+        "description": "Reszponzív, WCAG-szemléletű webalkalmazások újrafelhasználható összetevőkkel, REST-integrációkkal és agilis szállítással.",
+        "highlights": {
+          "0": "Beépített WCAG-orientált élmények React, HTML, CSS és JavaScript segítségével.",
+          "1": "Újrafelhasználható összetevőket és moduláris felhasználói felületi mintákat hozott létre a karbantarthatóság érdekében.",
+          "2": "Integrált RESTful API-k a dinamikus tartalomhoz és a konzisztens ügyfélmunkafolyamatokhoz.",
+          "3": "Részt vett az Agile/SCRUM-ban, a kód áttekintésében és a dokumentációban."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Számítástechnikai alapképzés",
+        "institution": "Montclair Állami Egyetem",
+        "location": "Montclair, NJ",
+        "period": "2016-2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Gyakorlati tapasztalat a React.js, Next.js, Angular és Vue.js területén TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules) és reszponzív tervezés segítségével. Kényelmes a Figma átadásától kezdve a Webpack, Vite és Babel gyártási verzióiig.",
+      "Backend___API": "Integrálja a REST és a GraphQL szolgáltatásokat biztonságos mintákkal – JWT, OAuth, CORS –, és a Node.js, Java és Spring Boot háttérrendszerekkel együtt működik az adatvezérelt felhasználói felületekhez.",
+      "Testing": "Magabiztosan szállítja a Jest, a React Testing Library, a Cypress és a Playwright segítségével az egységeken keresztül, az integrációt és a végpontok közötti lefedettséget a kiadási útvonal automatizálásával.",
+      "Database": "Együttműködik relációs és dokumentumadat-tárolókkal (MySQL, PostgreSQL, MongoDB, Redis) és SQL-lel a séma-tudatos funkciók és a hatékony lekérdezések érdekében.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker és AWS-t használ CI/CD-folyamatokban megfigyeléssel, ESLinttel és Prettier-vel a következetes, megfigyelhető megjelenítés érdekében.",
+      "Concepts": "Alkalmazza a WCAG 2.1 AA hozzáférhetőségi, teljesítmény- és biztonsági bevált gyakorlatait, az Agilis/SCRUM együttműködést és a szilárd mérnöki alapokat (hibakeresés, OOP, tervezési minták)."
+    },
+    "skillCategory": {
+      "Frontend": "Frontend",
+      "Backend___API": "Háttér / API",
+      "Testing": "Tesztelés",
+      "Database": "Adatbázis",
+      "DevOps___Tools": "DevOps / Eszközök",
+      "Concepts": "Fogalmak"
+    }
+  }
+}

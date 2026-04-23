@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Studio dell'orbita",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Casa",
+    "summary": "Riassunto",
+    "toolkit": "Kit di strumenti",
+    "experience": "Esperienza",
+    "credentials": "Titoli",
+    "projects": "Progetti",
+    "about": "Chi sono",
+    "connect": "Contatti"
+  },
+  "theme": {
+    "lightMode": "Modalità chiara",
+    "darkMode": "Modalità scura",
+    "switchToLight": "Passa alla modalità chiara",
+    "switchToDark": "Passa alla modalità scura"
+  },
+  "header": {
+    "toggleMenu": "Apri/chiudi menu",
+    "language": "Lingua"
+  },
+  "hero": {
+    "greeting": "Ciao, sono",
+    "headlineFallback": "Frontend engineer | React • Angular • Vue",
+    "skillCardTitle": "Stack tecnologico",
+    "skillCardDescription": "Tecnologie che uso per creare applicazioni web moderne",
+    "recentTeams": "Esperienza recente"
+  },
+  "summary": {
+    "title": "Panoramica professionale",
+    "subtitleFallback": "Creo esperienze web moderne con passione e precisione",
+    "highlight1Title": "Stack frontend moderni",
+    "highlight1Text": "React, Angular, Next.js e TypeScript — da dashboard enterprise a SPA ad alto traffico",
+    "highlight2Title": "Collaborazione di squadra",
+    "highlight2Text": "Lavoro con design, prodotto e backend per funzionalità accessibili e manutenibili",
+    "highlight3Title": "Qualità e consegna",
+    "highlight3Text": "Test automatizzati, CI/CD e performance per release affidabili"
+  },
+  "experience": {
+    "title": "Esperienza",
+    "logoAlt": "Logo {{company}}"
+  },
+  "projects": {
+    "title": "Progetti in evidenza"
+  },
+  "toolkit": {
+    "title": "Toolkit tecnico",
+    "description": "Scegli una categoria per vedere dove porto più valore — framework, linguaggi, test e strumenti.",
+    "filterAria": "Filtro toolkit",
+    "defaultDescription": "Competenze che mantengono fluido il lavoro."
+  },
+  "credentials": {
+    "educationAndCerts": "Formazione e certificazioni",
+    "education": "Formazione"
+  },
+  "about": {
+    "titleFallback": "Altro su di me",
+    "whatEnjoy": "Cosa mi piace",
+    "whatLikeWork": "Cosa mi piace del lavoro",
+    "principles": "Principi"
+  },
+  "connect": {
+    "title": "Restiamo in contatto",
+    "description": "Sono aperto a nuovi progetti, collaborazioni e opportunità. Scegli come contattarmi o guarda CV e lavori.",
+    "resume": "Curriculum",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Condividi",
+    "contact": "Contatto",
+    "shareTitle": "{{name}} - Portafoglio",
+    "shareText": "Guarda il portfolio di {{name}}",
+    "copiedAlert": "Link del portfolio copiato negli appunti!",
+    "resumeDownload": "Riprendere",
+    "resumePdfTitle": "Curriculum vitae (PDF – apri o salva)",
+    "githubProfileTitle": "Visualizza il profilo GitHub",
+    "linkedinProfileTitle": "Connettiti su LinkedIn",
+    "sharePortfolioTitle": "Portafoglio azionario",
+    "contactFormTitle": "Modulo di contatto"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Tutti i diritti riservati."
+  },
+  "floating": {
+    "scrollTop": "Scorri in alto",
+    "backToTop": "Torna su"
+  },
+  "meta": {
+    "portfolioSuffix": "Portfolio frontend engineer",
+    "pageTitleSuffix": "Portfolio"
+  },
+  "contact": {
+    "title": "Contattami",
+    "successTitle": "Messaggio inviato!",
+    "successBody": "Grazie per aver scritto. Ti risponderò presto.",
+    "errorTitle": "Qualcosa è andato storto",
+    "sendError": "Impossibile inviare il messaggio. Riprova.",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Come posso chiamarti?",
+    "emailLabel": "La tua email",
+    "emailPlaceholder": "tu@esempio.it",
+    "phoneLabel": "Il tuo telefono",
+    "phonePlaceholder": "+39 320 000 0000",
+    "companyLabel": "Azienda",
+    "companyPlaceholder": "La tua azienda o organizzazione",
+    "subjectLabel": "Oggetto",
+    "selectSubject": "Seleziona un oggetto",
+    "subjectJob": "Opportunità di lavoro",
+    "subjectProject": "Richiesta progetto",
+    "subjectCollab": "Collaborazione",
+    "subjectGeneral": "Domanda generica",
+    "subjectOther": "Altro",
+    "messageLabel": "Messaggio",
+    "messagePlaceholder": "Ciao Malav, vorrei parlare di…",
+    "close": "Chiudi",
+    "cancel": "Annulla",
+    "sending": "Invio in corso…",
+    "send": "Invia messaggio",
+    "certAria": "Vedi certificato {{name}}",
+    "validation": {
+      "emailRequired": "L'email è obbligatoria.",
+      "emailInvalid": "Inserisci un'email valida.",
+      "subjectRequired": "L'oggetto è obbligatorio.",
+      "messageRequired": "Il messaggio è obbligatorio.",
+      "messageMin": "Il messaggio deve avere almeno 10 caratteri.",
+      "messageMax": "Il messaggio deve avere meno di 5000 caratteri.",
+      "nameMax": "Il nome deve avere meno di 100 caratteri.",
+      "phoneInvalid": "Inserisci un numero di telefono valido.",
+      "companyMax": "Il nome dell'azienda deve avere meno di 100 caratteri."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Ingegnere frontend",
+      "summary": {
+        "0": "Ingegnere frontend con oltre 5 anni di esperienza nella creazione di applicazioni Web scalabili, ad alte prestazioni e accessibili. Esperto in React, Angular, Next.js, TypeScript e moderni framework frontend. Esperienza nell'integrazione di API REST e GraphQL, nell'ottimizzazione di flussi di lavoro dell'interfaccia utente complessi, nell'implementazione di pipeline CI/CD, test automatizzati e conformità in materia di accessibilità. Giocatore di squadra collaborativo concentrato sulla fornitura di soluzioni software facili da usare e manutenibili su più progetti."
+      }
+    },
+    "personal": {
+      "tagline": "Altro su di me",
+      "intro": "Mi piace giocare a tennis con gli amici, a cricket, fare escursioni e ascoltare musica. Mi piace anche cucinare, provare cose nuove e realizzare piccoli progetti fai-da-te in giardino quando ho tempo libero.",
+      "whatFuelsMe": "Ogni giorno metto la stessa energia e interesse dai miei hobby alla costruzione di prodotti. Che si tratti di giocare a tennis occasionalmente, di un progetto fai-da-te o di risolvere un problema di programmazione, mi piace imparare e creare.",
+      "interests": {
+        "0": "Tennis",
+        "1": "Cricket",
+        "2": "Escursionismo",
+        "3": "Musica",
+        "4": "Cucina",
+        "5": "Progetti fai da te"
+      },
+      "principles": {
+        "0": "Concentrati su ciò di cui gli utenti hanno bisogno",
+        "1": "Costruisci in piccolo e testa spesso",
+        "2": "Mantieni le cose semplici e veloci"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Roulette dal vivo",
+        "description": "Un gioco di roulette realistico e interattivo creato con Vue 3. Gioca con fiches virtuali, goditi animazioni fluide e monitora le tue statistiche. Prova l'emozione di un gioco da casinò senza soldi veri coinvolti.",
+        "cta": "Esplora su GitHub"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Un simulatore personale del mercato azionario per esplorare azioni e criptovalute in tempo reale. Calcola i profitti, salva scenari, tieni traccia dei preferiti e apprendi strategie di trading senza rischiare denaro reale.",
+        "cta": "Esplora su GitHub"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "Portfolio React a pagina singola che mostra le cose che amo creare: sezioni basate sui dati, download di curriculum e filtri di toolkit interattivi.",
+        "cta": "Visualizza portafoglio"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Ingegnere del software",
+        "company": "Salute della fusione",
+        "location": "Woodbridge, New Jersey",
+        "period": "Febbraio 2026 — Presente",
+        "tagline": "Team di tecnologia sanitaria che crea prodotti digitali per flussi di lavoro clinici e operativi.",
+        "description": "Sviluppa funzionalità Web con Angular (v19 e legacy), enfatizzando l'interfaccia utente accessibile e riutilizzabile, le integrazioni REST e GraphQL e CI/CD basato su Docker per build e rilasci coerenti.",
+        "highlights": {
+          "0": "Crea componenti dell'interfaccia utente riutilizzabili e accessibili con rendering ottimizzato su dispositivi e browser.",
+          "1": "Esegue controlli di accessibilità, colma le lacune WCAG 2.1 AA e migliora l'usabilità per tutti gli utenti.",
+          "2": "Integra le API REST e GraphQL con la gestione dello stato solido e la gestione degli errori tra i moduli.",
+          "3": "Mantiene pipeline di sviluppo, test e distribuzione dockerizzate per flussi di lavoro CI/CD fluidi."
+        }
+      },
+      "1": {
+        "role": "Ingegnere frontend",
+        "company": "Kiswe",
+        "location": "Vertice, New Jersey",
+        "period": "Settembre 2024 — gennaio 2026",
+        "tagline": "Kiswe offre esperienze interattive dal vivo per marchi sportivi, media e aziendali.",
+        "description": "Fornitura di app a pagina singola ad alto traffico con React, Vue, TypeScript e Tailwind, concentrandosi su componenti scalabili, integrazione API, prestazioni e accessibilità.",
+        "highlights": {
+          "0": "SPA sviluppate con React, Vue, TypeScript e Tailwind utilizzando un'architettura di componenti scalabili.",
+          "1": "API REST e GraphQL integrate con caching e gestione dello stato; migliore reattività e riduzione degli errori del frontend.",
+          "2": "Suddivisione del codice applicata, caricamento lento e scuotimento degli alberi per caricamenti più rapidi su app di grandi dimensioni.",
+          "3": "Ha promosso revisioni del codice, debug ed esperienze cross-device allineate alle WCAG."
+        }
+      },
+      "2": {
+        "role": "Ingegnere frontend",
+        "company": "Gensler",
+        "location": "Morristown, New Jersey",
+        "period": "Luglio 2022 — settembre 2024",
+        "tagline": "Azienda globale di architettura e progettazione che fornisce strumenti digitali aziendali ed esperienze per i clienti.",
+        "description": "Crea interfacce utente aziendali con React, Angular, Vue e Next.js, abbinando dati REST/GraphQL asincroni a test automatizzati e una stretta collaborazione di progettazione.",
+        "highlights": {
+          "0": "Dashboard e componenti dell'interfaccia utente forniti con React, Angular, Vue, Next.js e componenti in stile.",
+          "1": "REST e GraphQL integrati con aggiornamenti asincroni e funzionalità interattive.",
+          "2": "Codice legacy rifattorizzato, prestazioni migliorate e copertura ampliata di Jest, RTL e Playwright.",
+          "3": "Tradotto i progetti Figma in interfacce reattive, accessibili e pronte per la produzione."
+        }
+      },
+      "3": {
+        "role": "Ingegnere frontend",
+        "company": "Script Cigna Express",
+        "location": "Franklin Laghi, New Jersey",
+        "period": "Maggio 2021 — aprile 2022",
+        "tagline": "Vantaggi per la farmacia e soluzioni sanitarie digitali per iscritti e pazienti.",
+        "description": "Crea flussi di pagamento interattivi per le farmacie in React e TypeScript con integrazione API sicura, componenti modulari e una forte copertura di test automatizzati.",
+        "highlights": {
+          "0": "Miglioramento del completamento delle attività di pagamento con React, TypeScript, HTML5 e CSS3.",
+          "1": "API REST sicure integrate con JWT/OAuth, convalida e gestione affidabile degli errori.",
+          "2": "Tempi di caricamento delle pagine ridotti grazie a componenti modulari e rendering lato client ottimizzato.",
+          "3": "Collaborazione tra team per la fornitura di un'interfaccia utente reattiva e accessibile."
+        }
+      },
+      "4": {
+        "role": "Ingegnere frontend",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, New Jersey",
+        "period": "Settembre 2020 — maggio 2021",
+        "tagline": "Sensibilizzazione della comunità no-profit e iniziative di beneficenza.",
+        "description": "Fornitura di app Web reattive e orientate alle WCAG con componenti riutilizzabili, integrazioni REST e distribuzione Agile.",
+        "highlights": {
+          "0": "Crea esperienze orientate alle WCAG con React, HTML, CSS e JavaScript.",
+          "1": "Creati componenti riutilizzabili e modelli di interfaccia utente modulari per la manutenibilità.",
+          "2": "API RESTful integrate per contenuti dinamici e flussi di lavoro client coerenti.",
+          "3": "Partecipazione ad Agile/SCRUM, revisioni del codice e documentazione."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Laurea in Informatica",
+        "institution": "Università statale di Montclair",
+        "location": "Montclair, New Jersey",
+        "period": "2016-2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Esperienza pratica su React.js, Next.js, Angular e Vue.js con TypeScript, CSS moderni (Tailwind, componenti in stile, moduli CSS) e design reattivo. Comodo dal trasferimento di Figma alle build di produzione con Webpack, Vite e Babel.",
+      "Backend___API": "Integra i servizi REST e GraphQL con modelli sicuri (JWT, OAuth, CORS) e funziona insieme ai backend Node.js, Java e Spring Boot per interfacce utente basate sui dati.",
+      "Testing": "Viene spedito in tutta sicurezza utilizzando Jest, React Testing Library, Cypress e Playwright attraverso unità, integrazione e copertura end-to-end con automazione nel percorso di rilascio.",
+      "Database": "Funziona con archivi dati relazionali e di documenti (MySQL, PostgreSQL, MongoDB, Redis) e SQL per funzionalità compatibili con lo schema e query performanti.",
+      "DevOps___Tools": "Utilizza Git, GitHub Actions, Jenkins, Docker e AWS in pipeline CI/CD con monitoraggio, ESLint e Prettier per una distribuzione coerente e osservabile.",
+      "Concepts": "Applica WCAG 2.1 AA, best practice per accessibilità, prestazioni e sicurezza, collaborazione Agile/SCRUM e solidi fondamenti di progettazione (debug, OOP, modelli di progettazione)."
+    },
+    "skillCategory": {
+      "Frontend": "Fine frontale",
+      "Backend___API": "Backend/API",
+      "Testing": "Test",
+      "Database": "Banca dati",
+      "DevOps___Tools": "DevOps/Strumenti",
+      "Concepts": "Concetti"
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Studio ya Orbit",
+    "copyrightOwner": "MR Orbit Studio"
+  },
+  "nav": {
+    "home": "Nyumbani",
+    "summary": "Muhtasari",
+    "toolkit": "Zana",
+    "experience": "Uzoefu",
+    "credentials": "Hati tambulishi",
+    "projects": "Miradi",
+    "about": "Kuhusu",
+    "connect": "Unganisha"
+  },
+  "theme": {
+    "lightMode": "Hali ya Mwanga",
+    "darkMode": "Hali ya Giza",
+    "switchToLight": "Badilisha kwa hali ya mwanga",
+    "switchToDark": "Badili hadi hali ya giza"
+  },
+  "header": {
+    "toggleMenu": "Geuza menyu",
+    "language": "Lugha"
+  },
+  "hero": {
+    "greeting": "Habari, mimi ni",
+    "headlineFallback": "Frontend Mhandisi | React • Angular • Vue Mtaalamu",
+    "skillCardTitle": "Tech Stack",
+    "skillCardDescription": "Teknolojia ninazotumia kuunda programu za kisasa za wavuti",
+    "recentTeams": "Uzoefu wa Hivi Karibuni"
+  },
+  "summary": {
+    "title": "Muhtasari wa Kitaalam",
+    "subtitleFallback": "Kuunda uzoefu wa kisasa wa wavuti kwa shauku na usahihi",
+    "highlight1Title": "Vijiti vya kisasa vya mbele",
+    "highlight1Text": "React, Angular, Next.js, na TypeScript—kutoka kwa dashibodi za biashara hadi SPA za trafiki nyingi",
+    "highlight2Title": "Ushirikiano wa timu",
+    "highlight2Text": "Kushirikiana na muundo, bidhaa na mazingira ya nyuma ili kusafirisha vipengele vinavyoweza kufikiwa na vinavyoweza kudumishwa",
+    "highlight3Title": "Ubora na utoaji",
+    "highlight3Text": "Majaribio ya kiotomatiki, CI/CD, na urekebishaji wa utendaji kwa matoleo ya kuaminika"
+  },
+  "experience": {
+    "title": "Uzoefu",
+    "logoAlt": "{{company}} nembo"
+  },
+  "projects": {
+    "title": "Miradi Iliyoangaziwa"
+  },
+  "toolkit": {
+    "title": "Zana ya kiufundi",
+    "description": "Chagua kategoria ili kujifunza ambapo ninaleta manufaa zaidi—kutoka mifumo na lugha hadi majaribio na zana.",
+    "filterAria": "Kichujio cha seti ya zana",
+    "defaultDescription": "Ujuzi ambao hufanya kazi iende vizuri."
+  },
+  "credentials": {
+    "educationAndCerts": "Elimu na Vyeti",
+    "education": "Elimu"
+  },
+  "about": {
+    "titleFallback": "Zaidi kuhusu mimi",
+    "whatEnjoy": "Ninachofurahia",
+    "whatLikeWork": "Ninachokipenda Kuhusu Kazi",
+    "principles": "Kanuni"
+  },
+  "connect": {
+    "title": "Hebu Tuungane",
+    "description": "Niko wazi kwa miradi mipya, ushirikiano na fursa za kitaaluma. Chagua njia ya kufikia au kuchunguza wasifu wangu na kazi.",
+    "resume": "Endelea",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Shiriki",
+    "contact": "Wasiliana",
+    "shareTitle": "{{name}} - Kwingineko",
+    "shareText": "Angalia kwingineko ya {{name}}",
+    "copiedAlert": "Kiungo cha kwingineko kimenakiliwa kwenye ubao wa kunakili!",
+    "resumeDownload": "Endelea",
+    "resumePdfTitle": "Endelea (PDF - fungua au uhifadhi)",
+    "githubProfileTitle": "Tazama wasifu wa GitHub",
+    "linkedinProfileTitle": "Unganisha kwenye LinkedIn",
+    "sharePortfolioTitle": "Shiriki kwingineko",
+    "contactFormTitle": "Fomu ya mawasiliano"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Haki zote zimehifadhiwa."
+  },
+  "floating": {
+    "scrollTop": "Tembeza hadi juu",
+    "backToTop": "Rudi juu"
+  },
+  "meta": {
+    "portfolioSuffix": "Frontend Mhandisi Kwingineko",
+    "pageTitleSuffix": "Kwingineko"
+  },
+  "contact": {
+    "title": "Wasiliana",
+    "successTitle": "Ujumbe Umetumwa Kwa Mafanikio!",
+    "successBody": "Asante kwa kufikia. Nitarudi kwako hivi karibuni.",
+    "errorTitle": "Lo! Hitilafu fulani imetokea",
+    "sendError": "Haikuweza kutuma ujumbe wako. Tafadhali jaribu tena.",
+    "nameLabel": "Jina lako",
+    "namePlaceholder": "Nikuiteje?",
+    "emailLabel": "Barua pepe yako",
+    "emailPlaceholder": "wewe@mfano.com",
+    "phoneLabel": "Nambari yako ya simu",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Kampuni",
+    "companyPlaceholder": "Kampuni au shirika lako",
+    "subjectLabel": "Somo",
+    "selectSubject": "Chagua somo",
+    "subjectJob": "Nafasi ya Kazi",
+    "subjectProject": "Uchunguzi wa Mradi",
+    "subjectCollab": "Ushirikiano",
+    "subjectGeneral": "Swali la Jumla",
+    "subjectOther": "Nyingine",
+    "messageLabel": "Ujumbe",
+    "messagePlaceholder": "Hujambo Malav, ningependa kuunganishwa kuhusu...",
+    "close": "Funga",
+    "cancel": "Ghairi",
+    "sending": "Inatuma...",
+    "send": "Tuma Ujumbe",
+    "certAria": "Tazama cheti {{name}}",
+    "validation": {
+      "emailRequired": "Barua pepe inahitajika.",
+      "emailInvalid": "Tafadhali weka barua pepe halali.",
+      "subjectRequired": "Mada inahitajika.",
+      "messageRequired": "Ujumbe unahitajika.",
+      "messageMin": "Ujumbe lazima uwe na angalau vibambo 10.",
+      "messageMax": "Ujumbe lazima uwe chini ya herufi 5000.",
+      "nameMax": "Jina lazima liwe chini ya herufi 100.",
+      "phoneInvalid": "Tafadhali weka nambari sahihi ya simu.",
+      "companyMax": "Jina la kampuni lazima liwe chini ya herufi 100."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Mhandisi wa mbele",
+      "summary": {
+        "0": "Frontend Engineer na uzoefu wa miaka 5+ wa kujenga programu za wavuti zinazoweza kubadilika, utendakazi wa juu na zinazoweza kufikiwa. Ana ujuzi katika React, Angular, Next.js, TypeScript, na mifumo ya kisasa ya mandhari ya mbele. Uzoefu wa kujumuisha API za REST na GraphQL, kuboresha utiririshaji wa kazi changamano wa UI, kutekeleza mabomba ya CI/CD, majaribio ya kiotomatiki, na uzingatiaji wa ufikivu. Mchezaji wa timu shirikishi alilenga kutoa suluhisho za programu zinazofaa kwa watumiaji, zinazoweza kudumishwa katika miradi mingi."
+      }
+    },
+    "personal": {
+      "tagline": "Zaidi kuhusu mimi",
+      "intro": "Ninapenda kucheza tenisi na marafiki, kriketi, kupanda mlima, na kusikiliza muziki. Pia ninafurahia kupika, kujaribu vitu vipya, na kufanya miradi midogo ya DIY nyuma ya nyumba ninapokuwa na wakati wa bure.",
+      "whatFuelsMe": "Ninaleta nishati sawa na maslahi kutoka kwa mambo yangu ya kupendeza hadi kwa bidhaa za ujenzi kila siku. Iwe ni kucheza tenisi mara kwa mara, mradi wa DIY, au kutatua tatizo la usimbaji, ninafurahia kujifunza na kuunda.",
+      "interests": {
+        "0": "Tenisi",
+        "1": "Kriketi",
+        "2": "Kutembea kwa miguu",
+        "3": "Muziki",
+        "4": "Kupika",
+        "5": "Miradi ya DIY"
+      },
+      "principles": {
+        "0": "Kuzingatia kile watumiaji wanahitaji",
+        "1": "Jenga ndogo na jaribu mara kwa mara",
+        "2": "Weka mambo rahisi na haraka"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Roulette Live",
+        "description": "Mchezo wa kweli na mwingiliano wa mazungumzo uliojengwa kwa Vue 3. Cheza ukitumia chips pepe, furahia uhuishaji laini na ufuatilie takwimu zako. Furahia msisimko wa mchezo wa kasino bila pesa yoyote halisi inayohusika.",
+        "cta": "Gundua kwenye GitHub"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Kiigaji cha soko la hisa la kibinafsi la kuchunguza hisa na crypto kwa wakati halisi. Kukokotoa faida, kuokoa matukio, kufuatilia favorites, na kujifunza mikakati ya biashara bila kuhatarisha fedha halisi.",
+        "cta": "Gundua kwenye GitHub"
+      },
+      "2": {
+        "title": "MR Orbit Studio",
+        "description": "Kwingineko ya React ya ukurasa mmoja inayoonyesha mambo ninayopenda kuunda - sehemu zinazoendeshwa na data, endelea kupakua, na vichujio vya kisanduku cha zana shirikishi.",
+        "cta": "Tazama kwingineko"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Mhandisi wa Programu",
+        "company": "Afya ya Fusion",
+        "location": "Woodbridge, NJ",
+        "period": "Februari 2026 - Sasa",
+        "tagline": "Timu ya teknolojia ya huduma ya afya inaunda bidhaa za kidijitali kwa utiririshaji wa kazi wa kimatibabu na kiutendaji.",
+        "description": "Hutengeneza vipengele vya wavuti kwa kutumia Angular (v19 na urithi), ikisisitiza UI inayoweza kutumika tena, REST na miunganisho ya GraphQL, na CI/CD inayotegemea Docker kwa miundo na matoleo thabiti.",
+        "highlights": {
+          "0": "Huunda vipengele vya UI vinavyoweza kutumika tena, vinavyoweza kufikiwa na uwasilishaji ulioboreshwa kwenye vifaa na vivinjari.",
+          "1": "Huendesha ukaguzi wa ufikivu, hufunga mapengo ya WCAG 2.1 AA, na kuboresha utumiaji kwa watumiaji wote.",
+          "2": "Huunganisha API za REST na GraphQL na usimamizi thabiti wa hali na ushughulikiaji wa makosa kwenye moduli.",
+          "3": "Huhifadhi muundo wa Dockerized, majaribio, na mabomba ya kusambaza kwa mtiririko laini wa CI/CD."
+        }
+      },
+      "1": {
+        "role": "Mhandisi wa mbele",
+        "company": "Kiswe",
+        "location": "Mkutano Mkuu, NJ",
+        "period": "Septemba 2024 - Januari 2026",
+        "tagline": "Kiswe huwezesha matumizi shirikishi ya michezo, vyombo vya habari na chapa za biashara.",
+        "description": "Imewasilisha programu za ukurasa mmoja zenye trafiki nyingi zenye React, Vue, TypeScript na Tailwind—zinazolenga vipengele vinavyoweza kubadilika, uunganishaji wa API, utendakazi na ufikivu.",
+        "highlights": {
+          "0": "SPAs zilizotengenezwa na React, Vue, TypeScript, na Tailwind kwa kutumia usanifu wa sehemu inayoweza kubadilika.",
+          "1": "API zilizojumuishwa za REST na GraphQL zilizo na kache na usimamizi wa serikali; uitikiaji ulioboreshwa na makosa yaliyopunguzwa ya mstari wa mbele.",
+          "2": "Upasuaji wa msimbo uliotumiwa, upakiaji wa uvivu, na mtikisiko wa miti kwa ajili ya upakiaji wa haraka kwenye programu kubwa.",
+          "3": "Ukaguzi wa misimbo ulioshindiliwa, utatuzi, na utumiaji wa WCAG, wa vifaa mbalimbali."
+        }
+      },
+      "2": {
+        "role": "Mhandisi wa mbele",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Julai 2022 - Septemba 2024",
+        "tagline": "Usanifu wa kimataifa na kampuni ya kubuni inayotoa zana za kidijitali za biashara na uzoefu wa mteja.",
+        "description": "UI za biashara zilizojengwa na React, Angular, Vue, na Next.js—kuoanisha data ya async REST/GraphQL na majaribio ya kiotomatiki na ushirikiano wa karibu wa muundo.",
+        "highlights": {
+          "0": "Dashibodi zilizosafirishwa na vipengee vya UI vyenye React, Angular, Vue, Next.js, na Vipengee vya Mtindo.",
+          "1": "Iliyounganishwa REST na GraphQL na masasisho ya asynchronous na vipengele shirikishi.",
+          "2": "Msimbo wa urithi uliorekebishwa upya, utendakazi ulioboreshwa, na huduma iliyopanuliwa ya Jest, RTL na Playwright.",
+          "3": "Miundo ya Figma iliyotafsiriwa katika violesura vinavyoitikia, vinavyoweza kufikiwa, na tayari kwa uzalishaji."
+        }
+      },
+      "3": {
+        "role": "Mhandisi wa mbele",
+        "company": "Hati za Cigna Express",
+        "location": "Franklin Lakes, NJ",
+        "period": "Mei 2021 - Aprili 2022",
+        "tagline": "Faida za duka la dawa na suluhu za huduma za afya dijitali kwa wanachama na wagonjwa.",
+        "description": "Ulipaji mwingiliano wa maduka ya dawa hutiririka katika React na TypeScript yenye muunganisho salama wa API, vipengee vya kawaida, na huduma dhabiti ya majaribio ya kiotomatiki.",
+        "highlights": {
+          "0": "Ukamilishaji ulioboreshwa wa kazi ya kulipa kwa React, TypeScript, HTML5, na CSS3.",
+          "1": "API salama za REST zilizounganishwa na JWT/OAuth, uthibitishaji, na ushughulikiaji wa hitilafu dhabiti.",
+          "2": "Muda wa upakiaji wa ukurasa uliopunguzwa kupitia vipengee vya kawaida na uwasilishaji wa upande wa mteja ulioboreshwa.",
+          "3": "Imeshirikiana kote kwa timu kwa uwasilishaji wa kiolesura unaosikika na unaoweza kufikiwa."
+        }
+      },
+      "4": {
+        "role": "Mhandisi wa mbele",
+        "company": "Msaada wa Utunzaji wa Atmiya",
+        "location": "Parsippany, NJ",
+        "period": "Septemba 2020 - Mei 2021",
+        "tagline": "Ufikiaji wa jumuiya isiyo ya faida na mipango ya hisani.",
+        "description": "Imewasilishwa programu za wavuti zinazozingatia WCAG zilizo na vijenzi vinavyoweza kutumika tena, viunganishi vya REST na uwasilishaji wa Agile.",
+        "highlights": {
+          "0": "Utumiaji uliojengwa kwa WCAG ukitumia React, HTML, CSS na JavaScript.",
+          "1": "Iliunda vipengee vinavyoweza kutumika tena na mifumo ya kawaida ya UI kwa udumishaji.",
+          "2": "API zilizojumuishwa za RESTful kwa maudhui yanayobadilika na mtiririko wa kazi wa mteja.",
+          "3": "Imeshiriki katika Agile/SCRUM, hakiki za msimbo, na hati."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Shahada ya Sayansi katika Sayansi ya Kompyuta",
+        "institution": "Chuo Kikuu cha Jimbo la Montclair",
+        "location": "Montclair, NJ",
+        "period": "2016-2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Utumiaji wa vitendo kote React.js, Next.js, Angular, na Vue.js zilizo na TypeScript, CSS ya kisasa (Tailwind, Vipengee vya Mtindo, Moduli za CSS), na muundo unaoitikia. Inastarehesha kutoka kwa Figma handoff kupitia miundo ya uzalishaji na Webpack, Vite, na Babel.",
+      "Backend___API": "Huunganisha huduma za REST na GraphQL zenye mifumo salama—JWT, OAuth, CORS—na hufanya kazi pamoja na Node.js, Java, na viambajengo vya Spring Boot kwa UI zinazoendeshwa na data.",
+      "Testing": "Husafirishwa kwa kujiamini kwa kutumia Jest, Maktaba ya Kujaribio la React, Cypress, na Playwright kwenye kitengo, ujumuishaji, na usambazaji wa mwisho hadi mwisho kwa otomatiki katika njia ya kutoa.",
+      "Database": "Hufanya kazi na maduka ya data ya uhusiano na hati—MySQL, PostgreSQL, MongoDB, Redis—na SQL kwa vipengele vinavyofahamu schema na maswali ya watendaji.",
+      "DevOps___Tools": "Hutumia Git, GitHub Actions, Jenkins, Docker, na AWS katika mabomba ya CI/CD yenye ufuatiliaji, ESLint, na Prettier kwa utoaji thabiti, unaoonekana.",
+      "Concepts": "Inatumika WCAG 2.1 AA ya ufikivu, utendaji na mbinu bora za usalama, ushirikiano wa Agile/SCRUM, na misingi thabiti ya uhandisi (utatuzi, OOP, miundo ya kubuni)."
+    },
+    "skillCategory": {
+      "Frontend": "Mbele",
+      "Backend___API": "Backend / API",
+      "Testing": "Kupima",
+      "Database": "Hifadhidata",
+      "DevOps___Tools": "DevOps / Zana",
+      "Concepts": "Dhana"
+    }
+  }
+}

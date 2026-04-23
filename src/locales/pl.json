@@ -1,0 +1,275 @@
+{
+  "site": {
+    "brand": "Studio Orbita",
+    "copyrightOwner": "Studio MR Orbit"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "summary": "Podsumowanie",
+    "toolkit": "Narzędzia",
+    "experience": "Doświadczenie",
+    "credentials": "Wykształcenie",
+    "projects": "Projekty",
+    "about": "O mnie",
+    "connect": "Kontakt"
+  },
+  "theme": {
+    "lightMode": "Tryb jasny",
+    "darkMode": "Tryb ciemny",
+    "switchToLight": "Przełącz na tryb jasny",
+    "switchToDark": "Przełącz na tryb ciemny"
+  },
+  "header": {
+    "toggleMenu": "Przełącz menu",
+    "language": "Język"
+  },
+  "hero": {
+    "greeting": "Cześć, jestem",
+    "headlineFallback": "Inżynier frontend | React • Angular • Vue",
+    "skillCardTitle": "Stack technologiczny",
+    "skillCardDescription": "Technologie, których używam do nowoczesnych aplikacji webowych",
+    "recentTeams": "Ostatnie doświadczenie"
+  },
+  "summary": {
+    "title": "Profesjonalny przegląd",
+    "subtitleFallback": "Tworzę nowoczesne doświadczenia webowe z pasją i precyzją",
+    "highlight1Title": "Nowoczesne stacki frontend",
+    "highlight1Text": "React, Angular, Next.js i TypeScript — od paneli enterprise po SPA z dużym ruchem",
+    "highlight2Title": "Współpraca zespołowa",
+    "highlight2Text": "Współpraca z designem, produktem i backendem przy dostępnych, utrzymywalnych funkcjach",
+    "highlight3Title": "Jakość i dostarczanie",
+    "highlight3Text": "Testy automatyczne, CI/CD i wydajność dla niezawodnych wydań"
+  },
+  "experience": {
+    "title": "Doświadczenie",
+    "logoAlt": "Logo {{company}}"
+  },
+  "projects": {
+    "title": "Wybrane projekty"
+  },
+  "toolkit": {
+    "title": "Zestaw narzędzi",
+    "description": "Wybierz kategorię, aby zobaczyć, gdzie wnoszę najwięcej wartości — frameworki, języki, testy i narzędzia.",
+    "filterAria": "Filtr zestawu narzędzi",
+    "defaultDescription": "Umiejętści, które utrzymują płynność pracy."
+  },
+  "credentials": {
+    "educationAndCerts": "Edukacja i certyfikaty",
+    "education": "Edukacja"
+  },
+  "about": {
+    "titleFallback": "Więcej o mnie",
+    "whatEnjoy": "Co lubię",
+    "whatLikeWork": "Co lubię w pracy",
+    "principles": "Zasady"
+  },
+  "connect": {
+    "title": "Napisz do mnie",
+    "description": "Jestem otwarty na nowe projekty, współpracę i możliwości. Wybierz sposób kontaktu lub zobacz CV i prace.",
+    "resume": "CV",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "share": "Udostępnij",
+    "contact": "Kontakt",
+    "shareTitle": "{{name}} - Portfolio",
+    "shareText": "Zobacz portfolio {{name}}",
+    "copiedAlert": "Link do portfolio skopiowany!",
+    "resumeDownload": "Wznawiać",
+    "resumePdfTitle": "CV (PDF — otwórz lub zapisz)",
+    "githubProfileTitle": "Wyświetl profil GitHub",
+    "linkedinProfileTitle": "Połącz się na LinkedIn",
+    "sharePortfolioTitle": "Udostępnij portfel",
+    "contactFormTitle": "Formularz kontaktowy"
+  },
+  "footer": {
+    "rights": "© {{year}} {{owner}}. Wszelkie prawa zastrzeżone."
+  },
+  "floating": {
+    "scrollTop": "Przewiń do góry",
+    "backToTop": "Do góry"
+  },
+  "meta": {
+    "portfolioSuffix": "Portfolio inżyniera frontend",
+    "pageTitleSuffix": "Teczka"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "successTitle": "Wiadomość wysłana!",
+    "successBody": "Dziękuję za kontakt. Odpowiem wkrótce.",
+    "errorTitle": "Coś poszło nie tak",
+    "sendError": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    "nameLabel": "Imię i nazwisko",
+    "namePlaceholder": "Jak mam się do Ciebie zwracać?",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "ty@przyklad.pl",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+48 500 000 000",
+    "companyLabel": "Firma",
+    "companyPlaceholder": "Twoja firma lub organizacja",
+    "subjectLabel": "Temat",
+    "selectSubject": "Wybierz temat",
+    "subjectJob": "Oferta pracy",
+    "subjectProject": "Zapytanie o projekt",
+    "subjectCollab": "Współpraca",
+    "subjectGeneral": "Pytanie ogólne",
+    "subjectOther": "Inne",
+    "messageLabel": "Wiadomość",
+    "messagePlaceholder": "Cześć Malav, chciałbym porozmawiać o…",
+    "close": "Zamknij",
+    "cancel": "Anuluj",
+    "sending": "Wysyłanie…",
+    "send": "Wyślij wiadomość",
+    "certAria": "Zobacz certyfikat {{name}}",
+    "validation": {
+      "emailRequired": "E-mail jest wymagany.",
+      "emailInvalid": "Podaj prawidłowy adres e-mail.",
+      "subjectRequired": "Temat jest wymagany.",
+      "messageRequired": "Wiadomość jest wymagana.",
+      "messageMin": "Wiadomość musi mieć co najmniej 10 znaków.",
+      "messageMax": "Wiadomość musi mieć mniej niż 5000 znaków.",
+      "nameMax": "Imię musi mieć mniej niż 100 znaków.",
+      "phoneInvalid": "Podaj prawidłowy numer telefonu.",
+      "companyMax": "Nazwa firmy musi mieć mniej niż 100 znaków."
+    }
+  },
+  "content": {
+    "profile": {
+      "headline": "Inżynier Frontendu",
+      "summary": {
+        "0": "Inżynier Frontendu z ponad 5-letnim doświadczeniem w tworzeniu skalowalnych, wydajnych i dostępnych aplikacji internetowych. Znajomość React, Angular, Next.js, TypeScript i nowoczesnych frameworków frontendowych. Doświadczenie w integracji interfejsów API REST i GraphQL, optymalizacji złożonych przepływów pracy w interfejsie użytkownika, wdrażaniu potoków CI/CD, testowaniu automatycznym i zapewnianiu zgodności z dostępnością. Współpracujący gracz zespołowy skupiający się na dostarczaniu przyjaznych dla użytkownika, łatwych w utrzymaniu rozwiązań programowych w wielu projektach."
+      }
+    },
+    "personal": {
+      "tagline": "Więcej o mnie",
+      "intro": "Lubię grać w tenisa z przyjaciółmi, krykieta, wędrować i słuchać muzyki. Lubię także gotować, próbować nowych rzeczy i robić małe projekty DIY na podwórku, gdy mam wolny czas.",
+      "whatFuelsMe": "Każdego dnia z mojego hobby wnoszę tę samą energię i zainteresowanie do tworzenia produktów. Niezależnie od tego, czy okazjonalnie gram w tenisa, robię projekt DIY, czy rozwiązuję problem z kodowaniem, lubię się uczyć i tworzyć.",
+      "interests": {
+        "0": "Tenis",
+        "1": "Krykiet",
+        "2": "Turystyka piesza",
+        "3": "Muzyka",
+        "4": "Gotowanie",
+        "5": "Projekty DIY"
+      },
+      "principles": {
+        "0": "Skoncentruj się na potrzebach użytkowników",
+        "1": "Buduj na małą skalę i często testuj",
+        "2": "Spraw, aby wszystko było proste i szybkie"
+      }
+    },
+    "projects": {
+      "0": {
+        "title": "Ruletka na żywo",
+        "description": "Realistyczna i interaktywna gra w ruletkę zbudowana w Vue 3. Graj wirtualnymi żetonami, ciesz się płynnymi animacjami i śledź swoje statystyki. Poczuj dreszczyk emocji podczas gry w kasynie bez angażowania prawdziwych pieniędzy.",
+        "cta": "Przeglądaj w GitHubie"
+      },
+      "1": {
+        "title": "StockSim",
+        "description": "Osobisty symulator giełdy do eksploracji akcji i kryptowalut w czasie rzeczywistym. Oblicz zyski, zapisuj scenariusze, śledź ulubione i ucz się strategii handlowych bez ryzykowania prawdziwych pieniędzy.",
+        "cta": "Przeglądaj w GitHubie"
+      },
+      "2": {
+        "title": "Studio MR Orbit",
+        "description": "Jednostronicowe portfolio React przedstawiające rzeczy, które uwielbiam tworzyć — sekcje oparte na danych, pobieranie CV i filtry interaktywnych zestawów narzędzi.",
+        "cta": "Zobacz portfolio"
+      }
+    },
+    "experience": {
+      "0": {
+        "role": "Inżynier oprogramowania",
+        "company": "Zdrowie Fuzji",
+        "location": "Woodbridge, New Jersey",
+        "period": "Luty 2026 — obecnie",
+        "tagline": "Zespół ds. technologii opieki zdrowotnej tworzący produkty cyfrowe na potrzeby procesów klinicznych i operacyjnych.",
+        "description": "Rozwija funkcje internetowe za pomocą Angular (wersja 19 i starsze), kładąc nacisk na dostępny interfejs użytkownika wielokrotnego użytku, integrację REST i GraphQL oraz CI/CD opartą na Dockerze w celu zapewnienia spójnych kompilacji i wydań.",
+        "highlights": {
+          "0": "Tworzy dostępne komponenty interfejsu użytkownika wielokrotnego użytku ze zoptymalizowanym renderowaniem na różnych urządzeniach i przeglądarkach.",
+          "1": "Przeprowadza audyty dostępności, uzupełnia luki WCAG 2.1 AA i poprawia użyteczność dla wszystkich użytkowników.",
+          "2": "Integruje interfejsy API REST i GraphQL z zarządzaniem półprzewodnikowym i obsługą błędów w różnych modułach.",
+          "3": "Utrzymuje zadokowane potoki programowania, testowania i wdrażania w celu zapewnienia płynnych przepływów pracy CI/CD."
+        }
+      },
+      "1": {
+        "role": "Inżynier Frontendu",
+        "company": "Kiswe",
+        "location": "Szczyt, New Jersey",
+        "period": "wrzesień 2024 r. — styczeń 2026 r",
+        "tagline": "Kiswe zapewnia interaktywne doświadczenia na żywo dla marek sportowych, medialnych i korporacyjnych.",
+        "description": "Dostarczono aplikacje jednostronicowe o dużym ruchu z React, Vue, TypeScript i Tailwind — koncentrując się na skalowalnych komponentach, integracji API, wydajności i dostępności.",
+        "highlights": {
+          "0": "Opracowano SPA z React, Vue, TypeScript i Tailwind przy użyciu skalowalnej architektury komponentów.",
+          "1": "Zintegrowane interfejsy API REST i GraphQL z buforowaniem i zarządzaniem stanem; poprawiona responsywność i mniejsza liczba błędów frontendowych.",
+          "2": "Zastosowano dzielenie kodu, leniwe ładowanie i wstrząsanie drzewem w celu szybszego ładowania dużych aplikacji.",
+          "3": "Wspierane przeglądy kodu, debugowanie i dostosowane do WCAG doświadczenia na różnych urządzeniach."
+        }
+      },
+      "2": {
+        "role": "Inżynier Frontendu",
+        "company": "Genslera",
+        "location": "Morristown, New Jersey",
+        "period": "lipiec 2022 r. – wrzesień 2024 r",
+        "tagline": "Globalna firma architektoniczna i projektowa dostarczająca cyfrowe narzędzia dla przedsiębiorstw i doświadczenia klientów.",
+        "description": "Zbudowano interfejsy użytkownika dla przedsiębiorstw za pomocą React, Angular, Vue i Next.js — łącząc asynchroniczne dane REST/GraphQL z automatycznymi testami i ścisłą współpracą projektową.",
+        "highlights": {
+          "0": "Dostarczono dashboardy i komponenty interfejsu użytkownika z komponentami React, Angular, Vue, Next.js i Styled Components.",
+          "1": "Zintegrowane REST i GraphQL z asynchronicznymi aktualizacjami i funkcjami interaktywnymi.",
+          "2": "Zrefaktoryzowano starszy kod, poprawiono wydajność i rozszerzono zasięg Jest, RTL i Playwright.",
+          "3": "Przetłumaczono projekty Figma na responsywne, dostępne i gotowe do produkcji interfejsy."
+        }
+      },
+      "3": {
+        "role": "Inżynier Frontendu",
+        "company": "Skrypty Cigna Express",
+        "location": "Franklin Lakes, New Jersey",
+        "period": "maj 2021 – kwiecień 2022",
+        "tagline": "Korzyści apteczne i cyfrowe rozwiązania w zakresie opieki zdrowotnej dla członków i pacjentów.",
+        "description": "Zbudowano interaktywne przepływy kas aptecznych w React i TypeScript z bezpieczną integracją API, modułowymi komponentami i silnym zakresem zautomatyzowanych testów.",
+        "highlights": {
+          "0": "Ulepszona realizacja zadań kasowych za pomocą React, TypeScript, HTML5 i CSS3.",
+          "1": "Zintegrowane bezpieczne interfejsy API REST z JWT/OAuth, walidacją i niezawodną obsługą błędów.",
+          "2": "Krótszy czas ładowania strony dzięki modułowym komponentom i zoptymalizowanemu renderowaniu po stronie klienta.",
+          "3": "Współpraca między zespołami w celu zapewnienia responsywnego i dostępnego interfejsu użytkownika."
+        }
+      },
+      "4": {
+        "role": "Inżynier Frontendu",
+        "company": "Organizacja charytatywna Atmiya Care",
+        "location": "Parsippany, New Jersey",
+        "period": "wrzesień 2020 r. — maj 2021 r",
+        "tagline": "Działania społeczne non-profit i inicjatywy charytatywne.",
+        "description": "Dostarczono responsywne aplikacje internetowe zgodne ze standardem WCAG z komponentami wielokrotnego użytku, integracją REST i dostarczaniem Agile.",
+        "highlights": {
+          "0": "Zbudowano doświadczenia zorientowane na WCAG za pomocą React, HTML, CSS i JavaScript.",
+          "1": "Utworzono komponenty wielokrotnego użytku i modułowe wzorce interfejsu użytkownika w celu zapewnienia łatwości konserwacji.",
+          "2": "Zintegrowane interfejsy API RESTful dla dynamicznej zawartości i spójnych przepływów pracy klientów.",
+          "3": "Brał udział w Agile/SCRUM, przeglądach kodu i dokumentacji."
+        }
+      }
+    },
+    "education": {
+      "0": {
+        "degree": "Licencjat z informatyki",
+        "institution": "Uniwersytet Stanowy Montclair",
+        "location": "Montclair, New Jersey",
+        "period": "2016 — 2020"
+      }
+    },
+    "certifications": {},
+    "skillDescriptions": {
+      "Frontend": "Praktyczne doświadczenie w React.js, Next.js, Angular i Vue.js z TypeScript, nowoczesnym CSS (Tailwind, Styled Components, CSS Modules) i responsywnym projektowaniem. Wygodny od przekazania Figmy po kompilacje produkcyjne z Webpack, Vite i Babel.",
+      "Backend___API": "Integruje usługi REST i GraphQL z bezpiecznymi wzorcami — JWT, OAuth, CORS — i współpracuje z backendami Node.js, Java i Spring Boot dla interfejsów użytkownika opartych na danych.",
+      "Testing": "Bezproblemowe dostarczanie przy użyciu Jest, React Testing Library, Cypress i Playwright w zakresie jednostek, integracji i kompleksowego wsparcia z automatyzacją na ścieżce wydań.",
+      "Database": "Współpracuje z relacyjnymi i dokumentowymi magazynami danych — MySQL, PostgreSQL, MongoDB, Redis — i SQL, zapewniając funkcje uwzględniające schematy i wydajne zapytania.",
+      "DevOps___Tools": "Używa Git, GitHub Actions, Jenkins, Docker i AWS w potokach CI/CD z monitorowaniem, ESLint i Prettier w celu zapewnienia spójnego, obserwowalnego dostarczania.",
+      "Concepts": "Stosuje najlepsze praktyki dotyczące dostępności, wydajności i bezpieczeństwa WCAG 2.1 AA, współpracę Agile/SCRUM i solidne podstawy inżynierii (debugowanie, OOP, wzorce projektowe)."
+    },
+    "skillCategory": {
+      "Frontend": "Frontend",
+      "Backend___API": "Backend/API",
+      "Testing": "Testowanie",
+      "Database": "Baza danych",
+      "DevOps___Tools": "DevOps/Narzędzia",
+      "Concepts": "Koncepcje"
+    }
+  }
+}
