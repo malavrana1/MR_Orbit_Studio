@@ -231,7 +231,7 @@ export default function Home() {
                     </h6>
                     <ul className="hero-experience-list">
                       {topExperience.map((role) => (
-                        <li key={role.company}>
+                        <li key={role.companyKey || role.company}>
                           <div className="hero-experience-list__content">
                             <span className="hero-experience-list__title">
                               {role.role}
@@ -301,11 +301,11 @@ export default function Home() {
 
           <div className="experience-grid">
             {resume.experience.map((role, index) => {
-              const companyLogo = getCompanyLogo(role.company)
+              const companyLogo = getCompanyLogo(role.companyKey || role.company)
 
               return (
                 <Card
-                  key={`${role.company}-${index}`}
+                  key={`${role.companyKey || role.company}-${index}`}
                   className="experience-card border-0 shadow-sm h-100"
                 >
                   <Card.Body className="p-4">
