@@ -18,7 +18,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
 
   useEffect(() => {
     if (show) {
-      analyticsService.trackContactForm()
+      analyticsService.trackContactForm('modal_open')
       setSendError('')
       setSendSuccess(false)
       setValidationErrors({})
@@ -103,7 +103,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
     }
 
     setIsSending(true)
-    analyticsService.trackContactForm()
+    analyticsService.trackContactForm('send_attempt')
 
     try {
       const response = await fetch(
@@ -143,10 +143,10 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
       setContactMessage('')
       setValidationErrors({})
 
-      analyticsService.trackContactForm()
+      analyticsService.trackContactForm('send_success')
     } catch (err) {
       setSendError(t('contact.sendError'))
-      analyticsService.trackContactForm()
+      analyticsService.trackContactForm('send_error')
     } finally {
       setIsSending(false)
     }
@@ -341,7 +341,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
           <Button
             variant="primary"
             onClick={() => {
-              analyticsService.trackContactForm()
+              analyticsService.trackContactForm('dismiss_ok')
               handleClose()
             }}
             className="w-100"
@@ -353,7 +353,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
             <Button
               variant="outline-secondary"
               onClick={() => {
-                analyticsService.trackContactForm()
+                analyticsService.trackContactForm('dismiss_cancel')
                 handleClose()
               }}
               disabled={isSending}

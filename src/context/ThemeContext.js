@@ -9,6 +9,7 @@ import React, {
 } from 'react'
 
 import '../pages/Home/Home.dark.css'
+import analyticsService from '../services/analytics'
 
 const ThemeContext = createContext(null)
 
@@ -37,12 +38,17 @@ export function ThemeProvider({ children }) {
   }, [isDarkMode])
 
   const toggleDarkMode = useCallback(() => {
+    analyticsService.trackClick(
+      'button',
+      'toggle_dark_mode',
+      isDarkMode ? 'light_mode' : 'dark_mode',
+    )
     scrollAfterToggleRef.current = {
       x: window.scrollX,
       y: window.scrollY,
     }
     setIsDarkMode((prev) => !prev)
-  }, [])
+  }, [isDarkMode])
 
   const value = useMemo(
     () => ({ isDarkMode, toggleDarkMode }),

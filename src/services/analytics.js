@@ -1,34 +1,75 @@
+import { logEvent } from 'firebase/analytics'
+import { getAnalyticsInstance } from '../config/firebaseClient'
+
 const devLog =
   process.env.NODE_ENV === 'development' &&
   process.env.REACT_APP_ENABLE_CONSOLE_ANALYTICS === 'true'
     ? (...args) => console.debug('[analytics]', ...args)
     : () => {}
 
-const resolved = () => Promise.resolve()
+/** GA4 / Firebase limit safe string (custom param values) */
+const clip = (value, max = 120) => {
+  if (value == null) return ''
+  const s = String(value)
+  return s.length > max ? `${s.slice(0, max - 1)}…` : s
+}
+
+function send(name, params) {
+  return getAnalyticsInstance().then((analytics) => {
+    devLog(
+      name,
+      params,
+      analytics ? '→ sent' : '→ (no GA: missing env, dev mode, or unsupported)',
+    )
+    if (!analytics) {
+      return
+    }
+    try {
+      logEvent(analytics, name, params)
+    } catch (err) {
+      devLog('logEvent failed', name, err)
+    }
+  })
+}
 
 export default {
-  trackClick(...args) {
-    devLog('click', ...args)
-    return resolved()
+  trackClick(contentType, itemId, itemName) {
+    return send('portfolio_click', {
+      content_type: clip(contentType, 64),
+      item_id: clip(itemId, 64),
+      item_name: clip(itemName, 100),
+    })
   },
-  trackExternalLink(...args) {
-    devLog('external_link', ...args)
-    return resolved()
+  trackExternalLink(url, title) {
+    return send('portfolio_outbound', {
+      link_url: clip(url, 200),
+      link_title: clip(title, 100),
+    })
   },
-  trackSocialClick(...args) {
-    devLog('social', ...args)
-    return resolved()
+  trackSocialClick(network, url) {
+    return send('portfolio_social', {
+      network: clip(network, 32),
+      link_url: clip(url, 200),
+    })
   },
-  trackDownload(...args) {
-    devLog('download', ...args)
-    return resolved()
+  trackDownload(fileName, fileType) {
+    return send('portfolio_file_download', {
+      file_name: clip(fileName, 120),
+      file_type: clip(fileType, 32),
+    })
   },
-  trackContactForm(...args) {
-    devLog('contact', ...args)
-    return resolved()
+  /**
+   * @param {string} [action] — e.g. modal_open, send_attempt, send_success, send_error
+   */
+  trackContactForm(action = 'interaction') {
+    return send('portfolio_contact', {
+      action: clip(action, 64),
+    })
   },
-  trackNavigation(...args) {
-    devLog('navigation', ...args)
-    return resolved()
+  trackNavigation(sectionId, source) {
+    return send('portfolio_nav', {
+      section_id: clip(sectionId, 64),
+      source: clip(source, 32),
+    })
   },
 }

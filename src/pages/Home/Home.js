@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState, useEffect, useCallback } from 'react'
+import React, { Suspense, lazy, useState, useEffect } from 'react'
 import { ReactTyped } from 'react-typed'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import {
@@ -77,16 +77,7 @@ export default function Home() {
   )
   const [showContactModal, setShowContactModal] = useState(false)
   const { showScrollTop } = usePageScroll()
-  const { isDarkMode, toggleDarkMode: flipTheme } = useTheme()
-
-  const toggleDarkMode = useCallback(() => {
-    analyticsService.trackClick(
-      'button',
-      'toggle_dark_mode',
-      isDarkMode ? 'light_mode' : 'dark_mode',
-    )
-    flipTheme()
-  }, [isDarkMode, flipTheme])
+  const { isDarkMode, toggleDarkMode } = useTheme()
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,
   )?.items

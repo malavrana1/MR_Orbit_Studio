@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo } from 'react'
+import React, { useState, useEffect, useCallback, memo } from 'react'
 import { Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { getSiteInfo, getNavConfig } from '../data/loaders'
@@ -110,18 +110,13 @@ const Header = memo(function Header() {
   const nav = getNavConfig()
 
   const { isScrolled, activeSection } = usePageScroll()
-  const { isDarkMode, toggleDarkMode: flipTheme } = useTheme()
+  const { isDarkMode, toggleDarkMode } = useTheme()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  const toggleDarkMode = () => {
-    analyticsService.trackClick(
-      'button',
-      'toggle_dark_mode',
-      isDarkMode ? 'light_mode' : 'dark_mode',
-    )
-    flipTheme()
+  const handleHeaderThemeClick = useCallback(() => {
+    toggleDarkMode()
     setIsMobileMenuOpen(false)
-  }
+  }, [toggleDarkMode])
 
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -221,7 +216,7 @@ const Header = memo(function Header() {
               <button
                 type="button"
                 className="nav-link theme-toggle-menu"
-                onClick={toggleDarkMode}
+                onClick={handleHeaderThemeClick}
                 aria-label={
                   isDarkMode ? t('theme.switchToLight') : t('theme.switchToDark')
                 }
