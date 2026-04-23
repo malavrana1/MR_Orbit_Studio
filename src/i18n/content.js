@@ -41,7 +41,6 @@ export function translateProjects(t, projects) {
 export function translateExperience(t, experience) {
   return experience.map((role, i) => ({
     ...role,
-    companyKey: role.company,
     role: tc(t, `experience.${i}.role`, role.role),
     company: tc(t, `experience.${i}.company`, role.company),
     location: tc(t, `experience.${i}.location`, role.location),

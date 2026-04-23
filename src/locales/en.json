@@ -25,7 +25,7 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "headlineFallback": "Frontend Engineer | React • Angular • Vue Specialist",
+    "headlineFallback": "Frontend Engineer | Angular • React • Vue Specialist",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Technologies I use to build modern web applications",
     "recentTeams": "Recent Experience"
@@ -34,7 +34,7 @@
     "title": "Professional Overview",
     "subtitleFallback": "Building modern web experiences with passion and precision",
     "highlight1Title": "Modern frontend stacks",
-    "highlight1Text": "React, Angular, Next.js, and TypeScript—from enterprise dashboards to high-traffic SPAs",
+    "highlight1Text": "Angular, React, Next.js, and TypeScript—from enterprise dashboards to high-traffic SPAs",
     "highlight2Title": "Team collaboration",
     "highlight2Text": "Partnering with design, product, and backend to ship accessible, maintainable features",
     "highlight3Title": "Quality & delivery",
@@ -136,7 +136,7 @@
     "profile": {
       "headline": "Frontend Engineer",
       "summary": {
-        "0": "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in React, Angular, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects."
+        "0": "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in Angular, React, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects."
       }
     },
     "personal": {
@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Software Engineer",
-        "company": "Fusion Health",
-        "location": "Woodbridge, NJ",
-        "period": "Feb 2026 — Present",
-        "tagline": "Healthcare technology team building digital products for clinical and operational workflows.",
-        "description": "Develops web features with Angular (v19 and legacy), emphasizing reusable accessible UI, REST and GraphQL integrations, and Docker-based CI/CD for consistent builds and releases.",
+        "role": "Senior Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Florida, United States",
+        "period": "Apr 2026 — Present",
+        "tagline": "Software product and engineering team.",
+        "description": "Working as a Senior Software Engineer to support frontend and platform development based on team priorities.",
         "highlights": {
-          "0": "Builds reusable, accessible UI components with optimized rendering across devices and browsers.",
-          "1": "Runs accessibility audits, closes WCAG 2.1 AA gaps, and improves usability for all users.",
-          "2": "Integrates REST and GraphQL APIs with solid state management and error handling across modules.",
-          "3": "Maintains Dockerized dev, test, and deployment pipelines for smooth CI/CD workflows."
+          "0": "Contributes to feature delivery with clean, maintainable code.",
+          "1": "Collaborates with product and engineering teams on implementation priorities."
         }
       },
       "1": {
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Short-term accessibility and compliance engagement.",
+        "description": "Focused on accessibility improvements and WCAG 2.1 AA compliance in Angular applications.",
+        "highlights": {
+          "0": "Performed accessibility audits and fixed WCAG 2.1 AA issues across key user flows.",
+          "1": "Improved semantic markup, keyboard navigation, and screen reader support in Angular UI."
+        }
+      },
+      "2": {
         "role": "Frontend Engineer",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -203,7 +213,7 @@
           "3": "Championed code reviews, debugging, and WCAG-aligned, cross-device experiences."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Translated Figma designs into responsive, accessible, production-ready interfaces."
         }
       },
-      "3": {
-        "role": "Frontend Engineer",
+      "4": {
+        "role": "Frontend Engineer (Contract)",
         "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
         "period": "May 2021 — Apr 2022",
@@ -231,18 +241,17 @@
           "3": "Collaborated across teams for responsive, accessible UI delivery."
         }
       },
-      "4": {
-        "role": "Frontend Engineer",
+      "5": {
+        "role": "Frontend Engineering Intern",
         "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
         "period": "Sep 2020 — May 2021",
-        "tagline": "Nonprofit community outreach and charitable initiatives.",
-        "description": "Delivered responsive, WCAG-minded web apps with reusable components, REST integrations, and Agile delivery.",
+        "tagline": "Nonprofit organization focused on community outreach and charitable initiatives.",
+        "description": "Started my software career here, building foundational frontend skills through hands-on internship work on real nonprofit projects.",
         "highlights": {
-          "0": "Built WCAG-oriented experiences with React, HTML, CSS, and JavaScript.",
-          "1": "Created reusable components and modular UI patterns for maintainability.",
-          "2": "Integrated RESTful APIs for dynamic content and consistent client workflows.",
-          "3": "Participated in Agile/SCRUM, code reviews, and documentation."
+          "0": "Built responsive interfaces using React, HTML, CSS, and JavaScript.",
+          "1": "Learned core engineering practices through code reviews, collaboration, and iterative delivery.",
+          "2": "Supported real-world nonprofit features and gained practical experience with accessible UI implementation."
         }
       }
     },

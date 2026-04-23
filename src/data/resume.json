@@ -8,12 +8,12 @@
     "linkedin": "https://www.linkedin.com/in/malav-rana97",
     "website": "https://malavrana.dev"
   },
-  "summary": "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in React, Angular, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects.",
+  "summary": "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in Angular, React, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects.",
   "skills": {
     "Frontend": [
+      "Angular",
       "React.js",
       "Next.js",
-      "Angular",
       "Vue.js",
       "TypeScript",
       "JavaScript (ES6+)",
@@ -92,17 +92,27 @@
   },
   "experience": [
     {
-      "role": "Software Engineer",
+      "role": "Senior Software Engineer",
+      "company": "Blackstraw AI",
+      "location": "Florida, United States",
+      "period": "Apr 2026 — Present",
+      "tagline": "Software product and engineering team.",
+      "description": "Working as a Senior Software Engineer to support frontend and platform development based on team priorities.",
+      "highlights": [
+        "Contributes to feature delivery with clean, maintainable code.",
+        "Collaborates with product and engineering teams on implementation priorities."
+      ]
+    },
+    {
+      "role": "Software Engineer (Contract)",
       "company": "Fusion Health",
       "location": "Woodbridge, NJ",
-      "period": "Feb 2026 — Present",
-      "tagline": "Healthcare technology team building digital products for clinical and operational workflows.",
-      "description": "Develops web features with Angular (v19 and legacy), emphasizing reusable accessible UI, REST and GraphQL integrations, and Docker-based CI/CD for consistent builds and releases.",
+      "period": "Feb 2026 — Apr 2026",
+      "tagline": "Short-term accessibility and compliance engagement.",
+      "description": "Focused on accessibility improvements and WCAG 2.1 AA compliance in Angular applications.",
       "highlights": [
-        "Builds reusable, accessible UI components with optimized rendering across devices and browsers.",
-        "Runs accessibility audits, closes WCAG 2.1 AA gaps, and improves usability for all users.",
-        "Integrates REST and GraphQL APIs with solid state management and error handling across modules.",
-        "Maintains Dockerized dev, test, and deployment pipelines for smooth CI/CD workflows."
+        "Performed accessibility audits and fixed WCAG 2.1 AA issues across key user flows.",
+        "Improved semantic markup, keyboard navigation, and screen reader support in Angular UI."
       ]
     },
     {
@@ -134,7 +144,7 @@
       ]
     },
     {
-      "role": "Frontend Engineer",
+      "role": "Frontend Engineer (Contract)",
       "company": "Cigna Express Scripts",
       "location": "Franklin Lakes, NJ",
       "period": "May 2021 — Apr 2022",
@@ -148,17 +158,16 @@
       ]
     },
     {
-      "role": "Frontend Engineer",
+      "role": "Frontend Engineering Intern",
       "company": "Atmiya Care Charity",
       "location": "Parsippany, NJ",
       "period": "Sep 2020 — May 2021",
-      "tagline": "Nonprofit community outreach and charitable initiatives.",
-      "description": "Delivered responsive, WCAG-minded web apps with reusable components, REST integrations, and Agile delivery.",
+      "tagline": "Nonprofit organization focused on community outreach and charitable initiatives.",
+      "description": "Started my software career here, building foundational frontend skills through hands-on internship work on real nonprofit projects.",
       "highlights": [
-        "Built WCAG-oriented experiences with React, HTML, CSS, and JavaScript.",
-        "Created reusable components and modular UI patterns for maintainability.",
-        "Integrated RESTful APIs for dynamic content and consistent client workflows.",
-        "Participated in Agile/SCRUM, code reviews, and documentation."
+        "Built responsive interfaces using React, HTML, CSS, and JavaScript.",
+        "Learned core engineering practices through code reviews, collaboration, and iterative delivery.",
+        "Supported real-world nonprofit features and gained practical experience with accessible UI implementation."
       ]
     }
   ],

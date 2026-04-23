@@ -1231,13 +1231,13 @@
 [data-theme='dark'] .experience-company-logo {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: none;
 }
 
 [data-theme='dark'] .experience-card:hover .experience-company-logo {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+  box-shadow: none;
 }
 
 [data-theme='dark'] .section-title {
