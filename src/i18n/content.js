@@ -43,7 +43,8 @@ export function translateExperience(t, experience) {
     ...role,
     companyKey: role.company,
     role: tc(t, `experience.${i}.role`, role.role),
-    company: tc(t, `experience.${i}.company`, role.company),
+    // Keep brand names stable while localizing the rest.
+    company: role.company,
     location: tc(t, `experience.${i}.location`, role.location),
     period: tc(t, `experience.${i}.period`, role.period),
     tagline: tc(t, `experience.${i}.tagline`, role.tagline || ''),

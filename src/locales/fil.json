@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Software Engineer",
-        "company": "Kalusugan ng Fusion",
-        "location": "Woodbridge, NJ",
-        "period": "Peb 2026 — Kasalukuyan",
-        "tagline": "Ang pangkat ng teknolohiya sa pangangalagang pangkalusugan ay bumubuo ng mga digital na produkto para sa mga klinikal at operational na daloy ng trabaho.",
-        "description": "Bumubuo ng mga web feature gamit ang Angular (v19 at legacy), na binibigyang-diin ang reusable na accessible na UI, REST at GraphQL integrations, at Docker-based CI/CD para sa mga pare-parehong build at release.",
+        "role": "Senior Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Florida, Estados Unidos",
+        "period": "Abr 2026 — Kasalukuyan",
+        "tagline": "Produkto ng software at pangkat ng engineering.",
+        "description": "Nagtatrabaho bilang Senior Software Engineer upang suportahan ang frontend at pagbuo ng platform batay sa mga priyoridad ng team.",
         "highlights": {
-          "0": "Bumubuo ng magagamit muli, naa-access na mga bahagi ng UI na may naka-optimize na pag-render sa mga device at browser.",
-          "1": "Nagpapatakbo ng mga pag-audit sa pagiging naa-access, nagsasara ng WCAG 2.1 AA gaps, at pinapahusay ang kakayahang magamit para sa lahat ng user.",
-          "2": "Pinagsasama ang REST at GraphQL API sa solid state management at paghawak ng error sa mga module.",
-          "3": "Pinapanatili ang Dockerized dev, test, at deployment pipelines para sa maayos na CI/CD workflows."
+          "0": "Nag-aambag sa paghahatid ng tampok na may malinis at napapanatiling code.",
+          "1": "Nakikipagtulungan sa mga pangkat ng produkto at engineering sa mga priyoridad sa pagpapatupad."
         }
       },
       "1": {
+        "role": "Software Engineer (Kontrata)",
+        "company": "Kalusugan ng Fusion",
+        "location": "Woodbridge, NJ",
+        "period": "Peb 2026 — Abr 2026",
+        "tagline": "Panandaliang accessibility at pakikipag-ugnayan sa pagsunod.",
+        "description": "Nakatuon sa mga pagpapahusay sa pagiging naa-access at pagsunod sa WCAG 2.1 AA sa mga application na Angular.",
+        "highlights": {
+          "0": "Nagsagawa ng mga pag-audit sa accessibility at inayos ang mga isyu sa WCAG 2.1 AA sa mga pangunahing daloy ng user.",
+          "1": "Pinahusay na semantic markup, keyboard navigation, at suporta sa screen reader sa Angular UI."
+        }
+      },
+      "2": {
         "role": "Frontend Engineer",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -199,11 +209,11 @@
         "highlights": {
           "0": "Mga binuo na SPA na may React, Vue, TypeScript, at Tailwind gamit ang scalable component architecture.",
           "1": "Pinagsamang REST at GraphQL API na may caching at pamamahala ng estado; pinahusay na kakayahang tumugon at nabawasan ang mga error sa frontend.",
-          "2": "Inilapat ang code splitting, lazy loading, at tree-shaking para sa mas mabilis na pag-load sa malalaking app.",
+          "2": "Inilapat ang paghahati ng code, tamad na pag-load, at pag-alog ng puno para sa mas mabilis na pag-load sa malalaking app.",
           "3": "Mga na-champion na pagsusuri ng code, pag-debug, at nakahanay sa WCAG, mga karanasan sa cross-device."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Isinalin ang mga disenyo ng Figma sa mga interface na tumutugon, naa-access, at handa sa produksyon."
         }
       },
-      "3": {
-        "role": "Frontend Engineer",
+      "4": {
+        "role": "Frontend Engineer (Kontrata)",
         "company": "Mga Script ng Cigna Express",
         "location": "Franklin Lakes, NJ",
         "period": "Mayo 2021 — Abr 2022",
@@ -231,18 +241,17 @@
           "3": "Nakipagtulungan sa mga team para sa tumutugon, naa-access na paghahatid ng UI."
         }
       },
-      "4": {
-        "role": "Frontend Engineer",
+      "5": {
+        "role": "Frontend Engineering Intern",
         "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "Setyembre 2020 — Mayo 2021",
-        "tagline": "Nonprofit na community outreach at charitable initiatives.",
-        "description": "Naghatid ng tumutugon, WCAG-minded na web app na may magagamit muli na mga bahagi, REST integration, at Agile delivery.",
+        "period": "Set 2020 — Mayo 2021",
+        "tagline": "Nonprofit na organisasyon na nakatuon sa community outreach at charitable initiatives.",
+        "description": "Sinimulan ang aking karera sa software dito, pagbuo ng mga kasanayan sa pang-unang pang-una sa pamamagitan ng hands-on na internship na trabaho sa mga tunay na nonprofit na proyekto.",
         "highlights": {
-          "0": "Gumawa ng mga karanasang nakatuon sa WCAG gamit ang React, HTML, CSS, at JavaScript.",
-          "1": "Gumawa ng mga reusable na bahagi at modular na pattern ng UI para sa pagpapanatili.",
-          "2": "Pinagsamang RESTful API para sa dynamic na content at pare-parehong daloy ng trabaho ng kliyente.",
-          "3": "Lumahok sa Agile/SCRUM, mga pagsusuri sa code, at dokumentasyon."
+          "0": "Bumuo ng mga tumutugon na interface gamit ang React, HTML, CSS, at JavaScript.",
+          "1": "Natutunan ang mga pangunahing kasanayan sa engineering sa pamamagitan ng mga pagsusuri sa code, pakikipagtulungan, at pagpapadala ng umuulit.",
+          "2": "Sinusuportahan ang mga real-world na nonprofit na feature at nakakuha ng praktikal na karanasan sa naa-access na pagpapatupad ng UI."
         }
       }
     },

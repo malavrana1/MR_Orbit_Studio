@@ -159,7 +159,7 @@
     },
     "projects": {
       "0": {
-        "title": "Roulette Live",
+        "title": "Roulette live",
         "description": "Ett realistiskt och interaktivt roulettespel byggt med Vue 3. Spela med virtuella marker, njut av smidiga animationer och spåra din statistik. Upplev spänningen i ett kasinospel utan några riktiga pengar inblandade.",
         "cta": "Utforska på GitHub"
       },
@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Mjukvaruingenjör",
-        "company": "Fusion Health",
-        "location": "Woodbridge, NJ",
-        "period": "feb 2026 – nu",
-        "tagline": "Hälsoteknikteam bygger digitala produkter för kliniska och operativa arbetsflöden.",
-        "description": "Utvecklar webbfunktioner med Angular (v19 och äldre), med betoning på återanvändbara åtkomliga UI-, REST- och GraphQL-integrationer, och Docker-baserad CI/CD för konsekventa versioner och utgåvor.",
+        "role": "Senior mjukvaruingenjör",
+        "company": "Blackstraw AI",
+        "location": "Florida, USA",
+        "period": "april 2026 – nu",
+        "tagline": "Programvaruprodukt och ingenjörsteam.",
+        "description": "Arbetar som Senior Software Engineer för att stödja frontend- och plattformsutveckling baserat på teamprioriteringar.",
         "highlights": {
-          "0": "Bygger återanvändbara, tillgängliga UI-komponenter med optimerad rendering över enheter och webbläsare.",
-          "1": "Kör tillgänglighetsrevisioner, stänger WCAG 2.1 AA-luckor och förbättrar användbarheten för alla användare.",
-          "2": "Integrerar REST och GraphQL API:er med solid state-hantering och felhantering över moduler.",
-          "3": "Underhåller dockeriserade dev-, test- och distributionspipelines för smidiga CI/CD-arbetsflöden."
+          "0": "Bidrar till funktionsleverans med ren kod som kan underhållas.",
+          "1": "Samarbetar med produkt- och ingenjörsteam kring implementeringsprioriteringar."
         }
       },
       "1": {
+        "role": "Mjukvaruingenjör (kontrakt)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "februari 2026 – april 2026",
+        "tagline": "Kortsiktigt engagemang för tillgänglighet och efterlevnad.",
+        "description": "Fokuserat på tillgänglighetsförbättringar och WCAG 2.1 AA-kompatibilitet i Angular-applikationer.",
+        "highlights": {
+          "0": "Utförde tillgänglighetsrevisioner och fixade WCAG 2.1 AA-problem över viktiga användarflöden.",
+          "1": "Förbättrad semantisk uppmärkning, tangentbordsnavigering och stöd för skärmläsare i Angular UI."
+        }
+      },
+      "2": {
         "role": "Frontend ingenjör",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -203,13 +213,13 @@
           "3": "Championat kodrecensioner, felsökning och WCAG-justerade upplevelser över flera enheter."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend ingenjör",
         "company": "Gensler",
         "location": "Morristown, NJ",
         "period": "juli 2022 – september 2024",
         "tagline": "Globalt arkitektur- och designföretag som levererar digitala verktyg för företag och kundupplevelser.",
-        "description": "Byggda företagsgränssnitt med React, Angular, Vue och Next.js – para ihop asynkron REST/GraphQL-data med automatiserade tester och nära designsamarbete.",
+        "description": "Byggda företagsgränssnitt med React, Angular, Vue och Next.js – para ihop asynkrona REST/GraphQL-data med automatiserade tester och nära designsamarbete.",
         "highlights": {
           "0": "Skickade instrumentpaneler och UI-komponenter med React, Angular, Vue, Next.js och Styled Components.",
           "1": "Integrerad REST och GraphQL med asynkrona uppdateringar och interaktiva funktioner.",
@@ -217,8 +227,8 @@
           "3": "Översatt Figma-design till responsiva, tillgängliga, produktionsklara gränssnitt."
         }
       },
-      "3": {
-        "role": "Frontend ingenjör",
+      "4": {
+        "role": "Frontendingenjör (kontrakt)",
         "company": "Cigna Express-skript",
         "location": "Franklin Lakes, NJ",
         "period": "Maj 2021 – april 2022",
@@ -231,18 +241,17 @@
           "3": "Samarbetade i team för responsiv, tillgänglig UI-leverans."
         }
       },
-      "4": {
-        "role": "Frontend ingenjör",
+      "5": {
+        "role": "Frontend Engineering Intern",
         "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
         "period": "september 2020 – maj 2021",
-        "tagline": "Ideell gemenskap och välgörenhetsinitiativ.",
-        "description": "Levereras responsiva, WCAG-minded webbappar med återanvändbara komponenter, REST-integrationer och agil leverans.",
+        "tagline": "Ideell organisation fokuserad på gemenskap och välgörenhetsinitiativ.",
+        "description": "Började min mjukvarukarriär här och byggde upp grundläggande frontend-färdigheter genom praktiskt praktikarbete på riktiga ideella projekt.",
         "highlights": {
-          "0": "Byggde WCAG-orienterade upplevelser med React, HTML, CSS och JavaScript.",
-          "1": "Skapat återanvändbara komponenter och modulära UI-mönster för underhåll.",
-          "2": "Integrerade RESTful API:er för dynamiskt innehåll och konsekventa klientarbetsflöden.",
-          "3": "Deltog i Agile/SCRUM, kodgranskning och dokumentation."
+          "0": "Byggde responsiva gränssnitt med hjälp av React, HTML, CSS och JavaScript.",
+          "1": "Lärde sig grundläggande teknisk praxis genom kodgranskning, samarbete och iterativ leverans.",
+          "2": "Stödde verkliga ideella funktioner och fick praktisk erfarenhet av tillgänglig UI-implementering."
         }
       }
     },

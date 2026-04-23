@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Szoftvermérnök",
-        "company": "Fúziós egészség",
-        "location": "Woodbridge, NJ",
-        "period": "2026. február – jelen",
-        "tagline": "Egészségügyi technológiai csapatépítő digitális termékeket klinikai és operatív munkafolyamatokhoz.",
-        "description": "Webes funkciókat fejleszt az Angular-ral (v19 és régebbi), kiemelve az újrafelhasználható, hozzáférhető felhasználói felületet, a REST és GraphQL integrációkat, valamint a Docker-alapú CI/CD-t a következetes összeállítások és kiadások érdekében.",
+        "role": "Vezető szoftvermérnök",
+        "company": "Blackstraw AI",
+        "location": "Florida, Egyesült Államok",
+        "period": "2026. április – jelen",
+        "tagline": "Szoftvertermék és mérnöki csapat.",
+        "description": "Senior szoftvermérnökként dolgozik, hogy támogassa a frontend és a platform fejlesztését a csapat prioritásai alapján.",
         "highlights": {
-          "0": "Újrafelhasználható, hozzáférhető felhasználói felület-összetevőket hoz létre optimalizált megjelenítéssel az eszközökön és a böngészőkön keresztül.",
-          "1": "Hozzáférhetőségi auditokat futtat, megszünteti a WCAG 2.1 AA hiányosságait, és javítja a használhatóságot minden felhasználó számára.",
-          "2": "Integrálja a REST és a GraphQL API-kat szilárdtestkezeléssel és hibakezeléssel a modulok között.",
-          "3": "Fenntartja a Dockerizált fejlesztői, tesztelési és telepítési folyamatokat a gördülékeny CI/CD munkafolyamatok érdekében."
+          "0": "Tiszta, karbantartható kóddal járul hozzá a funkciók szállításához.",
+          "1": "Együttműködik a termék- és mérnöki csapatokkal a megvalósítási prioritások meghatározásában."
         }
       },
       "1": {
+        "role": "Szoftvermérnök (szerződés)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "2026. február – 2026. ápr",
+        "tagline": "Rövid távú hozzáférhetőség és megfelelőségi elkötelezettség.",
+        "description": "A kisegítő lehetőségek fejlesztésére és a WCAG 2.1 AA megfelelőségre összpontosít az Angular alkalmazásokban.",
+        "highlights": {
+          "0": "Hozzáférhetőségi auditok végrehajtása és WCAG 2.1 AA problémák javítása a kulcsfontosságú felhasználói folyamatokban.",
+          "1": "Továbbfejlesztett szemantikai jelölés, billentyűzet-navigáció és képernyőolvasó támogatás az Angular UI-ban."
+        }
+      },
+      "2": {
         "role": "Frontend mérnök",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -203,7 +213,7 @@
           "3": "Kiemelt kódellenőrzések, hibakeresés és WCAG-hoz igazított, több eszközön elérhető élmények."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend mérnök",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "A Figma-terveket reszponzív, hozzáférhető, gyártásra kész felületekre fordította le."
         }
       },
-      "3": {
-        "role": "Frontend mérnök",
+      "4": {
+        "role": "Frontend mérnök (szerződés)",
         "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
         "period": "2021. május – 2022. ápr",
@@ -231,18 +241,17 @@
           "3": "Együttműködik a csapatok között az érzékeny, hozzáférhető UI megjelenítés érdekében."
         }
       },
-      "4": {
-        "role": "Frontend mérnök",
+      "5": {
+        "role": "Frontend Engineering gyakornok",
         "company": "Atmiya Care jótékonysági szervezet",
         "location": "Parsippany, NJ",
         "period": "2020. szeptember – 2021. május",
-        "tagline": "Nonprofit közösségi tájékoztatás és jótékonysági kezdeményezések.",
-        "description": "Reszponzív, WCAG-szemléletű webalkalmazások újrafelhasználható összetevőkkel, REST-integrációkkal és agilis szállítással.",
+        "tagline": "Nonprofit szervezet a közösség megszólítására és a jótékonysági kezdeményezésekre összpontosított.",
+        "description": "Itt kezdtem szoftveres karrieremet, és alapozó frontend készségeket építettem gyakorlati gyakorlati munkával valódi nonprofit projekteken.",
         "highlights": {
-          "0": "Beépített WCAG-orientált élmények React, HTML, CSS és JavaScript segítségével.",
-          "1": "Újrafelhasználható összetevőket és moduláris felhasználói felületi mintákat hozott létre a karbantarthatóság érdekében.",
-          "2": "Integrált RESTful API-k a dinamikus tartalomhoz és a konzisztens ügyfélmunkafolyamatokhoz.",
-          "3": "Részt vett az Agile/SCRUM-ban, a kód áttekintésében és a dokumentációban."
+          "0": "Reszponzív interfészek építése React, HTML, CSS és JavaScript használatával.",
+          "1": "Elsajátította az alapvető mérnöki gyakorlatokat a kód áttekintése, az együttműködés és az iteratív szállítás révén.",
+          "2": "Támogatta a valós nonprofit funkciókat, és gyakorlati tapasztalatokat szerzett az akadálymentes felhasználói felület megvalósításával kapcsolatban."
         }
       }
     },

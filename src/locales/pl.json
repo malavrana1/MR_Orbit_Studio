@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Inżynier oprogramowania",
-        "company": "Zdrowie Fuzji",
-        "location": "Woodbridge, New Jersey",
-        "period": "Luty 2026 — obecnie",
-        "tagline": "Zespół ds. technologii opieki zdrowotnej tworzący produkty cyfrowe na potrzeby procesów klinicznych i operacyjnych.",
-        "description": "Rozwija funkcje internetowe za pomocą Angular (wersja 19 i starsze), kładąc nacisk na dostępny interfejs użytkownika wielokrotnego użytku, integrację REST i GraphQL oraz CI/CD opartą na Dockerze w celu zapewnienia spójnych kompilacji i wydań.",
+        "role": "Starszy inżynier oprogramowania",
+        "company": "Sztuczna inteligencja czarnej słomy",
+        "location": "Floryda, Stany Zjednoczone",
+        "period": "Kwiecień 2026 — obecnie",
+        "tagline": "Zespół ds. oprogramowania i inżynierii.",
+        "description": "Praca na stanowisku starszego inżyniera oprogramowania w celu wspierania rozwoju frontendu i platformy w oparciu o priorytety zespołu.",
         "highlights": {
-          "0": "Tworzy dostępne komponenty interfejsu użytkownika wielokrotnego użytku ze zoptymalizowanym renderowaniem na różnych urządzeniach i przeglądarkach.",
-          "1": "Przeprowadza audyty dostępności, uzupełnia luki WCAG 2.1 AA i poprawia użyteczność dla wszystkich użytkowników.",
-          "2": "Integruje interfejsy API REST i GraphQL z zarządzaniem półprzewodnikowym i obsługą błędów w różnych modułach.",
-          "3": "Utrzymuje zadokowane potoki programowania, testowania i wdrażania w celu zapewnienia płynnych przepływów pracy CI/CD."
+          "0": "Przyczynia się do dostarczania funkcji za pomocą czystego, łatwego w utrzymaniu kodu.",
+          "1": "Współpracuje z zespołami produktowymi i inżynieryjnymi w zakresie priorytetów wdrożeniowych."
         }
       },
       "1": {
+        "role": "Inżynier oprogramowania (umowa)",
+        "company": "Zdrowie Fuzji",
+        "location": "Woodbridge, New Jersey",
+        "period": "luty 2026 – kwiecień 2026",
+        "tagline": "Krótkoterminowe zaangażowanie w zapewnienie dostępności i zgodności.",
+        "description": "Koncentruje się na poprawie dostępności i zgodności z WCAG 2.1 AA w aplikacjach Angular.",
+        "highlights": {
+          "0": "Przeprowadzono audyty dostępności i naprawiono problemy WCAG 2.1 AA w kluczowych przepływach użytkowników.",
+          "1": "Ulepszone znaczniki semantyczne, nawigacja za pomocą klawiatury i obsługa czytnika ekranu w Angular UI."
+        }
+      },
+      "2": {
         "role": "Inżynier Frontendu",
         "company": "Kiswe",
         "location": "Szczyt, New Jersey",
@@ -203,7 +213,7 @@
           "3": "Wspierane przeglądy kodu, debugowanie i dostosowane do WCAG doświadczenia na różnych urządzeniach."
         }
       },
-      "2": {
+      "3": {
         "role": "Inżynier Frontendu",
         "company": "Genslera",
         "location": "Morristown, New Jersey",
@@ -217,8 +227,8 @@
           "3": "Przetłumaczono projekty Figma na responsywne, dostępne i gotowe do produkcji interfejsy."
         }
       },
-      "3": {
-        "role": "Inżynier Frontendu",
+      "4": {
+        "role": "Inżynier frontendu (umowa)",
         "company": "Skrypty Cigna Express",
         "location": "Franklin Lakes, New Jersey",
         "period": "maj 2021 – kwiecień 2022",
@@ -231,18 +241,17 @@
           "3": "Współpraca między zespołami w celu zapewnienia responsywnego i dostępnego interfejsu użytkownika."
         }
       },
-      "4": {
-        "role": "Inżynier Frontendu",
+      "5": {
+        "role": "Stażysta w dziedzinie inżynierii frontendowej",
         "company": "Organizacja charytatywna Atmiya Care",
         "location": "Parsippany, New Jersey",
         "period": "wrzesień 2020 r. — maj 2021 r",
-        "tagline": "Działania społeczne non-profit i inicjatywy charytatywne.",
-        "description": "Dostarczono responsywne aplikacje internetowe zgodne ze standardem WCAG z komponentami wielokrotnego użytku, integracją REST i dostarczaniem Agile.",
+        "tagline": "Organizacja non-profit skupiająca się na działaniach społecznych i inicjatywach charytatywnych.",
+        "description": "Rozpocząłem tutaj karierę programisty, budując podstawowe umiejętności w zakresie frontendu poprzez praktyczną pracę stażową przy prawdziwych projektach non-profit.",
         "highlights": {
-          "0": "Zbudowano doświadczenia zorientowane na WCAG za pomocą React, HTML, CSS i JavaScript.",
-          "1": "Utworzono komponenty wielokrotnego użytku i modułowe wzorce interfejsu użytkownika w celu zapewnienia łatwości konserwacji.",
-          "2": "Zintegrowane interfejsy API RESTful dla dynamicznej zawartości i spójnych przepływów pracy klientów.",
-          "3": "Brał udział w Agile/SCRUM, przeglądach kodu i dokumentacji."
+          "0": "Budowa responsywnych interfejsów przy użyciu React, HTML, CSS i JavaScript.",
+          "1": "Nauczyłeś się podstawowych praktyk inżynieryjnych poprzez przeglądy kodu, współpracę i dostarczanie iteracyjne.",
+          "2": "Obsługiwałem rzeczywiste funkcje non-profit i zdobywałem praktyczne doświadczenie w zakresie wdrażania dostępnego interfejsu użytkownika."
         }
       }
     },

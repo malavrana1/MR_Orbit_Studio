@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Yazılım Mühendisi",
-        "company": "Füzyon Sağlığı",
-        "location": "Woodbridge, New Jersey",
-        "period": "Şubat 2026 — Şu Anda",
-        "tagline": "Sağlık hizmetleri teknolojisi ekibi, klinik ve operasyonel iş akışları için dijital ürünler geliştiriyor.",
-        "description": "Tutarlı derlemeler ve sürümler için yeniden kullanılabilir erişilebilir kullanıcı arayüzü, REST ve GraphQL entegrasyonlarını ve Docker tabanlı CI/CD'yi vurgulayarak Angular (v19 ve eski) ile web özellikleri geliştirir.",
+        "role": "Kıdemli Yazılım Mühendisi",
+        "company": "Karasaman AI",
+        "location": "Florida, Amerika Birleşik Devletleri",
+        "period": "Nis 2026 — Şu Anda",
+        "tagline": "Yazılım ürünü ve mühendislik ekibi.",
+        "description": "Ekip önceliklerine göre ön uç ve platform geliştirmeyi desteklemek için Kıdemli Yazılım Mühendisi olarak çalışmak.",
         "highlights": {
-          "0": "Cihazlar ve tarayıcılar arasında optimize edilmiş işlemeyle yeniden kullanılabilir, erişilebilir kullanıcı arayüzü bileşenleri oluşturur.",
-          "1": "Erişilebilirlik denetimleri gerçekleştirir, WCAG 2.1 AA açıklarını kapatır ve tüm kullanıcılar için kullanılabilirliği artırır.",
-          "2": "REST ve GraphQL API'lerini katı hal yönetimi ve modüller arasında hata işleme ile entegre eder.",
-          "3": "Sorunsuz CI/CD iş akışları için Dockerlaştırılmış geliştirme, test ve dağıtım işlem hatlarını korur."
+          "0": "Temiz, bakımı yapılabilir kodla özellik sunumuna katkıda bulunur.",
+          "1": "Uygulama öncelikleri konusunda ürün ve mühendislik ekipleriyle işbirliği yapar."
         }
       },
       "1": {
+        "role": "Yazılım Mühendisi (Sözleşmeli)",
+        "company": "Füzyon Sağlığı",
+        "location": "Woodbridge, New Jersey",
+        "period": "Şubat 2026 – Nisan 2026",
+        "tagline": "Kısa vadeli erişilebilirlik ve uyumluluk katılımı.",
+        "description": "Angular uygulamalarında erişilebilirlik iyileştirmelerine ve WCAG 2.1 AA uyumluluğuna odaklanıldı.",
+        "highlights": {
+          "0": "Önemli kullanıcı akışlarında erişilebilirlik denetimleri gerçekleştirildi ve WCAG 2.1 AA sorunları düzeltildi.",
+          "1": "Angular UI'da iyileştirilmiş anlamsal işaretleme, klavyede gezinme ve ekran okuyucu desteği."
+        }
+      },
+      "2": {
         "role": "Ön Uç Mühendisi",
         "company": "Kiswe",
         "location": "Zirve, New Jersey",
@@ -203,13 +213,13 @@
           "3": "Desteklenen kod incelemeleri, hata ayıklama ve WCAG uyumlu, cihazlar arası deneyimler."
         }
       },
-      "2": {
+      "3": {
         "role": "Ön Uç Mühendisi",
         "company": "Gensler",
         "location": "Morristown, New Jersey",
         "period": "Temmuz 2022 – Eylül 2024",
         "tagline": "Kurumsal dijital araçlar ve müşteri deneyimleri sunan küresel mimari ve tasarım firması.",
-        "description": "React, Angular, Vue ve Next.js ile kurumsal kullanıcı arayüzleri oluşturuldu; eşzamansız REST/GraphQL verilerini otomatik testlerle ve yakın tasarım işbirliğiyle eşleştirin.",
+        "description": "React, Angular, Vue ve Next.js ile kurumsal kullanıcı arayüzleri oluşturuldu; eşzamansız REST/GraphQL verilerini otomatik testlerle ve yakın tasarım iş birliğiyle eşleştirin.",
         "highlights": {
           "0": "React, Angular, Vue, Next.js ve Styled Components içeren kontrol panelleri ve kullanıcı arayüzü bileşenleri gönderildi.",
           "1": "Eşzamansız güncellemeler ve etkileşimli özelliklerle entegre REST ve GraphQL.",
@@ -217,8 +227,8 @@
           "3": "Figma tasarımlarını duyarlı, erişilebilir, üretime hazır arayüzlere dönüştürdü."
         }
       },
-      "3": {
-        "role": "Ön Uç Mühendisi",
+      "4": {
+        "role": "Ön Uç Mühendisi (Sözleşmeli)",
         "company": "Cigna Ekspres Komut Dosyaları",
         "location": "Franklin Gölleri, New Jersey",
         "period": "Mayıs 2021 – Nisan 2022",
@@ -231,18 +241,17 @@
           "3": "Hızlı yanıt veren, erişilebilir kullanıcı arayüzü sunumu için ekipler arasında işbirliği yapıldı."
         }
       },
-      "4": {
-        "role": "Ön Uç Mühendisi",
+      "5": {
+        "role": "Ön Uç Mühendisliği Stajyeri",
         "company": "Atmiya Bakım Yardımı",
         "location": "Parsippany, New Jersey",
         "period": "Eylül 2020 – Mayıs 2021",
-        "tagline": "Kâr amacı gütmeyen topluluk sosyal yardımları ve hayırsever girişimler.",
-        "description": "Yeniden kullanılabilir bileşenlere, REST entegrasyonlarına ve Çevik teslimata sahip, duyarlı, WCAG odaklı web uygulamaları teslim edildi.",
+        "tagline": "Kâr amacı gütmeyen kuruluş, toplumsal yardım ve hayırsever girişimlere odaklandı.",
+        "description": "Yazılım kariyerime burada başladım ve kar amacı gütmeyen gerçek projelerde uygulamalı staj çalışmaları yaparak temel ön uç becerilerimi geliştirdim.",
         "highlights": {
-          "0": "React, HTML, CSS ve JavaScript ile WCAG odaklı deneyimler oluşturuldu.",
-          "1": "Bakım kolaylığı için yeniden kullanılabilir bileşenler ve modüler kullanıcı arayüzü modelleri oluşturuldu.",
-          "2": "Dinamik içerik ve tutarlı istemci iş akışları için entegre RESTful API'ler.",
-          "3": "Agile/SCRUM, kod incelemeleri ve dokümantasyona katıldım."
+          "0": "React, HTML, CSS ve JavaScript kullanarak duyarlı arayüzler oluşturuldu.",
+          "1": "Kod incelemeleri, işbirliği ve yinelemeli dağıtım aracılığıyla temel mühendislik uygulamalarını öğrendim.",
+          "2": "Gerçek dünyadaki kar amacı gütmeyen özellikleri destekledi ve erişilebilir kullanıcı arayüzü uygulamasıyla pratik deneyim kazandı."
         }
       }
     },

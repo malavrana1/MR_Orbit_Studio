@@ -71,7 +71,7 @@
     "linkedin": "LinkedIn",
     "share": "Teilen",
     "contact": "Kontakt",
-    "shareTitle": "{{name}} - Portfolio",
+    "shareTitle": "{{name}} – Portfolio",
     "shareText": "Sieh dir das Portfolio von {{name}} an",
     "copiedAlert": "Portfolio-Link in die Zwischenablage kopiert!",
     "resumeDownload": "Wieder aufnehmen",
@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Softwareentwickler",
-        "company": "Fusionsgesundheit",
-        "location": "Woodbridge, NJ",
-        "period": "Februar 2026 – Heute",
-        "tagline": "Team für Gesundheitstechnologie entwickelt digitale Produkte für klinische und betriebliche Arbeitsabläufe.",
-        "description": "Entwickelt Webfunktionen mit Angular (Version 19 und Legacy) und legt dabei Wert auf wiederverwendbare, zugängliche Benutzeroberfläche, REST- und GraphQL-Integrationen sowie Docker-basiertes CI/CD für konsistente Builds und Releases.",
+        "role": "Leitender Software-Ingenieur",
+        "company": "Blackstraw-KI",
+        "location": "Florida, Vereinigte Staaten",
+        "period": "April 2026 – Heute",
+        "tagline": "Softwareprodukt- und Engineering-Team.",
+        "description": "Arbeiten als Senior Software Engineer zur Unterstützung der Frontend- und Plattformentwicklung basierend auf den Teamprioritäten.",
         "highlights": {
-          "0": "Erstellt wiederverwendbare, zugängliche UI-Komponenten mit optimierter Darstellung für alle Geräte und Browser.",
-          "1": "Führt Barrierefreiheitsprüfungen durch, schließt WCAG 2.1 AA-Lücken und verbessert die Benutzerfreundlichkeit für alle Benutzer.",
-          "2": "Integriert REST- und GraphQL-APIs mit Solid-State-Management und Fehlerbehandlung über Module hinweg.",
-          "3": "Verwaltet Docker-Entwicklungs-, Test- und Bereitstellungspipelines für reibungslose CI/CD-Workflows."
+          "0": "Trägt zur Funktionsbereitstellung mit sauberem, wartbarem Code bei.",
+          "1": "Arbeitet mit Produkt- und Engineering-Teams an Implementierungsprioritäten zusammen."
         }
       },
       "1": {
+        "role": "Softwareentwickler (Vertrag)",
+        "company": "Fusionsgesundheit",
+        "location": "Woodbridge, NJ",
+        "period": "Februar 2026 – April 2026",
+        "tagline": "Kurzfristige Erreichbarkeit und Compliance-Engagement.",
+        "description": "Konzentriert sich auf Verbesserungen der Barrierefreiheit und WCAG 2.1 AA-Konformität in Angular-Anwendungen.",
+        "highlights": {
+          "0": "Durchführung von Barrierefreiheitsprüfungen und Behebung von WCAG 2.1 AA-Problemen bei wichtigen Benutzerströmen.",
+          "1": "Verbesserte semantische Markierung, Tastaturnavigation und Unterstützung für Bildschirmleseprogramme in der Angular-Benutzeroberfläche."
+        }
+      },
+      "2": {
         "role": "Frontend-Ingenieur",
         "company": "Kiswe",
         "location": "Summit, NJ",
@@ -203,7 +213,7 @@
           "3": "Wir setzen uns für Codeüberprüfungen, Debugging und WCAG-ausgerichtete, geräteübergreifende Erfahrungen ein."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend-Ingenieur",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Übersetzte Figma-Designs in reaktionsfähige, zugängliche und produktionsbereite Schnittstellen."
         }
       },
-      "3": {
-        "role": "Frontend-Ingenieur",
+      "4": {
+        "role": "Frontend-Ingenieur (Vertrag)",
         "company": "Cigna Express-Skripte",
         "location": "Franklin Lakes, New Jersey",
         "period": "Mai 2021 – April 2022",
@@ -231,18 +241,17 @@
           "3": "Teamübergreifende Zusammenarbeit für eine reaktionsfähige, zugängliche UI-Bereitstellung."
         }
       },
-      "4": {
-        "role": "Frontend-Ingenieur",
+      "5": {
+        "role": "Praktikant im Frontend-Engineering",
         "company": "Wohltätigkeitsorganisation Atmiya Care",
         "location": "Parsippany, NJ",
         "period": "September 2020 – Mai 2021",
-        "tagline": "Gemeinnützige Öffentlichkeitsarbeit und Wohltätigkeitsinitiativen.",
-        "description": "Bereitstellung reaktionsfähiger, WCAG-orientierter Webanwendungen mit wiederverwendbaren Komponenten, REST-Integrationen und agiler Bereitstellung.",
+        "tagline": "Gemeinnützige Organisation, die sich auf die Öffentlichkeitsarbeit und Wohltätigkeitsinitiativen konzentriert.",
+        "description": "Hier habe ich meine Software-Karriere begonnen und mir durch praktische Praktika an echten gemeinnützigen Projekten grundlegende Frontend-Kenntnisse aufgebaut.",
         "highlights": {
-          "0": "Entwickelte WCAG-orientierte Erlebnisse mit React, HTML, CSS und JavaScript.",
-          "1": "Für die Wartbarkeit wurden wiederverwendbare Komponenten und modulare UI-Muster erstellt.",
-          "2": "Integrierte RESTful-APIs für dynamische Inhalte und konsistente Client-Workflows.",
-          "3": "Teilnahme an Agile/SCRUM, Codeüberprüfungen und Dokumentation."
+          "0": "Erstellte reaktionsfähige Schnittstellen mit React, HTML, CSS und JavaScript.",
+          "1": "Erlernen grundlegender technischer Praktiken durch Codeüberprüfungen, Zusammenarbeit und iterative Bereitstellung.",
+          "2": "Unterstützte reale Non-Profit-Funktionen und sammelte praktische Erfahrungen mit der barrierefreien UI-Implementierung."
         }
       }
     },

@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Ingénieur logiciel",
-        "company": "Santé fusionnée",
-        "location": "Woodbridge, New Jersey",
-        "period": "Février 2026 — Aujourd'hui",
-        "tagline": "Équipe de technologie de santé créant des produits numériques pour les flux de travail cliniques et opérationnels.",
-        "description": "Développe des fonctionnalités Web avec Angular (v19 et hérité), en mettant l'accent sur l'interface utilisateur accessible et réutilisable, les intégrations REST et GraphQL et le CI/CD basé sur Docker pour des versions et des versions cohérentes.",
+        "role": "Ingénieur logiciel senior",
+        "company": "IA de Paille Noire",
+        "location": "Floride, États-Unis",
+        "period": "avril 2026 — Aujourd'hui",
+        "tagline": "Équipe de produits logiciels et d'ingénierie.",
+        "description": "Travailler en tant qu'ingénieur logiciel senior pour soutenir le développement d'interfaces et de plateformes en fonction des priorités de l'équipe.",
         "highlights": {
-          "0": "Crée des composants d'interface utilisateur réutilisables et accessibles avec un rendu optimisé sur tous les appareils et navigateurs.",
-          "1": "Exécute des audits d'accessibilité, comble les lacunes des WCAG 2.1 AA et améliore la convivialité pour tous les utilisateurs.",
-          "2": "Intègre les API REST et GraphQL avec une gestion solide et une gestion des erreurs dans tous les modules.",
-          "3": "Maintient des pipelines de développement, de test et de déploiement Dockerisés pour des flux de travail CI/CD fluides."
+          "0": "Contribue à la livraison des fonctionnalités avec un code propre et maintenable.",
+          "1": "Collabore avec les équipes de produits et d’ingénierie sur les priorités de mise en œuvre."
         }
       },
       "1": {
+        "role": "Ingénieur logiciel (contrat)",
+        "company": "Santé fusionnée",
+        "location": "Woodbridge, New Jersey",
+        "period": "Février 2026 — avril 2026",
+        "tagline": "Engagement à court terme en matière d’accessibilité et de conformité.",
+        "description": "Axé sur les améliorations de l'accessibilité et la conformité WCAG 2.1 AA dans les applications angulaires.",
+        "highlights": {
+          "0": "Réalisation d'audits d'accessibilité et résolution des problèmes WCAG 2.1 AA dans les flux d'utilisateurs clés.",
+          "1": "Amélioration du balisage sémantique, de la navigation au clavier et de la prise en charge du lecteur d'écran dans Angular UI."
+        }
+      },
+      "2": {
         "role": "Ingénieur front-end",
         "company": "Kiswe",
         "location": "Sommet, New Jersey",
@@ -203,7 +213,7 @@
           "3": "Nous avons défendu les révisions de code, le débogage et les expériences multi-appareils alignées sur les WCAG."
         }
       },
-      "2": {
+      "3": {
         "role": "Ingénieur front-end",
         "company": "Gensler",
         "location": "Morristown, New Jersey",
@@ -217,8 +227,8 @@
           "3": "Traduction des conceptions Figma en interfaces réactives, accessibles et prêtes pour la production."
         }
       },
-      "3": {
-        "role": "Ingénieur front-end",
+      "4": {
+        "role": "Ingénieur Frontend (Contrat)",
         "company": "Scripts Cigna Express",
         "location": "Franklin Lakes, New Jersey",
         "period": "Mai 2021 — avril 2022",
@@ -231,18 +241,17 @@
           "3": "Collaboration entre les équipes pour une livraison d'interface utilisateur réactive et accessible."
         }
       },
-      "4": {
-        "role": "Ingénieur front-end",
+      "5": {
+        "role": "Stagiaire en ingénierie front-end",
         "company": "Association caritative Atmiya Care",
         "location": "Parsippany, New Jersey",
         "period": "septembre 2020 — mai 2021",
-        "tagline": "Sensibilisation communautaire à but non lucratif et initiatives caritatives.",
-        "description": "Livraison d'applications Web réactives, axées sur les WCAG, avec des composants réutilisables, des intégrations REST et une livraison Agile.",
+        "tagline": "Organisation à but non lucratif axée sur la sensibilisation communautaire et les initiatives caritatives.",
+        "description": "J'ai commencé ma carrière dans le logiciel ici, en développant des compétences de base en front-end grâce à des stages pratiques sur de vrais projets à but non lucratif.",
         "highlights": {
-          "0": "Création d'expériences orientées WCAG avec React, HTML, CSS et JavaScript.",
-          "1": "Création de composants réutilisables et de modèles d'interface utilisateur modulaires pour la maintenabilité.",
-          "2": "API RESTful intégrées pour un contenu dynamique et des flux de travail clients cohérents.",
-          "3": "Participation à Agile/SCRUM, aux révisions de code et à la documentation."
+          "0": "Création d'interfaces réactives à l'aide de React, HTML, CSS et JavaScript.",
+          "1": "Apprentissage des pratiques d'ingénierie de base grâce à des révisions de code, à la collaboration et à la livraison itérative.",
+          "2": "Prise en charge de fonctionnalités à but non lucratif du monde réel et acquisition d'une expérience pratique avec la mise en œuvre d'une interface utilisateur accessible."
         }
       }
     },

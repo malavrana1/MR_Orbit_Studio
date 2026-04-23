@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Engenheiro de software",
-        "company": "Saúde de fusão",
-        "location": "Woodbridge, Nova Jersey",
-        "period": "Fevereiro de 2026 - presente",
-        "tagline": "Equipe de tecnologia de saúde construindo produtos digitais para fluxos de trabalho clínicos e operacionais.",
-        "description": "Desenvolve recursos da web com Angular (v19 e legado), enfatizando UI acessível reutilizável, integrações REST e GraphQL e CI/CD baseado em Docker para compilações e lançamentos consistentes.",
+        "role": "Engenheiro de Software Sênior",
+        "company": "IA Blackstraw",
+        "location": "Flórida, Estados Unidos",
+        "period": "abril de 2026 - presente",
+        "tagline": "Equipe de produto e engenharia de software.",
+        "description": "Trabalhando como Engenheiro de Software Sênior para apoiar o desenvolvimento de frontend e plataforma com base nas prioridades da equipe.",
         "highlights": {
-          "0": "Cria componentes de UI reutilizáveis ​​e acessíveis com renderização otimizada em dispositivos e navegadores.",
-          "1": "Executa auditorias de acessibilidade, preenche lacunas das WCAG 2.1 AA e melhora a usabilidade para todos os usuários.",
-          "2": "Integra APIs REST e GraphQL com gerenciamento de estado sólido e tratamento de erros entre módulos.",
-          "3": "Mantém pipelines de desenvolvimento, teste e implantação Dockerizados para fluxos de trabalho de CI/CD tranquilos."
+          "0": "Contribui para a entrega de recursos com código limpo e de fácil manutenção.",
+          "1": "Colabora com equipes de produto e engenharia nas prioridades de implementação."
         }
       },
       "1": {
+        "role": "Engenheiro de Software (Contrato)",
+        "company": "Saúde de fusão",
+        "location": "Woodbridge, Nova Jersey",
+        "period": "fevereiro de 2026 — abril de 2026",
+        "tagline": "Acessibilidade de curto prazo e compromisso de conformidade.",
+        "description": "Focado em melhorias de acessibilidade e conformidade com WCAG 2.1 AA em aplicações Angular.",
+        "highlights": {
+          "0": "Realizou auditorias de acessibilidade e corrigiu problemas de WCAG 2.1 AA nos principais fluxos de usuários.",
+          "1": "Marcação semântica aprimorada, navegação por teclado e suporte a leitor de tela na UI Angular."
+        }
+      },
+      "2": {
         "role": "Engenheiro de front-end",
         "company": "Kiswe",
         "location": "Cimeira, Nova Jersey",
@@ -203,7 +213,7 @@
           "3": "Promovemos revisões de código, depuração e experiências entre dispositivos alinhadas às WCAG."
         }
       },
-      "2": {
+      "3": {
         "role": "Engenheiro de front-end",
         "company": "Gensler",
         "location": "Morristown, Nova Jersey",
@@ -217,8 +227,8 @@
           "3": "Traduziu os designs do Figma em interfaces responsivas, acessíveis e prontas para produção."
         }
       },
-      "3": {
-        "role": "Engenheiro de front-end",
+      "4": {
+        "role": "Engenheiro Frontend (Contrato)",
         "company": "Scripts Cigna Express",
         "location": "Franklin Lakes, Nova Jersey",
         "period": "Maio de 2021 — abril de 2022",
@@ -231,18 +241,17 @@
           "3": "Colaboração entre equipes para entrega de UI responsiva e acessível."
         }
       },
-      "4": {
-        "role": "Engenheiro de front-end",
+      "5": {
+        "role": "Estagiário de Engenharia Frontend",
         "company": "Instituição de caridade Atmiya Care",
         "location": "Parsippany, Nova Jersey",
         "period": "Setembro de 2020 - maio de 2021",
-        "tagline": "Extensão comunitária sem fins lucrativos e iniciativas de caridade.",
-        "description": "Forneceu aplicativos da web responsivos e voltados para WCAG com componentes reutilizáveis, integrações REST e entrega ágil.",
+        "tagline": "Organização sem fins lucrativos focada em divulgação comunitária e iniciativas de caridade.",
+        "description": "Comecei minha carreira em software aqui, desenvolvendo habilidades básicas de front-end por meio de estágio prático em projetos reais sem fins lucrativos.",
         "highlights": {
-          "0": "Criei experiências orientadas a WCAG com React, HTML, CSS e JavaScript.",
-          "1": "Criou componentes reutilizáveis ​​e padrões de UI modulares para manutenção.",
-          "2": "APIs RESTful integradas para conteúdo dinâmico e fluxos de trabalho de cliente consistentes.",
-          "3": "Participou de Agile/SCRUM, revisões de código e documentação."
+          "0": "Criei interfaces responsivas usando React, HTML, CSS e JavaScript.",
+          "1": "Aprendeu práticas básicas de engenharia por meio de revisões de código, colaboração e entrega iterativa.",
+          "2": "Suportei recursos de organizações sem fins lucrativos do mundo real e ganhei experiência prática com implementação de UI acessível."
         }
       }
     },

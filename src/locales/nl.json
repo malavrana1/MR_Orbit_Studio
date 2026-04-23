@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Software-ingenieur",
-        "company": "Fusie Gezondheid",
-        "location": "Woodbridge, NJ",
-        "period": "februari 2026 — heden",
-        "tagline": "Team voor gezondheidszorgtechnologie dat digitale producten bouwt voor klinische en operationele workflows.",
-        "description": "Ontwikkelt webfuncties met Angular (v19 en verouderd), met de nadruk op herbruikbare toegankelijke UI, REST- en GraphQL-integraties, en Docker-gebaseerde CI/CD voor consistente builds en releases.",
+        "role": "Senior software-ingenieur",
+        "company": "Blackstraw AI",
+        "location": "Florida, Verenigde Staten",
+        "period": "april 2026 — heden",
+        "tagline": "Softwareproduct- en engineeringteam.",
+        "description": "Werken als Senior Software Engineer ter ondersteuning van frontend- en platformontwikkeling op basis van teamprioriteiten.",
         "highlights": {
-          "0": "Bouwt herbruikbare, toegankelijke UI-componenten met geoptimaliseerde weergave op verschillende apparaten en browsers.",
-          "1": "Voert toegankelijkheidsaudits uit, dicht de hiaten in WCAG 2.1 AA en verbetert de bruikbaarheid voor alle gebruikers.",
-          "2": "Integreert REST- en GraphQL-API's met solid-state-beheer en foutafhandeling in alle modules.",
-          "3": "Onderhoudt Dockerized ontwikkel-, test- en implementatiepijplijnen voor soepele CI/CD-workflows."
+          "0": "Draagt ​​bij aan de levering van functies met schone, onderhoudbare code.",
+          "1": "Werkt samen met product- en engineeringteams aan implementatieprioriteiten."
         }
       },
       "1": {
+        "role": "Software-ingenieur (contract)",
+        "company": "Fusie Gezondheid",
+        "location": "Woodbridge, NJ",
+        "period": "februari 2026 — april 2026",
+        "tagline": "Toegankelijkheid op korte termijn en betrokkenheid bij naleving.",
+        "description": "Gericht op toegankelijkheidsverbeteringen en WCAG 2.1 AA-compliance in Angular-applicaties.",
+        "highlights": {
+          "0": "Toegankelijkheidsaudits uitgevoerd en WCAG 2.1 AA-problemen opgelost bij belangrijke gebruikersstromen.",
+          "1": "Verbeterde semantische markup, toetsenbordnavigatie en ondersteuning voor schermlezers in Angular UI."
+        }
+      },
+      "2": {
         "role": "Frontend-ingenieur",
         "company": "Kiswe",
         "location": "Top, NJ",
@@ -203,7 +213,7 @@
           "3": "Verdedigde codebeoordelingen, foutopsporing en op WCAG afgestemde ervaringen op verschillende apparaten."
         }
       },
-      "2": {
+      "3": {
         "role": "Frontend-ingenieur",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Figma-ontwerpen vertaald naar responsieve, toegankelijke, productieklare interfaces."
         }
       },
-      "3": {
-        "role": "Frontend-ingenieur",
+      "4": {
+        "role": "Frontend-ingenieur (contract)",
         "company": "Cigna Express-scripts",
         "location": "Franklin Meren, NJ",
         "period": "Mei 2021 – april 2022",
@@ -231,18 +241,17 @@
           "3": "Samenwerking tussen teams voor responsieve, toegankelijke UI-levering."
         }
       },
-      "4": {
-        "role": "Frontend-ingenieur",
+      "5": {
+        "role": "Stagiaire Frontend Engineering",
         "company": "Atmiya Zorg liefdadigheidsinstelling",
         "location": "Parsippany, NJ",
         "period": "september 2020 — mei 2021",
-        "tagline": "Non-profit gemeenschapsbereik en liefdadigheidsinitiatieven.",
-        "description": "Leverde responsieve, WCAG-gerichte webapps met herbruikbare componenten, REST-integraties en Agile levering.",
+        "tagline": "Non-profitorganisatie gericht op gemeenschapsbereik en liefdadigheidsinitiatieven.",
+        "description": "Ik begon mijn softwarecarrière hier, waarbij ik fundamentele frontend-vaardigheden opbouwde door middel van praktijkgericht stagewerk bij echte non-profitprojecten.",
         "highlights": {
-          "0": "Bouwde WCAG-georiënteerde ervaringen met React, HTML, CSS en JavaScript.",
-          "1": "Herbruikbare componenten en modulaire UI-patronen gemaakt voor onderhoudbaarheid.",
-          "2": "Geïntegreerde RESTful API's voor dynamische inhoud en consistente clientworkflows.",
-          "3": "Deelgenomen aan Agile/SCRUM, code reviews en documentatie."
+          "0": "Responsieve interfaces gebouwd met React, HTML, CSS en JavaScript.",
+          "1": "Je hebt de belangrijkste technische praktijken geleerd door middel van codebeoordelingen, samenwerking en iteratieve levering.",
+          "2": "Ondersteunde functies van non-profitorganisaties uit de echte wereld en deed praktische ervaring op met toegankelijke UI-implementatie."
         }
       }
     },

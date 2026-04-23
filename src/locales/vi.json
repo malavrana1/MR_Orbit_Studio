@@ -176,20 +176,30 @@
     },
     "experience": {
       "0": {
-        "role": "Kỹ sư phần mềm",
-        "company": "Sức khỏe tổng hợp",
-        "location": "Woodbridge, NJ",
-        "period": "Tháng 2 năm 2026 - Hiện tại",
-        "tagline": "Nhóm công nghệ chăm sóc sức khỏe xây dựng các sản phẩm kỹ thuật số cho quy trình hoạt động và lâm sàng.",
-        "description": "Phát triển các tính năng web với Angular (v19 và phiên bản cũ), nhấn mạnh vào giao diện người dùng có thể truy cập lại, tích hợp REST và GraphQL cũng như CI/CD dựa trên Docker để xây dựng và phát hành nhất quán.",
+        "role": "Kỹ sư phần mềm cao cấp",
+        "company": "AI đen tối",
+        "location": "Florida, Hoa Kỳ",
+        "period": "Tháng 4 năm 2026 - Hiện tại",
+        "tagline": "Đội ngũ kỹ thuật và sản phẩm phần mềm.",
+        "description": "Làm việc với tư cách là Kỹ sư phần mềm cao cấp để hỗ trợ phát triển giao diện người dùng và nền tảng dựa trên các ưu tiên của nhóm.",
         "highlights": {
-          "0": "Xây dựng các thành phần giao diện người dùng có thể sử dụng lại, có thể truy cập được với khả năng hiển thị được tối ưu hóa trên các thiết bị và trình duyệt.",
-          "1": "Chạy kiểm tra khả năng truy cập, thu hẹp khoảng cách WCAG 2.1 AA và cải thiện khả năng sử dụng cho tất cả người dùng.",
-          "2": "Tích hợp API REST và GraphQL với khả năng quản lý trạng thái vững chắc và xử lý lỗi trên các mô-đun.",
-          "3": "Duy trì các quy trình phát triển, thử nghiệm và triển khai Dockerized để có quy trình làm việc CI/CD suôn sẻ."
+          "0": "Góp phần cung cấp tính năng với mã sạch, có thể bảo trì.",
+          "1": "Cộng tác với nhóm sản phẩm và kỹ thuật về các ưu tiên triển khai."
         }
       },
       "1": {
+        "role": "Kỹ sư phần mềm (Hợp đồng)",
+        "company": "Sức khỏe tổng hợp",
+        "location": "Woodbridge, NJ",
+        "period": "Tháng 2 năm 2026 - Tháng 4 năm 2026",
+        "tagline": "Khả năng tiếp cận ngắn hạn và cam kết tuân thủ.",
+        "description": "Tập trung vào cải tiến khả năng truy cập và tuân thủ WCAG 2.1 AA trong các ứng dụng Angular.",
+        "highlights": {
+          "0": "Đã thực hiện kiểm tra khả năng truy cập và khắc phục các sự cố WCAG 2.1 AA trên các luồng người dùng chính.",
+          "1": "Cải thiện đánh dấu ngữ nghĩa, điều hướng bàn phím và hỗ trợ trình đọc màn hình trong Giao diện người dùng góc."
+        }
+      },
+      "2": {
         "role": "Kỹ sư giao diện người dùng",
         "company": "Kiswe",
         "location": "Hội nghị thượng đỉnh, NJ",
@@ -203,7 +213,7 @@
           "3": "Đánh giá mã, gỡ lỗi và trải nghiệm đa thiết bị, phù hợp với WCAG."
         }
       },
-      "2": {
+      "3": {
         "role": "Kỹ sư giao diện người dùng",
         "company": "Gensler",
         "location": "Morristown, NJ",
@@ -217,8 +227,8 @@
           "3": "Chuyển các thiết kế của Figma thành các giao diện đáp ứng, dễ tiếp cận, sẵn sàng sản xuất."
         }
       },
-      "3": {
-        "role": "Kỹ sư giao diện người dùng",
+      "4": {
+        "role": "Kỹ sư Frontend (Hợp đồng)",
         "company": "Tập lệnh Cigna Express",
         "location": "Hồ Franklin, NJ",
         "period": "Tháng 5 năm 2021 - Tháng 4 năm 2022",
@@ -231,18 +241,17 @@
           "3": "Cộng tác giữa các nhóm để phân phối giao diện người dùng đáp ứng, dễ tiếp cận."
         }
       },
-      "4": {
-        "role": "Kỹ sư giao diện người dùng",
+      "5": {
+        "role": "Thực tập sinh kỹ thuật Frontend",
         "company": "Tổ chức từ thiện chăm sóc Atmiya",
         "location": "Parsippany, NJ",
         "period": "Tháng 9 năm 2020 - Tháng 5 năm 2021",
-        "tagline": "Tiếp cận cộng đồng phi lợi nhuận và các sáng kiến ​​từ thiện.",
-        "description": "Cung cấp các ứng dụng web có tính đáp ứng cao, hướng đến WCAG với các thành phần có thể tái sử dụng, tích hợp REST và phân phối Agile.",
+        "tagline": "Tổ chức phi lợi nhuận tập trung vào các sáng kiến ​​​​từ thiện và tiếp cận cộng đồng.",
+        "description": "Tôi bắt đầu sự nghiệp phần mềm của mình tại đây, xây dựng các kỹ năng nền tảng về giao diện người dùng thông qua công việc thực tập thực hành trong các dự án phi lợi nhuận thực sự.",
         "highlights": {
-          "0": "Xây dựng trải nghiệm theo định hướng WCAG với React, HTML, CSS và JavaScript.",
-          "1": "Đã tạo các thành phần có thể tái sử dụng và các mẫu giao diện người dùng mô-đun để có thể bảo trì.",
-          "2": "API RESTful tích hợp cho nội dung động và quy trình làm việc nhất quán của khách hàng.",
-          "3": "Đã tham gia vào Agile/SCRUM, đánh giá mã và tài liệu."
+          "0": "Xây dựng giao diện đáp ứng bằng React, HTML, CSS và JavaScript.",
+          "1": "Đã học các phương pháp thực hành kỹ thuật cốt lõi thông qua đánh giá mã, cộng tác và phân phối lặp lại.",
+          "2": "Hỗ trợ các tính năng phi lợi nhuận trong thế giới thực và có được trải nghiệm thực tế khi triển khai giao diện người dùng có thể truy cập."
         }
       }
     },
