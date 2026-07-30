@@ -43,7 +43,8 @@ function buildContent() {
   })
 
   ;(personal.interests || []).forEach((item, i) => {
-    content.personal.interests[String(i)] = item
+    content.personal.interests[String(i)] =
+      typeof item === 'string' ? item : item.label
   })
   ;(personal.principles || []).forEach((item, i) => {
     content.personal.principles[String(i)] = item
