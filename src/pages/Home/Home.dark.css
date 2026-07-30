@@ -206,7 +206,7 @@
 
 [data-theme='dark'] .contact-card p,
 [data-theme='dark'] .contact-card .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .section-title,
@@ -228,7 +228,7 @@
 }
 
 [data-theme='dark'] .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .hero-skill-card {
@@ -284,11 +284,11 @@
 }
 
 [data-theme='dark'] .skill-card-header .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .hero-skill-card .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .skill-icon-tile {
@@ -1107,17 +1107,17 @@
 }
 
 [data-theme='dark'] .summary-subtitle {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .summary-subtitle.lead,
 [data-theme='dark'] .summary-subtitle.text-muted,
 [data-theme='dark'] .summary-subtitle.lead.text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .summary-header .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .summary-header p {
@@ -1127,7 +1127,7 @@
 [data-theme='dark'] .summary-header p.lead,
 [data-theme='dark'] .summary-header p.text-muted,
 [data-theme='dark'] .summary-header p.lead.text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .credential-institution {
@@ -1220,7 +1220,7 @@
 }
 
 [data-theme='dark'] .credential-card .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .credential-content {
@@ -1269,7 +1269,7 @@
 }
 
 [data-theme='dark'] .credential-card .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .credential-subtitle.small,
@@ -1318,7 +1318,7 @@
 
 [data-theme='dark'] .toolkit-heading p,
 [data-theme='dark'] .toolkit-heading .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .experience-description {
@@ -1327,19 +1327,19 @@
 }
 
 [data-theme='dark'] .experience-card .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .project-card .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .personal-card .text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .personal-card p.text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .personal-card p {
@@ -1393,7 +1393,7 @@
 [data-theme='dark'] p.lead,
 [data-theme='dark'] h6.small,
 [data-theme='dark'] h6.lead {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] ul li,
@@ -1416,7 +1416,7 @@
 [data-theme='dark'] .text-muted.mb-4,
 [data-theme='dark'] .text-muted.lead,
 [data-theme='dark'] .text-muted.mx-auto {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .lead {
@@ -1424,7 +1424,7 @@
 }
 
 [data-theme='dark'] .lead.text-muted {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .landing-credentials {
@@ -1478,7 +1478,7 @@
 [data-theme='dark'] p.text-muted.mb-2,
 [data-theme='dark'] p.text-muted.mb-3,
 [data-theme='dark'] p.text-muted.mb-4 {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] span.credential-period {
@@ -1531,7 +1531,7 @@
 
 [data-theme='dark'] .mx-auto.text-muted,
 [data-theme='dark'] .mx-auto.lead {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .landing-summary p,
@@ -1828,7 +1828,7 @@
 [data-theme='dark'] .card-body .text-muted,
 [data-theme='dark'] .card-body .small,
 [data-theme='dark'] .card-body .lead {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .personal-card .mt-4,
@@ -1843,7 +1843,7 @@
 [data-theme='dark'] .text-muted.mb-2,
 [data-theme='dark'] .text-muted.mb-3,
 [data-theme='dark'] .text-muted.mb-4 {
-  color: #ffffff !important;
+  color: #a8a29e !important;
 }
 
 [data-theme='dark'] .contact-modal-custom .modal-dialog {
