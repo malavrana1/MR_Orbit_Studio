@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "ਹੈਲੋ, ਮੈਂ ਹਾਂ",
     "headlineFallback": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ | ਪ੍ਰਤੀਕਿਰਿਆ • ਕੋਣੀ • Vue ਸਪੈਸ਼ਲਿਸਟ",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "ਤਕਨੀਕੀ ਸਟੈਕ",
     "skillCardDescription": "ਤਕਨਾਲੋਜੀਆਂ ਜੋ ਮੈਂ ਆਧੁਨਿਕ ਵੈਬ ਐਪਲੀਕੇਸ਼ਨਾਂ ਬਣਾਉਣ ਲਈ ਵਰਤਦਾ ਹਾਂ",
     "recentTeams": "ਤਾਜ਼ਾ ਅਨੁਭਵ"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} ਲੋਗੋ"
   },
   "projects": {
-    "title": "ਫੀਚਰਡ ਪ੍ਰੋਜੈਕਟ"
+    "title": "ਫੀਚਰਡ ਪ੍ਰੋਜੈਕਟ",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "ਤਕਨੀਕੀ ਟੂਲਕਿੱਟ",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "ਸਕੇਲੇਬਲ, ਉੱਚ-ਪ੍ਰਦਰਸ਼ਨ, ਅਤੇ ਪਹੁੰਚਯੋਗ ਵੈੱਬ ਐਪਲੀਕੇਸ਼ਨਾਂ ਬਣਾਉਣ ਦੇ 5+ ਸਾਲਾਂ ਦੇ ਤਜ਼ਰਬੇ ਵਾਲਾ ਫਰੰਟਐਂਡ ਇੰਜੀਨੀਅਰ। React, Angular, Next.js, TypeScript, ਅਤੇ ਆਧੁਨਿਕ ਫਰੰਟਐਂਡ ਫਰੇਮਵਰਕ ਵਿੱਚ ਹੁਨਰਮੰਦ। REST ਅਤੇ GraphQL API ਨੂੰ ਏਕੀਕ੍ਰਿਤ ਕਰਨ, ਗੁੰਝਲਦਾਰ UI ਵਰਕਫਲੋਜ਼ ਨੂੰ ਅਨੁਕੂਲ ਬਣਾਉਣ, CI/CD ਪਾਈਪਲਾਈਨਾਂ ਨੂੰ ਲਾਗੂ ਕਰਨ, ਸਵੈਚਲਿਤ ਟੈਸਟਿੰਗ, ਅਤੇ ਪਹੁੰਚਯੋਗਤਾ ਦੀ ਪਾਲਣਾ ਕਰਨ ਵਿੱਚ ਅਨੁਭਵ ਕੀਤਾ ਗਿਆ ਹੈ। ਸਹਿਯੋਗੀ ਟੀਮ ਪਲੇਅਰ ਨੇ ਕਈ ਪ੍ਰੋਜੈਕਟਾਂ ਵਿੱਚ ਉਪਭੋਗਤਾ-ਅਨੁਕੂਲ, ਰੱਖ-ਰਖਾਅ ਯੋਗ ਸੌਫਟਵੇਅਰ ਹੱਲ ਪ੍ਰਦਾਨ ਕਰਨ 'ਤੇ ਧਿਆਨ ਦਿੱਤਾ।"
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roulette ਲਾਈਵ",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3 ਦੇ ਨਾਲ ਬਣਾਈ ਗਈ ਇੱਕ ਯਥਾਰਥਵਾਦੀ ਅਤੇ ਇੰਟਰਐਕਟਿਵ ਰੂਲੇਟ ਗੇਮ। ਵਰਚੁਅਲ ਚਿਪਸ ਨਾਲ ਖੇਡੋ, ਨਿਰਵਿਘਨ ਐਨੀਮੇਸ਼ਨਾਂ ਦਾ ਆਨੰਦ ਮਾਣੋ, ਅਤੇ ਆਪਣੇ ਅੰਕੜਿਆਂ ਨੂੰ ਟਰੈਕ ਕਰੋ। ਬਿਨਾਂ ਕਿਸੇ ਅਸਲ ਪੈਸੇ ਦੇ ਇੱਕ ਕੈਸੀਨੋ ਗੇਮ ਦੇ ਰੋਮਾਂਚ ਦਾ ਅਨੁਭਵ ਕਰੋ।",
         "cta": "GitHub 'ਤੇ ਪੜਚੋਲ ਕਰੋ"
       },
       "1": {
         "title": "ਸਟਾਕਸਿਮ",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "ਰੀਅਲ ਟਾਈਮ ਵਿੱਚ ਸਟਾਕਾਂ ਅਤੇ ਕ੍ਰਿਪਟੋ ਦੀ ਪੜਚੋਲ ਕਰਨ ਲਈ ਇੱਕ ਨਿੱਜੀ ਸਟਾਕ ਮਾਰਕੀਟ ਸਿਮੂਲੇਟਰ। ਮੁਨਾਫ਼ਿਆਂ ਦੀ ਗਣਨਾ ਕਰੋ, ਦ੍ਰਿਸ਼ਾਂ ਨੂੰ ਬਚਾਓ, ਮਨਪਸੰਦਾਂ ਨੂੰ ਟ੍ਰੈਕ ਕਰੋ, ਅਤੇ ਅਸਲ ਧਨ ਨੂੰ ਜੋਖਮ ਵਿੱਚ ਪਾਏ ਬਿਨਾਂ ਵਪਾਰਕ ਰਣਨੀਤੀਆਂ ਸਿੱਖੋ।",
         "cta": "GitHub 'ਤੇ ਪੜਚੋਲ ਕਰੋ"
       },
       "2": {
         "title": "MR ਔਰਬਿਟ ਸਟੂਡੀਓ",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "ਸਿੰਗਲ-ਪੇਜ ਰੀਐਕਟ ਪੋਰਟਫੋਲੀਓ ਉਹਨਾਂ ਚੀਜ਼ਾਂ ਨੂੰ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਦਾ ਹੈ ਜੋ ਮੈਂ ਬਣਾਉਣਾ ਪਸੰਦ ਕਰਦਾ ਹਾਂ - ਡੇਟਾ-ਸੰਚਾਲਿਤ ਭਾਗ, ਮੁੜ-ਚਾਲੂ ਡਾਉਨਲੋਡ, ਅਤੇ ਇੰਟਰਐਕਟਿਵ ਟੂਲਕਿਟ ਫਿਲਟਰ।",
         "cta": "ਪੋਰਟਫੋਲੀਓ ਦੇਖੋ"
       }

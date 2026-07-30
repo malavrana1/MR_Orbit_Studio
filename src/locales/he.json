@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "היי, אני",
     "headlineFallback": "מהנדס חזית | React • Angular • Vue מומחה",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "טכנולוגיות בהן אני משתמש לבניית יישומי אינטרנט מודרניים",
     "recentTeams": "ניסיון אחרון"
@@ -45,7 +48,10 @@
     "logoAlt": "לוגו {{company}}"
   },
   "projects": {
-    "title": "פרויקטים מומלצים"
+    "title": "פרויקטים מומלצים",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "ערכת כלים טכנית",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "מהנדס חזית",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "מהנדס חזיתי עם 5+ שנות ניסיון בבניית יישומי אינטרנט ניתנים להרחבה, ביצועים גבוהים ונגישים. מיומן ב-React, Angular, Next.js, TypeScript ומסגרות חזיתיות מודרניות. מנוסה בשילוב ממשקי API של REST ו-GraphQL, אופטימיזציה של זרימות עבודה מורכבות של ממשק משתמש, הטמעת צינורות CI/CD, בדיקות אוטומטיות ותאימות לנגישות. שחקן צוות שיתופי המתמקד באספקת פתרונות תוכנה ידידותיים למשתמש הניתנים לתחזוקה על פני מספר פרויקטים."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "רולטה בשידור חי",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "משחק רולטה ריאליסטי ואינטראקטיבי שנבנה עם Vue 3. שחקו עם צ'יפים וירטואליים, תהנו מהנפשות חלקות ועקבו אחר הנתונים הסטטיסטיים שלכם. חווה את הריגוש של משחק קזינו ללא כל כסף אמיתי מעורב.",
         "cta": "חקור ב-GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "סימולטור בורסה אישי לחקור מניות וקריפטו בזמן אמת. חשב רווחים, שמור תרחישים, עקוב אחר מועדפים ולמד אסטרטגיות מסחר מבלי להסתכן בכסף אמיתי.",
         "cta": "חקור ב-GitHub"
       },
       "2": {
         "title": "סטודיו MR אורביט",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "תיק React של עמוד אחד המציג את הדברים שאני אוהב לבנות - קטעים מונעי נתונים, הורדת קורות חיים ומסנני ערכת כלים אינטראקטיביים.",
         "cta": "הצג תיק עבודות"
       }

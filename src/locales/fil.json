@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Hi, ako",
     "headlineFallback": "Frontend Engineer | React • Angular • Vue Specialist",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Mga teknolohiyang ginagamit ko upang bumuo ng mga modernong web application",
     "recentTeams": "Kamakailang Karanasan"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logo"
   },
   "projects": {
-    "title": "Mga Tampok na Proyekto"
+    "title": "Mga Tampok na Proyekto",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Teknikal na toolkit",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Frontend Engineer",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend Engineer na may 5+ taong karanasan sa pagbuo ng mga scalable, mataas na pagganap, at naa-access na mga web application. Sanay sa React, Angular, Next.js, TypeScript, at modernong frontend frameworks. Nakaranas sa pagsasama ng REST at GraphQL API, pag-optimize ng mga kumplikadong workflow ng UI, pagpapatupad ng mga pipeline ng CI/CD, automated na pagsubok, at pagsunod sa accessibility. Nakatuon ang collaborative team player sa paghahatid ng user-friendly, maintainable software solutions sa maraming proyekto."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Live na Roulette",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Isang makatotohanan at interactive na larong roulette na binuo gamit ang Vue 3. Maglaro gamit ang mga virtual chips, tangkilikin ang mga makinis na animation, at subaybayan ang iyong mga istatistika. Damhin ang kilig ng isang laro sa casino nang walang anumang totoong pera na kasangkot.",
         "cta": "Mag-explore sa GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Isang personal na stock market simulator upang galugarin ang mga stock at crypto sa real time. Kalkulahin ang mga kita, i-save ang mga sitwasyon, subaybayan ang mga paborito, at matuto ng mga diskarte sa pangangalakal nang hindi nanganganib sa totoong pera.",
         "cta": "Mag-explore sa GitHub"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Isang-pahinang React portfolio na nagpapakita ng mga bagay na gusto kong buuin - mga seksyong batay sa data, ipagpatuloy ang pag-download, at mga interactive na filter ng toolkit.",
         "cta": "Tingnan ang portfolio"
       }

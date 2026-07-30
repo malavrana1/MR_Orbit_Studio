@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Merhaba, ben",
     "headlineFallback": "Frontend mühendisi | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Teknoloji yığını",
     "skillCardDescription": "Modern web uygulamaları için kullandığım teknolojiler",
     "recentTeams": "Son deneyim"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logosu"
   },
   "projects": {
-    "title": "Öne çıkan projeler"
+    "title": "Öne çıkan projeler",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Teknik araç seti",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Ön Uç Mühendisi",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Ölçeklenebilir, yüksek performanslı ve erişilebilir web uygulamaları oluşturmada 5 yıldan fazla deneyime sahip Ön Uç Mühendisi. React, Angular, Next.js, TypeScript ve modern ön uç çerçeveleri konusunda uzman. REST ve GraphQL API'lerini entegre etme, karmaşık kullanıcı arayüzü iş akışlarını optimize etme, CI/CD ardışık düzenlerini uygulama, otomatik test ve erişilebilirlik uyumluluğu konusunda deneyimli. İşbirlikçi ekip oyuncusu, birden fazla projede kullanıcı dostu, bakımı kolay yazılım çözümleri sunmaya odaklandı."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Rulet Canlı",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3 ile oluşturulmuş gerçekçi ve etkileşimli bir rulet oyunu. Sanal çiplerle oynayın, akıcı animasyonların keyfini çıkarın ve istatistiklerinizi takip edin. Hiçbir gerçek paraya ihtiyaç duymadan bir casino oyununun heyecanını yaşayın.",
         "cta": "GitHub'da keşfedin"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Hisse senetlerini ve kriptoyu gerçek zamanlı olarak keşfetmek için kişisel bir borsa simülatörü. Gerçek parayı riske atmadan karları hesaplayın, senaryoları kaydedin, favorileri takip edin ve ticaret stratejilerini öğrenin.",
         "cta": "GitHub'da keşfedin"
       },
       "2": {
         "title": "MR Orbit Stüdyosu",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Veriye dayalı bölümler, özgeçmiş indirme ve etkileşimli araç seti filtreleri gibi oluşturmayı sevdiğim şeyleri gösteren tek sayfalı React portföyü.",
         "cta": "Portfolyoyu görüntüle"
       }

@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Olá, eu sou",
     "headlineFallback": "Engenheiro frontend | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Stack tecnológico",
     "skillCardDescription": "Tecnologias que uso para criar aplicações web modernas",
     "recentTeams": "Experiência recente"
@@ -45,7 +48,10 @@
     "logoAlt": "Logotipo da {{company}}"
   },
   "projects": {
-    "title": "Projetos em destaque"
+    "title": "Projetos em destaque",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Kit técnico",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Engenheiro de front-end",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Engenheiro Frontend com mais de 5 anos de experiência na construção de aplicações web escaláveis, de alto desempenho e acessíveis. Hábil em React, Angular, Next.js, TypeScript e frameworks frontend modernos. Experiência na integração de APIs REST e GraphQL, otimização de fluxos de trabalho de UI complexos, implementação de pipelines de CI/CD, testes automatizados e conformidade de acessibilidade. Trabalhador de equipe colaborativo, focado em fornecer soluções de software fáceis de usar e de fácil manutenção em vários projetos."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roleta ao vivo",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Um jogo de roleta realista e interativo desenvolvido com Vue 3. Jogue com fichas virtuais, desfrute de animações suaves e acompanhe suas estatísticas. Experimente a emoção de um jogo de cassino sem nenhum dinheiro real envolvido.",
         "cta": "Explorar no GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Um simulador pessoal do mercado de ações para explorar ações e criptografia em tempo real. Calcule lucros, salve cenários, acompanhe favoritos e aprenda estratégias de negociação sem arriscar dinheiro real.",
         "cta": "Explorar no GitHub"
       },
       "2": {
         "title": "Estúdio de órbita MR",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Portfólio React de página única apresentando as coisas que adoro construir: seções baseadas em dados, download de currículo e filtros de kit de ferramentas interativos.",
         "cta": "Ver portfólio"
       }

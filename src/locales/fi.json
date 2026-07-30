@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Hei, olen",
     "headlineFallback": "Frontend Engineer | Reagoi • Kulma • Vue-asiantuntija",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Tekniikat, joita käytän nykyaikaisten verkkosovellusten rakentamiseen",
     "recentTeams": "Viimeaikainen kokemus"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logo"
   },
   "projects": {
-    "title": "Suositellut projektit"
+    "title": "Suositellut projektit",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Tekninen työkalupakki",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Frontend-insinööri",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend Engineer, jolla on yli 5 vuoden kokemus skaalautuvien, tehokkaiden ja helppokäyttöisten verkkosovellusten rakentamisesta. React-, Angular-, Next.js-, TypeScript- ja nykyaikaisten käyttöliittymäkehysten taidot. Kokenut REST- ja GraphQL-sovellusliittymien integroimisesta, monimutkaisten käyttöliittymätyönkulkujen optimoinnista, CI/CD-putkien toteuttamisesta, automaattisesta testauksesta ja saavutettavuuden vaatimustenmukaisuudesta. Yhteistyössä toimiva tiimipelaaja, joka keskittyi toimittamaan käyttäjäystävällisiä, ylläpidettäviä ohjelmistoratkaisuja useissa projekteissa."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Ruletti Livenä",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Realistinen ja interaktiivinen rulettipeli, joka on rakennettu Vue 3:lla. Pelaa virtuaalisilla pelimerkeillä, nauti sujuvasta animaatiosta ja seuraa tilastojasi. Koe kasinopelin jännitys ilman oikeaa rahaa.",
         "cta": "Tutustu GitHubiin"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Henkilökohtainen osakemarkkinasimulaattori osakkeiden ja krypton tutkimiseen reaaliajassa. Laske voitot, tallenna skenaarioita, seuraa suosikkeja ja opi kaupankäyntistrategioita vaarantamatta oikeaa rahaa.",
         "cta": "Tutustu GitHubiin"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Yksisivuinen React-portfolio, joka esittelee asioita, joita rakastan rakentaa – datapohjaiset osiot, latauksen jatkaminen ja interaktiiviset työkalupakkisuodattimet.",
         "cta": "Näytä portfolio"
       }

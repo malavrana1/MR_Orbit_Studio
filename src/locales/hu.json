@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Szia, én",
     "headlineFallback": "Frontend Engineer | React • Szögletes • Vue Specialist",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Technológiák, amelyeket modern webalkalmazások készítéséhez használok",
     "recentTeams": "Legutóbbi tapasztalat"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logó"
   },
   "projects": {
-    "title": "Kiemelt projektek"
+    "title": "Kiemelt projektek",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Technikai eszköztár",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Frontend mérnök",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend mérnök több mint 5 éves tapasztalattal méretezhető, nagy teljesítményű és hozzáférhető webalkalmazások létrehozásában. Jártas a React, Angular, Next.js, TypeScript és modern frontend keretrendszerekben. Tapasztalt REST és GraphQL API-k integrációjában, összetett felhasználói felületi munkafolyamatok optimalizálásában, CI/CD folyamatok megvalósításában, automatizált tesztelésben és kisegítő lehetőségek megfelelőségében. Együttműködő csapatjátékos, aki felhasználóbarát, karbantartható szoftvermegoldások biztosítására összpontosított több projektben."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Élő rulett",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Valósághű és interaktív rulettjáték a Vue 3-mal. Játssz virtuális zsetonokkal, élvezd a gördülékeny animációkat, és nyomon kövesd a statisztikáidat. Tapasztalja meg egy kaszinójáték izgalmát valódi pénz nélkül.",
         "cta": "Fedezze fel a GitHubon"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Személyes tőzsdei szimulátor a részvények és a kriptográfia valós idejű felfedezéséhez. Számítsa ki a nyereséget, mentse el a forgatókönyveket, kövesse nyomon kedvenceit és tanulja meg a kereskedési stratégiákat valódi pénz kockáztatása nélkül.",
         "cta": "Fedezze fel a GitHubon"
       },
       "2": {
         "title": "MR Orbit Stúdió",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Egyoldalas React portfólió, amely bemutatja azokat a dolgokat, amelyeket szeretek építeni – adatvezérelt szakaszok, letöltés folytatása és interaktív eszköztár-szűrők.",
         "cta": "Portfólió megtekintése"
       }

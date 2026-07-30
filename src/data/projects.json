@@ -1,23 +1,29 @@
 [
   {
+    "id": "roulette-live",
     "title": "Roulette Live",
+    "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
     "description": "A realistic and interactive roulette game built with Vue 3. Play with virtual chips, enjoy smooth animations, and track your stats. Experience the thrill of a casino game without any real money involved.",
     "tech": ["Vue.js", "Bootstrap", "Firebase", "Tailwind CSS"],
-    "link": "https://github.com/malavrana1/RouletteLive",
-    "cta": "Explore on GitHub"
+    "githubUrl": "https://github.com/malavrana1/RouletteLive",
+    "liveUrl": ""
   },
   {
+    "id": "stocksim",
     "title": "StockSim",
+    "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
     "description": "A personal stock market simulator to explore stocks and crypto in real time. Calculate profits, save scenarios, track favorites, and learn trading strategies without risking real money.",
     "tech": ["Vue.js", "Pinia", "Node.js"],
-    "link": "https://github.com/malavrana1/StockSim",
-    "cta": "Explore on GitHub"
+    "githubUrl": "https://github.com/malavrana1/StockSim",
+    "liveUrl": ""
   },
   {
+    "id": "mr-orbit-studio",
     "title": "MR Orbit Studio",
+    "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
     "description": "Single-page React portfolio showcasing the things I love to build - data-driven sections, resume download, and interactive toolkit filters.",
-    "tech": ["React", "React-Bootstrap", "PNPM"],
-    "link": "https://github.com/malavrana1/React_Login_Page",
-    "cta": "View portfolio"
+    "tech": ["React", "Vite", "Firebase Hosting"],
+    "githubUrl": "https://github.com/malavrana1/MR_Orbit_Studio",
+    "liveUrl": "https://mr-orbit-studio.web.app"
   }
 ]

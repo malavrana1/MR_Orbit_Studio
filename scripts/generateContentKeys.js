@@ -21,6 +21,7 @@ function buildContent() {
   const content = {
     profile: {
       headline: profile.headline,
+      availability: profile.availability || '',
       summary: {},
     },
     personal: {
@@ -52,8 +53,9 @@ function buildContent() {
   projects.forEach((p, i) => {
     content.projects[String(i)] = {
       title: p.title,
+      outcome: p.outcome || '',
       description: p.description,
-      cta: p.cta,
+      cta: p.cta || '',
     }
   })
 

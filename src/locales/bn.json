@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "হাই, আমি",
     "headlineFallback": "ফ্রন্টেন্ড ইঞ্জিনিয়ার | প্রতিক্রিয়া • কৌণিক • Vue বিশেষজ্ঞ",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "টেক স্ট্যাক",
     "skillCardDescription": "আধুনিক ওয়েব অ্যাপ্লিকেশন তৈরি করতে আমি যে প্রযুক্তি ব্যবহার করি",
     "recentTeams": "সাম্প্রতিক অভিজ্ঞতা"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} লোগো"
   },
   "projects": {
-    "title": "বৈশিষ্ট্যযুক্ত প্রকল্প"
+    "title": "বৈশিষ্ট্যযুক্ত প্রকল্প",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "প্রযুক্তিগত টুলকিট",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "ফ্রন্টেন্ড ইঞ্জিনিয়ার",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "5+ বছরের অভিজ্ঞতার সাথে ফ্রন্টএন্ড ইঞ্জিনিয়ার স্কেলযোগ্য, উচ্চ-পারফরম্যান্স এবং অ্যাক্সেসযোগ্য ওয়েব অ্যাপ্লিকেশন তৈরি করে। React, Angular, Next.js, TypeScript এবং আধুনিক ফ্রন্টএন্ড ফ্রেমওয়ার্কে দক্ষ। REST এবং GraphQL API একত্রিত করা, জটিল UI ওয়ার্কফ্লো অপ্টিমাইজ করা, CI/CD পাইপলাইন বাস্তবায়ন, স্বয়ংক্রিয় পরীক্ষা এবং অ্যাক্সেসযোগ্যতা সম্মতিতে অভিজ্ঞ। সহযোগী দল প্লেয়ার একাধিক প্রকল্প জুড়ে ব্যবহারকারী-বান্ধব, রক্ষণাবেক্ষণযোগ্য সফ্টওয়্যার সমাধান প্রদানের উপর দৃষ্টি নিবদ্ধ করে।"
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "রুলেট লাইভ",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3 দিয়ে তৈরি একটি বাস্তবসম্মত এবং ইন্টারেক্টিভ রুলেট গেম। ভার্চুয়াল চিপগুলির সাথে খেলুন, মসৃণ অ্যানিমেশন উপভোগ করুন এবং আপনার পরিসংখ্যান ট্র্যাক করুন। কোনো বাস্তব অর্থ জড়িত ছাড়াই একটি ক্যাসিনো গেমের রোমাঞ্চের অভিজ্ঞতা নিন।",
         "cta": "GitHub-এ অন্বেষণ করুন"
       },
       "1": {
         "title": "স্টকসিম",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "রিয়েল টাইমে স্টক এবং ক্রিপ্টো অন্বেষণ করার জন্য একটি ব্যক্তিগত স্টক মার্কেট সিমুলেটর। প্রকৃত অর্থের ঝুঁকি না নিয়ে মুনাফা গণনা করুন, পরিস্থিতি সংরক্ষণ করুন, পছন্দের ট্র্যাক করুন এবং ট্রেডিং কৌশল শিখুন।",
         "cta": "GitHub-এ অন্বেষণ করুন"
       },
       "2": {
         "title": "এমআর অরবিট স্টুডিও",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "একক-পৃষ্ঠার প্রতিক্রিয়া পোর্টফোলিও যা আমি তৈরি করতে পছন্দ করি তা প্রদর্শন করে - ডেটা-চালিত বিভাগ, পুনরায় শুরু ডাউনলোড, এবং ইন্টারেক্টিভ টুলকিট ফিল্টার।",
         "cta": "পোর্টফোলিও দেখুন"
       }

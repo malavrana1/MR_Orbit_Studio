@@ -33,6 +33,7 @@ import resumePdf from '../../assets/pdf/Malav-Rana-Frontend-Engineer.pdf'
 import { translateSkillCategoryLabel } from '../../i18n/content'
 import { getToolkitIcon } from '../../icons/toolkitIcons'
 import { getCompanyLogo } from '../../data/companyLogos'
+import { getProjectImage } from '../../data/projectImages'
 import {
   syncPageMeta,
   syncStructuredData,
@@ -42,7 +43,6 @@ import { useLocalizedPortfolio } from '../../hooks/useLocalizedPortfolio'
 import analyticsService from '../../services/analytics'
 import { useTheme } from '../../context/ThemeContext'
 import { usePageScroll } from '../../context/ScrollContext'
-
 const ContactModal = lazy(() => import('../../components/ContactModal'))
 
 const skillCategories = getSkillCategories()
@@ -186,9 +186,49 @@ export default function Home() {
                 <p className="hero-role">
                   {profile.headline || t('hero.headlineFallback')}
                 </p>
+                {(profile.availability || t('hero.availabilityFallback')) && (
+                  <p className="hero-availability">
+                    <FaMapMarkerAlt className="hero-availability__icon" aria-hidden />
+                    <span>
+                      {profile.availability || t('hero.availabilityFallback')}
+                    </span>
+                  </p>
+                )}
+                <div className="hero-actions">
+                  <a
+                    href={resumePdf}
+                    download="Malav-Rana-Frontend-Engineer.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hero-action hero-action--primary"
+                    onClick={() =>
+                      analyticsService.trackDownload(
+                        'Malav-Rana-Frontend-Engineer.pdf',
+                        'pdf',
+                      )
+                    }
+                  >
+                    <FaFilePdf aria-hidden />
+                    {t('hero.resumeCta')}
+                  </a>
+                  <button
+                    type="button"
+                    className="hero-action hero-action--ghost"
+                    onClick={() => {
+                      analyticsService.trackClick(
+                        'button',
+                        'hero_open_contact',
+                        'Contact',
+                      )
+                      setShowContactModal(true)
+                    }}
+                  >
+                    <FaEnvelope aria-hidden />
+                    {t('hero.contactCta')}
+                  </button>
+                </div>
               </div>
-            </Col>
-            <Col lg={5}>
+            </Col>            <Col lg={5}>
               <Card className="hero-skill-card border-0 shadow-lg">
                 <Card.Body>
                   <div className="skill-card-header">
@@ -358,37 +398,72 @@ export default function Home() {
             </h2>
           </div>
           <Row className="g-4 justify-content-center">
-            {allProjects.map((p) => (
-              <Col md={4} key={p.title}>
-                <Card className="project-card h-100 border-0 shadow-sm">
-                  <Card.Body>
-                    <h5 className="mb-2">{p.title}</h5>
-                    <p className="text-muted mb-3">{p.description}</p>
-                    <div className="project-tech">
-                      {p.tech.map((tech) => (
-                        <span key={tech} className="project-chip">
-                          {tech}
-                        </span>
-                      ))}
+            {allProjects.map((p) => {
+              const preview = getProjectImage(p.id)
+              const outcome = p.outcome || p.description
+
+              return (
+                <Col md={4} key={p.id || p.title}>
+                  <article className="project-card h-100 border-0 shadow-sm">
+                    {preview ? (
+                      <div className="project-card__media">
+                        <img
+                          src={preview}
+                          alt={t('projects.imageAlt', { title: p.title })}
+                          className="project-card__image"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    ) : null}
+                    <div className="project-card__body">
+                      <h3 className="project-card__title">{p.title}</h3>
+                      <p className="project-card__outcome">{outcome}</p>
+                      <div className="project-tech">
+                        {p.tech.map((tech) => (
+                          <span key={tech} className="project-chip">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </Card.Body>
-                  <Card.Footer className="bg-transparent border-0 pt-0">
-                    <a
-                      href={p.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                      onClick={() =>
-                        analyticsService.trackExternalLink(p.link, p.title)
-                      }
-                    >
-                      <span>{p.cta}</span>
-                      <FaExternalLinkAlt className="project-link__icon" />
-                    </a>
-                  </Card.Footer>
-                </Card>
-              </Col>
-            ))}
+                    <div className="project-card__footer">
+                      {p.liveUrl ? (
+                        <a
+                          href={p.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link project-link--primary"
+                          onClick={() =>
+                            analyticsService.trackExternalLink(p.liveUrl, p.title)
+                          }
+                        >
+                          <span>{t('projects.live')}</span>
+                          <FaExternalLinkAlt className="project-link__icon" />
+                        </a>
+                      ) : null}
+                      {p.githubUrl ? (
+                        <a
+                          href={p.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link"
+                          onClick={() =>
+                            analyticsService.trackExternalLink(
+                              p.githubUrl,
+                              p.title,
+                            )
+                          }
+                        >
+                          <FaGithub className="project-link__icon" aria-hidden />
+                          <span>{t('projects.github')}</span>
+                        </a>
+                      ) : null}
+                    </div>
+                  </article>
+                </Col>
+              )
+            })}
           </Row>
         </Container>
       </section>

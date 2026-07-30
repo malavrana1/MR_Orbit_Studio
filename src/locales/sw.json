@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Habari, mimi ni",
     "headlineFallback": "Frontend Mhandisi | React • Angular • Vue Mtaalamu",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Teknolojia ninazotumia kuunda programu za kisasa za wavuti",
     "recentTeams": "Uzoefu wa Hivi Karibuni"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} nembo"
   },
   "projects": {
-    "title": "Miradi Iliyoangaziwa"
+    "title": "Miradi Iliyoangaziwa",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Zana ya kiufundi",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Mhandisi wa mbele",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend Engineer na uzoefu wa miaka 5+ wa kujenga programu za wavuti zinazoweza kubadilika, utendakazi wa juu na zinazoweza kufikiwa. Ana ujuzi katika React, Angular, Next.js, TypeScript, na mifumo ya kisasa ya mandhari ya mbele. Uzoefu wa kujumuisha API za REST na GraphQL, kuboresha utiririshaji wa kazi changamano wa UI, kutekeleza mabomba ya CI/CD, majaribio ya kiotomatiki, na uzingatiaji wa ufikivu. Mchezaji wa timu shirikishi alilenga kutoa suluhisho za programu zinazofaa kwa watumiaji, zinazoweza kudumishwa katika miradi mingi."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roulette Live",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Mchezo wa kweli na mwingiliano wa mazungumzo uliojengwa kwa Vue 3. Cheza ukitumia chips pepe, furahia uhuishaji laini na ufuatilie takwimu zako. Furahia msisimko wa mchezo wa kasino bila pesa yoyote halisi inayohusika.",
         "cta": "Gundua kwenye GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Kiigaji cha soko la hisa la kibinafsi la kuchunguza hisa na crypto kwa wakati halisi. Kukokotoa faida, kuokoa matukio, kufuatilia favorites, na kujifunza mikakati ya biashara bila kuhatarisha fedha halisi.",
         "cta": "Gundua kwenye GitHub"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Kwingineko ya React ya ukurasa mmoja inayoonyesha mambo ninayopenda kuunda - sehemu zinazoendeshwa na data, endelea kupakua, na vichujio vya kisanduku cha zana shirikishi.",
         "cta": "Tazama kwingineko"
       }

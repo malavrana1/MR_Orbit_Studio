@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Bonjour, je suis",
     "headlineFallback": "Ingénieur frontend | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Stack technique",
     "skillCardDescription": "Technologies que j'utilise pour créer des applications web modernes",
     "recentTeams": "Expérience récente"
@@ -45,7 +48,10 @@
     "logoAlt": "Logo {{company}}"
   },
   "projects": {
-    "title": "Projets en vedette"
+    "title": "Projets en vedette",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Boîte à outils technique",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Ingénieur front-end",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Ingénieur frontend avec plus de 5 ans d'expérience dans la création d'applications Web évolutives, performantes et accessibles. Compétent avec React, Angular, Next.js, TypeScript et les frameworks frontend modernes. Expérience dans l'intégration des API REST et GraphQL, l'optimisation de flux de travail d'interface utilisateur complexes, la mise en œuvre de pipelines CI/CD, les tests automatisés et la conformité en matière d'accessibilité. Esprit d'équipe collaboratif axé sur la fourniture de solutions logicielles conviviales et maintenables sur plusieurs projets."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roulette en direct",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Un jeu de roulette réaliste et interactif construit avec Vue 3. Jouez avec des jetons virtuels, profitez d'animations fluides et suivez vos statistiques. Vivez le frisson d’un jeu de casino sans avoir recours à de l’argent réel.",
         "cta": "Explorez sur GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Un simulateur boursier personnel pour explorer les actions et les crypto-monnaies en temps réel. Calculez les bénéfices, enregistrez des scénarios, suivez vos favoris et apprenez des stratégies de trading sans risquer de l'argent réel.",
         "cta": "Explorez sur GitHub"
       },
       "2": {
         "title": "Studio MR Orbite",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Portfolio React d'une seule page présentant les éléments que j'aime créer : sections basées sur les données, téléchargement de CV et filtres de boîte à outils interactifs.",
         "cta": "Voir le portefeuille"
       }

@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Hi, I'm",
     "headlineFallback": "Frontend Engineer | Angular • React • Vue Specialist",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Technologies I use to build modern web applications",
     "recentTeams": "Recent Experience"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logo"
   },
   "projects": {
-    "title": "Featured Projects"
+    "title": "Featured Projects",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Technical toolkit",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Frontend Engineer",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in Angular, React, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects."
       }
@@ -160,18 +167,21 @@
     "projects": {
       "0": {
         "title": "Roulette Live",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "A realistic and interactive roulette game built with Vue 3. Play with virtual chips, enjoy smooth animations, and track your stats. Experience the thrill of a casino game without any real money involved.",
-        "cta": "Explore on GitHub"
+        "cta": ""
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "A personal stock market simulator to explore stocks and crypto in real time. Calculate profits, save scenarios, track favorites, and learn trading strategies without risking real money.",
-        "cta": "Explore on GitHub"
+        "cta": ""
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Single-page React portfolio showcasing the things I love to build - data-driven sections, resume download, and interactive toolkit filters.",
-        "cta": "View portfolio"
+        "cta": ""
       }
     },
     "experience": {

@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Xin chào, tôi là",
     "headlineFallback": "Kỹ sư giao diện người dùng | Phản ứng • Góc cạnh • Chuyên gia Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "ngăn xếp công nghệ",
     "skillCardDescription": "Công nghệ tôi sử dụng để xây dựng các ứng dụng web hiện đại",
     "recentTeams": "Kinh nghiệm gần đây"
@@ -45,7 +48,10 @@
     "logoAlt": "biểu tượng {{company}}"
   },
   "projects": {
-    "title": "Dự án nổi bật"
+    "title": "Dự án nổi bật",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Bộ công cụ kỹ thuật",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Kỹ sư giao diện người dùng",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Kỹ sư giao diện người dùng với hơn 5 năm kinh nghiệm xây dựng các ứng dụng web có thể mở rộng, hiệu suất cao và dễ tiếp cận. Có kỹ năng về React, Angular, Next.js, TypeScript và các framework giao diện người dùng hiện đại. Có kinh nghiệm tích hợp API REST và GraphQL, tối ưu hóa quy trình làm việc UI phức tạp, triển khai quy trình CI/CD, kiểm tra tự động và tuân thủ khả năng truy cập. Người chơi cộng tác trong nhóm tập trung vào việc cung cấp các giải pháp phần mềm thân thiện với người dùng, có thể bảo trì trên nhiều dự án."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roulette trực tiếp",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Một trò chơi roulette tương tác và thực tế được xây dựng bằng Vue 3. Chơi với chip ảo, thưởng thức các hoạt ảnh mượt mà và theo dõi số liệu thống kê của bạn. Trải nghiệm cảm giác hồi hộp của trò chơi sòng bạc mà không cần dùng tiền thật.",
         "cta": "Khám phá trên GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Trình mô phỏng thị trường chứng khoán cá nhân để khám phá cổ phiếu và tiền điện tử trong thời gian thực. Tính toán lợi nhuận, lưu kịch bản, theo dõi các mục yêu thích và tìm hiểu chiến lược giao dịch mà không gặp rủi ro với tiền thật.",
         "cta": "Khám phá trên GitHub"
       },
       "2": {
         "title": "Studio quỹ đạo MR",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Danh mục React một trang giới thiệu những thứ tôi thích xây dựng - các phần dựa trên dữ liệu, tải xuống sơ yếu lý lịch và các bộ lọc bộ công cụ tương tác.",
         "cta": "Xem danh mục đầu tư"
       }

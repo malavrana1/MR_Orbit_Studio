@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "こんにちは、",
     "headlineFallback": "フロントエンドエンジニア | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "技術スタック",
     "skillCardDescription": "モダンなWebアプリ構築に使う技術",
     "recentTeams": "最近の経験"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} のロゴ"
   },
   "projects": {
-    "title": "注目のプロジェクト"
+    "title": "注目のプロジェクト",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "テクニカルツールキット",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "フロントエンドエンジニア",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "スケーラブルで高性能、アクセスしやすい Web アプリケーションの構築に 5 年以上の経験を持つフロントエンド エンジニア。 React、Angular、Next.js、TypeScript、および最新のフロントエンド フレームワークに精通しています。 REST と GraphQL API の統合、複雑な UI ワークフローの最適化、CI/CD パイプラインの実装、自動テスト、アクセシビリティ コンプライアンスの経験があります。 複数のプロジェクトにわたって、ユーザーフレンドリーで保守可能なソフトウェア ソリューションを提供することに重点を置いた、協力的なチーム プレーヤー。"
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "ルーレットライブ",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3 で構築されたリアルでインタラクティブなルーレット ゲーム。仮想チップを使ってプレイし、スムーズなアニメーションを楽しみ、統計情報を追跡します。 リアルマネーを使わずにカジノ ゲームのスリルを体験してください。",
         "cta": "GitHub で探索する"
       },
       "1": {
         "title": "ストックシム",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "株式と仮想通貨をリアルタイムで探索するための個人用株式市場シミュレーター。 リアルマネーを危険にさらすことなく、利益を計算し、シナリオを保存し、お気に入りを追跡し、取引戦略を学びます。",
         "cta": "GitHub で探索する"
       },
       "2": {
         "title": "MR オービットスタジオ",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "データ駆動型セクション、ダウンロードの再開、インタラクティブなツールキット フィルターなど、私が構築したいものを紹介する 1 ページの React ポートフォリオ。",
         "cta": "ポートフォリオを見る"
       }

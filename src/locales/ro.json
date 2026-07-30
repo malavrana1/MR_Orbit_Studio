@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Bună, sunt",
     "headlineFallback": "Inginer Frontend | React • Angular • Vue Specialist",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Stack de tehnologie",
     "skillCardDescription": "Tehnologii pe care le folosesc pentru a construi aplicații web moderne",
     "recentTeams": "Experiență recentă"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logo"
   },
   "projects": {
-    "title": "Proiecte recomandate"
+    "title": "Proiecte recomandate",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Trusa de instrumente tehnice",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Inginer Frontend",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Inginer front-end cu peste 5 ani de experiență în construirea de aplicații web scalabile, de înaltă performanță și accesibile. Cunoștințe în React, Angular, Next.js, TypeScript și framework-uri frontend moderne. Cu experiență în integrarea API-urilor REST și GraphQL, optimizarea fluxurilor de lucru complexe ale UI, implementarea conductelor CI/CD, testarea automată și conformitatea cu accesibilitatea. Jucător de echipă colaborativ, concentrat pe furnizarea de soluții software ușor de utilizat și ușor de întreținut pentru mai multe proiecte."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Ruleta Live",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Un joc de ruletă realist și interactiv construit cu Vue 3. Joacă cu jetoane virtuale, bucură-te de animații fluide și urmărește-ți statisticile. Experimentați emoția unui joc de cazinou fără bani reali implicați.",
         "cta": "Explorați pe GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Un simulator personal de bursă pentru a explora acțiuni și criptomonede în timp real. Calculați profiturile, salvați scenariile, urmăriți favoritele și învățați strategii de tranzacționare fără a risca bani reali.",
         "cta": "Explorați pe GitHub"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Portofoliu React cu o singură pagină, care prezintă lucrurile pe care îmi place să le construiesc - secțiuni bazate pe date, descărcarea CV-ului și filtre interactive din set de instrumente.",
         "cta": "Vizualizați portofoliul"
       }

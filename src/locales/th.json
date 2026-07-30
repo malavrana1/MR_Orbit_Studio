@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "สวัสดี ฉัน",
     "headlineFallback": "วิศวกรส่วนหน้า | ตอบสนอง • เชิงมุม • ผู้เชี่ยวชาญ Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "เทคสแต็ค",
     "skillCardDescription": "เทคโนโลยีที่ฉันใช้เพื่อสร้างแอปพลิเคชันเว็บสมัยใหม่",
     "recentTeams": "ประสบการณ์ล่าสุด"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} โลโก้"
   },
   "projects": {
-    "title": "โครงการเด่น"
+    "title": "โครงการเด่น",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "ชุดเครื่องมือทางเทคนิค",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "วิศวกรส่วนหน้า",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "วิศวกรส่วนหน้าที่มีประสบการณ์มากกว่า 5 ปีในการสร้างเว็บแอปพลิเคชันที่ปรับขนาดได้ ประสิทธิภาพสูง และเข้าถึงได้ มีทักษะใน React, Angular, Next.js, TypeScript และเฟรมเวิร์กส่วนหน้าที่ทันสมัย มีประสบการณ์ในการบูรณาการ REST และ GraphQL API, เพิ่มประสิทธิภาพเวิร์กโฟลว์ UI ที่ซับซ้อน, การใช้งานไปป์ไลน์ CI/CD, การทดสอบอัตโนมัติ และการปฏิบัติตามข้อกำหนดด้านการเข้าถึง ผู้เล่นในทีมที่ทำงานร่วมกันมุ่งเน้นไปที่การนำเสนอโซลูชันซอฟต์แวร์ที่เป็นมิตรต่อผู้ใช้และบำรุงรักษาได้ในหลายโครงการ"
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "รูเล็ตสด",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "เกมรูเล็ตที่สมจริงและโต้ตอบได้ที่สร้างด้วย Vue 3 เล่นกับชิปเสมือนจริง เพลิดเพลินกับแอนิเมชั่นที่ราบรื่น และติดตามสถิติของคุณ สัมผัสประสบการณ์ความตื่นเต้นของเกมคาสิโนโดยไม่ต้องใช้เงินจริงเข้ามาเกี่ยวข้อง",
         "cta": "สำรวจบน GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "เครื่องจำลองตลาดหุ้นส่วนตัวเพื่อสำรวจหุ้นและ crypto แบบเรียลไทม์ คำนวณผลกำไร บันทึกสถานการณ์ ติดตามรายการโปรด และเรียนรู้กลยุทธ์การซื้อขายโดยไม่ต้องเสี่ยงกับเงินจริง",
         "cta": "สำรวจบน GitHub"
       },
       "2": {
         "title": "เอ็มอาร์ ออร์บิท สตูดิโอ",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "พอร์ตโฟลิโอ React หน้าเดียวที่จัดแสดงสิ่งที่ฉันชอบสร้าง - ส่วนที่ขับเคลื่อนด้วยข้อมูล ดาวน์โหลดประวัติย่อ และตัวกรองชุดเครื่องมือแบบโต้ตอบ",
         "cta": "ดูพอร์ตโฟลิโอ"
       }

@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Привіт, я",
     "headlineFallback": "Інженер фронтенду | React • Angular • Vue Specialist",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Технічний стек",
     "skillCardDescription": "Технології, які я використовую для створення сучасних веб-додатків",
     "recentTeams": "Недавній досвід"
@@ -45,7 +48,10 @@
     "logoAlt": "Логотип {{company}}"
   },
   "projects": {
-    "title": "Рекомендовані проекти"
+    "title": "Рекомендовані проекти",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Технічний інструментарій",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Інженер фронтенду",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend-інженер із понад 5 роками досвіду створення масштабованих, високопродуктивних і доступних веб-додатків. Володіє React, Angular, Next.js, TypeScript і сучасними фронтенд-фреймворками. Має досвід інтеграції API REST і GraphQL, оптимізації складних робочих процесів інтерфейсу користувача, впровадження конвеєрів CI/CD, автоматизованого тестування та відповідності доступності. Гравець спільної команди, який зосереджений на розробці зручних програмних рішень, які легко підтримувати, для кількох проектів."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Рулетка в прямому ефірі",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Реалістична та інтерактивна гра в рулетку, створена за допомогою Vue 3. Грайте з віртуальними фішками, насолоджуйтеся плавною анімацією та відстежуйте свою статистику. Відчуйте гострі відчуття від гри в казино без реальних грошей.",
         "cta": "Досліджуйте на GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Персональний симулятор фондового ринку для вивчення акцій і криптовалюти в реальному часі. Обчислюйте прибутки, зберігайте сценарії, відстежуйте улюблені та вивчайте торгові стратегії, не ризикуючи реальними грошима.",
         "cta": "Досліджуйте на GitHub"
       },
       "2": {
         "title": "Студія MR Orbit",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Односторінкове портфоліо React, яке демонструє те, що я люблю створювати – розділи на основі даних, завантаження резюме та інтерактивні фільтри інструментів.",
         "cta": "Переглянути портфоліо"
       }

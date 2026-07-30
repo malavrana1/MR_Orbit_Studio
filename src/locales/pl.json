@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Cześć, jestem",
     "headlineFallback": "Inżynier frontend | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Stack technologiczny",
     "skillCardDescription": "Technologie, których używam do nowoczesnych aplikacji webowych",
     "recentTeams": "Ostatnie doświadczenie"
@@ -45,7 +48,10 @@
     "logoAlt": "Logo {{company}}"
   },
   "projects": {
-    "title": "Wybrane projekty"
+    "title": "Wybrane projekty",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Zestaw narzędzi",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Inżynier Frontendu",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Inżynier Frontendu z ponad 5-letnim doświadczeniem w tworzeniu skalowalnych, wydajnych i dostępnych aplikacji internetowych. Znajomość React, Angular, Next.js, TypeScript i nowoczesnych frameworków frontendowych. Doświadczenie w integracji interfejsów API REST i GraphQL, optymalizacji złożonych przepływów pracy w interfejsie użytkownika, wdrażaniu potoków CI/CD, testowaniu automatycznym i zapewnianiu zgodności z dostępnością. Współpracujący gracz zespołowy skupiający się na dostarczaniu przyjaznych dla użytkownika, łatwych w utrzymaniu rozwiązań programowych w wielu projektach."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Ruletka na żywo",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Realistyczna i interaktywna gra w ruletkę zbudowana w Vue 3. Graj wirtualnymi żetonami, ciesz się płynnymi animacjami i śledź swoje statystyki. Poczuj dreszczyk emocji podczas gry w kasynie bez angażowania prawdziwych pieniędzy.",
         "cta": "Przeglądaj w GitHubie"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Osobisty symulator giełdy do eksploracji akcji i kryptowalut w czasie rzeczywistym. Oblicz zyski, zapisuj scenariusze, śledź ulubione i ucz się strategii handlowych bez ryzykowania prawdziwych pieniędzy.",
         "cta": "Przeglądaj w GitHubie"
       },
       "2": {
         "title": "Studio MR Orbit",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Jednostronicowe portfolio React przedstawiające rzeczy, które uwielbiam tworzyć — sekcje oparte na danych, pobieranie CV i filtry interaktywnych zestawów narzędzi.",
         "cta": "Zobacz portfolio"
       }

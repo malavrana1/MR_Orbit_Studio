@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Hai, saya",
     "headlineFallback": "Insinyur Frontend | Bereaksi • Sudut • Spesialis Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tumpukan Teknologi",
     "skillCardDescription": "Teknologi yang saya gunakan untuk membangun aplikasi web modern",
     "recentTeams": "Pengalaman Terkini"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logo"
   },
   "projects": {
-    "title": "Proyek Unggulan"
+    "title": "Proyek Unggulan",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Perangkat teknis",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Insinyur Bagian Depan",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend Engineer dengan pengalaman lebih dari 5 tahun dalam membangun aplikasi web yang skalabel, berkinerja tinggi, dan mudah diakses. Terampil dalam React, Angular, Next.js, TypeScript, dan kerangka kerja frontend modern. Berpengalaman dalam mengintegrasikan REST dan GraphQL API, mengoptimalkan alur kerja UI yang kompleks, mengimplementasikan pipeline CI/CD, pengujian otomatis, dan kepatuhan aksesibilitas. Pemain tim kolaboratif yang berfokus pada penyediaan solusi perangkat lunak yang mudah digunakan dan dapat dipelihara di berbagai proyek."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roulette Langsung",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Game rolet realistis dan interaktif yang dibuat dengan Vue 3. Mainkan dengan chip virtual, nikmati animasi halus, dan lacak statistik Anda. Rasakan sensasi permainan kasino tanpa melibatkan uang sungguhan.",
         "cta": "Jelajahi di GitHub"
       },
       "1": {
         "title": "StokSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Simulator pasar saham pribadi untuk menjelajahi saham dan kripto secara real time. Hitung keuntungan, simpan skenario, lacak favorit, dan pelajari strategi perdagangan tanpa mempertaruhkan uang sungguhan.",
         "cta": "Jelajahi di GitHub"
       },
       "2": {
         "title": "Studio Orbit Tuan",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Portofolio React satu halaman menampilkan hal-hal yang saya suka buat - bagian berdasarkan data, pengunduhan resume, dan filter toolkit interaktif.",
         "cta": "Lihat portofolio"
       }

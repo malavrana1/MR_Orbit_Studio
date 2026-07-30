@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "नमस्ते, मैं हूँ",
     "headlineFallback": "फ्रंटएंड इंजीनियर | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "टेक स्टैक",
     "skillCardDescription": "आधुनिक वेब ऐप बनाने के लिए मेरे द्वारा उपयोग की जाने वाली तकनीकें",
     "recentTeams": "हाल का अनुभव"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} लोगो"
   },
   "projects": {
-    "title": "चुनिंदा प्रोजेक्ट"
+    "title": "चुनिंदा प्रोजेक्ट",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "तकनीकी टूलकिट",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "फ्रंटएंड इंजीनियर",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "स्केलेबल, उच्च-प्रदर्शन और सुलभ वेब अनुप्रयोगों के निर्माण में 5+ वर्षों के अनुभव के साथ फ्रंटएंड इंजीनियर। रिएक्ट, एंगुलर, नेक्स्ट.जेएस, टाइपस्क्रिप्ट और आधुनिक फ्रंटएंड फ्रेमवर्क में कुशल। REST और GraphQL API को एकीकृत करने, जटिल UI वर्कफ़्लो को अनुकूलित करने, CI/CD पाइपलाइनों को लागू करने, स्वचालित परीक्षण और पहुंच अनुपालन में अनुभवी। सहयोगी टीम प्लेयर ने कई परियोजनाओं में उपयोगकर्ता के अनुकूल, रखरखाव योग्य सॉफ़्टवेयर समाधान प्रदान करने पर ध्यान केंद्रित किया।"
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "रूलेट लाइव",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3 के साथ निर्मित एक यथार्थवादी और इंटरैक्टिव रूलेट गेम। वर्चुअल चिप्स के साथ खेलें, सहज एनिमेशन का आनंद लें, और अपने आँकड़े ट्रैक करें। बिना किसी वास्तविक पैसे के कैसीनो गेम के रोमांच का अनुभव करें।",
         "cta": "GitHub पर खोजें"
       },
       "1": {
         "title": "स्टॉकसिम",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "वास्तविक समय में स्टॉक और क्रिप्टो का पता लगाने के लिए एक व्यक्तिगत स्टॉक मार्केट सिम्युलेटर। मुनाफ़े की गणना करें, परिदृश्यों को सहेजें, पसंदीदा ट्रैक करें, और वास्तविक धन को जोखिम में डाले बिना ट्रेडिंग रणनीतियाँ सीखें।",
         "cta": "GitHub पर खोजें"
       },
       "2": {
         "title": "एमआर ऑर्बिट स्टूडियो",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "सिंगल-पेज रिएक्ट पोर्टफोलियो उन चीज़ों को प्रदर्शित करता है जो मुझे बनाना पसंद है - डेटा-संचालित अनुभाग, रेज़्यूमे डाउनलोड और इंटरैक्टिव टूलकिट फ़िल्टर।",
         "cta": "पोर्टफ़ोलियो देखें"
       }

@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "હાય, હું છું",
     "headlineFallback": "ફ્રન્ટએન્ડ એન્જિનિયર | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "ટેક સ્ટેક",
     "skillCardDescription": "આધુનિક વેબ એપ્લિકેશન બનાવવા માટે હું જે ટેકનોલોજી વાપરું છું",
     "recentTeams": "તાજેતરનો અનુભવ"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} લોગો"
   },
   "projects": {
-    "title": "ફીચર્ડ પ્રોજેક્ટ્સ"
+    "title": "ફીચર્ડ પ્રોજેક્ટ્સ",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "ટેકનિકલ ટૂલકિટ",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "ફ્રન્ટએન્ડ એન્જિનિયર",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "૫+ વર્ષનો અનુભવ ધરાવતા ફ્રન્ટએન્ડ એન્જિનિયર — સ્કેલેબલ, હાઈ-પરફોર્મન્સ અને ઍક્સેસિબલ વેબ એપ્લિકેશન બનાવવામાં. React, Angular, Next.js, TypeScript અને આધુનિક ફ્રેમવર્કમાં નિપુણતા; REST/GraphQL, CI/CD, ટેસ્ટિંગ અને ઍક્સેસિબિલિટી અનુભવ સાથે."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "રૂલેટ લાઇવ",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3 સાથે બનાવેલું વાસ્તવિક અને ઇન્ટરેક્ટિવ રૂલેટ ગેમ. વર્ચ્યુઅલ ચિપ્સ સાથે રમો, સ્મૂથ એનિમેશનનો આનંદ લો અને તમારા આંકડા ટ્રેક કરો. વાસ્તવિક પૈસા વગર કેસિનો ગેમનો રોમાંચ અનુભવો.",
         "cta": "GitHub પર જુઓ"
       },
       "1": {
         "title": "સ્ટોકસિમ",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "સ્ટોક્સ અને ક્રિપ્ટોને રિયલ ટાઇમમાં એક્સપ્લોર કરવા માટેનું વ્યક્તિગત સ્ટોક માર્કેટ સિમ્યુલેટર. નફો ગણો, સ્ટેનારિયો સાચવો, ફેવરિટ્સ ટ્રેક કરો અને વાસ્તવિક પૈસા જોખમમાં નાખ્યા વગર ટ્રેડિંગ સ્ટ્રેટેજી શીખો.",
         "cta": "GitHub પર જુઓ"
       },
       "2": {
         "title": "એમઆર ઓર્બિટ સ્ટુડિયો",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "ડેટા-ડ્રિવન સેક્શન્સ, રિઝ્યૂમ ડાઉનલોડ અને ઇન્ટરેક્ટિવ ટૂલકિટ ફિલ્ટર્સ દર્શાવતું સિંગલ-પેજ React પોર્ટફોલિયો.",
         "cta": "પોર્ટફોલિયો જુઓ"
       }

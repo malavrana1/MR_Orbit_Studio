@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Hai, saya",
     "headlineFallback": "Jurutera Bahagian Hadapan | React • Sudut • Pakar Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Timbunan Teknologi",
     "skillCardDescription": "Teknologi yang saya gunakan untuk membina aplikasi web moden",
     "recentTeams": "Pengalaman Terkini"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logo"
   },
   "projects": {
-    "title": "Projek Pilihan"
+    "title": "Projek Pilihan",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Kit alatan teknikal",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Jurutera Bahagian Hadapan",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Jurutera Frontend dengan pengalaman 5+ tahun membina aplikasi web berskala, berprestasi tinggi dan boleh diakses. Mahir dalam rangka kerja React, Angular, Next.js, TypeScript dan bahagian hadapan moden. Berpengalaman dalam menyepadukan API REST dan GraphQL, mengoptimumkan aliran kerja UI yang kompleks, melaksanakan saluran paip CI/CD, ujian automatik dan pematuhan kebolehaksesan. Pemain pasukan kolaboratif menumpukan pada menyampaikan penyelesaian perisian yang mesra pengguna dan boleh diselenggara merentas pelbagai projek."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roulette Live",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Permainan rolet yang realistik dan interaktif yang dibina dengan Vue 3. Bermain dengan cip maya, nikmati animasi yang lancar dan jejaki statistik anda. Alami keseronokan permainan kasino tanpa melibatkan wang sebenar.",
         "cta": "Teroka di GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Simulator pasaran saham peribadi untuk meneroka saham dan kripto dalam masa nyata. Kira keuntungan, simpan senario, jejak kegemaran, dan pelajari strategi perdagangan tanpa mempertaruhkan wang sebenar.",
         "cta": "Teroka di GitHub"
       },
       "2": {
         "title": "Studio MR Orbit",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Portfolio React satu halaman yang mempamerkan perkara yang saya suka bina - bahagian terdorong data, muat turun semula dan penapis kit alat interaktif.",
         "cta": "Lihat portfolio"
       }

@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Ahoj, jsem",
     "headlineFallback": "Frontend Engineer | Reagovat • Angular • Specialista Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Technologie, které používám k tvorbě moderních webových aplikací",
     "recentTeams": "Nedávná zkušenost"
@@ -45,7 +48,10 @@
     "logoAlt": "Logo {{company}}"
   },
   "projects": {
-    "title": "Vybrané projekty"
+    "title": "Vybrané projekty",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Technická sada nástrojů",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Frontendový inženýr",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend Engineer s více než 5 lety zkušeností s vytvářením škálovatelných, vysoce výkonných a dostupných webových aplikací. Zkušenosti s React, Angular, Next.js, TypeScript a moderními frontend frameworky. Zkušenosti s integrací rozhraní REST a GraphQL API, optimalizací komplexních pracovních postupů uživatelského rozhraní, implementací kanálů CI/CD, automatizovaného testování a shody s přístupností. Kolaborativní týmový hráč zaměřený na poskytování uživatelsky přívětivých a udržovatelných softwarových řešení napříč různými projekty."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Ruleta živě",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Realistická a interaktivní ruleta postavená na Vue 3. Hrajte s virtuálními žetony, užívejte si plynulé animace a sledujte své statistiky. Zažijte vzrušení z kasinové hry bez jakýchkoli skutečných peněz.",
         "cta": "Prozkoumejte na GitHubu"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Osobní simulátor akciového trhu k prozkoumání akcií a kryptoměn v reálném čase. Počítejte zisky, ukládejte scénáře, sledujte oblíbené položky a naučte se obchodní strategie, aniž byste riskovali skutečné peníze.",
         "cta": "Prozkoumejte na GitHubu"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Jednostránkové portfolio Reactu představující věci, které rád stavím – sekce založené na datech, stahování životopisů a filtry interaktivní sady nástrojů.",
         "cta": "Zobrazit portfolio"
       }

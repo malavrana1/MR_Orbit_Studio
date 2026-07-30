@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "你好，我是",
     "headlineFallback": "前端工程师 | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "技术栈",
     "skillCardDescription": "我用于构建现代 Web 应用的技术",
     "recentTeams": "近期经历"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} 标志"
   },
   "projects": {
-    "title": "精选项目"
+    "title": "精选项目",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "技术工具箱",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "前端工程师",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "前端工程师，拥有 5 年以上构建可扩展、高性能和可访问的 Web 应用程序的经验。 熟练掌握 React、Angular、Next.js、TypeScript 和现代前端框架。 在集成 REST 和 GraphQL API、优化复杂 UI 工作流程、实施 CI/CD 管道、自动化测试和可访问性合规性方面拥有丰富经验。 协作团队成员专注于跨多个项目提供用户友好、可维护的软件解决方案。"
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "现场轮盘赌",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "使用 Vue 3 构建的逼真的交互式轮盘游戏。使用虚拟筹码玩游戏，享受流畅的动画并跟踪您的统计数据。 体验赌场游戏的快感，无需投入任何真钱。",
         "cta": "在 GitHub 上探索"
       },
       "1": {
         "title": "股票模拟",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "个人股票市场模拟器，可实时探索股票和加密货币。 计算利润、保存场景、跟踪收藏夹并学习交易策略，而无需冒真金白银的风险。",
         "cta": "在 GitHub 上探索"
       },
       "2": {
         "title": "MR轨道工作室",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "单页 React 产品组合展示了我喜欢构建的东西 - 数据驱动部分、简历下载和交互式工具包过滤器。",
         "cta": "查看产品组合"
       }

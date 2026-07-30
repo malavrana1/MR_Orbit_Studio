@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Hei, jeg",
     "headlineFallback": "Frontend Engineer | Reager • Angular • Vue-spesialist",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Teknologier jeg bruker for å bygge moderne webapplikasjoner",
     "recentTeams": "Nylig erfaring"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} logo"
   },
   "projects": {
-    "title": "Utvalgte prosjekter"
+    "title": "Utvalgte prosjekter",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Teknisk verktøysett",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Frontend ingeniør",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend-ingeniør med 5+ års erfaring med å bygge skalerbare, høyytelses- og tilgjengelige nettapplikasjoner. Erfarne i React, Angular, Next.js, TypeScript og moderne frontend-rammeverk. Erfaren i å integrere REST og GraphQL APIer, optimalisere komplekse UI-arbeidsflyter, implementere CI/CD-pipelines, automatisert testing og tilgjengelighetsoverholdelse. Samarbeidende lagspiller fokusert på å levere brukervennlige, vedlikeholdbare programvareløsninger på tvers av flere prosjekter."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roulette Live",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Et realistisk og interaktivt rulettspill bygget med Vue 3. Spill med virtuelle sjetonger, nyt jevne animasjoner og spor statistikken din. Opplev spenningen ved et kasinospill uten ekte penger involvert.",
         "cta": "Utforsk på GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "En personlig aksjemarkedsimulator for å utforske aksjer og krypto i sanntid. Beregn fortjeneste, lagre scenarier, spor favoritter og lær handelsstrategier uten å risikere ekte penger.",
         "cta": "Utforsk på GitHub"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "React-portefølje på én side som viser frem tingene jeg elsker å bygge – datadrevne seksjoner, nedlasting av gjenoppta og interaktive verktøysettfiltre.",
         "cta": "Se portefølje"
       }

@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "हाय, मी आहे",
     "headlineFallback": "फ्रंटएंड इंजिनियर | प्रतिक्रिया • कोणीय • Vue विशेषज्ञ",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "टेक स्टॅक",
     "skillCardDescription": "आधुनिक वेब अनुप्रयोग तयार करण्यासाठी मी वापरत असलेले तंत्रज्ञान",
     "recentTeams": "अलीकडचा अनुभव"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} लोगो"
   },
   "projects": {
-    "title": "वैशिष्ट्यीकृत प्रकल्प"
+    "title": "वैशिष्ट्यीकृत प्रकल्प",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "तांत्रिक टूलकिट",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "फ्रंटएंड इंजिनियर",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "स्केलेबल, उच्च-कार्यक्षमता आणि प्रवेश करण्यायोग्य वेब अनुप्रयोग तयार करण्यासाठी 5+ वर्षांच्या अनुभवासह फ्रंटएंड अभियंता. React, Angular, Next.js, TypeScript आणि आधुनिक फ्रंटएंड फ्रेमवर्कमध्ये कुशल. REST आणि GraphQL API एकत्रित करण्यात, जटिल UI वर्कफ्लो ऑप्टिमाइझ करणे, CI/CD पाइपलाइन लागू करणे, स्वयंचलित चाचणी आणि प्रवेशयोग्यता अनुपालन यांचा अनुभव आहे. कोलॅबोरेटिव्ह टीम प्लेअरने अनेक प्रकल्पांमध्ये वापरकर्ता-अनुकूल, देखभाल करण्यायोग्य सॉफ्टवेअर सोल्यूशन्स वितरीत करण्यावर लक्ष केंद्रित केले."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "एक प्रकारचा जुगाराचा खेळ थेट",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3 सह तयार केलेला एक वास्तववादी आणि परस्परसंवादी रूले गेम. आभासी चिप्ससह खेळा, गुळगुळीत ॲनिमेशनचा आनंद घ्या आणि तुमच्या आकडेवारीचा मागोवा घ्या. कोणत्याही वास्तविक पैशाशिवाय कॅसिनो गेमचा थरार अनुभवा.",
         "cta": "GitHub वर एक्सप्लोर करा"
       },
       "1": {
         "title": "स्टॉकसिम",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "रिअल टाइममध्ये स्टॉक आणि क्रिप्टो एक्सप्लोर करण्यासाठी वैयक्तिक स्टॉक मार्केट सिम्युलेटर. नफ्याची गणना करा, परिस्थिती जतन करा, आवडींचा मागोवा घ्या आणि वास्तविक पैशाचा धोका न घेता ट्रेडिंग धोरण शिका.",
         "cta": "GitHub वर एक्सप्लोर करा"
       },
       "2": {
         "title": "एमआर ऑर्बिट स्टुडिओ",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "सिंगल-पेज रिॲक्ट पोर्टफोलिओ ज्या गोष्टी मला तयार करायला आवडतात - डेटा-चालित विभाग, डाउनलोड पुन्हा सुरू करा आणि परस्परसंवादी टूलकिट फिल्टर.",
         "cta": "पोर्टफोलिओ पहा"
       }

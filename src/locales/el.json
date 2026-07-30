@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Γεια, είμαι",
     "headlineFallback": "Frontend Engineer | React • Angular • Vue Specialist",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Tech Stack",
     "skillCardDescription": "Τεχνολογίες που χρησιμοποιώ για την κατασκευή σύγχρονων διαδικτυακών εφαρμογών",
     "recentTeams": "Πρόσφατη εμπειρία"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} λογότυπο"
   },
   "projects": {
-    "title": "Επιλεγμένα έργα"
+    "title": "Επιλεγμένα έργα",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Τεχνική εργαλειοθήκη",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Μηχανικός Frontend",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend Engineer με 5+ χρόνια εμπειρίας στη δημιουργία επεκτάσιμων, υψηλής απόδοσης και προσβάσιμων εφαρμογών web. Ειδικός σε React, Angular, Next.js, TypeScript και σύγχρονα πλαίσια frontend. Έμπειρος στην ενσωμάτωση REST και GraphQL API, βελτιστοποίηση σύνθετων ροών εργασίας διεπαφής χρήστη, υλοποίηση αγωγών CI/CD, αυτοματοποιημένες δοκιμές και συμμόρφωση προσβασιμότητας. Συνεργατικός παίκτης ομάδας επικεντρωμένος στην παροχή φιλικών προς τον χρήστη, συντηρήσιμων λύσεων λογισμικού σε πολλά έργα."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Ρουλέτα Ζωντανά",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Ένα ρεαλιστικό και διαδραστικό παιχνίδι ρουλέτας χτισμένο με το Vue 3. Παίξτε με εικονικές μάρκες, απολαύστε ομαλά κινούμενα σχέδια και παρακολουθήστε τα στατιστικά σας. Ζήστε τη συγκίνηση ενός παιχνιδιού καζίνο χωρίς πραγματικά χρήματα.",
         "cta": "Εξερευνήστε στο GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Ένας προσωπικός προσομοιωτής χρηματιστηρίου για την εξερεύνηση μετοχών και κρυπτογράφησης σε πραγματικό χρόνο. Υπολογίστε τα κέρδη, εξοικονομήστε σενάρια, παρακολουθήστε τα αγαπημένα και μάθετε στρατηγικές συναλλαγών χωρίς να διακινδυνεύσετε πραγματικά χρήματα.",
         "cta": "Εξερευνήστε στο GitHub"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Μονοσελίδα χαρτοφυλάκιο React που παρουσιάζει τα πράγματα που μου αρέσει να δημιουργώ - ενότητες που βασίζονται σε δεδομένα, λήψη βιογραφικού και διαδραστικά φίλτρα εργαλειοθήκης.",
         "cta": "Προβολή χαρτοφυλακίου"
       }

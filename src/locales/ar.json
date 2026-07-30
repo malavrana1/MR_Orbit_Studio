@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "مرحبًا، أنا",
     "headlineFallback": "مهندس واجهات أمامية | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "مجموعة التقنيات",
     "skillCardDescription": "التقنيات التي أستخدمها لبناء تطبيقات ويب حديثة",
     "recentTeams": "خبرة حديثة"
@@ -45,7 +48,10 @@
     "logoAlt": "شعار {{company}}"
   },
   "projects": {
-    "title": "مشاريع مميزة"
+    "title": "مشاريع مميزة",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "الأدوات التقنية",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "مهندس الواجهة الأمامية",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "مهندس الواجهة الأمامية يتمتع بخبرة تزيد عن 5 سنوات في إنشاء تطبيقات ويب قابلة للتطوير وعالية الأداء ويمكن الوصول إليها. ماهر في React وAngular وNext.js وTypeScript وأطر الواجهة الأمامية الحديثة. من ذوي الخبرة في دمج واجهات برمجة تطبيقات REST وGraphQL، وتحسين سير عمل واجهة المستخدم المعقدة، وتنفيذ خطوط أنابيب CI/CD، والاختبار الآلي، والامتثال لإمكانية الوصول. يركز لاعب الفريق التعاوني على تقديم حلول برمجية سهلة الاستخدام وقابلة للصيانة عبر مشاريع متعددة."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "الروليت لايف",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "لعبة روليت واقعية وتفاعلية مصممة باستخدام Vue 3. العب باستخدام الرقائق الافتراضية واستمتع بالرسوم المتحركة السلسة وتتبع إحصائياتك. استمتع بتجربة إثارة لعبة الكازينو دون الحاجة إلى أموال حقيقية.",
         "cta": "استكشف على جيثب"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "جهاز محاكاة شخصي لسوق الأوراق المالية لاستكشاف الأسهم والعملات المشفرة في الوقت الفعلي. احسب الأرباح، واحفظ السيناريوهات، وتتبع المفضلة، وتعلم استراتيجيات التداول دون المخاطرة بأموال حقيقية.",
         "cta": "استكشف على جيثب"
       },
       "2": {
         "title": "ستوديو إم آر أوربت",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "تعرض مجموعة React ذات الصفحة الواحدة الأشياء التي أحب إنشاءها - أقسام تعتمد على البيانات، واستئناف التنزيل، ومرشحات مجموعة الأدوات التفاعلية.",
         "cta": "عرض المحفظة"
       }

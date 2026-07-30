@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Привет, я",
     "headlineFallback": "Frontend-инженер | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Технологический стек",
     "skillCardDescription": "Технологии, которые я использую для современных веб-приложений",
     "recentTeams": "Недавний опыт"
@@ -45,7 +48,10 @@
     "logoAlt": "Логотип {{company}}"
   },
   "projects": {
-    "title": "Избранные проекты"
+    "title": "Избранные проекты",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Технический арсенал",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Фронтенд-инженер",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend-инженер с более чем 5-летним опытом создания масштабируемых, высокопроизводительных и доступных веб-приложений. Имеет навыки работы с React, Angular, Next.js, TypeScript и современными интерфейсными фреймворками. Имеет опыт интеграции API REST и GraphQL, оптимизации сложных рабочих процессов пользовательского интерфейса, внедрения конвейеров CI/CD, автоматического тестирования и обеспечения соответствия требованиям доступности. Совместный командный игрок, сосредоточенный на предоставлении удобных для пользователя и поддерживаемых программных решений для нескольких проектов."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Рулетка Live",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Реалистичная и интерактивная игра в рулетку, созданная с помощью Vue 3. Играйте виртуальными фишками, наслаждайтесь плавной анимацией и отслеживайте свою статистику. Испытайте острые ощущения от игры в казино без каких-либо реальных денег.",
         "cta": "Изучите на GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Персональный симулятор фондового рынка для изучения акций и криптовалют в режиме реального времени. Рассчитывайте прибыль, сохраняйте сценарии, отслеживайте фаворитов и изучайте торговые стратегии, не рискуя реальными деньгами.",
         "cta": "Изучите на GitHub"
       },
       "2": {
         "title": "МР Орбита Студия",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Одностраничное портфолио React, демонстрирующее то, что я люблю создавать — разделы, управляемые данными, загрузку резюме и фильтры интерактивного набора инструментов.",
         "cta": "Посмотреть портфолио"
       }

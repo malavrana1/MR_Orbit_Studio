@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "안녕하세요, 저는",
     "headlineFallback": "프론트엔드 엔지니어 | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "기술 스택",
     "skillCardDescription": "모던 웹 앱을 만드는 데 사용하는 기술",
     "recentTeams": "최근 경력"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} 로고"
   },
   "projects": {
-    "title": "주요 프로젝트"
+    "title": "주요 프로젝트",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "기술 툴킷",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "프론트엔드 엔지니어",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "확장 가능하고, 고성능이며, 접근 가능한 웹 애플리케이션을 구축한 경험이 5년 이상인 프런트엔드 엔지니어입니다. React, Angular, Next.js, TypeScript 및 최신 프런트엔드 프레임워크에 능숙합니다. REST 및 GraphQL API 통합, 복잡한 UI 워크플로 최적화, CI/CD 파이프라인 구현, 자동화된 테스트 및 접근성 규정 준수 경험이 있습니다. 여러 프로젝트에 걸쳐 사용자 친화적이고 유지 관리가 가능한 소프트웨어 솔루션을 제공하는 데 중점을 둔 협업 팀 플레이어입니다."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "룰렛 라이브",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3로 제작된 현실감 넘치는 대화형 룰렛 게임입니다. 가상 칩으로 플레이하고, 부드러운 애니메이션을 즐기고, 통계를 추적하세요. 실제 돈을 쓰지 않고도 카지노 게임의 스릴을 경험해 보세요.",
         "cta": "GitHub에서 탐색"
       },
       "1": {
         "title": "주식심",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "주식과 암호화폐를 실시간으로 탐색할 수 있는 개인 주식 시장 시뮬레이터입니다. 실제 돈을 위험에 빠뜨리지 않고 수익을 계산하고, 시나리오를 저장하고, 즐겨찾기를 추적하고, 거래 전략을 배우세요.",
         "cta": "GitHub에서 탐색"
       },
       "2": {
         "title": "MR 궤도 스튜디오",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "데이터 기반 섹션, 이력서 다운로드, 대화형 툴킷 필터 등 내가 만들고 싶은 것들을 보여주는 단일 페이지 React 포트폴리오입니다.",
         "cta": "포트폴리오 보기"
       }

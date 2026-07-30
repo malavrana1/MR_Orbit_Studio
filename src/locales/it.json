@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Ciao, sono",
     "headlineFallback": "Frontend engineer | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Stack tecnologico",
     "skillCardDescription": "Tecnologie che uso per creare applicazioni web moderne",
     "recentTeams": "Esperienza recente"
@@ -45,7 +48,10 @@
     "logoAlt": "Logo {{company}}"
   },
   "projects": {
-    "title": "Progetti in evidenza"
+    "title": "Progetti in evidenza",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Toolkit tecnico",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Ingegnere frontend",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Ingegnere frontend con oltre 5 anni di esperienza nella creazione di applicazioni Web scalabili, ad alte prestazioni e accessibili. Esperto in React, Angular, Next.js, TypeScript e moderni framework frontend. Esperienza nell'integrazione di API REST e GraphQL, nell'ottimizzazione di flussi di lavoro dell'interfaccia utente complessi, nell'implementazione di pipeline CI/CD, test automatizzati e conformità in materia di accessibilità. Giocatore di squadra collaborativo concentrato sulla fornitura di soluzioni software facili da usare e manutenibili su più progetti."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "Roulette dal vivo",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Un gioco di roulette realistico e interattivo creato con Vue 3. Gioca con fiches virtuali, goditi animazioni fluide e monitora le tue statistiche. Prova l'emozione di un gioco da casinò senza soldi veri coinvolti.",
         "cta": "Esplora su GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Un simulatore personale del mercato azionario per esplorare azioni e criptovalute in tempo reale. Calcola i profitti, salva scenari, tieni traccia dei preferiti e apprendi strategie di trading senza rischiare denaro reale.",
         "cta": "Esplora su GitHub"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "Portfolio React a pagina singola che mostra le cose che amo creare: sezioni basate sui dati, download di curriculum e filtri di toolkit interattivi.",
         "cta": "Visualizza portafoglio"
       }

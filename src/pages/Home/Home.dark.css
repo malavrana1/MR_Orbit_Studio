@@ -1643,6 +1643,38 @@
     transform 0.3s ease;
 }
 
+[data-theme='dark'] .project-card__title {
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='dark'] .project-card__outcome {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+[data-theme='dark'] .project-card__media {
+  background: #121212;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+[data-theme='dark'] .project-link--primary {
+  color: #1c1917;
+  background: linear-gradient(180deg, #f7efdf 0%, #e8d5a3 100%);
+  border-color: rgba(232, 213, 163, 0.45);
+}
+
+[data-theme='dark'] .project-link--primary:hover,
+[data-theme='dark'] .project-link--primary:focus-visible {
+  color: #0c0a09;
+  background: linear-gradient(180deg, #fff8ec 0%, #f0dfb4 100%);
+}
+
+[data-theme='dark'] .hero-availability {
+  color: rgba(255, 248, 236, 0.9);
+}
+
 [data-theme='dark'] .project-card:hover h5 {
   text-shadow:
     0 4px 16px rgba(255, 255, 255, 0.3),
@@ -1796,6 +1828,7 @@
 
 [data-theme='dark'] .project-card p,
 [data-theme='dark'] .project-card span,
+[data-theme='dark'] .project-card h3,
 [data-theme='dark'] .project-card h5,
 [data-theme='dark'] .project-card h6 {
   color: #ffffff !important;

@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "Hoi, ik ben",
     "headlineFallback": "Frontend engineer | React • Angular • Vue",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "Techstack",
     "skillCardDescription": "Technologieën die ik gebruik voor moderne webapps",
     "recentTeams": "Recente ervaring"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}}-logo"
   },
   "projects": {
-    "title": "Uitgelichte projecten"
+    "title": "Uitgelichte projecten",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "Technische toolkit",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "Frontend-ingenieur",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "Frontend Engineer met meer dan 5 jaar ervaring met het bouwen van schaalbare, krachtige en toegankelijke webapplicaties. Vaardig in React, Angular, Next.js, TypeScript en moderne frontend-frameworks. Ervaren in het integreren van REST- en GraphQL-API's, het optimaliseren van complexe UI-workflows, het implementeren van CI/CD-pijplijnen, geautomatiseerd testen en compliance met toegankelijkheid. Samenwerkende teamspeler gericht op het leveren van gebruiksvriendelijke, onderhoudbare softwareoplossingen voor meerdere projecten."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "RouletteLive",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Een realistisch en interactief roulettespel gebouwd met Vue 3. Speel met virtuele chips, geniet van vloeiende animaties en houd je statistieken bij. Ervaar de spanning van een casinospel zonder dat er echt geld bij betrokken is.",
         "cta": "Ontdek op GitHub"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Een persoonlijke aandelenmarktsimulator om aandelen en crypto in realtime te verkennen. Bereken winsten, bewaar scenario's, volg favorieten en leer handelsstrategieën zonder echt geld te riskeren.",
         "cta": "Ontdek op GitHub"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "React-portfolio van één pagina met de dingen die ik graag bouw: datagestuurde secties, het downloaden van cv's en interactieve toolkitfilters.",
         "cta": "Bekijk portefeuille"
       }

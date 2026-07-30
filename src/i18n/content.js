@@ -8,6 +8,11 @@ export function translateProfile(t, profile) {
   return {
     ...profile,
     headline: tc(t, 'profile.headline', profile.headline),
+    availability: tc(
+      t,
+      'profile.availability',
+      profile.availability || '',
+    ),
     summary: (profile.summary || []).map((text, i) =>
       tc(t, `profile.summary.${i}`, text),
     ),
@@ -33,8 +38,9 @@ export function translateProjects(t, projects) {
   return projects.map((p, i) => ({
     ...p,
     title: tc(t, `projects.${i}.title`, p.title),
+    outcome: tc(t, `projects.${i}.outcome`, p.outcome || ''),
     description: tc(t, `projects.${i}.description`, p.description),
-    cta: tc(t, `projects.${i}.cta`, p.cta),
+    cta: tc(t, `projects.${i}.cta`, p.cta || ''),
   }))
 }
 

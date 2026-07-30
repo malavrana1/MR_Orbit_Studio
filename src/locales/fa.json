@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "سلام من هستم",
     "headlineFallback": "مهندس فرانت اند | React • Angular • Vue Specialist",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "پشته فناوری",
     "skillCardDescription": "فن آوری هایی که من برای ساختن برنامه های کاربردی وب مدرن استفاده می کنم",
     "recentTeams": "تجربه اخیر"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} آرم"
   },
   "projects": {
-    "title": "پروژه های برجسته"
+    "title": "پروژه های برجسته",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "جعبه ابزار فنی",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "مهندس فرانت اند",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "مهندس Frontend با بیش از 5 سال تجربه در ساخت برنامه های کاربردی وب مقیاس پذیر، با کارایی بالا و در دسترس. در React، Angular، Next.js، TypeScript و فریم ورک های فرانت اند مدرن مهارت دارد. دارای تجربه در یکپارچه سازی API های REST و GraphQL، بهینه سازی گردش های کاری پیچیده UI، پیاده سازی خطوط لوله CI/CD، تست خودکار و انطباق با دسترسی. بازیکن تیم مشترک بر ارائه راه حل های نرم افزاری کاربر پسند و قابل نگهداری در چندین پروژه متمرکز شده است."
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "رولت زنده",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "یک بازی رولت واقعی و تعاملی ساخته شده با Vue 3. با تراشه های مجازی بازی کنید، از انیمیشن های روان لذت ببرید و آمار خود را ردیابی کنید. هیجان یک بازی کازینو را بدون پرداخت پول واقعی تجربه کنید.",
         "cta": "در GitHub کاوش کنید"
       },
       "1": {
         "title": "StockSim",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "یک شبیه ساز شخصی بازار سهام برای کشف سهام و ارزهای دیجیتال در زمان واقعی. سود را محاسبه کنید، سناریوها را ذخیره کنید، موارد دلخواه را دنبال کنید و استراتژی های معاملاتی را بدون ریسک کردن پول واقعی بیاموزید.",
         "cta": "در GitHub کاوش کنید"
       },
       "2": {
         "title": "MR Orbit Studio",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "نمونه کارها React تک صفحه‌ای که چیزهایی را که دوست دارم بسازم را به نمایش می‌گذارد - بخش‌های مبتنی بر داده، دانلود رزومه، و فیلترهای بسته ابزار تعاملی.",
         "cta": "مشاهده نمونه کارها"
       }

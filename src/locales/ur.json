@@ -26,6 +26,9 @@
   "hero": {
     "greeting": "ہیلو، میں ہوں۔",
     "headlineFallback": "فرنٹ اینڈ انجینئر | رد عمل • کونیی • Vue ماہر",
+    "availabilityFallback": "Open to roles · NJ / Remote",
+    "resumeCta": "Resume",
+    "contactCta": "Contact",
     "skillCardTitle": "ٹیک اسٹیک",
     "skillCardDescription": "وہ ٹیکنالوجیز جو میں جدید ویب ایپلیکیشنز بنانے کے لیے استعمال کرتا ہوں۔",
     "recentTeams": "حالیہ تجربہ"
@@ -45,7 +48,10 @@
     "logoAlt": "{{company}} لوگو"
   },
   "projects": {
-    "title": "نمایاں پروجیکٹس"
+    "title": "نمایاں پروجیکٹس",
+    "live": "Live",
+    "github": "GitHub",
+    "imageAlt": "{{title}} preview"
   },
   "toolkit": {
     "title": "تکنیکی ٹول کٹ",
@@ -135,6 +141,7 @@
   "content": {
     "profile": {
       "headline": "فرنٹ اینڈ انجینئر",
+      "availability": "Open to roles · NJ / Remote",
       "summary": {
         "0": "توسیع پذیر، اعلیٰ کارکردگی، اور قابل رسائی ویب ایپلیکیشنز بنانے کے 5+ سال کے تجربے کے ساتھ فرنٹ اینڈ انجینئر۔ React، Angular، Next.js، TypeScript، اور جدید فرنٹ اینڈ فریم ورک میں ہنر مند۔ REST اور GraphQL APIs کو مربوط کرنے، پیچیدہ UI ورک فلو کو بہتر بنانے، CI/CD پائپ لائنوں کو لاگو کرنے، خودکار جانچ، اور رسائی کی تعمیل میں تجربہ کار۔ باہمی تعاون پر مبنی ٹیم پلیئر نے متعدد پروجیکٹس میں صارف دوست، برقرار رکھنے کے قابل سافٹ ویئر حل فراہم کرنے پر توجہ مرکوز کی۔"
       }
@@ -160,16 +167,19 @@
     "projects": {
       "0": {
         "title": "رولیٹی لائیو",
+        "outcome": "Interactive Vue 3 roulette with live chip betting, motion, and session stats—no real money.",
         "description": "Vue 3 کے ساتھ بنایا گیا ایک حقیقت پسندانہ اور انٹرایکٹو رولیٹی گیم۔ ورچوئل چپس کے ساتھ کھیلیں، ہموار اینیمیشن سے لطف اندوز ہوں، اور اپنے اعدادوشمار کو ٹریک کریں۔ کسی بھی حقیقی رقم کے بغیر کیسینو گیم کے سنسنی کا تجربہ کریں۔",
         "cta": "GitHub پر دریافت کریں۔"
       },
       "1": {
         "title": "اسٹاک سم",
+        "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "ریئل ٹائم میں اسٹاک اور کرپٹو کو دریافت کرنے کے لیے ایک ذاتی اسٹاک مارکیٹ سمیلیٹر۔ منافع کا حساب لگائیں، منظرناموں کو محفوظ کریں، پسندیدہ کو ٹریک کریں، اور حقیقی رقم کو خطرے میں ڈالے بغیر تجارتی حکمت عملی سیکھیں۔",
         "cta": "GitHub پر دریافت کریں۔"
       },
       "2": {
         "title": "ایم آر آربٹ اسٹوڈیو",
+        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
         "description": "سنگل پیج ری ایکٹ پورٹ فولیو ان چیزوں کی نمائش کرتا ہے جن کو میں بنانا پسند کرتا ہوں - ڈیٹا سے چلنے والے حصے، دوبارہ شروع ڈاؤن لوڈ، اور انٹرایکٹو ٹول کٹ فلٹرز۔",
         "cta": "پورٹ فولیو دیکھیں"
       }
