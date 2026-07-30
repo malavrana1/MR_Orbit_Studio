@@ -1,13 +1,12 @@
 import { logEvent } from 'firebase/analytics'
 import { getAnalyticsInstance } from '../config/firebaseClient'
+import { publicEnv } from '../config/env'
 
-const devLog =
-  process.env.NODE_ENV === 'development' &&
-  process.env.REACT_APP_ENABLE_CONSOLE_ANALYTICS === 'true'
-    ? (...args) => console.debug('[analytics]', ...args)
-    : () => {}
+const devLog = publicEnv.enableConsoleAnalytics
+  ? (...args) => console.debug('[analytics]', ...args)
+  : () => {}
 
-/** GA4 / Firebase limit safe string (custom param values) */
+/** GA4 / Firebase limit-safe string (custom param values) — never send PII here */
 const clip = (value, max = 120) => {
   if (value == null) return ''
   const s = String(value)
@@ -16,11 +15,13 @@ const clip = (value, max = 120) => {
 
 function send(name, params) {
   return getAnalyticsInstance().then((analytics) => {
-    devLog(
-      name,
-      params,
-      analytics ? '→ sent' : '→ (no GA: missing env, dev mode, or unsupported)',
-    )
+    if (publicEnv.isDev && publicEnv.enableConsoleAnalytics) {
+      devLog(
+        name,
+        params,
+        analytics ? '→ sent' : '→ (no GA: missing env, disabled, or unsupported)',
+      )
+    }
     if (!analytics) {
       return
     }
@@ -59,7 +60,8 @@ export default {
     })
   },
   /**
-   * @param {string} [action] — e.g. modal_open, send_attempt, send_success, send_error
+   * Tracks contact-form lifecycle only — never message body, email, or phone.
+   * @param {string} [action]
    */
   trackContactForm(action = 'interaction') {
     return send('portfolio_contact', {

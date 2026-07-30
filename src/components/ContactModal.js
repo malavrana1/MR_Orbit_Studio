@@ -1,9 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Modal, Button, Form } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import analyticsService from '../services/analytics'
+import { getContactSubmitUrl } from '../config/env'
 
-const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+const PHONE_RE = /^[\d\s\-+()]+$/
+const MAX_SUBMIT_INTERVAL_MS = 8000
+
+function sanitizeText(value, max) {
+  return String(value || '')
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '')
+    .trim()
+    .slice(0, max)
+}
+
+const ContactModal = ({ show, onClose, toEmail = '' }) => {
   const { t } = useTranslation()
   const [contactName, setContactName] = useState('')
   const [contactEmail, setContactEmail] = useState('')
@@ -11,10 +23,14 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
   const [contactCompany, setContactCompany] = useState('')
   const [contactSubject, setContactSubject] = useState('')
   const [contactMessage, setContactMessage] = useState('')
+  const [honeypot, setHoneypot] = useState('')
   const [isSending, setIsSending] = useState(false)
   const [sendError, setSendError] = useState('')
   const [sendSuccess, setSendSuccess] = useState(false)
   const [validationErrors, setValidationErrors] = useState({})
+  const lastSubmitAtRef = useRef(0)
+
+  const submitUrl = getContactSubmitUrl(toEmail)
 
   useEffect(() => {
     if (show) {
@@ -23,6 +39,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
       setSendSuccess(false)
       setValidationErrors({})
       setIsSending(false)
+      setHoneypot('')
     }
   }, [show])
 
@@ -33,56 +50,53 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
     setContactCompany('')
     setContactSubject('')
     setContactMessage('')
+    setHoneypot('')
     setSendError('')
     setSendSuccess(false)
     setValidationErrors({})
     setIsSending(false)
   }
 
-  const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    return emailRegex.test(email)
-  }
-
-  const validatePhone = (phone) => {
-    const phoneRegex = /^[\d\s\-\+\(\)]+$/
-    return phoneRegex.test(phone) && phone.replace(/\D/g, '').length >= 10
-  }
-
   const validateForm = () => {
     const errors = {}
+    const email = sanitizeText(contactEmail, 254)
+    const subject = sanitizeText(contactSubject, 120)
+    const message = sanitizeText(contactMessage, 5000)
+    const name = sanitizeText(contactName, 100)
+    const phone = sanitizeText(contactPhone, 40)
+    const company = sanitizeText(contactCompany, 100)
 
-    if (!contactEmail || contactEmail.trim() === '') {
+    if (!submitUrl) {
+      errors.form = t('contact.sendError')
+    }
+
+    if (!email) {
       errors.email = t('contact.validation.emailRequired')
-    } else if (!validateEmail(contactEmail.trim())) {
+    } else if (!EMAIL_RE.test(email)) {
       errors.email = t('contact.validation.emailInvalid')
     }
 
-    if (!contactSubject || contactSubject.trim() === '') {
+    if (!subject) {
       errors.subject = t('contact.validation.subjectRequired')
     }
 
-    if (!contactMessage || contactMessage.trim() === '') {
+    if (!message) {
       errors.message = t('contact.validation.messageRequired')
-    } else if (contactMessage.trim().length < 10) {
+    } else if (message.length < 10) {
       errors.message = t('contact.validation.messageMin')
-    } else if (contactMessage.trim().length > 5000) {
+    } else if (message.length > 5000) {
       errors.message = t('contact.validation.messageMax')
     }
 
-    if (contactName && contactName.trim().length > 100) {
+    if (name.length > 100) {
       errors.name = t('contact.validation.nameMax')
     }
 
-    if (
-      contactPhone &&
-      contactPhone.trim() !== '' &&
-      !validatePhone(contactPhone.trim())
-    ) {
+    if (phone && (!PHONE_RE.test(phone) || phone.replace(/\D/g, '').length < 10)) {
       errors.phone = t('contact.validation.phoneInvalid')
     }
 
-    if (contactCompany && contactCompany.trim().length > 100) {
+    if (company.length > 100) {
       errors.company = t('contact.validation.companyMax')
     }
 
@@ -91,44 +105,67 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
   }
 
   const handleSendEmail = async (e) => {
-    if (e) {
-      e.preventDefault()
-    }
+    if (e) e.preventDefault()
 
     setSendError('')
     setValidationErrors({})
+
+    // Bot filled the hidden field — pretend success without sending.
+    if (honeypot.trim()) {
+      setSendSuccess(true)
+      analyticsService.trackContactForm('send_blocked_bot')
+      return
+    }
+
+    const now = Date.now()
+    if (now - lastSubmitAtRef.current < MAX_SUBMIT_INTERVAL_MS) {
+      setSendError(t('contact.sendError'))
+      analyticsService.trackContactForm('send_rate_limited')
+      return
+    }
 
     if (!validateForm()) {
       return
     }
 
+    if (!submitUrl) {
+      setSendError(t('contact.sendError'))
+      analyticsService.trackContactForm('send_error')
+      return
+    }
+
     setIsSending(true)
+    lastSubmitAtRef.current = now
     analyticsService.trackContactForm('send_attempt')
 
+    const name = sanitizeText(contactName, 100) || 'Visitor'
+    const email = sanitizeText(contactEmail, 254)
+    const phone = sanitizeText(contactPhone, 40)
+    const company = sanitizeText(contactCompany, 100)
+    const subject = sanitizeText(contactSubject, 120)
+    const message = sanitizeText(contactMessage, 5000)
+
     try {
-      const response = await fetch(
-        `https://formsubmit.co/ajax/${encodeURIComponent(toEmail)}`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify({
-            name: contactName || 'Visitor',
-            email: contactEmail.trim(),
-            phone: contactPhone.trim() || '',
-            company: contactCompany.trim() || '',
-            subject: contactSubject.trim(),
-            message: contactMessage.trim(),
-            _subject: `${contactSubject.trim()} - New message from ${contactName || 'a visitor'}`,
-            _replyto: contactEmail.trim(),
-            _template: 'table',
-            source: 'MR Orbit Studio – Contact Modal',
-            _captcha: 'false',
-          }),
+      const response = await fetch(submitUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
         },
-      )
+        body: JSON.stringify({
+          name,
+          email,
+          phone: phone || undefined,
+          company: company || undefined,
+          subject,
+          message,
+          _subject: `${subject} - New message from ${name}`,
+          _replyto: email,
+          _template: 'table',
+          _honey: '',
+          source: 'MR Orbit Studio',
+        }),
+      })
 
       if (!response.ok) {
         throw new Error('Failed to send message')
@@ -141,10 +178,10 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
       setContactCompany('')
       setContactSubject('')
       setContactMessage('')
+      setHoneypot('')
       setValidationErrors({})
-
       analyticsService.trackContactForm('send_success')
-    } catch (err) {
+    } catch {
       setSendError(t('contact.sendError'))
       analyticsService.trackContactForm('send_error')
     } finally {
@@ -202,13 +239,37 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
           </div>
         )}
         {!sendSuccess && (
-          <Form onSubmit={handleSendEmail} id="contact-form">
+          <Form onSubmit={handleSendEmail} id="contact-form" autoComplete="on">
+            {/* Honeypot — hidden from people, filled by many bots */}
+            <div
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                left: '-10000px',
+                top: 'auto',
+                width: 1,
+                height: 1,
+                overflow: 'hidden',
+              }}
+            >
+              <label htmlFor="contact-website">Website</label>
+              <input
+                id="contact-website"
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                value={honeypot}
+                onChange={(e) => setHoneypot(e.target.value)}
+              />
+            </div>
             <Form.Group className="mb-3" controlId="contactName">
               <Form.Label>{t('contact.nameLabel')}</Form.Label>
               <Form.Control
                 type="text"
                 placeholder={t('contact.namePlaceholder')}
                 value={contactName}
+                maxLength={100}
                 onChange={(e) => {
                   setContactName(e.target.value)
                   if (validationErrors.name) {
@@ -230,6 +291,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
                 type="email"
                 placeholder={t('contact.emailPlaceholder')}
                 value={contactEmail}
+                maxLength={254}
                 onChange={(e) => {
                   setContactEmail(e.target.value)
                   if (validationErrors.email) {
@@ -250,6 +312,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
                 type="tel"
                 placeholder={t('contact.phonePlaceholder')}
                 value={contactPhone}
+                maxLength={40}
                 onChange={(e) => {
                   setContactPhone(e.target.value)
                   if (validationErrors.phone) {
@@ -269,6 +332,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
                 type="text"
                 placeholder={t('contact.companyPlaceholder')}
                 value={contactCompany}
+                maxLength={100}
                 onChange={(e) => {
                   setContactCompany(e.target.value)
                   if (validationErrors.company) {
@@ -319,6 +383,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
                 rows={4}
                 placeholder={t('contact.messagePlaceholder')}
                 value={contactMessage}
+                maxLength={5000}
                 onChange={(e) => {
                   setContactMessage(e.target.value)
                   if (validationErrors.message) {
@@ -363,7 +428,7 @@ const ContactModal = ({ show, onClose, toEmail = 'ranam211197@gmail.com' }) => {
             <Button
               variant="primary"
               onClick={handleSendEmail}
-              disabled={isSending}
+              disabled={isSending || !submitUrl}
               form="contact-form"
               type="submit"
             >

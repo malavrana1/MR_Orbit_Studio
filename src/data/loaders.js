@@ -4,29 +4,27 @@ import projects from './projects.json'
 import resume from './resume.json'
 import site from './site.json'
 
-export { profile, personal, projects, resume, site }
-
 export const getProfile = () => profile
 export const getPersonal = () => personal
 export const getProjects = () => projects
 export const getResume = () => resume
 export const getSiteInfo = () => site
 
-const DEFAULT_NAV = {
-  links: [
-    { label: 'Home', href: '#home' },
-    { label: 'Summary', href: '#summary' },
-    { label: 'Toolkit', href: '#toolkit' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Credentials', href: '#credentials' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'About', href: '#about' },
-    { label: 'Connect', href: '#connect' },
-  ],
-}
-
 export function getNavConfig() {
-  return site.nav || DEFAULT_NAV
+  return (
+    site.nav || {
+      links: [
+        { label: 'Home', href: '#home' },
+        { label: 'Summary', href: '#summary' },
+        { label: 'Toolkit', href: '#toolkit' },
+        { label: 'Experience', href: '#experience' },
+        { label: 'Credentials', href: '#credentials' },
+        { label: 'Projects', href: '#projects' },
+        { label: 'About', href: '#about' },
+        { label: 'Connect', href: '#connect' },
+      ],
+    }
+  )
 }
 
 export function getNavSectionIds() {
@@ -39,7 +37,10 @@ export const formatSkillLabel = (s) =>
   s.replace(/\.js$/i, '').replace(/\s*\(ES6\+\)/i, '')
 
 export const getSkillCategories = () =>
-  Object.entries(resume.skills).map(([category, items]) => ({ category, items }))
+  Object.entries(resume.skills).map(([category, items]) => ({
+    category,
+    items,
+  }))
 
 export const getHeroCoreStack = () => {
   const fe = resume.skills?.Frontend ?? []

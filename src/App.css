@@ -16,26 +16,43 @@ body,
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   margin: 0 auto;
   font-family:
-    'Roboto',
+    Inter,
     system-ui,
     -apple-system,
-    Segoe UI,
+    'Segoe UI',
     Roboto,
     Ubuntu,
     Cantarell,
-    Noto Sans,
+    'Noto Sans',
     'Helvetica Neue',
     Arial,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
     sans-serif;
   color: var(--text-dark);
   background: linear-gradient(135deg, #fdf8f3 0%, #f5efe6 50%, #faf6f2 100%);
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 
 [data-theme='dark'] body {

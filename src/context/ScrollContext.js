@@ -25,8 +25,11 @@ export function ScrollProvider({ children }) {
       ticking = true
       window.requestAnimationFrame(() => {
         const y = window.scrollY
-        setIsScrolled(y > 50)
-        setShowScrollTop(y > 400)
+        const nextScrolled = y > 50
+        const nextShowTop = y > 400
+
+        setIsScrolled((prev) => (prev === nextScrolled ? prev : nextScrolled))
+        setShowScrollTop((prev) => (prev === nextShowTop ? prev : nextShowTop))
 
         const currentSection = navSectionIds.find((section) => {
           const element = document.getElementById(section)
@@ -35,7 +38,9 @@ export function ScrollProvider({ children }) {
           return rect.top <= 100 && rect.bottom >= 100
         })
         if (currentSection) {
-          setActiveSection(currentSection)
+          setActiveSection((prev) =>
+            prev === currentSection ? prev : currentSection,
+          )
         }
 
         ticking = false

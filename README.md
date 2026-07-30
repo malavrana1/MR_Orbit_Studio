@@ -7,8 +7,9 @@ A modern, single-page portfolio website built with React and Firebase. Features 
 ### Tech Stack
 
 - React 19
+- Vite
 - React Bootstrap
-- i18next
+- i18next (lazy-loaded locales)
 - Firebase (Hosting & Analytics)
 - Bootstrap 5
 
@@ -30,8 +31,9 @@ The app will open at `http://localhost:3000`
 
 ### Available Scripts
 
-- `pnpm start` - Start development server
+- `pnpm start` / `pnpm dev` - Start Vite development server
 - `pnpm run build` - Build for production (runs locale key sync first)
+- `pnpm run preview` - Preview the production build locally
 - `pnpm run deploy` - Build and deploy to Firebase
 - `pnpm run format` - Format code with Prettier
 - `pnpm run sync-locales` - Regenerate locale keys from `src/data`
@@ -47,7 +49,7 @@ Edit the JSON files in `src/data/` to update your portfolio:
 - `personal.json` - Personal details
 - `projects.json` - Portfolio projects
 
-Translations: `src/locales/` (keys align with content from `src/data`).
+Translations: `src/locales/` (English ships in the main bundle; other languages load on demand).
 
 ### Deploy
 

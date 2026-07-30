@@ -15,7 +15,6 @@ import {
   FaFolderOpen,
   FaInfoCircle,
   FaHandshake,
-  FaEnvelope,
   FaMoon,
   FaSun,
 } from 'react-icons/fa'
@@ -95,12 +94,10 @@ const navIcons = {
   summary: FaUser,
   toolkit: FaToolbox,
   experience: FaBriefcase,
-  education: FaGraduationCap,
   credentials: FaGraduationCap,
   projects: FaFolderOpen,
   about: FaInfoCircle,
   connect: FaHandshake,
-  contact: FaEnvelope,
 }
 
 const Header = memo(function Header() {

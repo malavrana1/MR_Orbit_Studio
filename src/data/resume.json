@@ -1,14 +1,4 @@
 {
-  "name": "Malav Rana",
-  "headline": "Frontend Engineer",
-  "location": "Woodbridge, New Jersey, United States",
-  "contact": {
-    "email": "ranam211197@gmail.com",
-    "phone": "201-468-8422",
-    "linkedin": "https://www.linkedin.com/in/malav-rana97",
-    "website": "https://malavrana.dev"
-  },
-  "summary": "Frontend Engineer with 5+ years of experience building scalable, high-performance, and accessible web applications. Skilled in Angular, React, Next.js, TypeScript, and modern frontend frameworks. Experienced in integrating REST and GraphQL APIs, optimizing complex UI workflows, implementing CI/CD pipelines, automated testing, and accessibility compliance. Collaborative team player focused on delivering user-friendly, maintainable software solutions across multiple projects.",
   "skills": {
     "Frontend": [
       "Angular",

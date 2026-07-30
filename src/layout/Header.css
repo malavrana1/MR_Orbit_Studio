@@ -9,8 +9,8 @@
     rgba(253, 248, 243, 0.98) 0%,
     rgba(245, 239, 230, 0.98) 100%
   );
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(92, 64, 51, 0.12);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 3px rgba(62, 39, 35, 0.06);
@@ -18,8 +18,8 @@
 
 [data-theme='dark'] .site-header {
   background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.8),
@@ -117,45 +117,21 @@
   animation: none;
 }
 
-@keyframes logoFloat {
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-3px) rotate(2deg);
-  }
-}
+
 
 .nav-brand:hover .brand-logo {
   animation: none;
   transform: none;
 }
 
-@keyframes logoPulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
+
 
 .logo-bg {
   opacity: 1;
   animation: none;
 }
 
-@keyframes gradientShift {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.9;
-  }
-}
+
 
 .logo-m,
 .logo-r {
@@ -168,36 +144,14 @@
   filter: none;
 }
 
-@keyframes letterGlow {
-  0%,
-  100% {
-    opacity: 1;
-    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
-  }
-  50% {
-    opacity: 0.95;
-    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
-  }
-}
+
 
 .logo-orbit-ring {
   animation: none;
   transform-origin: center;
 }
 
-@keyframes orbitRotate {
-  0% {
-    transform: rotate(-15deg);
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: rotate(345deg);
-    opacity: 0.3;
-  }
-}
+
 
 .logo-accent {
   fill: #ffffff;
@@ -206,17 +160,7 @@
   transform-origin: center;
 }
 
-@keyframes accentPulse {
-  0%,
-  100% {
-    opacity: 0.8;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-}
+
 
 .nav-links {
   display: flex;
@@ -267,8 +211,8 @@
     rgba(255, 255, 255, 0.92) 0%,
     rgba(253, 248, 243, 0.88) 100%
   );
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   min-height: 40px;
   width: 100%;
   min-width: 0;
@@ -384,8 +328,8 @@
     rgba(255, 255, 255, 0.98) 0%,
     rgba(253, 248, 243, 0.96) 100%
   );
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.75) inset,
     0 12px 40px rgba(62, 39, 35, 0.14),
@@ -666,19 +610,7 @@
   background: rgba(122, 90, 46, 0.9);
 }
 
-@keyframes navActivePulseLight {
-  0%,
-  100% {
-    box-shadow:
-      0 4px 16px rgba(92, 64, 51, 0.2),
-      0 0 0 1px rgba(92, 64, 51, 0.1);
-  }
-  50% {
-    box-shadow:
-      0 6px 24px rgba(92, 64, 51, 0.3),
-      0 0 0 1px rgba(92, 64, 51, 0.15);
-  }
-}
+
 
 [data-theme='dark'] .nav-link.active {
   color: #ffffff;
@@ -694,19 +626,7 @@
   background: rgba(255, 255, 255, 0.5);
 }
 
-@keyframes navActivePulse {
-  0%,
-  100% {
-    box-shadow:
-      0 4px 16px rgba(0, 0, 0, 0.8),
-      0 0 25px rgba(255, 255, 255, 0.1);
-  }
-  50% {
-    box-shadow:
-      0 4px 20px rgba(0, 0, 0, 0.9),
-      0 0 35px rgba(255, 255, 255, 0.15);
-  }
-}
+
 
 [data-theme='dark'] .nav-icon {
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -751,23 +671,13 @@
   height: 4px;
   background: linear-gradient(135deg, #8b6914, #5c4033);
   border-radius: 50%;
-  animation: fadeIn 0.3s ease;
 }
 
 [data-theme='dark'] .nav-indicator {
   background: linear-gradient(135deg, #5c4033, #c9a227);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) scale(0);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) scale(1);
-  }
-}
+
 
 .mobile-menu-toggle {
   display: none;
@@ -875,8 +785,8 @@
     right: 0;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid rgba(226, 232, 240, 0.8);
     border-bottom: 1px solid rgba(226, 232, 240, 0.8);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -894,8 +804,8 @@
 
   [data-theme='dark'] .nav-links {
     background: rgba(0, 0, 0, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow:
