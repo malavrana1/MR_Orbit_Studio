@@ -83,7 +83,7 @@
     "resumePdfTitle": "دوبارہ شروع کریں (پی ڈی ایف - کھولیں یا محفوظ کریں)",
     "githubProfileTitle": "GitHub پروفائل دیکھیں",
     "linkedinProfileTitle": "LinkedIn پر جڑیں۔",
-    "sharePortfolioTitle": "پورٹ فولیو کا اشتراک کریں۔",
+    "sharePortfolioTitle": "پورٹ فولیو شیئر کریں",
     "emailTitle": "Email me",
     "contactFormTitle": "رابطہ فارم"
   },
@@ -158,7 +158,10 @@
         "2": "پیدل سفر",
         "3": "موسیقی",
         "4": "کھانا پکانا",
-        "5": "DIY پروجیکٹس"
+        "5": "DIY پروجیکٹس",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "صارفین کی ضرورت پر توجہ دیں۔",

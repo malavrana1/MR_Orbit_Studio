@@ -83,7 +83,7 @@
     "resumePdfTitle": "Lebenslauf (PDF – öffnen oder speichern)",
     "githubProfileTitle": "GitHub-Profil anzeigen",
     "linkedinProfileTitle": "Vernetzen Sie sich auf LinkedIn",
-    "sharePortfolioTitle": "Aktienportfolio",
+    "sharePortfolioTitle": "Portfolio teilen",
     "emailTitle": "Email me",
     "contactFormTitle": "Kontaktformular"
   },
@@ -158,7 +158,10 @@
         "2": "Wandern",
         "3": "Musik",
         "4": "Kochen",
-        "5": "DIY-Projekte"
+        "5": "DIY-Projekte",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Konzentrieren Sie sich auf die Bedürfnisse der Benutzer",

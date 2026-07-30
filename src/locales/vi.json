@@ -83,7 +83,7 @@
     "resumePdfTitle": "Tiếp tục (PDF - mở hoặc lưu)",
     "githubProfileTitle": "Xem hồ sơ GitHub",
     "linkedinProfileTitle": "Kết nối trên LinkedIn",
-    "sharePortfolioTitle": "Chia sẻ danh mục đầu tư",
+    "sharePortfolioTitle": "Chia sẻ portfolio",
     "emailTitle": "Email me",
     "contactFormTitle": "Mẫu liên hệ"
   },
@@ -158,7 +158,10 @@
         "2": "Đi bộ đường dài",
         "3": "Âm nhạc",
         "4": "Nấu ăn",
-        "5": "dự án tự làm"
+        "5": "dự án tự làm",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Tập trung vào những gì người dùng cần",

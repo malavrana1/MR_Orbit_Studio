@@ -83,7 +83,7 @@
     "resumePdfTitle": "Συνέχιση (PDF — άνοιγμα ή αποθήκευση)",
     "githubProfileTitle": "Προβολή προφίλ GitHub",
     "linkedinProfileTitle": "Συνδεθείτε στο LinkedIn",
-    "sharePortfolioTitle": "Μοιραστείτε χαρτοφυλάκιο",
+    "sharePortfolioTitle": "Κοινοποίηση χαρτοφυλακίου",
     "emailTitle": "Email me",
     "contactFormTitle": "Φόρμα επικοινωνίας"
   },
@@ -158,7 +158,10 @@
         "2": "Πεζοπορία",
         "3": "Μουσική",
         "4": "Μαγείρεμα",
-        "5": "Έργα DIY"
+        "5": "Έργα DIY",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Επικεντρωθείτε σε αυτό που χρειάζονται οι χρήστες",

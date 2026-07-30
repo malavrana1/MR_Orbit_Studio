@@ -83,7 +83,7 @@
     "resumePdfTitle": "बायोडाटा (पीडीएफ - खोलें या सहेजें)",
     "githubProfileTitle": "GitHub प्रोफ़ाइल देखें",
     "linkedinProfileTitle": "लिंक्डइन पर जुड़ें",
-    "sharePortfolioTitle": "शेयर पोर्टफोलियो",
+    "sharePortfolioTitle": "पोर्टफोलियो साझा करें",
     "emailTitle": "Email me",
     "contactFormTitle": "संपर्क करें प्रपत्र"
   },
@@ -158,7 +158,10 @@
         "2": "लंबी पैदल यात्रा",
         "3": "संगीत",
         "4": "खाना बनाना",
-        "5": "DIY परियोजनाएँ"
+        "5": "DIY परियोजनाएँ",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "उपयोगकर्ताओं को क्या चाहिए उस पर ध्यान दें",

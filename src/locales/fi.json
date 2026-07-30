@@ -83,7 +83,7 @@
     "resumePdfTitle": "Jatka (PDF - avaa tai tallenna)",
     "githubProfileTitle": "Näytä GitHub-profiili",
     "linkedinProfileTitle": "Yhdistä LinkedInissä",
-    "sharePortfolioTitle": "Osakesalkku",
+    "sharePortfolioTitle": "Jaa portfolio",
     "emailTitle": "Email me",
     "contactFormTitle": "Yhteydenottolomake"
   },
@@ -158,7 +158,10 @@
         "2": "Patikointi",
         "3": "Musiikki",
         "4": "Ruoanlaitto",
-        "5": "DIY-projektit"
+        "5": "DIY-projektit",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Keskity siihen, mitä käyttäjät tarvitsevat",

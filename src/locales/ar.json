@@ -83,7 +83,7 @@
     "resumePdfTitle": "السيرة الذاتية (PDF — فتح أو حفظ)",
     "githubProfileTitle": "عرض الملف الشخصي على جيثب",
     "linkedinProfileTitle": "تواصل على لينكدإن",
-    "sharePortfolioTitle": "حصة المحفظة",
+    "sharePortfolioTitle": "مشاركة المعرض",
     "emailTitle": "Email me",
     "contactFormTitle": "نموذج الاتصال"
   },
@@ -158,7 +158,10 @@
         "2": "جولة على الأقدام",
         "3": "موسيقى",
         "4": "طبخ",
-        "5": "مشاريع DIY"
+        "5": "مشاريع DIY",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "التركيز على ما يحتاجه المستخدمون",

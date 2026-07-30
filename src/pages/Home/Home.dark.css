@@ -94,8 +94,6 @@ html[data-theme='dark'] {
   animation: none;
 }
 
-
-
 [data-theme='dark'] .hero-greeting:hover {
   color: #ffffff;
   transform: none;
@@ -107,8 +105,6 @@ html[data-theme='dark'] {
   transition: none;
   animation: none;
 }
-
-
 
 [data-theme='dark'] .hero-name:hover {
   transform: none;
@@ -164,44 +160,6 @@ html[data-theme='dark'] {
   border-top: 1.5px solid rgba(255, 255, 255, 0.15);
 }
 
-[data-theme='dark'] .experience-card,
-[data-theme='dark'] .project-card,
-[data-theme='dark'] .toolkit-card,
-[data-theme='dark'] .credential-card,
-[data-theme='dark'] .personal-card,
-[data-theme='dark'] .contact-card {
-  background: #1f1f1f;
-  border-color: rgba(255, 255, 255, 0.18);
-  border-width: 1.5px;
-  color: #ffffff;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition-base);
-  position: relative;
-  overflow: hidden;
-}
-
-[data-theme='dark'] .experience-card::after,
-[data-theme='dark'] .project-card::after,
-[data-theme='dark'] .toolkit-card::after,
-[data-theme='dark'] .credential-card::after,
-[data-theme='dark'] .personal-card::after,
-[data-theme='dark'] .contact-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(255, 255, 255, 0.05),
-    transparent
-  );
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  pointer-events: none;
-}
-
 [data-theme='dark'] .experience-card:hover,
 [data-theme='dark'] .education-card:hover,
 [data-theme='dark'] .highlight-item:hover {
@@ -209,24 +167,6 @@ html[data-theme='dark'] {
   box-shadow: var(--card-shadow-hover);
   transform: translateY(-2px);
   background: var(--bg-surface-hover);
-}
-
-[data-theme='dark'] .project-card:hover,
-[data-theme='dark'] .toolkit-card:hover,
-[data-theme='dark'] .credential-card:hover,
-[data-theme='dark'] .personal-card:hover,
-[data-theme='dark'] .contact-card:hover {
-  border-color: var(--border-hover);
-  box-shadow: var(--card-shadow-hover);
-  transform: translateY(-2px);
-}
-
-[data-theme='dark'] .experience-card:hover::after,
-[data-theme='dark'] .toolkit-card:hover::after,
-[data-theme='dark'] .credential-card:hover::after,
-[data-theme='dark'] .personal-card:hover::after,
-[data-theme='dark'] .contact-card:hover::after {
-  opacity: 1;
 }
 
 [data-theme='dark'] .contact-card p,
@@ -701,30 +641,6 @@ html[data-theme='dark'] {
   filter: none;
 }
 
-[data-theme='dark'] .credential-period {
-  color: #ffffff !important;
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-[data-theme='dark'] .credential-period:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
-  color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-}
-
-[data-theme='dark'] .credentials-heading h2 {
-  color: #ffffff !important;
-  background: none !important;
-  -webkit-text-fill-color: #ffffff !important;
-}
-
-[data-theme='dark'] .credentials-heading p {
-  color: #ffffff !important;
-}
-
 [data-theme='dark'] .personal-list li {
   color: #ffffff !important;
 }
@@ -1025,26 +941,6 @@ html[data-theme='dark'] {
   background-color: var(--skill-bg, #5c4033) !important;
 }
 
-[data-theme='dark'] .summary-header h2,
-[data-theme='dark'] .experience-heading h2,
-[data-theme='dark'] .projects-heading h2,
-[data-theme='dark'] .credentials-heading h2,
-[data-theme='dark'] .toolkit-heading h2,
-[data-theme='dark'] .credentials-heading h2 {
-  color: #ffffff !important;
-  background: none !important;
-  -webkit-text-fill-color: #ffffff !important;
-}
-
-[data-theme='dark'] .summary-header p,
-[data-theme='dark'] .experience-heading p,
-[data-theme='dark'] .projects-heading p,
-[data-theme='dark'] .credentials-heading p,
-[data-theme='dark'] .toolkit-heading p,
-[data-theme='dark'] .credentials-heading p {
-  color: #ffffff !important;
-}
-
 [data-theme='dark'] .summary-subtitle {
   color: #ffffff !important;
 }
@@ -1067,27 +963,6 @@ html[data-theme='dark'] {
 [data-theme='dark'] .summary-header p.text-muted,
 [data-theme='dark'] .summary-header p.lead.text-muted {
   color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-institution {
-  color: #ffffff !important;
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  -webkit-text-fill-color: #ffffff !important;
-  background-clip: unset !important;
-}
-
-[data-theme='dark'] .credential-card:hover .credential-institution {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-icon {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-[data-theme='dark'] .credential-card:hover .credential-icon {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
 }
 
 [data-theme='dark'] .experience-company-logo {
@@ -1171,41 +1046,6 @@ html[data-theme='dark'] {
   fill: currentColor;
 }
 
-[data-theme='dark'] .credential-period {
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  color: #ffffff !important;
-  padding: 0 !important;
-  box-shadow: none !important;
-}
-
-[data-theme='dark'] .credential-card .text-muted {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-content {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-content * {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-item {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-item * {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-icon {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
 [data-theme='dark'] .hero-greeting {
   color: #e5e5e5;
 }
@@ -1217,24 +1057,6 @@ html[data-theme='dark'] {
 }
 
 [data-theme='dark'] .experience-card:hover .experience-tagline {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-subtitle {
-  color: #ffffff !important;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  box-shadow: none !important;
-}
-
-[data-theme='dark'] .credential-card .text-muted {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-subtitle.small,
-[data-theme='dark'] .credential-title.small {
   color: #ffffff !important;
 }
 
@@ -1307,17 +1129,8 @@ html[data-theme='dark'] {
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .personal-card h6 {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .personal-card h6.mt-4 {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .personal-card h6[style*='color'],
-[data-theme='dark'] .personal-card h6[style*='#5c4033'],
-[data-theme='dark'] .personal-card h6[style*='5c4033'] {
+[data-theme='dark'] .personal-card h6,
+[data-theme='dark'] .principles-heading {
   color: #ffffff !important;
 }
 
@@ -1401,38 +1214,6 @@ html[data-theme='dark'] {
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .credential-card .credential-item,
-[data-theme='dark'] .credential-card .credential-content,
-[data-theme='dark'] .credential-card .credential-icon {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-card .mb-0,
-[data-theme='dark'] .credential-card .mb-1,
-[data-theme='dark'] .credential-card .mb-2,
-[data-theme='dark'] .credential-card .mb-3,
-[data-theme='dark'] .credential-card .mb-4 {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .landing-credentials .credential-card {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .landing-credentials .credential-card *,
-[data-theme='dark'] .landing-credentials .credential-card * {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] h6.credential-title,
-[data-theme='dark'] h6.credential-institution,
-[data-theme='dark'] h6.credential-title,
-[data-theme='dark'] h6.credential-institution {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-  background: none !important;
-}
-
 [data-theme='dark'] p.text-muted,
 [data-theme='dark'] p.text-muted.small,
 [data-theme='dark'] p.text-muted.mb-0,
@@ -1443,33 +1224,10 @@ html[data-theme='dark'] {
   color: #ffffff !important;
 }
 
-[data-theme='dark'] span.credential-period {
-  color: #ffffff !important;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  box-shadow: none !important;
-}
-
 [data-theme='dark'] [style*='background-clip'],
 [data-theme='dark'] [style*='-webkit-background-clip'],
 [data-theme='dark'] [style*='-webkit-text-fill-color'] {
   -webkit-text-fill-color: #ffffff !important;
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .summary-header,
-[data-theme='dark'] .experience-heading,
-[data-theme='dark'] .projects-heading,
-[data-theme='dark'] .credentials-heading {
-  color: #ffffff !important;
-}
-
-[data-theme='dark'] .summary-header *,
-[data-theme='dark'] .experience-heading *,
-[data-theme='dark'] .projects-heading *,
-[data-theme='dark'] .credentials-heading * {
   color: #ffffff !important;
 }
 
@@ -1525,18 +1283,6 @@ html[data-theme='dark'] {
 [data-theme='dark'] .landing-connect .action-icon * {
   color: var(--skill-ink, #ffffff) !important;
   -webkit-text-fill-color: var(--skill-ink, #ffffff) !important;
-}
-
-[data-theme='dark'] .experience-card,
-[data-theme='dark'] .project-card,
-[data-theme='dark'] .toolkit-card,
-[data-theme='dark'] .personal-card,
-[data-theme='dark'] .credential-card,
-[data-theme='dark'] .contact-card,
-[data-theme='dark'] .hero-skill-card,
-[data-theme='dark'] .highlight-item {
-  background: #1f1f1f !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 [data-theme='dark'] .skill-icon-tile,
@@ -1672,33 +1418,6 @@ html[data-theme='dark'] {
   transform: translateX(4px);
 }
 
-[data-theme='dark'] .credential-title {
-  color: #ffffff !important;
-  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
-  transition:
-    text-shadow 0.3s ease,
-    transform 0.3s ease;
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  -webkit-text-fill-color: #ffffff !important;
-  background-clip: unset !important;
-}
-
-[data-theme='dark'] .credential-card:hover .credential-title {
-  color: #ffffff !important;
-  text-shadow:
-    0 2px 8px rgba(255, 255, 255, 0.25),
-    0 0 20px rgba(255, 255, 255, 0.1);
-  transform: translateX(4px);
-  -webkit-text-fill-color: #ffffff !important;
-}
-
-[data-theme='dark'] .credential-title.small {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-  background: none !important;
-}
-
 [data-theme='dark'] .hero-title {
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
   transition: text-shadow 0.3s ease;
@@ -1714,29 +1433,6 @@ html[data-theme='dark'] {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-}
-
-[data-theme='dark'] .experience-card::before,
-[data-theme='dark'] .project-card::before,
-[data-theme='dark'] .toolkit-card::before,
-[data-theme='dark'] .credential-card::before,
-[data-theme='dark'] .personal-card::before {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.6)
-  );
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-[data-theme='dark'] .experience-card:hover::before,
-[data-theme='dark'] .project-card:hover::before,
-[data-theme='dark'] .toolkit-card:hover::before,
-[data-theme='dark'] .credential-card:hover::before,
-[data-theme='dark'] .personal-card:hover::before {
-  transform: scaleX(1.02);
 }
 
 [data-theme='dark'] .skill-icon-tile__icon {
@@ -1816,13 +1512,6 @@ html[data-theme='dark'] {
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .credential-card p,
-[data-theme='dark'] .credential-card span,
-[data-theme='dark'] .credential-card h6,
-[data-theme='dark'] .credential-card .small {
-  color: #ffffff !important;
-}
-
 [data-theme='dark'] .toolkit-card p,
 [data-theme='dark'] .toolkit-card span,
 [data-theme='dark'] .toolkit-card h3,
@@ -1860,8 +1549,7 @@ html[data-theme='dark'] {
   color: #ffffff !important;
 }
 
-[data-theme='dark'] .personal-card .mt-4,
-[data-theme='dark'] .personal-card h6.mt-4,
+[data-theme='dark'] .principles-heading,
 [data-theme='dark'] .personal-card ul.personal-list,
 [data-theme='dark'] .personal-card ul.personal-list li {
   color: #ffffff !important;

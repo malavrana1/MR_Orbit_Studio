@@ -153,15 +153,42 @@
       "intro": "Outside work, I play tennis with friends, follow cricket, hike, and listen to music. I also cook, travel when I can, try new things, and take on small DIY projects in the backyard when I have free time.",
       "whatFuelsMe": "I bring the same energy from my hobbies into building products every day. Whether I'm playing tennis, working on a DIY project, or solving a coding problem, I enjoy learning and creating.",
       "interests": {
-        "0": "Tennis",
-        "1": "Cricket",
-        "2": "Hiking",
-        "3": "Music",
-        "4": "Cooking",
-        "5": "DIY Projects",
-        "6": "Travel",
-        "7": "Photography",
-        "8": "Trying New Things"
+        "0": {
+          "id": "tennis",
+          "label": "Tennis"
+        },
+        "1": {
+          "id": "cricket",
+          "label": "Cricket"
+        },
+        "2": {
+          "id": "hiking",
+          "label": "Hiking"
+        },
+        "3": {
+          "id": "music",
+          "label": "Music"
+        },
+        "4": {
+          "id": "cooking",
+          "label": "Cooking"
+        },
+        "5": {
+          "id": "diy",
+          "label": "DIY Projects"
+        },
+        "6": {
+          "id": "travel",
+          "label": "Travel"
+        },
+        "7": {
+          "id": "photography",
+          "label": "Photography"
+        },
+        "8": {
+          "id": "explore",
+          "label": "Trying New Things"
+        }
       },
       "principles": {
         "0": "Focus on what users need",

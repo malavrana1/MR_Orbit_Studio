@@ -65,7 +65,7 @@ const Logo = ({ className = '', size = 42 }) => (
 const Header = memo(function Header() {
   const { t } = useTranslation()
   const site = getSiteInfo() || {}
-  const brand = t('site.brand', { defaultValue: site.brand || 'MR Orbit' })
+  const brand = t('site.brand', { defaultValue: site.brand || 'Orbit Studio' })
   const nav = getNavConfig()
 
   const { isScrolled, activeSection } = usePageScroll()

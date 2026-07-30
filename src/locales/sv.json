@@ -83,7 +83,7 @@
     "resumePdfTitle": "Återuppta (PDF – öppna eller spara)",
     "githubProfileTitle": "Visa GitHub profil",
     "linkedinProfileTitle": "Anslut på LinkedIn",
-    "sharePortfolioTitle": "Aktieportfölj",
+    "sharePortfolioTitle": "Dela portfolio",
     "emailTitle": "Email me",
     "contactFormTitle": "Kontaktformulär"
   },
@@ -158,7 +158,10 @@
         "2": "Vandring",
         "3": "Musik",
         "4": "Matlagning",
-        "5": "DIY-projekt"
+        "5": "DIY-projekt",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Fokusera på vad användarna behöver",

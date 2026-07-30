@@ -83,7 +83,7 @@
     "resumePdfTitle": "ரெஸ்யூம் (PDF — திற அல்லது சேமி)",
     "githubProfileTitle": "GitHub சுயவிவரத்தைக் காண்க",
     "linkedinProfileTitle": "LinkedIn இல் இணைக்கவும்",
-    "sharePortfolioTitle": "பகிர்வு போர்ட்ஃபோலியோ",
+    "sharePortfolioTitle": "போர்ட்ஃபோலியோவைப் பகிரவும்",
     "emailTitle": "Email me",
     "contactFormTitle": "தொடர்பு படிவம்"
   },
@@ -158,7 +158,10 @@
         "2": "நடைபயணம்",
         "3": "இசை",
         "4": "சமையல்",
-        "5": "DIY திட்டங்கள்"
+        "5": "DIY திட்டங்கள்",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "பயனர்களுக்கு என்ன தேவை என்பதில் கவனம் செலுத்துங்கள்",

@@ -83,7 +83,7 @@
     "resumePdfTitle": "Currículo (PDF – abrir ou salvar)",
     "githubProfileTitle": "Ver perfil do GitHub",
     "linkedinProfileTitle": "Conecte-se no LinkedIn",
-    "sharePortfolioTitle": "Portfólio de ações",
+    "sharePortfolioTitle": "Compartilhar portfólio",
     "emailTitle": "Email me",
     "contactFormTitle": "Formulário de contato"
   },
@@ -154,11 +154,14 @@
       "whatFuelsMe": "Trago a mesma energia e interesse dos meus hobbies para a construção de produtos todos os dias. Seja jogando tênis ocasionalmente, em um projeto DIY ou resolvendo um problema de codificação, gosto de aprender e criar.",
       "interests": {
         "0": "Tênis",
-        "1": "Grilo",
+        "1": "Críquete",
         "2": "Caminhada",
         "3": "Música",
         "4": "Culinária",
-        "5": "Projetos faça você mesmo"
+        "5": "Projetos faça você mesmo",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Concentre-se no que os usuários precisam",

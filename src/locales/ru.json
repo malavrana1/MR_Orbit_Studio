@@ -83,7 +83,7 @@
     "resumePdfTitle": "Резюме (PDF — открыть или сохранить)",
     "githubProfileTitle": "Посмотреть профиль GitHub",
     "linkedinProfileTitle": "Подключитесь к LinkedIn",
-    "sharePortfolioTitle": "Поделиться портфелем",
+    "sharePortfolioTitle": "Поделиться портфолио",
     "emailTitle": "Email me",
     "contactFormTitle": "Контактная форма"
   },
@@ -158,7 +158,10 @@
         "2": "Пеший туризм",
         "3": "Музыка",
         "4": "Кулинария",
-        "5": "DIY-проекты"
+        "5": "DIY-проекты",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Сосредоточьтесь на том, что нужно пользователям",

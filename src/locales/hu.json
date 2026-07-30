@@ -83,7 +83,7 @@
     "resumePdfTitle": "Folytatás (PDF – megnyitás vagy mentés)",
     "githubProfileTitle": "GitHub profil megtekintése",
     "linkedinProfileTitle": "Csatlakozzon a LinkedIn-en",
-    "sharePortfolioTitle": "Részvény portfólió",
+    "sharePortfolioTitle": "Portfólió megosztása",
     "emailTitle": "Email me",
     "contactFormTitle": "Kapcsolatfelvételi űrlap"
   },
@@ -158,7 +158,10 @@
         "2": "Túrázás",
         "3": "Zene",
         "4": "Főzés",
-        "5": "DIY projektek"
+        "5": "DIY projektek",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Koncentráljon arra, amire a felhasználóknak szüksége van",

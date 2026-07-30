@@ -264,10 +264,7 @@ export default function Home() {
                     })}
                   </div>
                   <div className="hero-experience-quick mt-4">
-                    <h6
-                      className="mb-3 fw-bold"
-                      style={{ fontSize: '0.9rem', letterSpacing: '0.05em' }}
-                    >
+                    <h6 className="mb-3 fw-bold hero-experience-quick__title">
                       {t('hero.recentTeams')}
                     </h6>
                     <ul className="hero-experience-list">
@@ -303,10 +300,7 @@ export default function Home() {
         <Container>
           <div className="summary-header text-center mb-4">
             <h2 className="section-title mb-2">{t('summary.title')}</h2>
-            <p
-              className="summary-subtitle lead text-muted mx-auto"
-              style={{ maxWidth: '700px' }}
-            >
+            <p className="summary-subtitle lead text-muted mx-auto">
               {profile.summary?.[0] || t('summary.subtitleFallback')}
             </p>
           </div>
@@ -551,16 +545,20 @@ export default function Home() {
               >
                 {skillCategories.map(({ category }) => {
                   const { Icon, color, ink } = getToolkitMeta(category)
+                  const tabId = `toolkit-tab-${category}`
+                  const panelId = 'toolkit-panel'
+                  const selected = activeToolkit === category
                   return (
                     <button
                       key={category}
                       type="button"
+                      id={tabId}
                       role="tab"
-                      aria-selected={activeToolkit === category}
+                      aria-selected={selected}
+                      aria-controls={panelId}
+                      tabIndex={selected ? 0 : -1}
                       className={`toolkit-nav__btn ${
-                        activeToolkit === category
-                          ? 'toolkit-nav__btn--active'
-                          : ''
+                        selected ? 'toolkit-nav__btn--active' : ''
                       }`}
                       onClick={() => {
                         analyticsService.trackClick(
@@ -585,7 +583,11 @@ export default function Home() {
             </Col>
             <Col xs={12} lg={8}>
               <Card className="toolkit-card border-0 shadow-sm h-100">
-                <Card.Body>
+                <Card.Body
+                  id="toolkit-panel"
+                  role="tabpanel"
+                  aria-labelledby={`toolkit-tab-${activeToolkit}`}
+                >
                   <h5 className="mb-3">
                     {translateSkillCategoryLabel(t, activeToolkit)}
                   </h5>
@@ -710,29 +712,17 @@ export default function Home() {
                   <h5 className="mb-3 landing-accent-heading">
                     {t('about.whatLikeWork')}
                   </h5>
-                  <p
-                    className="text-muted mb-4"
-                    style={{ lineHeight: '1.7', fontSize: '1rem' }}
-                  >
+                  <p className="text-muted mb-4 personal-copy">
                     {personal.whatFuelsMe}
                   </p>
                   {personal.principles && personal.principles.length > 0 && (
-                    <div className="mt-4">
-                      <h6
-                        className="mb-3"
-                        style={{
-                          color: '#5c4033',
-                          fontWeight: '600',
-                          fontSize: '1rem',
-                        }}
-                      >
+                    <div className="principles-block">
+                      <h6 className="principles-heading">
                         {t('about.principles')}
                       </h6>
                       <ul className="personal-list">
                         {personal.principles.map((principle, index) => (
-                          <li key={index} style={{ marginBottom: '0.5rem' }}>
-                            {principle}
-                          </li>
+                          <li key={index}>{principle}</li>
                         ))}
                       </ul>
                     </div>
@@ -750,7 +740,7 @@ export default function Home() {
             <Col lg={8} className="mx-auto">
               <Card className="border-0 shadow-sm personal-card contact-card">
                 <Card.Body className="text-center p-4">
-                  <h2 className="mb-4" style={{ color: '#3e2723' }}>
+                  <h2 className="mb-4 contact-card__title">
                     {t('connect.title')}
                   </h2>
                   <p className="text-muted mb-4">

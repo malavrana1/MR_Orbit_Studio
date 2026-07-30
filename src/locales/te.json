@@ -83,7 +83,7 @@
     "resumePdfTitle": "పునఃప్రారంభం (PDF — తెరవండి లేదా సేవ్ చేయండి)",
     "githubProfileTitle": "GitHub ప్రొఫైల్‌ని వీక్షించండి",
     "linkedinProfileTitle": "లింక్డ్‌ఇన్‌లో కనెక్ట్ అవ్వండి",
-    "sharePortfolioTitle": "షేర్ పోర్ట్‌ఫోలియో",
+    "sharePortfolioTitle": "పోర్ట్‌ఫోలియోను షేర్ చేయండి",
     "emailTitle": "Email me",
     "contactFormTitle": "సంప్రదింపు ఫారమ్"
   },
@@ -158,7 +158,10 @@
         "2": "హైకింగ్",
         "3": "సంగీతం",
         "4": "వంట",
-        "5": "DIY ప్రాజెక్ట్‌లు"
+        "5": "DIY ప్రాజెక్ట్‌లు",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "వినియోగదారులకు ఏమి అవసరమో దానిపై దృష్టి పెట్టండి",

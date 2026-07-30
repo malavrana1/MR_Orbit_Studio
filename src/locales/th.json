@@ -83,7 +83,7 @@
     "resumePdfTitle": "ดำเนินการต่อ (PDF — เปิดหรือบันทึก)",
     "githubProfileTitle": "ดูโปรไฟล์ GitHub",
     "linkedinProfileTitle": "เชื่อมต่อบน LinkedIn",
-    "sharePortfolioTitle": "แบ่งปันพอร์ตโฟลิโอ",
+    "sharePortfolioTitle": "แชร์ผลงาน",
     "emailTitle": "Email me",
     "contactFormTitle": "แบบฟอร์มการติดต่อ"
   },
@@ -158,7 +158,10 @@
         "2": "การเดินป่า",
         "3": "ดนตรี",
         "4": "การทำอาหาร",
-        "5": "โครงการ DIY"
+        "5": "โครงการ DIY",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "มุ่งเน้นไปที่สิ่งที่ผู้ใช้ต้องการ",

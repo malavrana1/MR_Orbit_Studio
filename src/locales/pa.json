@@ -83,7 +83,7 @@
     "resumePdfTitle": "ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ (PDF — ਖੋਲ੍ਹੋ ਜਾਂ ਸੁਰੱਖਿਅਤ ਕਰੋ)",
     "githubProfileTitle": "GitHub ਪ੍ਰੋਫਾਈਲ ਦੇਖੋ",
     "linkedinProfileTitle": "LinkedIn 'ਤੇ ਜੁੜੋ",
-    "sharePortfolioTitle": "ਸ਼ੇਅਰ ਪੋਰਟਫੋਲੀਓ",
+    "sharePortfolioTitle": "ਪੋਰਟਫੋਲੀਓ ਸਾਂਝਾ ਕਰੋ",
     "emailTitle": "Email me",
     "contactFormTitle": "ਸੰਪਰਕ ਫਾਰਮ"
   },
@@ -158,7 +158,10 @@
         "2": "ਹਾਈਕਿੰਗ",
         "3": "ਸੰਗੀਤ",
         "4": "ਖਾਣਾ ਬਣਾਉਣਾ",
-        "5": "DIY ਪ੍ਰੋਜੈਕਟ"
+        "5": "DIY ਪ੍ਰੋਜੈਕਟ",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "ਉਪਭੋਗਤਾਵਾਂ ਦੀ ਲੋੜ 'ਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ ਕਰੋ",

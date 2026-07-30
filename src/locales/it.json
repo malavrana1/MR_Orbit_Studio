@@ -83,7 +83,7 @@
     "resumePdfTitle": "Curriculum vitae (PDF – apri o salva)",
     "githubProfileTitle": "Visualizza il profilo GitHub",
     "linkedinProfileTitle": "Connettiti su LinkedIn",
-    "sharePortfolioTitle": "Portafoglio azionario",
+    "sharePortfolioTitle": "Condividi portfolio",
     "emailTitle": "Email me",
     "contactFormTitle": "Modulo di contatto"
   },
@@ -158,7 +158,10 @@
         "2": "Escursionismo",
         "3": "Musica",
         "4": "Cucina",
-        "5": "Progetti fai da te"
+        "5": "Progetti fai da te",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Concentrati su ciò di cui gli utenti hanno bisogno",

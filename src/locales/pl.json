@@ -83,7 +83,7 @@
     "resumePdfTitle": "CV (PDF — otwórz lub zapisz)",
     "githubProfileTitle": "Wyświetl profil GitHub",
     "linkedinProfileTitle": "Połącz się na LinkedIn",
-    "sharePortfolioTitle": "Udostępnij portfel",
+    "sharePortfolioTitle": "Udostępnij portfolio",
     "emailTitle": "Email me",
     "contactFormTitle": "Formularz kontaktowy"
   },
@@ -158,7 +158,10 @@
         "2": "Turystyka piesza",
         "3": "Muzyka",
         "4": "Gotowanie",
-        "5": "Projekty DIY"
+        "5": "Projekty DIY",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Skoncentruj się na potrzebach użytkowników",

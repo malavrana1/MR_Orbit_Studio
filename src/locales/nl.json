@@ -83,7 +83,7 @@
     "resumePdfTitle": "CV (PDF - openen of opslaan)",
     "githubProfileTitle": "Bekijk GitHub-profiel",
     "linkedinProfileTitle": "Maak verbinding op LinkedIn",
-    "sharePortfolioTitle": "Aandelenportefeuille",
+    "sharePortfolioTitle": "Portfolio delen",
     "emailTitle": "Email me",
     "contactFormTitle": "Contactformulier"
   },
@@ -158,7 +158,10 @@
         "2": "Hiking",
         "3": "Muziek",
         "4": "Koken",
-        "5": "DIY-projecten"
+        "5": "DIY-projecten",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Focus op wat gebruikers nodig hebben",

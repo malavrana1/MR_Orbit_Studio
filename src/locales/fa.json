@@ -83,7 +83,7 @@
     "resumePdfTitle": "رزومه (PDF - باز کردن یا ذخیره)",
     "githubProfileTitle": "نمایه GitHub را مشاهده کنید",
     "linkedinProfileTitle": "در لینکدین وصل شوید",
-    "sharePortfolioTitle": "نمونه کارها را به اشتراک بگذارید",
+    "sharePortfolioTitle": "اشتراک‌گذاری نمونه‌کارها",
     "emailTitle": "Email me",
     "contactFormTitle": "فرم تماس"
   },
@@ -158,7 +158,10 @@
         "2": "پیاده روی",
         "3": "موسیقی",
         "4": "آشپزی",
-        "5": "پروژه های DIY"
+        "5": "پروژه های DIY",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "بر آنچه کاربران نیاز دارند تمرکز کنید",

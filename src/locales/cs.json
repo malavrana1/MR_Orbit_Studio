@@ -83,7 +83,7 @@
     "resumePdfTitle": "Pokračovat (PDF — otevřít nebo uložit)",
     "githubProfileTitle": "Zobrazit profil na GitHubu",
     "linkedinProfileTitle": "Připojte se na LinkedIn",
-    "sharePortfolioTitle": "Podílové portfolio",
+    "sharePortfolioTitle": "Sdílet portfolio",
     "emailTitle": "Email me",
     "contactFormTitle": "Kontaktní formulář"
   },
@@ -158,7 +158,10 @@
         "2": "Turistika",
         "3": "Hudba",
         "4": "Vaření",
-        "5": "DIY projekty"
+        "5": "DIY projekty",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Zaměřte se na to, co uživatelé potřebují",

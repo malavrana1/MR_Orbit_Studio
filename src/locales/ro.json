@@ -83,7 +83,7 @@
     "resumePdfTitle": "Reluați (PDF - deschideți sau salvați)",
     "githubProfileTitle": "Vezi profilul GitHub",
     "linkedinProfileTitle": "Conectați-vă pe LinkedIn",
-    "sharePortfolioTitle": "Partajați portofoliul",
+    "sharePortfolioTitle": "Distribuie portofoliul",
     "emailTitle": "Email me",
     "contactFormTitle": "Formular de contact"
   },
@@ -158,7 +158,10 @@
         "2": "Drumeții",
         "3": "Muzică",
         "4": "Gătitul",
-        "5": "Proiecte de bricolaj"
+        "5": "Proiecte de bricolaj",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Concentrați-vă pe ceea ce au nevoie utilizatorii",

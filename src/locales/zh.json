@@ -83,7 +83,7 @@
     "resumePdfTitle": "简历（PDF — 打开或保存）",
     "githubProfileTitle": "查看 GitHub 个人资料",
     "linkedinProfileTitle": "在 LinkedIn 上联系",
-    "sharePortfolioTitle": "分享投资组合",
+    "sharePortfolioTitle": "分享作品集",
     "emailTitle": "Email me",
     "contactFormTitle": "联系表"
   },
@@ -154,11 +154,14 @@
       "whatFuelsMe": "我每天都会从自己的爱好中汲取同样的能量和兴趣来构建产品。 无论是偶尔打网球、DIY 项目还是解决编码问题，我都喜欢学习和创造。",
       "interests": {
         "0": "网球",
-        "1": "蟋蟀",
+        "1": "板球",
         "2": "远足",
         "3": "音乐",
         "4": "烹饪",
-        "5": "DIY项目"
+        "5": "DIY项目",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "关注用户需求",

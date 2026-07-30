@@ -83,7 +83,7 @@
     "resumePdfTitle": "履歴書 (PDF — 開くか保存)",
     "githubProfileTitle": "GitHub プロフィールを表示",
     "linkedinProfileTitle": "LinkedIn で接続する",
-    "sharePortfolioTitle": "株式ポートフォリオ",
+    "sharePortfolioTitle": "ポートフォリオを共有",
     "emailTitle": "Email me",
     "contactFormTitle": "お問い合わせフォーム"
   },
@@ -158,7 +158,10 @@
         "2": "ハイキング",
         "3": "音楽",
         "4": "料理",
-        "5": "DIY プロジェクト"
+        "5": "DIY プロジェクト",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "ユーザーが必要としているものに焦点を当てる",

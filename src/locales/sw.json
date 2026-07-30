@@ -83,7 +83,7 @@
     "resumePdfTitle": "Endelea (PDF - fungua au uhifadhi)",
     "githubProfileTitle": "Tazama wasifu wa GitHub",
     "linkedinProfileTitle": "Unganisha kwenye LinkedIn",
-    "sharePortfolioTitle": "Shiriki kwingineko",
+    "sharePortfolioTitle": "Shiriki portfolio",
     "emailTitle": "Email me",
     "contactFormTitle": "Fomu ya mawasiliano"
   },
@@ -158,7 +158,10 @@
         "2": "Kutembea kwa miguu",
         "3": "Muziki",
         "4": "Kupika",
-        "5": "Miradi ya DIY"
+        "5": "Miradi ya DIY",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "Kuzingatia kile watumiaji wanahitaji",

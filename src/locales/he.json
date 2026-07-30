@@ -83,7 +83,7 @@
     "resumePdfTitle": "קורות חיים (PDF - פתח או שמור)",
     "githubProfileTitle": "צפה בפרופיל GitHub",
     "linkedinProfileTitle": "התחבר בלינקדאין",
-    "sharePortfolioTitle": "תיק מניות",
+    "sharePortfolioTitle": "שתף תיק עבודות",
     "emailTitle": "Email me",
     "contactFormTitle": "טופס יצירת קשר"
   },
@@ -158,7 +158,10 @@
         "2": "טיול רגלי",
         "3": "מוּסִיקָה",
         "4": "בישול",
-        "5": "פרויקטי עשה זאת בעצמך"
+        "5": "פרויקטי עשה זאת בעצמך",
+        "6": "Travel",
+        "7": "Photography",
+        "8": "Trying New Things"
       },
       "principles": {
         "0": "התמקד במה שהמשתמשים צריכים",
