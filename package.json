@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.7.0",
+    "firebase-tools": "13",
     "google-translate-api-x": "^10.7.3",
     "prettier": "^3.9.6",
     "vite": "^6.3.5"
