@@ -31,17 +31,21 @@ export function ScrollProvider({ children }) {
         setIsScrolled((prev) => (prev === nextScrolled ? prev : nextScrolled))
         setShowScrollTop((prev) => (prev === nextShowTop ? prev : nextShowTop))
 
-        const currentSection = navSectionIds.find((section) => {
+        const probeY = 120
+        let currentSection = navSectionIds[0] || 'home'
+        for (let i = navSectionIds.length - 1; i >= 0; i -= 1) {
+          const section = navSectionIds[i]
           const element = document.getElementById(section)
-          if (!element) return false
+          if (!element) continue
           const rect = element.getBoundingClientRect()
-          return rect.top <= 100 && rect.bottom >= 100
-        })
-        if (currentSection) {
-          setActiveSection((prev) =>
-            prev === currentSection ? prev : currentSection,
-          )
+          if (rect.top <= probeY) {
+            currentSection = section
+            break
+          }
         }
+        setActiveSection((prev) =>
+          prev === currentSection ? prev : currentSection,
+        )
 
         ticking = false
       })

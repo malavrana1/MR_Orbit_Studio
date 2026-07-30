@@ -132,12 +132,9 @@ export default function Home() {
   }, [profile, skillCategories])
 
   return (
-    <div className="landing-page" id="home">
+    <div className="landing-page" id="main-content">
       <div className="animated-background" />
-      <header
-        className="landing-hero d-flex align-items-center"
-        id="main-content"
-      >
+      <header className="landing-hero d-flex align-items-center" id="home">
         <div className="landing-hero__background-image" />
         <div className="landing-hero__overlay" />
         <div className="landing-hero__pattern" />
