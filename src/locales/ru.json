@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Главная",
-    "summary": "Обзор",
     "toolkit": "Инструменты",
     "experience": "Опыт",
     "education": "Education",
-    "credentials": "Образование",
     "projects": "Проекты",
-    "about": "Обо мне",
     "connect": "Связь"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Навыки, которые держат работу в потоке."
   },
   "credentials": {
-    "educationAndCerts": "Образование и сертификаты",
     "education": "Образование"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Свяжитесь со мной",
     "description": "Открыт к новым проектам, сотрудничеству и возможностям. Выберите способ связи или посмотрите резюме и работы.",
-    "resume": "Резюме",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Поделиться",
@@ -96,8 +91,7 @@
     "backToTop": "Наверх"
   },
   "meta": {
-    "portfolioSuffix": "Портфолио frontend-инженера",
-    "pageTitleSuffix": "Портфолио"
+    "portfolioSuffix": "Портфолио frontend-инженера"
   },
   "contact": {
     "title": "Связаться",
@@ -126,7 +120,6 @@
     "cancel": "Отмена",
     "sending": "Отправка…",
     "send": "Отправить",
-    "certAria": "Открыть сертификат {{name}}",
     "validation": {
       "emailRequired": "Укажите email.",
       "emailInvalid": "Введите корректный email.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020 г."
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Практический опыт работы с React.js, Next.js, Angular и Vue.js с использованием TypeScript, современного CSS (Tailwind, Styled Components, CSS Modules) и адаптивного дизайна. Удобство перехода от передачи Figma к производственным сборкам с помощью Webpack, Vite и Babel.",
       "Backend___API": "Интегрирует службы REST и GraphQL с безопасными шаблонами — JWT, OAuth, CORS — и работает вместе с серверными модулями Node.js, Java и Spring Boot для пользовательских интерфейсов, управляемых данными.",

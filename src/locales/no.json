@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Hjem",
-    "summary": "Sammendrag",
     "toolkit": "Verktøysett",
     "experience": "Erfaring",
     "education": "Education",
-    "credentials": "Legitimasjon",
     "projects": "Prosjekter",
-    "about": "Om",
     "connect": "Koble til"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Ferdigheter som gjør at arbeidet flyter jevnt."
   },
   "credentials": {
-    "educationAndCerts": "Utdanning og sertifiseringer",
     "education": "Utdannelse"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "La oss koble til",
     "description": "Jeg er åpen for nye prosjekter, samarbeid og faglige muligheter. Velg en måte å nå ut eller utforske CV-en og jobben min.",
-    "resume": "Gjenoppta",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Dele",
@@ -96,8 +91,7 @@
     "backToTop": "Tilbake til toppen"
   },
   "meta": {
-    "portfolioSuffix": "Frontend Engineer Portfolio",
-    "pageTitleSuffix": "Portefølje"
+    "portfolioSuffix": "Frontend Engineer Portfolio"
   },
   "contact": {
     "title": "Ta kontakt",
@@ -126,7 +120,6 @@
     "cancel": "Kansellere",
     "sending": "Sender …",
     "send": "Send melding",
-    "certAria": "Se {{name}} sertifikat",
     "validation": {
       "emailRequired": "E-post er påkrevd.",
       "emailInvalid": "Vennligst skriv inn en gyldig e-postadresse.",
@@ -274,7 +267,6 @@
         "period": "2016 – 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Praktisk opplevelse på tvers av React.js, Next.js, Angular og Vue.js med TypeScript, moderne CSS (Tailwind, Styled Components, CSS-moduler) og responsiv design. Komfortabel fra Figma-overlevering gjennom produksjonsbygg med Webpack, Vite og Babel.",
       "Backend___API": "Integrerer REST- og GraphQL-tjenester med sikre mønstre – JWT, OAuth, CORS – og fungerer sammen med Node.js, Java og Spring Boot-backends for datadrevne brukergrensesnitt.",

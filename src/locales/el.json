@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Σπίτι",
-    "summary": "Περίληψη",
     "toolkit": "Εργαλειοθήκη",
     "experience": "Εμπειρία",
     "education": "Education",
-    "credentials": "Διαπιστευτήρια",
     "projects": "Έργα",
-    "about": "Για",
     "connect": "Συνδέω"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Δεξιότητες που διατηρούν την ομαλή ροή της εργασίας."
   },
   "credentials": {
-    "educationAndCerts": "Εκπαίδευση & Πιστοποιήσεις",
     "education": "Εκπαίδευση"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Ας Συνδεθούμε",
     "description": "Είμαι ανοιχτός σε νέα έργα, συνεργασίες και επαγγελματικές ευκαιρίες. Επιλέξτε έναν τρόπο προσέγγισης ή εξερεύνησης του βιογραφικού και της εργασίας μου.",
-    "resume": "Περίληψη",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Μερίδιο",
@@ -96,8 +91,7 @@
     "backToTop": "Επιστροφή στην κορυφή"
   },
   "meta": {
-    "portfolioSuffix": "Portfolio Μηχανικών Frontend",
-    "pageTitleSuffix": "Χαρτοφυλάκιο"
+    "portfolioSuffix": "Portfolio Μηχανικών Frontend"
   },
   "contact": {
     "title": "Επικοινωνήστε",
@@ -126,7 +120,6 @@
     "cancel": "Ματαίωση",
     "sending": "Αποστολή…",
     "send": "Αποστολή μηνύματος",
-    "certAria": "Προβολή πιστοποιητικού {{name}}",
     "validation": {
       "emailRequired": "Απαιτείται email.",
       "emailInvalid": "Εισαγάγετε μια έγκυρη διεύθυνση email.",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Πρακτική εμπειρία σε React.js, Next.js, Angular και Vue.js με TypeScript, μοντέρνο CSS (Tailwind, Styled Components, CSS Modules) και σχεδίαση με απόκριση. Άνετα από την παράδοση του Figma μέσω των εκδόσεων παραγωγής με Webpack, Vite και Babel.",
       "Backend___API": "Ενσωματώνει υπηρεσίες REST και GraphQL με ασφαλή μοτίβα—JWT, OAuth, CORS—και λειτουργεί παράλληλα με τα backends Node.js, Java και Spring Boot για UI που βασίζονται σε δεδομένα.",

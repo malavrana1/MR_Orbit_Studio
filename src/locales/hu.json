@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Otthon",
-    "summary": "Összegzés",
     "toolkit": "Eszközkészlet",
     "experience": "Tapasztalat",
     "education": "Education",
-    "credentials": "Hitelesítő adatok",
     "projects": "Projektek",
-    "about": "Körülbelül",
     "connect": "Csatlakozás"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Olyan készségek, amelyek zökkenőmentesen biztosítják a munkát."
   },
   "credentials": {
-    "educationAndCerts": "Oktatás és bizonyítványok",
     "education": "Oktatás"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Csatlakozzunk",
     "description": "Nyitott vagyok új projektekre, együttműködésekre és szakmai lehetőségekre. Válassza ki a módját, hogy elérje, vagy fedezze fel az önéletrajzomat és a munkámat.",
-    "resume": "Folytatás",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Részesedés",
@@ -96,8 +91,7 @@
     "backToTop": "Vissza az elejére"
   },
   "meta": {
-    "portfolioSuffix": "Frontend Engineer Portfolio",
-    "pageTitleSuffix": "Portfólió"
+    "portfolioSuffix": "Frontend Engineer Portfolio"
   },
   "contact": {
     "title": "Vegye fel a kapcsolatot",
@@ -126,7 +120,6 @@
     "cancel": "Mégsem",
     "sending": "Küldés…",
     "send": "Üzenet küldése",
-    "certAria": "{{name}} tanúsítvány megtekintése",
     "validation": {
       "emailRequired": "E-mail megadása kötelező.",
       "emailInvalid": "Kérjük, adjon meg egy érvényes e-mail címet.",
@@ -274,7 +267,6 @@
         "period": "2016-2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Gyakorlati tapasztalat a React.js, Next.js, Angular és Vue.js területén TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules) és reszponzív tervezés segítségével. Kényelmes a Figma átadásától kezdve a Webpack, Vite és Babel gyártási verzióiig.",
       "Backend___API": "Integrálja a REST és a GraphQL szolgáltatásokat biztonságos mintákkal – JWT, OAuth, CORS –, és a Node.js, Java és Spring Boot háttérrendszerekkel együtt működik az adatvezérelt felhasználói felületekhez.",

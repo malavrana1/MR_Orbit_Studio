@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Bahay",
-    "summary": "Buod",
     "toolkit": "Toolkit",
     "experience": "Karanasan",
     "education": "Education",
-    "credentials": "Mga kredensyal",
     "projects": "Mga proyekto",
-    "about": "Tungkol sa",
     "connect": "Kumonekta"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Mga kasanayan na nagpapanatili ng maayos na daloy ng trabaho."
   },
   "credentials": {
-    "educationAndCerts": "Edukasyon at Sertipikasyon",
     "education": "Edukasyon"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Kumonekta tayo",
     "description": "Bukas ako sa mga bagong proyekto, pakikipagtulungan, at mga pagkakataong propesyonal. Pumili ng paraan para maabot o ma-explore ang aking resume at trabaho.",
-    "resume": "Ipagpatuloy",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Ibahagi",
@@ -96,8 +91,7 @@
     "backToTop": "Bumalik sa itaas"
   },
   "meta": {
-    "portfolioSuffix": "Portfolio ng Frontend Engineer",
-    "pageTitleSuffix": "Portfolio"
+    "portfolioSuffix": "Portfolio ng Frontend Engineer"
   },
   "contact": {
     "title": "Makipag-ugnayan",
@@ -126,7 +120,6 @@
     "cancel": "Kanselahin",
     "sending": "Ipinapadala…",
     "send": "Magpadala ng Mensahe",
-    "certAria": "Tingnan ang {{name}} na sertipiko",
     "validation": {
       "emailRequired": "Kinakailangan ang email.",
       "emailInvalid": "Mangyaring magpasok ng wastong email address.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Hands-on na karanasan sa React.js, Next.js, Angular, at Vue.js gamit ang TypeScript, modernong CSS (Tailwind, Styled Components, CSS Module), at tumutugon na disenyo. Kumportable mula sa Figma handoff sa pamamagitan ng production build gamit ang Webpack, Vite, at Babel.",
       "Backend___API": "Pinagsasama ang mga serbisyo ng REST at GraphQL na may mga secure na pattern—JWT, OAuth, CORS—at gumagana sa tabi ng Node.js, Java, at Spring Boot backend para sa mga UI na hinihimok ng data.",

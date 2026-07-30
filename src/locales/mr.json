@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "घर",
-    "summary": "सारांश",
     "toolkit": "टूलकिट",
     "experience": "अनुभव",
     "education": "Education",
-    "credentials": "ओळखपत्रे",
     "projects": "प्रकल्प",
-    "about": "बद्दल",
     "connect": "कनेक्ट करा"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "कार्य सुरळीतपणे चालू ठेवणारी कौशल्ये."
   },
   "credentials": {
-    "educationAndCerts": "शिक्षण आणि प्रमाणपत्रे",
     "education": "शिक्षण"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "चला कनेक्ट करूया",
     "description": "मी नवीन प्रकल्प, सहयोग आणि व्यावसायिक संधींसाठी खुला आहे. माझ्या रेझ्युमे आणि कार्यापर्यंत पोहोचण्याचा किंवा एक्सप्लोर करण्याचा मार्ग निवडा.",
-    "resume": "पुन्हा सुरू करा",
     "github": "GitHub",
     "linkedin": "लिंक्डइन",
     "share": "शेअर करा",
@@ -96,8 +91,7 @@
     "backToTop": "वर परत"
   },
   "meta": {
-    "portfolioSuffix": "फ्रंटएंड इंजिनियर पोर्टफोलिओ",
-    "pageTitleSuffix": "पोर्टफोलिओ"
+    "portfolioSuffix": "फ्रंटएंड इंजिनियर पोर्टफोलिओ"
   },
   "contact": {
     "title": "संपर्कात रहा",
@@ -126,7 +120,6 @@
     "cancel": "रद्द करा",
     "sending": "पाठवत आहे...",
     "send": "संदेश पाठवा",
-    "certAria": "{{name}} प्रमाणपत्र पहा",
     "validation": {
       "emailRequired": "ईमेल आवश्यक आहे.",
       "emailInvalid": "कृपया वैध ईमेल पत्ता प्रविष्ट करा.",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "TypeScript, आधुनिक CSS (Tailwind, Styled Components, CSS Modules) आणि प्रतिसादात्मक डिझाइनसह React.js, Next.js, Angular आणि Vue.js वर हँड्स-ऑन अनुभव. Webpack, Vite आणि Babel सह प्रोडक्शन बिल्डद्वारे फिग्मा हँडऑफपासून आरामदायी.",
       "Backend___API": "सुरक्षित नमुन्यांसह REST आणि GraphQL सेवा एकत्रित करते—JWT, OAuth, CORS—आणि डेटा-चालित UI साठी Node.js, Java आणि स्प्रिंग बूट बॅकएंडसह कार्य करते.",

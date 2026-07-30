@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Rumah",
-    "summary": "Ringkasan",
     "toolkit": "Kit alat",
     "experience": "Pengalaman",
     "education": "Education",
-    "credentials": "Tauliah",
     "projects": "Projek",
-    "about": "Tentang",
     "connect": "Sambung"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Kemahiran yang memastikan kerja berjalan lancar."
   },
   "credentials": {
-    "educationAndCerts": "Pendidikan & Pensijilan",
     "education": "Pendidikan"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Mari Berhubung",
     "description": "Saya terbuka kepada projek baharu, kerjasama dan peluang profesional. Pilih cara untuk menghubungi atau meneroka resume dan kerja saya.",
-    "resume": "Sambung semula",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Kongsi",
@@ -96,8 +91,7 @@
     "backToTop": "Kembali ke atas"
   },
   "meta": {
-    "portfolioSuffix": "Portfolio Jurutera Bahagian Hadapan",
-    "pageTitleSuffix": "Portfolio"
+    "portfolioSuffix": "Portfolio Jurutera Bahagian Hadapan"
   },
   "contact": {
     "title": "Hubungi",
@@ -126,7 +120,6 @@
     "cancel": "Batal",
     "sending": "Menghantar…",
     "send": "Hantar Mesej",
-    "certAria": "Lihat sijil {{name}}",
     "validation": {
       "emailRequired": "E-mel diperlukan.",
       "emailInvalid": "Sila masukkan alamat e-mel yang sah.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Pengalaman praktikal merentas React.js, Next.js, Angular dan Vue.js dengan TypeScript, CSS moden (Tailwind, Komponen Bergaya, Modul CSS) dan reka bentuk responsif. Selesa daripada penyerahan Figma melalui binaan pengeluaran dengan Webpack, Vite dan Babel.",
       "Backend___API": "Mengintegrasikan perkhidmatan REST dan GraphQL dengan corak selamat—JWT, OAuth, CORS—dan berfungsi bersama hujung belakang Node.js, Java dan Spring Boot untuk UI dipacu data.",

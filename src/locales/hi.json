@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "होम",
-    "summary": "सारांश",
     "toolkit": "टूलकिट",
     "experience": "अनुभव",
     "education": "Education",
-    "credentials": "योग्यता",
     "projects": "प्रोजेक्ट",
-    "about": "मेरे बारे में",
     "connect": "संपर्क"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "वे कौशल जो काम को सुचारू रखते हैं।"
   },
   "credentials": {
-    "educationAndCerts": "शिक्षा और प्रमाणपत्र",
     "education": "शिक्षा"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "जुड़ें",
     "description": "नए प्रोजेक्ट, सहयोग और अवसरों के लिए खुला हूँ। संपर्क का तरीका चुनें या रिज़्यूमे और काम देखें।",
-    "resume": "रिज़्यूमे",
     "github": "GitHub",
     "linkedin": "Linkedin",
     "share": "शेयर",
@@ -96,8 +91,7 @@
     "backToTop": "वापस ऊपर"
   },
   "meta": {
-    "portfolioSuffix": "फ्रंटएंड इंजीनियर पोर्टफोलियो",
-    "pageTitleSuffix": "पोर्टफोलियो"
+    "portfolioSuffix": "फ्रंटएंड इंजीनियर पोर्टफोलियो"
   },
   "contact": {
     "title": "संपर्क करें",
@@ -126,7 +120,6 @@
     "cancel": "रद्द करें",
     "sending": "भेजा जा रहा है…",
     "send": "संदेश भेजें",
-    "certAria": "{{name}} प्रमाणपत्र देखें",
     "validation": {
       "emailRequired": "ईमेल आवश्यक है।",
       "emailInvalid": "मान्य ईमेल दर्ज करें।",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "टाइपस्क्रिप्ट, आधुनिक सीएसएस (टेलविंड, स्टाइल कंपोनेंट्स, सीएसएस मॉड्यूल) और रिस्पॉन्सिव डिज़ाइन के साथ React.js, Next.js, Angular और Vue.js में व्यावहारिक अनुभव। वेबपैक, वाइट और बेबेल के साथ प्रोडक्शन बिल्ड के माध्यम से फिग्मा हैंडऑफ़ से आरामदायक।",
       "Backend___API": "सुरक्षित पैटर्न-JWT, OAuth, CORS- के साथ REST और GraphQL सेवाओं को एकीकृत करता है और डेटा-संचालित UI के लिए Node.js, Java और स्प्रिंग बूट बैकएंड के साथ काम करता है।",

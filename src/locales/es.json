@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Inicio",
-    "summary": "Resumen",
     "toolkit": "Herramientas",
     "experience": "Experiencia",
     "education": "Education",
-    "credentials": "Credenciales",
     "projects": "Proyectos",
-    "about": "Sobre mí",
     "connect": "Contacto"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Habilidades que mantienen el trabajo fluido."
   },
   "credentials": {
-    "educationAndCerts": "Formación y certificaciones",
     "education": "Formación"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Conectemos",
     "description": "Estoy abierto a nuevos proyectos, colaboración y oportunidades profesionales. Elige cómo contactarme o revisa mi CV y trabajo.",
-    "resume": "Currículum",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Compartir",
@@ -96,8 +91,7 @@
     "backToTop": "Subir"
   },
   "meta": {
-    "portfolioSuffix": "Portafolio de ingeniero frontend",
-    "pageTitleSuffix": "Portafolio"
+    "portfolioSuffix": "Portafolio de ingeniero frontend"
   },
   "contact": {
     "title": "Contacto",
@@ -126,7 +120,6 @@
     "cancel": "Cancelar",
     "sending": "Enviando…",
     "send": "Enviar mensaje",
-    "certAria": "Ver certificado {{name}}",
     "validation": {
       "emailRequired": "El correo es obligatorio.",
       "emailInvalid": "Introduce un correo válido.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Experiencia práctica en React.js, Next.js, Angular y Vue.js con TypeScript, CSS moderno (Tailwind, componentes con estilo, módulos CSS) y diseño responsivo. Cómodo desde la transferencia de Figma hasta las compilaciones de producción con Webpack, Vite y Babel.",
       "Backend___API": "Integra servicios REST y GraphQL con patrones seguros (JWT, OAuth, CORS) y funciona junto con los backends de Node.js, Java y Spring Boot para interfaces de usuario basadas en datos.",

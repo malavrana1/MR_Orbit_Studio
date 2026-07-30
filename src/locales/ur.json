@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "گھر",
-    "summary": "خلاصہ",
     "toolkit": "ٹول کٹ",
     "experience": "تجربہ",
     "education": "Education",
-    "credentials": "اسناد",
     "projects": "پروجیکٹس",
-    "about": "کے بارے میں",
     "connect": "جڑیں۔"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "وہ ہنر جو کام کو آسانی سے جاری رکھتے ہیں۔"
   },
   "credentials": {
-    "educationAndCerts": "تعلیم اور سرٹیفیکیشن",
     "education": "تعلیم"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "آئیے جڑتے ہیں۔",
     "description": "میں نئے منصوبوں، تعاون اور پیشہ ورانہ مواقع کے لیے کھلا ہوں۔ میرے ریزیومے اور کام تک پہنچنے یا دریافت کرنے کا ایک طریقہ منتخب کریں۔",
-    "resume": "دوبارہ شروع کریں۔",
     "github": "گٹ ہب",
     "linkedin": "LinkedIn",
     "share": "شیئر کریں۔",
@@ -96,8 +91,7 @@
     "backToTop": "واپس اوپر"
   },
   "meta": {
-    "portfolioSuffix": "فرنٹ اینڈ انجینئر پورٹ فولیو",
-    "pageTitleSuffix": "پورٹ فولیو"
+    "portfolioSuffix": "فرنٹ اینڈ انجینئر پورٹ فولیو"
   },
   "contact": {
     "title": "رابطے میں رہیں",
@@ -126,7 +120,6 @@
     "cancel": "منسوخ کریں۔",
     "sending": "بھیج رہا ہے…",
     "send": "پیغام بھیجیں۔",
-    "certAria": "{{name}} سرٹیفکیٹ دیکھیں",
     "validation": {
       "emailRequired": "ای میل درکار ہے۔",
       "emailInvalid": "براہ کرم ایک درست ای میل ایڈریس درج کریں۔",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "TypeScript، جدید CSS (Tailwind، Styled Components، CSS ماڈیولز) اور ریسپانسیو ڈیزائن کے ساتھ React.js، Next.js، Angular، اور Vue.js پر ہینڈ آن تجربہ۔ ویب پیک، وائٹ اور بیبل کے ساتھ پروڈکشن کے ذریعے فگما ہینڈ آف سے آرام دہ۔",
       "Backend___API": "REST اور GraphQL سروسز کو محفوظ نمونوں کے ساتھ مربوط کرتا ہے — JWT, OAuth, CORS — اور ڈیٹا سے چلنے والے UIs کے لیے Node.js، Java، اور Spring Boot بیک اینڈز کے ساتھ کام کرتا ہے۔",

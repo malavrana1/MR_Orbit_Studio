@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "الرئيسية",
-    "summary": "ملخص",
     "toolkit": "الأدوات",
     "experience": "الخبرة",
     "education": "Education",
-    "credentials": "المؤهلات",
     "projects": "المشاريع",
-    "about": "عنّي",
     "connect": "تواصل"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "مهارات تبقي العمل سلسًا."
   },
   "credentials": {
-    "educationAndCerts": "التعليم والشهادات",
     "education": "التعليم"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "لنتواصل",
     "description": "منفتح على مشاريع جديدة وتعاون وفرص مهنية. اختر طريقة التواصل أو اطّلع على السيرة والأعمال.",
-    "resume": "السيرة الذاتية",
     "github": "جيثب",
     "linkedin": "ينكدين",
     "share": "مشاركة",
@@ -96,8 +91,7 @@
     "backToTop": "العودة لأعلى"
   },
   "meta": {
-    "portfolioSuffix": "معرض أعمال مهندس واجهات",
-    "pageTitleSuffix": "معرض الأعمال"
+    "portfolioSuffix": "معرض أعمال مهندس واجهات"
   },
   "contact": {
     "title": "تواصل معي",
@@ -126,7 +120,6 @@
     "cancel": "إلغاء",
     "sending": "جاري الإرسال…",
     "send": "إرسال الرسالة",
-    "certAria": "عرض شهادة {{name}}",
     "validation": {
       "emailRequired": "البريد الإلكتروني مطلوب.",
       "emailInvalid": "أدخل بريدًا إلكترونيًا صالحًا.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "خبرة عملية عبر React.js وNext.js وAngular وVue.js باستخدام TypeScript وCSS الحديث (Tailwind والمكونات المصممة ووحدات CSS) والتصميم سريع الاستجابة. مريح من تسليم Figma من خلال إصدارات الإنتاج باستخدام Webpack وVite وBabel.",
       "Backend___API": "يدمج خدمات REST وGraphQL مع الأنماط الآمنة - JWT وOAuth وCORS - ويعمل جنبًا إلى جنب مع واجهات Node.js وJava وSpring Boot الخلفية لواجهات المستخدم المستندة إلى البيانات.",

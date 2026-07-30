@@ -12,7 +12,6 @@ import {
   translateProjects,
   translateExperience,
   translateEducation,
-  translateCertifications,
   translateSkillDescriptions,
 } from '../i18n/content'
 
@@ -28,10 +27,6 @@ export function useLocalizedPortfolio() {
         ...resume,
         experience: translateExperience(t, resume.experience),
         education: translateEducation(t, resume.education),
-        certifications: translateCertifications(
-          t,
-          resume.certifications || [],
-        ),
         skillDescriptions: translateSkillDescriptions(
           t,
           resume.skillDescriptions,

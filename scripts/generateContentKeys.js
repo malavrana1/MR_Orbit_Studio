@@ -34,7 +34,6 @@ function buildContent() {
     projects: {},
     experience: {},
     education: {},
-    certifications: {},
     skillDescriptions: {},
     skillCategory: {},
   }
@@ -76,13 +75,6 @@ function buildContent() {
       institution: edu.institution,
       location: edu.location,
       period: edu.period,
-    }
-  })
-
-  ;(resume.certifications || []).forEach((cert, i) => {
-    content.certifications[String(i)] = {
-      name: cert.name,
-      issuer: cert.issuer,
     }
   })
 

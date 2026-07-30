@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "ਘਰ",
-    "summary": "ਸੰਖੇਪ",
     "toolkit": "ਟੂਲਕਿੱਟ",
     "experience": "ਅਨੁਭਵ",
     "education": "Education",
-    "credentials": "ਪ੍ਰਮਾਣ-ਪੱਤਰ",
     "projects": "ਪ੍ਰੋਜੈਕਟਸ",
-    "about": "ਬਾਰੇ",
     "connect": "ਜੁੜੋ"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "ਹੁਨਰ ਜੋ ਕੰਮ ਨੂੰ ਸੁਚਾਰੂ ਢੰਗ ਨਾਲ ਚਲਾਉਂਦੇ ਰਹਿੰਦੇ ਹਨ।"
   },
   "credentials": {
-    "educationAndCerts": "ਸਿੱਖਿਆ ਅਤੇ ਪ੍ਰਮਾਣੀਕਰਣ",
     "education": "ਸਿੱਖਿਆ"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "ਆਓ ਕਨੈਕਟ ਕਰੀਏ",
     "description": "ਮੈਂ ਨਵੇਂ ਪ੍ਰੋਜੈਕਟਾਂ, ਸਹਿਯੋਗ ਅਤੇ ਪੇਸ਼ੇਵਰ ਮੌਕਿਆਂ ਲਈ ਖੁੱਲ੍ਹਾ ਹਾਂ। ਮੇਰੇ ਰੈਜ਼ਿਊਮੇ ਅਤੇ ਕੰਮ ਤੱਕ ਪਹੁੰਚਣ ਜਾਂ ਪੜਚੋਲ ਕਰਨ ਦਾ ਤਰੀਕਾ ਚੁਣੋ।",
-    "resume": "ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ",
     "github": "GitHub",
     "linkedin": "ਲਿੰਕਡਇਨ",
     "share": "ਸ਼ੇਅਰ ਕਰੋ",
@@ -96,8 +91,7 @@
     "backToTop": "ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ"
   },
   "meta": {
-    "portfolioSuffix": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ ਪੋਰਟਫੋਲੀਓ",
-    "pageTitleSuffix": "ਪੋਰਟਫੋਲੀਓ"
+    "portfolioSuffix": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ ਪੋਰਟਫੋਲੀਓ"
   },
   "contact": {
     "title": "ਸੰਪਰਕ ਵਿੱਚ ਰਹੋ",
@@ -126,7 +120,6 @@
     "cancel": "ਰੱਦ ਕਰੋ",
     "sending": "ਭੇਜਿਆ ਜਾ ਰਿਹਾ ਹੈ...",
     "send": "ਸੁਨੇਹਾ ਭੇਜੋ",
-    "certAria": "{{name}} ਸਰਟੀਫਿਕੇਟ ਦੇਖੋ",
     "validation": {
       "emailRequired": "ਈਮੇਲ ਦੀ ਲੋੜ ਹੈ।",
       "emailInvalid": "ਇੱਕ ਜਾਇਜ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ.",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "TypeScript, ਆਧੁਨਿਕ CSS (ਟੇਲਵਿੰਡ, ਸਟਾਈਲਡ ਕੰਪੋਨੈਂਟਸ, CSS ਮੋਡੀਊਲ), ਅਤੇ ਜਵਾਬਦੇਹ ਡਿਜ਼ਾਈਨ ਦੇ ਨਾਲ React.js, Next.js, Angular, ਅਤੇ Vue.js ਵਿੱਚ ਹੈਂਡ-ਆਨ ਅਨੁਭਵ। ਵੈਬਪੈਕ, ਵਾਈਟ, ਅਤੇ ਬੈਬਲ ਦੇ ਨਾਲ ਉਤਪਾਦਨ ਬਿਲਡ ਦੁਆਰਾ ਫਿਗਮਾ ਹੈਂਡਆਫ ਤੋਂ ਆਰਾਮਦਾਇਕ।",
       "Backend___API": "REST ਅਤੇ GraphQL ਸੇਵਾਵਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਪੈਟਰਨਾਂ ਨਾਲ ਜੋੜਦਾ ਹੈ—JWT, OAuth, CORS—ਅਤੇ ਡਾਟਾ-ਸੰਚਾਲਿਤ UIs ਲਈ Node.js, Java, ਅਤੇ Spring Boot ਬੈਕਐਂਡ ਦੇ ਨਾਲ ਕੰਮ ਕਰਦਾ ਹੈ।",

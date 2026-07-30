@@ -18,7 +18,6 @@ export function getCompanyLogo(companyKey) {
   return BY_COMPANY[companyKey] || null
 }
 
-/** Initials for monogram fallback when a logo file is missing or fails. */
 export function getCompanyInitials(companyName = '') {
   const words = String(companyName)
     .replace(/[^a-zA-Z0-9\s]/g, ' ')

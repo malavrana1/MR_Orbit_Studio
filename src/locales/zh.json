@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "首页",
-    "summary": "概要",
     "toolkit": "工具集",
     "experience": "经历",
     "education": "Education",
-    "credentials": "资质",
     "projects": "项目",
-    "about": "关于",
     "connect": "联系"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "让工作顺畅推进的技能。"
   },
   "credentials": {
-    "educationAndCerts": "教育与认证",
     "education": "教育"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "取得联系",
     "description": "欢迎新项目、合作与职业机会。选择联系方式，或查看简历与作品。",
-    "resume": "简历",
     "github": "GitHub",
     "linkedin": "领英",
     "share": "分享",
@@ -96,8 +91,7 @@
     "backToTop": "返回顶部"
   },
   "meta": {
-    "portfolioSuffix": "前端工程师作品集",
-    "pageTitleSuffix": "作品集"
+    "portfolioSuffix": "前端工程师作品集"
   },
   "contact": {
     "title": "联系",
@@ -126,7 +120,6 @@
     "cancel": "取消",
     "sending": "发送中…",
     "send": "发送消息",
-    "certAria": "查看 {{name}} 证书",
     "validation": {
       "emailRequired": "请填写邮箱。",
       "emailInvalid": "请输入有效邮箱。",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "通过 TypeScript、现代 CSS（Tailwind、样式化组件、CSS 模块）和响应式设计获得 React.js、Next.js、Angular 和 Vue.js 的实践经验。 从 Figma 切换到使用 Webpack、Vite 和 Babel 进行生产构建，一切都很轻松。",
       "Backend___API": "将 REST 和 GraphQL 服务与安全模式（JWT、OAuth、CORS）集成，并与 Node.js、Java 和 Spring Boot 后端一起使用，实现数据驱动的 UI。",

@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Rumah",
-    "summary": "Ringkasan",
     "toolkit": "Perangkat",
     "experience": "Pengalaman",
     "education": "Education",
-    "credentials": "Kredensial",
     "projects": "Proyek",
-    "about": "Tentang",
     "connect": "Menghubungkan"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Keterampilan yang membuat pekerjaan berjalan lancar."
   },
   "credentials": {
-    "educationAndCerts": "Pendidikan & Sertifikasi",
     "education": "Pendidikan"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Mari Terhubung",
     "description": "Saya terbuka untuk proyek baru, kolaborasi, dan peluang profesional. Pilih cara untuk menjangkau atau menjelajahi resume dan pekerjaan saya.",
-    "resume": "Melanjutkan",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Membagikan",
@@ -96,8 +91,7 @@
     "backToTop": "Kembali ke atas"
   },
   "meta": {
-    "portfolioSuffix": "Portofolio Insinyur Frontend",
-    "pageTitleSuffix": "Portofolio"
+    "portfolioSuffix": "Portofolio Insinyur Frontend"
   },
   "contact": {
     "title": "Hubungi kami",
@@ -126,7 +120,6 @@
     "cancel": "Membatalkan",
     "sending": "Mengirim…",
     "send": "Kirim Pesan",
-    "certAria": "Lihat sertifikat {{name}}",
     "validation": {
       "emailRequired": "Email diperlukan.",
       "emailInvalid": "Silakan masukkan alamat email yang valid.",
@@ -274,7 +267,6 @@
         "period": "2016—2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Pengalaman langsung di React.js, Next.js, Angular, dan Vue.js dengan TypeScript, CSS modern (Tailwind, Styled Components, CSS Modules), dan desain responsif. Nyaman dari penyerahan Figma hingga pembuatan produksi dengan Webpack, Vite, dan Babel.",
       "Backend___API": "Mengintegrasikan layanan REST dan GraphQL dengan pola aman—JWT, OAuth, CORS—dan bekerja bersama backend Node.js, Java, dan Spring Boot untuk UI berbasis data.",

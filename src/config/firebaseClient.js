@@ -20,11 +20,6 @@ function getOrInitApp() {
   return getApp()
 }
 
-/**
- * Resolves to the Analytics instance, or null if disabled / unsupported.
- * Firebase web config is public by design; protect the project with
- * API-key HTTP referrer restrictions in Google Cloud Console.
- */
 export function getAnalyticsInstance() {
   if (!shouldSendToFirebase()) {
     return Promise.resolve(null)

@@ -1,7 +1,3 @@
-/**
- * Only VITE_* values are available in the browser bundle.
- * Never put service accounts, private keys, or server secrets in VITE_* vars.
- */
 const raw = import.meta.env
 
 function read(key) {
@@ -27,10 +23,6 @@ export const publicEnv = Object.freeze({
     appId: read('VITE_FIREBASE_APP_ID'),
     measurementId: read('VITE_FIREBASE_MEASUREMENT_ID'),
   }),
-  /**
-   * Optional FormSubmit destination (email or FormSubmit form id).
-   * Prefer this over baking a mailbox into source defaults.
-   */
   contactFormEndpoint: read('VITE_CONTACT_FORM_ENDPOINT'),
   disableAnalytics: flag('VITE_DISABLE_ANALYTICS'),
   enableGaInDev: flag('VITE_ENABLE_GA_IN_DEV'),
@@ -42,9 +34,6 @@ export function hasFirebaseAnalyticsConfig() {
   return Boolean(apiKey && projectId && appId && measurementId)
 }
 
-/**
- * Builds the FormSubmit AJAX URL. Returns null when no safe destination exists.
- */
 export function getContactSubmitUrl(profileEmail = '') {
   const endpoint = publicEnv.contactFormEndpoint || String(profileEmail || '').trim()
   if (!endpoint) return null

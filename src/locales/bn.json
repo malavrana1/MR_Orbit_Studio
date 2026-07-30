@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "বাড়ি",
-    "summary": "সারাংশ",
     "toolkit": "টুলকিট",
     "experience": "অভিজ্ঞতা",
     "education": "Education",
-    "credentials": "শংসাপত্র",
     "projects": "প্রকল্প",
-    "about": "সম্পর্কে",
     "connect": "সংযোগ করুন"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "দক্ষতা যা কাজকে মসৃণভাবে প্রবাহিত রাখে।"
   },
   "credentials": {
-    "educationAndCerts": "শিক্ষা ও সার্টিফিকেশন",
     "education": "শিক্ষা"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "এর সংযোগ করা যাক",
     "description": "আমি নতুন প্রকল্প, সহযোগিতা এবং পেশাদার সুযোগের জন্য উন্মুক্ত। আমার জীবনবৃত্তান্ত এবং কাজের সাথে যোগাযোগ করার বা অন্বেষণ করার একটি উপায় বেছে নিন।",
-    "resume": "পুনরায় শুরু করুন",
     "github": "গিটহাব",
     "linkedin": "লিঙ্কডইন",
     "share": "শেয়ার করুন",
@@ -96,8 +91,7 @@
     "backToTop": "উপরে ফিরে যান"
   },
   "meta": {
-    "portfolioSuffix": "ফ্রন্টএন্ড ইঞ্জিনিয়ার পোর্টফোলিও",
-    "pageTitleSuffix": "পোর্টফোলিও"
+    "portfolioSuffix": "ফ্রন্টএন্ড ইঞ্জিনিয়ার পোর্টফোলিও"
   },
   "contact": {
     "title": "যোগাযোগ করুন",
@@ -126,7 +120,6 @@
     "cancel": "বাতিল করুন",
     "sending": "পাঠানো হচ্ছে...",
     "send": "বার্তা পাঠান",
-    "certAria": "{{name}} সার্টিফিকেট দেখুন",
     "validation": {
       "emailRequired": "ইমেল প্রয়োজন.",
       "emailInvalid": "একটি বৈধ ইমেল ঠিকানা লিখুন.",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "TypeScript, আধুনিক CSS (Tailwind, Styled Components, CSS মডিউল), এবং প্রতিক্রিয়াশীল ডিজাইন সহ React.js, Next.js, Angular, এবং Vue.js জুড়ে হ্যান্ডস-অন অভিজ্ঞতা। Webpack, Vite, এবং Babel সহ প্রোডাকশন বিল্ডের মাধ্যমে ফিগমা হ্যান্ডঅফ থেকে আরামদায়ক।",
       "Backend___API": "নিরাপদ নিদর্শনগুলির সাথে REST এবং GraphQL পরিষেবাগুলিকে একীভূত করে—JWT, OAuth, CORS—এবং ডেটা-চালিত UIগুলির জন্য Node.js, Java, এবং স্প্রিং বুট ব্যাকএন্ডের পাশাপাশি কাজ করে৷",

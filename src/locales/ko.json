@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "홈",
-    "summary": "요약",
     "toolkit": "툴킷",
     "experience": "경력",
     "education": "Education",
-    "credentials": "자격",
     "projects": "프로젝트",
-    "about": "소개",
     "connect": "연락"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "업무를 매끄럽게 이어가는 역량."
   },
   "credentials": {
-    "educationAndCerts": "학력 및 자격증",
     "education": "학력"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "연락하기",
     "description": "새 프로젝트, 협업, 기회에 열려 있습니다. 연락 방법을 고르거나 이력서와 작업을 확인하세요.",
-    "resume": "이력서",
     "github": "GitHub",
     "linkedin": "링크드인",
     "share": "공유",
@@ -96,8 +91,7 @@
     "backToTop": "맨 위로"
   },
   "meta": {
-    "portfolioSuffix": "프론트엔드 엔지니어 포트폴리오",
-    "pageTitleSuffix": "포트폴리오"
+    "portfolioSuffix": "프론트엔드 엔지니어 포트폴리오"
   },
   "contact": {
     "title": "문의",
@@ -126,7 +120,6 @@
     "cancel": "취소",
     "sending": "보내는 중…",
     "send": "보내기",
-    "certAria": "{{name}} 인증서 보기",
     "validation": {
       "emailRequired": "이메일은 필수입니다.",
       "emailInvalid": "유효한 이메일을 입력하세요.",
@@ -274,7 +267,6 @@
         "period": "2016년~2020년"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "TypeScript, 최신 CSS(Tailwind, 스타일 구성 요소, CSS 모듈) 및 반응형 디자인을 사용하여 React.js, Next.js, Angular 및 Vue.js에 대한 실무 경험을 제공합니다. Webpack, Vite 및 Babel을 사용한 프로덕션 빌드를 통해 Figma 핸드오프부터 편안합니다.",
       "Backend___API": "REST 및 GraphQL 서비스를 보안 패턴(JWT, OAuth, CORS)과 통합하고 데이터 기반 UI를 위해 Node.js, Java 및 Spring Boot 백엔드와 함께 작동합니다.",

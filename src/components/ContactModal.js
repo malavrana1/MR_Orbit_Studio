@@ -28,9 +28,11 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
   const [sendError, setSendError] = useState('')
   const [sendSuccess, setSendSuccess] = useState(false)
   const [validationErrors, setValidationErrors] = useState({})
+  const [emailCopied, setEmailCopied] = useState(false)
   const lastSubmitAtRef = useRef(0)
 
   const submitUrl = getContactSubmitUrl(toEmail)
+  const canSubmitRemote = Boolean(submitUrl)
 
   useEffect(() => {
     if (show) {
@@ -40,6 +42,7 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
       setValidationErrors({})
       setIsSending(false)
       setHoneypot('')
+      setEmailCopied(false)
     }
   }, [show])
 
@@ -55,6 +58,7 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
     setSendSuccess(false)
     setValidationErrors({})
     setIsSending(false)
+    setEmailCopied(false)
   }
 
   const validateForm = () => {
@@ -65,10 +69,6 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
     const name = sanitizeText(contactName, 100)
     const phone = sanitizeText(contactPhone, 40)
     const company = sanitizeText(contactCompany, 100)
-
-    if (!submitUrl) {
-      errors.form = t('contact.sendError')
-    }
 
     if (!email) {
       errors.email = t('contact.validation.emailRequired')
@@ -104,13 +104,59 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
     return Object.keys(errors).length === 0
   }
 
+  const buildMailtoHref = () => {
+    if (!toEmail) return null
+    const name = sanitizeText(contactName, 100) || 'Visitor'
+    const email = sanitizeText(contactEmail, 254)
+    const phone = sanitizeText(contactPhone, 40)
+    const company = sanitizeText(contactCompany, 100)
+    const subject = sanitizeText(contactSubject, 120)
+    const message = sanitizeText(contactMessage, 5000)
+    const body = [
+      message,
+      '',
+      `— ${name}`,
+      email ? `Email: ${email}` : '',
+      phone ? `Phone: ${phone}` : '',
+      company ? `Company: ${company}` : '',
+    ]
+      .filter(Boolean)
+      .join('\n')
+
+    const params = new URLSearchParams()
+    if (subject) params.set('subject', `${subject} — from ${name}`)
+    if (body) params.set('body', body)
+    return `mailto:${toEmail}?${params.toString()}`
+  }
+
+  const openMailtoFallback = () => {
+    const href = buildMailtoHref()
+    if (!href) {
+      setSendError(t('contact.sendError'))
+      return
+    }
+    window.location.href = href
+    analyticsService.trackContactForm('mailto_fallback')
+  }
+
+  const copyEmail = async () => {
+    if (!toEmail) return
+    try {
+      await navigator.clipboard.writeText(toEmail)
+      setEmailCopied(true)
+      analyticsService.trackClick('button', 'copy_email', 'Copy Email')
+      window.setTimeout(() => setEmailCopied(false), 2000)
+    } catch {
+      setSendError(t('contact.sendError'))
+    }
+  }
+
   const handleSendEmail = async (e) => {
     if (e) e.preventDefault()
 
     setSendError('')
     setValidationErrors({})
 
-    // Bot filled the hidden field — pretend success without sending.
     if (honeypot.trim()) {
       setSendSuccess(true)
       analyticsService.trackContactForm('send_blocked_bot')
@@ -128,9 +174,9 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
       return
     }
 
-    if (!submitUrl) {
-      setSendError(t('contact.sendError'))
-      analyticsService.trackContactForm('send_error')
+    if (!canSubmitRemote) {
+      lastSubmitAtRef.current = now
+      openMailtoFallback()
       return
     }
 
@@ -235,12 +281,34 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
             <div className="error-content">
               <h5>{t('contact.errorTitle')}</h5>
               <p>{sendError}</p>
+              {toEmail ? (
+                <div className="contact-direct-actions">
+                  <Button
+                    variant="outline-primary"
+                    size="sm"
+                    onClick={openMailtoFallback}
+                  >
+                    {t('contact.mailtoFallback')}
+                  </Button>
+                  <Button
+                    variant="outline-secondary"
+                    size="sm"
+                    onClick={copyEmail}
+                  >
+                    {emailCopied ? t('contact.emailCopied') : t('contact.copyEmail')}
+                  </Button>
+                </div>
+              ) : null}
             </div>
           </div>
         )}
         {!sendSuccess && (
           <Form onSubmit={handleSendEmail} id="contact-form" autoComplete="on">
-            {/* Honeypot — hidden from people, filled by many bots */}
+            {toEmail ? (
+              <p className="contact-direct-hint text-muted">
+                {t('contact.directEmailHint', { email: toEmail })}
+              </p>
+            ) : null}
             <div
               aria-hidden="true"
               style={{
@@ -428,11 +496,15 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
             <Button
               variant="primary"
               onClick={handleSendEmail}
-              disabled={isSending || !submitUrl}
+              disabled={isSending || (!canSubmitRemote && !toEmail)}
               form="contact-form"
               type="submit"
             >
-              {isSending ? t('contact.sending') : t('contact.send')}
+              {isSending
+                ? t('contact.sending')
+                : canSubmitRemote
+                  ? t('contact.send')
+                  : t('contact.mailtoFallback')}
             </Button>
           </>
         )}

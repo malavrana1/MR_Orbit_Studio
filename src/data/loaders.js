@@ -19,7 +19,6 @@ export function getNavConfig() {
         { label: 'Projects', href: '#projects' },
         { label: 'Toolkit', href: '#toolkit' },
         { label: 'Education', href: '#education' },
-        { label: 'About', href: '#about' },
         { label: 'Connect', href: '#connect' },
       ],
     }

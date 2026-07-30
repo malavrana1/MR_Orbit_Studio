@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "હોમ",
-    "summary": "સારાંશ",
     "toolkit": "ટૂલકિટ",
     "experience": "અનુભવ",
     "education": "Education",
-    "credentials": "પ્રમાણપત્રો",
     "projects": "પ્રોજેક્ટ્સ",
-    "about": "મારા વિશે",
     "connect": "સંપર્ક"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "એવા કૌશલ્ય જે કામ સરળ રાખે છે."
   },
   "credentials": {
-    "educationAndCerts": "શિક્ષણ અને પ્રમાણપત્રો",
     "education": "શિક્ષણ"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "ચાલો જોડાઈએ",
     "description": "હું નવા પ્રોજેક્ટ્સ, સહયોગ અને વ્યાવસાયિક તકો માટે ખુલ્લો છું. સંપર્ક કરવાનો રસ્તો પસંદ કરો અથવા રિઝ્યુમે અને કામ જુઓ.",
-    "resume": "રિઝ્યુમે",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "શેર કરો",
@@ -96,8 +91,7 @@
     "backToTop": "ફરી ટોચ પર"
   },
   "meta": {
-    "portfolioSuffix": "ફ્રન્ટએન્ડ એન્જિનિયર પોર્ટફોલિયો",
-    "pageTitleSuffix": "પોર્ટફોલિયો"
+    "portfolioSuffix": "ફ્રન્ટએન્ડ એન્જિનિયર પોર્ટફોલિયો"
   },
   "contact": {
     "title": "સંપર્કમાં રહો",
@@ -126,7 +120,6 @@
     "cancel": "રદ કરો",
     "sending": "મોકલાઈ રહ્યું છે…",
     "send": "સંદેશ મોકલો",
-    "certAria": "{{name}} પ્રમાણપત્ર જુઓ",
     "validation": {
       "emailRequired": "ઇમેઇલ જરૂરી છે.",
       "emailInvalid": "માન્ય ઇમેઇલ દાખલ કરો.",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "TypeScript, આધુનિક CSS (Tailwind, Styled Components, CSS મોડ્યુલ્સ) અને રિસ્પોન્સિવ ડિઝાઇન સાથે React.js, Next.js, Angular અને Vue.js પર હેન્ડ-ઓન ​​અનુભવ. Webpack, Vite અને Babel સાથે પ્રોડક્શન બિલ્ડ દ્વારા ફિગ્મા હેન્ડઓફથી આરામદાયક.",
       "Backend___API": "REST અને GraphQL સેવાઓને સુરક્ષિત પેટર્ન સાથે એકીકૃત કરે છે—JWT, OAuth, CORS—અને ડેટા-આધારિત UIs માટે Node.js, Java અને સ્પ્રિંગ બૂટ બેકએન્ડની સાથે કામ કરે છે.",

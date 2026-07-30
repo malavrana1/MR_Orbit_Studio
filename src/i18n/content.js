@@ -49,7 +49,6 @@ export function translateExperience(t, experience) {
     ...role,
     companyKey: role.company,
     role: tc(t, `experience.${i}.role`, role.role),
-    // Keep brand names stable while localizing the rest.
     company: role.company,
     location: tc(t, `experience.${i}.location`, role.location),
     period: tc(t, `experience.${i}.period`, role.period),
@@ -66,15 +65,6 @@ export function translateEducation(t, education) {
     institution: tc(t, `education.${i}.institution`, edu.institution),
     location: tc(t, `education.${i}.location`, edu.location),
     period: tc(t, `education.${i}.period`, edu.period),
-  }))
-}
-
-export function translateCertifications(t, certifications) {
-  if (!certifications?.length) return []
-  return certifications.map((cert, i) => ({
-    ...cert,
-    name: tc(t, `certifications.${i}.name`, cert.name),
-    issuer: tc(t, `certifications.${i}.issuer`, cert.issuer || ''),
   }))
 }
 

@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Hem",
-    "summary": "Sammanfattning",
     "toolkit": "Verktygslåda",
     "experience": "Uppleva",
     "education": "Education",
-    "credentials": "Referenser",
     "projects": "Projekt",
-    "about": "Om",
     "connect": "Ansluta"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Färdigheter som gör att arbetet flyter smidigt."
   },
   "credentials": {
-    "educationAndCerts": "Utbildning och certifieringar",
     "education": "Utbildning"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Låt oss ansluta",
     "description": "Jag är öppen för nya projekt, samarbeten och professionella möjligheter. Välj ett sätt att nå ut eller utforska mitt CV och arbete.",
-    "resume": "Resume",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Dela",
@@ -96,8 +91,7 @@
     "backToTop": "Tillbaka till toppen"
   },
   "meta": {
-    "portfolioSuffix": "Frontend Engineer Portfolio",
-    "pageTitleSuffix": "Portfölj"
+    "portfolioSuffix": "Frontend Engineer Portfolio"
   },
   "contact": {
     "title": "Hör av dig",
@@ -126,7 +120,6 @@
     "cancel": "Avboka",
     "sending": "Sändning…",
     "send": "Skicka meddelande",
-    "certAria": "Visa {{name}} certifikat",
     "validation": {
       "emailRequired": "E-post krävs.",
       "emailInvalid": "Ange en giltig e-postadress.",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Praktisk upplevelse över React.js, Next.js, Angular och Vue.js med TypeScript, modern CSS (Tailwind, Styled Components, CSS-moduler) och responsiv design. Bekväm från Figma handoff genom produktionsbyggen med Webpack, Vite och Babel.",
       "Backend___API": "Integrerar REST- och GraphQL-tjänster med säkra mönster – JWT, OAuth, CORS – och fungerar tillsammans med Node.js, Java och Spring Boot-backends för datadrivna användargränssnitt.",

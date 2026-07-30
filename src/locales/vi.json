@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Trang chủ",
-    "summary": "Bản tóm tắt",
     "toolkit": "Bộ công cụ",
     "experience": "Kinh nghiệm",
     "education": "Education",
-    "credentials": "Thông tin xác thực",
     "projects": "Dự án",
-    "about": "Về",
     "connect": "Kết nối"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Kỹ năng giúp công việc trôi chảy."
   },
   "credentials": {
-    "educationAndCerts": "Giáo dục & Chứng chỉ",
     "education": "Giáo dục"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Hãy kết nối",
     "description": "Tôi sẵn sàng đón nhận các dự án, sự hợp tác và cơ hội nghề nghiệp mới. Chọn một cách để tiếp cận hoặc khám phá sơ yếu lý lịch và công việc của tôi.",
-    "resume": "Bản tóm tắt",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Chia sẻ",
@@ -96,8 +91,7 @@
     "backToTop": "Quay lại đầu trang"
   },
   "meta": {
-    "portfolioSuffix": "Danh mục kỹ sư giao diện người dùng",
-    "pageTitleSuffix": "danh mục đầu tư"
+    "portfolioSuffix": "Danh mục kỹ sư giao diện người dùng"
   },
   "contact": {
     "title": "Liên hệ",
@@ -126,7 +120,6 @@
     "cancel": "Hủy bỏ",
     "sending": "Đang gửi…",
     "send": "Gửi tin nhắn",
-    "certAria": "Xem chứng chỉ {{name}}",
     "validation": {
       "emailRequired": "Email là bắt buộc.",
       "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ.",
@@ -274,7 +267,6 @@
         "period": "2016 – 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Trải nghiệm thực tế trên React.js, Next.js, Angular và Vue.js với TypeScript, CSS hiện đại (Tailwind, Styled Components, CSS Modules) và thiết kế đáp ứng. Thoải mái từ việc chuyển giao Figma cho đến các bản dựng sản xuất với Webpack, Vite và Babel.",
       "Backend___API": "Tích hợp các dịch vụ REST và GraphQL với các mẫu bảo mật—JWT, OAuth, CORS—và hoạt động cùng với các chương trình phụ trợ Node.js, Java và Spring Boot cho giao diện người dùng dựa trên dữ liệu.",

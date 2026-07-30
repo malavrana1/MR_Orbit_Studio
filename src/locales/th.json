@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "บ้าน",
-    "summary": "สรุป",
     "toolkit": "ชุดเครื่องมือ",
     "experience": "ประสบการณ์",
     "education": "Education",
-    "credentials": "ข้อมูลรับรอง",
     "projects": "โครงการ",
-    "about": "เกี่ยวกับ",
     "connect": "เชื่อมต่อ"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "ทักษะที่ทำให้งานไหลลื่น"
   },
   "credentials": {
-    "educationAndCerts": "การศึกษาและการรับรอง",
     "education": "การศึกษา"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "มาเชื่อมต่อกันเถอะ",
     "description": "ฉันเปิดรับโครงการใหม่ๆ การทำงานร่วมกัน และโอกาสทางวิชาชีพ เลือกช่องทางในการติดต่อหรือสำรวจประวัติย่อและงานของฉัน",
-    "resume": "ประวัติย่อ",
     "github": "GitHub",
     "linkedin": "ลิงค์อิน",
     "share": "แบ่งปัน",
@@ -96,8 +91,7 @@
     "backToTop": "กลับไปด้านบน"
   },
   "meta": {
-    "portfolioSuffix": "ผลงานวิศวกรส่วนหน้า",
-    "pageTitleSuffix": "ผลงาน"
+    "portfolioSuffix": "ผลงานวิศวกรส่วนหน้า"
   },
   "contact": {
     "title": "ได้รับการติดต่อ",
@@ -126,7 +120,6 @@
     "cancel": "ยกเลิก",
     "sending": "กำลังส่ง...",
     "send": "ส่งข้อความ",
-    "certAria": "ดูใบรับรอง {{name}}",
     "validation": {
       "emailRequired": "จำเป็นต้องระบุอีเมล",
       "emailInvalid": "กรุณากรอกที่อยู่อีเมลที่ถูกต้อง",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "ประสบการณ์ตรงใน React.js, Next.js, Angular และ Vue.js ด้วย TypeScript, CSS สมัยใหม่ (Tailwind, Styled Components, CSS Modules) และการออกแบบที่ตอบสนอง สะดวกสบายจากการส่งมอบ Figma ผ่านการสร้างการผลิตด้วย Webpack, Vite และ Babel",
       "Backend___API": "ผสานรวมบริการ REST และ GraphQL เข้ากับรูปแบบที่ปลอดภัย เช่น JWT, OAuth, CORS และทำงานร่วมกับแบ็กเอนด์ Node.js, Java และ Spring Boot สำหรับ UI ที่ขับเคลื่อนด้วยข้อมูล",

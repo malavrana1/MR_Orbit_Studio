@@ -6,7 +6,6 @@ const devLog = publicEnv.enableConsoleAnalytics
   ? (...args) => console.debug('[analytics]', ...args)
   : () => {}
 
-/** GA4 / Firebase limit-safe string (custom param values) — never send PII here */
 const clip = (value, max = 120) => {
   if (value == null) return ''
   const s = String(value)
@@ -59,10 +58,6 @@ export default {
       file_type: clip(fileType, 32),
     })
   },
-  /**
-   * Tracks contact-form lifecycle only — never message body, email, or phone.
-   * @param {string} [action]
-   */
   trackContactForm(action = 'interaction') {
     return send('portfolio_contact', {
       action: clip(action, 64),

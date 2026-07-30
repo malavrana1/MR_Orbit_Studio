@@ -8,12 +8,10 @@ import { usePageScroll } from '../context/ScrollContext'
 import LanguageSwitcher from '../components/LanguageSwitcher'
 import {
   FaHome,
-  FaUser,
   FaToolbox,
   FaBriefcase,
   FaGraduationCap,
   FaFolderOpen,
-  FaInfoCircle,
   FaHandshake,
   FaMoon,
   FaSun,
@@ -91,13 +89,10 @@ const Logo = ({ className = '', size = 28 }) => (
 
 const navIcons = {
   home: FaHome,
-  summary: FaUser,
   toolkit: FaToolbox,
   experience: FaBriefcase,
   education: FaGraduationCap,
-  credentials: FaGraduationCap,
   projects: FaFolderOpen,
-  about: FaInfoCircle,
   connect: FaHandshake,
 }
 
@@ -125,28 +120,6 @@ const Header = memo(function Header() {
 
     return () => {
       document.body.style.overflow = ''
-    }
-  }, [isMobileMenuOpen])
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isMobileMenuOpen) {
-        const navElement = event.target.closest('.main-nav')
-        const toggle = event.target.closest('.mobile-menu-toggle')
-        if (!navElement && !toggle) {
-          setIsMobileMenuOpen(false)
-        }
-      }
-    }
-
-    if (isMobileMenuOpen) {
-      document.addEventListener('click', handleClickOutside)
-      document.addEventListener('touchstart', handleClickOutside)
-    }
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside)
-      document.removeEventListener('touchstart', handleClickOutside)
     }
   }, [isMobileMenuOpen])
 

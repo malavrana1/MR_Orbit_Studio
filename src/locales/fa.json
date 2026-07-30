@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "صفحه اصلی",
-    "summary": "خلاصه",
     "toolkit": "جعبه ابزار",
     "experience": "تجربه کنید",
     "education": "Education",
-    "credentials": "اعتبارنامه",
     "projects": "پروژه ها",
-    "about": "درباره",
     "connect": "اتصال"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "مهارت هایی که کار را روان نگه می دارد."
   },
   "credentials": {
-    "educationAndCerts": "تحصیلات و گواهینامه ها",
     "education": "آموزش و پرورش"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "بیایید وصل شویم",
     "description": "من برای پروژه های جدید، همکاری و فرصت های حرفه ای باز هستم. راهی برای دستیابی یا بررسی رزومه و کار من انتخاب کنید.",
-    "resume": "رزومه",
     "github": "GitHub",
     "linkedin": "لینکدین",
     "share": "به اشتراک بگذارید",
@@ -96,8 +91,7 @@
     "backToTop": "بازگشت به بالا"
   },
   "meta": {
-    "portfolioSuffix": "نمونه کارها مهندس Frontend",
-    "pageTitleSuffix": "نمونه کارها"
+    "portfolioSuffix": "نمونه کارها مهندس Frontend"
   },
   "contact": {
     "title": "تماس بگیرید",
@@ -126,7 +120,6 @@
     "cancel": "لغو کنید",
     "sending": "در حال ارسال…",
     "send": "ارسال پیام",
-    "certAria": "گواهی {{name}} را مشاهده کنید",
     "validation": {
       "emailRequired": "ایمیل مورد نیاز است.",
       "emailInvalid": "لطفا یک آدرس ایمیل معتبر وارد کنید.",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "تجربه عملی در React.js، Next.js، Angular، و Vue.js با TypeScript، CSS مدرن (Tailwind، Styled Components، ماژول‌های CSS)، و طراحی واکنش‌گرا. راحت از انتقال Figma از طریق ساخت‌های تولیدی با Webpack، Vite و Babel.",
       "Backend___API": "خدمات REST و GraphQL را با الگوهای ایمن -JWT، OAuth، CORS ادغام می‌کند و در کنار Node.js، جاوا و Spring Boot برای رابط‌های مبتنی بر داده کار می‌کند.",

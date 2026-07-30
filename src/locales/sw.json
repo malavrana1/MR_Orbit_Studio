@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Nyumbani",
-    "summary": "Muhtasari",
     "toolkit": "Zana",
     "experience": "Uzoefu",
     "education": "Education",
-    "credentials": "Hati tambulishi",
     "projects": "Miradi",
-    "about": "Kuhusu",
     "connect": "Unganisha"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Ujuzi ambao hufanya kazi iende vizuri."
   },
   "credentials": {
-    "educationAndCerts": "Elimu na Vyeti",
     "education": "Elimu"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Hebu Tuungane",
     "description": "Niko wazi kwa miradi mipya, ushirikiano na fursa za kitaaluma. Chagua njia ya kufikia au kuchunguza wasifu wangu na kazi.",
-    "resume": "Endelea",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Shiriki",
@@ -96,8 +91,7 @@
     "backToTop": "Rudi juu"
   },
   "meta": {
-    "portfolioSuffix": "Frontend Mhandisi Kwingineko",
-    "pageTitleSuffix": "Kwingineko"
+    "portfolioSuffix": "Frontend Mhandisi Kwingineko"
   },
   "contact": {
     "title": "Wasiliana",
@@ -126,7 +120,6 @@
     "cancel": "Ghairi",
     "sending": "Inatuma...",
     "send": "Tuma Ujumbe",
-    "certAria": "Tazama cheti {{name}}",
     "validation": {
       "emailRequired": "Barua pepe inahitajika.",
       "emailInvalid": "Tafadhali weka barua pepe halali.",
@@ -274,7 +267,6 @@
         "period": "2016-2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Utumiaji wa vitendo kote React.js, Next.js, Angular, na Vue.js zilizo na TypeScript, CSS ya kisasa (Tailwind, Vipengee vya Mtindo, Moduli za CSS), na muundo unaoitikia. Inastarehesha kutoka kwa Figma handoff kupitia miundo ya uzalishaji na Webpack, Vite, na Babel.",
       "Backend___API": "Huunganisha huduma za REST na GraphQL zenye mifumo salama—JWT, OAuth, CORS—na hufanya kazi pamoja na Node.js, Java, na viambajengo vya Spring Boot kwa UI zinazoendeshwa na data.",

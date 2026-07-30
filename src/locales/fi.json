@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Kotiin",
-    "summary": "Yhteenveto",
     "toolkit": "Toolkit",
     "experience": "Kokea",
     "education": "Education",
-    "credentials": "Valtuustiedot",
     "projects": "Projektit",
-    "about": "Noin",
     "connect": "Yhdistä"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Taitoja, jotka pitävät työn sujuvana."
   },
   "credentials": {
-    "educationAndCerts": "Koulutus ja todistukset",
     "education": "koulutus"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Yhdistetään",
     "description": "Olen avoin uusille projekteille, yhteistyölle ja ammatillisille mahdollisuuksille. Valitse tapa tavoittaa tai tutustua ansioluettelooni ja työhöni.",
-    "resume": "Jatkaa",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Jakaa",
@@ -96,8 +91,7 @@
     "backToTop": "Takaisin alkuun"
   },
   "meta": {
-    "portfolioSuffix": "Frontend Engineer -portfolio",
-    "pageTitleSuffix": "Portfolio"
+    "portfolioSuffix": "Frontend Engineer -portfolio"
   },
   "contact": {
     "title": "Ota yhteyttä",
@@ -126,7 +120,6 @@
     "cancel": "Peruuttaa",
     "sending": "Lähetetään…",
     "send": "Lähetä Viesti",
-    "certAria": "Näytä {{name}} sertifikaatti",
     "validation": {
       "emailRequired": "Sähköposti vaaditaan.",
       "emailInvalid": "Anna kelvollinen sähköpostiosoite.",
@@ -274,7 +267,6 @@
         "period": "2016-2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Käytännön kokemus React.js-, Next.js-, Angular- ja Vue.js-palveluista TypeScriptillä, modernilla CSS:llä (Tailwind, Styled Components, CSS-moduulit) ja responsiivisella suunnittelulla. Mukava Figma-hankkeiden vaihdosta Webpackin, Viten ja Babelin tuotantoversioihin.",
       "Backend___API": "Integroi REST- ja GraphQL-palvelut suojatuilla malleilla (JWT, OAuth, CORS) ja toimii Node.js-, Java- ja Spring Boot -taustaohjelmien rinnalla tietopohjaisissa käyttöliittymissä.",

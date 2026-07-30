@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Thuis",
-    "summary": "Samenvatting",
     "toolkit": "Gereedschapskist",
     "experience": "Ervaring",
     "education": "Education",
-    "credentials": "Diploma's",
     "projects": "Projecten",
-    "about": "Over mij",
     "connect": "Contact"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Vaardigheden die het werk soepel houden."
   },
   "credentials": {
-    "educationAndCerts": "Opleiding en certificaten",
     "education": "Opleiding"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Laten we contact houden",
     "description": "Ik sta open voor nieuwe projecten, samenwerking en kansen. Kies hoe je contact opneemt of bekijk mijn CV en werk.",
-    "resume": "CV",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Delen",
@@ -96,8 +91,7 @@
     "backToTop": "Terug naar boven"
   },
   "meta": {
-    "portfolioSuffix": "Frontend engineer portfolio",
-    "pageTitleSuffix": "Portefeuille"
+    "portfolioSuffix": "Frontend engineer portfolio"
   },
   "contact": {
     "title": "Neem contact op",
@@ -126,7 +120,6 @@
     "cancel": "Annuleren",
     "sending": "Verzenden…",
     "send": "Bericht versturen",
-    "certAria": "Bekijk certificaat {{name}}",
     "validation": {
       "emailRequired": "E-mail is verplicht.",
       "emailInvalid": "Voer een geldig e-mailadres in.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Praktische ervaring met React.js, Next.js, Angular en Vue.js met TypeScript, moderne CSS (Tailwind, Styled Components, CSS Modules) en responsief ontwerp. Comfortabel vanaf de overdracht van Figma tot en met productiebuilds met Webpack, Vite en Babel.",
       "Backend___API": "Integreert REST- en GraphQL-services met veilige patronen (JWT, OAuth, CORS) en werkt samen met Node.js-, Java- en Spring Boot-backends voor datagestuurde gebruikersinterfaces.",

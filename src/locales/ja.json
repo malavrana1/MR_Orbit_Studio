@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "ホーム",
-    "summary": "概要",
     "toolkit": "ツールキット",
     "experience": "経歴",
     "education": "Education",
-    "credentials": "資格",
     "projects": "プロジェクト",
-    "about": "について",
     "connect": "連絡"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "スムーズな開発を支えるスキル。"
   },
   "credentials": {
-    "educationAndCerts": "学歴と資格",
     "education": "学歴"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "つながる",
     "description": "新規案件・協業・キャリアのご相談歓迎。連絡方法を選ぶか、履歴書と作品をご覧ください。",
-    "resume": "履歴書",
     "github": "GitHub",
     "linkedin": "リンクトイン",
     "share": "共有",
@@ -96,8 +91,7 @@
     "backToTop": "ページ上部へ"
   },
   "meta": {
-    "portfolioSuffix": "フロントエンドエンジニアのポートフォリオ",
-    "pageTitleSuffix": "ポートフォリオ"
+    "portfolioSuffix": "フロントエンドエンジニアのポートフォリオ"
   },
   "contact": {
     "title": "お問い合わせ",
@@ -126,7 +120,6 @@
     "cancel": "キャンセル",
     "sending": "送信中…",
     "send": "送信",
-    "certAria": "{{name}} の証明書を見る",
     "validation": {
       "emailRequired": "メールは必須です。",
       "emailInvalid": "有効なメールを入力してください。",
@@ -274,7 +267,6 @@
         "period": "2016年 — 2020年"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "TypeScript、最新の CSS (Tailwind、スタイル コンポーネント、CSS モジュール)、レスポンシブ デザインを使用した React.js、Next.js、Angular、Vue.js の実践的な経験。 Figma のハンドオフから、Webpack、Vite、Babel を使用した本番ビルドまで快適です。",
       "Backend___API": "REST サービスと GraphQL サービスを安全なパターン (JWT、OAuth、CORS) と統合し、データ駆動型 UI 向けに Node.js、Java、Spring Boot バックエンドと連携して動作します。",

@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Acasă",
-    "summary": "Rezumat",
     "toolkit": "Trusa de instrumente",
     "experience": "Experienţă",
     "education": "Education",
-    "credentials": "Acreditări",
     "projects": "Proiecte",
-    "about": "Despre",
     "connect": "Conectați-vă"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Abilități care mențin munca să curgă fără probleme."
   },
   "credentials": {
-    "educationAndCerts": "Educație și certificări",
     "education": "Educaţie"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Să ne conectăm",
     "description": "Sunt deschis la noi proiecte, colaborare și oportunități profesionale. Alegeți o modalitate de a contacta sau de a explora CV-ul și munca mea.",
-    "resume": "Relua",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Distribuie",
@@ -96,8 +91,7 @@
     "backToTop": "Înapoi sus"
   },
   "meta": {
-    "portfolioSuffix": "Portofoliu Inginer Frontend",
-    "pageTitleSuffix": "Portofoliu"
+    "portfolioSuffix": "Portofoliu Inginer Frontend"
   },
   "contact": {
     "title": "Luați legătura",
@@ -126,7 +120,6 @@
     "cancel": "Anula",
     "sending": "Se trimite…",
     "send": "Trimite mesaj",
-    "certAria": "Vedeți certificatul {{name}}",
     "validation": {
       "emailRequired": "E-mailul este obligatoriu.",
       "emailInvalid": "Vă rugăm să introduceți o adresă de email validă.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Experiență practică în React.js, Next.js, Angular și Vue.js cu TypeScript, CSS modern (Tailwind, Componente stilate, module CSS) și design receptiv. Confortabil de la transferul Figma prin versiuni de producție cu Webpack, Vite și Babel.",
       "Backend___API": "Integrează serviciile REST și GraphQL cu modele securizate — JWT, OAuth, CORS — și funcționează alături de backend-urile Node.js, Java și Spring Boot pentru interfețele de utilizator bazate pe date.",

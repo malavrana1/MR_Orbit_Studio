@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Home",
-    "summary": "Summary",
     "toolkit": "Toolkit",
     "experience": "Experience",
     "education": "Education",
-    "credentials": "Education",
     "projects": "Projects",
-    "about": "About",
     "connect": "Connect"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Skills that keep the work flowing smoothly."
   },
   "credentials": {
-    "educationAndCerts": "Education & Certifications",
     "education": "Education"
   },
   "about": {
@@ -73,10 +69,10 @@
   "connect": {
     "title": "Let's Connect",
     "description": "I'm open to new projects, collaboration, and professional opportunities. Pick a way to reach out or explore my resume and work.",
-    "resume": "Resume",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Share",
+    "email": "Email",
     "contact": "Contact",
     "shareTitle": "{{name}} - Portfolio",
     "shareText": "Check out {{name}}'s portfolio",
@@ -86,6 +82,7 @@
     "githubProfileTitle": "View GitHub profile",
     "linkedinProfileTitle": "Connect on LinkedIn",
     "sharePortfolioTitle": "Share portfolio",
+    "emailTitle": "Email me",
     "contactFormTitle": "Contact form"
   },
   "footer": {
@@ -96,15 +93,18 @@
     "backToTop": "Back to top"
   },
   "meta": {
-    "portfolioSuffix": "Frontend Engineer Portfolio",
-    "pageTitleSuffix": "Portfolio"
+    "portfolioSuffix": "Frontend Engineer Portfolio"
   },
   "contact": {
     "title": "Get in Touch",
     "successTitle": "Message Sent Successfully!",
     "successBody": "Thanks for reaching out. I'll get back to you soon.",
     "errorTitle": "Oops! Something went wrong",
-    "sendError": "Could not send your message. Please try again.",
+    "sendError": "Could not send your message. Please try again or email me directly.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Your name",
     "namePlaceholder": "What should I call you?",
     "emailLabel": "Your email",
@@ -126,7 +126,6 @@
     "cancel": "Cancel",
     "sending": "Sending…",
     "send": "Send Message",
-    "certAria": "View {{name}} certificate",
     "validation": {
       "emailRequired": "Email is required.",
       "emailInvalid": "Please enter a valid email address.",
@@ -243,7 +242,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Hands-on experience across React.js, Next.js, Angular, and Vue.js with TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules), and responsive design. Comfortable from Figma handoff through production builds with Webpack, Vite, and Babel.",
       "Backend___API": "Integrates REST and GraphQL services with secure patterns—JWT, OAuth, CORS—and works alongside Node.js, Java, and Spring Boot backends for data-driven UIs.",

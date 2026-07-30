@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "додому",
-    "summary": "Резюме",
     "toolkit": "Інструментарій",
     "experience": "Досвід",
     "education": "Education",
-    "credentials": "Облікові дані",
     "projects": "Проекти",
-    "about": "про",
     "connect": "Підключитися"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "Навички, які забезпечують безперебійну роботу."
   },
   "credentials": {
-    "educationAndCerts": "Освіта та сертифікати",
     "education": "Освіта"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "Підключаймося",
     "description": "Я відкритий до нових проектів, співпраці та професійних можливостей. Виберіть спосіб зв’язатися з моїм резюме та роботою.",
-    "resume": "Резюме",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Поділіться",
@@ -96,8 +91,7 @@
     "backToTop": "Повернутися до початку"
   },
   "meta": {
-    "portfolioSuffix": "Портфоліо інженера фронтенду",
-    "pageTitleSuffix": "Портфоліо"
+    "portfolioSuffix": "Портфоліо інженера фронтенду"
   },
   "contact": {
     "title": "Зв'яжіться з нами",
@@ -126,7 +120,6 @@
     "cancel": "Скасувати",
     "sending": "Надсилання…",
     "send": "Надіслати повідомлення",
-    "certAria": "Переглянути сертифікат {{name}}",
     "validation": {
       "emailRequired": "Необхідно вказати адресу електронної пошти.",
       "emailInvalid": "Введіть дійсну електронну адресу.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020 роки"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "Практичний досвід роботи з React.js, Next.js, Angular і Vue.js із TypeScript, сучасним CSS (Tailwind, Styled Components, CSS Modules) і адаптивним дизайном. Комфорт від передачі Figma до робочих збірок із Webpack, Vite та Babel.",
       "Backend___API": "Інтегрує служби REST і GraphQL із захищеними шаблонами — JWT, OAuth, CORS — і працює разом із серверними частинами Node.js, Java та Spring Boot для керованих даними інтерфейсів користувача.",

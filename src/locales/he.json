@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "בַּיִת",
-    "summary": "תַקצִיר",
     "toolkit": "אַרְגַז כֵּלִים",
     "experience": "הִתנַסוּת",
     "education": "Education",
-    "credentials": "אישורים",
     "projects": "פרויקטים",
-    "about": "אוֹדוֹת",
     "connect": "לְחַבֵּר"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "מיומנויות ששומרות על זרימת העבודה בצורה חלקה."
   },
   "credentials": {
-    "educationAndCerts": "השכלה והסמכות",
     "education": "הַשׂכָּלָה"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "בואו להתחבר",
     "description": "אני פתוח לפרויקטים חדשים, שיתוף פעולה והזדמנויות מקצועיות. בחר דרך ליצור קשר או לחקור את קורות החיים והעבודה שלי.",
-    "resume": "קוֹרוֹת חַיִים",
     "github": "GitHub",
     "linkedin": "לינקדאין",
     "share": "לַחֲלוֹק",
@@ -96,8 +91,7 @@
     "backToTop": "חזרה למעלה"
   },
   "meta": {
-    "portfolioSuffix": "תיק מהנדסי חזית",
-    "pageTitleSuffix": "תִיק"
+    "portfolioSuffix": "תיק מהנדסי חזית"
   },
   "contact": {
     "title": "לְהִתְקַשֵׁר",
@@ -126,7 +120,6 @@
     "cancel": "לְבַטֵל",
     "sending": "שְׁלִיחָה…",
     "send": "שלח הודעה",
-    "certAria": "צפה בתעודת {{name}}",
     "validation": {
       "emailRequired": "יש צורך באימייל.",
       "emailInvalid": "נא להזין כתובת אימייל חוקית.",
@@ -274,7 +267,6 @@
         "period": "2016 - 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "חוויה מעשית ברחבי React.js, Next.js, Angular ו-Vue.js עם TypeScript, CSS מודרני (Tailwind, רכיבים מעוצבים, מודולי CSS) ועיצוב רספונסיבי. נוח ממסירת Figma דרך בניית ייצור עם Webpack, Vite ו-Babel.",
       "Backend___API": "משלב שירותי REST ו-GraphQL עם תבניות מאובטחות - JWT, OAuth, CORS - ועובד לצד קצה גחור של Node.js, Java ו-Spring Boot עבור ממשקי משתמש מונעי נתונים.",

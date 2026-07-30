@@ -7,7 +7,6 @@ import {
   FaLinkedin,
   FaCode,
   FaGraduationCap,
-  FaAward,
   FaExternalLinkAlt,
   FaUsers,
   FaCheckCircle,
@@ -69,8 +68,6 @@ export default function Home() {
   const toolkitDescriptions = resume.skillDescriptions || {}
 
   const topExperience = resume.experience.slice(0, 2)
-  const hasCertifications =
-    Array.isArray(resume.certifications) && resume.certifications.length > 0
 
   const [activeToolkit, setActiveToolkit] = useState(
     skillCategories[0]?.category || 'Frontend',
@@ -132,7 +129,7 @@ export default function Home() {
   }, [profile, skillCategories])
 
   return (
-    <div className="landing-page" id="main-content">
+    <div className="landing-page" id="main-content" tabIndex={-1}>
       <div className="animated-background" />
       <header className="landing-hero d-flex align-items-center" id="home">
         <div className="landing-hero__background-image" />
@@ -180,17 +177,19 @@ export default function Home() {
                     </div>
                   </>
                 ) : null}
-                <p className="hero-role">
-                  {profile.headline || t('hero.headlineFallback')}
-                </p>
-                {(profile.availability || t('hero.availabilityFallback')) && (
-                  <p className="hero-availability">
-                    <FaMapMarkerAlt className="hero-availability__icon" aria-hidden />
-                    <span>
-                      {profile.availability || t('hero.availabilityFallback')}
-                    </span>
+                <div className="hero-meta">
+                  <p className="hero-role">
+                    {profile.headline || t('hero.headlineFallback')}
                   </p>
-                )}
+                  {(profile.availability || t('hero.availabilityFallback')) && (
+                    <p className="hero-availability">
+                      <span className="hero-availability__icon" aria-hidden />
+                      <span>
+                        {profile.availability || t('hero.availabilityFallback')}
+                      </span>
+                    </p>
+                  )}
+                </div>
                 <div className="hero-actions">
                   <a
                     href={resumePdf}
@@ -550,91 +549,37 @@ export default function Home() {
       <section id="education" className="landing-credentials">
         <Container>
           <div className="credentials-heading text-center mb-3">
-            <h2 className="section-title">
-              {hasCertifications
-                ? t('credentials.educationAndCerts')
-                : t('credentials.education')}
-            </h2>
+            <h2 className="section-title">{t('credentials.education')}</h2>
           </div>
           <Row className="g-4">
-            <Col lg={hasCertifications ? 4 : 12}>
-              {resume.education &&
-                resume.education.map((edu, index) => (
-                  <Card
-                    key={index}
-                    className="credential-card border-0 shadow-sm mb-3"
-                  >
-                    <Card.Body>
-                      <div className="credential-item">
-                        <div className="credential-icon education-icon-bg">
-                          <FaGraduationCap />
-                        </div>
-                        <div className="credential-content">
-                          <h6 className="credential-title">{edu.degree}</h6>
-                          <h6 className="credential-institution mb-1">
-                            {edu.institution}
-                          </h6>
-                          {edu.location && (
-                            <p className="credential-subtitle mb-1 text-muted">
-                              {edu.location}
-                            </p>
-                          )}
-                          <span className="credential-period">
-                            {edu.period}
-                          </span>
-                        </div>
+            <Col lg={12}>
+              {(resume.education || []).map((edu, index) => (
+                <Card
+                  key={`${edu.institution}-${index}`}
+                  className="credential-card border-0 shadow-sm mb-3"
+                >
+                  <Card.Body>
+                    <div className="credential-item">
+                      <div className="credential-icon education-icon-bg">
+                        <FaGraduationCap />
                       </div>
-                    </Card.Body>
-                  </Card>
-                ))}
+                      <div className="credential-content">
+                        <h6 className="credential-title">{edu.degree}</h6>
+                        <h6 className="credential-institution mb-1">
+                          {edu.institution}
+                        </h6>
+                        {edu.location && (
+                          <p className="credential-subtitle mb-1 text-muted">
+                            {edu.location}
+                          </p>
+                        )}
+                        <span className="credential-period">{edu.period}</span>
+                      </div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              ))}
             </Col>
-            {hasCertifications && (
-              <Col lg={8} id="certifications">
-                <div className="certifications-grid">
-                  {resume.certifications.slice(0, 6).map((cert, index) => (
-                    <Card
-                      key={index}
-                      className="credential-card certification-card-compact border-0 shadow-sm"
-                    >
-                      <Card.Body className="p-3">
-                        <div className="credential-item">
-                          <div className="credential-icon certification-icon-bg">
-                            <FaAward />
-                          </div>
-                          <div className="credential-content">
-                            <h6 className="credential-title small">
-                              {cert.name}
-                            </h6>
-                            <p className="credential-subtitle small text-muted mb-0">
-                              {cert.issuer}
-                            </p>
-                          </div>
-                          {cert.link && (
-                            <a
-                              href={cert.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="credential-link"
-                              aria-label={t('contact.certAria', {
-                                name: cert.name,
-                              })}
-                              onClick={() =>
-                                analyticsService.trackExternalLink(
-                                  cert.link,
-                                  cert.name,
-                                )
-                              }
-                            >
-                              <FaExternalLinkAlt />
-                            </a>
-                          )}
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  ))}
-                </div>
-              </Col>
-            )}
           </Row>
         </Container>
       </section>
@@ -771,6 +716,25 @@ export default function Home() {
                     >
                       <FaLinkedin />
                       {t('connect.linkedin')}
+                    </a>
+                    <a
+                      href={
+                        profile.contact?.email
+                          ? `mailto:${profile.contact.email}`
+                          : undefined
+                      }
+                      className="btn btn-outline-primary"
+                      title={t('connect.emailTitle')}
+                      onClick={() =>
+                        analyticsService.trackClick(
+                          'link',
+                          'mailto_connect',
+                          'Email',
+                        )
+                      }
+                    >
+                      <FaEnvelope />
+                      {t('connect.email')}
                     </a>
                     <button
                       type="button"

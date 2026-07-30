@@ -5,13 +5,10 @@
   },
   "nav": {
     "home": "Ana sayfa",
-    "summary": "Özet",
     "toolkit": "Araçlar",
     "experience": "Deneyim",
     "education": "Education",
-    "credentials": "Belgeler",
     "projects": "Projeler",
-    "about": "Hakkımda",
     "connect": "İletişim"
   },
   "theme": {
@@ -61,7 +58,6 @@
     "defaultDescription": "İşi akıcı tutan beceriler."
   },
   "credentials": {
-    "educationAndCerts": "Eğitim ve sertifikalar",
     "education": "Eğitim"
   },
   "about": {
@@ -73,7 +69,6 @@
   "connect": {
     "title": "İletişime geçin",
     "description": "Yeni projeler, işbirliği ve fırsatlara açığım. Nasıl ulaşacağınızı seçin veya özgeçmişime ve işlerime göz atın.",
-    "resume": "Özgeçmiş",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Paylaş",
@@ -96,8 +91,7 @@
     "backToTop": "Başa dön"
   },
   "meta": {
-    "portfolioSuffix": "Frontend mühendisi portföyü",
-    "pageTitleSuffix": "Portföy"
+    "portfolioSuffix": "Frontend mühendisi portföyü"
   },
   "contact": {
     "title": "İletişim",
@@ -126,7 +120,6 @@
     "cancel": "İptal",
     "sending": "Gönderiliyor…",
     "send": "Mesaj gönder",
-    "certAria": "{{name}} sertifikasını görüntüle",
     "validation": {
       "emailRequired": "E-posta gerekli.",
       "emailInvalid": "Geçerli bir e-posta girin.",
@@ -274,7 +267,6 @@
         "period": "2016 — 2020"
       }
     },
-    "certifications": {},
     "skillDescriptions": {
       "Frontend": "TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules) ve duyarlı tasarım ile React.js, Next.js, Angular ve Vue.js'de uygulamalı deneyim. Webpack, Vite ve Babel ile üretim yapıları boyunca Figma aktarımından rahat.",
       "Backend___API": "REST ve GraphQL hizmetlerini JWT, OAuth, CORS gibi güvenli kalıplarla entegre eder ve veri odaklı kullanıcı arayüzleri için Node.js, Java ve Spring Boot arka uçlarıyla birlikte çalışır.",
