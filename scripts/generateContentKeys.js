@@ -60,19 +60,14 @@ function buildContent() {
   })
 
   ;(resume.experience || []).forEach((role, i) => {
-    const ex = {
+    content.experience[String(i)] = {
       role: role.role,
       company: role.company,
       location: role.location,
       period: role.period,
       tagline: role.tagline || '',
       description: role.description,
-      highlights: {},
     }
-    ;(role.highlights || []).forEach((h, j) => {
-      ex.highlights[String(j)] = h
-    })
-    content.experience[String(i)] = ex
   })
 
   ;(resume.education || []).forEach((edu, i) => {

@@ -55,9 +55,6 @@ export function translateExperience(t, experience) {
     period: tc(t, `experience.${i}.period`, role.period),
     tagline: tc(t, `experience.${i}.tagline`, role.tagline || ''),
     description: tc(t, `experience.${i}.description`, role.description),
-    highlights: (role.highlights || []).map((h, j) =>
-      tc(t, `experience.${i}.highlights.${j}`, h),
-    ),
   }))
 }
 

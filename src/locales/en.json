@@ -191,11 +191,7 @@
         "location": "Florida, United States",
         "period": "Apr 2026 — Present",
         "tagline": "Software product and engineering team.",
-        "description": "Working as a Senior Software Engineer to support frontend and platform development based on team priorities.",
-        "highlights": {
-          "0": "Contributes to feature delivery with clean, maintainable code.",
-          "1": "Collaborates with product and engineering teams on implementation priorities."
-        }
+        "description": "Working as a Senior Software Engineer to support frontend and platform development based on team priorities."
       },
       "1": {
         "role": "Software Engineer (Contract)",
@@ -203,11 +199,7 @@
         "location": "Woodbridge, NJ",
         "period": "Feb 2026 — Apr 2026",
         "tagline": "Short-term accessibility and compliance engagement.",
-        "description": "Focused on accessibility improvements and WCAG 2.1 AA compliance in Angular applications.",
-        "highlights": {
-          "0": "Performed accessibility audits and fixed WCAG 2.1 AA issues across key user flows.",
-          "1": "Improved semantic markup, keyboard navigation, and screen reader support in Angular UI."
-        }
+        "description": "Focused on accessibility improvements and WCAG 2.1 AA compliance in Angular applications."
       },
       "2": {
         "role": "Frontend Engineer",
@@ -215,13 +207,7 @@
         "location": "Summit, NJ",
         "period": "Sep 2024 — Jan 2026",
         "tagline": "Kiswe powers live interactive experiences for sports, media, and enterprise brands.",
-        "description": "Delivered high-traffic single-page apps with React, Vue, TypeScript, and Tailwind—focusing on scalable components, API integration, performance, and accessibility.",
-        "highlights": {
-          "0": "Developed SPAs with React, Vue, TypeScript, and Tailwind using scalable component architecture.",
-          "1": "Integrated REST and GraphQL APIs with caching and state management; improved responsiveness and reduced frontend errors.",
-          "2": "Applied code splitting, lazy loading, and tree-shaking for faster loads on large apps.",
-          "3": "Championed code reviews, debugging, and WCAG-aligned, cross-device experiences."
-        }
+        "description": "Delivered high-traffic single-page apps with React, Vue, TypeScript, and Tailwind—focusing on scalable components, API integration, performance, and accessibility."
       },
       "3": {
         "role": "Frontend Engineer",
@@ -229,13 +215,7 @@
         "location": "Morristown, NJ",
         "period": "Jul 2022 — Sep 2024",
         "tagline": "Global architecture and design firm delivering enterprise digital tools and client experiences.",
-        "description": "Built enterprise UIs with React, Angular, Vue, and Next.js—pairing async REST/GraphQL data with automated tests and close design collaboration.",
-        "highlights": {
-          "0": "Shipped dashboards and UI components with React, Angular, Vue, Next.js, and Styled Components.",
-          "1": "Integrated REST and GraphQL with asynchronous updates and interactive features.",
-          "2": "Refactored legacy code, improved performance, and expanded Jest, RTL, and Playwright coverage.",
-          "3": "Translated Figma designs into responsive, accessible, production-ready interfaces."
-        }
+        "description": "Built enterprise UIs with React, Angular, Vue, and Next.js—pairing async REST/GraphQL data with automated tests and close design collaboration."
       },
       "4": {
         "role": "Frontend Engineer (Contract)",
@@ -243,13 +223,7 @@
         "location": "Franklin Lakes, NJ",
         "period": "May 2021 — Apr 2022",
         "tagline": "Pharmacy benefits and digital healthcare solutions for members and patients.",
-        "description": "Built interactive pharmacy checkout flows in React and TypeScript with secure API integration, modular components, and strong automated test coverage.",
-        "highlights": {
-          "0": "Improved checkout task completion with React, TypeScript, HTML5, and CSS3.",
-          "1": "Integrated secure REST APIs with JWT/OAuth, validation, and robust error handling.",
-          "2": "Reduced page load times through modular components and optimized client-side rendering.",
-          "3": "Collaborated across teams for responsive, accessible UI delivery."
-        }
+        "description": "Built interactive pharmacy checkout flows in React and TypeScript with secure API integration, modular components, and strong automated test coverage."
       },
       "5": {
         "role": "Frontend Engineering Intern",
@@ -257,12 +231,7 @@
         "location": "Parsippany, NJ",
         "period": "Sep 2020 — May 2021",
         "tagline": "Nonprofit organization focused on community outreach and charitable initiatives.",
-        "description": "Started my software career here, building foundational frontend skills through hands-on internship work on real nonprofit projects.",
-        "highlights": {
-          "0": "Built responsive interfaces using React, HTML, CSS, and JavaScript.",
-          "1": "Learned core engineering practices through code reviews, collaboration, and iterative delivery.",
-          "2": "Supported real-world nonprofit features and gained practical experience with accessible UI implementation."
-        }
+        "description": "Started my software career here, building foundational frontend skills through hands-on internship work on real nonprofit projects."
       }
     },
     "education": {

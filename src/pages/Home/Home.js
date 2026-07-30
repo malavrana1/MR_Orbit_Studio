@@ -375,13 +375,6 @@ export default function Home() {
                       </div>
                     </div>
                     <p className="experience-description">{role.description}</p>
-                    {role.highlights?.length > 0 ? (
-                      <ul className="experience-highlights">
-                        {role.highlights.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    ) : null}
                   </Card.Body>
                 </Card>
               )
