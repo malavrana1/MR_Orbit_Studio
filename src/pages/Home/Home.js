@@ -32,7 +32,7 @@ import { getSkillIcon } from '../../icons/skillIcons'
 import resumePdf from '../../assets/pdf/Malav-Rana-Frontend-Engineer.pdf'
 import { translateSkillCategoryLabel } from '../../i18n/content'
 import { getToolkitIcon } from '../../icons/toolkitIcons'
-import { getCompanyLogo } from '../../data/companyLogos'
+import { getCompanyLogo, getCompanyInitials } from '../../data/companyLogos'
 import { getProjectImage } from '../../data/projectImages'
 import {
   syncPageMeta,
@@ -338,15 +338,26 @@ export default function Home() {
                 >
                   <Card.Body className="p-4">
                     <div className="experience-card-header">
-                      <div className="experience-company-logo">
-                        {companyLogo && (
+                      <div
+                        className={`experience-company-logo ${
+                          companyLogo ? '' : 'experience-company-logo--fallback'
+                        }`}
+                        aria-hidden={companyLogo ? undefined : true}
+                      >
+                        {companyLogo ? (
                           <img
                             src={companyLogo}
-                            alt={t('experience.logoAlt', { company: role.company })}
+                            alt={t('experience.logoAlt', {
+                              company: role.company,
+                            })}
                             className="company-logo-img"
                             loading="lazy"
                             decoding="async"
                           />
+                        ) : (
+                          <span className="company-logo-initials">
+                            {getCompanyInitials(role.company)}
+                          </span>
                         )}
                       </div>
                       <div className="experience-card-info">
@@ -536,7 +547,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section id="credentials" className="landing-credentials">
+      <section id="education" className="landing-credentials">
         <Container>
           <div className="credentials-heading text-center mb-3">
             <h2 className="section-title">
@@ -546,7 +557,7 @@ export default function Home() {
             </h2>
           </div>
           <Row className="g-4">
-            <Col lg={hasCertifications ? 4 : 12} id="education">
+            <Col lg={hasCertifications ? 4 : 12}>
               {resume.education &&
                 resume.education.map((edu, index) => (
                   <Card

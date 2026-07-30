@@ -17,3 +17,15 @@ const BY_COMPANY = {
 export function getCompanyLogo(companyKey) {
   return BY_COMPANY[companyKey] || null
 }
+
+/** Initials for monogram fallback when a logo file is missing or fails. */
+export function getCompanyInitials(companyName = '') {
+  const words = String(companyName)
+    .replace(/[^a-zA-Z0-9\s]/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+  if (words.length === 0) return '?'
+  if (words.length === 1) return words[0].slice(0, 2).toUpperCase()
+  return `${words[0][0]}${words[1][0]}`.toUpperCase()
+}

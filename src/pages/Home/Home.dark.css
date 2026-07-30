@@ -1182,15 +1182,24 @@
 }
 
 [data-theme='dark'] .experience-company-logo {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='dark'] .experience-company-logo--fallback {
+  background: linear-gradient(145deg, #6d4c41 0%, #3e2723 100%);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+[data-theme='dark'] .company-logo-initials {
+  color: #f7efdf;
 }
 
 [data-theme='dark'] .experience-card:hover .experience-company-logo {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 [data-theme='dark'] .section-title {

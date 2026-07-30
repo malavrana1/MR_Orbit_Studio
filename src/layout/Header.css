@@ -662,6 +662,26 @@
   transition: color 0.2s ease;
 }
 
+@media (min-width: 992px) and (max-width: 1280px) {
+  .nav-links {
+    gap: 0.2rem;
+  }
+
+  .nav-link {
+    padding: 0.55rem 0.65rem;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-link[title],
+  .nav-link {
+    min-width: 2.5rem;
+    justify-content: center;
+  }
+}
+
 .nav-indicator {
   position: absolute;
   bottom: 0.25rem;

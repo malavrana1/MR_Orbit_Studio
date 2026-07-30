@@ -15,11 +15,10 @@ export function getNavConfig() {
     site.nav || {
       links: [
         { label: 'Home', href: '#home' },
-        { label: 'Summary', href: '#summary' },
-        { label: 'Toolkit', href: '#toolkit' },
         { label: 'Experience', href: '#experience' },
-        { label: 'Credentials', href: '#credentials' },
         { label: 'Projects', href: '#projects' },
+        { label: 'Toolkit', href: '#toolkit' },
+        { label: 'Education', href: '#education' },
         { label: 'About', href: '#about' },
         { label: 'Connect', href: '#connect' },
       ],

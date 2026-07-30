@@ -94,6 +94,7 @@ const navIcons = {
   summary: FaUser,
   toolkit: FaToolbox,
   experience: FaBriefcase,
+  education: FaGraduationCap,
   credentials: FaGraduationCap,
   projects: FaFolderOpen,
   about: FaInfoCircle,
@@ -197,11 +198,12 @@ const Header = memo(function Header() {
 
               return (
                 <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className={`nav-link ${isActive ? 'active' : ''}`}
-                    onClick={(e) => handleNavClick(e, link.href)}
-                  >
+                    <a
+                      href={link.href}
+                      className={`nav-link ${isActive ? 'active' : ''}`}
+                      title={label}
+                      onClick={(e) => handleNavClick(e, link.href)}
+                    >
                     <Icon className="nav-icon" />
                     <span className="nav-label">{label}</span>
                     {isActive && <span className="nav-indicator"></span>}

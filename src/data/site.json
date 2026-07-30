@@ -4,11 +4,11 @@
   "nav": {
     "links": [
       { "label": "Home", "href": "#home" },
-      { "label": "Summary", "href": "#summary" },
       { "label": "Experience", "href": "#experience" },
       { "label": "Projects", "href": "#projects" },
       { "label": "Toolkit", "href": "#toolkit" },
-      { "label": "Credentials", "href": "#credentials" },
+      { "label": "Education", "href": "#education" },
+      { "label": "About", "href": "#about" },
       { "label": "Connect", "href": "#connect" }
     ]
   },
