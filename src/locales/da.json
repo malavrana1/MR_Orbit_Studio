@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Erfaring",
-    "logoAlt": "{{company}} logo"
+    "logoAlt": "{{company}} logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Udvalgte projekter",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Dele",
+    "email": "Email",
     "contact": "Kontakte",
     "shareTitle": "{{name}} - Portefølje",
     "shareText": "Tjek {{name}}s portefølje",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Se GitHub profil",
     "linkedinProfileTitle": "Opret forbindelse på LinkedIn",
     "sharePortfolioTitle": "Aktieportefølje",
+    "emailTitle": "Email me",
     "contactFormTitle": "Kontaktformular"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Tak for at kontakte os. Jeg vender snart tilbage til dig.",
     "errorTitle": "Ups! Noget gik galt",
     "sendError": "Kunne ikke sende din besked. Prøv venligst igen.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Dit navn",
     "namePlaceholder": "Hvad skal jeg kalde dig?",
     "emailLabel": "Din e-mail",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "En personlig aktiemarkedssimulator til at udforske aktier og krypto i realtid. Beregn overskud, gem scenarier, spor favoritter og lær handelsstrategier uden at risikere rigtige penge.",
         "cta": "Udforsk på GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "React-portefølje på én side, der viser de ting, jeg elsker at bygge – datadrevne sektioner, genoptage download og interaktive værktøjssætfiltre.",
-        "cta": "Se portefølje"
       }
     },
     "experience": {

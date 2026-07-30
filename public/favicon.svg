@@ -1,21 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="orbit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#667eea" />
-      <stop offset="50%" stop-color="#764ba2" />
-      <stop offset="100%" stop-color="#f093fb" />
+    <linearGradient id="mr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1512"/>
+      <stop offset="55%" stop-color="#2c1b16"/>
+      <stop offset="100%" stop-color="#3e2723"/>
     </linearGradient>
-    <radialGradient id="core-gradient" cx="50%" cy="50%">
-      <stop offset="0%" stop-color="#667eea" />
-      <stop offset="100%" stop-color="#2563eb" />
-    </radialGradient>
+    <linearGradient id="mr-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5a3"/>
+      <stop offset="45%" stop-color="#c9a227"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
   </defs>
-  
-  <rect width="64" height="64" rx="14" fill="url(#orbit-gradient)"/>
-  
-  <path d="M 14 18 L 14 46 M 14 18 L 22 34 L 30 18 M 30 18 L 30 46" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  
-  <path d="M 34 18 L 48 18 Q 52 18 52 26 Q 52 34 48 34 L 34 34 M 34 34 L 48 46" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  
-  <circle cx="32" cy="54" r="2" fill="#ffffff" opacity="0.8"/>
+  <rect width="64" height="64" rx="16" fill="url(#mr-bg)"/>
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="url(#mr-ring)" stroke-width="2.5"/>
+  <path d="M16 18 V46 M16 18 L24 34 L32 18 M32 18 V46" fill="none" stroke="#f7efdf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 18 H48 Q53 18 53 26 Q53 34 48 34 H36 M36 34 L50 46" fill="none" stroke="#f7efdf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

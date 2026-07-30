@@ -17,7 +17,24 @@ export function ScrollProvider({ children }) {
   )
 
   useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
+
+    // Always open at home on full page load/refresh
+    if (window.location.hash) {
+      window.history.replaceState(
+        null,
+        '',
+        `${window.location.pathname}${window.location.search}`,
+      )
+    }
+    window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
     const navSectionIds = getNavSectionIds()
+    const homeId = navSectionIds[0] || 'home'
 
     let ticking = false
     const handleScroll = () => {
@@ -31,18 +48,21 @@ export function ScrollProvider({ children }) {
         setIsScrolled((prev) => (prev === nextScrolled ? prev : nextScrolled))
         setShowScrollTop((prev) => (prev === nextShowTop ? prev : nextShowTop))
 
-        const probeY = 120
-        let currentSection = navSectionIds[0] || 'home'
-        for (let i = navSectionIds.length - 1; i >= 0; i -= 1) {
-          const section = navSectionIds[i]
-          const element = document.getElementById(section)
-          if (!element) continue
-          const rect = element.getBoundingClientRect()
-          if (rect.top <= probeY) {
-            currentSection = section
-            break
+        let currentSection = homeId
+        if (y > 80) {
+          const probeY = 120
+          for (let i = navSectionIds.length - 1; i >= 0; i -= 1) {
+            const section = navSectionIds[i]
+            const element = document.getElementById(section)
+            if (!element) continue
+            const rect = element.getBoundingClientRect()
+            if (rect.top <= probeY) {
+              currentSection = section
+              break
+            }
           }
         }
+
         setActiveSection((prev) =>
           prev === currentSection ? prev : currentSection,
         )

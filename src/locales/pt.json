@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Experiência",
-    "logoAlt": "Logotipo da {{company}}"
+    "logoAlt": "Logotipo da {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Projetos em destaque",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Compartilhar",
+    "email": "Email",
     "contact": "Contato",
     "shareTitle": "{{name}} - Portfólio",
     "shareText": "Veja o portfólio de {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Ver perfil do GitHub",
     "linkedinProfileTitle": "Conecte-se no LinkedIn",
     "sharePortfolioTitle": "Portfólio de ações",
+    "emailTitle": "Email me",
     "contactFormTitle": "Formulário de contato"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Obrigado pelo contato. Responderei em breve.",
     "errorTitle": "Algo deu errado",
     "sendError": "Não foi possível enviar. Tente novamente.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Seu nome",
     "namePlaceholder": "Como devo te chamar?",
     "emailLabel": "Seu e-mail",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Um simulador pessoal do mercado de ações para explorar ações e criptografia em tempo real. Calcule lucros, salve cenários, acompanhe favoritos e aprenda estratégias de negociação sem arriscar dinheiro real.",
         "cta": "Explorar no GitHub"
-      },
-      "2": {
-        "title": "Estúdio de órbita MR",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Portfólio React de página única apresentando as coisas que adoro construir: seções baseadas em dados, download de currículo e filtros de kit de ferramentas interativos.",
-        "cta": "Ver portfólio"
       }
     },
     "experience": {

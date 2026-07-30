@@ -25,9 +25,27 @@ export function translatePersonal(t, personal) {
     tagline: tc(t, 'personal.tagline', personal.tagline),
     intro: tc(t, 'personal.intro', personal.intro),
     whatFuelsMe: tc(t, 'personal.whatFuelsMe', personal.whatFuelsMe),
-    interests: (personal.interests || []).map((item, i) =>
-      tc(t, `personal.interests.${i}`, item),
-    ),
+    interests: (personal.interests || []).map((item, i) => {
+      const label = typeof item === 'string' ? item : item.label
+      const id =
+        (typeof item === 'object' && item.id) ||
+        [
+          'tennis',
+          'cricket',
+          'hiking',
+          'music',
+          'cooking',
+          'diy',
+          'travel',
+          'photography',
+          'explore',
+        ][i] ||
+        'craft'
+      return {
+        id,
+        label: tc(t, `personal.interests.${i}`, label),
+      }
+    }),
     principles: (personal.principles || []).map((item, i) =>
       tc(t, `personal.principles.${i}`, item),
     ),

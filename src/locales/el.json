@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Εμπειρία",
-    "logoAlt": "{{company}} λογότυπο"
+    "logoAlt": "{{company}} λογότυπο",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Επιλεγμένα έργα",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Μερίδιο",
+    "email": "Email",
     "contact": "Επαφή",
     "shareTitle": "{{name}} - Χαρτοφυλάκιο",
     "shareText": "Δείτε το χαρτοφυλάκιο του {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Προβολή προφίλ GitHub",
     "linkedinProfileTitle": "Συνδεθείτε στο LinkedIn",
     "sharePortfolioTitle": "Μοιραστείτε χαρτοφυλάκιο",
+    "emailTitle": "Email me",
     "contactFormTitle": "Φόρμα επικοινωνίας"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Ευχαριστούμε για την επικοινωνία. Θα επανέλθω σύντομα.",
     "errorTitle": "Ωχ! Κάτι πήγε στραβά",
     "sendError": "Δεν ήταν δυνατή η αποστολή του μηνύματός σας. Δοκιμάστε ξανά.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Το όνομά σου",
     "namePlaceholder": "Πώς να σε φωνάξω;",
     "emailLabel": "Το email σας",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Ένας προσωπικός προσομοιωτής χρηματιστηρίου για την εξερεύνηση μετοχών και κρυπτογράφησης σε πραγματικό χρόνο. Υπολογίστε τα κέρδη, εξοικονομήστε σενάρια, παρακολουθήστε τα αγαπημένα και μάθετε στρατηγικές συναλλαγών χωρίς να διακινδυνεύσετε πραγματικά χρήματα.",
         "cta": "Εξερευνήστε στο GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Μονοσελίδα χαρτοφυλάκιο React που παρουσιάζει τα πράγματα που μου αρέσει να δημιουργώ - ενότητες που βασίζονται σε δεδομένα, λήψη βιογραφικού και διαδραστικά φίλτρα εργαλειοθήκης.",
-        "cta": "Προβολή χαρτοφυλακίου"
       }
     },
     "experience": {

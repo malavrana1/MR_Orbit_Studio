@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Tapasztalat",
-    "logoAlt": "{{company}} logó"
+    "logoAlt": "{{company}} logó",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Kiemelt projektek",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Részesedés",
+    "email": "Email",
     "contact": "Érintkezés",
     "shareTitle": "{{name}} – Portfólió",
     "shareText": "Tekintse meg {{name}} portfólióját",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub profil megtekintése",
     "linkedinProfileTitle": "Csatlakozzon a LinkedIn-en",
     "sharePortfolioTitle": "Részvény portfólió",
+    "emailTitle": "Email me",
     "contactFormTitle": "Kapcsolatfelvételi űrlap"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Köszönjük, hogy megkereste. Hamarosan jelentkezem.",
     "errorTitle": "Hoppá! Valami elromlott",
     "sendError": "Nem sikerült elküldeni az üzenetet. Kérjük, próbálja újra.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "A neved",
     "namePlaceholder": "Hogy hívjam?",
     "emailLabel": "Az Ön email címe",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Személyes tőzsdei szimulátor a részvények és a kriptográfia valós idejű felfedezéséhez. Számítsa ki a nyereséget, mentse el a forgatókönyveket, kövesse nyomon kedvenceit és tanulja meg a kereskedési stratégiákat valódi pénz kockáztatása nélkül.",
         "cta": "Fedezze fel a GitHubon"
-      },
-      "2": {
-        "title": "MR Orbit Stúdió",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Egyoldalas React portfólió, amely bemutatja azokat a dolgokat, amelyeket szeretek építeni – adatvezérelt szakaszok, letöltés folytatása és interaktív eszköztár-szűrők.",
-        "cta": "Portfólió megtekintése"
       }
     },
     "experience": {

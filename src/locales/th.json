@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "ประสบการณ์",
-    "logoAlt": "{{company}} โลโก้"
+    "logoAlt": "{{company}} โลโก้",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "โครงการเด่น",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "ลิงค์อิน",
     "share": "แบ่งปัน",
+    "email": "Email",
     "contact": "ติดต่อ",
     "shareTitle": "{{name}} - ผลงาน",
     "shareText": "ลองดูผลงานของ {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "ดูโปรไฟล์ GitHub",
     "linkedinProfileTitle": "เชื่อมต่อบน LinkedIn",
     "sharePortfolioTitle": "แบ่งปันพอร์ตโฟลิโอ",
+    "emailTitle": "Email me",
     "contactFormTitle": "แบบฟอร์มการติดต่อ"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "ขอขอบคุณที่ติดต่อเรา ฉันจะติดต่อกลับโดยเร็วที่สุด",
     "errorTitle": "อ๊ะ! มีบางอย่างผิดพลาด",
     "sendError": "ไม่สามารถส่งข้อความของคุณได้ โปรดลองอีกครั้ง",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "ชื่อของคุณ",
     "namePlaceholder": "ฉันควรจะเรียกคุณว่าอะไร?",
     "emailLabel": "อีเมลของคุณ",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "เครื่องจำลองตลาดหุ้นส่วนตัวเพื่อสำรวจหุ้นและ crypto แบบเรียลไทม์ คำนวณผลกำไร บันทึกสถานการณ์ ติดตามรายการโปรด และเรียนรู้กลยุทธ์การซื้อขายโดยไม่ต้องเสี่ยงกับเงินจริง",
         "cta": "สำรวจบน GitHub"
-      },
-      "2": {
-        "title": "เอ็มอาร์ ออร์บิท สตูดิโอ",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "พอร์ตโฟลิโอ React หน้าเดียวที่จัดแสดงสิ่งที่ฉันชอบสร้าง - ส่วนที่ขับเคลื่อนด้วยข้อมูล ดาวน์โหลดประวัติย่อ และตัวกรองชุดเครื่องมือแบบโต้ตอบ",
-        "cta": "ดูพอร์ตโฟลิโอ"
       }
     },
     "experience": {

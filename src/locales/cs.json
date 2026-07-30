@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Zažít",
-    "logoAlt": "Logo {{company}}"
+    "logoAlt": "Logo {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Vybrané projekty",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Podíl",
+    "email": "Email",
     "contact": "Kontakt",
     "shareTitle": "{{name}} - Portfolio",
     "shareText": "Prohlédněte si portfolio {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Zobrazit profil na GitHubu",
     "linkedinProfileTitle": "Připojte se na LinkedIn",
     "sharePortfolioTitle": "Podílové portfolio",
+    "emailTitle": "Email me",
     "contactFormTitle": "Kontaktní formulář"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Děkujeme, že jste se ozvali. Brzy se ozvu.",
     "errorTitle": "Jejda! Něco se pokazilo",
     "sendError": "Vaši zprávu nelze odeslat. Zkuste to prosím znovu.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Vaše jméno",
     "namePlaceholder": "jak ti mám říkat?",
     "emailLabel": "Váš email",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Osobní simulátor akciového trhu k prozkoumání akcií a kryptoměn v reálném čase. Počítejte zisky, ukládejte scénáře, sledujte oblíbené položky a naučte se obchodní strategie, aniž byste riskovali skutečné peníze.",
         "cta": "Prozkoumejte na GitHubu"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Jednostránkové portfolio Reactu představující věci, které rád stavím – sekce založené na datech, stahování životopisů a filtry interaktivní sady nástrojů.",
-        "cta": "Zobrazit portfolio"
       }
     },
     "experience": {

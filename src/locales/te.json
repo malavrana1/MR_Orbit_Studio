@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "అనుభవం",
-    "logoAlt": "{{company}} లోగో"
+    "logoAlt": "{{company}} లోగో",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "ఫీచర్ చేయబడిన ప్రాజెక్ట్‌లు",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "లింక్డ్ఇన్",
     "share": "షేర్ చేయండి",
+    "email": "Email",
     "contact": "సంప్రదించండి",
     "shareTitle": "{{name}} - పోర్ట్‌ఫోలియో",
     "shareText": "{{name}} యొక్క పోర్ట్‌ఫోలియోను తనిఖీ చేయండి",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub ప్రొఫైల్‌ని వీక్షించండి",
     "linkedinProfileTitle": "లింక్డ్‌ఇన్‌లో కనెక్ట్ అవ్వండి",
     "sharePortfolioTitle": "షేర్ పోర్ట్‌ఫోలియో",
+    "emailTitle": "Email me",
     "contactFormTitle": "సంప్రదింపు ఫారమ్"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "చేరుకున్నందుకు ధన్యవాదాలు. నేను త్వరలో మీ వద్దకు తిరిగి వస్తాను.",
     "errorTitle": "అయ్యో! ఏదో తప్పు జరిగింది",
     "sendError": "మీ సందేశాన్ని పంపడం సాధ్యపడలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "మీ పేరు",
     "namePlaceholder": "నేను నిన్ను ఏమని పిలవాలి?",
     "emailLabel": "మీ ఇమెయిల్",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "నిజ సమయంలో స్టాక్‌లు మరియు క్రిప్టోలను అన్వేషించడానికి వ్యక్తిగత స్టాక్ మార్కెట్ సిమ్యులేటర్. లాభాలను లెక్కించండి, దృశ్యాలను సేవ్ చేయండి, ఇష్టమైన వాటిని ట్రాక్ చేయండి మరియు నిజమైన డబ్బును రిస్క్ చేయకుండా ట్రేడింగ్ వ్యూహాలను తెలుసుకోండి.",
         "cta": "GitHubలో అన్వేషించండి"
-      },
-      "2": {
-        "title": "MR ఆర్బిట్ స్టూడియో",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "సింగిల్-పేజీ రియాక్ట్ పోర్ట్‌ఫోలియో నేను నిర్మించడానికి ఇష్టపడే అంశాలను ప్రదర్శిస్తుంది - డేటా ఆధారిత విభాగాలు, డౌన్‌లోడ్ పునఃప్రారంభం మరియు ఇంటరాక్టివ్ టూల్‌కిట్ ఫిల్టర్‌లు.",
-        "cta": "పోర్ట్‌ఫోలియోను వీక్షించండి"
       }
     },
     "experience": {

@@ -1,25 +1,19 @@
 import React, { Suspense, lazy, useState, useEffect } from 'react'
+import { ReactTyped } from 'react-typed'
 import { Container, Row, Col, Card } from 'react-bootstrap'
-import {
-  FaGithub,
-  FaLinkedin,
-  FaGraduationCap,
-  FaExternalLinkAlt,
-  FaArrowUp,
-  FaEnvelope,
-  FaFilePdf,
-  FaMapMarkerAlt,
-  FaCalendarAlt,
-  FaMoon,
-  FaSun,
-} from 'react-icons/fa'
 import './Home.css'
+import './Home.dark.css'
 import ProfileImage from '../../assets/images/Profile.jpg'
-import { getSkillCategories } from '../../data/loaders'
-import { getSkillIcon } from '../../icons/skillIcons'
+import {
+  getSkillCategories,
+  getHeroCoreStack,
+  getHeroTypedTripleStrings,
+  getSiteInfo,
+} from '../../data/loaders'
+import { getSkillMeta, getToolkitMeta } from '../../icons/skillIcons'
+import { getActionMeta } from '../../icons/actionIcons'
 import resumePdf from '../../assets/pdf/Malav-Rana-Frontend-Engineer.pdf'
 import { translateSkillCategoryLabel } from '../../i18n/content'
-import { getToolkitIcon } from '../../icons/toolkitIcons'
 import { getCompanyLogo, getCompanyInitials } from '../../data/companyLogos'
 import { getProjectImage } from '../../data/projectImages'
 import {
@@ -31,52 +25,126 @@ import { useLocalizedPortfolio } from '../../hooks/useLocalizedPortfolio'
 import analyticsService from '../../services/analytics'
 import { useTheme } from '../../context/ThemeContext'
 import { usePageScroll } from '../../context/ScrollContext'
-
 const ContactModal = lazy(() => import('../../components/ContactModal'))
+
 const skillCategories = getSkillCategories()
+const siteInfo = getSiteInfo()
+const heroTypedStrings = getHeroTypedTripleStrings()
+const typedConfig = {
+  typeSpeed: 58,
+  backSpeed: 36,
+  startDelay: 400,
+  backDelay: 2200,
+  ...((siteInfo.ui || {}).typed || {}),
+}
+
+const skillWall = (() => {
+  const heroCoreStack = getHeroCoreStack()
+  if (heroCoreStack.length > 0) return heroCoreStack
+  const flat = skillCategories.flatMap((g) => g.items)
+  return Array.from(new Set(flat)).slice(0, 5)
+})()
+
+function ActionMark({ name, className = 'action-icon' }) {
+  const { Icon, color, ink } = getActionMeta(name)
+  return (
+    <span
+      className={className}
+      style={{ '--skill-bg': color, '--skill-ink': ink }}
+      aria-hidden
+    >
+      <Icon />
+    </span>
+  )
+}
 
 export default function Home() {
   const { portfolio, t, i18n } = useLocalizedPortfolio()
   const { profile, resume, personal, projects: allProjects } = portfolio
+  const toolkitDescriptions = resume.skillDescriptions || {}
+
+  const topExperience = resume.experience.slice(0, 2)
+  const EXPERIENCE_PREVIEW = 3
 
   const [activeToolkit, setActiveToolkit] = useState(
     skillCategories[0]?.category || 'Frontend',
   )
   const [showContactModal, setShowContactModal] = useState(false)
+  const [showAllExperience, setShowAllExperience] = useState(false)
   const { showScrollTop } = usePageScroll()
   const { isDarkMode, toggleDarkMode } = useTheme()
   const activeToolkitItems = skillCategories.find(
     (item) => item.category === activeToolkit,
   )?.items
+  const visibleExperience = showAllExperience
+    ? resume.experience
+    : resume.experience.slice(0, EXPERIENCE_PREVIEW)
+  const hasMoreExperience = resume.experience.length > EXPERIENCE_PREVIEW
 
   const scrollToTop = () => {
     analyticsService.trackClick('button', 'scroll_to_top', 'Scroll to Top')
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const openContact = () => {
-    analyticsService.trackClick('button', 'open_contact_modal', 'Contact')
-    setShowContactModal(true)
+  const sharePortfolio = async () => {
+    analyticsService.trackClick('button', 'share_portfolio', 'Share Portfolio')
+    const shareData = {
+      title: t('connect.shareTitle', { name: profile.name }),
+      text: t('connect.shareText', { name: profile.name }),
+      url: window.location.href,
+    }
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData)
+        analyticsService.trackClick(
+          'button',
+          'share_portfolio_success',
+          'Share Portfolio - Success',
+        )
+      } else {
+        await navigator.clipboard.writeText(window.location.href)
+        alert(t('connect.copiedAlert'))
+        analyticsService.trackClick(
+          'button',
+          'share_portfolio_copy',
+          'Share Portfolio - Copy',
+        )
+      }
+    } catch (err) {
+      if (err.name !== 'AbortError') {
+        await navigator.clipboard.writeText(window.location.href)
+        alert(t('connect.copiedAlert'))
+        analyticsService.trackClick(
+          'button',
+          'share_portfolio_copy',
+          'Share Portfolio - Copy',
+        )
+      }
+    }
   }
-
   useEffect(() => {
     return scheduleIdleTask(() => syncPageMeta(profile, t))
   }, [profile, t, i18n.language])
 
   useEffect(() => {
     return scheduleIdleTask(() => syncStructuredData(profile, skillCategories))
-  }, [profile])
+  }, [profile, skillCategories])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="landing-page" id="main-content" tabIndex={-1}>
+      <div className="animated-background" />
       <header className="landing-hero d-flex align-items-center" id="home">
         <div className="landing-hero__background-image" />
         <div className="landing-hero__overlay" />
         <div className="landing-hero__pattern" />
         <Container className="position-relative">
-          <Row className="align-items-center justify-content-center">
-            <Col lg={8} className="text-lg-start text-center">
-              <div className="hero-profile mb-3">
+          <Row className="align-items-center gy-4">
+            <Col lg={7}>
+              <div className="hero-profile">
                 <div className="hero-profile-frame">
                   <img
                     src={ProfileImage}
@@ -85,6 +153,8 @@ export default function Home() {
                     loading="eager"
                     decoding="async"
                     fetchPriority="high"
+                    width={216}
+                    height={216}
                   />
                 </div>
               </div>
@@ -93,6 +163,28 @@ export default function Home() {
                   <span className="hero-greeting">{t('hero.greeting')}</span>{' '}
                   <span className="hero-name">{profile.name}.</span>
                 </h1>
+                {heroTypedStrings.length > 0 ? (
+                  <>
+                    <span className="visually-hidden">
+                      {heroTypedStrings.join('. ')}
+                    </span>
+                    <div className="hero-typed-wrapper" aria-hidden="true">
+                      <ReactTyped
+                        className="hero-typed"
+                        strings={heroTypedStrings}
+                        typeSpeed={typedConfig.typeSpeed}
+                        backSpeed={typedConfig.backSpeed}
+                        startDelay={typedConfig.startDelay}
+                        backDelay={typedConfig.backDelay}
+                        smartBackspace
+                        shuffle={false}
+                        loop
+                        showCursor
+                        cursorChar="|"
+                      />
+                    </div>
+                  </>
+                ) : null}
                 <div className="hero-meta">
                   <p className="hero-role">
                     {profile.headline || t('hero.headlineFallback')}
@@ -112,7 +204,7 @@ export default function Home() {
                     download="Malav-Rana-Frontend-Engineer.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hero-action hero-action--primary"
+                    className="hero-action hero-action--ghost"
                     onClick={() =>
                       analyticsService.trackDownload(
                         'Malav-Rana-Frontend-Engineer.pdf',
@@ -120,32 +212,144 @@ export default function Home() {
                       )
                     }
                   >
-                    <FaFilePdf aria-hidden />
+                    <ActionMark name="resume" />
                     {t('hero.resumeCta')}
                   </a>
                   <button
                     type="button"
                     className="hero-action hero-action--ghost"
-                    onClick={openContact}
+                    onClick={() => {
+                      analyticsService.trackClick(
+                        'button',
+                        'hero_open_contact',
+                        'Contact',
+                      )
+                      setShowContactModal(true)
+                    }}
                   >
-                    <FaEnvelope aria-hidden />
+                    <ActionMark name="contact" />
                     {t('hero.contactCta')}
                   </button>
                 </div>
               </div>
+            </Col>            <Col lg={5}>
+              <Card className="hero-skill-card border-0 shadow-lg">
+                <Card.Body>
+                  <div className="skill-card-header">
+                    <div>
+                      <h5 className="mb-1">{t('hero.skillCardTitle')}</h5>
+                      <p className="text-muted mb-0">
+                        {t('hero.skillCardDescription')}
+                      </p>
+                    </div>
+                    <ActionMark
+                      name="craft"
+                      className="action-icon action-icon--lg"
+                    />
+                  </div>
+                  <div className="skill-icon-grid">
+                    {skillWall.map((skill) => {
+                      const { Icon, color, ink } = getSkillMeta(skill)
+                      return (
+                        <div className="skill-icon-tile" key={skill}>
+                          <span
+                            className="skill-icon-tile__icon"
+                            style={{ '--skill-bg': color, '--skill-ink': ink }}
+                          >
+                            <Icon />
+                          </span>
+                          <span>{skill}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                  <div className="hero-experience-quick mt-4">
+                    <h6
+                      className="mb-3 fw-bold"
+                      style={{ fontSize: '0.9rem', letterSpacing: '0.05em' }}
+                    >
+                      {t('hero.recentTeams')}
+                    </h6>
+                    <ul className="hero-experience-list">
+                      {topExperience.map((role) => (
+                        <li key={role.companyKey || role.company}>
+                          <div className="hero-experience-list__content">
+                            <span className="hero-experience-list__title">
+                              {role.role}
+                            </span>
+                            <span className="hero-experience-list__company">
+                              {role.company}
+                            </span>
+                          </div>
+                          <span className="hero-experience-list__period">
+                            <ActionMark
+                              name="calendar"
+                              className="action-icon action-icon--sm"
+                            />
+                            {role.period}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
       </header>
 
+      <section id="summary" className="landing-summary">
+        <Container>
+          <div className="summary-header text-center mb-4">
+            <h2 className="section-title mb-2">{t('summary.title')}</h2>
+            <p
+              className="summary-subtitle lead text-muted mx-auto"
+              style={{ maxWidth: '700px' }}
+            >
+              {profile.summary?.[0] || t('summary.subtitleFallback')}
+            </p>
+          </div>
+
+          <div className="professional-highlights">
+            <div className="highlight-item">
+              <ActionMark name="craft" className="action-icon action-icon--lg" />
+              <div className="highlight-content">
+                <h6 className="highlight-title">{t('summary.highlight1Title')}</h6>
+                <p className="highlight-text">{t('summary.highlight1Text')}</p>
+              </div>
+            </div>
+            <div className="highlight-item">
+              <ActionMark name="team" className="action-icon action-icon--lg" />
+              <div className="highlight-content">
+                <h6 className="highlight-title">{t('summary.highlight2Title')}</h6>
+                <p className="highlight-text">{t('summary.highlight2Text')}</p>
+              </div>
+            </div>
+            <div className="highlight-item">
+              <ActionMark
+                name="quality"
+                className="action-icon action-icon--lg"
+              />
+              <div className="highlight-content">
+                <h6 className="highlight-title">{t('summary.highlight3Title')}</h6>
+                <p className="highlight-text">{t('summary.highlight3Text')}</p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       <section id="experience" className="landing-experience">
         <Container>
           <div className="experience-heading text-center mb-3">
-            <h2 className="section-title">{t('experience.title')}</h2>
+            <h2>{t('experience.title')}</h2>
           </div>
+
           <div className="experience-grid">
-            {resume.experience.map((role, index) => {
+            {visibleExperience.map((role, index) => {
               const companyLogo = getCompanyLogo(role.companyKey || role.company)
+
               return (
                 <Card
                   key={`${role.companyKey || role.company}-${index}`}
@@ -179,16 +383,25 @@ export default function Home() {
                         <h3 className="experience-company">{role.company}</h3>
                       </div>
                     </div>
+                    {role.tagline && (
+                      <p className="experience-tagline">{role.tagline}</p>
+                    )}
                     <div className="experience-role-meta">
                       <p className="experience-role">{role.role}</p>
                       <div className="experience-meta-box">
                         <span className="experience-period">
-                          <FaCalendarAlt className="experience-icon" />
+                          <ActionMark
+                            name="calendar"
+                            className="action-icon action-icon--sm"
+                          />
                           {role.period}
                         </span>
                         {role.location && (
                           <span className="experience-location">
-                            <FaMapMarkerAlt className="experience-icon" />
+                            <ActionMark
+                              name="location"
+                              className="action-icon action-icon--sm"
+                            />
                             {role.location}
                           </span>
                         )}
@@ -200,18 +413,41 @@ export default function Home() {
               )
             })}
           </div>
-        </Container>
+          {hasMoreExperience ? (
+            <div className="experience-more">
+              <button
+                type="button"
+                className="experience-more__btn"
+                onClick={() => {
+                  const next = !showAllExperience
+                  setShowAllExperience(next)
+                  analyticsService.trackClick(
+                    'button',
+                    next ? 'experience_show_more' : 'experience_show_less',
+                    next ? 'Show more experience' : 'Show less experience',
+                  )
+                }}
+              >
+                {showAllExperience
+                  ? t('experience.showLess')
+                  : t('experience.showMore')}
+              </button>
+            </div>
+          ) : null}        </Container>
       </section>
 
       <section id="projects" className="landing-projects">
         <Container>
           <div className="projects-heading text-center mb-3">
-            <h2 className="section-title">{t('projects.title')}</h2>
+            <h2 className="section-title">
+              {t('projects.title', { defaultValue: 'Featured Projects' })}
+            </h2>
           </div>
           <Row className="g-4 justify-content-center">
             {allProjects.map((p) => {
               const preview = getProjectImage(p.id)
               const outcome = p.outcome || p.description
+
               return (
                 <Col md={4} key={p.id || p.title}>
                   <article className="project-card h-100 border-0 shadow-sm">
@@ -230,11 +466,23 @@ export default function Home() {
                       <h3 className="project-card__title">{p.title}</h3>
                       <p className="project-card__outcome">{outcome}</p>
                       <div className="project-tech">
-                        {p.tech.map((tech) => (
-                          <span key={tech} className="project-chip">
-                            {tech}
-                          </span>
-                        ))}
+                        {p.tech.map((tech) => {
+                          const { Icon, color, ink } = getSkillMeta(tech)
+                          return (
+                            <span key={tech} className="project-chip">
+                              <span
+                                className="project-chip__icon"
+                                style={{
+                                  '--skill-bg': color,
+                                  '--skill-ink': ink,
+                                }}
+                              >
+                                <Icon />
+                              </span>
+                              {tech}
+                            </span>
+                          )
+                        })}
                       </div>
                     </div>
                     <div className="project-card__footer">
@@ -243,13 +491,16 @@ export default function Home() {
                           href={p.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="project-link project-link--primary"
+                          className="project-link"
                           onClick={() =>
                             analyticsService.trackExternalLink(p.liveUrl, p.title)
                           }
                         >
+                          <ActionMark
+                            name="live"
+                            className="action-icon action-icon--sm"
+                          />
                           <span>{t('projects.live')}</span>
-                          <FaExternalLinkAlt className="project-link__icon" />
                         </a>
                       ) : null}
                       {p.githubUrl ? (
@@ -265,7 +516,10 @@ export default function Home() {
                             )
                           }
                         >
-                          <FaGithub className="project-link__icon" aria-hidden />
+                          <ActionMark
+                            name="github"
+                            className="action-icon action-icon--sm"
+                          />
                           <span>{t('projects.github')}</span>
                         </a>
                       ) : null}
@@ -280,55 +534,85 @@ export default function Home() {
 
       <section id="toolkit" className="landing-skills">
         <Container>
-          <div className="toolkit-heading text-center mb-3">
-            <h2 className="section-title">{t('toolkit.title')}</h2>
-          </div>
-          <div
-            className="toolkit-nav toolkit-nav--centered"
-            role="tablist"
-            aria-label={t('toolkit.filterAria')}
-          >
-            {skillCategories.map(({ category }) => {
-              const Icon = getToolkitIcon(category)
-              return (
-                <button
-                  key={category}
-                  type="button"
-                  role="tab"
-                  aria-selected={activeToolkit === category}
-                  className={`toolkit-nav__btn ${
-                    activeToolkit === category ? 'toolkit-nav__btn--active' : ''
-                  }`}
-                  onClick={() => {
-                    analyticsService.trackClick(
-                      'button',
-                      `toolkit_${category}`,
-                      category,
-                    )
-                    setActiveToolkit(category)
-                  }}
-                >
-                  <span>
-                    <Icon className="toolkit-nav__icon" />
-                    {translateSkillCategoryLabel(t, category)}
-                  </span>
-                </button>
-              )
-            })}
-          </div>
-          <div className="toolkit-grid toolkit-grid--solo mt-4">
-            {(activeToolkitItems || []).map((item) => {
-              const Icon = getSkillIcon(item)
-              return (
-                <div key={item} className="toolkit-grid__item">
-                  <span className="toolkit-grid__icon">
-                    <Icon />
-                  </span>
-                  <span className="toolkit-grid__label">{item}</span>
-                </div>
-              )
-            })}
-          </div>
+          <Row className="gy-4 align-items-stretch">
+            <Col xs={12} lg={4}>
+              <div className="toolkit-heading">
+                <h2 className="section-title">
+                  {t('toolkit.title')}
+                </h2>
+                <p className="text-muted">
+                  {t('toolkit.description')}
+                </p>
+              </div>
+              <div
+                className="toolkit-nav"
+                role="tablist"
+                aria-label={t('toolkit.filterAria')}
+              >
+                {skillCategories.map(({ category }) => {
+                  const { Icon, color, ink } = getToolkitMeta(category)
+                  return (
+                    <button
+                      key={category}
+                      type="button"
+                      role="tab"
+                      aria-selected={activeToolkit === category}
+                      className={`toolkit-nav__btn ${
+                        activeToolkit === category
+                          ? 'toolkit-nav__btn--active'
+                          : ''
+                      }`}
+                      onClick={() => {
+                        analyticsService.trackClick(
+                          'button',
+                          `toolkit_${category}`,
+                          category,
+                        )
+                        setActiveToolkit(category)
+                      }}
+                    >
+                      <span
+                        className="toolkit-nav__icon-wrap"
+                        style={{ '--skill-bg': color, '--skill-ink': ink }}
+                      >
+                        <Icon className="toolkit-nav__icon" />
+                      </span>
+                      <span>{translateSkillCategoryLabel(t, category)}</span>
+                    </button>
+                  )
+                })}
+              </div>
+            </Col>
+            <Col xs={12} lg={8}>
+              <Card className="toolkit-card border-0 shadow-sm h-100">
+                <Card.Body>
+                  <h5 className="mb-3">
+                    {translateSkillCategoryLabel(t, activeToolkit)}
+                  </h5>
+                  <p className="text-muted mb-4">
+                    {toolkitDescriptions[activeToolkit] ||
+                      t('toolkit.defaultDescription')}
+                  </p>
+                  <div className="toolkit-grid">
+                    {(activeToolkitItems || []).map((item) => {
+                      const { Icon, color, ink } = getSkillMeta(item)
+                      return (
+                        <div key={item} className="toolkit-grid__item">
+                          <span
+                            className="toolkit-grid__icon"
+                            style={{ '--skill-bg': color, '--skill-ink': ink }}
+                          >
+                            <Icon />
+                          </span>
+                          <span className="toolkit-grid__label">{item}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
         </Container>
       </section>
 
@@ -337,105 +621,240 @@ export default function Home() {
           <div className="credentials-heading text-center mb-3">
             <h2 className="section-title">{t('credentials.education')}</h2>
           </div>
-          {(resume.education || []).map((edu, index) => (
-            <div
-              key={`${edu.institution}-${index}`}
-              className="education-row"
-            >
-              <div className="credential-icon education-icon-bg">
-                <FaGraduationCap />
-              </div>
-              <div className="credential-content">
-                <h3 className="credential-title">{edu.degree}</h3>
-                <p className="credential-institution mb-1">{edu.institution}</p>
-                {edu.location ? (
-                  <p className="credential-subtitle mb-1">{edu.location}</p>
-                ) : null}
-                <span className="credential-period">{edu.period}</span>
-              </div>
-            </div>
-          ))}
+          <div className="education-grid">
+            {(resume.education || []).map((edu, index) => {
+              const degree = (edu.degree || '').toLowerCase()
+              const mark = degree.includes('bachelor')
+                ? 'BS'
+                : degree.includes('master')
+                  ? 'MS'
+                  : degree.includes('associate')
+                    ? 'AS'
+                    : degree.includes('phd') || degree.includes('doctor')
+                      ? 'PhD'
+                      : 'ED'
+
+              return (
+                <article
+                  key={`${edu.institution}-${index}`}
+                  className="education-card"
+                >
+                  <div className="education-card__mark" aria-hidden>
+                    <span>{mark}</span>
+                  </div>
+                  <div className="education-card__body">
+                    <p className="education-card__degree">{edu.degree}</p>
+                    <h3 className="education-card__school">{edu.institution}</h3>
+                    <div className="education-card__meta">
+                      {edu.location ? (
+                        <span className="education-card__chip">
+                          <ActionMark
+                            name="location"
+                            className="action-icon action-icon--sm"
+                          />
+                          {edu.location}
+                        </span>
+                      ) : null}
+                      {edu.period ? (
+                        <span className="education-card__chip">
+                          <ActionMark
+                            name="calendar"
+                            className="action-icon action-icon--sm"
+                          />
+                          {edu.period}
+                        </span>
+                      ) : null}
+                    </div>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
         </Container>
       </section>
 
       <section id="about" className="landing-personal">
         <Container>
-          <div className="text-center mb-3">
+          <div className="text-center mb-4">
             <h2 className="section-title">
               {personal.tagline || t('about.titleFallback')}
             </h2>
           </div>
-          <div className="about-copy mx-auto">
-            <p>{personal.intro}</p>
-            {personal.whatFuelsMe ? <p>{personal.whatFuelsMe}</p> : null}
-          </div>
+          <Row className="g-4 justify-content-center">
+            <Col lg={6}>
+              <Card className="personal-card border-0 shadow-sm h-100">
+                <Card.Body className="p-4">
+                  <h5 className="mb-3 landing-accent-heading">
+                    {t('about.whatEnjoy')}
+                  </h5>
+                  <p className="text-muted mb-4 personal-copy">
+                    {personal.intro}
+                  </p>
+                  <div className="interest-chips">
+                    {(personal.interests || []).map((interest) => (
+                      <span key={interest.id} className="interest-chip">
+                        <ActionMark
+                          name={interest.id}
+                          className="action-icon action-icon--sm"
+                        />
+                        {interest.label}
+                      </span>
+                    ))}
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col lg={6}>
+              <Card className="personal-card border-0 shadow-sm h-100">
+                <Card.Body className="p-4">
+                  <h5 className="mb-3 landing-accent-heading">
+                    {t('about.whatLikeWork')}
+                  </h5>
+                  <p
+                    className="text-muted mb-4"
+                    style={{ lineHeight: '1.7', fontSize: '1rem' }}
+                  >
+                    {personal.whatFuelsMe}
+                  </p>
+                  {personal.principles && personal.principles.length > 0 && (
+                    <div className="mt-4">
+                      <h6
+                        className="mb-3"
+                        style={{
+                          color: '#5c4033',
+                          fontWeight: '600',
+                          fontSize: '1rem',
+                        }}
+                      >
+                        {t('about.principles')}
+                      </h6>
+                      <ul className="personal-list">
+                        {personal.principles.map((principle, index) => (
+                          <li key={index} style={{ marginBottom: '0.5rem' }}>
+                            {principle}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
         </Container>
       </section>
 
       <section id="connect" className="landing-connect">
         <Container>
-          <div className="connect-block text-center mx-auto">
-            <h2 className="section-title">{t('connect.title')}</h2>
-            <p className="connect-copy">{t('connect.description')}</p>
-            <div className="contact-actions">
-              <a
-                href={profile.social.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline-primary"
-                title={t('connect.githubProfileTitle')}
-                onClick={() =>
-                  analyticsService.trackSocialClick(
-                    'github',
-                    profile.social.github,
-                  )
-                }
-              >
-                <FaGithub />
-                {t('connect.github')}
-              </a>
-              <a
-                href={profile.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline-primary"
-                title={t('connect.linkedinProfileTitle')}
-                onClick={() =>
-                  analyticsService.trackSocialClick(
-                    'linkedin',
-                    profile.social.linkedin,
-                  )
-                }
-              >
-                <FaLinkedin />
-                {t('connect.linkedin')}
-              </a>
-              <a
-                href={
-                  profile.contact?.email
-                    ? `mailto:${profile.contact.email}`
-                    : undefined
-                }
-                className="btn btn-outline-primary"
-                title={t('connect.emailTitle')}
-                onClick={() =>
-                  analyticsService.trackClick('link', 'mailto_connect', 'Email')
-                }
-              >
-                <FaEnvelope />
-                {t('connect.email')}
-              </a>
-              <button
-                type="button"
-                onClick={openContact}
-                className="btn btn-primary"
-                title={t('connect.contactFormTitle')}
-              >
-                <FaEnvelope />
-                {t('connect.contact')}
-              </button>
-            </div>
-          </div>
+          <Row className="align-items-center gy-4">
+            <Col lg={8} className="mx-auto">
+              <Card className="border-0 shadow-sm personal-card contact-card">
+                <Card.Body className="text-center p-4">
+                  <h2 className="mb-4" style={{ color: '#3e2723' }}>
+                    {t('connect.title')}
+                  </h2>
+                  <p className="text-muted mb-4">
+                    {t('connect.description')}
+                  </p>
+                  <div className="contact-actions">
+                    <a
+                      href={resumePdf}
+                      download="Malav-Rana-Frontend-Engineer.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                      title={t('connect.resumePdfTitle')}
+                      onClick={() =>
+                        analyticsService.trackDownload(
+                          'Malav-Rana-Frontend-Engineer.pdf',
+                          'pdf',
+                        )
+                      }
+                    >
+                      <ActionMark name="resume" />
+                      {t('connect.resumeDownload')}
+                    </a>
+                    <a
+                      href={profile.social.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                      title={t('connect.githubProfileTitle')}
+                      onClick={() =>
+                        analyticsService.trackSocialClick(
+                          'github',
+                          profile.social.github,
+                        )
+                      }
+                    >
+                      <ActionMark name="github" />
+                      {t('connect.github')}
+                    </a>
+                    <a
+                      href={profile.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-primary"
+                      title={t('connect.linkedinProfileTitle')}
+                      onClick={() =>
+                        analyticsService.trackSocialClick(
+                          'linkedin',
+                          profile.social.linkedin,
+                        )
+                      }
+                    >
+                      <ActionMark name="linkedin" />
+                      {t('connect.linkedin')}
+                    </a>
+                    <a
+                      href={
+                        profile.contact?.email
+                          ? `mailto:${profile.contact.email}`
+                          : undefined
+                      }
+                      className="btn btn-outline-primary"
+                      title={t('connect.emailTitle')}
+                      onClick={() =>
+                        analyticsService.trackClick(
+                          'link',
+                          'mailto_connect',
+                          'Email',
+                        )
+                      }
+                    >
+                      <ActionMark name="email" />
+                      {t('connect.email')}
+                    </a>
+                    <button
+                      type="button"
+                      onClick={sharePortfolio}
+                      className="btn btn-outline-primary"
+                      title={t('connect.sharePortfolioTitle')}
+                    >
+                      <ActionMark name="share" />
+                      {t('connect.share')}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        analyticsService.trackClick(
+                          'button',
+                          'open_contact_modal',
+                          'Contact',
+                        )
+                        setShowContactModal(true)
+                      }}
+                      className="btn btn-outline-primary"
+                      title={t('connect.contactFormTitle')}
+                    >
+                      <ActionMark name="contact" />
+                      {t('connect.contact')}
+                    </button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
         </Container>
       </section>
 
@@ -448,11 +867,7 @@ export default function Home() {
         }
         title={isDarkMode ? t('theme.switchToLight') : t('theme.switchToDark')}
       >
-        {isDarkMode ? (
-          <FaSun className="theme-toggle-icon" />
-        ) : (
-          <FaMoon className="theme-toggle-icon" />
-        )}
+        <ActionMark name={isDarkMode ? 'sun' : 'moon'} />
       </button>
 
       {showScrollTop && (
@@ -463,7 +878,7 @@ export default function Home() {
           aria-label={t('floating.scrollTop')}
           title={t('floating.backToTop')}
         >
-          <FaArrowUp />
+          <ActionMark name="top" />
         </button>
       )}
 

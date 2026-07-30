@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "تجربه کنید",
-    "logoAlt": "{{company}} آرم"
+    "logoAlt": "{{company}} آرم",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "پروژه های برجسته",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "لینکدین",
     "share": "به اشتراک بگذارید",
+    "email": "Email",
     "contact": "تماس بگیرید",
     "shareTitle": "{{name}} - نمونه کارها",
     "shareText": "نمونه کارها {{name}} را بررسی کنید",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "نمایه GitHub را مشاهده کنید",
     "linkedinProfileTitle": "در لینکدین وصل شوید",
     "sharePortfolioTitle": "نمونه کارها را به اشتراک بگذارید",
+    "emailTitle": "Email me",
     "contactFormTitle": "فرم تماس"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "از تماس شما متشکریم. من به زودی با شما تماس خواهم گرفت.",
     "errorTitle": "اوه! مشکلی پیش آمد",
     "sendError": "پیام شما ارسال نشد لطفا دوباره امتحان کنید.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "نام شما",
     "namePlaceholder": "شما را چه صدا کنم؟",
     "emailLabel": "ایمیل شما",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "یک شبیه ساز شخصی بازار سهام برای کشف سهام و ارزهای دیجیتال در زمان واقعی. سود را محاسبه کنید، سناریوها را ذخیره کنید، موارد دلخواه را دنبال کنید و استراتژی های معاملاتی را بدون ریسک کردن پول واقعی بیاموزید.",
         "cta": "در GitHub کاوش کنید"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "نمونه کارها React تک صفحه‌ای که چیزهایی را که دوست دارم بسازم را به نمایش می‌گذارد - بخش‌های مبتنی بر داده، دانلود رزومه، و فیلترهای بسته ابزار تعاملی.",
-        "cta": "مشاهده نمونه کارها"
       }
     },
     "experience": {

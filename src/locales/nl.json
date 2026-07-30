@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Ervaring",
-    "logoAlt": "{{company}}-logo"
+    "logoAlt": "{{company}}-logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Uitgelichte projecten",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Delen",
+    "email": "Email",
     "contact": "Contact",
     "shareTitle": "{{name}} - Portefeuille",
     "shareText": "Bekijk het portfolio van {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Bekijk GitHub-profiel",
     "linkedinProfileTitle": "Maak verbinding op LinkedIn",
     "sharePortfolioTitle": "Aandelenportefeuille",
+    "emailTitle": "Email me",
     "contactFormTitle": "Contactformulier"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Bedankt voor je bericht. Ik reageer snel.",
     "errorTitle": "Er ging iets mis",
     "sendError": "Bericht kon niet worden verzonden. Probeer opnieuw.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Je naam",
     "namePlaceholder": "Hoe mag ik je noemen?",
     "emailLabel": "Je e-mail",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Een persoonlijke aandelenmarktsimulator om aandelen en crypto in realtime te verkennen. Bereken winsten, bewaar scenario's, volg favorieten en leer handelsstrategieën zonder echt geld te riskeren.",
         "cta": "Ontdek op GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "React-portfolio van één pagina met de dingen die ik graag bouw: datagestuurde secties, het downloaden van cv's en interactieve toolkitfilters.",
-        "cta": "Bekijk portefeuille"
       }
     },
     "experience": {

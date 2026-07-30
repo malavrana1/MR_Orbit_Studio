@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Uppleva",
-    "logoAlt": "{{company}} logotyp"
+    "logoAlt": "{{company}} logotyp",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Utvalda projekt",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Dela",
+    "email": "Email",
     "contact": "Kontakta",
     "shareTitle": "{{name}} - Portfölj",
     "shareText": "Kolla in {{name}}s portfölj",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Visa GitHub profil",
     "linkedinProfileTitle": "Anslut på LinkedIn",
     "sharePortfolioTitle": "Aktieportfölj",
+    "emailTitle": "Email me",
     "contactFormTitle": "Kontaktformulär"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Tack för att du hörde av dig. Jag återkommer snart.",
     "errorTitle": "hoppsan! Något gick fel",
     "sendError": "Det gick inte att skicka ditt meddelande. Försök igen.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Ditt namn",
     "namePlaceholder": "Vad ska jag kalla dig?",
     "emailLabel": "Din e-post",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "En personlig börssimulator för att utforska aktier och krypto i realtid. Beräkna vinster, spara scenarier, spåra favoriter och lär dig handelsstrategier utan att riskera riktiga pengar.",
         "cta": "Utforska på GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Ensidig React-portfölj som visar upp det jag älskar att bygga – datadrivna sektioner, nedladdning av CV och interaktiva verktygslådafilter.",
-        "cta": "Se portfölj"
       }
     },
     "experience": {

@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "अनुभव",
-    "logoAlt": "{{company}} लोगो"
+    "logoAlt": "{{company}} लोगो",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "चुनिंदा प्रोजेक्ट",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "Linkedin",
     "share": "शेयर",
+    "email": "Email",
     "contact": "संपर्क",
     "shareTitle": "{{name}} - पोर्टफोलियो",
     "shareText": "{{name}} का पोर्टफोलियो देखें",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub प्रोफ़ाइल देखें",
     "linkedinProfileTitle": "लिंक्डइन पर जुड़ें",
     "sharePortfolioTitle": "शेयर पोर्टफोलियो",
+    "emailTitle": "Email me",
     "contactFormTitle": "संपर्क करें प्रपत्र"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "संपर्क के लिए धन्यवाद। जल्द ही जवाब दूँगा।",
     "errorTitle": "कुछ गलत हो गया",
     "sendError": "संदेश नहीं भेजा जा सका। पुनः प्रयास करें।",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "आपका नाम",
     "namePlaceholder": "मैं आपको क्या कहूँ?",
     "emailLabel": "ईमेल",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "वास्तविक समय में स्टॉक और क्रिप्टो का पता लगाने के लिए एक व्यक्तिगत स्टॉक मार्केट सिम्युलेटर। मुनाफ़े की गणना करें, परिदृश्यों को सहेजें, पसंदीदा ट्रैक करें, और वास्तविक धन को जोखिम में डाले बिना ट्रेडिंग रणनीतियाँ सीखें।",
         "cta": "GitHub पर खोजें"
-      },
-      "2": {
-        "title": "एमआर ऑर्बिट स्टूडियो",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "सिंगल-पेज रिएक्ट पोर्टफोलियो उन चीज़ों को प्रदर्शित करता है जो मुझे बनाना पसंद है - डेटा-संचालित अनुभाग, रेज़्यूमे डाउनलोड और इंटरैक्टिव टूलकिट फ़िल्टर।",
-        "cta": "पोर्टफ़ोलियो देखें"
       }
     },
     "experience": {

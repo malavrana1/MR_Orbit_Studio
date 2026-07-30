@@ -16,14 +16,5 @@
     "tech": ["Vue.js", "Pinia", "Node.js"],
     "githubUrl": "https://github.com/malavrana1/StockSim",
     "liveUrl": ""
-  },
-  {
-    "id": "mr-orbit-studio",
-    "title": "MR Orbit Studio",
-    "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-    "description": "Single-page React portfolio showcasing the things I love to build - data-driven sections, resume download, and interactive toolkit filters.",
-    "tech": ["React", "Vite", "Firebase Hosting"],
-    "githubUrl": "https://github.com/malavrana1/MR_Orbit_Studio",
-    "liveUrl": "https://mr-orbit-studio.web.app"
   }
 ]

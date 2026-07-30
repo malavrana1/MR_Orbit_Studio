@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "अनुभव",
-    "logoAlt": "{{company}} लोगो"
+    "logoAlt": "{{company}} लोगो",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "वैशिष्ट्यीकृत प्रकल्प",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "लिंक्डइन",
     "share": "शेअर करा",
+    "email": "Email",
     "contact": "संपर्क करा",
     "shareTitle": "{{name}} - पोर्टफोलिओ",
     "shareText": "{{name}} चा पोर्टफोलिओ पहा",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub प्रोफाइल पहा",
     "linkedinProfileTitle": "LinkedIn वर कनेक्ट करा",
     "sharePortfolioTitle": "पोर्टफोलिओ शेअर करा",
+    "emailTitle": "Email me",
     "contactFormTitle": "संपर्क फॉर्म"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "पोहोचल्याबद्दल धन्यवाद. मी लवकरच तुमच्याकडे परत येईन.",
     "errorTitle": "अरेरे! काहीतरी चूक झाली",
     "sendError": "तुमचा संदेश पाठवू शकलो नाही. कृपया पुन्हा प्रयत्न करा.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "तुमचे नाव",
     "namePlaceholder": "मी तुला काय बोलावू?",
     "emailLabel": "तुमचा ईमेल",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "रिअल टाइममध्ये स्टॉक आणि क्रिप्टो एक्सप्लोर करण्यासाठी वैयक्तिक स्टॉक मार्केट सिम्युलेटर. नफ्याची गणना करा, परिस्थिती जतन करा, आवडींचा मागोवा घ्या आणि वास्तविक पैशाचा धोका न घेता ट्रेडिंग धोरण शिका.",
         "cta": "GitHub वर एक्सप्लोर करा"
-      },
-      "2": {
-        "title": "एमआर ऑर्बिट स्टुडिओ",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "सिंगल-पेज रिॲक्ट पोर्टफोलिओ ज्या गोष्टी मला तयार करायला आवडतात - डेटा-चालित विभाग, डाउनलोड पुन्हा सुरू करा आणि परस्परसंवादी टूलकिट फिल्टर.",
-        "cta": "पोर्टफोलिओ पहा"
       }
     },
     "experience": {

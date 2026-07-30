@@ -6,19 +6,10 @@ import analyticsService from '../services/analytics'
 import { useTheme } from '../context/ThemeContext'
 import { usePageScroll } from '../context/ScrollContext'
 import LanguageSwitcher from '../components/LanguageSwitcher'
-import {
-  FaHome,
-  FaToolbox,
-  FaBriefcase,
-  FaGraduationCap,
-  FaFolderOpen,
-  FaHandshake,
-  FaMoon,
-  FaSun,
-} from 'react-icons/fa'
+import { getActionMeta } from '../icons/actionIcons'
 import './Header.css'
 
-const Logo = ({ className = '', size = 28 }) => (
+const Logo = ({ className = '', size = 42 }) => (
   <svg
     className={`brand-logo ${className}`}
     width={size}
@@ -30,71 +21,46 @@ const Logo = ({ className = '', size = 28 }) => (
     focusable="false"
   >
     <defs>
-      <linearGradient id="orbit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#5c4033" />
-        <stop offset="50%" stopColor="#8b6914" />
-        <stop offset="100%" stopColor="#c9a227" />
+      <linearGradient id="mr-logo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#1a1512" />
+        <stop offset="55%" stopColor="#2c1b16" />
+        <stop offset="100%" stopColor="#3e2723" />
       </linearGradient>
-      <radialGradient id="core-gradient" cx="50%" cy="50%">
-        <stop offset="0%" stopColor="#8b6914" />
-        <stop offset="100%" stopColor="#5c4033" />
-      </radialGradient>
+      <linearGradient id="mr-logo-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#e8d5a3" />
+        <stop offset="45%" stopColor="#c9a227" />
+        <stop offset="100%" stopColor="#8b6914" />
+      </linearGradient>
     </defs>
+    <rect width="64" height="64" rx="16" fill="url(#mr-logo-bg)" />
     <rect
-      width="64"
-      height="64"
+      x="3"
+      y="3"
+      width="58"
+      height="58"
       rx="14"
-      fill="url(#orbit-gradient)"
-      className="logo-bg"
-    />
-    <ellipse
-      cx="32"
-      cy="32"
-      rx="22"
-      ry="10"
       fill="none"
-      stroke="rgba(255, 255, 255, 0.3)"
-      strokeWidth="1.5"
-      className="logo-orbit-ring"
-      transform="rotate(-15 32 32)"
+      stroke="url(#mr-logo-ring)"
+      strokeWidth="2.5"
     />
     <path
-      d="M 14 18 L 14 46 M 14 18 L 22 34 L 30 18 M 30 18 L 30 46"
+      d="M16 18 V46 M16 18 L24 34 L32 18 M32 18 V46"
       fill="none"
-      stroke="#ffffff"
+      stroke="#f7efdf"
       strokeWidth="4"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="logo-m"
     />
     <path
-      d="M 34 18 L 48 18 Q 52 18 52 26 Q 52 34 48 34 L 34 34 M 34 34 L 48 46"
+      d="M36 18 H48 Q53 18 53 26 Q53 34 48 34 H36 M36 34 L50 46"
       fill="none"
-      stroke="#ffffff"
+      stroke="#f7efdf"
       strokeWidth="4"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="logo-r"
-    />
-    <circle
-      cx="32"
-      cy="54"
-      r="2"
-      fill="#ffffff"
-      opacity="0.8"
-      className="logo-accent"
     />
   </svg>
 )
-
-const navIcons = {
-  home: FaHome,
-  toolkit: FaToolbox,
-  experience: FaBriefcase,
-  education: FaGraduationCap,
-  projects: FaFolderOpen,
-  connect: FaHandshake,
-}
 
 const Header = memo(function Header() {
   const { t } = useTranslation()
@@ -105,6 +71,8 @@ const Header = memo(function Header() {
   const { isScrolled, activeSection } = usePageScroll()
   const { isDarkMode, toggleDarkMode } = useTheme()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const themeMeta = getActionMeta(isDarkMode ? 'sun' : 'moon')
+  const ThemeIcon = themeMeta.Icon
 
   const handleHeaderThemeClick = useCallback(() => {
     toggleDarkMode()
@@ -165,19 +133,24 @@ const Header = memo(function Header() {
           <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
             {nav.links.map((link) => {
               const sectionId = link.href.substring(1)
-              const Icon = navIcons[sectionId] || FaHome
+              const { Icon, color, ink } = getActionMeta(sectionId)
               const isActive = activeSection === sectionId
               const label = t(`nav.${sectionId}`, { defaultValue: link.label })
 
               return (
                 <li key={link.href}>
-                    <a
-                      href={link.href}
-                      className={`nav-link ${isActive ? 'active' : ''}`}
-                      title={label}
-                      onClick={(e) => handleNavClick(e, link.href)}
+                  <a
+                    href={link.href}
+                    className={`nav-link ${isActive ? 'active' : ''}`}
+                    title={label}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                  >
+                    <span
+                      className="nav-icon-wrap"
+                      style={{ '--skill-bg': color, '--skill-ink': ink }}
                     >
-                    <Icon className="nav-icon" />
+                      <Icon className="nav-icon" />
+                    </span>
                     <span className="nav-label">{label}</span>
                     {isActive && <span className="nav-indicator"></span>}
                   </a>
@@ -196,11 +169,15 @@ const Header = memo(function Header() {
                   isDarkMode ? t('theme.switchToLight') : t('theme.switchToDark')
                 }
               >
-                {isDarkMode ? (
-                  <FaSun className="nav-icon" />
-                ) : (
-                  <FaMoon className="nav-icon" />
-                )}
+                <span
+                  className="nav-icon-wrap"
+                  style={{
+                    '--skill-bg': themeMeta.color,
+                    '--skill-ink': themeMeta.ink,
+                  }}
+                >
+                  <ThemeIcon className="nav-icon" />
+                </span>
                 <span className="nav-label">
                   {isDarkMode ? t('theme.lightMode') : t('theme.darkMode')}
                 </span>

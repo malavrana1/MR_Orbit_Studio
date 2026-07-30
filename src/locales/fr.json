@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Expérience",
-    "logoAlt": "Logo {{company}}"
+    "logoAlt": "Logo {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Projets en vedette",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Partager",
+    "email": "Email",
     "contact": "Contact",
     "shareTitle": "{{name}} - Portefeuille",
     "shareText": "Découvrez le portfolio de {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Afficher le profil GitHub",
     "linkedinProfileTitle": "Connectez-vous sur LinkedIn",
     "sharePortfolioTitle": "Partager le portefeuille",
+    "emailTitle": "Email me",
     "contactFormTitle": "Formulaire de contact"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Merci pour votre message. Je vous répondrai bientôt.",
     "errorTitle": "Une erreur s'est produite",
     "sendError": "Impossible d'envoyer le message. Réessayez.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Votre nom",
     "namePlaceholder": "Comment dois-je vous appeler ?",
     "emailLabel": "Votre e-mail",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Un simulateur boursier personnel pour explorer les actions et les crypto-monnaies en temps réel. Calculez les bénéfices, enregistrez des scénarios, suivez vos favoris et apprenez des stratégies de trading sans risquer de l'argent réel.",
         "cta": "Explorez sur GitHub"
-      },
-      "2": {
-        "title": "Studio MR Orbite",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Portfolio React d'une seule page présentant les éléments que j'aime créer : sections basées sur les données, téléchargement de CV et filtres de boîte à outils interactifs.",
-        "cta": "Voir le portefeuille"
       }
     },
     "experience": {

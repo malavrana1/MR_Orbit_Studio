@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "অভিজ্ঞতা",
-    "logoAlt": "{{company}} লোগো"
+    "logoAlt": "{{company}} লোগো",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "বৈশিষ্ট্যযুক্ত প্রকল্প",
@@ -72,6 +74,7 @@
     "github": "গিটহাব",
     "linkedin": "লিঙ্কডইন",
     "share": "শেয়ার করুন",
+    "email": "Email",
     "contact": "যোগাযোগ",
     "shareTitle": "{{name}} - পোর্টফোলিও",
     "shareText": "{{name}} এর পোর্টফোলিও দেখুন",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub প্রোফাইল দেখুন",
     "linkedinProfileTitle": "LinkedIn এ সংযোগ করুন",
     "sharePortfolioTitle": "পোর্টফোলিও শেয়ার করুন",
+    "emailTitle": "Email me",
     "contactFormTitle": "যোগাযোগ ফর্ম"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "পৌঁছানোর জন্য ধন্যবাদ. আমি শীঘ্রই আপনি ফিরে পেতে হবে.",
     "errorTitle": "উফ! কিছু ভুল হয়েছে",
     "sendError": "আপনার বার্তা পাঠানো যায়নি. আবার চেষ্টা করুন.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "তোমার নাম",
     "namePlaceholder": "আমি আপনাকে কি বলে ডাকব?",
     "emailLabel": "আপনার ইমেইল",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "রিয়েল টাইমে স্টক এবং ক্রিপ্টো অন্বেষণ করার জন্য একটি ব্যক্তিগত স্টক মার্কেট সিমুলেটর। প্রকৃত অর্থের ঝুঁকি না নিয়ে মুনাফা গণনা করুন, পরিস্থিতি সংরক্ষণ করুন, পছন্দের ট্র্যাক করুন এবং ট্রেডিং কৌশল শিখুন।",
         "cta": "GitHub-এ অন্বেষণ করুন"
-      },
-      "2": {
-        "title": "এমআর অরবিট স্টুডিও",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "একক-পৃষ্ঠার প্রতিক্রিয়া পোর্টফোলিও যা আমি তৈরি করতে পছন্দ করি তা প্রদর্শন করে - ডেটা-চালিত বিভাগ, পুনরায় শুরু ডাউনলোড, এবং ইন্টারেক্টিভ টুলকিট ফিল্টার।",
-        "cta": "পোর্টফোলিও দেখুন"
       }
     },
     "experience": {

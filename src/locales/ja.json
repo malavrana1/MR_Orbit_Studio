@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "職務経歴",
-    "logoAlt": "{{company}} のロゴ"
+    "logoAlt": "{{company}} のロゴ",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "注目のプロジェクト",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "リンクトイン",
     "share": "共有",
+    "email": "Email",
     "contact": "連絡",
     "shareTitle": "{{name}} - ポートフォリオ",
     "shareText": "{{name}} のポートフォリオを見る",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub プロフィールを表示",
     "linkedinProfileTitle": "LinkedIn で接続する",
     "sharePortfolioTitle": "株式ポートフォリオ",
+    "emailTitle": "Email me",
     "contactFormTitle": "お問い合わせフォーム"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "ありがとうございます。追ってご連絡します。",
     "errorTitle": "エラーが発生しました",
     "sendError": "送信できませんでした。もう一度お試しください。",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "お名前",
     "namePlaceholder": "お呼びする名前は？",
     "emailLabel": "メール",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "株式と仮想通貨をリアルタイムで探索するための個人用株式市場シミュレーター。 リアルマネーを危険にさらすことなく、利益を計算し、シナリオを保存し、お気に入りを追跡し、取引戦略を学びます。",
         "cta": "GitHub で探索する"
-      },
-      "2": {
-        "title": "MR オービットスタジオ",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "データ駆動型セクション、ダウンロードの再開、インタラクティブなツールキット フィルターなど、私が構築したいものを紹介する 1 ページの React ポートフォリオ。",
-        "cta": "ポートフォリオを見る"
       }
     },
     "experience": {

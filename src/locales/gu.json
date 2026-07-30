@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "અનુભવ",
-    "logoAlt": "{{company}} લોગો"
+    "logoAlt": "{{company}} લોગો",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "ફીચર્ડ પ્રોજેક્ટ્સ",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "શેર કરો",
+    "email": "Email",
     "contact": "સંપર્ક",
     "shareTitle": "{{name}} - પોર્ટફોલિયો",
     "shareText": "{{name}} નું પોર્ટફોલિયો જુઓ",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub પ્રોફાઇલ જુઓ",
     "linkedinProfileTitle": "LinkedIn પર જોડાઓ",
     "sharePortfolioTitle": "પોર્ટફોલિયો શેર કરો",
+    "emailTitle": "Email me",
     "contactFormTitle": "સંપર્ક ફોર્મ"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "સંપર્ક કરવા બદલ આભાર. હું ટૂંક સમયમાં જવાબ આપીશ.",
     "errorTitle": "અરે! કંઈક ખોટું થયું",
     "sendError": "તમારો સંદેશ મોકલી શકાયો નહીં. ફરી પ્રયાસ કરો.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "તમારું નામ",
     "namePlaceholder": "મને શું કહીને બોલાવશો?",
     "emailLabel": "તમારું ઇમેઇલ",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "સ્ટોક્સ અને ક્રિપ્ટોને રિયલ ટાઇમમાં એક્સપ્લોર કરવા માટેનું વ્યક્તિગત સ્ટોક માર્કેટ સિમ્યુલેટર. નફો ગણો, સ્ટેનારિયો સાચવો, ફેવરિટ્સ ટ્રેક કરો અને વાસ્તવિક પૈસા જોખમમાં નાખ્યા વગર ટ્રેડિંગ સ્ટ્રેટેજી શીખો.",
         "cta": "GitHub પર જુઓ"
-      },
-      "2": {
-        "title": "એમઆર ઓર્બિટ સ્ટુડિયો",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "ડેટા-ડ્રિવન સેક્શન્સ, રિઝ્યૂમ ડાઉનલોડ અને ઇન્ટરેક્ટિવ ટૂલકિટ ફિલ્ટર્સ દર્શાવતું સિંગલ-પેજ React પોર્ટફોલિયો.",
-        "cta": "પોર્ટફોલિયો જુઓ"
       }
     },
     "experience": {

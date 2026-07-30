@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "அனுபவம்",
-    "logoAlt": "{{company}} லோகோ"
+    "logoAlt": "{{company}} லோகோ",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "சிறப்பு திட்டங்கள்",
@@ -72,6 +74,7 @@
     "github": "கிட்ஹப்",
     "linkedin": "LinkedIn",
     "share": "பகிரவும்",
+    "email": "Email",
     "contact": "தொடர்பு கொள்ளவும்",
     "shareTitle": "{{name}} - போர்ட்ஃபோலியோ",
     "shareText": "{{name}} இன் போர்ட்ஃபோலியோவைப் பார்க்கவும்",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub சுயவிவரத்தைக் காண்க",
     "linkedinProfileTitle": "LinkedIn இல் இணைக்கவும்",
     "sharePortfolioTitle": "பகிர்வு போர்ட்ஃபோலியோ",
+    "emailTitle": "Email me",
     "contactFormTitle": "தொடர்பு படிவம்"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "சென்றடைந்ததற்கு நன்றி. நான் விரைவில் உங்களிடம் வருவேன்.",
     "errorTitle": "அச்சச்சோ! ஏதோ தவறாகிவிட்டது",
     "sendError": "உங்கள் செய்தியை அனுப்ப முடியவில்லை. மீண்டும் முயற்சிக்கவும்.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "உங்கள் பெயர்",
     "namePlaceholder": "நான் உன்னை என்ன அழைக்க வேண்டும்?",
     "emailLabel": "உங்கள் மின்னஞ்சல்",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "பங்குகள் மற்றும் கிரிப்டோவை உண்மையான நேரத்தில் ஆராய ஒரு தனிப்பட்ட பங்குச் சந்தை சிமுலேட்டர். லாபத்தைக் கணக்கிடுங்கள், காட்சிகளைச் சேமிக்கவும், பிடித்தவைகளைக் கண்காணிக்கவும், உண்மையான பணத்தைப் பணயம் வைக்காமல் வர்த்தக உத்திகளைக் கற்றுக்கொள்ளவும்.",
         "cta": "GitHub இல் ஆராயவும்"
-      },
-      "2": {
-        "title": "எம்ஆர் ஆர்பிட் ஸ்டுடியோ",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "நான் உருவாக்க விரும்பும் விஷயங்களைக் காண்பிக்கும் ஒற்றைப் பக்க ரியாக்ட் போர்ட்ஃபோலியோ - தரவு சார்ந்த பிரிவுகள், ரெஸ்யூம் பதிவிறக்கம் மற்றும் ஊடாடும் கருவித்தொகுப்பு வடிப்பான்கள்.",
-        "cta": "போர்ட்ஃபோலியோவைப் பார்க்கவும்"
       }
     },
     "experience": {

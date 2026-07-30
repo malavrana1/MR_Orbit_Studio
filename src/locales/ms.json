@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Pengalaman",
-    "logoAlt": "{{company}} logo"
+    "logoAlt": "{{company}} logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Projek Pilihan",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Kongsi",
+    "email": "Email",
     "contact": "Kenalan",
     "shareTitle": "{{name}} - Portfolio",
     "shareText": "Lihat portfolio {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Lihat profil GitHub",
     "linkedinProfileTitle": "Sambung di LinkedIn",
     "sharePortfolioTitle": "Kongsi portfolio",
+    "emailTitle": "Email me",
     "contactFormTitle": "Borang hubungan"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Terima kasih kerana menghubungi kami. Saya akan kembali kepada anda tidak lama lagi.",
     "errorTitle": "Aduh! Sesuatu telah berlaku",
     "sendError": "Tidak dapat menghantar mesej anda. Sila cuba lagi.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "nama awak",
     "namePlaceholder": "Apa yang patut saya panggil awak?",
     "emailLabel": "e-mel anda",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Simulator pasaran saham peribadi untuk meneroka saham dan kripto dalam masa nyata. Kira keuntungan, simpan senario, jejak kegemaran, dan pelajari strategi perdagangan tanpa mempertaruhkan wang sebenar.",
         "cta": "Teroka di GitHub"
-      },
-      "2": {
-        "title": "Studio MR Orbit",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Portfolio React satu halaman yang mempamerkan perkara yang saya suka bina - bahagian terdorong data, muat turun semula dan penapis kit alat interaktif.",
-        "cta": "Lihat portfolio"
       }
     },
     "experience": {

@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Досвід",
-    "logoAlt": "Логотип {{company}}"
+    "logoAlt": "Логотип {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Рекомендовані проекти",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Поділіться",
+    "email": "Email",
     "contact": "контакт",
     "shareTitle": "{{name}} - Портфоліо",
     "shareText": "Перегляньте портфоліо {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Переглянути профіль GitHub",
     "linkedinProfileTitle": "Підключіться до LinkedIn",
     "sharePortfolioTitle": "Поділитися портфоліо",
+    "emailTitle": "Email me",
     "contactFormTitle": "Контактна форма"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Дякуємо за звернення. Я скоро до вас звернуся.",
     "errorTitle": "Ой! Щось пішло не так",
     "sendError": "Не вдалося надіслати ваше повідомлення. Спробуйте ще раз.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Ваше ім'я",
     "namePlaceholder": "як тебе називати",
     "emailLabel": "Ваш email",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Персональний симулятор фондового ринку для вивчення акцій і криптовалюти в реальному часі. Обчислюйте прибутки, зберігайте сценарії, відстежуйте улюблені та вивчайте торгові стратегії, не ризикуючи реальними грошима.",
         "cta": "Досліджуйте на GitHub"
-      },
-      "2": {
-        "title": "Студія MR Orbit",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Односторінкове портфоліо React, яке демонструє те, що я люблю створювати – розділи на основі даних, завантаження резюме та інтерактивні фільтри інструментів.",
-        "cta": "Переглянути портфоліо"
       }
     },
     "experience": {

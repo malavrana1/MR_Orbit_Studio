@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "ਅਨੁਭਵ",
-    "logoAlt": "{{company}} ਲੋਗੋ"
+    "logoAlt": "{{company}} ਲੋਗੋ",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "ਫੀਚਰਡ ਪ੍ਰੋਜੈਕਟ",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "ਲਿੰਕਡਇਨ",
     "share": "ਸ਼ੇਅਰ ਕਰੋ",
+    "email": "Email",
     "contact": "ਸੰਪਰਕ ਕਰੋ",
     "shareTitle": "{{name}} - ਪੋਰਟਫੋਲੀਓ",
     "shareText": "{{name}} ਦਾ ਪੋਰਟਫੋਲੀਓ ਦੇਖੋ",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub ਪ੍ਰੋਫਾਈਲ ਦੇਖੋ",
     "linkedinProfileTitle": "LinkedIn 'ਤੇ ਜੁੜੋ",
     "sharePortfolioTitle": "ਸ਼ੇਅਰ ਪੋਰਟਫੋਲੀਓ",
+    "emailTitle": "Email me",
     "contactFormTitle": "ਸੰਪਰਕ ਫਾਰਮ"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "ਪਹੁੰਚਣ ਲਈ ਧੰਨਵਾਦ। ਮੈਂ ਜਲਦੀ ਹੀ ਤੁਹਾਡੇ ਕੋਲ ਵਾਪਸ ਆਵਾਂਗਾ।",
     "errorTitle": "ਓਹ! ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ",
     "sendError": "ਤੁਹਾਡਾ ਸੁਨੇਹਾ ਨਹੀਂ ਭੇਜਿਆ ਜਾ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "ਤੁਹਾਡਾ ਨਾਮ",
     "namePlaceholder": "ਮੈਂ ਤੁਹਾਨੂੰ ਕੀ ਬੁਲਾਵਾਂ?",
     "emailLabel": "ਤੁਹਾਡੀ ਈਮੇਲ",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "ਰੀਅਲ ਟਾਈਮ ਵਿੱਚ ਸਟਾਕਾਂ ਅਤੇ ਕ੍ਰਿਪਟੋ ਦੀ ਪੜਚੋਲ ਕਰਨ ਲਈ ਇੱਕ ਨਿੱਜੀ ਸਟਾਕ ਮਾਰਕੀਟ ਸਿਮੂਲੇਟਰ। ਮੁਨਾਫ਼ਿਆਂ ਦੀ ਗਣਨਾ ਕਰੋ, ਦ੍ਰਿਸ਼ਾਂ ਨੂੰ ਬਚਾਓ, ਮਨਪਸੰਦਾਂ ਨੂੰ ਟ੍ਰੈਕ ਕਰੋ, ਅਤੇ ਅਸਲ ਧਨ ਨੂੰ ਜੋਖਮ ਵਿੱਚ ਪਾਏ ਬਿਨਾਂ ਵਪਾਰਕ ਰਣਨੀਤੀਆਂ ਸਿੱਖੋ।",
         "cta": "GitHub 'ਤੇ ਪੜਚੋਲ ਕਰੋ"
-      },
-      "2": {
-        "title": "MR ਔਰਬਿਟ ਸਟੂਡੀਓ",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "ਸਿੰਗਲ-ਪੇਜ ਰੀਐਕਟ ਪੋਰਟਫੋਲੀਓ ਉਹਨਾਂ ਚੀਜ਼ਾਂ ਨੂੰ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਦਾ ਹੈ ਜੋ ਮੈਂ ਬਣਾਉਣਾ ਪਸੰਦ ਕਰਦਾ ਹਾਂ - ਡੇਟਾ-ਸੰਚਾਲਿਤ ਭਾਗ, ਮੁੜ-ਚਾਲੂ ਡਾਉਨਲੋਡ, ਅਤੇ ਇੰਟਰਐਕਟਿਵ ਟੂਲਕਿਟ ਫਿਲਟਰ।",
-        "cta": "ਪੋਰਟਫੋਲੀਓ ਦੇਖੋ"
       }
     },
     "experience": {

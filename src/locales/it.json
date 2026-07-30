@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Esperienza",
-    "logoAlt": "Logo {{company}}"
+    "logoAlt": "Logo {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Progetti in evidenza",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Condividi",
+    "email": "Email",
     "contact": "Contatto",
     "shareTitle": "{{name}} - Portafoglio",
     "shareText": "Guarda il portfolio di {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Visualizza il profilo GitHub",
     "linkedinProfileTitle": "Connettiti su LinkedIn",
     "sharePortfolioTitle": "Portafoglio azionario",
+    "emailTitle": "Email me",
     "contactFormTitle": "Modulo di contatto"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Grazie per aver scritto. Ti risponderò presto.",
     "errorTitle": "Qualcosa è andato storto",
     "sendError": "Impossibile inviare il messaggio. Riprova.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Il tuo nome",
     "namePlaceholder": "Come posso chiamarti?",
     "emailLabel": "La tua email",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Un simulatore personale del mercato azionario per esplorare azioni e criptovalute in tempo reale. Calcola i profitti, salva scenari, tieni traccia dei preferiti e apprendi strategie di trading senza rischiare denaro reale.",
         "cta": "Esplora su GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Portfolio React a pagina singola che mostra le cose che amo creare: sezioni basate sui dati, download di curriculum e filtri di toolkit interattivi.",
-        "cta": "Visualizza portafoglio"
       }
     },
     "experience": {

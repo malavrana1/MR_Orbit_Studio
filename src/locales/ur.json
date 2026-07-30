@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "تجربہ",
-    "logoAlt": "{{company}} لوگو"
+    "logoAlt": "{{company}} لوگو",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "نمایاں پروجیکٹس",
@@ -72,6 +74,7 @@
     "github": "گٹ ہب",
     "linkedin": "LinkedIn",
     "share": "شیئر کریں۔",
+    "email": "Email",
     "contact": "رابطہ کریں۔",
     "shareTitle": "{{name}} - پورٹ فولیو",
     "shareText": "{{name}} کا پورٹ فولیو دیکھیں",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub پروفائل دیکھیں",
     "linkedinProfileTitle": "LinkedIn پر جڑیں۔",
     "sharePortfolioTitle": "پورٹ فولیو کا اشتراک کریں۔",
+    "emailTitle": "Email me",
     "contactFormTitle": "رابطہ فارم"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "تک پہنچنے کا شکریہ۔ میں جلد ہی آپ کے پاس واپس آؤں گا۔",
     "errorTitle": "افوہ! کچھ غلط ہو گیا۔",
     "sendError": "آپ کا پیغام نہیں بھیج سکا۔ براہ کرم دوبارہ کوشش کریں۔",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "آپ کا نام",
     "namePlaceholder": "میں تمہیں کیا بلاوں؟",
     "emailLabel": "آپ کا ای میل",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "ریئل ٹائم میں اسٹاک اور کرپٹو کو دریافت کرنے کے لیے ایک ذاتی اسٹاک مارکیٹ سمیلیٹر۔ منافع کا حساب لگائیں، منظرناموں کو محفوظ کریں، پسندیدہ کو ٹریک کریں، اور حقیقی رقم کو خطرے میں ڈالے بغیر تجارتی حکمت عملی سیکھیں۔",
         "cta": "GitHub پر دریافت کریں۔"
-      },
-      "2": {
-        "title": "ایم آر آربٹ اسٹوڈیو",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "سنگل پیج ری ایکٹ پورٹ فولیو ان چیزوں کی نمائش کرتا ہے جن کو میں بنانا پسند کرتا ہوں - ڈیٹا سے چلنے والے حصے، دوبارہ شروع ڈاؤن لوڈ، اور انٹرایکٹو ٹول کٹ فلٹرز۔",
-        "cta": "پورٹ فولیو دیکھیں"
       }
     },
     "experience": {

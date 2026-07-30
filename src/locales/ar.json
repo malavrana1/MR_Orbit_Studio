@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "الخبرة",
-    "logoAlt": "شعار {{company}}"
+    "logoAlt": "شعار {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "مشاريع مميزة",
@@ -72,6 +74,7 @@
     "github": "جيثب",
     "linkedin": "ينكدين",
     "share": "مشاركة",
+    "email": "Email",
     "contact": "اتصل",
     "shareTitle": "{{name}} - معرض الأعمال",
     "shareText": "اطّلع على معرض أعمال {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "عرض الملف الشخصي على جيثب",
     "linkedinProfileTitle": "تواصل على لينكدإن",
     "sharePortfolioTitle": "حصة المحفظة",
+    "emailTitle": "Email me",
     "contactFormTitle": "نموذج الاتصال"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "شكرًا لتواصلك. سأرد قريبًا.",
     "errorTitle": "حدث خطأ ما",
     "sendError": "تعذر إرسال الرسالة. حاول مرة أخرى.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "اسمك",
     "namePlaceholder": "كيف أناديك؟",
     "emailLabel": "البريد الإلكتروني",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "جهاز محاكاة شخصي لسوق الأوراق المالية لاستكشاف الأسهم والعملات المشفرة في الوقت الفعلي. احسب الأرباح، واحفظ السيناريوهات، وتتبع المفضلة، وتعلم استراتيجيات التداول دون المخاطرة بأموال حقيقية.",
         "cta": "استكشف على جيثب"
-      },
-      "2": {
-        "title": "ستوديو إم آر أوربت",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "تعرض مجموعة React ذات الصفحة الواحدة الأشياء التي أحب إنشاءها - أقسام تعتمد على البيانات، واستئناف التنزيل، ومرشحات مجموعة الأدوات التفاعلية.",
-        "cta": "عرض المحفظة"
       }
     },
     "experience": {

@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Experiencia",
-    "logoAlt": "Logotipo de {{company}}"
+    "logoAlt": "Logotipo de {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Proyectos destacados",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Compartir",
+    "email": "Email",
     "contact": "Contacto",
     "shareTitle": "{{name}} - Portafolio",
     "shareText": "Mira el portafolio de {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Ver perfil de GitHub",
     "linkedinProfileTitle": "Conéctate en LinkedIn",
     "sharePortfolioTitle": "Portafolio de acciones",
+    "emailTitle": "Email me",
     "contactFormTitle": "Formulario de contacto"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Gracias por escribir. Te responderé pronto.",
     "errorTitle": "Algo salió mal",
     "sendError": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Tu nombre",
     "namePlaceholder": "¿Cómo debo llamarte?",
     "emailLabel": "Tu correo",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Un simulador personal del mercado de valores para explorar acciones y criptomonedas en tiempo real. Calcule ganancias, guarde escenarios, realice un seguimiento de sus favoritos y aprenda estrategias comerciales sin arriesgar dinero real.",
         "cta": "Explorar en GitHub"
-      },
-      "2": {
-        "title": "Estudio de órbita MR",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Portafolio de React de una sola página que muestra las cosas que me encanta crear: secciones basadas en datos, descarga de currículums y filtros de kit de herramientas interactivos.",
-        "cta": "Ver portafolio"
       }
     },
     "experience": {

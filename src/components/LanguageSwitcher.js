@@ -1,10 +1,11 @@
 import React from 'react'
 import { Dropdown } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import { FaGlobe, FaChevronDown, FaCheck } from 'react-icons/fa'
+import { FaChevronDown, FaCheck } from 'react-icons/fa'
 import analyticsService from '../services/analytics'
 import { LANGUAGES } from '../config/languages'
 import { AVAILABLE_LOCALE_CODES } from '../i18n'
+import { getActionMeta } from '../icons/actionIcons'
 
 const labelByCode = Object.fromEntries(
   LANGUAGES.map(({ code, label }) => [code, label]),
@@ -35,6 +36,7 @@ export default function LanguageSwitcher({ onSelect }) {
   const { i18n, t } = useTranslation()
   const code = (i18n.resolvedLanguage || 'en').split('-')[0]
   const current = labelByCode[code] || labelByCode.en
+  const { Icon: LangIcon, color, ink } = getActionMeta('language')
 
   const handleSelect = (eventKey) => {
     if (!eventKey) return
@@ -65,7 +67,13 @@ export default function LanguageSwitcher({ onSelect }) {
         aria-label={t('header.language')}
         aria-haspopup="true"
       >
-        <FaGlobe className="nav-lang-icon" aria-hidden />
+        <span
+          className="nav-icon-wrap"
+          style={{ '--skill-bg': color, '--skill-ink': ink }}
+          aria-hidden
+        >
+          <LangIcon className="nav-icon" />
+        </span>
         <span className="nav-lang-current">{current}</span>
         <FaChevronDown className="nav-lang-chevron" aria-hidden />
       </Dropdown.Toggle>

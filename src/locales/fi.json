@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Kokea",
-    "logoAlt": "{{company}} logo"
+    "logoAlt": "{{company}} logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Suositellut projektit",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Jakaa",
+    "email": "Email",
     "contact": "Ota yhteyttä",
     "shareTitle": "{{name}} - Portfolio",
     "shareText": "Tutustu {{name}}:n portfolioon",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Näytä GitHub-profiili",
     "linkedinProfileTitle": "Yhdistä LinkedInissä",
     "sharePortfolioTitle": "Osakesalkku",
+    "emailTitle": "Email me",
     "contactFormTitle": "Yhteydenottolomake"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Kiitos yhteydenotostasi. Palaan asiaan pian.",
     "errorTitle": "Oho! Jotain meni pieleen",
     "sendError": "Viestiäsi ei voitu lähettää. Yritä uudelleen.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Sinun nimesi",
     "namePlaceholder": "Mitä sinun pitäisi kutsua?",
     "emailLabel": "Sähköpostisi",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Henkilökohtainen osakemarkkinasimulaattori osakkeiden ja krypton tutkimiseen reaaliajassa. Laske voitot, tallenna skenaarioita, seuraa suosikkeja ja opi kaupankäyntistrategioita vaarantamatta oikeaa rahaa.",
         "cta": "Tutustu GitHubiin"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Yksisivuinen React-portfolio, joka esittelee asioita, joita rakastan rakentaa – datapohjaiset osiot, latauksen jatkaminen ja interaktiiviset työkalupakkisuodattimet.",
-        "cta": "Näytä portfolio"
       }
     },
     "experience": {

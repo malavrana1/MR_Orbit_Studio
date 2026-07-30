@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Uzoefu",
-    "logoAlt": "{{company}} nembo"
+    "logoAlt": "{{company}} nembo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Miradi Iliyoangaziwa",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Shiriki",
+    "email": "Email",
     "contact": "Wasiliana",
     "shareTitle": "{{name}} - Kwingineko",
     "shareText": "Angalia kwingineko ya {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Tazama wasifu wa GitHub",
     "linkedinProfileTitle": "Unganisha kwenye LinkedIn",
     "sharePortfolioTitle": "Shiriki kwingineko",
+    "emailTitle": "Email me",
     "contactFormTitle": "Fomu ya mawasiliano"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Asante kwa kufikia. Nitarudi kwako hivi karibuni.",
     "errorTitle": "Lo! Hitilafu fulani imetokea",
     "sendError": "Haikuweza kutuma ujumbe wako. Tafadhali jaribu tena.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Jina lako",
     "namePlaceholder": "Nikuiteje?",
     "emailLabel": "Barua pepe yako",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Kiigaji cha soko la hisa la kibinafsi la kuchunguza hisa na crypto kwa wakati halisi. Kukokotoa faida, kuokoa matukio, kufuatilia favorites, na kujifunza mikakati ya biashara bila kuhatarisha fedha halisi.",
         "cta": "Gundua kwenye GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Kwingineko ya React ya ukurasa mmoja inayoonyesha mambo ninayopenda kuunda - sehemu zinazoendeshwa na data, endelea kupakua, na vichujio vya kisanduku cha zana shirikishi.",
-        "cta": "Tazama kwingineko"
       }
     },
     "experience": {

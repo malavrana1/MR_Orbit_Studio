@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Опыт",
-    "logoAlt": "Логотип {{company}}"
+    "logoAlt": "Логотип {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Избранные проекты",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Поделиться",
+    "email": "Email",
     "contact": "Контакт",
     "shareTitle": "{{name}} — портфолио",
     "shareText": "Посмотрите портфолио {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Посмотреть профиль GitHub",
     "linkedinProfileTitle": "Подключитесь к LinkedIn",
     "sharePortfolioTitle": "Поделиться портфелем",
+    "emailTitle": "Email me",
     "contactFormTitle": "Контактная форма"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Спасибо за обращение. Я скоро отвечу.",
     "errorTitle": "Что-то пошло не так",
     "sendError": "Не удалось отправить сообщение. Попробуйте снова.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Ваше имя",
     "namePlaceholder": "Как к вам обращаться?",
     "emailLabel": "Электронная почта",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Персональный симулятор фондового рынка для изучения акций и криптовалют в режиме реального времени. Рассчитывайте прибыль, сохраняйте сценарии, отслеживайте фаворитов и изучайте торговые стратегии, не рискуя реальными деньгами.",
         "cta": "Изучите на GitHub"
-      },
-      "2": {
-        "title": "МР Орбита Студия",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Одностраничное портфолио React, демонстрирующее то, что я люблю создавать — разделы, управляемые данными, загрузку резюме и фильтры интерактивного набора инструментов.",
-        "cta": "Посмотреть портфолио"
       }
     },
     "experience": {

@@ -8,7 +8,6 @@ import React, {
   useState,
 } from 'react'
 
-import '../pages/Home/Home.dark.css'
 import analyticsService from '../services/analytics'
 
 const ThemeContext = createContext(null)

@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Erfaring",
-    "logoAlt": "{{company}} logo"
+    "logoAlt": "{{company}} logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Utvalgte prosjekter",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Dele",
+    "email": "Email",
     "contact": "Kontakt",
     "shareTitle": "{{name}} - Portefølje",
     "shareText": "Sjekk ut {{name}} sin portefølje",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Se GitHub-profilen",
     "linkedinProfileTitle": "Koble til på LinkedIn",
     "sharePortfolioTitle": "Aksjeportefølje",
+    "emailTitle": "Email me",
     "contactFormTitle": "Kontaktskjema"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Takk for at du tok kontakt. Jeg kommer snart tilbake til deg.",
     "errorTitle": "Oops! Noe gikk galt",
     "sendError": "Kunne ikke sende meldingen. Vennligst prøv igjen.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Navnet ditt",
     "namePlaceholder": "Hva skal jeg kalle deg?",
     "emailLabel": "Din e-post",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "En personlig aksjemarkedsimulator for å utforske aksjer og krypto i sanntid. Beregn fortjeneste, lagre scenarier, spor favoritter og lær handelsstrategier uten å risikere ekte penger.",
         "cta": "Utforsk på GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "React-portefølje på én side som viser frem tingene jeg elsker å bygge – datadrevne seksjoner, nedlasting av gjenoppta og interaktive verktøysettfiltre.",
-        "cta": "Se portefølje"
       }
     },
     "experience": {

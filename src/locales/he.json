@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "הִתנַסוּת",
-    "logoAlt": "לוגו {{company}}"
+    "logoAlt": "לוגו {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "פרויקטים מומלצים",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "לינקדאין",
     "share": "לַחֲלוֹק",
+    "email": "Email",
     "contact": "מַגָע",
     "shareTitle": "{{name}} - תיק עבודות",
     "shareText": "בדוק את תיק העבודות של {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "צפה בפרופיל GitHub",
     "linkedinProfileTitle": "התחבר בלינקדאין",
     "sharePortfolioTitle": "תיק מניות",
+    "emailTitle": "Email me",
     "contactFormTitle": "טופס יצירת קשר"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "תודה על פנייתך. אני אחזור אליך בקרוב.",
     "errorTitle": "אופס! משהו השתבש",
     "sendError": "לא ניתן לשלוח את ההודעה שלך. אנא נסה שוב.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "השם שלך",
     "namePlaceholder": "איך אני צריך לקרוא לך?",
     "emailLabel": "המייל שלך",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "סימולטור בורסה אישי לחקור מניות וקריפטו בזמן אמת. חשב רווחים, שמור תרחישים, עקוב אחר מועדפים ולמד אסטרטגיות מסחר מבלי להסתכן בכסף אמיתי.",
         "cta": "חקור ב-GitHub"
-      },
-      "2": {
-        "title": "סטודיו MR אורביט",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "תיק React של עמוד אחד המציג את הדברים שאני אוהב לבנות - קטעים מונעי נתונים, הורדת קורות חיים ומסנני ערכת כלים אינטראקטיביים.",
-        "cta": "הצג תיק עבודות"
       }
     },
     "experience": {

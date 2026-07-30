@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Karanasan",
-    "logoAlt": "{{company}} logo"
+    "logoAlt": "{{company}} logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Mga Tampok na Proyekto",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Ibahagi",
+    "email": "Email",
     "contact": "Makipag-ugnayan",
     "shareTitle": "{{name}} - Portfolio",
     "shareText": "Tingnan ang portfolio ni {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Tingnan ang profile sa GitHub",
     "linkedinProfileTitle": "Kumonekta sa LinkedIn",
     "sharePortfolioTitle": "Ibahagi ang portfolio",
+    "emailTitle": "Email me",
     "contactFormTitle": "Form sa pakikipag-ugnayan"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Salamat sa pag-abot. babalikan kita agad.",
     "errorTitle": "Oops! Nagkaproblema",
     "sendError": "Hindi maipadala ang iyong mensahe. Pakisubukang muli.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "pangalan mo",
     "namePlaceholder": "Ano ang dapat kong itawag sa iyo?",
     "emailLabel": "Ang iyong email",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Isang personal na stock market simulator upang galugarin ang mga stock at crypto sa real time. Kalkulahin ang mga kita, i-save ang mga sitwasyon, subaybayan ang mga paborito, at matuto ng mga diskarte sa pangangalakal nang hindi nanganganib sa totoong pera.",
         "cta": "Mag-explore sa GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Isang-pahinang React portfolio na nagpapakita ng mga bagay na gusto kong buuin - mga seksyong batay sa data, ipagpatuloy ang pag-download, at mga interactive na filter ng toolkit.",
-        "cta": "Tingnan ang portfolio"
       }
     },
     "experience": {

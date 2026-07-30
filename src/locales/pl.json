@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Doświadczenie",
-    "logoAlt": "Logo {{company}}"
+    "logoAlt": "Logo {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Wybrane projekty",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Udostępnij",
+    "email": "Email",
     "contact": "Kontakt",
     "shareTitle": "{{name}} - Portfolio",
     "shareText": "Zobacz portfolio {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Wyświetl profil GitHub",
     "linkedinProfileTitle": "Połącz się na LinkedIn",
     "sharePortfolioTitle": "Udostępnij portfel",
+    "emailTitle": "Email me",
     "contactFormTitle": "Formularz kontaktowy"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Dziękuję za kontakt. Odpowiem wkrótce.",
     "errorTitle": "Coś poszło nie tak",
     "sendError": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Imię i nazwisko",
     "namePlaceholder": "Jak mam się do Ciebie zwracać?",
     "emailLabel": "E-mail",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Osobisty symulator giełdy do eksploracji akcji i kryptowalut w czasie rzeczywistym. Oblicz zyski, zapisuj scenariusze, śledź ulubione i ucz się strategii handlowych bez ryzykowania prawdziwych pieniędzy.",
         "cta": "Przeglądaj w GitHubie"
-      },
-      "2": {
-        "title": "Studio MR Orbit",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Jednostronicowe portfolio React przedstawiające rzeczy, które uwielbiam tworzyć — sekcje oparte na danych, pobieranie CV i filtry interaktywnych zestawów narzędzi.",
-        "cta": "Zobacz portfolio"
       }
     },
     "experience": {

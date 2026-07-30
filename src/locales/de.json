@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Erfahrung",
-    "logoAlt": "{{company}} Logo"
+    "logoAlt": "{{company}} Logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Ausgewählte Projekte",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Teilen",
+    "email": "Email",
     "contact": "Kontakt",
     "shareTitle": "{{name}} – Portfolio",
     "shareText": "Sieh dir das Portfolio von {{name}} an",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub-Profil anzeigen",
     "linkedinProfileTitle": "Vernetzen Sie sich auf LinkedIn",
     "sharePortfolioTitle": "Aktienportfolio",
+    "emailTitle": "Email me",
     "contactFormTitle": "Kontaktformular"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Danke für deine Nachricht. Ich melde mich bald.",
     "errorTitle": "Etwas ist schiefgelaufen",
     "sendError": "Nachricht konnte nicht gesendet werden. Bitte erneut versuchen.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Dein Name",
     "namePlaceholder": "Wie soll ich dich nennen?",
     "emailLabel": "Deine E-Mail",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Ein persönlicher Börsensimulator zum Erkunden von Aktien und Kryptowährungen in Echtzeit. Berechnen Sie Gewinne, speichern Sie Szenarien, verfolgen Sie Favoriten und lernen Sie Handelsstrategien, ohne echtes Geld zu riskieren.",
         "cta": "Entdecken Sie auf GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Einseitiges React-Portfolio, das die Dinge zeigt, die ich gerne erstelle – datengesteuerte Abschnitte, Lebenslauf-Download und interaktive Toolkit-Filter.",
-        "cta": "Portfolio ansehen"
       }
     },
     "experience": {

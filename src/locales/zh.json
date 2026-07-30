@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "工作经历",
-    "logoAlt": "{{company}} 标志"
+    "logoAlt": "{{company}} 标志",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "精选项目",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "领英",
     "share": "分享",
+    "email": "Email",
     "contact": "联系",
     "shareTitle": "{{name}} - 作品集",
     "shareText": "查看 {{name}} 的作品集",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "查看 GitHub 个人资料",
     "linkedinProfileTitle": "在 LinkedIn 上联系",
     "sharePortfolioTitle": "分享投资组合",
+    "emailTitle": "Email me",
     "contactFormTitle": "联系表"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "感谢联系，我会尽快回复。",
     "errorTitle": "出错了",
     "sendError": "无法发送消息，请重试。",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "姓名",
     "namePlaceholder": "如何称呼您？",
     "emailLabel": "电子邮箱",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "个人股票市场模拟器，可实时探索股票和加密货币。 计算利润、保存场景、跟踪收藏夹并学习交易策略，而无需冒真金白银的风险。",
         "cta": "在 GitHub 上探索"
-      },
-      "2": {
-        "title": "MR轨道工作室",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "单页 React 产品组合展示了我喜欢构建的东西 - 数据驱动部分、简历下载和交互式工具包过滤器。",
-        "cta": "查看产品组合"
       }
     },
     "experience": {

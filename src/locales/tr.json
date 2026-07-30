@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Deneyim",
-    "logoAlt": "{{company}} logosu"
+    "logoAlt": "{{company}} logosu",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Öne çıkan projeler",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Paylaş",
+    "email": "Email",
     "contact": "İletişim",
     "shareTitle": "{{name}} - Portföy",
     "shareText": "{{name}} portföyüne göz atın",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub profilini görüntüle",
     "linkedinProfileTitle": "LinkedIn'e bağlanın",
     "sharePortfolioTitle": "Portföyü paylaş",
+    "emailTitle": "Email me",
     "contactFormTitle": "İletişim formu"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Teşekkürler, en kısa sürede dönüş yapacağım.",
     "errorTitle": "Bir şeyler ters gitti",
     "sendError": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Adınız",
     "namePlaceholder": "Size nasıl hitap edeyim?",
     "emailLabel": "E-posta",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Hisse senetlerini ve kriptoyu gerçek zamanlı olarak keşfetmek için kişisel bir borsa simülatörü. Gerçek parayı riske atmadan karları hesaplayın, senaryoları kaydedin, favorileri takip edin ve ticaret stratejilerini öğrenin.",
         "cta": "GitHub'da keşfedin"
-      },
-      "2": {
-        "title": "MR Orbit Stüdyosu",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Veriye dayalı bölümler, özgeçmiş indirme ve etkileşimli araç seti filtreleri gibi oluşturmayı sevdiğim şeyleri gösteren tek sayfalı React portföyü.",
-        "cta": "Portfolyoyu görüntüle"
       }
     },
     "experience": {

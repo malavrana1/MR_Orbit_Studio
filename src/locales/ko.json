@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "경력",
-    "logoAlt": "{{company}} 로고"
+    "logoAlt": "{{company}} 로고",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "주요 프로젝트",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "링크드인",
     "share": "공유",
+    "email": "Email",
     "contact": "연락",
     "shareTitle": "{{name}} - 포트폴리오",
     "shareText": "{{name}}의 포트폴리오 보기",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "GitHub 프로필 보기",
     "linkedinProfileTitle": "LinkedIn에 연결",
     "sharePortfolioTitle": "포트폴리오 공유",
+    "emailTitle": "Email me",
     "contactFormTitle": "문의 양식"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "연락해 주셔서 감사합니다. 곧 답변 드리겠습니다.",
     "errorTitle": "문제가 발생했습니다",
     "sendError": "메시지를 보낼 수 없습니다. 다시 시도해 주세요.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "이름",
     "namePlaceholder": "어떻게 불러드릴까요?",
     "emailLabel": "이메일",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "주식과 암호화폐를 실시간으로 탐색할 수 있는 개인 주식 시장 시뮬레이터입니다. 실제 돈을 위험에 빠뜨리지 않고 수익을 계산하고, 시나리오를 저장하고, 즐겨찾기를 추적하고, 거래 전략을 배우세요.",
         "cta": "GitHub에서 탐색"
-      },
-      "2": {
-        "title": "MR 궤도 스튜디오",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "데이터 기반 섹션, 이력서 다운로드, 대화형 툴킷 필터 등 내가 만들고 싶은 것들을 보여주는 단일 페이지 React 포트폴리오입니다.",
-        "cta": "포트폴리오 보기"
       }
     },
     "experience": {

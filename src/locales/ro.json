@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Experienţă",
-    "logoAlt": "{{company}} logo"
+    "logoAlt": "{{company}} logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Proiecte recomandate",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Distribuie",
+    "email": "Email",
     "contact": "Contact",
     "shareTitle": "{{name}} - Portofoliu",
     "shareText": "Consultați portofoliul lui {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Vezi profilul GitHub",
     "linkedinProfileTitle": "Conectați-vă pe LinkedIn",
     "sharePortfolioTitle": "Partajați portofoliul",
+    "emailTitle": "Email me",
     "contactFormTitle": "Formular de contact"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Vă mulțumim că ne-ați contactat. Voi reveni la tine în curând.",
     "errorTitle": "Hopa! Ceva a mers prost",
     "sendError": "Nu s-a putut trimite mesajul dvs. Vă rugăm să încercați din nou.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Numele dumneavoastră",
     "namePlaceholder": "Cum ar trebui să te numesc?",
     "emailLabel": "E-mailul dvs",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Un simulator personal de bursă pentru a explora acțiuni și criptomonede în timp real. Calculați profiturile, salvați scenariile, urmăriți favoritele și învățați strategii de tranzacționare fără a risca bani reali.",
         "cta": "Explorați pe GitHub"
-      },
-      "2": {
-        "title": "MR Orbit Studio",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Portofoliu React cu o singură pagină, care prezintă lucrurile pe care îmi place să le construiesc - secțiuni bazate pe date, descărcarea CV-ului și filtre interactive din set de instrumente.",
-        "cta": "Vizualizați portofoliul"
       }
     },
     "experience": {

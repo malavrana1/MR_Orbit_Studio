@@ -1,14 +1,17 @@
 {
   "tagline": "More about me",
-  "intro": "I like playing tennis with friends, cricket, hiking, and listening to music. I also enjoy cooking, trying new things, and doing small DIY projects in the backyard when I have free time.",
-  "whatFuelsMe": "I bring the same energy and interest from my hobbies to building products every day. Whether it's playing tennis occasionally, a DIY project, or solving a coding problem, I enjoy learning and creating.",
+  "intro": "Outside work, I play tennis with friends, follow cricket, hike, and listen to music. I also cook, travel when I can, try new things, and take on small DIY projects in the backyard when I have free time.",
+  "whatFuelsMe": "I bring the same energy from my hobbies into building products every day. Whether I'm playing tennis, working on a DIY project, or solving a coding problem, I enjoy learning and creating.",
   "interests": [
-    "Tennis",
-    "Cricket",
-    "Hiking",
-    "Music",
-    "Cooking",
-    "DIY Projects"
+    { "id": "tennis", "label": "Tennis" },
+    { "id": "cricket", "label": "Cricket" },
+    { "id": "hiking", "label": "Hiking" },
+    { "id": "music", "label": "Music" },
+    { "id": "cooking", "label": "Cooking" },
+    { "id": "diy", "label": "DIY Projects" },
+    { "id": "travel", "label": "Travel" },
+    { "id": "photography", "label": "Photography" },
+    { "id": "explore", "label": "Trying New Things" }
   ],
   "principles": [
     "Focus on what users need",

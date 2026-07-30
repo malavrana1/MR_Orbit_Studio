@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Pengalaman",
-    "logoAlt": "{{company}} logo"
+    "logoAlt": "{{company}} logo",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Proyek Unggulan",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Membagikan",
+    "email": "Email",
     "contact": "Kontak",
     "shareTitle": "{{name}} - Portofolio",
     "shareText": "Lihat portofolio {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Lihat profil GitHub",
     "linkedinProfileTitle": "Terhubung di LinkedIn",
     "sharePortfolioTitle": "Bagikan portofolio",
+    "emailTitle": "Email me",
     "contactFormTitle": "Formulir kontak"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Terima kasih telah menghubungi kami. Saya akan segera menghubungi Anda kembali.",
     "errorTitle": "Ups! Ada yang tidak beres",
     "sendError": "Tidak dapat mengirim pesan Anda. Silakan coba lagi.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Namamu",
     "namePlaceholder": "Aku harus memanggilmu apa?",
     "emailLabel": "email Anda",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Simulator pasar saham pribadi untuk menjelajahi saham dan kripto secara real time. Hitung keuntungan, simpan skenario, lacak favorit, dan pelajari strategi perdagangan tanpa mempertaruhkan uang sungguhan.",
         "cta": "Jelajahi di GitHub"
-      },
-      "2": {
-        "title": "Studio Orbit Tuan",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Portofolio React satu halaman menampilkan hal-hal yang saya suka buat - bagian berdasarkan data, pengunduhan resume, dan filter toolkit interaktif.",
-        "cta": "Lihat portofolio"
       }
     },
     "experience": {

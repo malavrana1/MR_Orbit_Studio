@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Kinh nghiệm",
-    "logoAlt": "biểu tượng {{company}}"
+    "logoAlt": "biểu tượng {{company}}",
+    "showMore": "View earlier roles",
+    "showLess": "Show fewer roles"
   },
   "projects": {
     "title": "Dự án nổi bật",
@@ -72,6 +74,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "share": "Chia sẻ",
+    "email": "Email",
     "contact": "Liên hệ",
     "shareTitle": "{{name}} - Danh mục đầu tư",
     "shareText": "Kiểm tra danh mục đầu tư của {{name}}",
@@ -81,6 +84,7 @@
     "githubProfileTitle": "Xem hồ sơ GitHub",
     "linkedinProfileTitle": "Kết nối trên LinkedIn",
     "sharePortfolioTitle": "Chia sẻ danh mục đầu tư",
+    "emailTitle": "Email me",
     "contactFormTitle": "Mẫu liên hệ"
   },
   "footer": {
@@ -99,6 +103,10 @@
     "successBody": "Cảm ơn bạn đã liên hệ. Tôi sẽ liên lạc lại với bạn sớm.",
     "errorTitle": "Ối! Đã xảy ra lỗi",
     "sendError": "Không thể gửi tin nhắn của bạn. Vui lòng thử lại.",
+    "mailtoFallback": "Open in email app",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "directEmailHint": "Prefer email? Reach me at {{email}}",
     "nameLabel": "Tên của bạn",
     "namePlaceholder": "Tôi nên gọi bạn là gì đây?",
     "emailLabel": "Email của bạn",
@@ -170,12 +178,6 @@
         "outcome": "Personal market simulator for stocks and crypto with live data, scenarios, and risk-free practice.",
         "description": "Trình mô phỏng thị trường chứng khoán cá nhân để khám phá cổ phiếu và tiền điện tử trong thời gian thực. Tính toán lợi nhuận, lưu kịch bản, theo dõi các mục yêu thích và tìm hiểu chiến lược giao dịch mà không gặp rủi ro với tiền thật.",
         "cta": "Khám phá trên GitHub"
-      },
-      "2": {
-        "title": "Studio quỹ đạo MR",
-        "outcome": "This portfolio—Vite + React, lazy locales, and a polished single-page storytelling experience.",
-        "description": "Danh mục React một trang giới thiệu những thứ tôi thích xây dựng - các phần dựa trên dữ liệu, tải xuống sơ yếu lý lịch và các bộ lọc bộ công cụ tương tác.",
-        "cta": "Xem danh mục đầu tư"
       }
     },
     "experience": {
