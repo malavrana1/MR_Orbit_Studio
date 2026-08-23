@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "你好，我是",
-    "headlineFallback": "前端工程师 | React • Angular • Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "专业概览",
     "subtitleFallback": "以热情与精准打造现代 Web 体验",
     "highlight1Title": "现代前端技术栈",
-    "highlight1Text": "React、Angular、Next.js 与 TypeScript——从企业控制台到高流量 SPA",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "团队协作",
     "highlight2Text": "与设计、产品及后端协作，交付可访问、可维护的功能",
     "highlight3Title": "质量与交付",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "前端工程师",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "前端工程师，拥有 5 年以上构建可扩展、高性能和可访问的 Web 应用程序的经验。 熟练掌握 React、Angular、Next.js、TypeScript 和现代前端框架。 在集成 REST 和 GraphQL API、优化复杂 UI 工作流程、实施 CI/CD 管道、自动化测试和可访问性合规性方面拥有丰富经验。 协作团队成员专注于跨多个项目提供用户友好、可维护的软件解决方案。"
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "高级软件工程师",
-        "company": "黑稻草人工智能",
-        "location": "美国佛罗里达州",
-        "period": "2026 年 4 月 — 至今",
-        "tagline": "软件产品和工程团队。",
-        "description": "作为高级软件工程师，根据团队优先级支持前端和平台开发。",
-        "highlights": {
-          "0": "通过干净、可维护的代码为功能交付做出贡献。",
-          "1": "与产品和工程团队就实施优先事项进行合作。"
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "软件工程师（合同制）",
-        "company": "融合健康",
-        "location": "新泽西州伍德布里奇",
-        "period": "2026 年 2 月 — 2026 年 4 月",
-        "tagline": "短期可访问性和合规性参与。",
-        "description": "专注于 Angular 应用程序中的可访问性改进和 WCAG 2.1 AA 合规性。",
-        "highlights": {
-          "0": "执行了可访问性审核并修复了关键用户流中的 WCAG 2.1 AA 问题。",
-          "1": "改进了 Angular UI 中的语义标记、键盘导航和屏幕阅读器支持。"
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "前端工程师",
-        "company": "基斯韦",
-        "location": "新泽西州萨米特",
-        "period": "2024 年 9 月 — 2026 年 1 月",
-        "tagline": "Kiswe 为体育、媒体和企业品牌提供实时互动体验。",
-        "description": "使用 React、Vue、TypeScript 和 Tailwind 交付高流量单页应用程序，重点关注可扩展组件、API 集成、性能和可访问性。",
-        "highlights": {
-          "0": "使用可扩展组件架构，使用 React、Vue、TypeScript 和 Tailwind 开发 SPA。",
-          "1": "集成 REST 和 GraphQL API 以及缓存和状态管理； 提高响应能力并减少前端错误。",
-          "2": "应用代码分割、延迟加载和树摇动，以加快大型应用程序的加载速度。",
-          "3": "倡导代码审查、调试和 WCAG 一致的跨设备体验。"
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "前端工程师",
-        "company": "根斯勒",
-        "location": "新泽西州莫里斯敦",
-        "period": "2022 年 7 月 — 2024 年 9 月",
-        "tagline": "全球建筑和设计公司提供企业数字工具和客户体验。",
-        "description": "使用 React、Angular、Vue 和 Next.js 构建企业 UI，将异步 REST/GraphQL 数据与自动化测试和密切设计协作配对。",
-        "highlights": {
-          "0": "使用 React、Angular、Vue、Next.js 和 Styled Components 交付仪表板和 UI 组件。",
-          "1": "集成 REST 和 GraphQL，具有异步更新和交互功能。",
-          "2": "重构了遗留代码，提高了性能，并扩大了 Jest、RTL 和 Playwright 的覆盖范围。",
-          "3": "将 Figma 设计转化为响应灵敏、可访问、可立即投入生产的界面。"
-        }
+        "role": "Software Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "前端工程师（合同制）",
-        "company": "Cigna Express 脚本",
-        "location": "新泽西州富兰克林湖",
-        "period": "2021 年 5 月 — 2022 年 4 月",
-        "tagline": "为会员和患者提供药房福利和数字医疗保健解决方案。",
-        "description": "使用 React 和 TypeScript 构建交互式药房结帐流程，并具有安全的 API 集成、模块化组件和强大的自动化测试覆盖范围。",
-        "highlights": {
-          "0": "使用 React、TypeScript、HTML5 和 CSS3 改进了结账任务的完成情况。",
-          "1": "将安全 REST API 与 JWT/OAuth、验证和强大的错误处理集成。",
-          "2": "通过模块化组件和优化的客户端渲染减少了页面加载时间。",
-          "3": "跨团队协作，提供响应灵敏、可访问的 UI 交付。"
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "前端工程实习生",
-        "company": "爱宫关怀慈善机构",
-        "location": "新泽西州帕西帕尼",
-        "period": "2020 年 9 月 — 2021 年 5 月",
-        "tagline": "非营利组织专注于社区外展和慈善活动。",
-        "description": "我在这里开始了我的软件职业生涯，通过真正的非营利项目的实践实习工作来建立基础的前端技能。",
-        "highlights": {
-          "0": "使用 React、HTML、CSS 和 JavaScript 构建响应式界面。",
-          "1": "通过代码审查、协作和迭代交付学习核心工程实践。",
-          "2": "支持现实世界的非营利功能，并通过可访问的 UI 实现获得了实践经验。"
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "通过 TypeScript、现代 CSS（Tailwind、样式化组件、CSS 模块）和响应式设计获得 React.js、Next.js、Angular 和 Vue.js 的实践经验。 从 Figma 切换到使用 Webpack、Vite 和 Babel 进行生产构建，一切都很轻松。",
-      "Backend___API": "将 REST 和 GraphQL 服务与安全模式（JWT、OAuth、CORS）集成，并与 Node.js、Java 和 Spring Boot 后端一起使用，实现数据驱动的 UI。",
-      "Testing": "可以放心地使用 Jest、React 测试库、Cypress 和 Playwright 跨单元、集成和端到端覆盖，并在发布路径中实现自动化。",
-      "Database": "可与关系和文档数据存储（MySQL、PostgreSQL、MongoDB、Redis）和 SQL 配合使用，以实现架构感知功能和高性能查询。",
-      "DevOps___Tools": "在 CI/CD 管道中使用 Git、GitHub Actions、Jenkins、Docker 和 AWS，并通过监控、ESLint 和 Prettier 实现一致、可观察的交付。",
-      "Concepts": "应用 WCAG 2.1 AA 可访问性、性能和安全最佳实践、敏捷/SCRUM 协作以及扎实的工程基础（调试、OOP、设计模式）。"
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "前端",
-      "Backend___API": "后端/API",
-      "Testing": "测试",
-      "Database": "数据库",
-      "DevOps___Tools": "开发运营/工具",
-      "Concepts": "概念"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

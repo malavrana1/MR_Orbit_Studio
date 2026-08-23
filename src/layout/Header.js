@@ -17,45 +17,46 @@ const Logo = ({ className = '', size = 42 }) => (
     viewBox="0 0 64 64"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    overflow="visible"
     aria-hidden="true"
     focusable="false"
   >
     <defs>
       <linearGradient id="mr-logo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#1a1512" />
-        <stop offset="55%" stopColor="#2c1b16" />
-        <stop offset="100%" stopColor="#3e2723" />
+        <stop offset="0%" stopColor="#16110e" />
+        <stop offset="55%" stopColor="#241610" />
+        <stop offset="100%" stopColor="#3a241c" />
       </linearGradient>
       <linearGradient id="mr-logo-ring" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#e8d5a3" />
-        <stop offset="45%" stopColor="#c9a227" />
-        <stop offset="100%" stopColor="#8b6914" />
+        <stop offset="45%" stopColor="#c9a24a" />
+        <stop offset="100%" stopColor="#9a7840" />
       </linearGradient>
     </defs>
-    <rect width="64" height="64" rx="16" fill="url(#mr-logo-bg)" />
+    <rect width="64" height="64" rx="14" fill="url(#mr-logo-bg)" />
     <rect
-      x="3"
-      y="3"
-      width="58"
-      height="58"
-      rx="14"
+      x="4"
+      y="4"
+      width="56"
+      height="56"
+      rx="12"
       fill="none"
       stroke="url(#mr-logo-ring)"
-      strokeWidth="2.5"
+      strokeWidth="2.25"
     />
     <path
-      d="M16 18 V46 M16 18 L24 34 L32 18 M32 18 V46"
+      d="M17.5 20 V44 M17.5 20 L25.5 33.5 L33.5 20 M33.5 20 V44"
       fill="none"
       stroke="#f7efdf"
-      strokeWidth="4"
+      strokeWidth="3.4"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
-      d="M36 18 H48 Q53 18 53 26 Q53 34 48 34 H36 M36 34 L50 46"
+      d="M38 20 H47.2 Q51.4 20 51.4 26.2 Q51.4 32.4 47.2 32.4 H38 M38 32.4 L49.6 44"
       fill="none"
       stroke="#f7efdf"
-      strokeWidth="4"
+      strokeWidth="3.4"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -186,6 +187,28 @@ const Header = memo(function Header() {
           </ul>
 
           <div className="nav-toolbar-end">
+            <button
+              type="button"
+              className="nav-theme-toggle"
+              onClick={toggleDarkMode}
+              aria-pressed={isDarkMode}
+              aria-label={
+                isDarkMode ? t('theme.switchToLight') : t('theme.switchToDark')
+              }
+              title={
+                isDarkMode ? t('theme.switchToLight') : t('theme.switchToDark')
+              }
+            >
+              <span
+                className="nav-icon-wrap"
+                style={{
+                  '--skill-bg': themeMeta.color,
+                  '--skill-ink': themeMeta.ink,
+                }}
+              >
+                <ThemeIcon className="nav-icon" />
+              </span>
+            </button>
             <LanguageSwitcher onSelect={() => setIsMobileMenuOpen(false)} />
             <button
               type="button"

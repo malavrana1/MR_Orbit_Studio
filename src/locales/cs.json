@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Ahoj, jsem",
-    "headlineFallback": "Frontend Engineer | Reagovat • Angular • Specialista Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Profesionální přehled",
     "subtitleFallback": "Budování moderních webových zážitků s vášní a přesností",
     "highlight1Title": "Moderní frontend stacky",
-    "highlight1Text": "React, Angular, Next.js a TypeScript – od podnikových řídicích panelů po vysoce provozované SPA",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Týmová spolupráce",
     "highlight2Text": "Spolupráce s designem, produktem a backendem za účelem dodání dostupných a udržovatelných funkcí",
     "highlight3Title": "Kvalita & dodání",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Frontendový inženýr",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Frontend Engineer s více než 5 lety zkušeností s vytvářením škálovatelných, vysoce výkonných a dostupných webových aplikací. Zkušenosti s React, Angular, Next.js, TypeScript a moderními frontend frameworky. Zkušenosti s integrací rozhraní REST a GraphQL API, optimalizací komplexních pracovních postupů uživatelského rozhraní, implementací kanálů CI/CD, automatizovaného testování a shody s přístupností. Kolaborativní týmový hráč zaměřený na poskytování uživatelsky přívětivých a udržovatelných softwarových řešení napříč různými projekty."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Senior softwarový inženýr",
+        "role": "Software Engineer",
         "company": "Blackstraw AI",
-        "location": "Florida, Spojené státy americké",
-        "period": "duben 2026 – současnost",
-        "tagline": "Tým softwarových produktů a inženýrů.",
-        "description": "Práce jako Senior Software Engineer pro podporu vývoje frontendu a platforem na základě týmových priorit.",
-        "highlights": {
-          "0": "Přispívá k poskytování funkcí pomocí čistého a udržovatelného kódu.",
-          "1": "Spolupracuje s produktovými a inženýrskými týmy na prioritách implementace."
-        }
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "softwarový inženýr (smlouva)",
+        "role": "Software Engineer (Contract)",
         "company": "Fusion Health",
         "location": "Woodbridge, NJ",
-        "period": "Únor 2026 – duben 2026",
-        "tagline": "Krátkodobá dostupnost a zapojení do souladu.",
-        "description": "Zaměřeno na vylepšení přístupnosti a shodu s WCAG 2.1 AA v aplikacích Angular.",
-        "highlights": {
-          "0": "Provedeny audity přístupnosti a opraveny problémy WCAG 2.1 AA napříč klíčovými uživatelskými toky.",
-          "1": "Vylepšené sémantické značení, navigace pomocí klávesnice a podpora čtečky obrazovky v uživatelském rozhraní Angular."
-        }
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Frontendový inženýr",
+        "role": "Software Engineer",
         "company": "Kiswe",
         "location": "Summit, NJ",
-        "period": "září 2024 – leden 2026",
-        "tagline": "Kiswe poskytuje živé interaktivní zážitky pro sportovní, mediální a podnikové značky.",
-        "description": "Poskytované jednostránkové aplikace s vysokým provozem s React, Vue, TypeScript a Tailwind – se zaměřením na škálovatelné komponenty, integraci API, výkon a dostupnost.",
-        "highlights": {
-          "0": "Vyvinuté SPA s React, Vue, TypeScript a Tailwind pomocí škálovatelné architektury komponent.",
-          "1": "Integrovaná rozhraní REST a GraphQL API s ukládáním do mezipaměti a správou stavu; zlepšená odezva a snížení chyb frontendu.",
-          "2": "Aplikované rozdělení kódu, líné načítání a protřepávání stromu pro rychlejší načítání velkých aplikací.",
-          "3": "Vyspělé recenze kódu, ladění a zkušenosti napříč zařízeními přizpůsobené WCAG."
-        }
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Frontendový inženýr",
+        "role": "Software Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
-        "period": "Červenec 2022 – září 2024",
-        "tagline": "Globální architektonická a designová firma dodávající podnikové digitální nástroje a klientské zkušenosti.",
-        "description": "Vybudovaná podniková uživatelská rozhraní s React, Angular, Vue a Next.js – spárování asynchronních dat REST/GraphQL s automatizovanými testy a úzkou spoluprací při návrhu.",
-        "highlights": {
-          "0": "Řídicí panely a komponenty uživatelského rozhraní dodávané s komponentami React, Angular, Vue, Next.js a Styled Components.",
-          "1": "Integrovaný REST a GraphQL s asynchronními aktualizacemi a interaktivními funkcemi.",
-          "2": "Refaktorovaný starší kód, vylepšený výkon a rozšířené pokrytí Jest, RTL a Playwright.",
-          "3": "Návrhy Figma byly převedeny do citlivých, přístupných a produkčních rozhraní."
-        }
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Frontend Engineer (smlouva)",
-        "company": "skripty Cigna Express",
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
-        "period": "Květen 2021 – duben 2022",
-        "tagline": "Lékárenské výhody a digitální řešení zdravotní péče pro členy a pacienty.",
-        "description": "Vybudované interaktivní toky pokladen v lékárnách v React a TypeScript se zabezpečenou integrací API, modulárními komponentami a silným pokrytím automatických testů.",
-        "highlights": {
-          "0": "Vylepšené dokončování úloh pokladny pomocí React, TypeScript, HTML5 a CSS3.",
-          "1": "Integrovaná bezpečná REST API s JWT/OAuth, ověřováním a robustním zpracováním chyb.",
-          "2": "Snížení doby načítání stránky díky modulárním komponentám a optimalizovanému vykreslování na straně klienta.",
-          "3": "Spolupráce napříč týmy pro citlivé a dostupné uživatelské rozhraní."
-        }
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Frontend Engineering Intern",
-        "company": "Charita Atmiya Care",
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "září 2020 – květen 2021",
-        "tagline": "Nezisková organizace zaměřená na komunitní a charitativní iniciativy.",
-        "description": "Svou softwarovou kariéru jsem začal zde, budováním základních frontendových dovedností prostřednictvím praktické stáže na skutečných neziskových projektech.",
-        "highlights": {
-          "0": "Vybudovaná responzivní rozhraní využívající React, HTML, CSS a JavaScript.",
-          "1": "Naučili se základní inženýrské postupy prostřednictvím kontrol kódu, spolupráce a opakovaného doručování.",
-          "2": "Podporované funkce pro neziskové organizace v reálném světě a získané praktické zkušenosti s implementací přístupného uživatelského rozhraní."
-        }
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Praktické zkušenosti napříč React.js, Next.js, Angular a Vue.js s TypeScriptem, moderními CSS (Tailwind, Styled Components, CSS Modules) a responzivním designem. Pohodlné od předání Figma přes produkční sestavení s Webpack, Vite a Babel.",
-      "Backend___API": "Integruje služby REST a GraphQL se zabezpečenými vzory – JWT, OAuth, CORS – a funguje spolu s backendy Node.js, Java a Spring Boot pro uživatelská rozhraní řízená daty.",
-      "Testing": "Dodává se s důvěrou pomocí Jest, React Testing Library, Cypress a Playwright napříč jednotkami, integrací a end-to-end pokrytím s automatizací v cestě vydání.",
-      "Database": "Pracuje s relačními datovými úložišti a úložišti dokumentů – MySQL, PostgreSQL, MongoDB, Redis – a SQL pro funkce využívající schémata a výkonné dotazy.",
-      "DevOps___Tools": "Používá Git, GitHub Actions, Jenkins, Docker a AWS v kanálech CI/CD s monitorováním, ESLint a Prettier pro konzistentní, pozorovatelné doručování.",
-      "Concepts": "Aplikuje osvědčené postupy pro přístupnost, výkon a zabezpečení WCAG 2.1 AA, spolupráci Agile/SCRUM a solidní inženýrské základy (ladění, OOP, návrhové vzory)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
       "Frontend": "Frontend",
-      "Backend___API": "Backend / API",
-      "Testing": "Testování",
-      "Database": "Databáze",
-      "DevOps___Tools": "DevOps / Nástroje",
-      "Concepts": "Koncepty"
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

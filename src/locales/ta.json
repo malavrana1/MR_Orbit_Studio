@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "வணக்கம், நான்",
-    "headlineFallback": "முன்னணி பொறியாளர் | எதிர்வினை • கோண • வியூ நிபுணர்",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "தொழில்முறை கண்ணோட்டம்",
     "subtitleFallback": "ஆர்வம் மற்றும் துல்லியத்துடன் நவீன இணைய அனுபவங்களை உருவாக்குதல்",
     "highlight1Title": "நவீன முன்பகுதி அடுக்குகள்",
-    "highlight1Text": "எதிர்வினை, கோணம், Next.js மற்றும் டைப்ஸ்கிரிப்ட் - நிறுவன டாஷ்போர்டுகள் முதல் அதிக டிராஃபிக் SPAக்கள் வரை",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "குழு ஒத்துழைப்பு",
     "highlight2Text": "அணுகக்கூடிய, பராமரிக்கக்கூடிய அம்சங்களைக் கப்பலுக்கான வடிவமைப்பு, தயாரிப்பு மற்றும் பின்தளத்துடன் கூட்டுசேர்த்தல்",
     "highlight3Title": "தரம் மற்றும் விநியோகம்",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "முன்பக்கம் பொறியாளர்",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "5+ வருட அனுபவம் கொண்ட Frontend Engineer, அளவிடக்கூடிய, உயர் செயல்திறன் மற்றும் அணுகக்கூடிய இணைய பயன்பாடுகளை உருவாக்குதல். React, Angular, Next.js, TypeScript மற்றும் நவீன முன்பக்க கட்டமைப்புகளில் திறமையானவர். REST மற்றும் GraphQL APIகளை ஒருங்கிணைத்தல், சிக்கலான UI பணிப்பாய்வுகளை மேம்படுத்துதல், CI/CD பைப்லைன்களை செயல்படுத்துதல், தானியங்கு சோதனை மற்றும் அணுகல்தன்மை இணக்கம் ஆகியவற்றில் அனுபவம் வாய்ந்தவர். கூட்டு குழு வீரர் பல திட்டங்களில் பயனர் நட்பு, பராமரிக்கக்கூடிய மென்பொருள் தீர்வுகளை வழங்குவதில் கவனம் செலுத்தினார்."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "மூத்த மென்பொருள் பொறியாளர்",
-        "company": "பிளாக்ஸ்ட்ரா AI",
-        "location": "புளோரிடா, அமெரிக்கா",
-        "period": "ஏப். 2026 - தற்போது",
-        "tagline": "மென்பொருள் தயாரிப்பு மற்றும் பொறியியல் குழு.",
-        "description": "குழு முன்னுரிமைகளின் அடிப்படையில் முன்னணி மற்றும் இயங்குதள மேம்பாட்டை ஆதரிக்க மூத்த மென்பொருள் பொறியாளராக பணியாற்றுதல்.",
-        "highlights": {
-          "0": "சுத்தமான, பராமரிக்கக்கூடிய குறியீட்டுடன் அம்ச விநியோகத்திற்கு பங்களிக்கிறது.",
-          "1": "செயலாக்க முன்னுரிமைகளில் தயாரிப்பு மற்றும் பொறியியல் குழுக்களுடன் ஒத்துழைக்கிறது."
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "மென்பொருள் பொறியாளர் (ஒப்பந்தம்)",
-        "company": "இணைவு ஆரோக்கியம்",
-        "location": "உட்பிரிட்ஜ், NJ",
-        "period": "பிப்ரவரி 2026 - ஏப். 2026",
-        "tagline": "குறுகிய கால அணுகல் மற்றும் இணக்க ஈடுபாடு.",
-        "description": "கோண பயன்பாடுகளில் அணுகல்தன்மை மேம்பாடுகள் மற்றும் WCAG 2.1 AA இணக்கம் ஆகியவற்றில் கவனம் செலுத்துகிறது.",
-        "highlights": {
-          "0": "அணுகல்தன்மை தணிக்கைகள் மற்றும் முக்கிய பயனர் ஓட்டங்களில் WCAG 2.1 AA சிக்கல்கள் சரி செய்யப்பட்டன.",
-          "1": "கோண UI இல் மேம்படுத்தப்பட்ட சொற்பொருள் மார்க்அப், விசைப்பலகை வழிசெலுத்தல் மற்றும் ஸ்கிரீன் ரீடர் ஆதரவு."
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "முன்பக்கம் பொறியாளர்",
-        "company": "கிஸ்வே",
-        "location": "உச்சிமாநாடு, NJ",
-        "period": "செப் 2024 — ஜனவரி 2026",
-        "tagline": "கிஸ்வே விளையாட்டு, ஊடகம் மற்றும் நிறுவன பிராண்டுகளுக்கான நேரடி ஊடாடும் அனுபவங்களை வழங்குகிறது.",
-        "description": "ரியாக்ட், வியூ, டைப்ஸ்கிரிப்ட் மற்றும் டெயில்விண்ட் ஆகியவற்றுடன் கூடிய அதிக டிராஃபிக் கொண்ட ஒற்றைப் பக்க ஆப்ஸ் வழங்கப்பட்டுள்ளது—அளவிடக்கூடிய கூறுகள், ஏபிஐ ஒருங்கிணைப்பு, செயல்திறன் மற்றும் அணுகல்தன்மை ஆகியவற்றில் கவனம் செலுத்துகிறது.",
-        "highlights": {
-          "0": "அளவிடக்கூடிய கூறு கட்டமைப்பைப் பயன்படுத்தி ரியாக்ட், வியூ, டைப்ஸ்கிரிப்ட் மற்றும் டெயில்விண்ட் ஆகியவற்றுடன் SPA கள் உருவாக்கப்பட்டுள்ளன.",
-          "1": "கேச்சிங் மற்றும் மாநில நிர்வாகத்துடன் ஒருங்கிணைந்த REST மற்றும் GraphQL APIகள்; மேம்பட்ட வினைத்திறன் மற்றும் குறைக்கப்பட்ட முன்முனை பிழைகள்.",
-          "2": "பெரிய பயன்பாடுகளில் வேகமாக ஏற்றுவதற்கு, குறியீட்டைப் பிரித்தல், சோம்பேறி ஏற்றுதல் மற்றும் மரத்தை அசைத்தல் ஆகியவை பயன்படுத்தப்படுகின்றன.",
-          "3": "வெற்றி பெற்ற குறியீடு மதிப்புரைகள், பிழைத்திருத்தம் மற்றும் WCAG- சீரமைக்கப்பட்ட, குறுக்கு சாதன அனுபவங்கள்."
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "முன்பக்கம் பொறியாளர்",
-        "company": "ஜென்ஸ்லர்",
-        "location": "மோரிஸ்டவுன், NJ",
-        "period": "ஜூலை 2022 — செப் 2024",
-        "tagline": "நிறுவன டிஜிட்டல் கருவிகள் மற்றும் வாடிக்கையாளர் அனுபவங்களை வழங்கும் உலகளாவிய கட்டிடக்கலை மற்றும் வடிவமைப்பு நிறுவனம்.",
-        "description": "React, Angular, Vue மற்றும் Next.js உடன் கட்டமைக்கப்பட்ட நிறுவன UIகள்-இணைத்தல் REST/GraphQL தரவை தானியங்கு சோதனைகள் மற்றும் நெருக்கமான வடிவமைப்பு ஒத்துழைப்புடன் இணைக்கிறது.",
-        "highlights": {
-          "0": "ரியாக்ட், ஆங்குலர், வியூ, நெக்ஸ்ட்.ஜேஸ் மற்றும் ஸ்டைல்ட் பாகங்கள் கொண்ட டாஷ்போர்டுகள் மற்றும் UI கூறுகள் அனுப்பப்பட்டன.",
-          "1": "ஒத்திசைவற்ற புதுப்பிப்புகள் மற்றும் ஊடாடும் அம்சங்களுடன் ஒருங்கிணைக்கப்பட்ட REST மற்றும் GraphQL.",
-          "2": "மறுவடிவமைக்கப்பட்ட மரபுக் குறியீடு, மேம்படுத்தப்பட்ட செயல்திறன் மற்றும் விரிவாக்கப்பட்ட Jest, RTL மற்றும் Playwright கவரேஜ்.",
-          "3": "ஃபிக்மா வடிவமைப்புகளை பதிலளிக்கக்கூடிய, அணுகக்கூடிய, உற்பத்திக்குத் தயாராக உள்ள இடைமுகங்களாக மொழிபெயர்க்கப்பட்டது."
-        }
+        "role": "Software Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "முன்னணி பொறியாளர் (ஒப்பந்தம்)",
-        "company": "சிக்னா எக்ஸ்பிரஸ் ஸ்கிரிப்ட்கள்",
-        "location": "ஃபிராங்க்ளின் லேக்ஸ், NJ",
-        "period": "மே 2021 - ஏப். 2022",
-        "tagline": "உறுப்பினர்கள் மற்றும் நோயாளிகளுக்கான பார்மசி நன்மைகள் மற்றும் டிஜிட்டல் ஹெல்த்கேர் தீர்வுகள்.",
-        "description": "பாதுகாப்பான ஏபிஐ ஒருங்கிணைப்பு, மட்டு கூறுகள் மற்றும் வலுவான தானியங்கு சோதனைக் கவரேஜ் ஆகியவற்றுடன் ரியாக்ட் மற்றும் டைப்ஸ்கிரிப்டில் உள்ளமைக்கப்பட்ட ஊடாடும் மருந்தகச் செக்அவுட் பாய்கிறது.",
-        "highlights": {
-          "0": "ரியாக்ட், டைப்ஸ்கிரிப்ட், HTML5 மற்றும் CSS3 மூலம் மேம்படுத்தப்பட்ட செக்அவுட் பணி நிறைவு.",
-          "1": "JWT/OAuth, சரிபார்ப்பு மற்றும் வலுவான பிழை கையாளுதல் ஆகியவற்றுடன் ஒருங்கிணைந்த பாதுகாப்பான REST APIகள்.",
-          "2": "மட்டு கூறுகள் மற்றும் உகந்த கிளையன்ட் பக்க ரெண்டரிங் மூலம் பக்க சுமை நேரம் குறைக்கப்பட்டது.",
-          "3": "பதிலளிக்கக்கூடிய, அணுகக்கூடிய UI டெலிவரிக்காக குழுக்கள் முழுவதும் ஒத்துழைக்கப்பட்டது."
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "முன்னணி பொறியியல் பயிற்சி",
-        "company": "ஆத்மியா கேர் தொண்டு நிறுவனம்",
-        "location": "பார்சிப்பானி, என்.ஜே",
-        "period": "செப்டம்பர் 2020 - மே 2021",
-        "tagline": "இலாப நோக்கற்ற அமைப்பு சமூக நலன் மற்றும் தொண்டு முயற்சிகளில் கவனம் செலுத்துகிறது.",
-        "description": "எனது மென்பொருள் வாழ்க்கையை இங்கு தொடங்கினேன், உண்மையான லாப நோக்கமற்ற திட்டங்களில் பயிற்சிப் பணியின் மூலம் அடிப்படை முன்னோடி திறன்களை உருவாக்கினேன்.",
-        "highlights": {
-          "0": "ரியாக்ட், HTML, CSS மற்றும் JavaScript ஐப் பயன்படுத்தி பதிலளிக்கக்கூடிய இடைமுகங்களை உருவாக்கியது.",
-          "1": "குறியீட்டு மதிப்புரைகள், ஒத்துழைப்பு மற்றும் மீண்டும் மீண்டும் வழங்குவதன் மூலம் முக்கிய பொறியியல் நடைமுறைகளைக் கற்றுக்கொண்டார்.",
-          "2": "நிஜ உலக லாப நோக்கமற்ற அம்சங்களை ஆதரிக்கிறது மற்றும் அணுகக்கூடிய UI செயல்படுத்தலுடன் நடைமுறை அனுபவத்தைப் பெற்றது."
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "React.js, Next.js, Angular மற்றும் Vue.js ஆகியவற்றில் டைப்ஸ்கிரிப்ட், நவீன CSS (டெயில்விண்ட், ஸ்டைல் ​​செய்யப்பட்ட கூறுகள், CSS மாட்யூல்கள்) மற்றும் பதிலளிக்கக்கூடிய வடிவமைப்பு ஆகியவற்றுடன் கூடிய அனுபவம். Webpack, Vite மற்றும் Babel மூலம் ஃபிக்மா ஹேண்ட்ஆஃப் மூலம் தயாரிப்பு உருவாக்கம் மூலம் வசதியாக உள்ளது.",
-      "Backend___API": "REST மற்றும் GraphQL சேவைகளை பாதுகாப்பான வடிவங்களுடன் ஒருங்கிணைக்கிறது—JWT, OAuth, CORS—மற்றும் Node.js, Java மற்றும் Spring Boot பின்தளங்களில் தரவு உந்துதல் UI களுக்கு இணைந்து செயல்படுகிறது.",
-      "Testing": "ஜெஸ்ட், ரியாக்ட் டெஸ்டிங் லைப்ரரி, சைப்ரஸ் மற்றும் பிளேரைட் ஆகியவற்றைப் பயன்படுத்தி யூனிட், ஒருங்கிணைப்பு மற்றும் வெளியீட்டுப் பாதையில் ஆட்டோமேஷனுடன் எண்ட்-டு-எண்ட் கவரேஜ் ஆகியவற்றைப் பயன்படுத்தி நம்பிக்கையுடன் அனுப்பப்படுகிறது.",
-      "Database": "தொடர்புடைய மற்றும் ஆவண தரவு ஸ்டோர்கள்-MySQL, PostgreSQL, MongoDB, Redis-மற்றும் SQL உடன் ஸ்கீமா-அறிவு அம்சங்கள் மற்றும் செயல்திறன் வினவல்களுக்கு வேலை செய்கிறது.",
-      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker மற்றும் AWSஐ CI/CD பைப்லைன்களில் கண்காணிப்பு, ESLint மற்றும் Prettier ஆகியவற்றுடன் சீரான, கவனிக்கக்கூடிய டெலிவரிக்கு பயன்படுத்துகிறது.",
-      "Concepts": "WCAG 2.1 AA அணுகல்தன்மை, செயல்திறன் மற்றும் பாதுகாப்பு சிறந்த நடைமுறைகள், சுறுசுறுப்பான/SCRUM ஒத்துழைப்பு மற்றும் திடமான பொறியியல் அடிப்படைகள் (பிழைத்திருத்தம், OOP, வடிவமைப்பு வடிவங்கள்) ஆகியவற்றைப் பயன்படுத்துகிறது."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "முன்பக்கம்",
-      "Backend___API": "பின்தளம் / API",
-      "Testing": "சோதனை",
-      "Database": "தரவுத்தளம்",
-      "DevOps___Tools": "DevOps / கருவிகள்",
-      "Concepts": "கருத்துக்கள்"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

@@ -29,9 +29,9 @@ export function getNavSectionIds() {
   return getNavConfig().links.map((link) => link.href.substring(1))
 }
 
-const HERO_CORE = ['React.js', 'Next.js', 'Angular', 'Vue.js', 'TypeScript']
+const HERO_CORE = ['Angular', 'TypeScript', 'React', 'Next.js', 'RxJS']
 
-export const formatSkillLabel = (s) =>
+const formatSkillLabel = (s) =>
   s.replace(/\.js$/i, '').replace(/\s*\(ES6\+\)/i, '')
 
 export const getSkillCategories = () =>

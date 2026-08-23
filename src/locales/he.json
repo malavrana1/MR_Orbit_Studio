@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "היי, אני",
-    "headlineFallback": "מהנדס חזית | React • Angular • Vue מומחה",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "סקירה מקצועית",
     "subtitleFallback": "בניית חוויות אינטרנט מודרניות עם תשוקה ודיוק",
     "highlight1Title": "ערימות חזית מודרניות",
-    "highlight1Text": "React, Angular, Next.js ו-TypeScript - ממרכזי מחוונים ארגוניים ועד ל-SPAs עם תעבורה גבוהה",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "שיתוף פעולה בצוות",
     "highlight2Text": "שיתוף פעולה עם עיצוב, מוצר ו-backend כדי לספק תכונות נגישות וניתנות לתחזוקה",
     "highlight3Title": "איכות ומשלוח",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "מהנדס חזית",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "מהנדס חזיתי עם 5+ שנות ניסיון בבניית יישומי אינטרנט ניתנים להרחבה, ביצועים גבוהים ונגישים. מיומן ב-React, Angular, Next.js, TypeScript ומסגרות חזיתיות מודרניות. מנוסה בשילוב ממשקי API של REST ו-GraphQL, אופטימיזציה של זרימות עבודה מורכבות של ממשק משתמש, הטמעת צינורות CI/CD, בדיקות אוטומטיות ותאימות לנגישות. שחקן צוות שיתופי המתמקד באספקת פתרונות תוכנה ידידותיים למשתמש הניתנים לתחזוקה על פני מספר פרויקטים."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "מהנדס תוכנה בכיר",
-        "company": "בינה מלאכותית של Blackstraw",
-        "location": "פלורידה, ארצות הברית",
-        "period": "אפריל 2026 - היום",
-        "tagline": "צוות מוצר והנדסה תוכנה.",
-        "description": "עובד כמהנדס תוכנה בכיר כדי לתמוך בפיתוח חזית ופלטפורמה בהתבסס על סדרי עדיפויות של הצוות.",
-        "highlights": {
-          "0": "תורם לאספקת תכונות עם קוד נקי וניתן לתחזוקה.",
-          "1": "משתף פעולה עם צוותי מוצר והנדסה בסדרי עדיפויות ביישום."
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "מהנדס תוכנה (חוזה)",
+        "role": "Software Engineer (Contract)",
         "company": "Fusion Health",
-        "location": "וודברידג', ניו ג'רזי",
-        "period": "פברואר 2026 - אפריל 2026",
-        "tagline": "מעורבות נגישות וציות לטווח קצר.",
-        "description": "התמקד בשיפורי נגישות ותאימות ל-WCAG 2.1 AA ביישומי Angular.",
-        "highlights": {
-          "0": "ביצע ביקורות נגישות ותיקנו בעיות WCAG 2.1 AA על פני זרימות מפתח של משתמשים.",
-          "1": "סימון סמנטי משופר, ניווט במקלדת ותמיכה בקורא מסך בממשק Angular UI."
-        }
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "מהנדס חזית",
-        "company": "קיסווה",
-        "location": "פסגה, ניו ג'רזי",
-        "period": "ספטמבר 2024 - ינואר 2026",
-        "tagline": "Kiswe מעניק חוויות אינטראקטיביות חיות עבור מותגי ספורט, מדיה וארגונים.",
-        "description": "סיפק אפליקציות של עמוד בודד עם תעבורה גבוהה עם React, Vue, TypeScript ו-Tailwind - תוך התמקדות ברכיבים ניתנים להרחבה, שילוב API, ביצועים ונגישות.",
-        "highlights": {
-          "0": "פיתח SPAs עם React, Vue, TypeScript ו-Tailwind תוך שימוש בארכיטקטורת רכיבים ניתנת להרחבה.",
-          "1": "ממשקי API משולבים של REST ו-GraphQL עם מטמון וניהול מצבים; שיפור ההיענות והפחתת שגיאות קצה.",
-          "2": "החל פיצול קוד, טעינה עצלנית וניעור עצים לטעינה מהירה יותר באפליקציות גדולות.",
-          "3": "סקירות קוד מעולות, ניפוי באגים וחוויות מיושרות WCAG, חוצות-מכשירים."
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "מהנדס חזית",
-        "company": "גנסלר",
-        "location": "מוריסטאון, ניו ג'רזי",
-        "period": "יולי 2022 - ספטמבר 2024",
-        "tagline": "חברת אדריכלות ועיצוב גלובלית המספקת כלים דיגיטליים ארגוניים וחוויות לקוח.",
-        "description": "ממשקי משתמש ארגוניים בנויים עם React, Angular, Vue ו-Next.js - שילוב נתוני REST/GraphQL אסינכרוניים עם בדיקות אוטומטיות ושיתוף פעולה עיצובי הדוק.",
-        "highlights": {
-          "0": "נשלחו לוחות מחוונים ורכיבי ממשק משתמש עם React, Angular, Vue, Next.js ורכיבי עיצוב.",
-          "1": "משולבים REST ו-GraphQL עם עדכונים אסינכרוניים ותכונות אינטראקטיביות.",
-          "2": "קוד מדור קודם, ביצועים משופרים והרחבת הכיסוי של Jest, RTL ו-Playwright.",
-          "3": "תרגמו את עיצובי Figma לממשקים רספונסיביים, נגישים ומוכנים לייצור."
-        }
+        "role": "Software Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "מהנדס חזית (חוזה)",
-        "company": "סקריפטים של Cigna Express",
-        "location": "פרנקלין לייקס, ניו ג'רזי",
-        "period": "מאי 2021 - אפריל 2022",
-        "tagline": "הטבות בית מרקחת ופתרונות בריאות דיגיטליים לחברים ולמטופלים.",
-        "description": "תזרים אינטראקטיבי של בתי מרקחת בנויים ב-React וב-TypeScript עם שילוב API מאובטח, רכיבים מודולריים וכיסוי בדיקות אוטומטי חזק.",
-        "highlights": {
-          "0": "השלמת משימות קופה משופרת עם React, TypeScript, HTML5 ו-CSS3.",
-          "1": "ממשקי API מאובטחים של REST משולבים עם JWT/OAuth, אימות וטיפול בשגיאות חזק.",
-          "2": "הפחתת זמני טעינת הדפים באמצעות רכיבים מודולריים ועיבוד אופטימלי בצד הלקוח.",
-          "3": "שיתף פעולה בין צוותים להעברת ממשק משתמש רספונסיבית ונגישה."
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "מתמחה בהנדסה חזיתית",
+        "role": "Frontend Engineer",
         "company": "Atmiya Care Charity",
-        "location": "פארסיפני, ניו ג'רזי",
-        "period": "ספטמבר 2020 - מאי 2021",
-        "tagline": "ארגון ללא מטרות רווח התמקד בהסברה קהילתית ויוזמות צדקה.",
-        "description": "התחלתי את קריירת התוכנה שלי כאן, בנית מיומנויות חזיתיות בסיסיות באמצעות עבודת התמחות מעשית על פרויקטים אמיתיים ללא מטרות רווח.",
-        "highlights": {
-          "0": "בנה ממשקים רספונסיביים באמצעות React, HTML, CSS ו-JavaScript.",
-          "1": "למד שיטות ליבה הנדסיות באמצעות ביקורות קוד, שיתוף פעולה והגשה איטרטיבית.",
-          "2": "נתמך בתכונות של מלכ\"ר בעולם האמיתי וצבר ניסיון מעשי ביישום ממשק משתמש נגיש."
-        }
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "חוויה מעשית ברחבי React.js, Next.js, Angular ו-Vue.js עם TypeScript, CSS מודרני (Tailwind, רכיבים מעוצבים, מודולי CSS) ועיצוב רספונסיבי. נוח ממסירת Figma דרך בניית ייצור עם Webpack, Vite ו-Babel.",
-      "Backend___API": "משלב שירותי REST ו-GraphQL עם תבניות מאובטחות - JWT, OAuth, CORS - ועובד לצד קצה גחור של Node.js, Java ו-Spring Boot עבור ממשקי משתמש מונעי נתונים.",
-      "Testing": "נשלח בביטחון באמצעות Jest, React Testing Library, Cypress ו-Playwright על פני יחידות, אינטגרציה וכיסוי מקצה לקצה עם אוטומציה בנתיב השחרור.",
-      "Database": "עובד עם מאגרי נתונים יחסיים ומסמכים - MySQL, PostgreSQL, MongoDB, Redis - ו-SQL עבור תכונות מודעות לסכימה ושאילתות ביצועיות.",
-      "DevOps___Tools": "משתמש ב-Git, ב-GitHub Actions, Jenkins, Docker ו-AWS בצינורות CI/CD עם ניטור, ESLint ו-Prettier למסירה עקבית וניתנת לצפייה.",
-      "Concepts": "מיישם WCAG 2.1 AA שיטות עבודה מומלצות לנגישות, ביצועים ואבטחה, שיתוף פעולה Agile/SCRUM ויסודות הנדסיים מוצקים (ניפוי באגים, OOP, דפוסי עיצוב)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "חזית",
-      "Backend___API": "Backend / API",
-      "Testing": "בּוֹחֵן",
-      "Database": "מסד נתונים",
-      "DevOps___Tools": "DevOps / כלים",
-      "Concepts": "מושגים"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Hei, olen",
-    "headlineFallback": "Frontend Engineer | Reagoi • Kulma • Vue-asiantuntija",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Ammattimainen yleiskatsaus",
     "subtitleFallback": "Nykyaikaisten verkkokokemusten rakentaminen intohimolla ja tarkkuudella",
     "highlight1Title": "Modernit käyttöliittymäpinot",
-    "highlight1Text": "React, Angular, Next.js ja TypeScript – yritysten hallintapaneeleista paljon liikennettä palveleviin SPA-palveluihin",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Joukkueen yhteistyö",
     "highlight2Text": "Yhteistyössä suunnittelun, tuotteen ja taustajärjestelmän kanssa saavutettavien, ylläpidettävien ominaisuuksien toimittamiseksi",
     "highlight3Title": "Laatu & toimitus",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Frontend-insinööri",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Frontend Engineer, jolla on yli 5 vuoden kokemus skaalautuvien, tehokkaiden ja helppokäyttöisten verkkosovellusten rakentamisesta. React-, Angular-, Next.js-, TypeScript- ja nykyaikaisten käyttöliittymäkehysten taidot. Kokenut REST- ja GraphQL-sovellusliittymien integroimisesta, monimutkaisten käyttöliittymätyönkulkujen optimoinnista, CI/CD-putkien toteuttamisesta, automaattisesta testauksesta ja saavutettavuuden vaatimustenmukaisuudesta. Yhteistyössä toimiva tiimipelaaja, joka keskittyi toimittamaan käyttäjäystävällisiä, ylläpidettäviä ohjelmistoratkaisuja useissa projekteissa."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Vanhempi ohjelmistosuunnittelija",
+        "role": "Software Engineer",
         "company": "Blackstraw AI",
-        "location": "Florida, Yhdysvallat",
-        "period": "Huhtikuu 2026 – Nyt",
-        "tagline": "Ohjelmistotuote ja suunnittelutiimi.",
-        "description": "Työskentelet vanhempana ohjelmistosuunnittelijana tukemaan käyttöliittymän ja alustan kehitystä tiimin prioriteettien perusteella.",
-        "highlights": {
-          "0": "Osallistuu ominaisuuksien toimittamiseen puhtaalla, ylläpidettävällä koodilla.",
-          "1": "Tekee yhteistyötä tuote- ja suunnittelutiimien kanssa toteutuksen prioriteettien suhteen."
-        }
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Ohjelmistoinsinööri (sopimus)",
+        "role": "Software Engineer (Contract)",
         "company": "Fusion Health",
         "location": "Woodbridge, NJ",
-        "period": "Helmi 2026 – Huhtikuu 2026",
-        "tagline": "Lyhytaikainen saavutettavuus ja noudattaminen.",
-        "description": "Keskittyy saavutettavuuden parannuksiin ja WCAG 2.1 AA -yhteensopivuuteen Angular-sovelluksissa.",
-        "highlights": {
-          "0": "Suoritettu esteettömyystarkastuksia ja korjattu WCAG 2.1 AA -ongelmat keskeisissä käyttäjävirroissa.",
-          "1": "Parannettu semanttinen merkintä, näppäimistönavigointi ja näytönlukuohjelman tuki Angular-käyttöliittymässä."
-        }
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Frontend-insinööri",
+        "role": "Software Engineer",
         "company": "Kiswe",
         "location": "Summit, NJ",
-        "period": "Syyskuu 2024 – tammikuu 2026",
-        "tagline": "Kiswe tarjoaa live-interaktiivisia kokemuksia urheilu-, media- ja yritysbrändeille.",
-        "description": "Toimitetaan paljon liikennettä tuottavia yksisivuisia sovelluksia, joissa on React, Vue, TypeScript ja Tailwind – keskittyen skaalautuviin komponentteihin, API-integraatioon, suorituskykyyn ja saavutettavuuteen.",
-        "highlights": {
-          "0": "Kehitetty SPA:t React, Vue, TypeScript ja Tailwind kanssa skaalautuvan komponenttiarkkitehtuurin avulla.",
-          "1": "Integroidut REST- ja GraphQL-sovellusliittymät välimuistin ja tilanhallinnan kanssa; parannettu reagointikyky ja vähennetty käyttöliittymävirheitä.",
-          "2": "Sovellettu koodin jakaminen, laiska lataus ja puiden ravistaminen suurten sovellusten nopeampaa lataamista varten.",
-          "3": "Huipputut koodin tarkistukset, virheenkorjaukset ja WCAG-yhteensopineet laitteiden väliset kokemukset."
-        }
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Frontend-insinööri",
+        "role": "Software Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
-        "period": "Heinäkuu 2022 – syyskuu 2024",
-        "tagline": "Globaali arkkitehtuuri- ja suunnittelutoimisto, joka toimittaa yrityksille digitaalisia työkaluja ja asiakaskokemuksia.",
-        "description": "Rakennetut yrityskäyttöliittymät, joissa on React, Angular, Vue ja Next.js – yhdistävät asynkroniset REST/GraphQL-tiedot automaattisiin testeihin ja tiiviiseen suunnitteluyhteistyöhön.",
-        "highlights": {
-          "0": "Toimitetaan kojelaudat ja käyttöliittymäkomponentit React-, Angular-, Vue-, Next.js- ja Styled-komponenteilla.",
-          "1": "Integroitu REST ja GraphQL asynkronisilla päivityksillä ja interaktiivisilla ominaisuuksilla.",
-          "2": "Uusittu vanha koodi, parannettu suorituskyky ja laajennettu Jest-, RTL- ja Playwright-kattavuus.",
-          "3": "Käänsi Figma-suunnitelmat responsiivisiksi, helppopääsyisiksi, tuotantovalmiiksi käyttöliittymiksi."
-        }
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Frontend Engineer (sopimus)",
+        "role": "Frontend Engineer",
         "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
-        "period": "Toukokuu 2021 – Huhtikuu 2022",
-        "tagline": "Apteekkiedut ja digitaaliset terveydenhuollon ratkaisut jäsenille ja potilaille.",
-        "description": "Sisäänrakennetut vuorovaikutteiset apteekkien kassavirrat Reactissa ja TypeScriptissä suojatulla API-integraatiolla, modulaarisilla komponenteilla ja vahvalla automatisoidulla testikatolla.",
-        "highlights": {
-          "0": "Parannettu kassatehtävien suorittaminen Reactin, TypeScriptin, HTML5:n ja CSS3:n avulla.",
-          "1": "Integroidut suojatut REST API:t, joissa on JWT/OAuth, validointi ja tehokas virheiden käsittely.",
-          "2": "Lyhennetyt sivun latausajat modulaaristen komponenttien ja optimoidun asiakaspuolen renderöinnin ansiosta.",
-          "3": "Yhteistyötä eri tiimien välillä nopean ja helppokäyttöisen käyttöliittymän toimittamiseksi."
-        }
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Frontend Engineering Intern",
-        "company": "Atmiya Care hyväntekeväisyysjärjestö",
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "Syyskuu 2020 – toukokuu 2021",
-        "tagline": "Voittoa tavoittelematon järjestö, joka keskittyi yhteisön tavoittamiseen ja hyväntekeväisyyshankkeisiin.",
-        "description": "Aloitin ohjelmistourani täällä ja rakensin perustaitoja käyttöliittymätaitojen avulla käytännön harjoittelutyössä todellisissa voittoa tavoittelemattomissa projekteissa.",
-        "highlights": {
-          "0": "Rakennettu responsiiviset käyttöliittymät Reactin, HTML:n, CSS:n ja JavaScriptin avulla.",
-          "1": "Oppinut ydintekniikan käytännöt kooditarkistuksen, yhteistyön ja iteratiivisen toimituksen kautta.",
-          "2": "Tuettu todellisia voittoa tavoittelemattomia ominaisuuksia ja saatu käytännön kokemusta helppokäyttöisen käyttöliittymän toteutuksesta."
-        }
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Käytännön kokemus React.js-, Next.js-, Angular- ja Vue.js-palveluista TypeScriptillä, modernilla CSS:llä (Tailwind, Styled Components, CSS-moduulit) ja responsiivisella suunnittelulla. Mukava Figma-hankkeiden vaihdosta Webpackin, Viten ja Babelin tuotantoversioihin.",
-      "Backend___API": "Integroi REST- ja GraphQL-palvelut suojatuilla malleilla (JWT, OAuth, CORS) ja toimii Node.js-, Java- ja Spring Boot -taustaohjelmien rinnalla tietopohjaisissa käyttöliittymissä.",
-      "Testing": "Toimitetaan luottavaisin mielin käyttämällä Jest-, React Testing Library-, Cypress- ja Playwright-yksikköjä, integraatiota ja päästä päähän -kattavuutta julkaisupolun automatisoinnilla.",
-      "Database": "Toimii relaatio- ja dokumenttitietovarastojen (MySQL, PostgreSQL, MongoDB, Redis) ja SQL:n kanssa skeematietoisten ominaisuuksien ja tehokkaiden kyselyiden kanssa.",
-      "DevOps___Tools": "Käyttää Gitiä, GitHub Actionsia, Jenkinsiä, Dockeria ja AWS:ää CI/CD-putkissa valvonnan, ESLintin ja Prettierin kanssa johdonmukaisen ja havaittavan toimituksen varmistamiseksi.",
-      "Concepts": "Sovelletaan WCAG 2.1 AA:n saavutettavuuden, suorituskyvyn ja turvallisuuden parhaita käytäntöjä, ketterää/SCRUM-yhteistyötä ja vankkaa suunnittelun perusteita (virheenkorjaus, OOP, suunnittelumallit)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "Käyttöliittymä",
-      "Backend___API": "Taustajärjestelmä / API",
-      "Testing": "Testaus",
-      "Database": "Tietokanta",
-      "DevOps___Tools": "DevOps / Työkalut",
-      "Concepts": "Käsitteet"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

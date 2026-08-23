@@ -48,17 +48,17 @@ function tile(Icon, color) {
 }
 
 const actionMeta = {
-  home: tile(FaHome, '#5c4033'),
+  home: tile(FaHome, '#4f3529'),
   experience: tile(FaBriefcase, '#1D4ED8'),
   projects: tile(FaFolderOpen, '#7C3AED'),
   toolkit: tile(FaToolbox, '#0F766E'),
   education: tile(FaGraduationCap, '#B45309'),
   connect: tile(FaHandshake, '#0EA5E9'),
-  craft: tile(FaCode, '#5c4033'),
+  craft: tile(FaCode, '#4f3529'),
   team: tile(FaUsers, '#1D4ED8'),
   quality: tile(FaCheckCircle, '#15803D'),
   resume: tile(FaFilePdf, '#DC2626'),
-  contact: tile(FaEnvelope, '#5c4033'),
+  contact: tile(FaEnvelope, '#4f3529'),
   email: tile(FaEnvelope, '#EA4335'),
   github: tile(FaGithub, '#181717'),
   linkedin: tile(FaLinkedin, '#0A66C2'),
@@ -68,7 +68,7 @@ const actionMeta = {
   location: tile(FaMapMarkerAlt, '#DC2626'),
   sun: tile(FaSun, '#F59E0B'),
   moon: tile(FaMoon, '#334155'),
-  top: tile(FaArrowUp, '#5c4033'),
+  top: tile(FaArrowUp, '#4f3529'),
   language: tile(FaGlobe, '#0F766E'),
   tennis: tile(MdSportsTennis, '#65A30D'),
   cricket: tile(MdSportsCricket, '#15803D'),
@@ -81,7 +81,7 @@ const actionMeta = {
   explore: tile(FaLightbulb, '#CA8A04'),
 }
 
-const FALLBACK = tile(FaCode, '#5c4033')
+const FALLBACK = tile(FaCode, '#4f3529')
 
 export function getActionMeta(key) {
   return actionMeta[key] || FALLBACK

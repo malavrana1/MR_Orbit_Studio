@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Hi, ako",
-    "headlineFallback": "Frontend Engineer | React • Angular • Vue Specialist",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Propesyonal na Pangkalahatang-ideya",
     "subtitleFallback": "Bumuo ng mga modernong karanasan sa web nang may hilig at katumpakan",
     "highlight1Title": "Mga modernong frontend stack",
-    "highlight1Text": "React, Angular, Next.js, at TypeScript—mula sa mga dashboard ng enterprise hanggang sa mga SPA na may mataas na trapiko",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Pagtutulungan ng pangkat",
     "highlight2Text": "Pakikipagtulungan sa disenyo, produkto, at backend para ipadala ang mga feature na naa-access at napanatili",
     "highlight3Title": "Kalidad at paghahatid",
@@ -145,7 +145,7 @@
       "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Frontend Engineer na may 5+ taong karanasan sa pagbuo ng mga scalable, mataas na pagganap, at naa-access na mga web application. Sanay sa React, Angular, Next.js, TypeScript, at modernong frontend frameworks. Nakaranas sa pagsasama ng REST at GraphQL API, pag-optimize ng mga kumplikadong workflow ng UI, pagpapatupad ng mga pipeline ng CI/CD, automated na pagsubok, at pagsunod sa accessibility. Nakatuon ang collaborative team player sa paghahatid ng user-friendly, maintainable software solutions sa maraming proyekto."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Senior Software Engineer",
+        "role": "Software Engineer",
         "company": "Blackstraw AI",
-        "location": "Florida, Estados Unidos",
-        "period": "Abr 2026 — Kasalukuyan",
-        "tagline": "Produkto ng software at pangkat ng engineering.",
-        "description": "Nagtatrabaho bilang Senior Software Engineer upang suportahan ang frontend at pagbuo ng platform batay sa mga priyoridad ng team.",
-        "highlights": {
-          "0": "Nag-aambag sa paghahatid ng tampok na may malinis at napapanatiling code.",
-          "1": "Nakikipagtulungan sa mga pangkat ng produkto at engineering sa mga priyoridad sa pagpapatupad."
-        }
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Software Engineer (Kontrata)",
-        "company": "Kalusugan ng Fusion",
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
         "location": "Woodbridge, NJ",
-        "period": "Peb 2026 — Abr 2026",
-        "tagline": "Panandaliang accessibility at pakikipag-ugnayan sa pagsunod.",
-        "description": "Nakatuon sa mga pagpapahusay sa pagiging naa-access at pagsunod sa WCAG 2.1 AA sa mga application na Angular.",
-        "highlights": {
-          "0": "Nagsagawa ng mga pag-audit sa accessibility at inayos ang mga isyu sa WCAG 2.1 AA sa mga pangunahing daloy ng user.",
-          "1": "Pinahusay na semantic markup, keyboard navigation, at suporta sa screen reader sa Angular UI."
-        }
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Frontend Engineer",
+        "role": "Software Engineer",
         "company": "Kiswe",
         "location": "Summit, NJ",
-        "period": "Set 2024 — Ene 2026",
-        "tagline": "Pinapalakas ng Kiswe ang mga live na interactive na karanasan para sa mga brand ng sports, media, at enterprise.",
-        "description": "Naghatid ng mga single-page na app na may mataas na trapiko na may React, Vue, TypeScript, at Tailwind—nakatuon sa mga scalable na bahagi, pagsasama ng API, performance, at accessibility.",
-        "highlights": {
-          "0": "Mga binuo na SPA na may React, Vue, TypeScript, at Tailwind gamit ang scalable component architecture.",
-          "1": "Pinagsamang REST at GraphQL API na may caching at pamamahala ng estado; pinahusay na kakayahang tumugon at nabawasan ang mga error sa frontend.",
-          "2": "Inilapat ang paghahati ng code, tamad na pag-load, at pag-alog ng puno para sa mas mabilis na pag-load sa malalaking app.",
-          "3": "Mga na-champion na pagsusuri ng code, pag-debug, at nakahanay sa WCAG, mga karanasan sa cross-device."
-        }
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Frontend Engineer",
+        "role": "Software Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
-        "period": "Hul 2022 — Set 2024",
-        "tagline": "Pandaigdigang arkitektura at kumpanya ng disenyo na naghahatid ng mga digital na tool ng enterprise at mga karanasan ng kliyente.",
-        "description": "Mga binuo na enterprise UI na may React, Angular, Vue, at Next.js—nagpapares ng async na REST/GraphQL na data sa mga automated na pagsubok at malapit na pakikipagtulungan sa disenyo.",
-        "highlights": {
-          "0": "Ipinadala ang mga dashboard at bahagi ng UI na may React, Angular, Vue, Next.js, at Mga Naka-istilong Bahagi.",
-          "1": "Pinagsamang REST at GraphQL na may mga asynchronous na update at interactive na feature.",
-          "2": "Ni-refactor ang legacy code, pinahusay na performance, at pinalawak na saklaw ng Jest, RTL, at Playwright.",
-          "3": "Isinalin ang mga disenyo ng Figma sa mga interface na tumutugon, naa-access, at handa sa produksyon."
-        }
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Frontend Engineer (Kontrata)",
-        "company": "Mga Script ng Cigna Express",
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
-        "period": "Mayo 2021 — Abr 2022",
-        "tagline": "Mga benepisyo sa parmasya at mga digital na solusyon sa pangangalagang pangkalusugan para sa mga miyembro at pasyente.",
-        "description": "Mga binuo interactive na daloy ng checkout ng botika sa React at TypeScript na may secure na pagsasama ng API, mga modular na bahagi, at malakas na saklaw ng awtomatikong pagsubok.",
-        "highlights": {
-          "0": "Pinahusay na pagkumpleto ng gawain sa pag-checkout gamit ang React, TypeScript, HTML5, at CSS3.",
-          "1": "Pinagsamang secure na REST API na may JWT/OAuth, validation, at mahusay na paghawak ng error.",
-          "2": "Binawasan ang mga oras ng pag-load ng page sa pamamagitan ng mga modular na bahagi at na-optimize na pag-render sa panig ng kliyente.",
-          "3": "Nakipagtulungan sa mga team para sa tumutugon, naa-access na paghahatid ng UI."
-        }
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Frontend Engineering Intern",
+        "role": "Frontend Engineer",
         "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "Set 2020 — Mayo 2021",
-        "tagline": "Nonprofit na organisasyon na nakatuon sa community outreach at charitable initiatives.",
-        "description": "Sinimulan ang aking karera sa software dito, pagbuo ng mga kasanayan sa pang-unang pang-una sa pamamagitan ng hands-on na internship na trabaho sa mga tunay na nonprofit na proyekto.",
-        "highlights": {
-          "0": "Bumuo ng mga tumutugon na interface gamit ang React, HTML, CSS, at JavaScript.",
-          "1": "Natutunan ang mga pangunahing kasanayan sa engineering sa pamamagitan ng mga pagsusuri sa code, pakikipagtulungan, at pagpapadala ng umuulit.",
-          "2": "Sinusuportahan ang mga real-world na nonprofit na feature at nakakuha ng praktikal na karanasan sa naa-access na pagpapatupad ng UI."
-        }
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Hands-on na karanasan sa React.js, Next.js, Angular, at Vue.js gamit ang TypeScript, modernong CSS (Tailwind, Styled Components, CSS Module), at tumutugon na disenyo. Kumportable mula sa Figma handoff sa pamamagitan ng production build gamit ang Webpack, Vite, at Babel.",
-      "Backend___API": "Pinagsasama ang mga serbisyo ng REST at GraphQL na may mga secure na pattern—JWT, OAuth, CORS—at gumagana sa tabi ng Node.js, Java, at Spring Boot backend para sa mga UI na hinihimok ng data.",
-      "Testing": "Nagpapadala nang may kumpiyansa gamit ang Jest, React Testing Library, Cypress, at Playwright sa kabuuan ng unit, integration, at end-to-end coverage na may automation sa release path.",
-      "Database": "Gumagana sa mga relational at mga data store ng dokumento—MySQL, PostgreSQL, MongoDB, Redis—at SQL para sa mga feature na may kamalayan sa schema at mga query na gumaganap.",
-      "DevOps___Tools": "Gumagamit ng Git, GitHub Actions, Jenkins, Docker, at AWS sa mga pipeline ng CI/CD na may pagsubaybay, ESLint, at Prettier para sa pare-pareho, napapansing paghahatid.",
-      "Concepts": "Nalalapat ang WCAG 2.1 AA accessibility, performance at security best practices, Agile/SCRUM collaboration, at solidong engineering fundamentals (debugging, OOP, mga pattern ng disenyo)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
       "Frontend": "Frontend",
-      "Backend___API": "Backend / API",
-      "Testing": "Pagsubok",
-      "Database": "Database",
-      "DevOps___Tools": "DevOps / Tools",
-      "Concepts": "Mga konsepto"
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

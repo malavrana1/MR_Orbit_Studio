@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "안녕하세요, 저는",
-    "headlineFallback": "프론트엔드 엔지니어 | React • Angular • Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "전문 요약",
     "subtitleFallback": "열정과 정밀함으로 모던 웹 경험을 만듭니다",
     "highlight1Title": "모던 프론트엔드 스택",
-    "highlight1Text": "React, Angular, Next.js, TypeScript — 엔터프라이즈 대시보드부터 고트래픽 SPA까지",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "팀 협업",
     "highlight2Text": "디자인, 프로덕트, 백엔드와 함께 접근 가능하고 유지보수하기 쉬운 기능을",
     "highlight3Title": "품질과 전달",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "프론트엔드 엔지니어",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "확장 가능하고, 고성능이며, 접근 가능한 웹 애플리케이션을 구축한 경험이 5년 이상인 프런트엔드 엔지니어입니다. React, Angular, Next.js, TypeScript 및 최신 프런트엔드 프레임워크에 능숙합니다. REST 및 GraphQL API 통합, 복잡한 UI 워크플로 최적화, CI/CD 파이프라인 구현, 자동화된 테스트 및 접근성 규정 준수 경험이 있습니다. 여러 프로젝트에 걸쳐 사용자 친화적이고 유지 관리가 가능한 소프트웨어 솔루션을 제공하는 데 중점을 둔 협업 팀 플레이어입니다."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "수석 소프트웨어 엔지니어",
-        "company": "검은짚 AI",
-        "location": "미국 플로리다",
-        "period": "2026년 4월 — 현재",
-        "tagline": "소프트웨어 제품 및 엔지니어링 팀.",
-        "description": "팀 우선순위에 따라 프런트엔드 및 플랫폼 개발을 지원하는 수석 소프트웨어 엔지니어로 일합니다.",
-        "highlights": {
-          "0": "깔끔하고 유지 관리가 가능한 코드로 기능 제공에 기여합니다.",
-          "1": "구현 우선순위에 관해 제품 및 엔지니어링 팀과 협력합니다."
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "소프트웨어 엔지니어(계약)",
-        "company": "퓨전헬스",
-        "location": "우드브리지, 뉴저지",
-        "period": "2026년 2월 ~ 2026년 4월",
-        "tagline": "단기 접근성 및 규정 준수 참여.",
-        "description": "Angular 애플리케이션의 접근성 개선 및 WCAG 2.1 AA 준수에 중점을 둡니다.",
-        "highlights": {
-          "0": "접근성 감사를 수행하고 주요 사용자 흐름 전반에 걸쳐 WCAG 2.1 AA 문제를 수정했습니다.",
-          "1": "Angular UI에서 의미 체계 마크업, 키보드 탐색 및 화면 판독기 지원이 향상되었습니다."
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "프론트엔드 엔지니어",
-        "company": "키스웨",
-        "location": "서밋, 뉴저지",
-        "period": "2024년 9월 ~ 2026년 1월",
-        "tagline": "Kiswe는 스포츠, 미디어, 기업 브랜드를 위한 라이브 인터랙티브 경험을 제공합니다.",
-        "description": "확장 가능한 구성 요소, API 통합, 성능 및 접근성에 중점을 두고 React, Vue, TypeScript 및 Tailwind를 사용하여 트래픽이 많은 단일 페이지 앱을 제공했습니다.",
-        "highlights": {
-          "0": "확장 가능한 구성 요소 아키텍처를 사용하여 React, Vue, TypeScript 및 Tailwind로 SPA를 개발했습니다.",
-          "1": "캐싱 및 상태 관리 기능을 갖춘 통합 REST 및 GraphQL API 응답성이 향상되고 프런트엔드 오류가 감소했습니다.",
-          "2": "대규모 앱에서 더 빠른 로드를 위해 코드 분할, 지연 로딩, 트리 쉐이킹을 적용했습니다.",
-          "3": "뛰어난 코드 검토, 디버깅 및 WCAG에 맞춰 장치 간 경험을 제공합니다."
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "프론트엔드 엔지니어",
-        "company": "겐슬러",
-        "location": "모리스타운, 뉴저지",
-        "period": "2022년 7월 ~ 2024년 9월",
-        "tagline": "엔터프라이즈 디지털 도구와 고객 경험을 제공하는 글로벌 아키텍처 및 디자인 회사입니다.",
-        "description": "React, Angular, Vue 및 Next.js를 사용하여 엔터프라이즈 UI를 구축하여 비동기 REST/GraphQL 데이터를 자동화된 테스트 및 긴밀한 설계 협업과 결합합니다.",
-        "highlights": {
-          "0": "React, Angular, Vue, Next.js 및 Styled Components가 포함된 대시보드 및 UI 구성 요소를 제공합니다.",
-          "1": "비동기 업데이트 및 대화형 기능을 갖춘 통합 REST 및 GraphQL입니다.",
-          "2": "레거시 코드를 리팩터링하고 성능을 개선했으며 Jest, RTL 및 Playwright 적용 범위를 확장했습니다.",
-          "3": "Figma 디자인을 반응형, 액세스 가능, 생산 준비 인터페이스로 변환했습니다."
-        }
+        "role": "Software Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "프론트엔드 엔지니어(계약)",
-        "company": "시그나 익스프레스 스크립트",
-        "location": "프랭클린 레이크스, 뉴저지",
-        "period": "2021년 5월 ~ 2022년 4월",
-        "tagline": "회원과 환자를 위한 약국 혜택과 디지털 헬스케어 솔루션.",
-        "description": "안전한 API 통합, 모듈식 구성 요소 및 강력하고 자동화된 테스트 적용 범위를 통해 React 및 TypeScript에서 대화형 약국 체크아웃 흐름을 구축했습니다.",
-        "highlights": {
-          "0": "React, TypeScript, HTML5 및 CSS3를 통해 결제 작업 완료 기능이 향상되었습니다.",
-          "1": "JWT/OAuth, 검증 및 강력한 오류 처리 기능을 갖춘 통합 보안 REST API입니다.",
-          "2": "모듈식 구성 요소와 최적화된 클라이언트 측 렌더링을 통해 페이지 로드 시간이 단축되었습니다.",
-          "3": "응답성이 뛰어나고 접근성이 뛰어난 UI 제공을 위해 여러 팀에서 협업했습니다."
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "프론트엔드 엔지니어링 인턴",
-        "company": "아트미야 케어 자선단체",
-        "location": "파시패니, 뉴저지",
-        "period": "2020년 9월 ~ 2021년 5월",
-        "tagline": "지역 사회 봉사 활동과 자선 활동에 중점을 둔 비영리 조직입니다.",
-        "description": "여기서 소프트웨어 경력을 시작하여 실제 비영리 프로젝트에 대한 실습 인턴십 작업을 통해 기초적인 프론트엔드 기술을 구축했습니다.",
-        "highlights": {
-          "0": "React, HTML, CSS 및 JavaScript를 사용하여 반응형 인터페이스를 구축했습니다.",
-          "1": "코드 검토, 협업 및 반복 제공을 통해 핵심 엔지니어링 사례를 배웠습니다.",
-          "2": "실제 비영리 기능을 지원하고 접근 가능한 UI 구현을 통해 실용적인 경험을 얻었습니다."
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "TypeScript, 최신 CSS(Tailwind, 스타일 구성 요소, CSS 모듈) 및 반응형 디자인을 사용하여 React.js, Next.js, Angular 및 Vue.js에 대한 실무 경험을 제공합니다. Webpack, Vite 및 Babel을 사용한 프로덕션 빌드를 통해 Figma 핸드오프부터 편안합니다.",
-      "Backend___API": "REST 및 GraphQL 서비스를 보안 패턴(JWT, OAuth, CORS)과 통합하고 데이터 기반 UI를 위해 Node.js, Java 및 Spring Boot 백엔드와 함께 작동합니다.",
-      "Testing": "릴리스 경로의 자동화를 통해 유닛, 통합 및 엔드투엔드 적용 범위 전반에 걸쳐 Jest, React Testing Library, Cypress 및 Playwright를 사용하여 자신 있게 출시됩니다.",
-      "Database": "스키마 인식 기능 및 고성능 쿼리를 위해 관계형 및 문서 데이터 저장소(MySQL, PostgreSQL, MongoDB, Redis) 및 SQL과 함께 작동합니다.",
-      "DevOps___Tools": "일관되고 관찰 가능한 제공을 위해 모니터링, ESLint 및 Prettier와 함께 CI/CD 파이프라인에서 Git, GitHub Actions, Jenkins, Docker 및 AWS를 사용합니다.",
-      "Concepts": "WCAG 2.1 AA 접근성, 성능 및 보안 모범 사례, Agile/SCRUM 협업, 견고한 엔지니어링 기본 사항(디버깅, OOP, 디자인 패턴)을 적용합니다."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "프런트엔드",
-      "Backend___API": "백엔드/API",
-      "Testing": "테스트",
-      "Database": "데이터 베이스",
-      "DevOps___Tools": "DevOps/도구",
-      "Concepts": "개념"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

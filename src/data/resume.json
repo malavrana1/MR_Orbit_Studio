@@ -2,132 +2,118 @@
   "skills": {
     "Frontend": [
       "Angular",
-      "React.js",
-      "Next.js",
-      "Vue.js",
       "TypeScript",
-      "JavaScript (ES6+)",
+      "JavaScript",
+      "RxJS",
+      "NgRx",
+      "React",
+      "Next.js"
+    ],
+    "Angular": [
+      "Standalone Components",
+      "Lazy Loading",
+      "Reactive Forms",
+      "Routing",
+      "Guards",
+      "Interceptors",
+      "Change Detection"
+    ],
+    "UI / Accessibility": [
       "HTML5",
       "CSS3",
+      "SCSS",
       "Tailwind CSS",
-      "Styled Components",
-      "CSS Modules",
       "Bootstrap",
-      "Responsive/Adaptive Design",
-      "Webpack",
-      "Vite",
-      "Babel",
-      "React Hooks",
-      "Figma"
+      "AG Grid",
+      "Responsive Design",
+      "WCAG 2.1 AA",
+      "Lighthouse",
+      "axe DevTools"
     ],
-    "Backend / API": [
-      "Node.js",
-      "Java",
-      "Spring Boot",
-      "REST",
+    "API / Backend": [
+      "REST APIs",
       "GraphQL",
-      "JSON",
+      "HttpClient",
       "JWT",
-      "OAuth",
-      "CORS",
-      "API Security",
-      "Caching",
-      "Logging"
+      "OAuth 2.0",
+      "Node.js",
+      ".NET Core",
+      "SQL Server",
+      "MySQL"
     ],
     "Testing": [
+      "Jasmine",
+      "Karma",
       "Jest",
-      "React Testing Library",
       "Cypress",
-      "Playwright",
-      "Unit/Integration/E2E Testing",
-      "Test Automation"
-    ],
-    "Database": [
-      "MySQL",
-      "PostgreSQL",
-      "MongoDB",
-      "Redis",
-      "SQL",
-      "Schema Design",
-      "Advanced Queries"
+      "Playwright"
     ],
     "DevOps / Tools": [
       "Git",
       "GitHub Actions",
       "Jenkins",
       "Docker",
+      "Kubernetes",
       "AWS",
-      "CI/CD Pipelines",
-      "Performance Monitoring",
-      "ESLint",
-      "Prettier"
-    ],
-    "Concepts": [
-      "Accessibility (WCAG 2.1 AA)",
-      "Frontend Performance Optimization",
-      "Frontend Security",
-      "Agile/SCRUM",
-      "Client-Side Debugging",
-      "OOP",
-      "Design Patterns"
+      "CI/CD"
     ]
   },
   "skillDescriptions": {
-    "Frontend": "Hands-on experience across React.js, Next.js, Angular, and Vue.js with TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules), and responsive design. Comfortable from Figma handoff through production builds with Webpack, Vite, and Babel.",
-    "Backend / API": "Integrates REST and GraphQL services with secure patterns—JWT, OAuth, CORS—and works alongside Node.js, Java, and Spring Boot backends for data-driven UIs.",
-    "Testing": "Ships with confidence using Jest, React Testing Library, Cypress, and Playwright across unit, integration, and end-to-end coverage with automation in the release path.",
-    "Database": "Works with relational and document data stores—MySQL, PostgreSQL, MongoDB, Redis—and SQL for schema-aware features and performant queries.",
-    "DevOps / Tools": "Uses Git, GitHub Actions, Jenkins, Docker, and AWS in CI/CD pipelines with monitoring, ESLint, and Prettier for consistent, observable delivery.",
-    "Concepts": "Applies WCAG 2.1 AA accessibility, performance and security best practices, Agile/SCRUM collaboration, and solid engineering fundamentals (debugging, OOP, design patterns)."
+    "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+    "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+    "UI / Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+    "API / Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+    "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+    "DevOps / Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
   },
   "experience": [
     {
-      "role": "Senior Software Engineer",
+      "role": "Software Engineer",
       "company": "Blackstraw AI",
-      "location": "Florida, United States",
-      "period": "Apr 2026 — Present",
-      "tagline": "Software product and engineering team.",
-      "description": "Working as a Senior Software Engineer to support frontend and platform development based on team priorities."
+      "location": "Remote",
+      "period": "May 2026 — Present",
+      "tagline": "Building Angular applications from scratch for a software product team.",
+      "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
     },
     {
       "role": "Software Engineer (Contract)",
       "company": "Fusion Health",
       "location": "Woodbridge, NJ",
       "period": "Feb 2026 — Apr 2026",
-      "tagline": "Short-term accessibility and compliance engagement.",
-      "description": "Focused on accessibility improvements and WCAG 2.1 AA compliance in Angular applications."
+      "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+      "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
     },
     {
-      "role": "Frontend Engineer",
+      "role": "Software Engineer",
       "company": "Kiswe",
       "location": "Summit, NJ",
       "period": "Sep 2024 — Jan 2026",
-      "tagline": "Kiswe powers live interactive experiences for sports, media, and enterprise brands.",
-      "description": "Delivered high-traffic single-page apps with React, Vue, TypeScript, and Tailwind—focusing on scalable components, API integration, performance, and accessibility."
+      "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+      "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
     },
     {
-      "role": "Frontend Engineer",
+      "role": "Software Engineer",
       "company": "Gensler",
       "location": "Morristown, NJ",
       "period": "Jul 2022 — Sep 2024",
-      "tagline": "Global architecture and design firm delivering enterprise digital tools and client experiences.",
-      "description": "Built enterprise UIs with React, Angular, Vue, and Next.js—pairing async REST/GraphQL data with automated tests and close design collaboration."
+      "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+      "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
     },
     {
-      "role": "Frontend Engineer (Contract)",
+      "role": "Frontend Engineer",
       "company": "Cigna Express Scripts",
       "location": "Franklin Lakes, NJ",
       "period": "May 2021 — Apr 2022",
-      "tagline": "Pharmacy benefits and digital healthcare solutions for members and patients.",
-      "description": "Built interactive pharmacy checkout flows in React and TypeScript with secure API integration, modular components, and strong automated test coverage."
+      "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+      "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
     },
     {
-      "role": "Frontend Engineering Intern",
+      "role": "Frontend Engineer",
       "company": "Atmiya Care Charity",
       "location": "Parsippany, NJ",
       "period": "Sep 2020 — May 2021",
-      "tagline": "Nonprofit organization focused on community outreach and charitable initiatives.",
-      "description": "Started my software career here, building foundational frontend skills through hands-on internship work on real nonprofit projects."
+      "tagline": "Nonprofit community outreach and charitable initiatives.",
+      "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
     }
   ],
   "education": [

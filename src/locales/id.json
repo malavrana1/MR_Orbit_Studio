@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Hai, saya",
-    "headlineFallback": "Insinyur Frontend | Bereaksi • Sudut • Spesialis Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Ikhtisar Profesional",
     "subtitleFallback": "Membangun pengalaman web modern dengan semangat dan presisi",
     "highlight1Title": "Tumpukan frontend modern",
-    "highlight1Text": "React, Angular, Next.js, dan TypeScript—dari dasbor perusahaan hingga SPA dengan lalu lintas tinggi",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Kolaborasi tim",
     "highlight2Text": "Bermitra dengan desain, produk, dan backend untuk menghadirkan fitur yang dapat diakses dan dipelihara",
     "highlight3Title": "Kualitas & pengiriman",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Insinyur Bagian Depan",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Frontend Engineer dengan pengalaman lebih dari 5 tahun dalam membangun aplikasi web yang skalabel, berkinerja tinggi, dan mudah diakses. Terampil dalam React, Angular, Next.js, TypeScript, dan kerangka kerja frontend modern. Berpengalaman dalam mengintegrasikan REST dan GraphQL API, mengoptimalkan alur kerja UI yang kompleks, mengimplementasikan pipeline CI/CD, pengujian otomatis, dan kepatuhan aksesibilitas. Pemain tim kolaboratif yang berfokus pada penyediaan solusi perangkat lunak yang mudah digunakan dan dapat dipelihara di berbagai proyek."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Insinyur Perangkat Lunak Senior",
-        "company": "AI Sedotan Hitam",
-        "location": "Florida, Amerika Serikat",
-        "period": "April 2026 — Sekarang",
-        "tagline": "Produk perangkat lunak dan tim teknik.",
-        "description": "Bekerja sebagai Insinyur Perangkat Lunak Senior untuk mendukung pengembangan frontend dan platform berdasarkan prioritas tim.",
-        "highlights": {
-          "0": "Berkontribusi pada pengiriman fitur dengan kode yang bersih dan mudah dipelihara.",
-          "1": "Berkolaborasi dengan tim produk dan teknik dalam prioritas implementasi."
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Insinyur Perangkat Lunak (Kontrak)",
-        "company": "Kesehatan Fusi",
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
         "location": "Woodbridge, NJ",
-        "period": "Februari 2026 — April 2026",
-        "tagline": "Aksesibilitas jangka pendek dan keterlibatan kepatuhan.",
-        "description": "Berfokus pada peningkatan aksesibilitas dan kepatuhan WCAG 2.1 AA dalam aplikasi Angular.",
-        "highlights": {
-          "0": "Melakukan audit aksesibilitas dan memperbaiki masalah WCAG 2.1 AA di seluruh aliran pengguna utama.",
-          "1": "Peningkatan markup semantik, navigasi keyboard, dan dukungan pembaca layar di Angular UI."
-        }
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Insinyur Bagian Depan",
+        "role": "Software Engineer",
         "company": "Kiswe",
-        "location": "Puncak, NJ",
-        "period": "Sep 2024 — Januari 2026",
-        "tagline": "Kiswe mendukung pengalaman interaktif langsung untuk merek olahraga, media, dan perusahaan.",
-        "description": "Menghasilkan aplikasi satu halaman dengan lalu lintas tinggi dengan React, Vue, TypeScript, dan Tailwind—berfokus pada komponen yang dapat diskalakan, integrasi API, kinerja, dan aksesibilitas.",
-        "highlights": {
-          "0": "Mengembangkan SPA dengan React, Vue, TypeScript, dan Tailwind menggunakan arsitektur komponen yang dapat diskalakan.",
-          "1": "API REST dan GraphQL terintegrasi dengan caching dan manajemen status; meningkatkan daya tanggap dan mengurangi kesalahan frontend.",
-          "2": "Pemisahan kode yang diterapkan, pemuatan lambat, dan guncangan pohon untuk memuat lebih cepat pada aplikasi besar.",
-          "3": "Peninjauan kode, proses debug, dan pengalaman lintas perangkat yang selaras dengan WCAG."
-        }
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Insinyur Bagian Depan",
+        "role": "Software Engineer",
         "company": "Gensler",
-        "location": "Morristown, New Jersey",
-        "period": "Juli 2022 — Sep 2024",
-        "tagline": "Perusahaan arsitektur dan desain global yang menyediakan alat digital perusahaan dan pengalaman klien.",
-        "description": "Membangun UI perusahaan dengan React, Angular, Vue, dan Next.js—memasangkan data REST/GraphQL asinkron dengan pengujian otomatis dan kolaborasi desain yang erat.",
-        "highlights": {
-          "0": "Dasbor dan komponen UI yang dikirimkan dengan React, Angular, Vue, Next.js, dan Styled Components.",
-          "1": "REST dan GraphQL terintegrasi dengan pembaruan asinkron dan fitur interaktif.",
-          "2": "Kode lama yang difaktorkan ulang, peningkatan kinerja, dan perluasan cakupan Jest, RTL, dan Penulis Drama.",
-          "3": "Menerjemahkan desain Figma ke dalam antarmuka yang responsif, mudah diakses, dan siap produksi."
-        }
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Insinyur Frontend (Kontrak)",
-        "company": "Skrip Cigna Express",
-        "location": "Danau Franklin, NJ",
-        "period": "Mei 2021 — April 2022",
-        "tagline": "Manfaat farmasi dan solusi kesehatan digital untuk anggota dan pasien.",
-        "description": "Membangun alur pembayaran apotek interaktif di React dan TypeScript dengan integrasi API yang aman, komponen modular, dan cakupan pengujian otomatis yang kuat.",
-        "highlights": {
-          "0": "Peningkatan penyelesaian tugas checkout dengan React, TypeScript, HTML5, dan CSS3.",
-          "1": "REST API aman terintegrasi dengan JWT/OAuth, validasi, dan penanganan kesalahan yang tangguh.",
-          "2": "Mengurangi waktu muat halaman melalui komponen modular dan rendering sisi klien yang dioptimalkan.",
-          "3": "Berkolaborasi antar tim untuk penyampaian UI yang responsif dan mudah diakses."
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Magang Teknik Frontend",
-        "company": "Badan Amal Perawatan Atmiya",
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "Sep 2020 — Mei 2021",
-        "tagline": "Organisasi nirlaba yang berfokus pada penjangkauan komunitas dan inisiatif amal.",
-        "description": "Memulai karir perangkat lunak saya di sini, membangun keterampilan frontend dasar melalui kerja magang langsung di proyek nirlaba nyata.",
-        "highlights": {
-          "0": "Membangun antarmuka responsif menggunakan React, HTML, CSS, dan JavaScript.",
-          "1": "Mempelajari praktik teknik inti melalui tinjauan kode, kolaborasi, dan pengiriman berulang.",
-          "2": "Mendukung fitur-fitur nirlaba dunia nyata dan memperoleh pengalaman praktis dengan penerapan UI yang dapat diakses."
-        }
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Pengalaman langsung di React.js, Next.js, Angular, dan Vue.js dengan TypeScript, CSS modern (Tailwind, Styled Components, CSS Modules), dan desain responsif. Nyaman dari penyerahan Figma hingga pembuatan produksi dengan Webpack, Vite, dan Babel.",
-      "Backend___API": "Mengintegrasikan layanan REST dan GraphQL dengan pola aman—JWT, OAuth, CORS—dan bekerja bersama backend Node.js, Java, dan Spring Boot untuk UI berbasis data.",
-      "Testing": "Dikirim dengan percaya diri menggunakan Jest, React Testing Library, Cypress, dan Playwright di seluruh unit, integrasi, dan cakupan end-to-end dengan otomatisasi di jalur rilis.",
-      "Database": "Bekerja dengan penyimpanan data relasional dan dokumen—MySQL, PostgreSQL, MongoDB, Redis—dan SQL untuk fitur yang sadar skema dan kueri yang berkinerja.",
-      "DevOps___Tools": "Menggunakan Git, GitHub Actions, Jenkins, Docker, dan AWS dalam pipeline CI/CD dengan pemantauan, ESLint, dan Prettier untuk pengiriman yang konsisten dan dapat diamati.",
-      "Concepts": "Menerapkan praktik terbaik aksesibilitas, kinerja dan keamanan WCAG 2.1 AA, kolaborasi Agile/SCRUM, dan dasar-dasar teknik yang solid (debugging, OOP, pola desain)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "Bagian depan",
-      "Backend___API": "Bagian Belakang / API",
-      "Testing": "Pengujian",
-      "Database": "Basis data",
-      "DevOps___Tools": "DevOps / Alat",
-      "Concepts": "Konsep"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

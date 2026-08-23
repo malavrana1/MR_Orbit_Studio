@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "สวัสดี ฉัน",
-    "headlineFallback": "วิศวกรส่วนหน้า | ตอบสนอง • เชิงมุม • ผู้เชี่ยวชาญ Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "ภาพรวมระดับมืออาชีพ",
     "subtitleFallback": "สร้างประสบการณ์เว็บที่ทันสมัยด้วยความหลงใหลและความแม่นยำ",
     "highlight1Title": "สแต็กส่วนหน้าที่ทันสมัย",
-    "highlight1Text": "React, Angular, Next.js และ TypeScript—ตั้งแต่แดชบอร์ดองค์กรไปจนถึง SPA ที่มีการรับส่งข้อมูลสูง",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "การทำงานร่วมกันเป็นทีม",
     "highlight2Text": "ร่วมมือกับการออกแบบ ผลิตภัณฑ์ และแบ็กเอนด์เพื่อจัดส่งฟีเจอร์ที่สามารถเข้าถึงได้และบำรุงรักษาได้",
     "highlight3Title": "คุณภาพและการจัดส่ง",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "วิศวกรส่วนหน้า",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "วิศวกรส่วนหน้าที่มีประสบการณ์มากกว่า 5 ปีในการสร้างเว็บแอปพลิเคชันที่ปรับขนาดได้ ประสิทธิภาพสูง และเข้าถึงได้ มีทักษะใน React, Angular, Next.js, TypeScript และเฟรมเวิร์กส่วนหน้าที่ทันสมัย มีประสบการณ์ในการบูรณาการ REST และ GraphQL API, เพิ่มประสิทธิภาพเวิร์กโฟลว์ UI ที่ซับซ้อน, การใช้งานไปป์ไลน์ CI/CD, การทดสอบอัตโนมัติ และการปฏิบัติตามข้อกำหนดด้านการเข้าถึง ผู้เล่นในทีมที่ทำงานร่วมกันมุ่งเน้นไปที่การนำเสนอโซลูชันซอฟต์แวร์ที่เป็นมิตรต่อผู้ใช้และบำรุงรักษาได้ในหลายโครงการ"
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "วิศวกรซอฟต์แวร์อาวุโส",
-        "company": "แบล็คสตรอว์เอไอ",
-        "location": "ฟลอริดา สหรัฐอเมริกา",
-        "period": "เม.ย. 2569 – ปัจจุบัน",
-        "tagline": "ผลิตภัณฑ์ซอฟต์แวร์และทีมงานวิศวกร",
-        "description": "ทำงานเป็นวิศวกรซอฟต์แวร์อาวุโสเพื่อสนับสนุนการพัฒนาส่วนหน้าและแพลตฟอร์มตามลำดับความสำคัญของทีม",
-        "highlights": {
-          "0": "มีส่วนช่วยในการส่งมอบฟีเจอร์ด้วยโค้ดที่สะอาดและบำรุงรักษาได้",
-          "1": "ทำงานร่วมกับทีมผลิตภัณฑ์และวิศวกรในการจัดลำดับความสำคัญในการดำเนินการ"
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "วิศวกรซอฟต์แวร์ (สัญญา)",
-        "company": "สุขภาพฟิวชั่น",
-        "location": "วูดบริดจ์ นิวเจอร์ซีย์",
-        "period": "ก.พ. 2569 — เม.ย. 2569",
-        "tagline": "ความสามารถในการเข้าถึงและการปฏิบัติตามข้อกำหนดในระยะสั้น",
-        "description": "มุ่งเน้นไปที่การปรับปรุงการเข้าถึงและการปฏิบัติตาม WCAG 2.1 AA ในแอปพลิเคชันเชิงมุม",
-        "highlights": {
-          "0": "ดำเนินการตรวจสอบการเข้าถึงและแก้ไขปัญหา WCAG 2.1 AA ตลอดโฟลว์ผู้ใช้หลัก",
-          "1": "ปรับปรุงมาร์กอัปความหมาย การนำทางด้วยแป้นพิมพ์ และรองรับโปรแกรมอ่านหน้าจอใน Angular UI"
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "วิศวกรส่วนหน้า",
-        "company": "กิสเว",
-        "location": "ซัมมิท, นิวเจอร์ซีย์",
-        "period": "ก.ย. 2024 — ม.ค. 2026",
-        "tagline": "Kiswe ขับเคลื่อนประสบการณ์อินเทอร์แอคทีฟแบบสดสำหรับแบรนด์กีฬา สื่อ และองค์กร",
-        "description": "นำเสนอแอปหน้าเดียวที่มีการเข้าชมสูงด้วย React, Vue, TypeScript และ Tailwind โดยมุ่งเน้นไปที่ส่วนประกอบที่ปรับขนาดได้ การรวม API ประสิทธิภาพ และการเข้าถึง",
-        "highlights": {
-          "0": "พัฒนา SPA ด้วย React, Vue, TypeScript และ Tailwind โดยใช้สถาปัตยกรรมส่วนประกอบที่ปรับขนาดได้",
-          "1": "REST และ GraphQL API ที่ผสานรวมเข้ากับการจัดการแคชและสถานะ ปรับปรุงการตอบสนองและลดข้อผิดพลาดส่วนหน้า",
-          "2": "ใช้การแยกโค้ด การโหลดแบบ Lazy Loading และการสั่นแบบทรีเพื่อการโหลดที่เร็วขึ้นบนแอปขนาดใหญ่",
-          "3": "การตรวจสอบโค้ดที่ชนะเลิศ การดีบัก และประสบการณ์ข้ามอุปกรณ์ที่สอดคล้องกับ WCAG"
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "วิศวกรส่วนหน้า",
-        "company": "เกนส์เลอร์",
-        "location": "มอร์ริสทาวน์, นิวเจอร์ซีย์",
-        "period": "ก.ค. 2022 — ก.ย. 2024",
-        "tagline": "บริษัทสถาปัตยกรรมและการออกแบบระดับโลกที่นำเสนอเครื่องมือดิจิทัลระดับองค์กรและประสบการณ์ของลูกค้า",
-        "description": "สร้าง UI ขององค์กรด้วย React, Angular, Vue และ Next.js—จับคู่ข้อมูล REST/GraphQL แบบอะซิงก์กับการทดสอบอัตโนมัติและการทำงานร่วมกันในการออกแบบอย่างใกล้ชิด",
-        "highlights": {
-          "0": "จัดส่งแดชบอร์ดและส่วนประกอบ UI ด้วย React, Angular, Vue, Next.js และ Styled Components",
-          "1": "บูรณาการ REST และ GraphQL พร้อมการอัปเดตแบบอะซิงโครนัสและคุณสมบัติเชิงโต้ตอบ",
-          "2": "ปรับโครงสร้างโค้ดเดิมใหม่ ประสิทธิภาพที่ดีขึ้น และขยายความครอบคลุม Jest, RTL และ Playwright",
-          "3": "แปลการออกแบบ Figma ให้เป็นอินเทอร์เฟซที่ตอบสนอง เข้าถึงได้ และพร้อมสำหรับการผลิต"
-        }
+        "role": "Software Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "วิศวกรส่วนหน้า (สัญญา)",
-        "company": "สคริปต์ซิกน่า เอ็กซ์เพรส",
-        "location": "แฟรงคลินเลคส์, นิวเจอร์ซีย์",
-        "period": "พฤษภาคม 2021 — เมษายน 2022",
-        "tagline": "สิทธิประโยชน์ด้านเภสัชกรรมและโซลูชั่นการดูแลสุขภาพดิจิทัลสำหรับสมาชิกและผู้ป่วย",
-        "description": "สร้างขั้นตอนการชำระเงินร้านขายยาแบบโต้ตอบใน React และ TypeScript พร้อมการผสานรวม API ที่ปลอดภัย ส่วนประกอบแบบโมดูลาร์ และความครอบคลุมการทดสอบอัตโนมัติที่แข็งแกร่ง",
-        "highlights": {
-          "0": "ปรับปรุงงานชำระเงินให้เสร็จสิ้นด้วย React, TypeScript, HTML5 และ CSS3",
-          "1": "ผสานรวม REST API ที่ปลอดภัยเข้ากับ JWT/OAuth การตรวจสอบความถูกต้อง และการจัดการข้อผิดพลาดที่มีประสิทธิภาพ",
-          "2": "ลดเวลาในการโหลดเพจด้วยส่วนประกอบแบบโมดูลาร์และเพิ่มประสิทธิภาพการเรนเดอร์ฝั่งไคลเอ็นต์",
-          "3": "ทำงานร่วมกันระหว่างทีมเพื่อการส่งมอบ UI ที่ตอบสนองและเข้าถึงได้"
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "ฝึกงานด้านวิศวกรรมส่วนหน้า",
-        "company": "การกุศล Atmiya Care",
-        "location": "พาร์ซิพพานี, นิวเจอร์ซีย์",
-        "period": "ก.ย. 2020 — พ.ค. 2021",
-        "tagline": "องค์กรไม่แสวงหากำไรที่มุ่งเน้นในการเข้าถึงชุมชนและโครงการริเริ่มด้านการกุศล",
-        "description": "เริ่มต้นอาชีพซอฟต์แวร์ของฉันที่นี่ โดยสร้างทักษะพื้นฐานส่วนหน้าผ่านการฝึกงานจริงในโครงการที่ไม่แสวงหาผลกำไร",
-        "highlights": {
-          "0": "สร้างอินเทอร์เฟซแบบตอบสนองโดยใช้ React, HTML, CSS และ JavaScript",
-          "1": "เรียนรู้หลักปฏิบัติด้านวิศวกรรมหลักผ่านการทบทวนโค้ด การทำงานร่วมกัน และการส่งมอบซ้ำ",
-          "2": "รองรับฟีเจอร์ที่ไม่หวังผลกำไรในโลกแห่งความเป็นจริง และได้รับประสบการณ์จริงด้วยการใช้งาน UI ที่สามารถเข้าถึงได้"
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "ประสบการณ์ตรงใน React.js, Next.js, Angular และ Vue.js ด้วย TypeScript, CSS สมัยใหม่ (Tailwind, Styled Components, CSS Modules) และการออกแบบที่ตอบสนอง สะดวกสบายจากการส่งมอบ Figma ผ่านการสร้างการผลิตด้วย Webpack, Vite และ Babel",
-      "Backend___API": "ผสานรวมบริการ REST และ GraphQL เข้ากับรูปแบบที่ปลอดภัย เช่น JWT, OAuth, CORS และทำงานร่วมกับแบ็กเอนด์ Node.js, Java และ Spring Boot สำหรับ UI ที่ขับเคลื่อนด้วยข้อมูล",
-      "Testing": "จัดส่งด้วยความมั่นใจโดยใช้ Jest, React Testing Library, Cypress และ Playwright ทั่วทั้งหน่วย การบูรณาการ และการครอบคลุมแบบ end-to-end ด้วยระบบอัตโนมัติในเส้นทางการเผยแพร่",
-      "Database": "ทำงานร่วมกับที่เก็บข้อมูลเชิงสัมพันธ์และเอกสาร เช่น MySQL, PostgreSQL, MongoDB, Redis และ SQL สำหรับคุณสมบัติการรับรู้สคีมาและการสืบค้นที่มีประสิทธิภาพ",
-      "DevOps___Tools": "ใช้ Git, GitHub Actions, Jenkins, Docker และ AWS ในไปป์ไลน์ CI/CD พร้อมการตรวจสอบ, ESLint และ Prettier เพื่อการส่งมอบที่สม่ำเสมอและสังเกตได้",
-      "Concepts": "ใช้การเข้าถึง WCAG 2.1 AA, แนวปฏิบัติที่ดีที่สุดด้านประสิทธิภาพและความปลอดภัย, การทำงานร่วมกันแบบ Agile/SCRUM และพื้นฐานทางวิศวกรรมที่แข็งแกร่ง (การดีบัก, OOP, รูปแบบการออกแบบ)"
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "ส่วนหน้า",
-      "Backend___API": "แบ็กเอนด์ / API",
-      "Testing": "การทดสอบ",
-      "Database": "ฐานข้อมูล",
-      "DevOps___Tools": "DevOps / เครื่องมือ",
-      "Concepts": "แนวคิด"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

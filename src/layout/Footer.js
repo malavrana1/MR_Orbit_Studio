@@ -1,4 +1,5 @@
 import React, { memo } from 'react'
+import { Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import './Footer.css'
 import { getSiteInfo } from '../data/loaders'
@@ -10,11 +11,16 @@ const Footer = memo(function Footer() {
   const owner = t('site.copyrightOwner', {
     defaultValue: site.copyrightOwner || 'MR Orbit Studio',
   })
+
   return (
     <footer className="footer-container">
-      <p className="footer-text">
-        {t('footer.rights', { year, owner })}
-      </p>
+      <Container>
+        <div className="footer-inner">
+          <p className="footer-text">
+            {t('footer.rights', { year, owner })}
+          </p>
+        </div>
+      </Container>
     </footer>
   )
 })

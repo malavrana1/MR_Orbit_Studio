@@ -21,7 +21,6 @@ function buildContent() {
   const content = {
     profile: {
       headline: profile.headline,
-      availability: profile.availability || '',
       summary: {},
     },
     personal: {

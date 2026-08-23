@@ -306,7 +306,8 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
           <Form onSubmit={handleSendEmail} id="contact-form" autoComplete="on">
             {toEmail ? (
               <p className="contact-direct-hint text-muted">
-                {t('contact.directEmailHint', { email: toEmail })}
+                {t('contact.directEmailHint')}{' '}
+                <a href={`mailto:${toEmail}`}>{toEmail}</a>
               </p>
             ) : null}
             <div
@@ -353,7 +354,7 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactEmail">
               <Form.Label>
-                {t('contact.emailLabel')} <span style={{ color: 'red' }}>*</span>
+                {t('contact.emailLabel')} <span className="required-mark">*</span>
               </Form.Label>
               <Form.Control
                 type="email"
@@ -416,7 +417,7 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="contactSubject">
               <Form.Label>
-                {t('contact.subjectLabel')} <span style={{ color: 'red' }}>*</span>
+                {t('contact.subjectLabel')} <span className="required-mark">*</span>
               </Form.Label>
               <Form.Control
                 as="select"
@@ -444,7 +445,7 @@ const ContactModal = ({ show, onClose, toEmail = '' }) => {
             </Form.Group>
             <Form.Group className="mb-0" controlId="contactMessage">
               <Form.Label>
-                {t('contact.messageLabel')} <span style={{ color: 'red' }}>*</span>
+                {t('contact.messageLabel')} <span className="required-mark">*</span>
               </Form.Label>
               <Form.Control
                 as="textarea"

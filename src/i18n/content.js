@@ -8,11 +8,6 @@ export function translateProfile(t, profile) {
   return {
     ...profile,
     headline: tc(t, 'profile.headline', profile.headline),
-    availability: tc(
-      t,
-      'profile.availability',
-      profile.availability || '',
-    ),
     summary: (profile.summary || []).map((text, i) =>
       tc(t, `profile.summary.${i}`, text),
     ),
@@ -27,20 +22,7 @@ export function translatePersonal(t, personal) {
     whatFuelsMe: tc(t, 'personal.whatFuelsMe', personal.whatFuelsMe),
     interests: (personal.interests || []).map((item, i) => {
       const label = typeof item === 'string' ? item : item.label
-      const id =
-        (typeof item === 'object' && item.id) ||
-        [
-          'tennis',
-          'cricket',
-          'hiking',
-          'music',
-          'cooking',
-          'diy',
-          'travel',
-          'photography',
-          'explore',
-        ][i] ||
-        'craft'
+      const id = (typeof item === 'object' && item.id) || 'craft'
       return {
         id,
         label: tc(t, `personal.interests.${i}`, label),

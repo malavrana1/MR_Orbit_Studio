@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Γεια, είμαι",
-    "headlineFallback": "Frontend Engineer | React • Angular • Vue Specialist",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Επαγγελματική Επισκόπηση",
     "subtitleFallback": "Δημιουργία σύγχρονων εμπειριών web με πάθος και ακρίβεια",
     "highlight1Title": "Σύγχρονες στοίβες frontend",
-    "highlight1Text": "React, Angular, Next.js και TypeScript—από εταιρικούς πίνακες ελέγχου έως SPA υψηλής επισκεψιμότητας",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Ομαδική συνεργασία",
     "highlight2Text": "Συνεργασία με τη σχεδίαση, το προϊόν και το backend για να αποστέλλονται προσβάσιμα, διατηρούμενα χαρακτηριστικά",
     "highlight3Title": "Ποιότητα & παράδοση",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Μηχανικός Frontend",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Frontend Engineer με 5+ χρόνια εμπειρίας στη δημιουργία επεκτάσιμων, υψηλής απόδοσης και προσβάσιμων εφαρμογών web. Ειδικός σε React, Angular, Next.js, TypeScript και σύγχρονα πλαίσια frontend. Έμπειρος στην ενσωμάτωση REST και GraphQL API, βελτιστοποίηση σύνθετων ροών εργασίας διεπαφής χρήστη, υλοποίηση αγωγών CI/CD, αυτοματοποιημένες δοκιμές και συμμόρφωση προσβασιμότητας. Συνεργατικός παίκτης ομάδας επικεντρωμένος στην παροχή φιλικών προς τον χρήστη, συντηρήσιμων λύσεων λογισμικού σε πολλά έργα."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Ανώτερος Μηχανικός Λογισμικού",
+        "role": "Software Engineer",
         "company": "Blackstraw AI",
-        "location": "Φλόριντα, Ηνωμένες Πολιτείες",
-        "period": "Απρ 2026 — Σήμερα",
-        "tagline": "Ομάδα προϊόντων λογισμικού και μηχανικής.",
-        "description": "Εργασία ως Ανώτερος Μηχανικός Λογισμικού για την υποστήριξη της ανάπτυξης frontend και πλατφόρμας με βάση τις προτεραιότητες της ομάδας.",
-        "highlights": {
-          "0": "Συμβάλλει στην παράδοση χαρακτηριστικών με καθαρό, συντηρήσιμο κώδικα.",
-          "1": "Συνεργάζεται με ομάδες προϊόντων και μηχανικών για τις προτεραιότητες υλοποίησης."
-        }
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Μηχανικός Λογισμικού (Σύμβαση)",
+        "role": "Software Engineer (Contract)",
         "company": "Fusion Health",
         "location": "Woodbridge, NJ",
-        "period": "Φεβρουάριος 2026 - Απρίλιος 2026",
-        "tagline": "Βραχυπρόθεσμη προσβασιμότητα και δέσμευση συμμόρφωσης.",
-        "description": "Επικεντρώθηκε στις βελτιώσεις προσβασιμότητας και στη συμμόρφωση με το WCAG 2.1 AA σε εφαρμογές Angular.",
-        "highlights": {
-          "0": "Πραγματοποίησε ελέγχους προσβασιμότητας και διόρθωσε προβλήματα WCAG 2.1 AA σε βασικές ροές χρηστών.",
-          "1": "Βελτιωμένη σημασιολογική σήμανση, πλοήγηση με πληκτρολόγιο και υποστήριξη προγράμματος ανάγνωσης οθόνης στο Angular UI."
-        }
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Μηχανικός Frontend",
+        "role": "Software Engineer",
         "company": "Kiswe",
         "location": "Summit, NJ",
-        "period": "Σεπ 2024 - Ιαν 2026",
-        "tagline": "Το Kiswe παρέχει ζωντανές διαδραστικές εμπειρίες για αθλητικά, μέσα και εταιρικές επωνυμίες.",
-        "description": "Παρέχονται εφαρμογές μιας σελίδας υψηλής επισκεψιμότητας με React, Vue, TypeScript και Tailwind—με εστίαση σε κλιμακούμενα στοιχεία, ενσωμάτωση API, απόδοση και προσβασιμότητα.",
-        "highlights": {
-          "0": "Αναπτύχθηκε SPA με React, Vue, TypeScript και Tailwind χρησιμοποιώντας κλιμακούμενη αρχιτεκτονική στοιχείων.",
-          "1": "Ενσωματωμένα API REST και GraphQL με προσωρινή αποθήκευση και διαχείριση κατάστασης. βελτιωμένη απόκριση και μειωμένα σφάλματα διεπαφής.",
-          "2": "Εφαρμόζεται διαχωρισμός κώδικα, αργή φόρτωση και ανακίνηση δέντρων για ταχύτερες φορτώσεις σε μεγάλες εφαρμογές.",
-          "3": "Πρωτοποριακές αξιολογήσεις κώδικα, εντοπισμός σφαλμάτων και στοιχισμένες με WCAG εμπειρίες μεταξύ συσκευών."
-        }
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Μηχανικός Frontend",
+        "role": "Software Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
-        "period": "Ιούλιος 2022 — Σεπ 2024",
-        "tagline": "Παγκόσμια εταιρεία αρχιτεκτονικής και σχεδιασμού που παρέχει επιχειρηματικά ψηφιακά εργαλεία και εμπειρίες πελατών.",
-        "description": "Δημιουργήθηκαν εταιρικές διεπαφές με React, Angular, Vue και Next.js—σύζευξη ασύγχρονων δεδομένων REST/GraphQL με αυτοματοποιημένες δοκιμές και στενή συνεργασία σχεδιασμού.",
-        "highlights": {
-          "0": "Απεστάλησαν πίνακες εργαλείων και στοιχεία διεπαφής χρήστη με React, Angular, Vue, Next.js και Styled Components.",
-          "1": "Ενσωματωμένα REST και GraphQL με ασύγχρονες ενημερώσεις και διαδραστικές λειτουργίες.",
-          "2": "Ανακατασκευασμένος κώδικας παλαιού τύπου, βελτιωμένη απόδοση και διευρυμένη κάλυψη Jest, RTL και Playwrit.",
-          "3": "Μεταφράστηκε τα σχέδια Figma σε διεπαφές που ανταποκρίνονται, προσιτές, έτοιμες για παραγωγή."
-        }
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Μηχανικός Frontend (Σύμβαση)",
-        "company": "Σενάρια Cigna Express",
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
-        "period": "Μάιος 2021 - Απρίλιος 2022",
-        "tagline": "Οφέλη φαρμακείου και ψηφιακές λύσεις υγειονομικής περίθαλψης για μέλη και ασθενείς.",
-        "description": "Ενσωματωμένα διαδραστικά checkout φαρμακείων σε React και TypeScript με ασφαλή ενσωμάτωση API, αρθρωτά στοιχεία και ισχυρή αυτοματοποιημένη κάλυψη δοκιμών.",
-        "highlights": {
-          "0": "Βελτιωμένη ολοκλήρωση εργασιών ολοκλήρωσης αγοράς με React, TypeScript, HTML5 και CSS3.",
-          "1": "Ενσωματωμένα ασφαλή API REST με JWT/OAuth, επικύρωση και ισχυρό χειρισμό σφαλμάτων.",
-          "2": "Μειώθηκαν οι χρόνοι φόρτωσης σελίδας μέσω αρθρωτών στοιχείων και βελτιστοποιημένης απόδοσης από την πλευρά του πελάτη.",
-          "3": "Συνεργάστηκε σε ομάδες για αποκριτική, προσβάσιμη παράδοση διεπαφής χρήστη."
-        }
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Frontend Intern Μηχανικός",
-        "company": "Φιλανθρωπική οργάνωση Atmiya Care",
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "Σεπ 2020 — Μάιος 2021",
-        "tagline": "Μη κερδοσκοπικός οργανισμός που επικεντρώνεται στην προσέγγιση της κοινότητας και σε φιλανθρωπικές πρωτοβουλίες.",
-        "description": "Ξεκίνησα την καριέρα μου στο λογισμικό εδώ, χτίζοντας θεμελιώδεις δεξιότητες στο frontend μέσω πρακτικής άσκησης σε πραγματικά μη κερδοσκοπικά έργα.",
-        "highlights": {
-          "0": "Κατασκευάστηκαν διεπαφές με απόκριση χρησιμοποιώντας React, HTML, CSS και JavaScript.",
-          "1": "Έμαθε βασικές πρακτικές μηχανικής μέσω αναθεωρήσεων κώδικα, συνεργασίας και επαναληπτικής παράδοσης.",
-          "2": "Υποστήριξε μη κερδοσκοπικές λειτουργίες του πραγματικού κόσμου και απέκτησε πρακτική εμπειρία με την προσβάσιμη εφαρμογή διεπαφής χρήστη."
-        }
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Πρακτική εμπειρία σε React.js, Next.js, Angular και Vue.js με TypeScript, μοντέρνο CSS (Tailwind, Styled Components, CSS Modules) και σχεδίαση με απόκριση. Άνετα από την παράδοση του Figma μέσω των εκδόσεων παραγωγής με Webpack, Vite και Babel.",
-      "Backend___API": "Ενσωματώνει υπηρεσίες REST και GraphQL με ασφαλή μοτίβα—JWT, OAuth, CORS—και λειτουργεί παράλληλα με τα backends Node.js, Java και Spring Boot για UI που βασίζονται σε δεδομένα.",
-      "Testing": "Αποστέλλεται με σιγουριά χρησιμοποιώντας το Jest, το React Testing Library, το Cypress και το Playwright σε μονάδα, ενσωμάτωση και κάλυψη από άκρο σε άκρο με αυτοματισμό στη διαδρομή απελευθέρωσης.",
-      "Database": "Λειτουργεί με χώρους αποθήκευσης δεδομένων σχεσιακών και εγγράφων—MySQL, PostgreSQL, MongoDB, Redis—και SQL για χαρακτηριστικά που έχουν επίγνωση σχήματος και ερωτήματα απόδοσης.",
-      "DevOps___Tools": "Χρησιμοποιεί Git, GitHub Actions, Jenkins, Docker και AWS σε αγωγούς CI/CD με παρακολούθηση, ESLint και Prettier για συνεπή, παρατηρήσιμη παράδοση.",
-      "Concepts": "Εφαρμόζει τις βέλτιστες πρακτικές προσβασιμότητας, απόδοσης και ασφάλειας WCAG 2.1 AA, τη συνεργασία Agile/SCRUM και σταθερές αρχές μηχανικής (debugging, OOP, μοτίβα σχεδίασης)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
       "Frontend": "Frontend",
-      "Backend___API": "Backend / API",
-      "Testing": "Δοκιμές",
-      "Database": "Βάση δεδομένων",
-      "DevOps___Tools": "DevOps / Εργαλεία",
-      "Concepts": "Έννοιες"
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

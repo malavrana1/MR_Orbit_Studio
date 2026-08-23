@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Bună, sunt",
-    "headlineFallback": "Inginer Frontend | React • Angular • Vue Specialist",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Privire de ansamblu profesională",
     "subtitleFallback": "Construiți experiențe web moderne cu pasiune și precizie",
     "highlight1Title": "Stive frontend moderne",
-    "highlight1Text": "React, Angular, Next.js și TypeScript — de la tablouri de bord pentru întreprinderi la SPA-uri cu trafic ridicat",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Colaborarea în echipă",
     "highlight2Text": "Parteneriat cu design, produs și backend pentru a livra funcții accesibile și care pot fi întreținute",
     "highlight3Title": "Calitate și livrare",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Inginer Frontend",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Inginer front-end cu peste 5 ani de experiență în construirea de aplicații web scalabile, de înaltă performanță și accesibile. Cunoștințe în React, Angular, Next.js, TypeScript și framework-uri frontend moderne. Cu experiență în integrarea API-urilor REST și GraphQL, optimizarea fluxurilor de lucru complexe ale UI, implementarea conductelor CI/CD, testarea automată și conformitatea cu accesibilitatea. Jucător de echipă colaborativ, concentrat pe furnizarea de soluții software ușor de utilizat și ușor de întreținut pentru mai multe proiecte."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Inginer software senior",
+        "role": "Software Engineer",
         "company": "Blackstraw AI",
-        "location": "Florida, Statele Unite",
-        "period": "Apr 2026 — Prezent",
-        "tagline": "Echipa de produse software și de inginerie.",
-        "description": "Lucrează ca inginer software senior pentru a sprijini dezvoltarea front-end și a platformei pe baza priorităților echipei.",
-        "highlights": {
-          "0": "Contribuie la livrarea caracteristicilor cu un cod curat, care poate fi întreținut.",
-          "1": "Colaborează cu echipele de produs și de inginerie la prioritățile de implementare."
-        }
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Inginer software (contract)",
+        "role": "Software Engineer (Contract)",
         "company": "Fusion Health",
         "location": "Woodbridge, NJ",
-        "period": "februarie 2026 — aprilie 2026",
-        "tagline": "Accesibilitate pe termen scurt și implicare în conformitate.",
-        "description": "Axat pe îmbunătățirea accesibilității și conformarea WCAG 2.1 AA în aplicațiile Angular.",
-        "highlights": {
-          "0": "Au efectuat audituri de accesibilitate și am remediat problemele WCAG 2.1 AA în fluxurile cheie ale utilizatorilor.",
-          "1": "Markup semantic îmbunătățit, navigare cu tastatură și suport pentru cititorul de ecran în Angular UI."
-        }
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Inginer Frontend",
+        "role": "Software Engineer",
         "company": "Kiswe",
         "location": "Summit, NJ",
-        "period": "septembrie 2024 — ianuarie 2026",
-        "tagline": "Kiswe oferă experiențe interactive live pentru sporturi, mass-media și mărci comerciale.",
-        "description": "A furnizat aplicații cu trafic ridicat pe o singură pagină cu React, Vue, TypeScript și Tailwind - concentrându-se pe componente scalabile, integrare API, performanță și accesibilitate.",
-        "highlights": {
-          "0": "SPA-uri dezvoltate cu React, Vue, TypeScript și Tailwind folosind arhitectura componentelor scalabile.",
-          "1": "API-uri REST și GraphQL integrate cu stocarea în cache și managementul stării; reacție îmbunătățită și erori de front-end reduse.",
-          "2": "Divizarea codului aplicat, încărcarea leneșă și tremurarea copacilor pentru încărcări mai rapide pe aplicații mari.",
-          "3": "Evaluări de cod susținute, depanare și experiențe aliniate la WCAG, pe mai multe dispozitive."
-        }
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Inginer Frontend",
+        "role": "Software Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
-        "period": "iulie 2022 - septembrie 2024",
-        "tagline": "Firmă globală de arhitectură și design care oferă instrumente digitale pentru întreprinderi și experiențe pentru clienți.",
-        "description": "Creați interfețe de utilizare pentru întreprindere cu React, Angular, Vue și Next.js - asociind datele REST/GraphQL asincrone cu teste automate și colaborare strânsă în proiectare.",
-        "highlights": {
-          "0": "Tablouri de bord și componente UI livrate cu componente React, Angular, Vue, Next.js și Styled.",
-          "1": "REST și GraphQL integrate cu actualizări asincrone și funcții interactive.",
-          "2": "Cod moștenit refactorizat, performanță îmbunătățită și acoperire extinsă pentru Jest, RTL și Dramaturg.",
-          "3": "Proiectele Figma traduse în interfețe receptive, accesibile și pregătite pentru producție."
-        }
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Inginer front-end (contract)",
-        "company": "Scripturi Cigna Express",
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
-        "period": "mai 2021 — aprilie 2022",
-        "tagline": "Beneficii de farmacie și soluții digitale de asistență medicală pentru membri și pacienți.",
-        "description": "S-au creat fluxuri interactive de checkout în farmacii în React și TypeScript cu integrare API securizată, componente modulare și o acoperire puternică a testelor automatizate.",
-        "highlights": {
-          "0": "Finalizare îmbunătățită a activității de finalizare a comenzii cu React, TypeScript, HTML5 și CSS3.",
-          "1": "API-uri REST securizate integrate cu JWT/OAuth, validare și gestionarea robustă a erorilor.",
-          "2": "Timpi de încărcare a paginii redusi prin componente modulare și randare optimizată pe partea clientului.",
-          "3": "A colaborat între echipe pentru livrarea UI receptivă și accesibilă."
-        }
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Intern Inginerie Frontend",
-        "company": "Caritate Atmiya Care",
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "septembrie 2020 – mai 2021",
-        "tagline": "Organizație nonprofit axată pe sensibilizarea comunității și inițiativele caritabile.",
-        "description": "Mi-am început cariera în software aici, construind abilități de bază de front-end prin stagii practice în proiecte reale nonprofit.",
-        "highlights": {
-          "0": "Am creat interfețe receptive folosind React, HTML, CSS și JavaScript.",
-          "1": "A învățat practici de inginerie de bază prin revizuiri de cod, colaborare și livrare iterativă.",
-          "2": "Sprijină funcții nonprofit din lumea reală și a câștigat experiență practică cu implementarea UI accesibilă."
-        }
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Experiență practică în React.js, Next.js, Angular și Vue.js cu TypeScript, CSS modern (Tailwind, Componente stilate, module CSS) și design receptiv. Confortabil de la transferul Figma prin versiuni de producție cu Webpack, Vite și Babel.",
-      "Backend___API": "Integrează serviciile REST și GraphQL cu modele securizate — JWT, OAuth, CORS — și funcționează alături de backend-urile Node.js, Java și Spring Boot pentru interfețele de utilizator bazate pe date.",
-      "Testing": "Se livrează cu încredere utilizând Jest, React Testing Library, Cypress și Playwright în întreaga unitate, integrare și acoperire end-to-end cu automatizare în calea de lansare.",
-      "Database": "Funcționează cu depozite de date relaționale și de documente — MySQL, PostgreSQL, MongoDB, Redis — și SQL pentru funcții care știe schema și interogări performante.",
-      "DevOps___Tools": "Utilizează Git, GitHub Actions, Jenkins, Docker și AWS în conducte CI/CD cu monitorizare, ESLint și Prettier pentru o livrare constantă și observabilă.",
-      "Concepts": "Aplică cele mai bune practici de accesibilitate, performanță și securitate WCAG 2.1 AA, colaborare Agile/SCRUM și baze solide de inginerie (depanare, OOP, modele de proiectare)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "În față",
-      "Backend___API": "Backend / API",
-      "Testing": "Testare",
-      "Database": "Baza de date",
-      "DevOps___Tools": "DevOps / Instrumente",
-      "Concepts": "Concepte"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

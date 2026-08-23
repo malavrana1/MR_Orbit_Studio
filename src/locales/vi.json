@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Xin chào, tôi là",
-    "headlineFallback": "Kỹ sư giao diện người dùng | Phản ứng • Góc cạnh • Chuyên gia Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Tổng quan chuyên môn",
     "subtitleFallback": "Xây dựng trải nghiệm web hiện đại với niềm đam mê và độ chính xác",
     "highlight1Title": "Ngăn xếp giao diện người dùng hiện đại",
-    "highlight1Text": "React, Angular, Next.js và TypeScript—từ bảng thông tin doanh nghiệp đến SPA có lưu lượng truy cập cao",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Hợp tác nhóm",
     "highlight2Text": "Hợp tác với thiết kế, sản phẩm và chương trình phụ trợ để cung cấp các tính năng có thể truy cập và bảo trì",
     "highlight3Title": "Chất lượng & giao hàng",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Kỹ sư giao diện người dùng",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Kỹ sư giao diện người dùng với hơn 5 năm kinh nghiệm xây dựng các ứng dụng web có thể mở rộng, hiệu suất cao và dễ tiếp cận. Có kỹ năng về React, Angular, Next.js, TypeScript và các framework giao diện người dùng hiện đại. Có kinh nghiệm tích hợp API REST và GraphQL, tối ưu hóa quy trình làm việc UI phức tạp, triển khai quy trình CI/CD, kiểm tra tự động và tuân thủ khả năng truy cập. Người chơi cộng tác trong nhóm tập trung vào việc cung cấp các giải pháp phần mềm thân thiện với người dùng, có thể bảo trì trên nhiều dự án."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Kỹ sư phần mềm cao cấp",
-        "company": "AI đen tối",
-        "location": "Florida, Hoa Kỳ",
-        "period": "Tháng 4 năm 2026 - Hiện tại",
-        "tagline": "Đội ngũ kỹ thuật và sản phẩm phần mềm.",
-        "description": "Làm việc với tư cách là Kỹ sư phần mềm cao cấp để hỗ trợ phát triển giao diện người dùng và nền tảng dựa trên các ưu tiên của nhóm.",
-        "highlights": {
-          "0": "Góp phần cung cấp tính năng với mã sạch, có thể bảo trì.",
-          "1": "Cộng tác với nhóm sản phẩm và kỹ thuật về các ưu tiên triển khai."
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Kỹ sư phần mềm (Hợp đồng)",
-        "company": "Sức khỏe tổng hợp",
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
         "location": "Woodbridge, NJ",
-        "period": "Tháng 2 năm 2026 - Tháng 4 năm 2026",
-        "tagline": "Khả năng tiếp cận ngắn hạn và cam kết tuân thủ.",
-        "description": "Tập trung vào cải tiến khả năng truy cập và tuân thủ WCAG 2.1 AA trong các ứng dụng Angular.",
-        "highlights": {
-          "0": "Đã thực hiện kiểm tra khả năng truy cập và khắc phục các sự cố WCAG 2.1 AA trên các luồng người dùng chính.",
-          "1": "Cải thiện đánh dấu ngữ nghĩa, điều hướng bàn phím và hỗ trợ trình đọc màn hình trong Giao diện người dùng góc."
-        }
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Kỹ sư giao diện người dùng",
+        "role": "Software Engineer",
         "company": "Kiswe",
-        "location": "Hội nghị thượng đỉnh, NJ",
-        "period": "Tháng 9 năm 2024 - Tháng 1 năm 2026",
-        "tagline": "Kiswe mang lại trải nghiệm tương tác trực tiếp cho các thương hiệu thể thao, truyền thông và doanh nghiệp.",
-        "description": "Cung cấp các ứng dụng một trang có lưu lượng truy cập cao với React, Vue, TypeScript và Tailwind—tập trung vào các thành phần có thể mở rộng, tích hợp API, hiệu suất và khả năng truy cập.",
-        "highlights": {
-          "0": "Đã phát triển các SPA với React, Vue, TypeScript và Tailwind bằng kiến ​​trúc thành phần có thể mở rộng.",
-          "1": "API REST và GraphQL tích hợp với bộ nhớ đệm và quản lý trạng thái; cải thiện khả năng phản hồi và giảm lỗi giao diện người dùng.",
-          "2": "Áp dụng tính năng tách mã, tải từng phần và rung cây để tải nhanh hơn trên các ứng dụng lớn.",
-          "3": "Đánh giá mã, gỡ lỗi và trải nghiệm đa thiết bị, phù hợp với WCAG."
-        }
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Kỹ sư giao diện người dùng",
+        "role": "Software Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
-        "period": "Tháng 7 năm 2022 - Tháng 9 năm 2024",
-        "tagline": "Công ty thiết kế và kiến ​​trúc toàn cầu cung cấp các công cụ kỹ thuật số cho doanh nghiệp và trải nghiệm khách hàng.",
-        "description": "Xây dựng giao diện người dùng doanh nghiệp với React, Angular, Vue và Next.js—ghép nối dữ liệu REST/GraphQL không đồng bộ với các thử nghiệm tự động và cộng tác thiết kế chặt chẽ.",
-        "highlights": {
-          "0": "Đã vận chuyển các trang tổng quan và thành phần giao diện người dùng với các Thành phần React, Angular, Vue, Next.js và Styled.",
-          "1": "Tích hợp REST và GraphQL với các tính năng tương tác và cập nhật không đồng bộ.",
-          "2": "Mã kế thừa được tái cấu trúc, hiệu suất được cải thiện và phạm vi phủ sóng Jest, RTL và Playwright mở rộng.",
-          "3": "Chuyển các thiết kế của Figma thành các giao diện đáp ứng, dễ tiếp cận, sẵn sàng sản xuất."
-        }
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Kỹ sư Frontend (Hợp đồng)",
-        "company": "Tập lệnh Cigna Express",
-        "location": "Hồ Franklin, NJ",
-        "period": "Tháng 5 năm 2021 - Tháng 4 năm 2022",
-        "tagline": "Lợi ích nhà thuốc và giải pháp chăm sóc sức khỏe kỹ thuật số cho thành viên và bệnh nhân.",
-        "description": "Các luồng thanh toán hiệu thuốc tương tác được xây dựng trong React và TypeScript với tích hợp API an toàn, các thành phần mô-đun và phạm vi kiểm tra tự động mạnh mẽ.",
-        "highlights": {
-          "0": "Cải thiện khả năng hoàn thành tác vụ thanh toán với React, TypeScript, HTML5 và CSS3.",
-          "1": "Tích hợp API REST bảo mật với JWT/OAuth, xác thực và xử lý lỗi mạnh mẽ.",
-          "2": "Giảm thời gian tải trang thông qua các thành phần mô-đun và tối ưu hóa hiển thị phía máy khách.",
-          "3": "Cộng tác giữa các nhóm để phân phối giao diện người dùng đáp ứng, dễ tiếp cận."
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Thực tập sinh kỹ thuật Frontend",
-        "company": "Tổ chức từ thiện chăm sóc Atmiya",
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "Tháng 9 năm 2020 - Tháng 5 năm 2021",
-        "tagline": "Tổ chức phi lợi nhuận tập trung vào các sáng kiến ​​​​từ thiện và tiếp cận cộng đồng.",
-        "description": "Tôi bắt đầu sự nghiệp phần mềm của mình tại đây, xây dựng các kỹ năng nền tảng về giao diện người dùng thông qua công việc thực tập thực hành trong các dự án phi lợi nhuận thực sự.",
-        "highlights": {
-          "0": "Xây dựng giao diện đáp ứng bằng React, HTML, CSS và JavaScript.",
-          "1": "Đã học các phương pháp thực hành kỹ thuật cốt lõi thông qua đánh giá mã, cộng tác và phân phối lặp lại.",
-          "2": "Hỗ trợ các tính năng phi lợi nhuận trong thế giới thực và có được trải nghiệm thực tế khi triển khai giao diện người dùng có thể truy cập."
-        }
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Trải nghiệm thực tế trên React.js, Next.js, Angular và Vue.js với TypeScript, CSS hiện đại (Tailwind, Styled Components, CSS Modules) và thiết kế đáp ứng. Thoải mái từ việc chuyển giao Figma cho đến các bản dựng sản xuất với Webpack, Vite và Babel.",
-      "Backend___API": "Tích hợp các dịch vụ REST và GraphQL với các mẫu bảo mật—JWT, OAuth, CORS—và hoạt động cùng với các chương trình phụ trợ Node.js, Java và Spring Boot cho giao diện người dùng dựa trên dữ liệu.",
-      "Testing": "Tự tin vận hành bằng cách sử dụng Jest, Thư viện thử nghiệm React, Cypress và Playwright trên toàn bộ đơn vị, tích hợp và phạm vi phủ sóng từ đầu đến cuối với tính năng tự động hóa trong đường dẫn phát hành.",
-      "Database": "Hoạt động với các kho lưu trữ dữ liệu tài liệu và quan hệ—MySQL, PostgreSQL, MongoDB, Redis—và SQL dành cho các tính năng nhận biết lược đồ và các truy vấn hiệu suất.",
-      "DevOps___Tools": "Sử dụng Git, GitHub Actions, Jenkins, Docker và AWS trong quy trình CI/CD với tính năng giám sát, ESLint và Prettier để phân phối nhất quán, có thể quan sát được.",
-      "Concepts": "Áp dụng các phương pháp hay nhất về khả năng truy cập, hiệu suất và bảo mật WCAG 2.1 AA, cộng tác Agile/SCRUM và các nguyên tắc cơ bản về kỹ thuật vững chắc (gỡ lỗi, OOP, mẫu thiết kế)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "Giao diện người dùng",
-      "Backend___API": "Phần cuối/API",
-      "Testing": "Kiểm tra",
-      "Database": "Cơ sở dữ liệu",
-      "DevOps___Tools": "DevOps / Công cụ",
-      "Concepts": "Khái niệm"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

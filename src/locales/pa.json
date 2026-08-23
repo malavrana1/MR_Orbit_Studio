@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "ਹੈਲੋ, ਮੈਂ ਹਾਂ",
-    "headlineFallback": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ | ਪ੍ਰਤੀਕਿਰਿਆ • ਕੋਣੀ • Vue ਸਪੈਸ਼ਲਿਸਟ",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "ਪੇਸ਼ੇਵਰ ਸੰਖੇਪ ਜਾਣਕਾਰੀ",
     "subtitleFallback": "ਜਨੂੰਨ ਅਤੇ ਸ਼ੁੱਧਤਾ ਨਾਲ ਆਧੁਨਿਕ ਵੈੱਬ ਅਨੁਭਵਾਂ ਦਾ ਨਿਰਮਾਣ ਕਰਨਾ",
     "highlight1Title": "ਆਧੁਨਿਕ ਫਰੰਟਐਂਡ ਸਟੈਕ",
-    "highlight1Text": "React, Angular, Next.js, ਅਤੇ TypeScript—ਐਂਟਰਪ੍ਰਾਈਜ਼ ਡੈਸ਼ਬੋਰਡਾਂ ਤੋਂ ਲੈ ਕੇ ਉੱਚ-ਟ੍ਰੈਫਿਕ SPA ਤੱਕ",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "ਟੀਮ ਸਹਿਯੋਗ",
     "highlight2Text": "ਪਹੁੰਚਯੋਗ, ਰੱਖ-ਰਖਾਅਯੋਗ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨੂੰ ਭੇਜਣ ਲਈ ਡਿਜ਼ਾਈਨ, ਉਤਪਾਦ ਅਤੇ ਬੈਕਐਂਡ ਨਾਲ ਭਾਈਵਾਲੀ",
     "highlight3Title": "ਗੁਣਵੱਤਾ ਅਤੇ ਡਿਲੀਵਰੀ",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "ਸਕੇਲੇਬਲ, ਉੱਚ-ਪ੍ਰਦਰਸ਼ਨ, ਅਤੇ ਪਹੁੰਚਯੋਗ ਵੈੱਬ ਐਪਲੀਕੇਸ਼ਨਾਂ ਬਣਾਉਣ ਦੇ 5+ ਸਾਲਾਂ ਦੇ ਤਜ਼ਰਬੇ ਵਾਲਾ ਫਰੰਟਐਂਡ ਇੰਜੀਨੀਅਰ। React, Angular, Next.js, TypeScript, ਅਤੇ ਆਧੁਨਿਕ ਫਰੰਟਐਂਡ ਫਰੇਮਵਰਕ ਵਿੱਚ ਹੁਨਰਮੰਦ। REST ਅਤੇ GraphQL API ਨੂੰ ਏਕੀਕ੍ਰਿਤ ਕਰਨ, ਗੁੰਝਲਦਾਰ UI ਵਰਕਫਲੋਜ਼ ਨੂੰ ਅਨੁਕੂਲ ਬਣਾਉਣ, CI/CD ਪਾਈਪਲਾਈਨਾਂ ਨੂੰ ਲਾਗੂ ਕਰਨ, ਸਵੈਚਲਿਤ ਟੈਸਟਿੰਗ, ਅਤੇ ਪਹੁੰਚਯੋਗਤਾ ਦੀ ਪਾਲਣਾ ਕਰਨ ਵਿੱਚ ਅਨੁਭਵ ਕੀਤਾ ਗਿਆ ਹੈ। ਸਹਿਯੋਗੀ ਟੀਮ ਪਲੇਅਰ ਨੇ ਕਈ ਪ੍ਰੋਜੈਕਟਾਂ ਵਿੱਚ ਉਪਭੋਗਤਾ-ਅਨੁਕੂਲ, ਰੱਖ-ਰਖਾਅ ਯੋਗ ਸੌਫਟਵੇਅਰ ਹੱਲ ਪ੍ਰਦਾਨ ਕਰਨ 'ਤੇ ਧਿਆਨ ਦਿੱਤਾ।"
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "ਸੀਨੀਅਰ ਸਾਫਟਵੇਅਰ ਇੰਜੀਨੀਅਰ",
-        "company": "ਬਲੈਕਸਟ੍ਰਾ ਏ.ਆਈ",
-        "location": "ਫਲੋਰੀਡਾ, ਸੰਯੁਕਤ ਰਾਜ",
-        "period": "ਅਪ੍ਰੈਲ 2026 - ਮੌਜੂਦਾ",
-        "tagline": "ਸਾਫਟਵੇਅਰ ਉਤਪਾਦ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ ਟੀਮ.",
-        "description": "ਟੀਮ ਦੀਆਂ ਤਰਜੀਹਾਂ ਦੇ ਅਧਾਰ 'ਤੇ ਫਰੰਟਐਂਡ ਅਤੇ ਪਲੇਟਫਾਰਮ ਵਿਕਾਸ ਦਾ ਸਮਰਥਨ ਕਰਨ ਲਈ ਇੱਕ ਸੀਨੀਅਰ ਸਾਫਟਵੇਅਰ ਇੰਜੀਨੀਅਰ ਵਜੋਂ ਕੰਮ ਕਰਨਾ।",
-        "highlights": {
-          "0": "ਸਾਫ਼, ਸਾਂਭਣਯੋਗ ਕੋਡ ਦੇ ਨਾਲ ਵਿਸ਼ੇਸ਼ਤਾ ਡਿਲੀਵਰੀ ਵਿੱਚ ਯੋਗਦਾਨ ਪਾਉਂਦਾ ਹੈ।",
-          "1": "ਲਾਗੂ ਕਰਨ ਦੀਆਂ ਤਰਜੀਹਾਂ 'ਤੇ ਉਤਪਾਦ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ ਟੀਮਾਂ ਨਾਲ ਸਹਿਯੋਗ ਕਰਦਾ ਹੈ।"
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "ਸਾਫਟਵੇਅਰ ਇੰਜੀਨੀਅਰ (ਠੇਕਾ)",
-        "company": "ਫਿਊਜ਼ਨ ਸਿਹਤ",
-        "location": "ਵੁੱਡਬ੍ਰਿਜ, ਐਨ.ਜੇ",
-        "period": "ਫਰਵਰੀ 2026 - ਅਪ੍ਰੈਲ 2026",
-        "tagline": "ਥੋੜ੍ਹੇ ਸਮੇਂ ਦੀ ਪਹੁੰਚਯੋਗਤਾ ਅਤੇ ਪਾਲਣਾ ਦੀ ਸ਼ਮੂਲੀਅਤ।",
-        "description": "ਐਂਗੁਲਰ ਐਪਲੀਕੇਸ਼ਨਾਂ ਵਿੱਚ ਪਹੁੰਚਯੋਗਤਾ ਸੁਧਾਰਾਂ ਅਤੇ WCAG 2.1 AA ਦੀ ਪਾਲਣਾ 'ਤੇ ਕੇਂਦ੍ਰਿਤ।",
-        "highlights": {
-          "0": "ਮੁੱਖ ਉਪਭੋਗਤਾ ਪ੍ਰਵਾਹਾਂ ਵਿੱਚ ਪਹੁੰਚਯੋਗਤਾ ਆਡਿਟ ਅਤੇ ਨਿਸ਼ਚਿਤ WCAG 2.1 AA ਮੁੱਦੇ।",
-          "1": "ਐਂਗੁਲਰ UI ਵਿੱਚ ਸਿਮੈਂਟਿਕ ਮਾਰਕਅੱਪ, ਕੀਬੋਰਡ ਨੈਵੀਗੇਸ਼ਨ, ਅਤੇ ਸਕ੍ਰੀਨ ਰੀਡਰ ਸਮਰਥਨ ਵਿੱਚ ਸੁਧਾਰ ਕੀਤਾ ਗਿਆ ਹੈ।"
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ",
-        "company": "ਕਿਸਵੇ",
-        "location": "ਸਮਿਟ, ਐਨ.ਜੇ",
-        "period": "ਸਤੰਬਰ 2024 - ਜਨਵਰੀ 2026",
-        "tagline": "Kiswe ਖੇਡਾਂ, ਮੀਡੀਆ, ਅਤੇ ਐਂਟਰਪ੍ਰਾਈਜ਼ ਬ੍ਰਾਂਡਾਂ ਲਈ ਲਾਈਵ ਇੰਟਰਐਕਟਿਵ ਅਨੁਭਵਾਂ ਨੂੰ ਸ਼ਕਤੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ।",
-        "description": "React, Vue, TypeScript, ਅਤੇ Tailwind ਦੇ ਨਾਲ ਉੱਚ-ਟ੍ਰੈਫਿਕ ਸਿੰਗਲ-ਪੰਨੇ ਐਪਸ ਪ੍ਰਦਾਨ ਕੀਤੇ ਗਏ — ਸਕੇਲੇਬਲ ਕੰਪੋਨੈਂਟਸ, API ਏਕੀਕਰਣ, ਪ੍ਰਦਰਸ਼ਨ, ਅਤੇ ਪਹੁੰਚਯੋਗਤਾ 'ਤੇ ਕੇਂਦ੍ਰਿਤ।",
-        "highlights": {
-          "0": "ਸਕੇਲੇਬਲ ਕੰਪੋਨੈਂਟ ਆਰਕੀਟੈਕਚਰ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ React, Vue, TypeScript ਅਤੇ Tailwind ਦੇ ਨਾਲ SPAs ਵਿਕਸਿਤ ਕੀਤੇ।",
-          "1": "ਕੈਚਿੰਗ ਅਤੇ ਸਟੇਟ ਪ੍ਰਬੰਧਨ ਦੇ ਨਾਲ ਏਕੀਕ੍ਰਿਤ REST ਅਤੇ GraphQL API; ਬਿਹਤਰ ਜਵਾਬਦੇਹੀ ਅਤੇ ਘਟੀ ਹੋਈ ਫਰੰਟਐਂਡ ਗਲਤੀਆਂ।",
-          "2": "ਵੱਡੀਆਂ ਐਪਾਂ 'ਤੇ ਤੇਜ਼ੀ ਨਾਲ ਲੋਡ ਕਰਨ ਲਈ ਲਾਗੂ ਕੋਡ ਵੰਡ, ਆਲਸੀ ਲੋਡਿੰਗ, ਅਤੇ ਟ੍ਰੀ-ਸ਼ੇਕਿੰਗ।",
-          "3": "ਚੈਂਪੀਅਨ ਕੋਡ ਸਮੀਖਿਆਵਾਂ, ਡੀਬਗਿੰਗ, ਅਤੇ WCAG-ਅਲਾਈਨਡ, ਕਰਾਸ-ਡਿਵਾਈਸ ਅਨੁਭਵ।"
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ",
+        "role": "Software Engineer",
         "company": "Gensler",
-        "location": "ਮੋਰੀਸਟਾਊਨ, ਐਨ.ਜੇ",
-        "period": "ਜੁਲਾਈ 2022 - ਸਤੰਬਰ 2024",
-        "tagline": "ਗਲੋਬਲ ਆਰਕੀਟੈਕਚਰ ਅਤੇ ਡਿਜ਼ਾਈਨ ਫਰਮ ਐਂਟਰਪ੍ਰਾਈਜ਼ ਡਿਜੀਟਲ ਟੂਲ ਅਤੇ ਕਲਾਇੰਟ ਅਨੁਭਵ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ।",
-        "description": "React, Angular, Vue, ਅਤੇ Next.js ਨਾਲ ਬਿਲਟ ਐਂਟਰਪ੍ਰਾਈਜ਼ UIs — ਸਵੈਚਲਿਤ ਟੈਸਟਾਂ ਅਤੇ ਨਜ਼ਦੀਕੀ ਡਿਜ਼ਾਈਨ ਸਹਿਯੋਗ ਨਾਲ ਅਸਿੰਕ REST/GraphQL ਡੇਟਾ ਨੂੰ ਜੋੜਨਾ।",
-        "highlights": {
-          "0": "React, Angular, Vue, Next.js, ਅਤੇ ਸਟਾਈਲਡ ਕੰਪੋਨੈਂਟਸ ਦੇ ਨਾਲ ਭੇਜੇ ਗਏ ਡੈਸ਼ਬੋਰਡ ਅਤੇ UI ਹਿੱਸੇ।",
-          "1": "ਅਸਿੰਕ੍ਰੋਨਸ ਅੱਪਡੇਟ ਅਤੇ ਇੰਟਰਐਕਟਿਵ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਦੇ ਨਾਲ ਏਕੀਕ੍ਰਿਤ REST ਅਤੇ GraphQL।",
-          "2": "ਰੀਫੈਕਟਰਡ ਲੀਗੇਸੀ ਕੋਡ, ਬਿਹਤਰ ਪ੍ਰਦਰਸ਼ਨ, ਅਤੇ ਵਿਸਤ੍ਰਿਤ ਜੈਸਟ, RTL, ਅਤੇ ਪਲੇਅ ਰਾਈਟ ਕਵਰੇਜ।",
-          "3": "ਜਵਾਬਦੇਹ, ਪਹੁੰਚਯੋਗ, ਉਤਪਾਦਨ ਲਈ ਤਿਆਰ ਇੰਟਰਫੇਸਾਂ ਵਿੱਚ ਅਨੁਵਾਦਿਤ ਫਿਗਮਾ ਡਿਜ਼ਾਈਨ।"
-        }
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "ਫਰੰਟੈਂਡ ਇੰਜੀਨੀਅਰ (ਠੇਕਾ)",
-        "company": "ਸਿਗਨਾ ਐਕਸਪ੍ਰੈਸ ਸਕ੍ਰਿਪਟਾਂ",
-        "location": "ਫਰੈਂਕਲਿਨ ਲੇਕਸ, ਐਨ.ਜੇ",
-        "period": "ਮਈ 2021 - ਅਪ੍ਰੈਲ 2022",
-        "tagline": "ਮੈਂਬਰਾਂ ਅਤੇ ਮਰੀਜ਼ਾਂ ਲਈ ਫਾਰਮੇਸੀ ਲਾਭ ਅਤੇ ਡਿਜੀਟਲ ਸਿਹਤ ਸੰਭਾਲ ਹੱਲ।",
-        "description": "ਸੁਰੱਖਿਅਤ API ਏਕੀਕਰਣ, ਮਾਡਿਊਲਰ ਕੰਪੋਨੈਂਟਸ, ਅਤੇ ਮਜ਼ਬੂਤ ​​ਆਟੋਮੇਟਿਡ ਟੈਸਟ ਕਵਰੇਜ ਨਾਲ React ਅਤੇ TypeScript ਵਿੱਚ ਬਿਲਟ ਇੰਟਰਐਕਟਿਵ ਫਾਰਮੇਸੀ ਚੈੱਕਆਉਟ ਪ੍ਰਵਾਹ।",
-        "highlights": {
-          "0": "React, TypeScript, HTML5, ਅਤੇ CSS3 ਦੇ ਨਾਲ ਬਿਹਤਰ ਚੈੱਕਆਉਟ ਕਾਰਜ ਸੰਪੂਰਨਤਾ।",
-          "1": "JWT/OAuth, ਪ੍ਰਮਾਣਿਕਤਾ, ਅਤੇ ਮਜ਼ਬੂਤ ​​​​ਗਲਤੀ ਹੈਂਡਲਿੰਗ ਦੇ ਨਾਲ ਏਕੀਕ੍ਰਿਤ ਸੁਰੱਖਿਅਤ REST APIs।",
-          "2": "ਮਾਡਿਊਲਰ ਕੰਪੋਨੈਂਟਸ ਅਤੇ ਅਨੁਕੂਲਿਤ ਕਲਾਇੰਟ-ਸਾਈਡ ਰੈਂਡਰਿੰਗ ਦੁਆਰਾ ਪੇਜ ਲੋਡ ਕਰਨ ਦੇ ਸਮੇਂ ਨੂੰ ਘਟਾਇਆ ਗਿਆ।",
-          "3": "ਜਵਾਬਦੇਹ, ਪਹੁੰਚਯੋਗ UI ਡਿਲੀਵਰੀ ਲਈ ਟੀਮਾਂ ਵਿੱਚ ਸਹਿਯੋਗ ਕੀਤਾ।"
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "ਫਰੰਟਐਂਡ ਇੰਜੀਨੀਅਰਿੰਗ ਇੰਟਰਨ",
-        "company": "ਆਤਮਿਆ ਕੇਅਰ ਦਾਨ",
-        "location": "ਪਾਰਸੀਪਨੀ, ਐਨ.ਜੇ",
-        "period": "ਸਤੰਬਰ 2020 - ਮਈ 2021",
-        "tagline": "ਗੈਰ-ਲਾਭਕਾਰੀ ਸੰਗਠਨ ਕਮਿਊਨਿਟੀ ਆਊਟਰੀਚ ਅਤੇ ਚੈਰੀਟੇਬਲ ਪਹਿਲਕਦਮੀਆਂ 'ਤੇ ਕੇਂਦ੍ਰਿਤ ਹੈ।",
-        "description": "ਅਸਲ ਗੈਰ-ਲਾਭਕਾਰੀ ਪ੍ਰੋਜੈਕਟਾਂ 'ਤੇ ਹੈਂਡ-ਆਨ ਇੰਟਰਨਸ਼ਿਪ ਦੇ ਕੰਮ ਦੁਆਰਾ ਬੁਨਿਆਦੀ ਫਰੰਟਐਂਡ ਹੁਨਰਾਂ ਦਾ ਨਿਰਮਾਣ ਕਰਦੇ ਹੋਏ, ਇੱਥੇ ਮੇਰੇ ਸੌਫਟਵੇਅਰ ਕਰੀਅਰ ਦੀ ਸ਼ੁਰੂਆਤ ਕੀਤੀ।",
-        "highlights": {
-          "0": "React, HTML, CSS, ਅਤੇ JavaScript ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਜਵਾਬਦੇਹ ਇੰਟਰਫੇਸ ਬਣਾਏ।",
-          "1": "ਕੋਡ ਸਮੀਖਿਆਵਾਂ, ਸਹਿਯੋਗ, ਅਤੇ ਦੁਹਰਾਓ ਸਪੁਰਦਗੀ ਦੁਆਰਾ ਕੋਰ ਇੰਜੀਨੀਅਰਿੰਗ ਅਭਿਆਸਾਂ ਨੂੰ ਸਿੱਖਿਆ।",
-          "2": "ਅਸਲ-ਸੰਸਾਰ ਗੈਰ-ਲਾਭਕਾਰੀ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਦਾ ਸਮਰਥਨ ਕੀਤਾ ਅਤੇ ਪਹੁੰਚਯੋਗ UI ਲਾਗੂ ਕਰਨ ਦੇ ਨਾਲ ਵਿਹਾਰਕ ਅਨੁਭਵ ਪ੍ਰਾਪਤ ਕੀਤਾ।"
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "TypeScript, ਆਧੁਨਿਕ CSS (ਟੇਲਵਿੰਡ, ਸਟਾਈਲਡ ਕੰਪੋਨੈਂਟਸ, CSS ਮੋਡੀਊਲ), ਅਤੇ ਜਵਾਬਦੇਹ ਡਿਜ਼ਾਈਨ ਦੇ ਨਾਲ React.js, Next.js, Angular, ਅਤੇ Vue.js ਵਿੱਚ ਹੈਂਡ-ਆਨ ਅਨੁਭਵ। ਵੈਬਪੈਕ, ਵਾਈਟ, ਅਤੇ ਬੈਬਲ ਦੇ ਨਾਲ ਉਤਪਾਦਨ ਬਿਲਡ ਦੁਆਰਾ ਫਿਗਮਾ ਹੈਂਡਆਫ ਤੋਂ ਆਰਾਮਦਾਇਕ।",
-      "Backend___API": "REST ਅਤੇ GraphQL ਸੇਵਾਵਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਪੈਟਰਨਾਂ ਨਾਲ ਜੋੜਦਾ ਹੈ—JWT, OAuth, CORS—ਅਤੇ ਡਾਟਾ-ਸੰਚਾਲਿਤ UIs ਲਈ Node.js, Java, ਅਤੇ Spring Boot ਬੈਕਐਂਡ ਦੇ ਨਾਲ ਕੰਮ ਕਰਦਾ ਹੈ।",
-      "Testing": "ਰੀਲੀਜ਼ ਮਾਰਗ ਵਿੱਚ ਆਟੋਮੇਸ਼ਨ ਦੇ ਨਾਲ ਜੈਸਟ, ਰੀਐਕਟ ਟੈਸਟਿੰਗ ਲਾਇਬ੍ਰੇਰੀ, ਸਾਈਪਰਸ, ਅਤੇ ਪਲੇਅਰਾਈਟ ਦੀ ਯੂਨਿਟ, ਏਕੀਕਰਣ, ਅਤੇ ਅੰਤ ਤੋਂ ਅੰਤ ਤੱਕ ਕਵਰੇਜ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਭਰੋਸੇ ਨਾਲ ਜਹਾਜ਼।",
-      "Database": "ਰੀਲੇਸ਼ਨਲ ਅਤੇ ਡੌਕੂਮੈਂਟ ਡੇਟਾ ਸਟੋਰਾਂ ਨਾਲ ਕੰਮ ਕਰਦਾ ਹੈ — MySQL, PostgreSQL, MongoDB, Redis — ਅਤੇ ਸਕੀਮਾ-ਜਾਗਰੂਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਪ੍ਰਦਰਸ਼ਨ ਕਰਨ ਵਾਲੇ ਸਵਾਲਾਂ ਲਈ SQL।",
-      "DevOps___Tools": "ਨਿਰੰਤਰ, ਨਿਰੀਖਣਯੋਗ ਡਿਲੀਵਰੀ ਲਈ ਨਿਗਰਾਨੀ, ESLint, ਅਤੇ Prettier ਦੇ ਨਾਲ CI/CD ਪਾਈਪਲਾਈਨਾਂ ਵਿੱਚ Git, GitHub ਐਕਸ਼ਨ, ਜੇਨਕਿੰਸ, ਡੌਕਰ, ਅਤੇ AWS ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ।",
-      "Concepts": "WCAG 2.1 AA ਪਹੁੰਚਯੋਗਤਾ, ਪ੍ਰਦਰਸ਼ਨ ਅਤੇ ਸੁਰੱਖਿਆ ਦੇ ਸਭ ਤੋਂ ਵਧੀਆ ਅਭਿਆਸਾਂ, ਚੁਸਤ/ਸਕ੍ਰਮ ਸਹਿਯੋਗ, ਅਤੇ ਠੋਸ ਇੰਜੀਨੀਅਰਿੰਗ ਬੁਨਿਆਦੀ (ਡੀਬੱਗਿੰਗ, OOP, ਡਿਜ਼ਾਈਨ ਪੈਟਰਨ) ਨੂੰ ਲਾਗੂ ਕਰਦਾ ਹੈ।"
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "ਅਗਰਾਂਤ",
-      "Backend___API": "ਬੈਕਐਂਡ / API",
-      "Testing": "ਟੈਸਟਿੰਗ",
-      "Database": "ਡਾਟਾਬੇਸ",
-      "DevOps___Tools": "DevOps/ਟੂਲ",
-      "Concepts": "ਧਾਰਨਾਵਾਂ"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

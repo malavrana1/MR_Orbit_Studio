@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "హాయ్, నేను",
-    "headlineFallback": "ఫ్రంటెండ్ ఇంజనీర్ | ప్రతిచర్య • కోణీయ • Vue స్పెషలిస్ట్",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "వృత్తిపరమైన అవలోకనం",
     "subtitleFallback": "అభిరుచి మరియు ఖచ్చితత్వంతో ఆధునిక వెబ్ అనుభవాలను రూపొందించడం",
     "highlight1Title": "ఆధునిక ఫ్రంటెండ్ స్టాక్‌లు",
-    "highlight1Text": "రియాక్ట్, కోణీయ, Next.js మరియు టైప్‌స్క్రిప్ట్-ఎంటర్‌ప్రైజ్ డ్యాష్‌బోర్డ్‌ల నుండి అధిక-ట్రాఫిక్ SPAల వరకు",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "జట్టు సహకారం",
     "highlight2Text": "డిజైన్, ఉత్పత్తి మరియు బ్యాకెండ్‌తో భాగస్వామ్యం చేయడం ద్వారా యాక్సెస్ చేయగల, నిర్వహించదగిన లక్షణాలను రవాణా చేయడం",
     "highlight3Title": "నాణ్యత & డెలివరీ",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "ఫ్రంటెండ్ ఇంజనీర్",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "స్కేలబుల్, అధిక-పనితీరు మరియు యాక్సెస్ చేయగల వెబ్ అప్లికేషన్‌లను రూపొందించడంలో 5+ సంవత్సరాల అనుభవం ఉన్న ఫ్రంటెండ్ ఇంజనీర్. రియాక్ట్, కోణీయ, Next.js, టైప్‌స్క్రిప్ట్ మరియు ఆధునిక ఫ్రంటెండ్ ఫ్రేమ్‌వర్క్‌లలో నైపుణ్యం. REST మరియు GraphQL APIలను ఏకీకృతం చేయడం, సంక్లిష్ట UI వర్క్‌ఫ్లోలను ఆప్టిమైజ్ చేయడం, CI/CD పైప్‌లైన్‌లను అమలు చేయడం, ఆటోమేటెడ్ టెస్టింగ్ మరియు యాక్సెసిబిలిటీ సమ్మతిలో అనుభవం ఉంది. సహకార టీమ్ ప్లేయర్ బహుళ ప్రాజెక్ట్‌లలో వినియోగదారు-స్నేహపూర్వక, నిర్వహించదగిన సాఫ్ట్‌వేర్ పరిష్కారాలను అందించడంపై దృష్టి సారించారు."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "సీనియర్ సాఫ్ట్‌వేర్ ఇంజనీర్",
-        "company": "బ్లాక్‌స్ట్రా AI",
-        "location": "ఫ్లోరిడా, యునైటెడ్ స్టేట్స్",
-        "period": "ఏప్రిల్ 2026 — ప్రస్తుతం",
-        "tagline": "సాఫ్ట్‌వేర్ ఉత్పత్తి మరియు ఇంజనీరింగ్ బృందం.",
-        "description": "జట్టు ప్రాధాన్యతల ఆధారంగా ఫ్రంటెండ్ మరియు ప్లాట్‌ఫారమ్ డెవలప్‌మెంట్‌కు మద్దతు ఇవ్వడానికి సీనియర్ సాఫ్ట్‌వేర్ ఇంజనీర్‌గా పని చేస్తున్నారు.",
-        "highlights": {
-          "0": "శుభ్రమైన, నిర్వహించదగిన కోడ్‌తో ఫీచర్ డెలివరీకి సహకరిస్తుంది.",
-          "1": "అమలు ప్రాధాన్యతలపై ఉత్పత్తి మరియు ఇంజనీరింగ్ బృందాలతో సహకరిస్తుంది."
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "సాఫ్ట్‌వేర్ ఇంజనీర్ (కాంట్రాక్ట్)",
-        "company": "ఫ్యూజన్ ఆరోగ్యం",
-        "location": "వుడ్‌బ్రిడ్జ్, NJ",
-        "period": "ఫిబ్రవరి 2026 — ఏప్రిల్ 2026",
-        "tagline": "స్వల్పకాలిక ప్రాప్యత మరియు సమ్మతి నిశ్చితార్థం.",
-        "description": "కోణీయ అనువర్తనాల్లో ప్రాప్యత మెరుగుదలలు మరియు WCAG 2.1 AA సమ్మతిపై దృష్టి కేంద్రీకరించబడింది.",
-        "highlights": {
-          "0": "యాక్సెసిబిలిటీ ఆడిట్‌లు నిర్వహించబడ్డాయి మరియు కీ యూజర్ ఫ్లోలలో WCAG 2.1 AA సమస్యలు పరిష్కరించబడ్డాయి.",
-          "1": "కోణీయ UIలో మెరుగైన సెమాంటిక్ మార్కప్, కీబోర్డ్ నావిగేషన్ మరియు స్క్రీన్ రీడర్ మద్దతు."
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "ఫ్రంటెండ్ ఇంజనీర్",
-        "company": "కిస్వే",
-        "location": "సమ్మిట్, NJ",
-        "period": "సెప్టెంబర్ 2024 — జనవరి 2026",
-        "tagline": "కిస్వే స్పోర్ట్స్, మీడియా మరియు ఎంటర్‌ప్రైజ్ బ్రాండ్‌ల కోసం ప్రత్యక్ష ఇంటరాక్టివ్ అనుభవాలను అందిస్తుంది.",
-        "description": "రియాక్ట్, వ్యూ, టైప్‌స్క్రిప్ట్ మరియు టైల్‌విండ్‌తో అధిక-ట్రాఫిక్ సింగిల్-పేజీ యాప్‌లు అందించబడ్డాయి-స్కేలబుల్ కాంపోనెంట్‌లు, API ఇంటిగ్రేషన్, పనితీరు మరియు ప్రాప్యతపై దృష్టి సారిస్తుంది.",
-        "highlights": {
-          "0": "స్కేలబుల్ కాంపోనెంట్ ఆర్కిటెక్చర్‌ని ఉపయోగించి రియాక్ట్, వ్యూ, టైప్‌స్క్రిప్ట్ మరియు టైల్‌విండ్‌తో SPAలు అభివృద్ధి చేయబడ్డాయి.",
-          "1": "కాషింగ్ మరియు స్టేట్ మేనేజ్‌మెంట్‌తో ఇంటిగ్రేటెడ్ REST మరియు GraphQL APIలు; మెరుగైన ప్రతిస్పందన మరియు తగ్గిన ఫ్రంటెండ్ లోపాలు.",
-          "2": "పెద్ద యాప్‌లలో వేగవంతమైన లోడ్‌ల కోసం కోడ్ స్ప్లిటింగ్, లేజీ లోడింగ్ మరియు ట్రీ-షేకింగ్ వర్తింపజేయబడింది.",
-          "3": "ఛాంపియన్ కోడ్ సమీక్షలు, డీబగ్గింగ్ మరియు WCAG-అలైన్డ్, క్రాస్-డివైస్ అనుభవాలు."
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "ఫ్రంటెండ్ ఇంజనీర్",
-        "company": "జెన్స్లర్",
-        "location": "మోరిస్టౌన్, NJ",
-        "period": "జూలై 2022 — సెప్టెంబర్ 2024",
-        "tagline": "ఎంటర్‌ప్రైజ్ డిజిటల్ సాధనాలు మరియు క్లయింట్ అనుభవాలను అందించే గ్లోబల్ ఆర్కిటెక్చర్ మరియు డిజైన్ సంస్థ.",
-        "description": "రియాక్ట్, యాంగ్యులర్, వ్యూ మరియు Next.jsతో బిల్ట్ ఎంటర్‌ప్రైజ్ UIలు-యాసింక్ REST/GraphQL డేటాను ఆటోమేటెడ్ పరీక్షలు మరియు క్లోజ్ డిజైన్ సహకారంతో జత చేయడం.",
-        "highlights": {
-          "0": "రియాక్ట్, కోణీయ, Vue, Next.js మరియు స్టైల్ కాంపోనెంట్‌లతో డ్యాష్‌బోర్డ్‌లు మరియు UI భాగాలు రవాణా చేయబడ్డాయి.",
-          "1": "అసమకాలిక నవీకరణలు మరియు ఇంటరాక్టివ్ ఫీచర్‌లతో ఇంటిగ్రేటెడ్ REST మరియు GraphQL.",
-          "2": "రీఫ్యాక్టర్డ్ లెగసీ కోడ్, మెరుగైన పనితీరు మరియు విస్తరించిన జెస్ట్, RTL మరియు ప్లేరైట్ కవరేజీ.",
-          "3": "ఫిగ్మా డిజైన్‌లను ప్రతిస్పందించే, ప్రాప్యత చేయగల, ఉత్పత్తికి సిద్ధంగా ఉన్న ఇంటర్‌ఫేస్‌లుగా అనువదించారు."
-        }
+        "role": "Software Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "ఫ్రంటెండ్ ఇంజనీర్ (కాంట్రాక్ట్)",
-        "company": "సిగ్నా ఎక్స్‌ప్రెస్ స్క్రిప్ట్‌లు",
-        "location": "ఫ్రాంక్లిన్ లేక్స్, NJ",
-        "period": "మే 2021 — ఏప్రిల్ 2022",
-        "tagline": "సభ్యులు మరియు రోగులకు ఫార్మసీ ప్రయోజనాలు మరియు డిజిటల్ హెల్త్‌కేర్ సొల్యూషన్స్.",
-        "description": "సురక్షిత API ఇంటిగ్రేషన్, మాడ్యులర్ కాంపోనెంట్‌లు మరియు బలమైన ఆటోమేటెడ్ టెస్ట్ కవరేజ్‌తో రియాక్ట్ మరియు టైప్‌స్క్రిప్ట్‌లో బిల్ట్ ఇంటరాక్టివ్ ఫార్మసీ చెక్అవుట్ ఫ్లోలు.",
-        "highlights": {
-          "0": "రియాక్ట్, టైప్‌స్క్రిప్ట్, HTML5 మరియు CSS3తో మెరుగైన చెక్అవుట్ టాస్క్ పూర్తి.",
-          "1": "JWT/OAuth, ధృవీకరణ మరియు బలమైన ఎర్రర్ హ్యాండ్లింగ్‌తో సురక్షిత REST APIలు సమగ్రపరచబడ్డాయి.",
-          "2": "మాడ్యులర్ కాంపోనెంట్‌లు మరియు ఆప్టిమైజ్ చేసిన క్లయింట్-సైడ్ రెండరింగ్ ద్వారా పేజీ లోడ్ సమయాలు తగ్గాయి.",
-          "3": "ప్రతిస్పందించే, ప్రాప్యత చేయగల UI డెలివరీ కోసం బృందాల అంతటా సహకరించింది."
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "ఫ్రంటెండ్ ఇంజనీరింగ్ ఇంటర్న్",
-        "company": "ఆత్మీయ కేర్ ఛారిటీ",
-        "location": "పార్సిప్పనీ, NJ",
-        "period": "సెప్టెంబర్ 2020 — మే 2021",
-        "tagline": "లాభాపేక్ష లేని సంస్థ కమ్యూనిటీ ఔట్రీచ్ మరియు స్వచ్ఛంద కార్యక్రమాలపై దృష్టి సారించింది.",
-        "description": "నా సాఫ్ట్‌వేర్ కెరీర్‌ను ఇక్కడ ప్రారంభించాను, నిజమైన లాభాపేక్షలేని ప్రాజెక్ట్‌లలో ఇంటర్న్‌షిప్ పని ద్వారా ఫౌండేషన్ ఫ్రంటెండ్ నైపుణ్యాలను రూపొందించాను.",
-        "highlights": {
-          "0": "రియాక్ట్, HTML, CSS మరియు జావాస్క్రిప్ట్ ఉపయోగించి ప్రతిస్పందించే ఇంటర్‌ఫేస్‌లను నిర్మించారు.",
-          "1": "కోడ్ సమీక్షలు, సహకారం మరియు పునరావృత డెలివరీ ద్వారా కోర్ ఇంజనీరింగ్ అభ్యాసాలను నేర్చుకున్నారు.",
-          "2": "వాస్తవ-ప్రపంచ లాభాపేక్ష రహిత ఫీచర్‌లకు మద్దతు ఇవ్వబడింది మరియు ప్రాప్యత చేయగల UI అమలుతో ఆచరణాత్మక అనుభవాన్ని పొందింది."
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "టైప్‌స్క్రిప్ట్, ఆధునిక CSS (టైల్‌విండ్, స్టైల్డ్ కాంపోనెంట్‌లు, CSS మాడ్యూల్స్) మరియు ప్రతిస్పందించే డిజైన్‌తో React.js, Next.js, కోణీయ మరియు Vue.js అంతటా హ్యాండ్-ఆన్ అనుభవం. వెబ్‌ప్యాక్, వైట్ మరియు బాబెల్‌తో ప్రొడక్షన్ బిల్డ్‌ల ద్వారా ఫిగ్మా హ్యాండ్‌ఆఫ్ నుండి సౌకర్యవంతంగా ఉంటుంది.",
-      "Backend___API": "REST మరియు GraphQL సేవలను సురక్షిత నమూనాలతో అనుసంధానిస్తుంది—JWT, OAuth, CORS—మరియు డేటా ఆధారిత UIల కోసం Node.js, Java మరియు Spring Boot బ్యాకెండ్‌లతో పాటు పని చేస్తుంది.",
-      "Testing": "విడుదల మార్గంలో ఆటోమేషన్‌తో యూనిట్, ఇంటిగ్రేషన్ మరియు ఎండ్-టు-ఎండ్ కవరేజీ అంతటా జెస్ట్, రియాక్ట్ టెస్టింగ్ లైబ్రరీ, సైప్రస్ మరియు ప్లేరైట్‌ని ఉపయోగించి విశ్వాసంతో షిప్‌లు.",
-      "Database": "స్కీమా-అవేర్ ఫీచర్‌లు మరియు పనితీరు ప్రశ్నల కోసం రిలేషనల్ మరియు డాక్యుమెంట్ డేటా స్టోర్‌లు-MySQL, PostgreSQL, MongoDB, Redis-మరియు SQLతో పని చేస్తుంది.",
-      "DevOps___Tools": "స్థిరమైన, గమనించదగిన డెలివరీ కోసం పర్యవేక్షణ, ESLint మరియు Prettierతో CI/CD పైప్‌లైన్‌లలో Git, GitHub చర్యలు, జెంకిన్స్, డాకర్ మరియు AWSలను ఉపయోగిస్తుంది.",
-      "Concepts": "WCAG 2.1 AA యాక్సెసిబిలిటీ, పెర్ఫార్మెన్స్ మరియు సెక్యూరిటీ బెస్ట్ ప్రాక్టీసెస్, ఎజైల్/SCRUM సహకారం మరియు సాలిడ్ ఇంజనీరింగ్ ఫండమెంటల్స్ (డీబగ్గింగ్, OOP, డిజైన్ ప్యాటర్న్‌లు) వర్తిస్తుంది."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "ఫ్రంటెండ్",
-      "Backend___API": "బ్యాకెండ్ / API",
-      "Testing": "పరీక్షిస్తోంది",
-      "Database": "డేటాబేస్",
-      "DevOps___Tools": "DevOps / సాధనాలు",
-      "Concepts": "భావనలు"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

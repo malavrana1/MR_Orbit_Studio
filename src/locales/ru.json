@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Привет, я",
-    "headlineFallback": "Frontend-инженер | React • Angular • Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Профессиональный обзор",
     "subtitleFallback": "Создаю современные веб-продукты с вниманием к деталям",
     "highlight1Title": "Современные frontend-стеки",
-    "highlight1Text": "React, Angular, Next.js и TypeScript — от корпоративных дашбордов до высоконагруженных SPA",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Командная работа",
     "highlight2Text": "Совместно с дизайном, продуктом и бэкендом — доступные и поддерживаемые фичи",
     "highlight3Title": "Качество и поставка",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Фронтенд-инженер",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Frontend-инженер с более чем 5-летним опытом создания масштабируемых, высокопроизводительных и доступных веб-приложений. Имеет навыки работы с React, Angular, Next.js, TypeScript и современными интерфейсными фреймворками. Имеет опыт интеграции API REST и GraphQL, оптимизации сложных рабочих процессов пользовательского интерфейса, внедрения конвейеров CI/CD, автоматического тестирования и обеспечения соответствия требованиям доступности. Совместный командный игрок, сосредоточенный на предоставлении удобных для пользователя и поддерживаемых программных решений для нескольких проектов."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Старший инженер-программист",
-        "company": "Блэкстроу ИИ",
-        "location": "Флорида, США",
-        "period": "Апрель 2026 — настоящее время",
-        "tagline": "Программный продукт и команда инженеров.",
-        "description": "Работа старшим инженером-программистом для поддержки разработки интерфейса и платформы в соответствии с приоритетами команды.",
-        "highlights": {
-          "0": "Способствует доставке функций с помощью чистого, поддерживаемого кода.",
-          "1": "Сотрудничает с продуктовыми и инженерными группами по приоритетам реализации."
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Инженер-программист (контракт)",
-        "company": "Фьюжн Здоровье",
-        "location": "Вудбридж, Нью-Джерси",
-        "period": "февраль 2026 г. — апрель 2026 г.",
-        "tagline": "Краткосрочная доступность и обеспечение соответствия требованиям.",
-        "description": "Основное внимание уделяется улучшениям специальных возможностей и обеспечению соответствия WCAG 2.1 AA в приложениях Angular.",
-        "highlights": {
-          "0": "Проведен аудит доступности и устранены проблемы WCAG 2.1 AA в ключевых потоках пользователей.",
-          "1": "Улучшена семантическая разметка, навигация с помощью клавиатуры и поддержка чтения с экрана в пользовательском интерфейсе Angular."
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Фронтенд-инженер",
-        "company": "Кисве",
-        "location": "Саммит, Нью-Джерси",
-        "period": "сентябрь 2024 г. — январь 2026 г.",
-        "tagline": "Kiswe обеспечивает интерактивный опыт для спортивных, медиа и корпоративных брендов.",
-        "description": "Создавал одностраничные приложения с высоким трафиком с помощью React, Vue, TypeScript и Tailwind, уделяя особое внимание масштабируемым компонентам, интеграции API, производительности и доступности.",
-        "highlights": {
-          "0": "Разработал SPA с помощью React, Vue, TypeScript и Tailwind с использованием масштабируемой компонентной архитектуры.",
-          "1": "Интегрированные API REST и GraphQL с кэшированием и управлением состоянием; улучшена скорость реагирования и уменьшено количество ошибок интерфейса.",
-          "2": "Применено разделение кода, отложенная загрузка и встряхивание дерева для более быстрой загрузки больших приложений.",
-          "3": "Рекомендованные проверки кода, отладка и взаимодействие с разными устройствами в соответствии с требованиями WCAG."
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Фронтенд-инженер",
-        "company": "Генслер",
-        "location": "Морристаун, Нью-Джерси",
-        "period": "июль 2022 г. — сентябрь 2024 г.",
-        "tagline": "Глобальная архитектурная и дизайнерская фирма, предоставляющая корпоративные цифровые инструменты и клиентский опыт.",
-        "description": "Создавал корпоративные пользовательские интерфейсы с помощью React, Angular, Vue и Next.js, сочетая асинхронные данные REST/GraphQL с автоматическими тестами и тесным сотрудничеством при проектировании.",
-        "highlights": {
-          "0": "Добавлены информационные панели и компоненты пользовательского интерфейса с помощью React, Angular, Vue, Next.js и стилевых компонентов.",
-          "1": "Интегрированные REST и GraphQL с асинхронными обновлениями и интерактивными функциями.",
-          "2": "Реорганизован устаревший код, улучшена производительность и расширен охват Jest, RTL и Playwright.",
-          "3": "Преобразование проектов Figma в адаптивные, доступные и готовые к использованию интерфейсы."
-        }
+        "role": "Software Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Frontend-инженер (контракт)",
-        "company": "Скрипты Cigna Express",
-        "location": "Франклин Лейкс, Нью-Джерси",
-        "period": "май 2021 г. — апрель 2022 г.",
-        "tagline": "Аптечные льготы и цифровые решения в области здравоохранения для участников и пациентов.",
-        "description": "Встроенные интерактивные процессы оформления покупок в аптеках на React и TypeScript с безопасной интеграцией API, модульными компонентами и мощным автоматическим тестированием.",
-        "highlights": {
-          "0": "Улучшено выполнение задач оформления заказа с помощью React, TypeScript, HTML5 и CSS3.",
-          "1": "Интегрированные безопасные API REST с JWT/OAuth, проверкой и надежной обработкой ошибок.",
-          "2": "Сокращение времени загрузки страницы за счет модульных компонентов и оптимизированного рендеринга на стороне клиента.",
-          "3": "Совместная работа команд для обеспечения гибкого и доступного пользовательского интерфейса."
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Стажер-фронтенд-инженер",
-        "company": "Благотворительная организация Atmiya Care",
-        "location": "Парсиппани, Нью-Джерси",
-        "period": "Сентябрь 2020 — Май 2021",
-        "tagline": "Некоммерческая организация, ориентированная на работу с населением и благотворительные инициативы.",
-        "description": "Здесь я начал свою карьеру в области программного обеспечения, развивая базовые навыки работы с интерфейсом посредством практической стажировки в реальных некоммерческих проектах.",
-        "highlights": {
-          "0": "Создавал адаптивные интерфейсы с использованием React, HTML, CSS и JavaScript.",
-          "1": "Изучил основные методы проектирования посредством проверки кода, совместной работы и итеративной доставки.",
-          "2": "Поддерживал реальные функции некоммерческих организаций и получил практический опыт реализации доступного пользовательского интерфейса."
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Практический опыт работы с React.js, Next.js, Angular и Vue.js с использованием TypeScript, современного CSS (Tailwind, Styled Components, CSS Modules) и адаптивного дизайна. Удобство перехода от передачи Figma к производственным сборкам с помощью Webpack, Vite и Babel.",
-      "Backend___API": "Интегрирует службы REST и GraphQL с безопасными шаблонами — JWT, OAuth, CORS — и работает вместе с серверными модулями Node.js, Java и Spring Boot для пользовательских интерфейсов, управляемых данными.",
-      "Testing": "Уверенно поставляется с использованием Jest, библиотеки тестирования React, Cypress и Playwright для всех модулей, интеграции и сквозного покрытия с автоматизацией на пути выпуска.",
-      "Database": "Работает с реляционными хранилищами данных и хранилищами документов — MySQL, PostgreSQL, MongoDB, Redis — и SQL для функций с учетом схемы и производительных запросов.",
-      "DevOps___Tools": "Использует Git, GitHub Actions, Jenkins, Docker и AWS в конвейерах CI/CD с мониторингом, ESLint и Prettier для последовательной и наблюдаемой доставки.",
-      "Concepts": "Применяет лучшие практики доступности, производительности и безопасности WCAG 2.1 AA, сотрудничество Agile/SCRUM и прочные основы проектирования (отладка, ООП, шаблоны проектирования)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "Внешний интерфейс",
-      "Backend___API": "Бэкенд/API",
-      "Testing": "Тестирование",
-      "Database": "База данных",
-      "DevOps___Tools": "DevOps/Инструменты",
-      "Concepts": "Концепции"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

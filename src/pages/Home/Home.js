@@ -26,6 +26,7 @@ import analyticsService from '../../services/analytics'
 import { useTheme } from '../../context/ThemeContext'
 import { usePageScroll } from '../../context/ScrollContext'
 const ContactModal = lazy(() => import('../../components/ContactModal'))
+const ResumeModal = lazy(() => import('../../components/ResumeModal'))
 
 const skillCategories = getSkillCategories()
 const siteInfo = getSiteInfo()
@@ -38,12 +39,7 @@ const typedConfig = {
   ...((siteInfo.ui || {}).typed || {}),
 }
 
-const skillWall = (() => {
-  const heroCoreStack = getHeroCoreStack()
-  if (heroCoreStack.length > 0) return heroCoreStack
-  const flat = skillCategories.flatMap((g) => g.items)
-  return Array.from(new Set(flat)).slice(0, 5)
-})()
+const skillWall = getHeroCoreStack()
 
 function ActionMark({ name, className = 'action-icon' }) {
   const { Icon, color, ink } = getActionMeta(name)
@@ -70,6 +66,7 @@ export default function Home() {
     skillCategories[0]?.category || 'Frontend',
   )
   const [showContactModal, setShowContactModal] = useState(false)
+  const [showResumeModal, setShowResumeModal] = useState(false)
   const [showAllExperience, setShowAllExperience] = useState(false)
   const { showScrollTop } = usePageScroll()
   const { isDarkMode, toggleDarkMode } = useTheme()
@@ -137,12 +134,12 @@ export default function Home() {
   return (
     <div className="landing-page" id="main-content" tabIndex={-1}>
       <div className="animated-background" />
-      <header className="landing-hero d-flex align-items-center" id="home">
+      <header className="landing-hero" id="home">
         <div className="landing-hero__background-image" />
         <div className="landing-hero__overlay" />
         <div className="landing-hero__pattern" />
         <Container className="position-relative">
-          <Row className="align-items-center gy-4">
+          <Row className="gy-2">
             <Col lg={7}>
               <div className="hero-profile">
                 <div className="hero-profile-frame">
@@ -189,32 +186,16 @@ export default function Home() {
                   <p className="hero-role">
                     {profile.headline || t('hero.headlineFallback')}
                   </p>
-                  {(profile.availability || t('hero.availabilityFallback')) && (
-                    <p className="hero-availability">
-                      <span className="hero-availability__icon" aria-hidden />
-                      <span>
-                        {profile.availability || t('hero.availabilityFallback')}
-                      </span>
-                    </p>
-                  )}
                 </div>
                 <div className="hero-actions">
-                  <a
-                    href={resumePdf}
-                    download="Malav-Rana-Frontend-Engineer.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    type="button"
                     className="hero-action hero-action--ghost"
-                    onClick={() =>
-                      analyticsService.trackDownload(
-                        'Malav-Rana-Frontend-Engineer.pdf',
-                        'pdf',
-                      )
-                    }
+                    onClick={() => setShowResumeModal(true)}
                   >
                     <ActionMark name="resume" />
                     {t('hero.resumeCta')}
-                  </a>
+                  </button>
                   <button
                     type="button"
                     className="hero-action hero-action--ghost"
@@ -232,8 +213,9 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-            </Col>            <Col lg={5}>
-              <Card className="hero-skill-card border-0 shadow-lg">
+            </Col>
+            <Col lg={5}>
+              <Card className="hero-skill-card border-0">
                 <Card.Body>
                   <div className="skill-card-header">
                     <div>
@@ -263,8 +245,8 @@ export default function Home() {
                       )
                     })}
                   </div>
-                  <div className="hero-experience-quick mt-4">
-                    <h6 className="mb-3 fw-bold hero-experience-quick__title">
+                  <div className="hero-experience-quick mt-3">
+                    <h6 className="mb-2 fw-bold hero-experience-quick__title">
                       {t('hero.recentTeams')}
                     </h6>
                     <ul className="hero-experience-list">
@@ -298,7 +280,7 @@ export default function Home() {
 
       <section id="summary" className="landing-summary">
         <Container>
-          <div className="summary-header text-center mb-4">
+          <div className="summary-header text-center mb-2">
             <h2 className="section-title mb-2">{t('summary.title')}</h2>
             <p className="summary-subtitle lead text-muted mx-auto">
               {profile.summary?.[0] || t('summary.subtitleFallback')}
@@ -336,7 +318,7 @@ export default function Home() {
 
       <section id="experience" className="landing-experience">
         <Container>
-          <div className="experience-heading text-center mb-3">
+          <div className="experience-heading text-center mb-2">
             <h2>{t('experience.title')}</h2>
           </div>
 
@@ -349,7 +331,7 @@ export default function Home() {
                   key={`${role.companyKey || role.company}-${index}`}
                   className="experience-card border-0 shadow-sm h-100"
                 >
-                  <Card.Body className="p-4">
+                  <Card.Body>
                     <div className="experience-card-header">
                       <div
                         className={`experience-company-logo ${
@@ -432,12 +414,12 @@ export default function Home() {
 
       <section id="projects" className="landing-projects">
         <Container>
-          <div className="projects-heading text-center mb-3">
+          <div className="projects-heading text-center mb-2">
             <h2 className="section-title">
               {t('projects.title', { defaultValue: 'Featured Projects' })}
             </h2>
           </div>
-          <Row className="g-4 justify-content-center">
+          <Row className="g-2 justify-content-center">
             {allProjects.map((p) => {
               const preview = getProjectImage(p.id)
               const outcome = p.outcome || p.description
@@ -528,7 +510,7 @@ export default function Home() {
 
       <section id="toolkit" className="landing-skills">
         <Container>
-          <Row className="gy-4 align-items-stretch">
+          <Row className="gy-2 align-items-stretch">
             <Col xs={12} lg={4}>
               <div className="toolkit-heading">
                 <h2 className="section-title">
@@ -537,6 +519,7 @@ export default function Home() {
                 <p className="text-muted">
                   {t('toolkit.description')}
                 </p>
+                <p className="toolkit-hint">{t('toolkit.tapHint')}</p>
               </div>
               <div
                 className="toolkit-nav"
@@ -567,6 +550,19 @@ export default function Home() {
                           category,
                         )
                         setActiveToolkit(category)
+                        if (
+                          typeof window !== 'undefined' &&
+                          window.matchMedia('(max-width: 991px)').matches
+                        ) {
+                          window.requestAnimationFrame(() => {
+                            document
+                              .getElementById('toolkit-panel')
+                              ?.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'nearest',
+                              })
+                          })
+                        }
                       }}
                     >
                       <span
@@ -575,7 +571,9 @@ export default function Home() {
                       >
                         <Icon className="toolkit-nav__icon" />
                       </span>
-                      <span>{translateSkillCategoryLabel(t, category)}</span>
+                      <span className="toolkit-nav__label">
+                        {translateSkillCategoryLabel(t, category)}
+                      </span>
                     </button>
                   )
                 })}
@@ -588,14 +586,14 @@ export default function Home() {
                   role="tabpanel"
                   aria-labelledby={`toolkit-tab-${activeToolkit}`}
                 >
-                  <h5 className="mb-3">
+                  <h5 className="mb-2">
                     {translateSkillCategoryLabel(t, activeToolkit)}
                   </h5>
-                  <p className="text-muted mb-4">
+                  <p className="text-muted mb-2">
                     {toolkitDescriptions[activeToolkit] ||
                       t('toolkit.defaultDescription')}
                   </p>
-                  <div className="toolkit-grid">
+                  <div className="toolkit-grid" key={activeToolkit}>
                     {(activeToolkitItems || []).map((item) => {
                       const { Icon, color, ink } = getSkillMeta(item)
                       return (
@@ -620,7 +618,7 @@ export default function Home() {
 
       <section id="education" className="landing-credentials">
         <Container>
-          <div className="credentials-heading text-center mb-3">
+          <div className="credentials-heading text-center mb-2">
             <h2 className="section-title">{t('credentials.education')}</h2>
           </div>
           <div className="education-grid">
@@ -677,19 +675,19 @@ export default function Home() {
 
       <section id="about" className="landing-personal">
         <Container>
-          <div className="text-center mb-4">
+          <div className="text-center mb-2">
             <h2 className="section-title">
               {personal.tagline || t('about.titleFallback')}
             </h2>
           </div>
-          <Row className="g-4 justify-content-center">
+          <Row className="g-2 justify-content-center">
             <Col lg={6}>
               <Card className="personal-card border-0 shadow-sm h-100">
-                <Card.Body className="p-4">
-                  <h5 className="mb-3 landing-accent-heading">
+                <Card.Body>
+                  <h5 className="mb-2 landing-accent-heading">
                     {t('about.whatEnjoy')}
                   </h5>
-                  <p className="text-muted mb-4 personal-copy">
+                  <p className="text-muted mb-2 personal-copy">
                     {personal.intro}
                   </p>
                   <div className="interest-chips">
@@ -708,11 +706,11 @@ export default function Home() {
             </Col>
             <Col lg={6}>
               <Card className="personal-card border-0 shadow-sm h-100">
-                <Card.Body className="p-4">
-                  <h5 className="mb-3 landing-accent-heading">
+                <Card.Body>
+                  <h5 className="mb-2 landing-accent-heading">
                     {t('about.whatLikeWork')}
                   </h5>
-                  <p className="text-muted mb-4 personal-copy">
+                  <p className="text-muted mb-2 personal-copy">
                     {personal.whatFuelsMe}
                   </p>
                   {personal.principles && personal.principles.length > 0 && (
@@ -736,34 +734,26 @@ export default function Home() {
 
       <section id="connect" className="landing-connect">
         <Container>
-          <Row className="align-items-center gy-4">
+          <Row className="align-items-center gy-2">
             <Col lg={8} className="mx-auto">
               <Card className="border-0 shadow-sm personal-card contact-card">
-                <Card.Body className="text-center p-4">
-                  <h2 className="mb-4 contact-card__title">
+                <Card.Body className="text-center">
+                  <h2 className="mb-2 contact-card__title">
                     {t('connect.title')}
                   </h2>
-                  <p className="text-muted mb-4">
+                  <p className="text-muted mb-2">
                     {t('connect.description')}
                   </p>
                   <div className="contact-actions">
-                    <a
-                      href={resumePdf}
-                      download="Malav-Rana-Frontend-Engineer.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button
+                      type="button"
                       className="btn btn-outline-primary"
                       title={t('connect.resumePdfTitle')}
-                      onClick={() =>
-                        analyticsService.trackDownload(
-                          'Malav-Rana-Frontend-Engineer.pdf',
-                          'pdf',
-                        )
-                      }
+                      onClick={() => setShowResumeModal(true)}
                     >
                       <ActionMark name="resume" />
                       {t('connect.resumeDownload')}
-                    </a>
+                    </button>
                     <a
                       href={profile.social.github}
                       target="_blank"
@@ -872,6 +862,15 @@ export default function Home() {
         </button>
       )}
 
+      {showResumeModal && (
+        <Suspense fallback={null}>
+          <ResumeModal
+            show={showResumeModal}
+            onClose={() => setShowResumeModal(false)}
+            src={resumePdf}
+          />
+        </Suspense>
+      )}
       {showContactModal && (
         <Suspense fallback={null}>
           <ContactModal

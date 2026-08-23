@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Merhaba, ben",
-    "headlineFallback": "Frontend mühendisi | React • Angular • Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Profesyonel özet",
     "subtitleFallback": "Tutku ve hassasiyetle modern web deneyimleri",
     "highlight1Title": "Modern frontend yığınları",
-    "highlight1Text": "React, Angular, Next.js ve TypeScript — kurumsal panellerden yoğun SPA'lara",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Takım işbirliği",
     "highlight2Text": "Tasarım, ürün ve backend ile erişilebilir, sürdürülebilir özellikler",
     "highlight3Title": "Kalite ve teslimat",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Ön Uç Mühendisi",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Ölçeklenebilir, yüksek performanslı ve erişilebilir web uygulamaları oluşturmada 5 yıldan fazla deneyime sahip Ön Uç Mühendisi. React, Angular, Next.js, TypeScript ve modern ön uç çerçeveleri konusunda uzman. REST ve GraphQL API'lerini entegre etme, karmaşık kullanıcı arayüzü iş akışlarını optimize etme, CI/CD ardışık düzenlerini uygulama, otomatik test ve erişilebilirlik uyumluluğu konusunda deneyimli. İşbirlikçi ekip oyuncusu, birden fazla projede kullanıcı dostu, bakımı kolay yazılım çözümleri sunmaya odaklandı."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Kıdemli Yazılım Mühendisi",
-        "company": "Karasaman AI",
-        "location": "Florida, Amerika Birleşik Devletleri",
-        "period": "Nis 2026 — Şu Anda",
-        "tagline": "Yazılım ürünü ve mühendislik ekibi.",
-        "description": "Ekip önceliklerine göre ön uç ve platform geliştirmeyi desteklemek için Kıdemli Yazılım Mühendisi olarak çalışmak.",
-        "highlights": {
-          "0": "Temiz, bakımı yapılabilir kodla özellik sunumuna katkıda bulunur.",
-          "1": "Uygulama öncelikleri konusunda ürün ve mühendislik ekipleriyle işbirliği yapar."
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Yazılım Mühendisi (Sözleşmeli)",
-        "company": "Füzyon Sağlığı",
-        "location": "Woodbridge, New Jersey",
-        "period": "Şubat 2026 – Nisan 2026",
-        "tagline": "Kısa vadeli erişilebilirlik ve uyumluluk katılımı.",
-        "description": "Angular uygulamalarında erişilebilirlik iyileştirmelerine ve WCAG 2.1 AA uyumluluğuna odaklanıldı.",
-        "highlights": {
-          "0": "Önemli kullanıcı akışlarında erişilebilirlik denetimleri gerçekleştirildi ve WCAG 2.1 AA sorunları düzeltildi.",
-          "1": "Angular UI'da iyileştirilmiş anlamsal işaretleme, klavyede gezinme ve ekran okuyucu desteği."
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Ön Uç Mühendisi",
+        "role": "Software Engineer",
         "company": "Kiswe",
-        "location": "Zirve, New Jersey",
-        "period": "Eylül 2024 – Ocak 2026",
-        "tagline": "Kiswe; spor, medya ve kurumsal markalar için canlı etkileşimli deneyimlere güç veriyor.",
-        "description": "Ölçeklenebilir bileşenlere, API entegrasyonuna, performansa ve erişilebilirliğe odaklanarak React, Vue, TypeScript ve Tailwind ile yüksek trafikli tek sayfalı uygulamalar sunuldu.",
-        "highlights": {
-          "0": "Ölçeklenebilir bileşen mimarisini kullanarak React, Vue, TypeScript ve Tailwind ile SPA'lar geliştirildi.",
-          "1": "Önbelleğe alma ve durum yönetimine sahip entegre REST ve GraphQL API'leri; yanıt verme hızı iyileştirildi ve ön uç hataları azaltıldı.",
-          "2": "Büyük uygulamaların daha hızlı yüklenmesi için kod bölme, yavaş yükleme ve ağaç sallama uygulandı.",
-          "3": "Desteklenen kod incelemeleri, hata ayıklama ve WCAG uyumlu, cihazlar arası deneyimler."
-        }
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Ön Uç Mühendisi",
+        "role": "Software Engineer",
         "company": "Gensler",
-        "location": "Morristown, New Jersey",
-        "period": "Temmuz 2022 – Eylül 2024",
-        "tagline": "Kurumsal dijital araçlar ve müşteri deneyimleri sunan küresel mimari ve tasarım firması.",
-        "description": "React, Angular, Vue ve Next.js ile kurumsal kullanıcı arayüzleri oluşturuldu; eşzamansız REST/GraphQL verilerini otomatik testlerle ve yakın tasarım iş birliğiyle eşleştirin.",
-        "highlights": {
-          "0": "React, Angular, Vue, Next.js ve Styled Components içeren kontrol panelleri ve kullanıcı arayüzü bileşenleri gönderildi.",
-          "1": "Eşzamansız güncellemeler ve etkileşimli özelliklerle entegre REST ve GraphQL.",
-          "2": "Eski kod yeniden düzenlendi, performans iyileştirildi ve Jest, RTL ve Playwright kapsamı genişletildi.",
-          "3": "Figma tasarımlarını duyarlı, erişilebilir, üretime hazır arayüzlere dönüştürdü."
-        }
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Ön Uç Mühendisi (Sözleşmeli)",
-        "company": "Cigna Ekspres Komut Dosyaları",
-        "location": "Franklin Gölleri, New Jersey",
-        "period": "Mayıs 2021 – Nisan 2022",
-        "tagline": "Üyeler ve hastalar için eczane avantajları ve dijital sağlık çözümleri.",
-        "description": "Güvenli API entegrasyonu, modüler bileşenler ve güçlü otomatik test kapsamı ile React ve TypeScript'te yerleşik etkileşimli eczane ödeme akışları.",
-        "highlights": {
-          "0": "React, TypeScript, HTML5 ve CSS3 ile iyileştirilmiş ödeme görevi tamamlama.",
-          "1": "JWT/OAuth, doğrulama ve güçlü hata işleme özelliklerine sahip entegre güvenli REST API'leri.",
-          "2": "Modüler bileşenler ve optimize edilmiş istemci tarafı işleme sayesinde azaltılmış sayfa yükleme süreleri.",
-          "3": "Hızlı yanıt veren, erişilebilir kullanıcı arayüzü sunumu için ekipler arasında işbirliği yapıldı."
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Ön Uç Mühendisliği Stajyeri",
-        "company": "Atmiya Bakım Yardımı",
-        "location": "Parsippany, New Jersey",
-        "period": "Eylül 2020 – Mayıs 2021",
-        "tagline": "Kâr amacı gütmeyen kuruluş, toplumsal yardım ve hayırsever girişimlere odaklandı.",
-        "description": "Yazılım kariyerime burada başladım ve kar amacı gütmeyen gerçek projelerde uygulamalı staj çalışmaları yaparak temel ön uç becerilerimi geliştirdim.",
-        "highlights": {
-          "0": "React, HTML, CSS ve JavaScript kullanarak duyarlı arayüzler oluşturuldu.",
-          "1": "Kod incelemeleri, işbirliği ve yinelemeli dağıtım aracılığıyla temel mühendislik uygulamalarını öğrendim.",
-          "2": "Gerçek dünyadaki kar amacı gütmeyen özellikleri destekledi ve erişilebilir kullanıcı arayüzü uygulamasıyla pratik deneyim kazandı."
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules) ve duyarlı tasarım ile React.js, Next.js, Angular ve Vue.js'de uygulamalı deneyim. Webpack, Vite ve Babel ile üretim yapıları boyunca Figma aktarımından rahat.",
-      "Backend___API": "REST ve GraphQL hizmetlerini JWT, OAuth, CORS gibi güvenli kalıplarla entegre eder ve veri odaklı kullanıcı arayüzleri için Node.js, Java ve Spring Boot arka uçlarıyla birlikte çalışır.",
-      "Testing": "Yayın yolunda otomasyon ile birim, entegrasyon ve uçtan uca kapsam genelinde Jest, React Testing Library, Cypress ve Playwright kullanılarak güvenle gönderilir.",
-      "Database": "Şemaya duyarlı özellikler ve performanslı sorgular için ilişkisel ve belge veri depoları (MySQL, PostgreSQL, MongoDB, Redis) ve SQL ile çalışır.",
-      "DevOps___Tools": "Tutarlı, gözlemlenebilir teslimat için izleme, ESLint ve Prettier ile CI/CD işlem hatlarında Git, GitHub Actions, Jenkins, Docker ve AWS'yi kullanır.",
-      "Concepts": "WCAG 2.1 AA erişilebilirliği, performans ve güvenlik en iyi uygulamalarını, Çevik/SCRUM işbirliğini ve sağlam mühendislik temellerini (hata ayıklama, OOP, tasarım modelleri) uygular."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "Başlangıç ​​aşaması",
-      "Backend___API": "Arka uç / API",
-      "Testing": "Test",
-      "Database": "Veritabanı",
-      "DevOps___Tools": "DevOps / Araçlar",
-      "Concepts": "Kavramlar"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

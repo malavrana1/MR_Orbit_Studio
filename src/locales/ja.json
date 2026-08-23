@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "こんにちは、",
-    "headlineFallback": "フロントエンドエンジニア | React • Angular • Vue",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "プロフェッショナル概要",
     "subtitleFallback": "情熱と精度でモダンなWeb体験を",
     "highlight1Title": "モダンなフロントエンドスタック",
-    "highlight1Text": "React、Angular、Next.js、TypeScript — エンタープライズ向けダッシュボードから高トラフィックSPAまで",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "チーム連携",
     "highlight2Text": "デザイン・プロダクト・バックエンドと協働し、アクセシブルで保守しやすい機能を",
     "highlight3Title": "品質とデリバリー",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "フロントエンドエンジニア",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "スケーラブルで高性能、アクセスしやすい Web アプリケーションの構築に 5 年以上の経験を持つフロントエンド エンジニア。 React、Angular、Next.js、TypeScript、および最新のフロントエンド フレームワークに精通しています。 REST と GraphQL API の統合、複雑な UI ワークフローの最適化、CI/CD パイプラインの実装、自動テスト、アクセシビリティ コンプライアンスの経験があります。 複数のプロジェクトにわたって、ユーザーフレンドリーで保守可能なソフトウェア ソリューションを提供することに重点を置いた、協力的なチーム プレーヤー。"
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "シニア ソフトウェア エンジニア",
-        "company": "ブラックストローAI",
-        "location": "フロリダ州、米国",
-        "period": "2026 年 4 月 — 現在",
-        "tagline": "ソフトウェア製品およびエンジニアリングチーム。",
-        "description": "シニア ソフトウェア エンジニアとして、チームの優先順位に基づいてフロントエンドとプラットフォームの開発をサポートします。",
-        "highlights": {
-          "0": "クリーンで保守可能なコードによる機能の提供に貢献します。",
-          "1": "製品チームおよびエンジニアリング チームと協力して実装の優先順位を決定します。"
-        }
+        "role": "Software Engineer",
+        "company": "Blackstraw AI",
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "ソフトウェアエンジニア（契約）",
-        "company": "フュージョンヘルス",
-        "location": "ニュージャージー州ウッドブリッジ",
-        "period": "2026 年 2 月 — 2026 年 4 月",
-        "tagline": "短期的なアクセシビリティとコンプライアンスの取り組み。",
-        "description": "Angular アプリケーションにおけるアクセシビリティの向上と WCAG 2.1 AA 準拠に焦点を当てています。",
-        "highlights": {
-          "0": "アクセシビリティ監査を実行し、主要なユーザー フロー全体にわたる WCAG 2.1 AA の問題を修正しました。",
-          "1": "Angular UI でのセマンティック マークアップ、キーボード ナビゲーション、スクリーン リーダーのサポートが改善されました。"
-        }
+        "role": "Software Engineer (Contract)",
+        "company": "Fusion Health",
+        "location": "Woodbridge, NJ",
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "フロントエンドエンジニア",
-        "company": "キスウェ",
-        "location": "ニュージャージー州サミット",
-        "period": "2024 年 9 月 — 2026 年 1 月",
-        "tagline": "Kiswe は、スポーツ、メディア、企業ブランドのライブ インタラクティブ エクスペリエンスを強化します。",
-        "description": "スケーラブルなコンポーネント、API 統合、パフォーマンス、アクセシビリティに重点を置き、React、Vue、TypeScript、Tailwind を使用して高トラフィックのシングルページ アプリを提供しました。",
-        "highlights": {
-          "0": "スケーラブルなコンポーネント アーキテクチャを使用して、React、Vue、TypeScript、Tailwind で SPA を開発しました。",
-          "1": "キャッシュと状態管理を備えた統合 REST および GraphQL API。 応答性が向上し、フロントエンドのエラーが減少しました。",
-          "2": "大規模なアプリの読み込みを高速化するために、コード分割、遅延読み込み、ツリーシェイクを適用しました。",
-          "3": "コード レビュー、デバッグ、WCAG に合わせたクロスデバイス エクスペリエンスを支持しました。"
-        }
+        "role": "Software Engineer",
+        "company": "Kiswe",
+        "location": "Summit, NJ",
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "フロントエンドエンジニア",
-        "company": "ゲンスラー",
-        "location": "ニュージャージー州モリスタウン",
-        "period": "2022年7月 — 2024年9月",
-        "tagline": "エンタープライズ デジタル ツールとクライアント エクスペリエンスを提供する世界的な建築設計会社。",
-        "description": "React、Angular、Vue、Next.js を使用してエンタープライズ UI を構築し、非同期 REST/GraphQL データと自動テストおよび緊密な設計コラボレーションを組み合わせました。",
-        "highlights": {
-          "0": "React、Angular、Vue、Next.js、およびスタイル付きコンポーネントを含むダッシュボードと UI コンポーネントが同梱されています。",
-          "1": "非同期更新とインタラクティブ機能を備えた統合 REST と GraphQL。",
-          "2": "従来のコードをリファクタリングし、パフォーマンスを向上させ、Jest、RTL、Playwright の対応範囲を拡大しました。",
-          "3": "Figma のデザインを、応答性が高く、アクセスしやすく、実稼働対応のインターフェイスに変換しました。"
-        }
+        "role": "Software Engineer",
+        "company": "Gensler",
+        "location": "Morristown, NJ",
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "フロントエンドエンジニア（契約社員）",
-        "company": "Cigna Express スクリプト",
-        "location": "ニュージャージー州フランクリン・レイクス",
-        "period": "2021年5月 — 2022年4月",
-        "tagline": "会員と患者向けの薬局の特典とデジタル ヘルスケア ソリューション。",
-        "description": "安全な API 統合、モジュール式コンポーネント、強力な自動テスト カバレッジを備えた React と TypeScript でインタラクティブな薬局チェックアウト フローを構築しました。",
-        "highlights": {
-          "0": "React、TypeScript、HTML5、CSS3 によるチェックアウト タスクの完了が改善されました。",
-          "1": "JWT/OAuth、検証、堅牢なエラー処理を備えた統合された安全な REST API。",
-          "2": "モジュール式コンポーネントと最適化されたクライアント側レンダリングにより、ページの読み込み時間が短縮されました。",
-          "3": "チーム間で連携して、応答性が高くアクセスしやすい UI を提供します。"
-        }
+        "role": "Frontend Engineer",
+        "company": "Cigna Express Scripts",
+        "location": "Franklin Lakes, NJ",
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "フロントエンドエンジニアリングインターン",
-        "company": "アトミヤケアチャリティー",
-        "location": "ニュージャージー州パーシッパニー",
-        "period": "2020年9月 — 2021年5月",
-        "tagline": "コミュニティへの支援と慈善活動に重点を置いた非営利団体。",
-        "description": "私のソフトウェアキャリアはここで始まり、実際の非営利プロジェクトでの実践的なインターンシップ作業を通じて基礎的なフロントエンドスキルを構築しました。",
-        "highlights": {
-          "0": "React、HTML、CSS、JavaScript を使用してレスポンシブなインターフェイスを構築しました。",
-          "1": "コードレビュー、コラボレーション、反復配信を通じてコアエンジニアリングの実践を学びました。",
-          "2": "現実世界の非営利機能をサポートし、アクセシブルな UI 実装に関する実践的な経験を積みました。"
-        }
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
+        "location": "Parsippany, NJ",
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "TypeScript、最新の CSS (Tailwind、スタイル コンポーネント、CSS モジュール)、レスポンシブ デザインを使用した React.js、Next.js、Angular、Vue.js の実践的な経験。 Figma のハンドオフから、Webpack、Vite、Babel を使用した本番ビルドまで快適です。",
-      "Backend___API": "REST サービスと GraphQL サービスを安全なパターン (JWT、OAuth、CORS) と統合し、データ駆動型 UI 向けに Node.js、Java、Spring Boot バックエンドと連携して動作します。",
-      "Testing": "Jest、React Testing Library、Cypress、Playwright を使用して、ユニット、統合、リリース パスでの自動化によるエンドツーエンドのカバレッジを使用して自信を持って出荷します。",
-      "Database": "リレーショナル データ ストアとドキュメント データ ストア (MySQL、PostgreSQL、MongoDB、Redis)、および SQL と連携して、スキーマ対応機能とパフォーマンスの高いクエリを実現します。",
-      "DevOps___Tools": "CI/CD パイプラインで Git、GitHub Actions、Jenkins、Docker、AWS を使用し、モニタリング、ESLint、Prettier を使用して、一貫した監視可能な配信を実現します。",
-      "Concepts": "WCAG 2.1 AA のアクセシビリティ、パフォーマンスとセキュリティのベスト プラクティス、アジャイル/SCRUM コラボレーション、堅実なエンジニアリングの基礎 (デバッグ、OOP、設計パターン) を適用します。"
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
-      "Frontend": "フロントエンド",
-      "Backend___API": "バックエンド/API",
-      "Testing": "テスト",
-      "Database": "データベース",
-      "DevOps___Tools": "DevOps / ツール",
-      "Concepts": "コンセプト"
+      "Frontend": "Frontend",
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }

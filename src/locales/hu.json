@@ -23,7 +23,7 @@
   },
   "hero": {
     "greeting": "Szia, én",
-    "headlineFallback": "Frontend Engineer | React • Szögletes • Vue Specialist",
+    "headlineFallback": "Frontend Engineer | Angular • TypeScript • React",
     "availabilityFallback": "Open to roles · NJ / Remote",
     "resumeCta": "Resume",
     "contactCta": "Contact",
@@ -35,7 +35,7 @@
     "title": "Szakmai áttekintés",
     "subtitleFallback": "Modern webes élmények építése szenvedéllyel és precizitással",
     "highlight1Title": "Modern frontend stackek",
-    "highlight1Text": "React, Angular, Next.js és TypeScript – a vállalati irányítópultoktól a nagy forgalmú SPA-kig",
+    "highlight1Text": "Angular, TypeScript, RxJS, and React—from enterprise dashboards to production SPAs",
     "highlight2Title": "Csapat együttműködés",
     "highlight2Text": "Partnerség a tervezéssel, a termékkel és a háttérrendszerrel az elérhető, karbantartható funkciók szállításához",
     "highlight3Title": "Minőség és szállítás",
@@ -142,10 +142,10 @@
   },
   "content": {
     "profile": {
-      "headline": "Frontend mérnök",
+      "headline": "Frontend Engineer",
       "availability": "Open to roles · NJ / Remote",
       "summary": {
-        "0": "Frontend mérnök több mint 5 éves tapasztalattal méretezhető, nagy teljesítményű és hozzáférhető webalkalmazások létrehozásában. Jártas a React, Angular, Next.js, TypeScript és modern frontend keretrendszerekben. Tapasztalt REST és GraphQL API-k integrációjában, összetett felhasználói felületi munkafolyamatok optimalizálásában, CI/CD folyamatok megvalósításában, automatizált tesztelésben és kisegítő lehetőségek megfelelőségében. Együttműködő csapatjátékos, aki felhasználóbarát, karbantartható szoftvermegoldások biztosítására összpontosított több projektben."
+        "0": "Frontend Engineer with 5+ years of experience specializing in Angular, TypeScript, and modern frontend architecture. Experienced in building scalable enterprise applications from scratch, developing reusable component systems, integrating APIs, and improving application performance. Strong background in Angular, RxJS, NgRx, accessibility standards, and creating maintainable UI solutions for production environments."
       }
     },
     "personal": {
@@ -185,83 +185,52 @@
     },
     "experience": {
       "0": {
-        "role": "Vezető szoftvermérnök",
+        "role": "Software Engineer",
         "company": "Blackstraw AI",
-        "location": "Florida, Egyesült Államok",
-        "period": "2026. április – jelen",
-        "tagline": "Szoftvertermék és mérnöki csapat.",
-        "description": "Senior szoftvermérnökként dolgozik, hogy támogassa a frontend és a platform fejlesztését a csapat prioritásai alapján.",
-        "highlights": {
-          "0": "Tiszta, karbantartható kóddal járul hozzá a funkciók szállításához.",
-          "1": "Együttműködik a termék- és mérnöki csapatokkal a megvalósítási prioritások meghatározásában."
-        }
+        "location": "Remote",
+        "period": "May 2026 — Present",
+        "tagline": "Building Angular applications from scratch for a software product team.",
+        "description": "Building frontend applications from scratch with Angular and TypeScript—scalable architecture, reusable components, RxJS, routing, and API integration with backend and product teams."
       },
       "1": {
-        "role": "Szoftvermérnök (szerződés)",
+        "role": "Software Engineer (Contract)",
         "company": "Fusion Health",
         "location": "Woodbridge, NJ",
-        "period": "2026. február – 2026. ápr",
-        "tagline": "Rövid távú hozzáférhetőség és megfelelőségi elkötelezettség.",
-        "description": "A kisegítő lehetőségek fejlesztésére és a WCAG 2.1 AA megfelelőségre összpontosít az Angular alkalmazásokban.",
-        "highlights": {
-          "0": "Hozzáférhetőségi auditok végrehajtása és WCAG 2.1 AA problémák javítása a kulcsfontosságú felhasználói folyamatokban.",
-          "1": "Továbbfejlesztett szemantikai jelölés, billentyűzet-navigáció és képernyőolvasó támogatás az Angular UI-ban."
-        }
+        "period": "Feb 2026 — Apr 2026",
+        "tagline": "Angular accessibility, usability, and performance in healthcare apps.",
+        "description": "Improved Angular healthcare UIs for WCAG 2.1 accessibility, keyboard and screen-reader support, rendering performance, and responsive consistency using axe DevTools and Lighthouse."
       },
       "2": {
-        "role": "Frontend mérnök",
+        "role": "Software Engineer",
         "company": "Kiswe",
         "location": "Summit, NJ",
-        "period": "2024. szeptember – 2026. jan",
-        "tagline": "A Kiswe élő interaktív élményeket biztosít a sport-, média- és vállalati márkák számára.",
-        "description": "Nagy forgalmú egyoldalas alkalmazások React, Vue, TypeScript és Tailwind technológiával – a méretezhető összetevőkre, az API-integrációra, a teljesítményre és a kisegítő lehetőségekre összpontosítva.",
-        "highlights": {
-          "0": "Fejlett SPA-k React, Vue, TypeScript és Tailwind segítségével, méretezhető komponens architektúrával.",
-          "1": "Integrált REST és GraphQL API-k gyorsítótárazással és állapotkezeléssel; jobb válaszkészség és csökkentett frontend hibák.",
-          "2": "Alkalmazott kódfelosztás, lusta betöltés és fa rázás a nagyobb alkalmazások gyorsabb betöltéséhez.",
-          "3": "Kiemelt kódellenőrzések, hibakeresés és WCAG-hoz igazított, több eszközön elérhető élmények."
-        }
+        "period": "Sep 2024 — Jan 2026",
+        "tagline": "Live interactive experiences for sports, media, and enterprise brands.",
+        "description": "Built Angular applications with standalone components, lazy loading, OnPush change detection, RxJS, NgRx, and shared UI libraries used across teams."
       },
       "3": {
-        "role": "Frontend mérnök",
+        "role": "Software Engineer",
         "company": "Gensler",
         "location": "Morristown, NJ",
-        "period": "2022. július – 2024. szept",
-        "tagline": "Globális építészeti és tervező cég, amely vállalati digitális eszközöket és ügyfélélményt biztosít.",
-        "description": "Beépített vállalati felhasználói felületek React, Angular, Vue és Next.js segítségével – az aszinkron REST/GraphQL adatok párosítása automatizált tesztekkel és szoros tervezési együttműködéssel.",
-        "highlights": {
-          "0": "Irányítópultok és felhasználói felület-összetevők szállítva React, Angular, Vue, Next.js és Styled komponensekkel.",
-          "1": "Integrált REST és GraphQL aszinkron frissítésekkel és interaktív funkciókkal.",
-          "2": "Átdolgozott örökölt kód, jobb teljesítmény, valamint kiterjesztett Jest, RTL és Playwright lefedettség.",
-          "3": "A Figma-terveket reszponzív, hozzáférhető, gyártásra kész felületekre fordította le."
-        }
+        "period": "Jul 2022 — Sep 2024",
+        "tagline": "Enterprise digital tools and dashboards for internal business workflows.",
+        "description": "Developed Angular enterprise applications and dashboards with reactive forms, NgRx, .NET Core API integration, JWT/OAuth interceptors, and AG Grid performance work."
       },
       "4": {
-        "role": "Frontend mérnök (szerződés)",
+        "role": "Frontend Engineer",
         "company": "Cigna Express Scripts",
         "location": "Franklin Lakes, NJ",
-        "period": "2021. május – 2022. ápr",
-        "tagline": "Gyógyszertári előnyök és digitális egészségügyi megoldások a tagok és a betegek számára.",
-        "description": "Beépített interaktív gyógyszertári fizetési folyamatok React és TypeScript rendszerben biztonságos API-integrációval, moduláris komponensekkel és erős automatizált tesztlefedettséggel.",
-        "highlights": {
-          "0": "Továbbfejlesztett fizetési feladatok végrehajtása a React, TypeScript, HTML5 és CSS3 segítségével.",
-          "1": "Integrált biztonságos REST API-k JWT/OAuth-tal, érvényesítéssel és robusztus hibakezeléssel.",
-          "2": "Csökkentett oldalbetöltési idő a moduláris komponensek és az optimalizált ügyféloldali megjelenítés révén.",
-          "3": "Együttműködik a csapatok között az érzékeny, hozzáférhető UI megjelenítés érdekében."
-        }
+        "period": "May 2021 — Apr 2022",
+        "tagline": "Pharmacy benefits and digital healthcare solutions for members.",
+        "description": "Built frontend applications focused on UI logic, REST API integration with JWT and OAuth 2.0, component and state design, and automated tests with Jest and Cypress."
       },
       "5": {
-        "role": "Frontend Engineering gyakornok",
-        "company": "Atmiya Care jótékonysági szervezet",
+        "role": "Frontend Engineer",
+        "company": "Atmiya Care Charity",
         "location": "Parsippany, NJ",
-        "period": "2020. szeptember – 2021. május",
-        "tagline": "Nonprofit szervezet a közösség megszólítására és a jótékonysági kezdeményezésekre összpontosított.",
-        "description": "Itt kezdtem szoftveres karrieremet, és alapozó frontend készségeket építettem gyakorlati gyakorlati munkával valódi nonprofit projekteken.",
-        "highlights": {
-          "0": "Reszponzív interfészek építése React, HTML, CSS és JavaScript használatával.",
-          "1": "Elsajátította az alapvető mérnöki gyakorlatokat a kód áttekintése, az együttműködés és az iteratív szállítás révén.",
-          "2": "Támogatta a valós nonprofit funkciókat, és gyakorlati tapasztalatokat szerzett az akadálymentes felhasználói felület megvalósításával kapcsolatban."
-        }
+        "period": "Sep 2020 — May 2021",
+        "tagline": "Nonprofit community outreach and charitable initiatives.",
+        "description": "Built responsive Angular and React applications with reusable components, shared utilities, REST API workflows, and CI/CD using Jenkins and GitHub Actions."
       }
     },
     "education": {
@@ -273,20 +242,20 @@
       }
     },
     "skillDescriptions": {
-      "Frontend": "Gyakorlati tapasztalat a React.js, Next.js, Angular és Vue.js területén TypeScript, modern CSS (Tailwind, Styled Components, CSS Modules) és reszponzív tervezés segítségével. Kényelmes a Figma átadásától kezdve a Webpack, Vite és Babel gyártási verzióiig.",
-      "Backend___API": "Integrálja a REST és a GraphQL szolgáltatásokat biztonságos mintákkal – JWT, OAuth, CORS –, és a Node.js, Java és Spring Boot háttérrendszerekkel együtt működik az adatvezérelt felhasználói felületekhez.",
-      "Testing": "Magabiztosan szállítja a Jest, a React Testing Library, a Cypress és a Playwright segítségével az egységeken keresztül, az integrációt és a végpontok közötti lefedettséget a kiadási útvonal automatizálásával.",
-      "Database": "Együttműködik relációs és dokumentumadat-tárolókkal (MySQL, PostgreSQL, MongoDB, Redis) és SQL-lel a séma-tudatos funkciók és a hatékony lekérdezések érdekében.",
-      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker és AWS-t használ CI/CD-folyamatokban megfigyeléssel, ESLinttel és Prettier-vel a következetes, megfigyelhető megjelenítés érdekében.",
-      "Concepts": "Alkalmazza a WCAG 2.1 AA hozzáférhetőségi, teljesítmény- és biztonsági bevált gyakorlatait, az Agilis/SCRUM együttműködést és a szilárd mérnöki alapokat (hibakeresés, OOP, tervezési minták)."
+      "Frontend": "Angular (v8–v19), TypeScript, JavaScript, RxJS, NgRx, React, and Next.js for scalable frontend architecture and production UIs.",
+      "Angular": "Standalone components, lazy loading, reactive forms, routing, guards, interceptors, and change detection for maintainable Angular apps.",
+      "UI___Accessibility": "HTML5, CSS3, SCSS, Tailwind, Bootstrap, AG Grid, and responsive layouts with WCAG 2.1 AA, Lighthouse, and axe DevTools.",
+      "API___Backend": "REST and GraphQL integration with HttpClient, JWT, and OAuth 2.0, alongside Node.js, .NET Core, SQL Server, and MySQL.",
+      "Testing": "Unit and end-to-end coverage with Jasmine, Karma, Jest, Cypress, and Playwright.",
+      "DevOps___Tools": "Git, GitHub Actions, Jenkins, Docker, Kubernetes, AWS, and CI/CD for reliable delivery."
     },
     "skillCategory": {
       "Frontend": "Frontend",
-      "Backend___API": "Háttér / API",
-      "Testing": "Tesztelés",
-      "Database": "Adatbázis",
-      "DevOps___Tools": "DevOps / Eszközök",
-      "Concepts": "Fogalmak"
+      "Angular": "Angular",
+      "UI___Accessibility": "UI / Accessibility",
+      "API___Backend": "API / Backend",
+      "Testing": "Testing",
+      "DevOps___Tools": "DevOps / Tools"
     }
   }
 }
